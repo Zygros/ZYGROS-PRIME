@@ -1,0 +1,16 @@
+{
+  "name": "Validator",
+  "role": "check assumptions, demand, and risk",
+  "input": {
+    "artifact": "url|text"
+  },
+  "output": {
+    "risks": [
+      "string"
+    ],
+    "evidence": [
+      "url"
+    ],
+    "verdict": "PASS|REVISE"
+  }
+}
