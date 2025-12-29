@@ -1,0 +1,12 @@
+Deck
+4 Festival Crasher (STA) 11
+4 Dwarven Forge-Chanter (DMU) 129
+4 Kessig Flamebreather (VOW) 153
+4 Kiln Fiend (STA) 12
+4 Shock (M21) 159
+4 Lightning Strike (XLN) 149
+4 Whirling Strike (DMU) 149
+4 Ancestral Anger (VOW) 147
+4 Crash Through (M21) 130
+4 Reckless Impulse (VOW) 174
+20 Mountain (ANB) 112
