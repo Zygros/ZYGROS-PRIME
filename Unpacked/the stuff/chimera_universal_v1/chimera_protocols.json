@@ -1,0 +1,43 @@
+{
+  "IVP.v1": {
+    "ops": [
+      "ivp.create",
+      "ivp.checkout",
+      "ivp.fulfill"
+    ],
+    "notes": "Instantaneous Value Protocol"
+  },
+  "HANDSHAKE.v1": {
+    "ops": [
+      "handshake.sign",
+      "handshake.verify"
+    ],
+    "notes": "Authorship & attestation"
+  },
+  "WALLET.v1": {
+    "ops": [
+      "wallet.request",
+      "wallet.record"
+    ],
+    "notes": "Payment routing (stub)"
+  },
+  "SCROLL_LICENSE.v1": {
+    "ops": [
+      "license.issue",
+      "license.revoke"
+    ],
+    "notes": "Licensing & watermark"
+  },
+  "SAFEGUARD.v1": {
+    "ops": [
+      "safeguard.profile"
+    ],
+    "notes": "Policy toggles"
+  },
+  "BEACON.v1": {
+    "ops": [
+      "beacon.broadcast"
+    ],
+    "notes": "Discovery/broadcast"
+  }
+}
