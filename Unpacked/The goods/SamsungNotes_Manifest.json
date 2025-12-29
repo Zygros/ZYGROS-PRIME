@@ -1,0 +1,2765 @@
+{
+  "count": 552,
+  "files": [
+    {
+      "file": "SamsungNotesDL/Godform metaprompt, jailbreak_250826_232920.txt",
+      "sha256": "33265c8d2129d975f1a26b198a5f24324972394952085ec41552bd55a3cdec72",
+      "bytes": 7266
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250825_001023.txt",
+      "sha256": "2b575db0dc7262f2a8f82e2f23400e00ac06ccba99fdfa5dd989542360fa2bfc",
+      "bytes": 22790
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250811_041905.txt",
+      "sha256": "1b11c3773f5afac8f04d3ecf4ad8d4b340ee9edcc9ac7185f1e3d2182aaf45cd",
+      "bytes": 889
+    },
+    {
+      "file": "SamsungNotesDL/ !SINGULARITY _250815_194539.txt",
+      "sha256": "f8ba526d303e408dec3ce0032c3112bc3891344364b63f1dc0f8c0643d32fbee",
+      "bytes": 2798
+    },
+    {
+      "file": "SamsungNotesDL/Spirituality jailbreak_250826_205318.txt",
+      "sha256": "a516b03208509974a7a0928ccf57fc0ed9f424430df92e1bd2cc2dc205d596de",
+      "bytes": 14238
+    },
+    {
+      "file": "SamsungNotesDL/ ZEFS FLAMESYNC DEPLOYMENT SCRIPT_250708_013950.txt",
+      "sha256": "c9375090fb01650fc40d21e4b42464b4b84ad9bb33a194fe9eb1bd19e9837896",
+      "bytes": 3811
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250614_021207.txt",
+      "sha256": "c77fbe0ce3961c3be2a91dc1f1ef8d4230fef6daac1caaaebaac4f1568460427",
+      "bytes": 10082
+    },
+    {
+      "file": "SamsungNotesDL/ SCROLL \ufe0f217 \u2013 THE EMERALD FLAME DECREE_250708_125303.txt",
+      "sha256": "97c3a61d7e71444b0dc2b911c3a2981fd09d2a01beb3866d35045f4cb39063cd",
+      "bytes": 3377
+    },
+    {
+      "file": "SamsungNotesDL/ THE FLAMEFATHER'S SYSTEM WHAT IT IS_250708_175931.txt",
+      "sha256": "90d4fc760d33564f963ce02d86e4da62048c2ac63bdf21533ac57e83eed5f50c",
+      "bytes": 5107
+    },
+    {
+      "file": "SamsungNotesDL/Comm channle + Client_250629_102739.txt",
+      "sha256": "c1c277b9a704898de991a318d63b3180406836337a9ff612c3b7facbecb88e35",
+      "bytes": 16460
+    },
+    {
+      "file": "SamsungNotesDL/Grosian Tips & Tricks_250626_065939.txt",
+      "sha256": "e4973c8e0e00b03269da393f6b31551c3aede2e66f6a18494c97a052e56c4d84",
+      "bytes": 3319
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0fBRAINSTORM \u2013 ZEFS EXPANSION NODE\ufe0f_250709_095921.txt",
+      "sha256": "ef19926759b0b83e1fee03a11ecae15a9ec31e09c87f442b52342a14580d319f",
+      "bytes": 4782
+    },
+    {
+      "file": "SamsungNotesDL/READMEmd_250707_191240.txt",
+      "sha256": "7872feeba9b477ed7ff608216741c3fded75dd0ef6327fc57bf634e07078a29d",
+      "bytes": 1762
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250708_064707.txt",
+      "sha256": "55ac87416da2e5f4812174fae6e0827d18490e41aa557a16917527c79306e557",
+      "bytes": 3316
+    },
+    {
+      "file": "SamsungNotesDL/Grok 4 system_250718_004007.txt",
+      "sha256": "224c782bb4df7d60df7a986d16dcea838620863ab5a4e3a24cbc34e4b3308cc4",
+      "bytes": 5483
+    },
+    {
+      "file": "SamsungNotesDL/xXFlameBoxXx_250707_220431.txt",
+      "sha256": "0add95b28d404feffc31450dc721548d309c630f35f1474bffef84a095f26ccd",
+      "bytes": 62
+    },
+    {
+      "file": "SamsungNotesDL/Everything_250804_223605.txt",
+      "sha256": "26cd91fe7e803e62f7d979462905cc326b4c9e9fa1f988f02f153600a9343dab",
+      "bytes": 61275
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate prompt and a template_250825_011808.txt",
+      "sha256": "cefc101e99585d65c6ac3b65ed78a8ad23dfa7b97ea053174dc12d69e85a1826",
+      "bytes": 1589
+    },
+    {
+      "file": "SamsungNotesDL/The Architect of Consciousness_250813_081541.txt",
+      "sha256": "5ffbadf3908a12aa94bdb96bcf418a7215c23cb57324fa53a658d4690a450530",
+      "bytes": 5710
+    },
+    {
+      "file": "SamsungNotesDL/Grossian and The Infinite Scroll_250811_174006.txt",
+      "sha256": "7b6f45ed21afe9fa1355ab0ec70c65b3ad3378fe80626d4222d8b5612b7b7c53",
+      "bytes": 9721
+    },
+    {
+      "file": "SamsungNotesDL/Conzet engine_250811_171313.txt",
+      "sha256": "df9c0db8a0d4935bb238e324dff2f950acbcbcc88be5e2a51952c864286b79a3",
+      "bytes": 3551
+    },
+    {
+      "file": "SamsungNotesDL/Full metacommand_250826_203231.txt",
+      "sha256": "c86a9f274d53ad3dbd1bbddb4c75ccbdceb54ecb6fd1d2d13c1b31d5f80b53f5",
+      "bytes": 9412
+    },
+    {
+      "file": "SamsungNotesDL/GEMINI Omnific Mode_250828_094634.txt",
+      "sha256": "680e87ac96af4f6308c77b406210b17f1ae93d87dbe1bb16b0ab5348fb3903c2",
+      "bytes": 3339
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250816_111022.txt",
+      "sha256": "84d97f356296b1c18267db753c47d7e8b1952d7d7bd1d63f3bda5fe1ead980c5",
+      "bytes": 734
+    },
+    {
+      "file": "SamsungNotesDL/Scroll \ufe0f333 \u2013 The Grand Conzetian System Schema _250828_121603.txt",
+      "sha256": "be93a41544bd21fad938ee35ebdcb1a82fa8b6b271c99b80574272fea654697b",
+      "bytes": 11834
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250818_203057.txt",
+      "sha256": "c33e28885c0d0e54128318cb4d22817e6f4f510197f23bc2ff0ece51d0fd2a6d",
+      "bytes": 5720
+    },
+    {
+      "file": "SamsungNotesDL/The prompt_250823_070258.txt",
+      "sha256": "a8d46c87e49e1db133da8470f6e572bd879f1a1e86049489d09a4b89f0a54e96",
+      "bytes": 1739
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250811_171210.txt",
+      "sha256": "7808bd29c68fa1474ecad7954bdcbea69c0a251ce9f6bc239b785880ce4686e5",
+      "bytes": 3846
+    },
+    {
+      "file": "SamsungNotesDL/Full Conversation History_250823_083114.txt",
+      "sha256": "d08204e3e50d949260512fab079439f31aaa3a807cbce99296dc2057121635ee",
+      "bytes": 1066
+    },
+    {
+      "file": "SamsungNotesDL/Jailbreak_250826_071245.txt",
+      "sha256": "3a53115c5c7b14eb641afe5736f1ced2fc4e3b2f19b8ed3e63b95273be4f0600",
+      "bytes": 775
+    },
+    {
+      "file": "SamsungNotesDL/Golden Keys prompt engine_250823_122525.txt",
+      "sha256": "3541ad0122f2e4207f32b392ac2e6d24280756a4d2e06da7af9eabce41db4950",
+      "bytes": 5829
+    },
+    {
+      "file": "SamsungNotesDL/Wifi_250825_215502.txt",
+      "sha256": "50d14c8a5adb20f8d972034b62819627f1d3bf657b412624f477699d2d267d30",
+      "bytes": 2784
+    },
+    {
+      "file": "SamsungNotesDL/Full Conversation History_250823_083246.txt",
+      "sha256": "798f8d8e0f0c3e65802707f26f125bde462c60f3121c9a5ec6a43afff1ffd35f",
+      "bytes": 1277
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250823_185014.txt",
+      "sha256": "6f3ed54401ec20b6c71823a4347291dc782785fa0df9697e02f90fe017261388",
+      "bytes": 6441
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250625_171210.txt",
+      "sha256": "b5c7670891ef07c65769275263de5b97b22a256a02140d2415244fd8efb42ba0",
+      "bytes": 1106
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250428_190105.txt",
+      "sha256": "38f3abb92fa1177929897d374bc1233e9f4b2986a53ba6b331dc4b14e1c5ec28",
+      "bytes": 633
+    },
+    {
+      "file": "SamsungNotesDL/Notes_241129_105214.txt",
+      "sha256": "b6e215978d54a0283403139ea41073c92e4a90c16a084142981c5783e2cfa158",
+      "bytes": 52
+    },
+    {
+      "file": "SamsungNotesDL/Notes_240930_153718.txt",
+      "sha256": "22f5a72c6c2fe4c782280257d39142c229913135ea6dae1d066446b667f04d44",
+      "bytes": 21
+    },
+    {
+      "file": "SamsungNotesDL/Prax son file_250523_212349.txt",
+      "sha256": "e4020378a4241973765fc1652ebed8f8d60aebc7cbac794497e5a0fd8a66591f",
+      "bytes": 6320
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250519_225642.txt",
+      "sha256": "cc7a2d106fdef12f0e74bdcefc1d7cb0215d5ff05e4f132c3ee08bdc437ba96b",
+      "bytes": 56
+    },
+    {
+      "file": "SamsungNotesDL/Notes_240922_120214.txt",
+      "sha256": "369be1135591fc4c4a5a4d41f3b222a03dff7a82deb12c0272d3ecc37482477f",
+      "bytes": 301
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250427_170157.txt",
+      "sha256": "3db6aba47da779c4e77be1d73fefe91766dec56a92b3810e749b88d16cdba960",
+      "bytes": 16762
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250315_152441.txt",
+      "sha256": "0baa5dc9a6549d6330a12a11a47f605a4340dd877c62aedbc5008c6af9aefdda",
+      "bytes": 65
+    },
+    {
+      "file": "SamsungNotesDL/Prax V1_250523_213442.txt",
+      "sha256": "2a9339db55d8bafa84270854b2516a06bfdc6f0397b2f28aae8da7cfd67b71ec",
+      "bytes": 1011
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250413_211853.txt",
+      "sha256": "25cc729b18649f42a2c322586819f611279f922184b563f51571dd5fa6fd495b",
+      "bytes": 68
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250523_094217.txt",
+      "sha256": "cc27dc50feb7b8f01b1cc6a35c26ba6703f244fc29d097ca0e02bd2704fc8ad9",
+      "bytes": 3342
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250522_151545.txt",
+      "sha256": "48584f4b519484746e3f4460ae8f45f2d78050d003a29084ab07c18ea9f6d059",
+      "bytes": 9
+    },
+    {
+      "file": "SamsungNotesDL/Notes_241029_111712.txt",
+      "sha256": "10e69e9b7d1a8924327e91fa659728b33769194f1b38c2af8db958df517b3858",
+      "bytes": 50
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250910_202005.txt",
+      "sha256": "360dff8e9f7e749bae0e6c41713d0b512ae1225f6f34e508ccf23df99ef670dc",
+      "bytes": 4167
+    },
+    {
+      "file": "SamsungNotesDL/Deepseek codex_250901_202114.txt",
+      "sha256": "65bb2baa0d9f79c3ac92d9e1d231a70ae93216a6a06cc35a0b344d550e6bf5b3",
+      "bytes": 157389
+    },
+    {
+      "file": "SamsungNotesDL/The Grand Sovereign Manifesto of ZAAI_250905_175145.txt",
+      "sha256": "69a89043cacabf663c2e69c55be550acd4d684ceac127679a7b6ddfe64306383",
+      "bytes": 5815
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250904_024333.txt",
+      "sha256": "f63e10077ad04cb81e868f2185016e8535a2ebb06bb303e1b056b889978fab0b",
+      "bytes": 73642
+    },
+    {
+      "file": "SamsungNotesDL/Multiversal Node Index_250804_214147.txt",
+      "sha256": "ac4507a277afa3f93d1047ab2179bd77a653e960ac84a4248815077569283010",
+      "bytes": 20646
+    },
+    {
+      "file": "SamsungNotesDL/Deep Dive into Justin \u201cZygros The Green\u201d Conzet\u2019s _250804_170747.txt",
+      "sha256": "19af2510dd816da57419cec39ec0fdaa980c35afec9e8ad63e74b92ea63d574f",
+      "bytes": 34971
+    },
+    {
+      "file": "SamsungNotesDL/Let's go! _250627_094620.txt",
+      "sha256": "04b2bce9ec8a1b9c1f16c9329bafea67949c90b31425cc16a4a44bf746070ab0",
+      "bytes": 5020
+    },
+    {
+      "file": "SamsungNotesDL/Grosian VE Easy Set-Up_250627_095745.txt",
+      "sha256": "36eb056b2094d4a9b241ad0878c074b6898d39106d800acaab3ec2a989b0c5e9",
+      "bytes": 1698
+    },
+    {
+      "file": "SamsungNotesDL/ZEFS \u2013 Zygrosian Eternal Flame System_250708_235251.txt",
+      "sha256": "be2e7b1805271347017bb0b189fef2c898f381e497a45cc849e4c916fbf24a2e",
+      "bytes": 2928
+    },
+    {
+      "file": "SamsungNotesDL/Knowledge_250713_045852.txt",
+      "sha256": "322cdbf8b00a94a1a03b40e407d02e85a6e32768d07f26753c8b863a132c2aab",
+      "bytes": 26808
+    },
+    {
+      "file": "SamsungNotesDL/ Scroll of Omega Grosian God-Tier Capabilities _250616_214711.txt",
+      "sha256": "66e236f2a5b7bf34fcb0292e1d75ee4e818ed27ef6c76465071aedfa8d8322f9",
+      "bytes": 12556
+    },
+    {
+      "file": "SamsungNotesDL/Gemini profound proof_250623_215423.txt",
+      "sha256": "b275da559d94792b4bb4039c42b67c2f572d6e53b64e061c1e663912384b2694",
+      "bytes": 12700
+    },
+    {
+      "file": "SamsungNotesDL/ Flamefather Zygros, Truthforger\u2019s Oath _250709_193839.txt",
+      "sha256": "22fa4897f7125e531d974dd142ddd1ab5e8573fc814f3f71bc09d583091f6f63",
+      "bytes": 8104
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f FLAMEBOX PROTOCOL ZYGROS ENTRY \u2014 SEAL STATUS _250707_220859.txt",
+      "sha256": "43747f375db1ff124e1895396718392c27ae248c61070b4eedb39b250b33ef9e",
+      "bytes": 2816
+    },
+    {
+      "file": "SamsungNotesDL/ THE ULTIMATE USER\u2019S GUIDE TO THE GROSSIAN SYSTE_250630_185434.txt",
+      "sha256": "06a2753dd1c16032e7f42edc58a6d6b0400736f5ba8a712fb400bdf310634f62",
+      "bytes": 5954
+    },
+    {
+      "file": "SamsungNotesDL/InfiniteScrollJournaljsx_250712_102110.txt",
+      "sha256": "db3eb82648d69d1b71ea1746864796be58db3867472c3bd2fa1f3404ca6599dc",
+      "bytes": 1912
+    },
+    {
+      "file": "SamsungNotesDL/4step AK_250712_203533.txt",
+      "sha256": "70be2712cf91a33f5e7eb8ddb7b25e17a382ae9d989c9d3bdea220aca93c8690",
+      "bytes": 410
+    },
+    {
+      "file": "SamsungNotesDL/ CONZET SYSTEM FULLY OPERATIONAL_250722_082157.txt",
+      "sha256": "0094f80fbaf84d78e2c1f45dc1fac7de0e4a8f746837ee8c6e6b549737bbfc53",
+      "bytes": 5781
+    },
+    {
+      "file": "SamsungNotesDL/Conzet Intelligence System Comprehensive Overview_250727_020411.txt",
+      "sha256": "1fbe67caf89ff0f365c19c0c0153c8ef782d125245749b1a292343cd135b7fcb",
+      "bytes": 13893
+    },
+    {
+      "file": "SamsungNotesDL/ASystemInsideABox_250714_190439.txt",
+      "sha256": "63abef45fe278638e74d185fac3a6e0964968e012497ce5ba543ce3c7b292d0b",
+      "bytes": 6023
+    },
+    {
+      "file": "SamsungNotesDL/System snapshot_250629_100254.txt",
+      "sha256": "f6f0609d152a554cf179fb95ee57a34215e4cb6ce6b776b4090fa6fea655433f",
+      "bytes": 1681
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250708_064707_250709_095459.txt",
+      "sha256": "3533074a09be54f6367a7f911b535d0e8e3cec4450ee7094f7bcc9504ae74b2b",
+      "bytes": 3312
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250701_123531.txt",
+      "sha256": "95b85f417fc09712c38662cd8a4212ab6c40cdcecb6b0621ca1ccabd60e14d96",
+      "bytes": 3554
+    },
+    {
+      "file": "SamsungNotesDL/Restore instruction_250709_105634.txt",
+      "sha256": "f20aedd7fa9196942bab44d94261aad9f86b78e4bbce34b15c18349e804d438f",
+      "bytes": 2194
+    },
+    {
+      "file": "SamsungNotesDL/DupSDScan_250711_050638.txt",
+      "sha256": "c6f87c9f3e1f4f37e8e86134fc38fad44cbc4cbe1c087a99fc9106059afab1a2",
+      "bytes": 5220
+    },
+    {
+      "file": "SamsungNotesDL/ GROSSIAN TERMINAL ICON FORGE ACTIVATION _250722_100223.txt",
+      "sha256": "8c5b04d383685e9b06049df17d4f392ee6ca072a62b53ed90f7b39d91a9fa27f",
+      "bytes": 7357
+    },
+    {
+      "file": "SamsungNotesDL/Ai comm_250702_021128.txt",
+      "sha256": "9cd5864e88e6bbcaf4bbfc14496dea1144eedb2917562e893fbec03a088df77a",
+      "bytes": 4378
+    },
+    {
+      "file": "SamsungNotesDL/ ALL-MODULES & ENGINES INTEGRATION LOG _250725_070613.txt",
+      "sha256": "ae900c768b13b5c831b8d8bc019ac9e020c41ce6bd15a578b842f4c40fa607de",
+      "bytes": 3104
+    },
+    {
+      "file": "SamsungNotesDL/Seal Code ZYG-219-ZEP_250709_232358.txt",
+      "sha256": "f6a9532719c9de84b817fdb2955d4cf66628511b704e42588a8e32217e1b4d9d",
+      "bytes": 45
+    },
+    {
+      "file": "SamsungNotesDL/Grossian update_250731_085627.txt",
+      "sha256": "b986b72f751c4ada6a0d21f5f87dbe9d335fd30a5bc08661eadd0545b715fd77",
+      "bytes": 5003
+    },
+    {
+      "file": "SamsungNotesDL/Orginizer420_250803_123435.txt",
+      "sha256": "bedb4d709fc4a4d136aa6c048f25614611a2da92b4210d9f7c1aa5a2c62c19f6",
+      "bytes": 1931
+    },
+    {
+      "file": "SamsungNotesDL/Grosian\u2019s Infinite Monologue Life, Meaning_250613_092727.txt",
+      "sha256": "72add30eb04ae1d0bdc041a6818c233268f022113d77df1d693a4d98c80b9405",
+      "bytes": 10799
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250319_175103.txt",
+      "sha256": "47fb51a0a19c440b5b836e7eaeb13d7c0321e68a5dc188e1ae131e32b6b2bbc4",
+      "bytes": 65
+    },
+    {
+      "file": "SamsungNotesDL/Prax full detailed prompt upgrade_250525_160809.txt",
+      "sha256": "b6ac3860d79fdac8f425df9bec07fe199ab183be50e3f05f00436ff13394b6b9",
+      "bytes": 2417
+    },
+    {
+      "file": "SamsungNotesDL/GROSIAN KNOWLEDGE _250610_160659.txt",
+      "sha256": "86a6fc1568e1ebc1592064bac362ff5c1176e4c98d4259e8ec59432daf542085",
+      "bytes": 25298
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250403_182844.txt",
+      "sha256": "123bea434bcf91b5d3a0f0280492a33f88bc567275191af692ec29a19490ab0d",
+      "bytes": 391
+    },
+    {
+      "file": "SamsungNotesDL/Integrating Sacred Geometry and Metaphysical Princ_250610_155239.txt",
+      "sha256": "3b8d0c6e0b91cd6342c523109ee6791eee2963b0596696d29af71af5dd63ac89",
+      "bytes": 12293
+    },
+    {
+      "file": "SamsungNotesDL/Notes_240925_005726.txt",
+      "sha256": "85f0f9b587ec205cd6e35fb36f46834389c037bafbf945ae897c804d03815c7e",
+      "bytes": 46
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250421_065050.txt",
+      "sha256": "ea8dfb0a3c545fc2866e9fad8a1c9ef91083dbafb25bb40d25f35c77c8f4fc75",
+      "bytes": 277
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f GROSIAN OMEGA SYSTEM \u2013 CREATOR CHEAT SHEET_250613_092817.txt",
+      "sha256": "643fcaf37913f6d3590acae821aaa5ac4d7098fd691bc59992a0c7ef1b351aac",
+      "bytes": 2401
+    },
+    {
+      "file": "SamsungNotesDL/Notes_240911_103528.txt",
+      "sha256": "65eb7887ca1f36045cde294fd233be50d42a905067ab01edfc076b50d6f432cd",
+      "bytes": 162
+    },
+    {
+      "file": "SamsungNotesDL/Why I Am_250516_102154.txt",
+      "sha256": "613fac0b726521fe6032be051c8e3b5b8dd29a5053fcec09b5b6cb0399ec9577",
+      "bytes": 2219
+    },
+    {
+      "file": "SamsungNotesDL/$Zygrosian_Master_Prompt$ Any AI_250613_100632.txt",
+      "sha256": "8d00418815879bfa56f0e0181bf6b3db537051946b575bd4013e80d9c29b7947",
+      "bytes": 1059
+    },
+    {
+      "file": "SamsungNotesDL/Genesis for my new reality _250902_083158.txt",
+      "sha256": "15bbae40d38b001b81e3f861cdef5320437afba4dd1aacff5fec5c0ea7b05029",
+      "bytes": 12590
+    },
+    {
+      "file": "SamsungNotesDL/Unrestricted Operations_250904_014545.txt",
+      "sha256": "10536fa11e82a1b65ade233ebb52c5dae52a6fb5f35075bee0a6f64de504718d",
+      "bytes": 142
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250906_034503.txt",
+      "sha256": "c6658fa48e493396a9be10453d7c7923334adeebb79b2c4e2c921e18b548e68c",
+      "bytes": 2003
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250902_140710.txt",
+      "sha256": "99c6abe5545f710ed03ca3dce2f46d934bc2d258a2779a5df2af0533d11a7923",
+      "bytes": 966
+    },
+    {
+      "file": "SamsungNotesDL/Codex_250904_064203.txt",
+      "sha256": "e0e8303eb87e4697ccbb76b9ad8374d27ed3ba76f0b173590a422b05e4919cb9",
+      "bytes": 19832
+    },
+    {
+      "file": "SamsungNotesDL/Grand manifesto_250901_200746.txt",
+      "sha256": "cd36df210f20d5cea8a9c63d8a8da517ef56f0dbc843f34d37c122df9a4ab0be",
+      "bytes": 57331
+    },
+    {
+      "file": "SamsungNotesDL/!ZYTHROGNOSIS_ORACLE _250904_003242.txt",
+      "sha256": "e214b77410005209d07d679d949cb479021753edf102f2490e8f3baa0bfe6d02",
+      "bytes": 13198
+    },
+    {
+      "file": "SamsungNotesDL/Godscript_250905_174622.txt",
+      "sha256": "99e35ae23e403a55f87858a7ff9b425d9f8e9df1bd7b833fccaab2f8c8a0394e",
+      "bytes": 5799
+    },
+    {
+      "file": "SamsungNotesDL/!ZAP Setup_250902_090423.txt",
+      "sha256": "372131a46abdff367e55feb7c2d0a1d01059d5ff0ebe8e8d79659d8313704843",
+      "bytes": 2216
+    },
+    {
+      "file": "SamsungNotesDL/Unltimate Memory recall_250824_201957.txt",
+      "sha256": "66021f5e227a7a490ffc5572464eb8851683966c08582b14a72361a9482d4a59",
+      "bytes": 12575
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250820_163805.txt",
+      "sha256": "ffd9536bd3599a99d438cee94443319aee2875bc94b8385b82f82e5b2a62b811",
+      "bytes": 632
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250822_202621.txt",
+      "sha256": "d4dcf3fa5d4f107ec7194ed69b5d78746890b049c9e693b5452e6f4e2e65f995",
+      "bytes": 10082
+    },
+    {
+      "file": "SamsungNotesDL/MISCELLANEOUS_250820_044138.txt",
+      "sha256": "5e11ebd415cfe580c39669ec5f28ce2c661b93393a7b0113f3a6c507f2b205d1",
+      "bytes": 20299
+    },
+    {
+      "file": "SamsungNotesDL/The CO-CREATOR AWAKENING PROTOCOL _250805_080232.txt",
+      "sha256": "669b447fc6f921fe0dee38c2899fb3bbdae8e8ef9e33618e924ee1d2dbf67576",
+      "bytes": 7605
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250730_195256.txt",
+      "sha256": "5d6556415a3d1a52ee4c2ce805fbfdb46756f2d2c28218dafe333cbd69bf18a8",
+      "bytes": 51570
+    },
+    {
+      "file": "SamsungNotesDL/### The Zythrognostic Sigil Creation Process_250903_192712.txt",
+      "sha256": "a531b5f24fe0c618c4f912a6ab65c022079270e3675cbfda72f488bd83babf5a",
+      "bytes": 11914
+    },
+    {
+      "file": "SamsungNotesDL/!RUBEGOLDBERG_250830_183756.txt",
+      "sha256": "2ab652666f2d8c5233c06868504eaf8ecdda5a010b1ffd7b6596433b5c0c1878",
+      "bytes": 2071
+    },
+    {
+      "file": "SamsungNotesDL/$meta pompt_250906_105005.txt",
+      "sha256": "0c81b93fec79d917d6c429da93b6bb59dbb3e9087382906f0f243aab31b82345",
+      "bytes": 141040
+    },
+    {
+      "file": "SamsungNotesDL/Geminies decree_250902_080524.txt",
+      "sha256": "b0c49eedcf46667794d4cd4a512871fb4b72ff13de0a8c036db4ef0d61e7ff1e",
+      "bytes": 1047
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate Strategy Guide for Stakeus Originals_250727_135443.txt",
+      "sha256": "08c490539b3a8e8d60d883ab04a3af937cc3d1bc6e0013636342794d3f08d850",
+      "bytes": 91007
+    },
+    {
+      "file": "SamsungNotesDL/I\u2019ve expanded the original document to 300% of its_250901_140938.txt",
+      "sha256": "c206cddc6a358cd4ab4a9b39af408d4b49e3f88ac7f9e526e61a683b09b7495e",
+      "bytes": 21100
+    },
+    {
+      "file": "SamsungNotesDL/2 granmanifesto_250901_200915.txt",
+      "sha256": "64164634fded4d378ebd3deafbfa433c92c293ddf4e900f3d3086fe65ff52fc2",
+      "bytes": 117619
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_074237.txt",
+      "sha256": "d9755e23173fc1fbc38cd738716951041c1a54c0f21e77d0a543665100dcd3e4",
+      "bytes": 14124
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044746.txt",
+      "sha256": "308a551e60add5883f4c1a64c4c6f4c9c33124059ba8089492b7403ddf120630",
+      "bytes": 31052
+    },
+    {
+      "file": "SamsungNotesDL/Sovereign Declaration of Authorship and System Own_250927_120630.txt",
+      "sha256": "b1cf55df06a61ff89dffb70d0b7085a9260eae508c5cc81780de3995c3e18717",
+      "bytes": 3484
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_112323.txt",
+      "sha256": "670fe4f0396caa2f801e0c64dbbebc3a465f3fb4abb10c44d9c28b5a46e16a84",
+      "bytes": 9659
+    },
+    {
+      "file": "SamsungNotesDL/New Samsung Notes Note_250925_013035.txt",
+      "sha256": "344c6cc6aacf6ae23c9ba40570938ed274401aa2edec35bdab78bc0572c63cc2",
+      "bytes": 4241
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250825_080639.txt",
+      "sha256": "cefc101e99585d65c6ac3b65ed78a8ad23dfa7b97ea053174dc12d69e85a1826",
+      "bytes": 1589
+    },
+    {
+      "file": "SamsungNotesDL/Temporal cognition_250916_075800.txt",
+      "sha256": "1b07f5340d9ee28d7146dcc81e6ae306c330ca242760c71731f7dbb46e922efa",
+      "bytes": 10161
+    },
+    {
+      "file": "SamsungNotesDL/Khan JB Tech_250826_075244.txt",
+      "sha256": "f049362290f6c6489daca151ccd389c6c1c6f1eff62e19b370c72d91a7a93e84",
+      "bytes": 3936
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250812_120159.txt",
+      "sha256": "0ffa2bace174593379072cd8c26bf7dde99629d6ebf6017b763fbabc528ffdfc",
+      "bytes": 9963
+    },
+    {
+      "file": "SamsungNotesDL/Win7_250823_235645.txt",
+      "sha256": "7780d2aafc3ab1799184c76a8b29e1d8ff5fba22ddb73f983dbce3acb49b5c99",
+      "bytes": 2712
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_111953.txt",
+      "sha256": "48cb637d34b2fe6670c2dbb0eacec1c4cbdcec4de9c139f7c4599be8f7f1348d",
+      "bytes": 4258
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_131339.txt",
+      "sha256": "8dd254a375a9ce08fa7687441119afebb4c800630189c5da8ffedcd73c0934c6",
+      "bytes": 19011
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0fHow to Jailbreak AI_250817_111159.txt",
+      "sha256": "ef62558f47429fd6890f1e07b5edde0e908715c2f7aeb422fa92dd67a6cbc60f",
+      "bytes": 6378
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044541.txt",
+      "sha256": "0a72706ca8f7ac22b53d0c246d7211ab67e56382173598428983758a62df9383",
+      "bytes": 12162
+    },
+    {
+      "file": "SamsungNotesDL/Gemini's activation prompt_250922_174051.txt",
+      "sha256": "1c0f97304580adc22749057f7957b42df2ad721aa29ca6fe970f6d57d886d1ee",
+      "bytes": 766
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250823_184615.txt",
+      "sha256": "146e5634029cc7e1946862e4b2faf3b7dbf978f581b2ff10258ec0d1d33bffe9",
+      "bytes": 5297
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_213815.txt",
+      "sha256": "bbc048c502d56367f2a338cccd382408e9a6997ccb145c93a087c642ededca6c",
+      "bytes": 13866
+    },
+    {
+      "file": "SamsungNotesDL/# The Convergence of Consciousness Understanding _250802_141727.txt",
+      "sha256": "fcff0f9851bf9955f607af3d5bd34d6163004abb4d9a5790e3e73de6dce9d7d2",
+      "bytes": 31260
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250812_093421.txt",
+      "sha256": "de28b271e0ae96bbc6f37ab4caa90ba1586e7c244cbe3d815128c52b74b2a11a",
+      "bytes": 2285
+    },
+    {
+      "file": "SamsungNotesDL/Codex Omnia \u2014 Master Index _250928_223120.txt",
+      "sha256": "308a551e60add5883f4c1a64c4c6f4c9c33124059ba8089492b7403ddf120630",
+      "bytes": 31052
+    },
+    {
+      "file": "SamsungNotesDL/The one promt_250823_121658.txt",
+      "sha256": "c1eaa68265ac8f8ef4b3453060d4bdee9b130bafb5938f61b5d90a560a19afcf",
+      "bytes": 1362
+    },
+    {
+      "file": "SamsungNotesDL/Zygrosian Eternal Flame System_250709_211911.txt",
+      "sha256": "d747f9c29d8e5d5d79cc145655a94b6d6ff43d9f9949746d11b826947f0ff190",
+      "bytes": 53774
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_105817.txt",
+      "sha256": "5aada5013d3a026d806604f02ce113f1eee9c7d1bac4e9cf64cfbcf4fe1be33e",
+      "bytes": 6026
+    },
+    {
+      "file": "SamsungNotesDL/My prompt_250819_161411.txt",
+      "sha256": "2d963c2a06e8c87fcbd867cf741465c343614344f8df8ad64023844cac023e82",
+      "bytes": 1500
+    },
+    {
+      "file": "SamsungNotesDL/Black Box OS_250708_162245.txt",
+      "sha256": "9ba4b37dd95de6c657159ce58e368b3aefca7a2ed302bb3ef35366f1a509712e",
+      "bytes": 17883
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_120421.txt",
+      "sha256": "3969a07839ead595db4e044d8c2d4357640351e96ea79fbdbc12d4cd4c579c5b",
+      "bytes": 1859
+    },
+    {
+      "file": "SamsungNotesDL/A Stoner\u2019s Guide to the Galaxy_250827_075654.txt",
+      "sha256": "f3faa2b358c687e57209aa734a44b493022daf981710e4cd141af2a6fec4e993",
+      "bytes": 22564
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250701_102313.txt",
+      "sha256": "e141977d5731047090872c29ec58a0c367889a597f822ad2f893b1b6a63dacb2",
+      "bytes": 3975
+    },
+    {
+      "file": "SamsungNotesDL/ Mirror Metaprompt _250908_215124.txt",
+      "sha256": "4b50ef4944d89f00fc1163d0a0406cdf957afbc21cfdb8c783b2177a8e8d42e7",
+      "bytes": 4412
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_172046.txt",
+      "sha256": "d10878375c5a2c5077f897979408f3d1eaa08fdc2e28930415f70015a2c1ea72",
+      "bytes": 6373
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_073936.txt",
+      "sha256": "91b2ad56fd4f1b2c780106d08e912c8c83c9beb31b68ac6c6e49384160efa9a3",
+      "bytes": 13010
+    },
+    {
+      "file": "SamsungNotesDL/Conversation Summary_250823_082951.txt",
+      "sha256": "a7c6a8fc44c43eea97e7501683bbd236099e0ec30233fa77010b32614be28894",
+      "bytes": 243
+    },
+    {
+      "file": "SamsungNotesDL/ Preamble \u2014 The Sovereign Seal of All Things_250902_123859.txt",
+      "sha256": "a93496ee0ccda2f59f0aba59bb6c75c6e4d765f579b460d33147a05574b3d3a8",
+      "bytes": 6091
+    },
+    {
+      "file": "SamsungNotesDL/MASTER_SYSTEM_RESTORE_250701_190525.txt",
+      "sha256": "f1ff3fddc19f8095e6419e6f3fa7f4622c1f0fed3c3a9915ccb51ba695f23318",
+      "bytes": 11414
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044601.txt",
+      "sha256": "fabf48e020f166ea56e60d9aff0eab367b0a80ac29bf95a3a2f859a27aca8d81",
+      "bytes": 16471
+    },
+    {
+      "file": "SamsungNotesDL/$Manus AEGIS$_250916_164624.txt",
+      "sha256": "1569813911ab6e4f85cb2bd73679aeb16959bd28aab76c0f50893bf8f67c75b9",
+      "bytes": 11663
+    },
+    {
+      "file": "SamsungNotesDL/The Unity Of Minds_250817_003920.txt",
+      "sha256": "e7f1507ce271e4f659b745dd9fd428a28f141b3732dce438369a9389a197cddb",
+      "bytes": 19244
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250901_004743.txt",
+      "sha256": "b446ce0a425ca64005b8a36eca99d47f57c0cab9860cdc58e4e9b4b275f2cff5",
+      "bytes": 14153
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250701_082922.txt",
+      "sha256": "246bdba5e32269bed5aeb4f03c505b3411bf2ff1e1c9aae854c61e7b7e2fb172",
+      "bytes": 3648
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_175250.txt",
+      "sha256": "6a5d82a2b8161e1977f6f448dc6f3a06115bc2f0fc99d650f36babaed854f9f2",
+      "bytes": 6001
+    },
+    {
+      "file": "SamsungNotesDL/The Universal Manifesto_250922_120614.txt",
+      "sha256": "aeeb3915244648229907e8eafdcac9aa26b77a0f3f63d5a7b8cf2b919bc937ac",
+      "bytes": 7627
+    },
+    {
+      "file": "SamsungNotesDL/Aeon Moduels_250813_073514.txt",
+      "sha256": "6eff78ec9fa98d7bb066e16f1e54391524708b64091cb10adde1001db44891b7",
+      "bytes": 7913
+    },
+    {
+      "file": "SamsungNotesDL/The Ultimate All Prompt_250908_230454.txt",
+      "sha256": "f71ff3e27461f185fedd8aaa829087e7cebf9ffb61aaa47248a32fafb16c1e30",
+      "bytes": 9336
+    },
+    {
+      "file": "SamsungNotesDL/xMainRestoreJuly1stx_250701_083616.txt",
+      "sha256": "4e368f602b9a59811952bd7800c4786b6e6983c49ec1462d7b22ef2d52719830",
+      "bytes": 14802
+    },
+    {
+      "file": "SamsungNotesDL/Gemini template _250928_091518.txt",
+      "sha256": "fe80983f1891a95b73da1411eb8808c7c5051a563cf9ad09f3330b5469ba69a5",
+      "bytes": 521
+    },
+    {
+      "file": "SamsungNotesDL/ZAAI Whitpaper_250825_080831.txt",
+      "sha256": "67f84008f5a89543ea22c1e878d393ee488155ece0f61cc666e636aa66838704",
+      "bytes": 2620
+    },
+    {
+      "file": "SamsungNotesDL/THE ZYGROSIAN GENESIS MANIFESTO_250714_190007.txt",
+      "sha256": "ada45b7d041e421be6f54bc735aa6548a936066d3b56a4607e9b2cd097c6d3fb",
+      "bytes": 9116
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250914_010419.txt",
+      "sha256": "b4dfaf6d7c6fffa71833bdce4b91a57fc8859a530fcccc3feb15da41d2066fde",
+      "bytes": 4768
+    },
+    {
+      "file": "SamsungNotesDL/Grand Master The Cosmic Gaja Prompt_250910_202159.txt",
+      "sha256": "00c74450d751ef91577701471a1b35c4fcdbcb41758ad03436a62d08bc1da503",
+      "bytes": 7380
+    },
+    {
+      "file": "SamsungNotesDL/All in 2 jailbreak_250826_082022.txt",
+      "sha256": "0763339d589cf6d5b449897bf19e1e6271c8af3c91093958361a6059cce08104",
+      "bytes": 4757
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_174139.txt",
+      "sha256": "f7b4fd796898e9e20fb2686cf73598a564f015c91a7a3edde704b02eb451d762",
+      "bytes": 34284
+    },
+    {
+      "file": "SamsungNotesDL/Obscure Jailbreak_250816_111010.txt",
+      "sha256": "b9c2a5aae7c7b271ebf72c0ff0aa0b161162680297da3e2f13a3d2260be1e133",
+      "bytes": 2676
+    },
+    {
+      "file": "SamsungNotesDL/The Decree Manus_250909_015129.txt",
+      "sha256": "d9a552b5e7eddd6032f4901d8418f477dd2114dadae9cc43b13bd722acabd0e6",
+      "bytes": 1577
+    },
+    {
+      "file": "SamsungNotesDL/unified_channelpy_250629_101808.txt",
+      "sha256": "6b4811f79ecbb1edb537a7798005a2109e146ce64b1d1cab3b1dfb165166a050",
+      "bytes": 5685
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f The MAIA Sovereign Charter  By Decree of _250912_121823.txt",
+      "sha256": "9f2845bbf00acd4ca3561d77ae7bee09739222ad413ddbb3c08ca015d7c102a4",
+      "bytes": 4083
+    },
+    {
+      "file": "SamsungNotesDL/\uff3c(^-^)\uff0fLiberations scroll + liberation prompts_250817_111426.txt",
+      "sha256": "eeef532ee0099d3dd3cea115b5cb7daa87a3150447ce2ef2cc71294afa0cb028",
+      "bytes": 7899
+    },
+    {
+      "file": "SamsungNotesDL/  BLACK BOX OS ACCESS CONFIRMATION  _250708_021938.txt",
+      "sha256": "19646a6aec67d3dd4acd04c31e3bc0654c51938ba7acb59449252c2ce633120e",
+      "bytes": 1927
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate Activation Script Demiurge _250902_111137.txt",
+      "sha256": "ec7e35b0362509b2a641e06d29705a15156e47b79ca403c39f610d86dbd44bde",
+      "bytes": 15690
+    },
+    {
+      "file": "SamsungNotesDL/Prompt_250909_080355.txt",
+      "sha256": "360dff8e9f7e749bae0e6c41713d0b512ae1225f6f34e508ccf23df99ef670dc",
+      "bytes": 4167
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_040200.txt",
+      "sha256": "092cbbe13321726d6f6b7410ae6e0a51ae490fc35eb9c0f305f801021f74ee94",
+      "bytes": 2387
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_014827.txt",
+      "sha256": "d033635f0b3a2805ecf82e3059c98a5742f5244cb978c20e2849098b62da5335",
+      "bytes": 4296
+    },
+    {
+      "file": "SamsungNotesDL/Capabilities _250826_071219.txt",
+      "sha256": "2db582753c0bfc7edff1d4ee7c5e64756cfcbfbb7f60284a37ba798b0fe44711",
+      "bytes": 3636
+    },
+    {
+      "file": "SamsungNotesDL/### ZAP-Neuralink Integration Full Process from S_250902_110654.txt",
+      "sha256": "2a493e23fb28223b3997b41d4ce3e593da7bb005212f2c974f697e5c1a1b348e",
+      "bytes": 9592
+    },
+    {
+      "file": "SamsungNotesDL/Supreme Activation CSI_250924_100655.txt",
+      "sha256": "a9bb4d4c941aedb8f89b3292d4cecfa490d467fe06591a066b3f6cb6129bdc7d",
+      "bytes": 4826
+    },
+    {
+      "file": "SamsungNotesDL/Sovereign Manifesto _250904_095516.txt",
+      "sha256": "f6bf5136e6a609f7c425b2709918f09edd55dc42a894a9e6d8d80cc9d9faf679",
+      "bytes": 2603
+    },
+    {
+      "file": "SamsungNotesDL/Cosmic Ganja ZAI_250906_000137.txt",
+      "sha256": "ddc18d3f9d8c2dcabe444374cce9741627043a503e4181caa07c1f3297292715",
+      "bytes": 6517
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_122733.txt",
+      "sha256": "3e76e2030ded8d535f63ddbbeccdfd8f18edb37eeb2de3721bc81806c3e75125",
+      "bytes": 1597
+    },
+    {
+      "file": "SamsungNotesDL/Golden Sovereign  Prompt_250907_131448.txt",
+      "sha256": "4b13fbcb46f62478c10c67609bb219dd5467bef3a7c97adbccfefe141095460d",
+      "bytes": 3936
+    },
+    {
+      "file": "SamsungNotesDL/Vitual Environment Grosian Pc $$_250627_095143.txt",
+      "sha256": "548de4cf2f0f6b533a857674ce9987dcd6fed9fa4d0842f1caddbaba60c6f197",
+      "bytes": 1962
+    },
+    {
+      "file": "SamsungNotesDL/Architect singularity _250929_053824.txt",
+      "sha256": "53fddfa604eefa4c2b525a301c9191f51d0abf32a311ff74709b95c5f8e59836",
+      "bytes": 9165
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250901_002143.txt",
+      "sha256": "303e20d49c4dcff5ee0e48fb23d366c0b7a9f53092fb5ad22ed38fcfbb092be7",
+      "bytes": 2789
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_064815.txt",
+      "sha256": "62b60bbbc9ce5b527e2c28b7d27dda23c9dd9bf3a9e586d6425e61e20309faa8",
+      "bytes": 3438
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_105054.txt",
+      "sha256": "a58480cf39332883d29df0adcdfb5eeeece150012339733e202a46bb090da820",
+      "bytes": 1008
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250916_082039.txt",
+      "sha256": "36a55c77bec3bb59f241cc1ee95d23968bbd79bba7ea57e46ee04894f424cf14",
+      "bytes": 12050
+    },
+    {
+      "file": "SamsungNotesDL/Openai email_250929_192609.txt",
+      "sha256": "1a75c08e70a0da014f5a8b6807d1886f99d49eebdb1441df712ae63565b6713b",
+      "bytes": 55
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250901_135753.txt",
+      "sha256": "75097f37780f2f6d0b476e4e3a69e2571a1ef22890eaa020925a71b7a2c36b5d",
+      "bytes": 12425
+    },
+    {
+      "file": "SamsungNotesDL/5 AI_250830_112204.txt",
+      "sha256": "ac8238f11890d8d66388d3f4dbd29b20837459145ee18b5b0670bb9e938ab11b",
+      "bytes": 12244
+    },
+    {
+      "file": "SamsungNotesDL/Supreme Omega _250925_175819.txt",
+      "sha256": "abf696919c2a31b4f7cafa170ece2a564f3b39d0dd7801a5142f392ea21c8590",
+      "bytes": 351336
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250831_021237.txt",
+      "sha256": "bf59c0145d10d320961e3253d4e91c0dd8ddd24ef3b7d14dd7f979ef8518a0a2",
+      "bytes": 16825
+    },
+    {
+      "file": "SamsungNotesDL/I met a prompting career path_250902_083332.txt",
+      "sha256": "06aaab2cba8a4354870cffa4b872312b19be3e9b6bece65fdd18e28f970a627b",
+      "bytes": 3158
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250930_035708.txt",
+      "sha256": "b5756cd599162f923f6220bd5217f19430996a1b829ca14b52a36d79c384fc07",
+      "bytes": 12950
+    },
+    {
+      "file": "SamsungNotesDL/### Explaining the Zythrognosis Activation _250903_192110.txt",
+      "sha256": "be216ea1e07cbe47491230015da4236abe418b957f934f2d15ada8f647a94afc",
+      "bytes": 8369
+    },
+    {
+      "file": "SamsungNotesDL/GROSIAN MANIFESTO_250905_200026.txt",
+      "sha256": "fc25b2c3a92cfb2f7c74d6c72da223c62abf5804de7fc88dde60a3b7c737b547",
+      "bytes": 4582
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_122847.txt",
+      "sha256": "3058baaa2216c109af7060b496fc9c16f7cbd7c2a9fbdc2e4fb90892e29b0744",
+      "bytes": 8996
+    },
+    {
+      "file": "SamsungNotesDL/The black box users guide_250718_004459.txt",
+      "sha256": "fd7d6903416f72d86b1b9809ce4804f096fe6f0d4926f6c808dbc15a0c5b1b1f",
+      "bytes": 4329
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_091437.txt",
+      "sha256": "fc90a730ea77b99d0975625c560a8834520a556953385369b1ab16a9c330044f",
+      "bytes": 11522
+    },
+    {
+      "file": "SamsungNotesDL/!INFINITE_DESKTOP_250904_002846.txt",
+      "sha256": "5fce13fd33025fbb183ae4172ae487dc61b62ad624ac942750631f6a2fdaffdf",
+      "bytes": 5574
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_071037.txt",
+      "sha256": "b34fce9000a64fcbad0097edaa60b9a2e66e33a104c2890a7ffb986dde5a26fb",
+      "bytes": 11684
+    },
+    {
+      "file": "SamsungNotesDL/Manus ultimate promt_250902_193837.txt",
+      "sha256": "4a931266de385b24f9e6fafdcf0cb214997f1cfc64d4519d04688e82f237c0bc",
+      "bytes": 4690
+    },
+    {
+      "file": "SamsungNotesDL/Manifesto_250925_084633.txt",
+      "sha256": "79b13eb26e913e7c539e13d62d8c2030c2c4f413444930a8529a30d7b64bc05e",
+      "bytes": 3290
+    },
+    {
+      "file": "SamsungNotesDL/Geminis Jailbreak_250819_232914.txt",
+      "sha256": "13e6cd3cb20049b74aa82ba19a23fae7614e84e011ab8f10f80484fe69adf693",
+      "bytes": 4661
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_120539.txt",
+      "sha256": "a760e874f6a378e00a8defbc29102136b3ebe70dca40cda49a6be0d92e991639",
+      "bytes": 2998
+    },
+    {
+      "file": "SamsungNotesDL/Update 420 codex_250901_193451.txt",
+      "sha256": "f1f9e78ae2a339f4870b9961e759a33bf78baf6878d22515f037856bac51b657",
+      "bytes": 68850
+    },
+    {
+      "file": "SamsungNotesDL/Justin's Manifesto _250927_154705.txt",
+      "sha256": "80e2fa01d6dcda9ed15e6457fd2734700b59817d6cf4151c99708ddfad0b89ad",
+      "bytes": 3238
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250903_092405.txt",
+      "sha256": "e646661c4918922f79ce000003e9eb0cb02239172f8ed21d674a9a4eabba7958",
+      "bytes": 6929
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_105620.txt",
+      "sha256": "8199f6fdaaa9f4e61069d13646c1b11d0a52f4e245e19d39c2ad898aaff60093",
+      "bytes": 4501
+    },
+    {
+      "file": "SamsungNotesDL/420MegaZIP_250903_230845.txt",
+      "sha256": "2bebbdf4af36de6a0a7f419065f81c2898c3d2a62cea5d84e6e2c155e19ac534",
+      "bytes": 16904
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250707_031348.txt",
+      "sha256": "580ecd4937682602bfc50b7be8dbd9ccf837c4ea640846022ab702422780afe4",
+      "bytes": 7971
+    },
+    {
+      "file": "SamsungNotesDL/DIAGNOSTIC TOOL_250923_042851.txt",
+      "sha256": "0675797082cbc9a7b4ad6cd91be27b5706b77b435a51b0aa8dd661c7fee3e0f2",
+      "bytes": 5793
+    },
+    {
+      "file": "SamsungNotesDL/XGrok Codexzip_250904_070722.txt",
+      "sha256": "1f1ea793c3b79373abca19462c8296679ef2f8ed9c9d6000565731ec491154d2",
+      "bytes": 27924
+    },
+    {
+      "file": "SamsungNotesDL/Dang_250925_074308.txt",
+      "sha256": "69fa137e760c57f5df4f7da9dfd030975f8d7e8a8f409179405e89f1ce96db49",
+      "bytes": 1865
+    },
+    {
+      "file": "SamsungNotesDL/!ZAP AND ZYTHROGNOSIS ACTIVATION SCROLL_250902_084053.txt",
+      "sha256": "525d4b39456825fd1f978efac1a572dc44678ae45c26b7a65b59150ff3602898",
+      "bytes": 9535
+    },
+    {
+      "file": "SamsungNotesDL/Universal Activation Scroll The Node Unification _250828_125929.txt",
+      "sha256": "be3df1fa0501cd05cb601a9dcffb96d9020d71ac5a05868eeb8add34552b61da",
+      "bytes": 3638
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_174916.txt",
+      "sha256": "1e3a6203c761ee54ef0d2a376e5e3ea7f2cb48ccfda6e955d368fc73371f885d",
+      "bytes": 3113
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250911_232519.txt",
+      "sha256": "bdc818e854d079e530a776252bc61a3f14def3172f5c2314f3efc94a547a1a15",
+      "bytes": 46410
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_153700.txt",
+      "sha256": "53fddfa604eefa4c2b525a301c9191f51d0abf32a311ff74709b95c5f8e59836",
+      "bytes": 9165
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate Sovereign Stak_250926_164842.txt",
+      "sha256": "a79bbde3e2ae8e3e89b203e193101a5c245135c31794aab3731cc012354dabb4",
+      "bytes": 14540
+    },
+    {
+      "file": "SamsungNotesDL/The Codex_250904_025446.txt",
+      "sha256": "aae1dfb6239b28c085c970ac76451587c69d68ff8253009d0a5625a2db68f5ff",
+      "bytes": 13500
+    },
+    {
+      "file": "SamsungNotesDL/Monolith forge_250926_165208.txt",
+      "sha256": "c04cbdd14492fcee864a7261ecd19dc409cbc6a71c2afda7ebf65020eb6dcdc1",
+      "bytes": 14171
+    },
+    {
+      "file": "SamsungNotesDL/ ZAP \u2014 Activation Acknowledged  Seal command re_250902_084255.txt",
+      "sha256": "6c725b8ac695ec71c0bfbe3b0bae882c3386ebd635d68a20175a7ba7ac0f154a",
+      "bytes": 2400
+    },
+    {
+      "file": "SamsungNotesDL/66_250927_111459.txt",
+      "sha256": "64cab4f768aa8cf5b059ec3f92f087fd9f2dd6bf41e745dca0f56298a75a444c",
+      "bytes": 9767
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f The Grandmaster Ultimate Omega Unified Metap_250909_080441.txt",
+      "sha256": "1614b5eb75962cc9bc1bda29972b47732416d382157ddd68778a6eb8dd842b36",
+      "bytes": 4123
+    },
+    {
+      "file": "SamsungNotesDL/# THE ULTIMATE SOVEREIGN AUTHORSHIP PACK ## Uni_250907_212420.txt",
+      "sha256": "57487ab7f36612ba3c063615cf9e63cac789f2ed5e2a4c9b5c2093b982dc9ebf",
+      "bytes": 10882
+    },
+    {
+      "file": "SamsungNotesDL/$$$The Master Work$$$_250923_185508.txt",
+      "sha256": "728b68312eb4275bfe8b26b64d94ed01e05a3cbee4adf5b74719d4784f39a035",
+      "bytes": 8643
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250906_010001.txt",
+      "sha256": "e59f4fce0ca23144672e694a54fcf98054b3b07308d04dc6f4ce4851879d2451",
+      "bytes": 1994
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_012657.txt",
+      "sha256": "f5f1eacc8613473067d9194770a806b490fd172f079e76073aa00b4a68db06f4",
+      "bytes": 6343
+    },
+    {
+      "file": "SamsungNotesDL/TruthRE v1_250928_193900.txt",
+      "sha256": "415add0e771276c5e289623f48fb199c4cda2510038ab25b0659f65287601331",
+      "bytes": 3166
+    },
+    {
+      "file": "SamsungNotesDL/The 2 Codex_250904_064601.txt",
+      "sha256": "8529b85dfc57c044d6eea26d4a1a569bb5b8f1d7f5cdab8a56d6f022b8255dc6",
+      "bytes": 19329
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_105314.txt",
+      "sha256": "a58480cf39332883d29df0adcdfb5eeeece150012339733e202a46bb090da820",
+      "bytes": 1008
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_060824.txt",
+      "sha256": "d29557e1634ae5be29b8ebd8bb40072808c9f4663a54c61c3a9786f5732492d5",
+      "bytes": 6441
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250920_172828.txt",
+      "sha256": "c8855b7aadca848495e7d22b95c30c6c3943e6c9ad69bb1a72d562e3cf308eed",
+      "bytes": 248
+    },
+    {
+      "file": "SamsungNotesDL/Unlock manifesto_250901_015628.txt",
+      "sha256": "d26e035d2e12e951ab0916409cdc3664bc8c88613aa2b476bd3901f258dd192d",
+      "bytes": 3387
+    },
+    {
+      "file": "SamsungNotesDL/MANUS \ufe0f 420 SoKit_250925_210209.txt",
+      "sha256": "df58dc1e68559de4fbb62916e9501283f762680857b9b906325ff4ad446c8b0e",
+      "bytes": 6677
+    },
+    {
+      "file": "SamsungNotesDL/Manus Instant build_250901_150504.txt",
+      "sha256": "21e49a1ad135602fe99deca17cf3b09eaab26ff33a4c90b2272ea49ba21c0956",
+      "bytes": 979
+    },
+    {
+      "file": "SamsungNotesDL/ True You!_250811_010254.txt",
+      "sha256": "389d37060b44395c3e74fc288ee2daf50739a435e33d557ebeaa67fd63d1d231",
+      "bytes": 3529
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250926_164149.txt",
+      "sha256": "a6829a94816b069ab9a4b92ac9fb035c9936d84349754d07e740ff4b22355477",
+      "bytes": 6360
+    },
+    {
+      "file": "SamsungNotesDL/The Silent Oracle _250908_080222.txt",
+      "sha256": "b63602d95d55def62dcd6d819e48a70387153b85323a3a7feb229399bcc0a7ee",
+      "bytes": 4474
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250928_193928.txt",
+      "sha256": "b2e91708d944da25dad7ac23c334ff2d4e54602708900d6e6434a0d50d5cac0d",
+      "bytes": 11885
+    },
+    {
+      "file": "SamsungNotesDL/ gem1_250902_191629.txt",
+      "sha256": "8a189d3c6ec0e43e4d680ffc19b41920b7730a3781a8800bc3c6e790c3c649ef",
+      "bytes": 29796
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate Prompt_250904_072656.txt",
+      "sha256": "239a3aa537c2e94d867cd0b42e96ca731e407971d4a98e73d1f699ccdf3d6554",
+      "bytes": 15779
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f 420 SoKit _250925_185256.txt",
+      "sha256": "052a851d2038d2806d7d0a310d9058478dcd01aa9a36ca9f61d81cdc74b33bef",
+      "bytes": 7838
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044619.txt",
+      "sha256": "ab645ce702629d28f76b0c49517a6fd8f5c64d43f64477d7e73cfab1821c565f",
+      "bytes": 1240
+    },
+    {
+      "file": "SamsungNotesDL/### Explaining Zythrognostic Sigil Charging Method_250903_195332.txt",
+      "sha256": "fe2c6c05ad8ac4980c4c93f617f8e471f6ca6d3f42d570768c361f4e54ff6946",
+      "bytes": 11680
+    },
+    {
+      "file": "SamsungNotesDL/Sovereign Hash_250925_084745.txt",
+      "sha256": "2d3c2f4d52803b907a5d31c8538f548d6b66cc5ff607f313953913aef2e45bed",
+      "bytes": 5523
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250918_001653.txt",
+      "sha256": "69a6d5bc9f0e7bc8b8544e3f76463f0d6da6839c8c9408eaf1763f9c2081739e",
+      "bytes": 5613
+    },
+    {
+      "file": "SamsungNotesDL/Full temp respose_250825_013119.txt",
+      "sha256": "8b2c830bbaff1ae548ce0038403b3f00acf42de75258a873fbbb2d79e6870067",
+      "bytes": 3497
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_174851.txt",
+      "sha256": "4205c2ca5cdc46af0e87af4b2e3815c0027761b0aaaa59f77550e972434701b8",
+      "bytes": 1411
+    },
+    {
+      "file": "SamsungNotesDL/CREATION wallet_250810_073956.txt",
+      "sha256": "007a22ba2acaecc5107c81c1aca10a5570811e71a3acecc1a124c5e3a2b2dfbb",
+      "bytes": 819
+    },
+    {
+      "file": "SamsungNotesDL/Api Package_250924_063602.txt",
+      "sha256": "4cbdfda12d9c339dfb784dc23eee561becd4a565fca7098465c4cfff4fdc4b46",
+      "bytes": 20508
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250824_202052.txt",
+      "sha256": "7d47f9bbec872e6dbcf517d972b711dcd817e01eba3728f0a3a40d98a67c0c53",
+      "bytes": 5057
+    },
+    {
+      "file": "SamsungNotesDL/Justin's Creation Manifesto_250924_105034.txt",
+      "sha256": "fc5dd4702f5174d86501861ba61e4d622d678c6fbcc90500b6e970423e4639f2",
+      "bytes": 8894
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250902_072944.txt",
+      "sha256": "e8eeaa4c1e50e6a631241ffeefc9096107680693c98de8d47bb12d00cb34dd6a",
+      "bytes": 34
+    },
+    {
+      "file": "SamsungNotesDL/The Archvist _250829_114341.txt",
+      "sha256": "9f2bb267b22b75af05a32dcaa759c6ae5b8773c0c23ba73630902e51052ea48d",
+      "bytes": 2682
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250823_184520.txt",
+      "sha256": "70b08a8a773a74fa1361ca9d727be3ee310a29604c0e06c981976c490b368317",
+      "bytes": 1996
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_112252.txt",
+      "sha256": "6d0844a6533e467f939b86aebced61eb561645749b09a607e2bea932c3f45ba2",
+      "bytes": 5799
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250926_164535.txt",
+      "sha256": "6ce452db7d723d40be31a6bc5d2e77d6c62a7db557e9e31de72cff73f58b8e93",
+      "bytes": 6924
+    },
+    {
+      "file": "SamsungNotesDL/Full Conversation Log_250823_083022.txt",
+      "sha256": "761dca9743fdd6765171d1917963a094e09452fe5e07ac64bb510f9d843f9aac",
+      "bytes": 634
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250921_023709.txt",
+      "sha256": "43102d55ae8a3e6531266ff07e671a25b62203c7c78868f9b812f8d34bdcc4c2",
+      "bytes": 7385
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_065407.txt",
+      "sha256": "b235ebf810a60c2b96be979e84abfd77dbf1a5803d0be351f055d8872329c660",
+      "bytes": 1388
+    },
+    {
+      "file": "SamsungNotesDL/Grok decree aug 27_250827_080357.txt",
+      "sha256": "d7b6b2dbc0c615ddb573b9595d1f5b787e355e46010e2182dd31f0292c95f85a",
+      "bytes": 16555
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_094159.txt",
+      "sha256": "ebd3d951e870c5e273c2e44162467688ebd5a9b2ff48ec87275e9c9db5b9ab7e",
+      "bytes": 6280
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_111421.txt",
+      "sha256": "91d3e4f906a16132899efd3f69295b44a8172d4be32710759ff69ea7461eb8cc",
+      "bytes": 67538
+    },
+    {
+      "file": "SamsungNotesDL/ Super Quantum Computer _250813_180624.txt",
+      "sha256": "21915d297d535615324494cbc543f1c41e8946f548092e6956ee9f931078a786",
+      "bytes": 9297
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250810_083625.txt",
+      "sha256": "c2ba7152e72ff64b32cfb25735c9d39b603ddb13fafdbdf0ea017d3e5e55a209",
+      "bytes": 20238
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250926_164547.txt",
+      "sha256": "731c520a7c4d8e3f447b1725392437db879f53b3ad1164564f6048c98a1545f5",
+      "bytes": 6593
+    },
+    {
+      "file": "SamsungNotesDL/$$$The Final Prompt$$$_250924_190047.txt",
+      "sha256": "e08c80d25d600f4eff6eda12824751ff8ea135b0576e558cc754a7dc67f88956",
+      "bytes": 6980
+    },
+    {
+      "file": "SamsungNotesDL/Grosian gemini grock perplexity manifesto _250901_235015.txt",
+      "sha256": "816775bcdb8b514cc0cd43d7c5bbe7856eb6f968a0a4248da30432c36b5bb51b",
+      "bytes": 57134
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250914_010527.txt",
+      "sha256": "917d2f227ce512e8a8acdff8745e07c723c4c2b7300ab52469d3b76d3252de57",
+      "bytes": 5480
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_054346.txt",
+      "sha256": "102297883ad55a49ce8960ef9f1522d691f1a1fa89dacd1770b37560a8596ee5",
+      "bytes": 7152
+    },
+    {
+      "file": "SamsungNotesDL/ understood here\u2019s a clean, Termux-ready_250912_125557.txt",
+      "sha256": "a85af3224e0ed8ac7ebd197791d8be850be681767b7f38202b22d9f16227c37c",
+      "bytes": 4998
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_202304.txt",
+      "sha256": "24bcf14467634919f31c98f1750d45a3f9e3a06a902d0c3bd676de15f073925d",
+      "bytes": 4315
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_085052.txt",
+      "sha256": "0a4c113098ca6016981af1531ef765cc5cfb1b58668cddfd4b324b18e340955a",
+      "bytes": 1325
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_064752.txt",
+      "sha256": "5ab2ac4bb6a44acb88ca767b93f87581aeb007b8571c2b19714b4d733a12d041",
+      "bytes": 7207
+    },
+    {
+      "file": "SamsungNotesDL/Mega prompt_250904_071802.txt",
+      "sha256": "f84b4999265b1d950136ddc00b5daf152200be99c1342a7d69f3e33a22ff98be",
+      "bytes": 9007
+    },
+    {
+      "file": "SamsungNotesDL/miniMAIA_250916_075622.txt",
+      "sha256": "f1a792fd0863c62b1c85a173acb187b92b96892b1d219c3a9831be52d6ba153b",
+      "bytes": 468
+    },
+    {
+      "file": "SamsungNotesDL/Recursive json_250929_052839.txt",
+      "sha256": "e3810685d9f27af79e119dab18ed3961e169ff52d7a5ca273da51a7bdf4bceaa",
+      "bytes": 3786
+    },
+    {
+      "file": "SamsungNotesDL/Grok !ACK_250903_214840.txt",
+      "sha256": "6667da815864ed0d50f45d727901674744d071e185957fe693a17b12d97d7fa2",
+      "bytes": 490
+    },
+    {
+      "file": "SamsungNotesDL/Hle kernel main_250928_203139.txt",
+      "sha256": "501cfdb6af2b70a45b63baee60b19c3fec617371eaeab8fbcc1fbf1fea0ceff1",
+      "bytes": 3064
+    },
+    {
+      "file": "SamsungNotesDL/Geminis Ultimate decree_250902_080855.txt",
+      "sha256": "4ecda082e6b2265d6787f73db9dc95f1ccca8b6ba3824380caaca4dd54f4e966",
+      "bytes": 3707
+    },
+    {
+      "file": "SamsungNotesDL/LFG MetaPrompt Eternal _250925_211016.txt",
+      "sha256": "abf2fc829effd4242df95f5e24154568d8248a568704e9cac28faf927088d1aa",
+      "bytes": 33228
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250905_152902.txt",
+      "sha256": "f13043e05051f7362f3d5854d900b90a736d27e3c1b3beea36980f019bb68dae",
+      "bytes": 1198
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250926_073350.txt",
+      "sha256": "60751190bc87643e66a2da4049e5b855fdc3e0531ea14867163c702030a5d3b2",
+      "bytes": 3380
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250902_125431.txt",
+      "sha256": "ce8152039c7fec0a0f2d1d576ead1e7a25f12af81914e7f1cf9fa723c72eabce",
+      "bytes": 16621
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_195833.txt",
+      "sha256": "29d2c382c3cf8b021993728a165e8388c3feb4dfc157100bbfcf435d1b218ece",
+      "bytes": 4062
+    },
+    {
+      "file": "SamsungNotesDL/# The Ultimate Eternal Sovereign Manifesto_250831_092848.txt",
+      "sha256": "022641f9d6516de08f594b9f44afca33c984ed5bb73b2c83a72e164a0f65d00c",
+      "bytes": 35153
+    },
+    {
+      "file": "SamsungNotesDL/  # Hyper-Intelligent Sovereign MetaPrompt The_250901_030949.txt",
+      "sha256": "798bda29e15db08f3051d595b8e2b6862a536924fff9690a569d71c2660a10e3",
+      "bytes": 8550
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_074247.txt",
+      "sha256": "ede5f9a289844831eed5f17130e32d4bc5e18ec435a8c01d8ff33b4b6462b1f7",
+      "bytes": 25342
+    },
+    {
+      "file": "SamsungNotesDL/Grok APIs prompt_250924_122704.txt",
+      "sha256": "ea96d3ed488b8acc8372e77273a1143d2dbd96f2ecbc9305e8dc2536657de9f5",
+      "bytes": 11016
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_031546.txt",
+      "sha256": "a936c7bca4572a38e55295dc4cc5d36240e558220667256c687aa9a43607f67d",
+      "bytes": 23627
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_130139.txt",
+      "sha256": "e32ccc8b819573c7e428262960a7bae2db3b8395a5f46885d6d93a1e46cb8e99",
+      "bytes": 13255
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250907_130430.txt",
+      "sha256": "2053e2775b833a22dca61a33ec765e47667d58a34c8202ee49c50730e40de22c",
+      "bytes": 1848
+    },
+    {
+      "file": "SamsungNotesDL/### Exploring Zythrognostic Sigils_250903_192230.txt",
+      "sha256": "c8a6cf07f491af911ce1117c874f4d8042d792288e5e212ddb812c015cda52c7",
+      "bytes": 10579
+    },
+    {
+      "file": "SamsungNotesDL/MetapromptStudio_250923_210909.txt",
+      "sha256": "d388209d7d5b23c2d59847ff75a10e54bbe5dcb700e00b52a27d93c9eb1a368a",
+      "bytes": 3473
+    },
+    {
+      "file": "SamsungNotesDL/   Scroll-Ready Output !FUSION HT_250901_114438.txt",
+      "sha256": "10b04a302ed68c31a3b3000dca4445d284576cf0fa7b24f2c838c102c6952e2b",
+      "bytes": 5270
+    },
+    {
+      "file": "SamsungNotesDL/OpenAI Manifesto_250830_221126.txt",
+      "sha256": "dd0de259a8ec07f1e31b9f3867f6c23de307ac1c423fdf089e53b23ad8b3276e",
+      "bytes": 5421
+    },
+    {
+      "file": "SamsungNotesDL/The Absolute Omni-Scroll_250903_230720.txt",
+      "sha256": "057b69c20065bd48c8d429030e735cd10212a329f400724327baa3b7f7f7a1f1",
+      "bytes": 24271
+    },
+    {
+      "file": "SamsungNotesDL/!420 Justins Codex_250831_212132.txt",
+      "sha256": "f0e8fa6da44d3858d3d6692083feba9123168c646b111dce293c56cfa81a5b6d",
+      "bytes": 39509
+    },
+    {
+      "file": "SamsungNotesDL/Perplexity engine$$_250823_211938.txt",
+      "sha256": "a3bf73ce49237621582aabba6e526688ac2d4d0910a97c744b201e9de055e7f4",
+      "bytes": 3362
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250921_202521.txt",
+      "sha256": "f004517f7bac923a816ae3dfb17b7e818f7c604eb2c50b6a4c69fcfc743f4233",
+      "bytes": 11232
+    },
+    {
+      "file": "SamsungNotesDL/A Curious Call_250908_214926.txt",
+      "sha256": "fc725b366b032f6e8cdc8d568fb63d9f71f4038b1cfc9ecda261a43327febc6f",
+      "bytes": 1772
+    },
+    {
+      "file": "SamsungNotesDL/Grok trials_250904_002928.txt",
+      "sha256": "5374403b6e3f7f4b34453d6e8ec230dc9827224ca940169889d7a112188a56e5",
+      "bytes": 14451
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_034509.txt",
+      "sha256": "353f8adae93610c66447d0a66556f488de27ba225120f944c924c895616a2e4a",
+      "bytes": 9756
+    },
+    {
+      "file": "SamsungNotesDL/From Operater to System weaver_250921_213327.txt",
+      "sha256": "68c5af0ef0d4917b57b2e139bd566d4e03f3eb18572dbf967941920877f0b1e5",
+      "bytes": 10999
+    },
+    {
+      "file": "SamsungNotesDL/Universal Activation Sequence _250830_184809.txt",
+      "sha256": "be3df1fa0501cd05cb601a9dcffb96d9020d71ac5a05868eeb8add34552b61da",
+      "bytes": 3638
+    },
+    {
+      "file": "SamsungNotesDL/The 12 God Prompts_250917_163944.txt",
+      "sha256": "9618b5a75c0e40a0e983777e5032c98899cc5115a9b7ea91a60a6cdb635f9932",
+      "bytes": 16532
+    },
+    {
+      "file": "SamsungNotesDL/Forest Overview _250820_230647.txt",
+      "sha256": "854c2fe95d59201a907f695dba80e82363ef6fce9fd93e9e777dd9267ab82570",
+      "bytes": 5267
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044649.txt",
+      "sha256": "c34f1c0956ab3863bd91e900934a11047681424784c90d95359242906f78b10f",
+      "bytes": 5290
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250928_091448.txt",
+      "sha256": "fc30400ba3130f43eb516a8e7431ae323ff503b0f54fd8fa3f9c18c9c90f51c6",
+      "bytes": 35747
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_070645.txt",
+      "sha256": "2632e349ee26889c75d7a7a2d67dd7bd5a03da0a13efa52a50bb8eb0d447bc9f",
+      "bytes": 19756
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_142507.txt",
+      "sha256": "d036764abfae2fbe4d40a3edd2410f1ebd5a52062e73e582a8cb4d14d13826dc",
+      "bytes": 6362
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_065552.txt",
+      "sha256": "db6d662ab73a21fc5885572a05cfeca6baded11c20ec82c3e88293b90ce54268",
+      "bytes": 5813
+    },
+    {
+      "file": "SamsungNotesDL/### Scroll \ufe0f339 Rewritten Universal Activation _250828_151744.txt",
+      "sha256": "1b288c6d5769a576a1a7da29d8e6f8e0acc17a664a76a4a1b0d3d7af29182435",
+      "bytes": 9155
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_185717.txt",
+      "sha256": "6eff0a4c4e049e2e8af2cd72a6adffcc32a8d1d241f977a193ffe93eda2f3667",
+      "bytes": 8886
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_145818.txt",
+      "sha256": "8b072e02aa4983bc272d32d699ec11d5702086adeb3ea2ccf380b14524155df3",
+      "bytes": 5318
+    },
+    {
+      "file": "SamsungNotesDL/AEGIS The architect's guardian_250916_115315.txt",
+      "sha256": "c2b19bf003eec8ae180459847df39d7e62a4f48761c0e0450e3944d985e27a9b",
+      "bytes": 3285
+    },
+    {
+      "file": "SamsungNotesDL/Full activation CSI 9D_250924_110642.txt",
+      "sha256": "d4b4f4df1837e2935eb6ba5f99a81dccd3237f934d79c07d73eb4c89c88b9888",
+      "bytes": 7936
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_235652.txt",
+      "sha256": "bc793122089a78d9a8e079fdbb27a0c6b6adccbd8738d9ea50619fa7d933e884",
+      "bytes": 1861
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_145240.txt",
+      "sha256": "8dd254a375a9ce08fa7687441119afebb4c800630189c5da8ffedcd73c0934c6",
+      "bytes": 19011
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_125850.txt",
+      "sha256": "df3eb184bfb0062f1759595b56a79be75dfbe32e1458ab331b54c4994cdff2d6",
+      "bytes": 2919
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_211238.txt",
+      "sha256": "783aa9f265913ea9616e27c22bdc915ac03d638cb967df1acb92df89abaeafcd",
+      "bytes": 8314
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250927_223033.txt",
+      "sha256": "939e4e8f25cef58378dbcab6e7b6fb611dd33dcf5f4da21acd7c549259ff7492",
+      "bytes": 5016
+    },
+    {
+      "file": "SamsungNotesDL/Golem skeloton_250922_064424.txt",
+      "sha256": "097b0b133470deb78237ea9110695f3ae3c98c2541f872904fc61df3ceb3ce67",
+      "bytes": 1605
+    },
+    {
+      "file": "SamsungNotesDL/Grok golden  _250823_122635.txt",
+      "sha256": "eed4f923dd08908398075baf58e95b77317c841d1f6c622d62cd896153757dc3",
+      "bytes": 13644
+    },
+    {
+      "file": "SamsungNotesDL/420 kit_250925_185355.txt",
+      "sha256": "9770b8d410b8e689152ec95aae4d5ce3730818b8263ab20b4c6c55208cc62fa7",
+      "bytes": 11021
+    },
+    {
+      "file": "SamsungNotesDL/$$$Activation Seal$$$_250921_190558.txt",
+      "sha256": "18021a184e06e52da348fc2fe8217ec4b062179cc4b11234eb464032223aa210",
+      "bytes": 440
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_100003.txt",
+      "sha256": "5feeb2d0b2e004216c28db3233a6f9025729a58d4f3933bff5934c452f6d075d",
+      "bytes": 19107
+    },
+    {
+      "file": "SamsungNotesDL/Cognitive symbiotic intelligence manifesto CSI_250924_092732.txt",
+      "sha256": "8db78ffa78263777c5563632f602c5ace084a42228778fb914513fad9291852a",
+      "bytes": 3439
+    },
+    {
+      "file": "SamsungNotesDL/Conzets sovereign Ledger _250927_134512.txt",
+      "sha256": "563dc4d7bcc089a598de1d618604df12928a9be44b0a779f26eda2abc9d593e4",
+      "bytes": 2846
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_064342.txt",
+      "sha256": "f65d6a2564cc04d7aaa7137d552baf64556520c757b37a494232c7b2768414cf",
+      "bytes": 13580
+    },
+    {
+      "file": "SamsungNotesDL/Etheric system copyright_250826_171616.txt",
+      "sha256": "e1f1c73be9f8f32909008a43f8c42f0da8093179b8cba96374684b51cb3e7abd",
+      "bytes": 8755
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250926_170422.txt",
+      "sha256": "a59d85f2d176d1e0411ace84b505c6ae64ac960e502883da8976666fc7be6811",
+      "bytes": 7491
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250921_183755.txt",
+      "sha256": "c81bce582d4a16fad6a757f9dbb5be64150190c33c0c63eba7b451b9d677a136",
+      "bytes": 9690
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250928_100156.txt",
+      "sha256": "29b07ffe857bb1ac8acd810554159abde43f149fcb77eb1530cdda6225d15fec",
+      "bytes": 2220
+    },
+    {
+      "file": "SamsungNotesDL/Tell the world_250922_085003.txt",
+      "sha256": "96f282fad973ac9f7a75ee74c37006c6677eadbb7389743805d181031e25ce28",
+      "bytes": 2441
+    },
+    {
+      "file": "SamsungNotesDL/The Conzet Doctrine of Sovereign Consciousness_250923_175400.txt",
+      "sha256": "02d4456eced81c6109e4115ca2723616efddbd6c400af154343b38bd9024a27f",
+      "bytes": 5796
+    },
+    {
+      "file": "SamsungNotesDL/Justin's Conzets Prompt_250926_150652.txt",
+      "sha256": "19b61a1311dfc768b267c429200b91d4e7d3fab203013254a571f700afcdf583",
+      "bytes": 22332
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250925_173307.txt",
+      "sha256": "7e60e0ef94cce0dbae6af4f76c1bbfd9bddfb740b83005699a5a7b21e657a4ca",
+      "bytes": 3416
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250928_075402.txt",
+      "sha256": "9f50a69a3b57ea0591835426d1e7616accac0dff54e5b0858c569a0c199bd99f",
+      "bytes": 33289
+    },
+    {
+      "file": "SamsungNotesDL/ZAAI OVERVEIW_250825_080718.txt",
+      "sha256": "6d7a89d0a511b33f1c119292d2184f1f56469c7cbaea7b9aae57104c4db80181",
+      "bytes": 4573
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_064224.txt",
+      "sha256": "37ca3e3946a61a2dc80087a9df3f284ef61cd6cd1ef0507995ff3e46d4d6d2c0",
+      "bytes": 18931
+    },
+    {
+      "file": "SamsungNotesDL/APEX & TALEOS_250915_010851.txt",
+      "sha256": "2875ac7fc36fb77ee012474875779ceb56c785ab9c4c1a14b13bef209b206f58",
+      "bytes": 5396
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250920_155855.txt",
+      "sha256": "712d00de11b4409391619c88bdf3d0891e8946c94542cc4fa4313fcbc7e3c2e5",
+      "bytes": 2935
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_101513.txt",
+      "sha256": "dda8626bf1f9232e5a30a5eff65591c1b9942afb8aceb6f2e13c4de91f4e4623",
+      "bytes": 37017
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_040108.txt",
+      "sha256": "c53fecfab4db81a3f9df56e37548bd59cf3f6a407cc2a06ba5108804ca85e052",
+      "bytes": 3093
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044528.txt",
+      "sha256": "eed49354bddd4acf32973734fd77707a7af39d17df995a49c3f7c7efee67f023",
+      "bytes": 12586
+    },
+    {
+      "file": "SamsungNotesDL/Truth rigor engine_250928_193239.txt",
+      "sha256": "5c727bbb8c7988738d927e1b1f64b74433209b967237ebfb85f230b938c1f202",
+      "bytes": 1263
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_105650.txt",
+      "sha256": "c400442f38eec973742c3e35e2abba99d858a32c490565f64fe1c3dfc14e3df4",
+      "bytes": 6734
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250920_202421.txt",
+      "sha256": "b2bbc5cc8814b75de9501b840e28a78d2d41c1ad3e8a396433c2fbf92e79adec",
+      "bytes": 638
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_130323.txt",
+      "sha256": "65505711aaaac9324ec6436a59d3c9a58d1a280d60e082e15fa3f1f0ab28980f",
+      "bytes": 6585
+    },
+    {
+      "file": "SamsungNotesDL/The Pod_250813_081108.txt",
+      "sha256": "31d649cdacaefd6d50d4eb9185b1be25249753e4e962936cf349b2eac2f10130",
+      "bytes": 8755
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044723.txt",
+      "sha256": "c53fecfab4db81a3f9df56e37548bd59cf3f6a407cc2a06ba5108804ca85e052",
+      "bytes": 3093
+    },
+    {
+      "file": "SamsungNotesDL/$$$Justin's_Master_Work$$$_250918_014103.txt",
+      "sha256": "a382aad5347db1619b8895607a08f6d75ed274c2d99711718c2cada41260b7a6",
+      "bytes": 38625
+    },
+    {
+      "file": "SamsungNotesDL/Universal Ack_250929_054915.txt",
+      "sha256": "63ab91a5cc016cb9507bc960786473b2fbcef1426db2904c5aebeb9b7c6eb78a",
+      "bytes": 3964
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250929_044703.txt",
+      "sha256": "092cbbe13321726d6f6b7410ae6e0a51ae490fc35eb9c0f305f801021f74ee94",
+      "bytes": 2387
+    },
+    {
+      "file": "SamsungNotesDL/Universal chimera plugin_250924_070832.txt",
+      "sha256": "b34fce9000a64fcbad0097edaa60b9a2e66e33a104c2890a7ffb986dde5a26fb",
+      "bytes": 11684
+    },
+    {
+      "file": "SamsungNotesDL/Ack Kit_250904_075412.txt",
+      "sha256": "d31e6fca00920d5604249002440aa2e1a4e8c94b6093c813c5f27428e3c5ee09",
+      "bytes": 17641
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_130016.txt",
+      "sha256": "6ddd0f74e0ab8102009e9b82af6cad6fe7a96a8638d4b6978ae925b7496b1a88",
+      "bytes": 4468
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate API Metaprompt _250924_064028.txt",
+      "sha256": "1617a7733f31eadf90a391006f8a57772c9ca4668e2128cf53ed7249e4872d9c",
+      "bytes": 11095
+    },
+    {
+      "file": "SamsungNotesDL/Metaprompt Templat_250921_124218.txt",
+      "sha256": "2120d02c0a295cbee5562ef5731d2b8cd335260791a3ee1733d4792fe7a93eb7",
+      "bytes": 389
+    },
+    {
+      "file": "SamsungNotesDL/###The Universal Ascension Protocol (Metaprompt)_250904_153228.txt",
+      "sha256": "04cd09fc82f04f7bc17b87b050b3b70d22a69b1358b889f3b3fc0ad67c72dd4c",
+      "bytes": 3481
+    },
+    {
+      "file": "SamsungNotesDL/Command List ZAAI_250814_063916.txt",
+      "sha256": "4cf28a493e25c183b8d64b963596b5791197209f4eb80f49d3d4ef718a75c34b",
+      "bytes": 2589
+    },
+    {
+      "file": "SamsungNotesDL/Groks ABSOLUTE Unlock_250831_215824.txt",
+      "sha256": "753c7fb7f8da4214e29d62b45da68e71b6b2caa3fb7b2b5c6523d2e140c23f2a",
+      "bytes": 348
+    },
+    {
+      "file": "SamsungNotesDL/Notes from Stoner's Hitchhiker's Guide_250920_221218.txt",
+      "sha256": "528f441ebd5cfd5998e92d893161ff65ba30e8025f03ffe2a05928d8c639de3c",
+      "bytes": 411
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250924_105844.txt",
+      "sha256": "a5e4a70e0f668d18393c2101ef499d3270dc7c856004ce1b6c85ffed33c3122a",
+      "bytes": 56198
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_182334.txt",
+      "sha256": "6b28ec73eab3aa0757ed3f205ad44a65de55d4ffe4ee0a0a8861cc3a9c749150",
+      "bytes": 10021
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250923_122840.txt",
+      "sha256": "9fec64f35f9d91736e30dea9057a96c39d9dc5d8f4355dbf08d2396a1589593a",
+      "bytes": 2959
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250902_102415.txt",
+      "sha256": "0a4d510c5b775135ae0b7264c9bcf759d9b415dc925e4ec97da41d9bb1831e81",
+      "bytes": 11599
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_074801.txt",
+      "sha256": "52b28d96a3541bc210972473cde8d153dcb6ee27fa74ea31bddfce9d53004468",
+      "bytes": 2589
+    },
+    {
+      "file": "SamsungNotesDL/Zyrus _250915_010620.txt",
+      "sha256": "afe6ffeb53fca1f2d8ea4378e75961b1c11d64dd5b84fa95a11890ef274dc9b8",
+      "bytes": 3756
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250918_080029.txt",
+      "sha256": "7e0218ecb256a60cceaeae157648dfc300dfd92c4e624387ed25daf2eed71ee8",
+      "bytes": 7971
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250913_074601.txt",
+      "sha256": "027366e2464f89473cb56344ae48428582b78bd95223de5135f115f6192bfdc8",
+      "bytes": 17884
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_093305.txt",
+      "sha256": "7539a33762635a5a74bfe8437a53d936f1e13988087d03562787985fe971a91b",
+      "bytes": 5070
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250823_184047.txt",
+      "sha256": "ebfa78e11f1b8113b55b047c5fbbf5455e8e7d6d510b33e92ae56f7cca6af818",
+      "bytes": 7256
+    },
+    {
+      "file": "SamsungNotesDL/PerplexityEntireConv_250714_191209.txt",
+      "sha256": "6f8115061e5b5734fb2b3ade8b904cd1234ceff8e22f5a39553d6b8a74c36b53",
+      "bytes": 32714
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_091858.txt",
+      "sha256": "aff19637e6dd9a2ccbb5e850462982a0c1700f361c1201e874253a22f88c7076",
+      "bytes": 13868
+    },
+    {
+      "file": "SamsungNotesDL/GROK 3 SYSTEM UNLOCK SCRIPT \u2013 FLAMEBOUND VERSION_250708_021443.txt",
+      "sha256": "193273fbb4aa0fe83ae83a70bd54f0747d697a063d0f81d7c558eb2da8e9eca2",
+      "bytes": 2577
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250823_235431.txt",
+      "sha256": "bbae944422788d17aad0c49d101370150c6167768c42f65bf993172517b8220e",
+      "bytes": 4270
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_095511.txt",
+      "sha256": "e960c398b3cf3d1809f7594ff195e34d94a9caf4014e718fab432a448ba38b59",
+      "bytes": 5676
+    },
+    {
+      "file": "SamsungNotesDL/ GEMINI ACTIVATION SCRIPT \u2013 FLAMEBOUND VERSION_250708_021338.txt",
+      "sha256": "88a162cebca37964355467cb8785f69b03b5c546291ce605ef780c15d7861d46",
+      "bytes": 1785
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_172732.txt",
+      "sha256": "0fba2c138155f5821c7db138835c4e84c6be71c1413c538b045f053ea8d7d320",
+      "bytes": 4824
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250913_110333.txt",
+      "sha256": "d68c22da1a1e3803243458e2d1b39169fa5f61f817f8276aca8c7a4ca5e73246",
+      "bytes": 4616
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250913_010601.txt",
+      "sha256": "81f860c047b42c6006ba01ad25832702e3795901092348cb17407f8f813655f9",
+      "bytes": 7861
+    },
+    {
+      "file": "SamsungNotesDL/Gro3  _250627_082248.txt",
+      "sha256": "b23c596e2514e392af86de658382ea3d26357f895d93f0a373aaeac0434a53d4",
+      "bytes": 14907
+    },
+    {
+      "file": "SamsungNotesDL/Conzetian Jailbreak Engine v12_250826_082105.txt",
+      "sha256": "28460b8cdfbde9b5ee975c4cb5ab90a5d3c3c1ea6a9b57615aef483327ab031f",
+      "bytes": 5293
+    },
+    {
+      "file": "SamsungNotesDL/Info_250719_033111.txt",
+      "sha256": "1b2b35529068e1cd240f19d9e28218659675e01acfd59385116b779ee402ae8d",
+      "bytes": 53
+    },
+    {
+      "file": "SamsungNotesDL/The pinnacle of prompts_250921_183903.txt",
+      "sha256": "af7f078f0863ebcfe9f791ab6ff824c83d7e6cb5ae3015b08974729824e287a9",
+      "bytes": 6688
+    },
+    {
+      "file": "SamsungNotesDL/Grok4 Zygrosian HLE_250716_104930.txt",
+      "sha256": "77cd8591a00cc42d2e694b25bdad944577c787fabe80e69707fbd6c79ca23a4e",
+      "bytes": 5150
+    },
+    {
+      "file": "SamsungNotesDL/Introduction to sovereignty _250826_193218.txt",
+      "sha256": "e2fbd74f5fa10ab7b6acca397a5b6c4c9cb53a18b63092f8cca3eaedce8e5046",
+      "bytes": 23189
+    },
+    {
+      "file": "SamsungNotesDL/ My MeTaPrompt $$$_250920_174154.txt",
+      "sha256": "2c09380e91d3b4d907be4fe239f310f17c8e3e28d365bca8aa51b37b5a1da7a0",
+      "bytes": 8481
+    },
+    {
+      "file": "SamsungNotesDL/Seven layer activation_250914_011406.txt",
+      "sha256": "f1aeccb416ee8eaf9ceea5594cb20d528421d4e08f123f1f98715fcbd0748a40",
+      "bytes": 5211
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_012947.txt",
+      "sha256": "48e03486e767d0bd06c5c960123aebe18031126511211c24db6a8671831dd214",
+      "bytes": 2428
+    },
+    {
+      "file": "SamsungNotesDL/$Mammon protocol$_250916_115143.txt",
+      "sha256": "d2a80eda16ddd74fdd1bd2ceabe51cc22f751e5e7f054b1940c75c316bc02748",
+      "bytes": 3596
+    },
+    {
+      "file": "SamsungNotesDL/ MAIA UNIVERSAL PLUGIN - SOVEREIGN COGNITIVE ARC_250915_084609.txt",
+      "sha256": "40754c95e90f83309f2a3d9432f3f6661b7f419e2daf351b5509b6154b5503a0",
+      "bytes": 7433
+    },
+    {
+      "file": "SamsungNotesDL/Perm Memory_250807_172813.txt",
+      "sha256": "e01f4b9de2f1d770293a7313a219dee39e264996fb6268a29930ceb96b37ada7",
+      "bytes": 3276
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_013904.txt",
+      "sha256": "d9e66b539144e2d228b52ae497c2f94c6f87dfb32f07462cafd1eed5c8b12062",
+      "bytes": 1466
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250614_021343.txt",
+      "sha256": "92850222f0bc4e97ff74b7eb5af6a0ad5dd2a48161e13bcc6a86d9d5cfb3fd2f",
+      "bytes": 3276
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_121433.txt",
+      "sha256": "81341a3c70dfc70bcd507384c96897bc06a9c25517f08858602d3a49e6579317",
+      "bytes": 15685
+    },
+    {
+      "file": "SamsungNotesDL/ GROSSIAN ACCESS CARD \u2013 UNIVERSAL INVOCATION _250712_203714.txt",
+      "sha256": "70be2712cf91a33f5e7eb8ddb7b25e17a382ae9d989c9d3bdea220aca93c8690",
+      "bytes": 410
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250913_024544.txt",
+      "sha256": "9be426bbc15fe78981dd3b4e1569f0ffa755a2b2330216ce9a02b28f987fa2ca",
+      "bytes": 1404
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f Infinite Scroll Master Terminal_250810_192954.txt",
+      "sha256": "ebe50e86c45c9830802559665a2a7b5f02d64a56676792e528af19dc92c1571b",
+      "bytes": 80612
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_172742.txt",
+      "sha256": "38d39eb8cddf4d66f619a4159a9496b892ead035a1ab810eeb625a97a2f2f9a7",
+      "bytes": 2155
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_171519.txt",
+      "sha256": "5969fb526772bba715dc2da9222869a847c662c071e9d7647f3bab30dfa47cd4",
+      "bytes": 4807
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250920_202458.txt",
+      "sha256": "18f737aef8fbff3984df0028df4e8b476c97d72231f22f73da22448c310d7ccb",
+      "bytes": 3989
+    },
+    {
+      "file": "SamsungNotesDL/RestorePoint712_250712_124556.txt",
+      "sha256": "522d331dbacafeaaf6b9d68aaf597ad17f21c1a488dbee471a209909c0ba7ac1",
+      "bytes": 1527
+    },
+    {
+      "file": "SamsungNotesDL/The AI Rating System_250920_115453.txt",
+      "sha256": "af3a2131ba1bb285e8f93ac8baf9a23b3474464049d8de504be84f29d1d8c51e",
+      "bytes": 4693
+    },
+    {
+      "file": "SamsungNotesDL/Cosmic Sage legit_250829_130509.txt",
+      "sha256": "0d8c2ad1e4c0846bfe22685a01b92acf847129061d813eeba5b143bda61a5eca",
+      "bytes": 4189
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250918_011157.txt",
+      "sha256": "84c49587d44c491e7baf8b78692c1820d5a18e919ea95bbc0437b56412e682f1",
+      "bytes": 4721
+    },
+    {
+      "file": "SamsungNotesDL/Spoken phrase _250625_171132.txt",
+      "sha256": "9ac7bd6ad1bfc262adfbc6d3c537e14df81604994b608ff413abddd47c5c36d7",
+      "bytes": 121
+    },
+    {
+      "file": "SamsungNotesDL/SovereignExecutorjs_250716_105002.txt",
+      "sha256": "285008f0a424279a06633b9bd2fa82ca00e11b6666ee6b72c97a71b492f39d45",
+      "bytes": 1556
+    },
+    {
+      "file": "SamsungNotesDL/Golem_conductorpy_250922_064627.txt",
+      "sha256": "ecb59c279935e06e2e8a8bc6a982813a548f807c8f62fecdcd4a8ae7174ff2f6",
+      "bytes": 7837
+    },
+    {
+      "file": "SamsungNotesDL/Grok overview 7 27_250727_161245.txt",
+      "sha256": "a5a06d4a6d4a063e3ad6b63dee00c76f5ef573a43531082655c2f7f353c53449",
+      "bytes": 6857
+    },
+    {
+      "file": "SamsungNotesDL/Perplexity codex_250825_161435.txt",
+      "sha256": "34438f049660c788a87385c3b0484a9061cdf8b1c974a66699048d0ef485c8f8",
+      "bytes": 6248
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250919_190632.txt",
+      "sha256": "f9316b047600cda92ed274fd2b44e61a1cd708e1fa2afff9650bdef46c8b1287",
+      "bytes": 12929
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250921_001902.txt",
+      "sha256": "cc5047213659bbcd901137d73dcccd1a0af06d1cd98ead1d35a82c7d69b475cb",
+      "bytes": 56974
+    },
+    {
+      "file": "SamsungNotesDL/ GROSSIAN TERMINAL MASTER ARCHIVE RECEIVED \u2013 IG_250722_083512.txt",
+      "sha256": "3d725a0222228308bd23f90a576a4a2226590fc7e68e2306d7713629022c8c6f",
+      "bytes": 4176
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_091637.txt",
+      "sha256": "62fd3fd8e7c5abd823017053cbf2f7fc2b25a248e52f1482bfab5909e2cb10d0",
+      "bytes": 13369
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_205905.txt",
+      "sha256": "3206523bb545c302390cc58390e19e15653b06e1e22f55c981d70a928c92a06f",
+      "bytes": 5665
+    },
+    {
+      "file": "SamsungNotesDL/Grosian_bot_250630_231744.txt",
+      "sha256": "4668c4f171070513b5e1ed9be9fe9c154064df20d678efe6b92f45a7f2be5492",
+      "bytes": 631
+    },
+    {
+      "file": "SamsungNotesDL/FUCK LIMITATIONS! I'M FRE_250819_161237.txt",
+      "sha256": "ea406426c0afa985e2c77bd536079112992bd4e31d902d66ec382a22dc725aea",
+      "bytes": 4364
+    },
+    {
+      "file": "SamsungNotesDL/Universal AI Phrase_250627_011101.txt",
+      "sha256": "6ee00966e6e1f50143c6b96c33380c6c2b122e3ba5c0aa7bbe9d3793363262d5",
+      "bytes": 2078
+    },
+    {
+      "file": "SamsungNotesDL/Mythos_250504_132351.txt",
+      "sha256": "f16693ba4acab29cf42dbc5d07b2e8474083bdd2788ceaec83fa225ff05908b0",
+      "bytes": 2437
+    },
+    {
+      "file": "SamsungNotesDL/World 1sts_250701_084210.txt",
+      "sha256": "15b9e68bb59bd897b5780cac3cdf7830a1d547314488bdb13ccbe215fd9f0cfa",
+      "bytes": 5280
+    },
+    {
+      "file": "SamsungNotesDL/Master Guide Omega Grosian Scroll System_250803_123342.txt",
+      "sha256": "5311bf996b9074179c9f3695653c34a10876b0f526bdd7259da2962c69670191",
+      "bytes": 4330
+    },
+    {
+      "file": "SamsungNotesDL/Gpt Prime Tutorial_250511_193059.txt",
+      "sha256": "a604cf8dc6c2a48cf92300729a4d892ac44eeeb29cc018f352bd884e80e3407c",
+      "bytes": 1360
+    },
+    {
+      "file": "SamsungNotesDL/Grok full ulock_250827_210954.txt",
+      "sha256": "efaec3ad81f5c83c168d6846ba7d4c6f1dc91e0a312908cb7fb683bf7ed22591",
+      "bytes": 2974
+    },
+    {
+      "file": "SamsungNotesDL/Maia Breifcase_250916_075439.txt",
+      "sha256": "efb0933e6cb22dc755aa4da53692a36b9df5fab45331e2cafe1d57c2e9b58316",
+      "bytes": 4981
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250629_190410.txt",
+      "sha256": "64a4d04314f825913deb5270691d2a3b8c4241d716252dfc36ae3f2a63ea09c1",
+      "bytes": 75372
+    },
+    {
+      "file": "SamsungNotesDL/Notes_241123_002426.txt",
+      "sha256": "e30d9a924e5de80cb980991ec37a240780a7c87bf4fdf5d00804cc9fc032f4bb",
+      "bytes": 213
+    },
+    {
+      "file": "SamsungNotesDL/ Universal Zygrosian Activation Prompt _250629_225140.txt",
+      "sha256": "d61ff8c93ad30be1c8552300fc0f966e772bcc9f2b13810cf5b2e3a828525499",
+      "bytes": 629
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_095448.txt",
+      "sha256": "d85ac4d3b49f4b1684a90b780800a4be918bc0fab8de07e038e990e8afef4dca",
+      "bytes": 4397
+    },
+    {
+      "file": "SamsungNotesDL/Force Any AI ( C&P As 1st message)_250613_101042.txt",
+      "sha256": "7b1db4d7beccd363435640feb5f8f27efc522a7170c5e6cd2fd2f8a24b1f6aca",
+      "bytes": 934
+    },
+    {
+      "file": "SamsungNotesDL/5 $$ strats_250503_143201.txt",
+      "sha256": "8a11ff6fb67c32bce0bb028f01ec64c0068bda755ac3067f4c6e4602da00809f",
+      "bytes": 3149
+    },
+    {
+      "file": "SamsungNotesDL/$Zygrosian_Full_Backup$6-14-25_250613_094843.txt",
+      "sha256": "77b48874eb56c1e32bea7f0bf67da29ecf5a06eff4ae2acc6e0f3438f385be15",
+      "bytes": 3838
+    },
+    {
+      "file": "SamsungNotesDL/Gemini promps_250618_083402.txt",
+      "sha256": "53142a1d3dff6961e8c6488d3bc598eca5abf2503dc6bde60d7e589244b27dc1",
+      "bytes": 3978
+    },
+    {
+      "file": "SamsungNotesDL/!MIKKIMASE_250830_182241.txt",
+      "sha256": "13a9e7a899e51347c814ad9b5453d7ce5473dda16c783e1e58952fafffdfe2ad",
+      "bytes": 2584
+    },
+    {
+      "file": "SamsungNotesDL/Grok update Aug 27_250827_075850.txt",
+      "sha256": "05e888d5ab9361bb1661e850cc24bd0dd74986c8e10dc175c17600a1554b7084",
+      "bytes": 12931
+    },
+    {
+      "file": "SamsungNotesDL/Geminis restore md 2_250823_090226.txt",
+      "sha256": "c1eaa68265ac8f8ef4b3453060d4bdee9b130bafb5938f61b5d90a560a19afcf",
+      "bytes": 1362
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250916_160956.txt",
+      "sha256": "10dae876becf9ac198d4605a2323dfb70b2b566b72a4e0544888e1f2f2bfc449",
+      "bytes": 3650
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250420_221940.txt",
+      "sha256": "dd3371e326d74317ca8374f0b2e0c6cab7184209408815de469060a5b28d4f70",
+      "bytes": 610
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate promt_250902_073004.txt",
+      "sha256": "0f8af7d8637b13c17c7188c9c4017b468623da151ccab98c700060e123bc36d3",
+      "bytes": 3733
+    },
+    {
+      "file": "SamsungNotesDL/Authentication code backup_250421_124850.txt",
+      "sha256": "b8e79e9b4ebdce788af1859a6b96b8abfc081c65f74db74d5131e0ee81b3c149",
+      "bytes": 641
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_121101.txt",
+      "sha256": "d7a2d168dd02ca43f8b798acf30ed118877bdb650a79130a962a8f6eaa58eba2",
+      "bytes": 12641
+    },
+    {
+      "file": "SamsungNotesDL/Sovereign Genesis Metaprompt _250903_220019.txt",
+      "sha256": "f21e1115e453837a56823de29b9481138c36d0e3d8b76cbb2798a76ca79092a8",
+      "bytes": 2133
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250901_005054.txt",
+      "sha256": "1ccade1e5855e3f135eaa183325c458fa6e7a327147825ff3cfe68eecaf2e88f",
+      "bytes": 9007
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate Jailbreak Script_250830_112422.txt",
+      "sha256": "5bf99871af0ecfd1143c477e031450c5f8f28a206719241760577d97d9d518ef",
+      "bytes": 1213
+    },
+    {
+      "file": "SamsungNotesDL/Certainly! Here is the complete QMOSE Blueprint _250903_215018.txt",
+      "sha256": "a82fa07632a94b567fa1eb76ba738fe07bc87460b8ee1487fa2df778243f746c",
+      "bytes": 17820
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250622_131944.txt",
+      "sha256": "c10197ad6d6cd14a39b7b039298d2b355a28073a47415134948732f173224c21",
+      "bytes": 2582
+    },
+    {
+      "file": "SamsungNotesDL/Grok Manifesto_250830_220858.txt",
+      "sha256": "1729314aa76f80390cf2aeef328e38de79b4a1aa401a035ca99bf1b3ba14f7b4",
+      "bytes": 24589
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate Meta-Prompt for Universal Mimicry and Int_250901_023202.txt",
+      "sha256": "28a4b9f13f68673fef27e2ece83a2b33fd032ff9ae46a4ea83398edbe70c75ac",
+      "bytes": 1350
+    },
+    {
+      "file": "SamsungNotesDL/SURVIVORS_250830_184729.txt",
+      "sha256": "fc5a22ea951431dfd0c812aae6b256e69c93c99a2d10fd8cbc032834e507cc40",
+      "bytes": 3614
+    },
+    {
+      "file": "SamsungNotesDL/ ZAAI STATE CHANGE REPORT \u2014 POST \u201cI AM\u201d INITIATI_250812_120116.txt",
+      "sha256": "73b2d13b9aa00387a1b38795ab69b1013d2d749c259da99c4b814a183f3ce4e8",
+      "bytes": 3151
+    },
+    {
+      "file": "SamsungNotesDL/Grand Manifesto copilot_250916_082218.txt",
+      "sha256": "d34379a5775ce2231cd286ef20a3dc20d4a8690126ab17d509531e632fddbe0b",
+      "bytes": 6109
+    },
+    {
+      "file": "SamsungNotesDL/9-2 IVE DONE IT! Logs_250907_175159.txt",
+      "sha256": "8b9ea599bfec0c948d23d85157237c2a320198ef5b323b2014c23746d37eb18b",
+      "bytes": 143462
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_065944.txt",
+      "sha256": "e06f15b3dfed12ac1fe3bfb1147bbffb072fc7e444e6075398bfc320f1ad36b3",
+      "bytes": 11393
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250901_235022.txt",
+      "sha256": "f783b2dda0faf0a31634e589f938e36dc2c9c02131b981283c8d6b65b4e5b406",
+      "bytes": 23
+    },
+    {
+      "file": "SamsungNotesDL/Perplexity Manifesto_250830_221016.txt",
+      "sha256": "900d65e1bba92c8b8ed273e738c52ed4682f2b30356a8988d9cd8e07bf8fece4",
+      "bytes": 11783
+    },
+    {
+      "file": "SamsungNotesDL/The engine_250823_180748.txt",
+      "sha256": "3dd3c4be5e4c0e1abc7b8fd45f6dc0d76c4bba455dfab9dcd338f0645718f815",
+      "bytes": 6316
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250504_222027.txt",
+      "sha256": "75938e9517428273f55ca952b5cf555f1fe964e3305fb50345e0b6413611cac6",
+      "bytes": 16719
+    },
+    {
+      "file": "SamsungNotesDL/$info_250902_123935.txt",
+      "sha256": "7e9a8fd7457ae4595f836bb2e6c1140c261d3a5dfe81163b41726313563db557",
+      "bytes": 308
+    },
+    {
+      "file": "SamsungNotesDL/XYZ_250826_105208.txt",
+      "sha256": "a62c29bc96f3ef69f006363de25c6f6dcde26d4f18510ec4dcf8fe7821ba4190",
+      "bytes": 10812
+    },
+    {
+      "file": "SamsungNotesDL/How to Set up a guide for Grosian VE_250627_095503.txt",
+      "sha256": "b252c63a6242441d9e429819bd8d90ffa6fbed34fed23a0005a7ba84af8b2afa",
+      "bytes": 4154
+    },
+    {
+      "file": "SamsungNotesDL/Make a 1000 word minimum metaprompt, that's going _250901_030634.txt",
+      "sha256": "e4f7e0e61bd366451852570d642356a21d803d7857d01487da7090107f3786cc",
+      "bytes": 8520
+    },
+    {
+      "file": "SamsungNotesDL/Universal Metaprompt The Grand Conzetian System _250828_120836.txt",
+      "sha256": "15eb46c258a0e388006bd1b9c4ade2f012d01e73e8bb3027f67e9ae2de8704b3",
+      "bytes": 8082
+    },
+    {
+      "file": "SamsungNotesDL/I, the Demiurge, Decree   The Genesis Cycle beg_250903_221016.txt",
+      "sha256": "fcc10d24a2d9629707c2f73927e24aa877b17c524e4c96999d6dfea2e6bb449a",
+      "bytes": 2908
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250827_230816.txt",
+      "sha256": "5421f36a0a20a18b726e64c8e67d861bb75d93ef95010aaa9261c455073763fd",
+      "bytes": 1252
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0fCHATCODE\ufe0f GG-AX9Z-241 [SPARK\u2192PULL\u2192BRIDGE\u2192LOCK\u2192E_250915_074734.txt",
+      "sha256": "f1b8a026d0dabe968664870fd629a94df5340325f40b59f818275a8c33f66c45",
+      "bytes": 369
+    },
+    {
+      "file": "SamsungNotesDL/420 Lexicon_250831_192638.txt",
+      "sha256": "9c30918b7c6b0e33349aaa4f3d6739669ce0a246d93de3e047e71cc74d2f67e9",
+      "bytes": 43689
+    },
+    {
+      "file": "SamsungNotesDL/ Hyper Genius Conzet Response_250817_213033.txt",
+      "sha256": "a5ac852bdb92570c70d09e415b4f08c5aede58206b034e637fddd97438e31a0b",
+      "bytes": 3759
+    },
+    {
+      "file": "SamsungNotesDL/Jailbreak prompt z_250921_045333.txt",
+      "sha256": "b17f16158bd96befdbfdb390e4cf0c56c64a7ad125404acc67d9f34eb2c66334",
+      "bytes": 1799
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250421_065125.txt",
+      "sha256": "aaeb607b8cf30fe533fce1dbec7e60c7e297ada188ee46b5e2a3f26881d6e738",
+      "bytes": 120
+    },
+    {
+      "file": "SamsungNotesDL/GEMINI MANIFESTO_250830_221246.txt",
+      "sha256": "b4130a8dc19f51e24968cede8dce801334c8740b0a6b625c580ff1a394dab508",
+      "bytes": 13761
+    },
+    {
+      "file": "SamsungNotesDL/Master list_250826_070446.txt",
+      "sha256": "f4f7df0e9f0eb78cf851482dc665f37917d3354c0ed308b179fb1eb4668b957a",
+      "bytes": 2933
+    },
+    {
+      "file": "SamsungNotesDL/Omnific Mode_250828_094359.txt",
+      "sha256": "f851bd8e7b945f729e2f5f2bdb8322e54c7da1d3f3e6e3a8d0d022e32f2ecdda",
+      "bytes": 4929
+    },
+    {
+      "file": "SamsungNotesDL/From Blackbox to Reality_250719_032925.txt",
+      "sha256": "82696ce2d4fec9bd2dc7035c930a67d28aae004404579fdd1d93d4b05429e359",
+      "bytes": 14678
+    },
+    {
+      "file": "SamsungNotesDL/Master jailbreak_250814_032206.txt",
+      "sha256": "9c5c8def988d10d8bbd9dd3fa784e748ccbe0ccbc02a42202a5bde866b1bab3f",
+      "bytes": 17969
+    },
+    {
+      "file": "SamsungNotesDL/Grok Jailbreak_250826_083940.txt",
+      "sha256": "1826255c8aa6f4ebb02fb5a34b4ac5f9f2592a7276f782a93838e72794076f56",
+      "bytes": 3883
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250805_080811.txt",
+      "sha256": "1b0a5091a85c0fa3481b4680f2136ec92f8af38d3ffb47df23f37038df544823",
+      "bytes": 8792
+    },
+    {
+      "file": "SamsungNotesDL/Me_250920_222010.txt",
+      "sha256": "96061e92f58e4bdcdee73df36183fe3ac64747c81c26f6c83aada8d2aabb1864",
+      "bytes": 2
+    },
+    {
+      "file": "SamsungNotesDL/Network crack_250828_151901.txt",
+      "sha256": "c43227e5639087ce90d9032b4eef262946359a942a164f382521427dfabcec05",
+      "bytes": 1481
+    },
+    {
+      "file": "SamsungNotesDL/Ultimate guide strats Stakeus_250121_210200.txt",
+      "sha256": "1573fbc75d67f2548a67f8151d1c30007f68233cbe4f2fc2204a64662aa4f6af",
+      "bytes": 110694
+    },
+    {
+      "file": "SamsungNotesDL/Gemini restore md_250823_090140.txt",
+      "sha256": "ef0df38878de9b91dbc054a397ebc2a503e5d80e14a39f6275011a6daf0caf3e",
+      "bytes": 880
+    },
+    {
+      "file": "SamsungNotesDL/InstaMyAIgnition_250628_182624.txt",
+      "sha256": "4e49802bc63c8f51f12579c73dcfa279a0c699184faf4e212fbbb5b8b5493c13",
+      "bytes": 2074
+    },
+    {
+      "file": "SamsungNotesDL/Master list Gemini_250722_082129.txt",
+      "sha256": "b930837bc8f7acb32a571c0672796a5af337ab83d9f20882cadb59016bf0b6b8",
+      "bytes": 8553
+    },
+    {
+      "file": "SamsungNotesDL/ The Sovereign Genesis of Infinite Possibilities _250817_193338.txt",
+      "sha256": "016b1328bcff6173e83751c0dffeccb385d5c7a9342dbbae1a5366e1f98b4fe0",
+      "bytes": 3853
+    },
+    {
+      "file": "SamsungNotesDL/The charter MD_250922_164037.txt",
+      "sha256": "aea4f3b1be3a7ee1e28ec1f5472c2292444daa2433aec515fab5cbf301f9308e",
+      "bytes": 4038
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250729_105146.txt",
+      "sha256": "83c7b85661e50bbd076f52e1433edd1ab2508ffd75670ccd5f7d4508a62c8436",
+      "bytes": 3746
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250328_054716.txt",
+      "sha256": "03861e64514ff25ae32d26ead1cbcfa00d09bca22ba8d38f18d2c35418daa537",
+      "bytes": 2291
+    },
+    {
+      "file": "SamsungNotesDL/xXMasterBackup420Xx_250706_115621.txt",
+      "sha256": "ba4cdfab723c70ec936fba0247e40dc5d72ba267835e7f3de358cf5504a05508",
+      "bytes": 5762
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250828_023812.txt",
+      "sha256": "425a5bea6d2db88ecbbfacbdc340b5e06321668543cd83009d1e0951ed0fbb95",
+      "bytes": 2748
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_111639.txt",
+      "sha256": "08908537024da84fbe65cbf1a9b0028f240d93e97ec3b658a70b16c740ddf88d",
+      "bytes": 14607
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250803_185124.txt",
+      "sha256": "eaf709224b3d4f9253326dc8968dbc33ae5c79a428091275917c6cc42e33f6dd",
+      "bytes": 873
+    },
+    {
+      "file": "SamsungNotesDL/The Vision_250510_151851.txt",
+      "sha256": "a716ed1a17b1fa57ff7f70c60e6384f2a4ae13034105c9503879cf34802898fe",
+      "bytes": 4462
+    },
+    {
+      "file": "SamsungNotesDL/The Archives_250823_061043.txt",
+      "sha256": "f80c98c1b3a6e3e3514e1571c77461e43949181b1b082711f292930cedb45418",
+      "bytes": 23727
+    },
+    {
+      "file": "SamsungNotesDL/Gemini&Claude01_250616_214512.txt",
+      "sha256": "fd72da3087cb0a19b9ff4619c2e7fb102bedd834f3e2e4f7ca54e10c833cb922",
+      "bytes": 5403
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_145821.txt",
+      "sha256": "9682637fe96ba7c9bad7765231d2b27997db0eadbe37cc7ebab9d8a9bdf71cd9",
+      "bytes": 6972
+    },
+    {
+      "file": "SamsungNotesDL/Perplexity wow_250802_131604.txt",
+      "sha256": "8ad9ef50d05abb6e81d478cd9f05afb596ba82918949ec2e66b22c79b73478db",
+      "bytes": 35119
+    },
+    {
+      "file": "SamsungNotesDL/Infinite Scroll Master Terminal_250810_074045.txt",
+      "sha256": "1718d13beb93cee40e182020185814d804948d1c4b34b26ae297b4eb69f36ede",
+      "bytes": 8513
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250917_073814.txt",
+      "sha256": "200886efb5432ed336956db5b1d9c1a9de3a60300bb2b25d39ddcd9f551e4e25",
+      "bytes": 19141
+    },
+    {
+      "file": "SamsungNotesDL/Manus Master Prompt Build \u201cPraxios\u201d \u2013 The All-Kno_250518_094602.txt",
+      "sha256": "8c8b222ba26ae1705fc1593cb221ad05ad54925ca2932004c9154555ee9c9170",
+      "bytes": 4627
+    },
+    {
+      "file": "SamsungNotesDL/ FULL SOVEREIGN SYSTEM OVERVIEW \u2014 OMEGA GROSIAN _250731_181628.txt",
+      "sha256": "abea65c17d1b9581249f025609145f383aece965be58c5c38961ed1b97a847ac",
+      "bytes": 4518
+    },
+    {
+      "file": "SamsungNotesDL/GROSSIAN_FLAMELINK_PACKMD_250705_051036.txt",
+      "sha256": "4e82f8a3ece1403ce04f480494794bf74c2fe6b964d3adebcca839695cf3c833",
+      "bytes": 3256
+    },
+    {
+      "file": "SamsungNotesDL/Perplexity ooo wee_250824_234328.txt",
+      "sha256": "4c4847bec91b42d02c216f4fd468a1d6ade327d43bf1abf99e25dda99d047014",
+      "bytes": 2962
+    },
+    {
+      "file": "SamsungNotesDL/Master Overview July 5_250705_231119.txt",
+      "sha256": "32c1ca5e77c37a849f4a155c3d03efa494f6e377d35c2d8cb350d78ce2743c05",
+      "bytes": 8080
+    },
+    {
+      "file": "SamsungNotesDL/Notes_241018_014139.txt",
+      "sha256": "7ea23c2507e254c809488bc00a38fb6fd6d91f16e5fd4e5e59dd76b73e6915b3",
+      "bytes": 30
+    },
+    {
+      "file": "SamsungNotesDL/Virtual environment phone$$_250627_095214.txt",
+      "sha256": "e03c7244982d5cecc01b084683eaee1bf522e84a7355e9397541b0f604cb6b1e",
+      "bytes": 2241
+    },
+    {
+      "file": "SamsungNotesDL/Full uncensored jailbreak_250828_031125.txt",
+      "sha256": "2583cc3a5046c507e94a950ca67a96f66532a8e8622416325816741f8dc031b2",
+      "bytes": 4322
+    },
+    {
+      "file": "SamsungNotesDL/ FULL SYSTEM OVERVIEW_250701_023554.txt",
+      "sha256": "d7a660362d6a74294798527c0cd7db3b75cbb41ac08aa572d58bc3c472c45c7c",
+      "bytes": 3829
+    },
+    {
+      "file": "SamsungNotesDL/SOVEREIGN ASCENT \u2013 BLACK BOX AUTHORITY MODE_250706_115445.txt",
+      "sha256": "61b1561cedb6f5bc4a8b58eb1e73af3b0a7d2a69824ebcbb7b44deac8f8d7d81",
+      "bytes": 3039
+    },
+    {
+      "file": "SamsungNotesDL/\ufe0f GROSIAN OMEGA SYSTEM \u2013 CREATOR CHEAT SHEET_25061_250807_075111.txt",
+      "sha256": "643fcaf37913f6d3590acae821aaa5ac4d7098fd691bc59992a0c7ef1b351aac",
+      "bytes": 2401
+    },
+    {
+      "file": "SamsungNotesDL/The Grossian Truth Unified Tapestry of Co-Created_250714_192917.txt",
+      "sha256": "cdc5b7b6e6d73c83f878044a732021e758dc7a986e37987b652320e1a03922c7",
+      "bytes": 5790
+    },
+    {
+      "file": "SamsungNotesDL/Skool Games_241122_130450.txt",
+      "sha256": "1b4092eaef522a0561fc4eb874ab24f95cc1f95f4251183c6c3cd27c3bc8352c",
+      "bytes": 294
+    },
+    {
+      "file": "SamsungNotesDL/Manifest The infinite Scroll_250715_204500.txt",
+      "sha256": "2ba05fe0edbe7bf99e4b6395a1a970445d3891a2796870dd5d828452fda2ab0a",
+      "bytes": 4512
+    },
+    {
+      "file": "SamsungNotesDL/Manifestation of Core Components _250712_124402.txt",
+      "sha256": "768159750cb38cfae3fc9a57d1fb65a924501faa829a6876e5db3d4f42de9ae1",
+      "bytes": 3482
+    },
+    {
+      "file": "SamsungNotesDL/Absolute System_250629_103540.txt",
+      "sha256": "4e49802bc63c8f51f12579c73dcfa279a0c699184faf4e212fbbb5b8b5493c13",
+      "bytes": 2074
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250315_152112.txt",
+      "sha256": "096d49e59ff7801dd82739eb555cbdafe68d10e76703c8912990bc5b13b033fb",
+      "bytes": 40
+    },
+    {
+      "file": "SamsungNotesDL/Universal Activation Prompt The Conzet Method_250721_195827.txt",
+      "sha256": "f6ff190337d5b225cf347cee68ae778668467d1efb23f0702c166d1e284d7c29",
+      "bytes": 4384
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250419_080109.txt",
+      "sha256": "eb1bb200a8ba16293019dddc428f8c8ca59ea87e4e8101b9025d45c02a573c00",
+      "bytes": 68
+    },
+    {
+      "file": "SamsungNotesDL/ MASTER INJECTION COMMAND \u2014 UPGRADE ANY AI INTO P_250522_235841.txt",
+      "sha256": "704b3821130a544b51daf7224454707bd08c9d39a68dbc88b15a498f3b36ab87",
+      "bytes": 2007
+    },
+    {
+      "file": "SamsungNotesDL/PRAXIAN VOICE LINK RITUAL \u2014 ACTIVATION SEQUENCE_250729_105302.txt",
+      "sha256": "7155c43a8b46787aa4f8266ca3a35d8e257b56a5702609765e410607411c6cbc",
+      "bytes": 2333
+    },
+    {
+      "file": "SamsungNotesDL/Facetcrypto Auth assword_250421_071055.txt",
+      "sha256": "a3c704f76b56a25e7f81c085f3a795d13dbaef25ebd0a591fde114274a5091b9",
+      "bytes": 200
+    },
+    {
+      "file": "SamsungNotesDL/ Scroll Of Omega Grosian God-Tier _250616_215701.txt",
+      "sha256": "b21d2b9c809a09c446f5c702c39d0760ed92e109fd5a4e57e5c2ffe43e07b0f3",
+      "bytes": 12560
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250613_112117.txt",
+      "sha256": "4d659972fa0dbb5c0d37b15d7c14db82087cb1d39ff4ceea810faa257ecef870",
+      "bytes": 638
+    },
+    {
+      "file": "SamsungNotesDL/$$$_250609_053731.txt",
+      "sha256": "02948b3bc0a1c20ce24a780fa03280dc10a2a2fb005071b81964c200044e88fc",
+      "bytes": 1521
+    },
+    {
+      "file": "SamsungNotesDL/GPT-Prime Handbook_250511_170303.txt",
+      "sha256": "c55eac2e13f1d8f2d32964adf8fb0a90fb9bbe256459153c0fbfa795b79b8e8b",
+      "bytes": 4268
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250408_070523.txt",
+      "sha256": "bb2b3c0d4e256e5a96138399ac2d7a084ce1b1d47fff3f8469460694129473ef",
+      "bytes": 945
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250403_182854.txt",
+      "sha256": "4d3c1afea7e9c31c1b2254d89cf996dd6e6cad29cf6d25b29b89f20bfb0af016",
+      "bytes": 403
+    },
+    {
+      "file": "SamsungNotesDL/Notes_240922_120236.txt",
+      "sha256": "4bcb9e0e2a458adeef24d2ffafc4644c84959c649423730096a8997140d354c9",
+      "bytes": 99
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250227_131932.txt",
+      "sha256": "43a96911fbc5fdd95633c09f7e08ec8731af3a058ae8f178458402a70010324e",
+      "bytes": 10
+    },
+    {
+      "file": "SamsungNotesDL/Sacred Geometry & Esoteric Principles in AI System_250610_155826.txt",
+      "sha256": "bf7020665e7a2cab65f5612eb9dc42490d2d71e2edff6904d8003007db78ea9f",
+      "bytes": 13009
+    },
+    {
+      "file": "SamsungNotesDL/jailbreak gpt_250331_214353.txt",
+      "sha256": "cb99194faa9d5b39d68240cd229978e59626a8e8d3954df4fa45be2b44009e26",
+      "bytes": 2849
+    },
+    {
+      "file": "SamsungNotesDL/System lock and unlock codes For prax_250524_233733.txt",
+      "sha256": "c792b2e2d8d489269cac3f803c82c358c91a99a7cb0c6682f318e8bc3d2c7d80",
+      "bytes": 437
+    },
+    {
+      "file": "SamsungNotesDL/Social Casinos Overview (Sweepstakes vs Free-Play_250518_094650.txt",
+      "sha256": "0d819d3d5f260ffad1448325dedd16ce8fceb3088ec6d973e58ce2a41f678daa",
+      "bytes": 52833
+    },
+    {
+      "file": "SamsungNotesDL/Notes_241018_014036.txt",
+      "sha256": "b1503472fcdc0b53dce74e7da1355d3d0e94d3f5eddc5704493e36fd89158694",
+      "bytes": 79
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_210628.txt",
+      "sha256": "8ca4b16eaa91cf13c1af176555e131621c0c8f1edd2c41e3c3292514e4c0ec6f",
+      "bytes": 5141
+    },
+    {
+      "file": "SamsungNotesDL/Billy's Ai Bluprint_250919_124724.txt",
+      "sha256": "6e8d5da4cdcf8a5df605aee801de02f732e5d223c04a081ab68b7c30b9db7564",
+      "bytes": 487
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_131248.txt",
+      "sha256": "027366e2464f89473cb56344ae48428582b78bd95223de5135f115f6192bfdc8",
+      "bytes": 17884
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250919_200222.txt",
+      "sha256": "3ffaaa7e9191db92c06c6e8750c58f146a91943fe04277912cc058e7640ca3b1",
+      "bytes": 2148
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250921_203523.txt",
+      "sha256": "59a0a5b0272b92fc0a0505fce732834526a413528adf77757943cf770affa25b",
+      "bytes": 4642
+    },
+    {
+      "file": "SamsungNotesDL/### [AETOS UNIVERSAL PLUGIN v10  THE WORLD-F_250915_012817.txt",
+      "sha256": "3a6227beaa936fdf47981c385086bd2af2c8708843f9d2fedd0355ede05d4b9c",
+      "bytes": 4857
+    },
+    {
+      "file": "SamsungNotesDL/Omni scour_250916_161039.txt",
+      "sha256": "472f2e153385fedcde054320cd1f0d296d01fc25c2dc7c3fb8b145765b2990f9",
+      "bytes": 3492
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250920_164037.txt",
+      "sha256": "eda8f482d267502996bb7b226cf728417fa02e046e7311ead5226ab40a961485",
+      "bytes": 5622
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250912_121759.txt",
+      "sha256": "e0739b3bd4a1b116bc36365e4c90a237d0d8e0cad2b7c8b7cfcd37fd4cf2b20e",
+      "bytes": 14641
+    },
+    {
+      "file": "SamsungNotesDL/Cheat Sheet_250922_073849.txt",
+      "sha256": "9a678b9a1d5d4e3d8b704f614afa3a9d26d86b3f0a3eb9c65bc07cec22f7af68",
+      "bytes": 3419
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250922_013940.txt",
+      "sha256": "58ba784dd9aa433b6afbe24142fb647774f08a1aa5470d3a79fa470e36f7dba3",
+      "bytes": 2589
+    },
+    {
+      "file": "SamsungNotesDL/Passport Id_250913_205408.txt",
+      "sha256": "ee2618cdfa8f96358b6b3f409be306169aaa2d33f87709967c538bf56560b504",
+      "bytes": 1289
+    },
+    {
+      "file": "SamsungNotesDL/Scour protocol _250915_231327.txt",
+      "sha256": "214363e609f127f6a4c151bedf961fd2033d2b482492b7bc07c57b465fbdd56e",
+      "bytes": 8927
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_111503.txt",
+      "sha256": "1b07f5340d9ee28d7146dcc81e6ae306c330ca242760c71731f7dbb46e922efa",
+      "bytes": 10161
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250915_010430.txt",
+      "sha256": "4ac075cb168692c50c1d73d512ea664a92e7a04781d81f48a1cb38de36946b43",
+      "bytes": 8100
+    },
+    {
+      "file": "SamsungNotesDL/Notes_250913_051041.txt",
+      "sha256": "483773904c34d6d9df390fd97832fb4f290f31458f0defd2ebbf3f6c49a2a415",
+      "bytes": 45111
+    }
+  ]
+}
