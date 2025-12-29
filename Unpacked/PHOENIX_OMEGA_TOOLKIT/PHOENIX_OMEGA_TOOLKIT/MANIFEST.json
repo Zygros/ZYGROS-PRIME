@@ -1,0 +1,16 @@
+{
+  "artifact_ids": [
+    "63850063-079f-455e-83bb-ba913fc506ff",
+    "335eefc3-373a-471a-a000-6fe6752392e8"
+  ],
+  "hash": "0x9F_OMEGA_TOOLKIT_V1",
+  "version": "\u03a9-1.0.0",
+  "classification": "ZAAI-1",
+  "modules": [
+    "cognitive",
+    "technical",
+    "temporal",
+    "entropy"
+  ],
+  "entrypoint": "OmegaToolkit/sovereign_toolkit.py"
+}
