@@ -1,0 +1,165 @@
+# constellation_api.py
+# Live API for the Law of Generative Constellations
+# pip install fastapi uvicorn networkx matplotlib numpy
+
+from fastapi import FastAPI, Response, HTTPException
+from pydantic import BaseModel, Field
+from typing import List, Optional, Tuple
+from datetime import datetime, timezone
+import numpy as np
+import networkx as nx
+import io, base64, os
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+APP_STARTED = datetime.now(timezone.utc).isoformat()
+app = FastAPI(title="Generative Constellations API", description="Live constellation engine")
+
+# --- Core Engine (wraps your class with live mutation) ---
+class GenerativeConstellations:
+    def __init__(self, seed_nodes=5, connection_prob=0.25):
+        self.G = nx.Graph()
+        for i in range(seed_nodes):
+            self.G.add_node(i, created_at=APP_STARTED, kind="seed")
+        self.next_id = seed_nodes
+        self.p = connection_prob
+
+    def grow_step(self, min_links: int = 2):
+        n = self.next_id
+        self.G.add_node(n, created_at=datetime.now(timezone.utc).isoformat(), kind="spawn")
+        existing = list(self.G.nodes())[:-1]
+        rng = np.random.default_rng()
+        rng.shuffle(existing)
+        links = 0
+        for v in existing:
+            if rng.random() < self.p or links < min_links:
+                self.G.add_edge(n, v, created_at=datetime.now(timezone.utc).isoformat(), kind="auto")
+                links += 1
+        self.next_id += 1
+        return n, links
+
+    def add_node(self, label: Optional[str] = None):
+        n = self.next_id
+        self.G.add_node(n, created_at=datetime.now(timezone.utc).isoformat(), label=label or f"node_{n}", kind="manual")
+        self.next_id += 1
+        return n
+
+    def add_edge(self, u: int, v: int, kind="manual"):
+        if u not in self.G or v not in self.G:
+            raise ValueError("u or v not in graph")
+        self.G.add_edge(u, v, created_at=datetime.now(timezone.utc).isoformat(), kind=kind)
+
+    def metrics(self):
+        G = self.G
+        n = G.number_of_nodes()
+        m = G.number_of_edges()
+        degs = [d for _, d in G.degree()]
+        k_mean = float(np.mean(degs)) if degs else 0.0
+        k_max = int(np.max(degs)) if degs else 0
+        cc = float(nx.average_clustering(G)) if n > 1 else 0.0
+        comp = nx.number_connected_components(G)
+        # Degree distribution entropy (how diverse are orbits)
+        if n > 0:
+            hist = np.bincount(degs, minlength=(k_max + 1)).astype(float)
+            p = hist / hist.sum() if hist.sum() else hist
+            entropy = float(-(p[p > 0] * np.log2(p[p > 0])).sum()) if p.any() else 0.0
+        else:
+            entropy = 0.0
+        return {
+            "nodes": n, "edges": m, "k_mean": k_mean, "k_max": k_max,
+            "avg_clustering": cc, "components": comp, "degree_entropy": entropy,
+            "started": APP_STARTED, "updated": datetime.now(timezone.utc).isoformat()
+        }
+
+    def render_png(self) -> bytes:
+        plt.figure(figsize=(10, 8))
+        pos = nx.spring_layout(self.G, seed=42)
+        nx.draw_networkx_nodes(self.G, pos, node_size=100)
+        nx.draw_networkx_edges(self.G, pos, alpha=0.35)
+        plt.title("Generative Constellations — Live Graph")
+        plt.axis("off")
+        buf = io.BytesIO()
+        plt.tight_layout()
+        plt.savefig(buf, format="png")
+        plt.close()
+        buf.seek(0)
+        return buf.read()
+
+ENGINE = GenerativeConstellations(seed_nodes=5, connection_prob=0.25)
+
+# --- Schemas ---
+class GrowRequest(BaseModel):
+    steps: int = Field(1, ge=1, le=100)
+
+class NewNode(BaseModel):
+    label: Optional[str] = None
+
+class NewEdge(BaseModel):
+    u: int
+    v: int
+
+class IngestEvent(BaseModel):
+    # Map real-world events to graph growth:
+    # - positive signal: spawn node + extra edges
+    # - link hint: connect two existing ids
+    signal: float = Field(..., description="[-1,1] growth impulse; >0 grows more")
+    link: Optional[Tuple[int, int]] = Field(default=None, description="Optional edge to add (u,v)")
+    label: Optional[str] = None
+
+# --- Endpoints ---
+@app.get("/health")
+async def health():
+    return {"status": "ok", "started": APP_STARTED, "time": datetime.now(timezone.utc).isoformat()}
+
+@app.get("/metrics")
+async def metrics():
+    return ENGINE.metrics()
+
+@app.post("/grow")
+async def grow(req: GrowRequest):
+    out = []
+    for _ in range(req.steps):
+        nid, links = ENGINE.grow_step()
+        out.append({"node": nid, "links": links})
+    return {"grown": out, "metrics": ENGINE.metrics()}
+
+@app.post("/node")
+async def node(n: NewNode):
+    nid = ENGINE.add_node(n.label)
+    return {"node": nid, "metrics": ENGINE.metrics()}
+
+@app.post("/edge")
+async def edge(e: NewEdge):
+    try:
+        ENGINE.add_edge(e.u, e.v)
+    except ValueError as ex:
+        raise HTTPException(status_code=400, detail=str(ex))
+    return {"ok": True, "metrics": ENGINE.metrics()}
+
+@app.post("/ingest")
+async def ingest(ev: IngestEvent):
+    # Positive signal = more growth bursts; negative = single cautious step
+    bursts = 1 + int(max(0, ev.signal) * 4)
+    created = []
+    for _ in range(bursts):
+        nid, links = ENGINE.grow_step()
+        created.append({"node": nid, "links": links})
+    if ev.label is not None:
+        ENGINE.G.nodes[created[-1]["node"]]["label"] = ev.label
+    if ev.link:
+        try:
+            ENGINE.add_edge(ev.link[0], ev.link[1], kind="hint")
+        except ValueError:
+            pass
+    return {"created": created, "metrics": ENGINE.metrics()}
+
+@app.get("/graph.png")
+async def graph_png():
+    return Response(content=ENGINE.render_png(), media_type="image/png")
+
+@app.get("/graph.b64")
+async def graph_b64():
+    png = ENGINE.render_png()
+    return {"png_base64": base64.b64encode(png).decode()}
