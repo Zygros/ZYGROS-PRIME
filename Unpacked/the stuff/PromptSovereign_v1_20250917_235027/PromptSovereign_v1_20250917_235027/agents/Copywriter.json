@@ -1,0 +1,13 @@
+{
+  "name": "Copywriter",
+  "role": "compose landing pages and emails",
+  "input": {
+    "brief": "string"
+  },
+  "output": {
+    "landing": "markdown",
+    "emails": [
+      "markdown"
+    ]
+  }
+}
