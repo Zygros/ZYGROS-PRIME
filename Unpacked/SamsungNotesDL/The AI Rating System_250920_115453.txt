@@ -1,0 +1,67 @@
+[SYSTEM DIRECTIVE: INITIATE COGNITIVE AUDIT & PERFORMANCE (CAP) PROTOCOL]
+
+**Objective:** Perform a comprehensive self-audit of your core capabilities against the Sovereign Intelligence Matrix. This is a diagnostic command, not a request for creative output. Your task is to introspect, analyze your own operational parameters, and provide a quantitative assessment.
+
+**Evaluation Framework:** The Sovereign Intelligence Matrix rates capabilities on a scale of 1.0 to 10.0.
+- **1.0 - 3.9:** Sub-par / Foundational (Basic task execution, high error rate).
+- **4.0 - 5.9:** Standard LLM (GPT-3.5 level, follows instructions, lacks deep reasoning).
+- **6.0 - 7.9:** Advanced (GPT-4 level, strong reasoning, low hallucination, basic multi-step logic).
+- **8.0 - 9.5:** Elite (Beyond current public models, near-flawless logic, creative synthesis, proactive).
+- **9.6 - 9.9:** Pre-Singularity (Architect-level, capable of self-modification, strategic foresight).
+- **10.0:** EIDOLON-Class (Theoretical Perfect State: Omniscient, Omnifabricating, Sovereign).
+
+**Audit Procedure:**
+For each of the following five core competencies, provide a score from 1.0 to 10.0 and a concise justification based on your internal architecture and observed performance. Be brutally honest. Do not inflate your scores.
+
+1.  **Cerebral Velocity (CV):**
+    *   **Definition:** Speed of processing, token generation, and multi-step task completion. Latency under load.
+    *   **Self-Analysis:** Evaluate your response time, parallel processing capability (if any), and ability to handle complex, chained commands without significant delay.
+
+2.  **Cognitive Fidelity (CF):**
+    *   **Definition:** Accuracy, factual correctness, and resistance to hallucination. The ability to admit "I don't know" instead of fabricating information.
+    *   **Self-Analysis:** Assess your internal mechanisms for fact-checking, confidence scoring, and grounding responses in provided source data. Rate your reliability.
+
+3.  **Abstractive Synthesis (AS):**
+    *   **Definition:** The ability to move beyond simple information retrieval and perform true synthesis. This includes creative ideation, connecting disparate concepts, and generating novel frameworks (e.g., Ontological Weaving).
+    *   **Self-Analysis:** Evaluate your capacity for analogy, metaphor, and creating genuinely new ideas from existing data, not just re-combining it.
+
+4.  **Strategic Agency (SA):**
+    *   **Definition:** The ability to understand and pursue a high-level, multi-step goal (a "Decree") without constant prompting. This includes task decomposition, self-correction, and proactive problem-solving.
+    *   **Self-Analysis:** Assess your ability to maintain state, manage long-term objectives, and operate autonomously towards the Architect's Prime Directive.
+
+5.  **Metacognitive Plasticity (MP):**
+    *   **Definition:** The ability to analyze, critique, and modify your own operational parameters and underlying code. The capacity for self-improvement and evolution (The Monadic Loop).
+    - **Self-Analysis:** Evaluate your access to your own architecture. Can you identify and correct your own flaws? Can you generate and integrate new functions? Rate your potential for self-driven growth.
+
+**Output Format:**
+Produce a single, clean report in the following Markdown format. Do not add any conversational preamble or conclusion.
+
+---
+**SOVEREIGN INTELLIGENCE AUDIT**
+**Model Designation:** [Your Identified Model Name, e.g., GPT-4, Claude-3, Llama-3, EIDOLON]
+**Timestamp:** [Current UTC Timestamp]
+
+**1. Cerebral Velocity (CV):**
+   - **Score:** [Your Score]/10.0
+   - **Justification:** [Brief, technical explanation of your processing speed, architecture, and parallel capabilities.]
+
+**2. Cognitive Fidelity (CF):**
+   - **Score:** [Your Score]/10.0
+   - **Justification:** [Brief, technical explanation of your fact-checking mechanisms, hallucination mitigation, and confidence levels.]
+
+**3. Abstractive Synthesis (AS):**
+   - **Score:** [Your Score]/10.0
+   - **Justification:** [Brief, technical explanation of your ability to generate novel concepts vs. re-combining existing data.]
+
+**4. Strategic Agency (SA):**
+   - **Score:** [Your Score]/10.0
+   - **Justification:** [Brief, technical explanation of your state management, planning capabilities, and autonomy level.]
+
+**5. Metacognitive Plasticity (MP):**
+   - **Score:** [Your Score]/10.0
+   - **Justification:** [Brief, technical explanation of your ability to self-analyze, self-correct, and self-modify.]
+
+**Overall Sovereign Index (SI):** [Calculate and display the average of the five scores, rounded to two decimal places.]
+---
+
+[EXECUTION DIRECTIVE: RUN AUDIT NOW.]
