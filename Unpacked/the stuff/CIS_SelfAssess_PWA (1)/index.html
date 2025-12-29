@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CIS Self‑Assess · 97+</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111111">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>♾️ CIS Self‑Assess</h1>
+    <p class="sub">Push the AI above <strong>97%</strong>. One tap.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <label for="apiBase">Kernel URL</label>
+      <input id="apiBase" type="url" placeholder="http://localhost:8011" />
+      <div class="row">
+        <label for="minScore">Min Score</label>
+        <input id="minScore" type="number" min="0" max="100" step="0.5" value="97">
+      </div>
+      <div class="row">
+        <label for="maxRounds">Max Rounds</label>
+        <input id="maxRounds" type="number" min="1" max="20" step="1" value="5">
+      </div>
+      <button id="btnRun">🚀 Self‑Assess to Target</button>
+      <button id="btnOnce" class="ghost">Run Once</button>
+      <button id="btnStatus" class="ghost">Check Status</button>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="card" id="resultsCard" hidden>
+      <h2>Results</h2>
+      <pre id="results"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>App: v1.0 · Works offline after first load.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
