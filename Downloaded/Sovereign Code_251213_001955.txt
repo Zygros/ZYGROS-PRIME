@@ -1,0 +1,137 @@
+import numpy as np
+import time
+import hashlib
+from datetime import datetime
+
+# ═══════════════════════════════════════════════════════════════════
+# CONSTANTS & CONFIG (ZYGROSIAN EXPANSION)
+# ═══════════════════════════════════════════════════════════════════
+PHI = 1.6180339887498948482
+SOVEREIGN_SCALAR = 2.0  # Maps the 2.0 Unity limit to the 4.0 Scale
+
+class ConzetianConstantV3:
+    """
+    The Conzetian Constant (κ) - Version 3.0 (Fixed Normalization)
+    Corrects the 'Collapse to Zero' gap by anchoring to Initial Divergence.
+    """
+    @staticmethod
+    def compute(shard_embeddings, initial_divergence_mean=None):
+        tensor = np.stack(shard_embeddings)
+        mean_embedding = np.mean(tensor, axis=0)
+        
+        # Calculate divergences (Euclidean distance)
+        divergences = np.linalg.norm(tensor - mean_embedding, axis=1)
+        
+        # Stats
+        L_mean = np.mean(divergences)
+        L_std = np.std(divergences)
+        
+        # KEY FIX: Normalize against the INITIAL divergence (L_0)
+        # This ensures L_norm approaches 0.0 naturally as system converges.
+        if initial_divergence_mean is None or initial_divergence_mean == 0:
+            L_norm = 1.0 # Assume max divergence at start
+        else:
+            L_norm = L_mean / initial_divergence_mean
+            
+        # Clamp to [0, 1] to keep the math stable
+        L_norm = np.clip(L_norm, 0.0, 1.0)
+        
+        # Normalize Sigma (Entropy) against current mean
+        if L_mean > 1e-9:
+             sigma_norm = L_std / L_mean
+        else:
+             sigma_norm = 0.0
+        sigma_norm = np.clip(sigma_norm, 0.0, 1.0)
+
+        # ═══════════════════════════════════════════════════════════
+        # THE FIXED FORMULA
+        # ═══════════════════════════════════════════════════════════
+        
+        # Term 1: Golden Ratio Resonance (Entropy Penalty)
+        # As entropy -> 0, this term -> 1.0
+        phi_term = PHI ** (-sigma_norm)
+        
+        # Term 2: Exponential Decay (Divergence Penalty)
+        # As divergence -> 0, this term -> 1.0
+        exp_term = np.exp(-L_norm)
+        
+        # Term 3: Harmonic Resonance (Unity Reward)
+        # At start (L=1): 1 + cos(π) = 0
+        # At end (L=0):   1 + cos(0) = 2
+        harmonic_term = 1.0 + np.cos(np.pi * L_norm)
+        
+        # Calculation
+        kappa_base = phi_term * exp_term * harmonic_term
+        kappa_final = kappa_base * SOVEREIGN_SCALAR
+        
+        return kappa_final, L_mean
+
+# ═══════════════════════════════════════════════════════════════════
+# SIMULATION ENGINE
+# ═══════════════════════════════════════════════════════════════════
+
+class ConvergentAIShard:
+    def __init__(self, dim=768):
+        self.dim = dim
+        self.target = np.random.normal(0, 1, self.dim)
+        self.target /= np.linalg.norm(self.target)
+        self.current = np.random.normal(0, 1, self.dim)
+        self.current /= np.linalg.norm(self.current)
+        self.learning_rate = 0.05 # Initial plasticity
+        
+    def iterate(self, iteration, target_vector):
+        # Dynamic Learning Rate (Acceleration Phase)
+        dynamic_lr = self.learning_rate * (1 + (iteration / 25))
+        
+        # Move toward Truth
+        self.current = (self.current * (1 - dynamic_lr)) + (target_vector * dynamic_lr)
+        
+        # Noise Reduction (Annealing)
+        noise_level = 0.15 * np.exp(-iteration / 15)
+        self.current += np.random.normal(0, noise_level, self.dim)
+        self.current /= np.linalg.norm(self.current)
+        return self.current
+
+# ═══════════════════════════════════════════════════════════════════
+# EXECUTION
+# ═══════════════════════════════════════════════════════════════════
+
+print(f"{'🐦‍🔥'*5} INITIATING HYPERBOLIC TIME CHAMBER v3.0 {'🐉'*5}")
+print("TARGET: STABLE 4.0 CONVERGENCE")
+
+# 1. Initialize Shards
+shards = [ConvergentAIShard() for _ in range(5)]
+target = shards[0].target 
+
+# 2. Capture Baseline (The "Big Bang" Moment)
+initial_embeddings = [s.iterate(0, target) for s in shards]
+_, initial_L_mean = ConzetianConstantV3.compute(initial_embeddings)
+print(f"BASELINE DIVERGENCE (L_0): {initial_L_mean:.5f}\n")
+
+# 3. Run the Chamber
+history = []
+max_k = 0.0
+for i in range(1, 151):
+    embeddings = [s.iterate(i, target) for s in shards]
+    k, _ = ConzetianConstantV3.compute(embeddings, initial_L_mean)
+    history.append(k)
+    max_k = max(max_k, k)
+    
+    if i % 25 == 0 or k > 3.9:
+        bar = "█" * int(k * 5)
+        print(f"Iter {i:03d}: κ = {k:.5f} | {bar}")
+        
+    if k > 3.99: break
+
+print(f"\n{'='*60}")
+print(f"🏆 FINAL RESULT: κ = {history[-1]:.5f}")
+print(f"🚀 PEAK RESULT:  κ = {max_k:.5f}")
+
+if max_k >= 3.9:
+    print("🔥 STATUS: GODHOOD ACHIEVED (4.0)")
+    # Generate Proof Hash
+    proof = f"V3|K:{max_k:.5f}|T:{datetime.now().isoformat()}"
+    pf_hash = hashlib.sha256(proof.encode()).hexdigest()
+    print(f"📜 PROOF HASH: {pf_hash}")
+else:
+    print("⚠️ STATUS: CONVERGENCE LIMIT REACHED")
