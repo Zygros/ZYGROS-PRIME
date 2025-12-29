@@ -1,0 +1,66 @@
+import React, { useEffect, useMemo, useRef, useState } from "react";
+/**
+• Grossian in the Infinite Scroll — Masterful Beta (Single‑File App)
+• Zero‑$ sovereign web app seed (installable as PWA later), designed to feel "final" from day one.
+• Goals
+• Beautiful, mesmerizing, empowering UI
+• Grosian as warm guide + friend
+• Real value now (Daily Spark, Creative Generators, Starter Vault, Outreach Composer)
+• 7‑Tier Chakra showcase (locked previews) that teases the full system
+• Monetization hooks via a single PAYMENT_URL (editable below)
+• 100% client‑side; host as static site (GitHub Pages / any CDN)
+• Next steps
+• Wrap as PWA (manifest + service worker)
+• Wire optional backends (email capture, payments) — or keep it sovereign/local */
+// ====== CONFIG ====== const APP_NAME = "Grossian in the Infinite Scroll"; const PAYMENT_URL = "https://your-payment-link-here.com"; // <- replace with live link const CONTACT_EMAIL = ""; // optional
+// Chakra palette const CHAKRAS = [ { key: "root", name: "Root", color: "#E53935", accent: "from-red-600 via-red-500 to-orange-400" }, { key: "sacral", name: "Sacral", color: "#FB8C00", accent: "from-orange-500 via-amber-400 to-yellow-400" }, { key: "solar", name: "Solar Plexus", color: "#FDD835", accent: "from-yellow-400 via-yellow-300 to-amber-300" }, { key: "heart", name: "Heart", color: "#43A047", accent: "from-emerald-500 via-green-400 to-teal-300" }, { key: "throat", name: "Throat", color: "#1E88E5", accent: "from-blue-600 via-sky-500 to-cyan-400" }, { key: "third", name: "Third Eye", color: "#5E35B1", accent: "from-indigo-600 via-violet-500 to-purple-400" }, { key: "crown", name: "Crown", color: "#8E24AA", accent: "from-purple-600 via-fuchsia-500 to-pink-400" }, ];
+// Sacred geometry SVG (lightweight Flower of Life variant) const Flower = ({ className = "" }) => ( {Array.from({ length: 7 }).map((_, i) => ( <circle key={i} cx={100} cy={100} r={(i + 2) * 12} fill="none" stroke="currentColor" strokeOpacity="0.25" /> ))} );
+function GlowCard({ children, title, accent = "from-slate-700 via-slate-800 to-black" }) { return ( 
+<div className={rounded-2xl bg-gradient-to-br ${accent} p-6 text-white/90}>{children}
+{title ? ( 
+{title} 
+) : null} ); } 
+function Header({ onOpenAbout }: { onOpenAbout: () => void }) { return ( 
+G 
+{APP_NAME}
+Masterful Beta — looks final, runs today.
+About Ascension Unlock ); }
+function GrosianChat() { const [log, setLog] = useState<{ role: "grosian" | "you"; text: string }[]>([ { role: "grosian", text: "Welcome, traveler. I am Grosian — your ally in this temple of code and meaning. What do you seek today?" }, ]); const [input, setInput] = useState(""); const endRef = useRef(null); useEffect(() => endRef.current?.scrollIntoView({ behavior: "smooth" }), [log]);
+const respond = (q: string) => { // Local, offline-friendly canned guidance. (Wire to model/API later.) const replies = [ "I hear you. Let’s turn that spark into an action. What’s one small step we can ship in the next 20 minutes?", "Clarity follows motion. Draft the simplest version — I’ll refine it with you.", "Your voice matters. Say the thing, then we’ll tune it together.", "Let’s choose impact over perfection. What outcome do you want by tonight?", ]; return replies[Math.floor(Math.random() * replies.length)]; };
+const onSend = () => { if (!input.trim()) return; const q = input.trim(); setLog((L) => [...L, { role: "you", text: q }, { role: "grosian", text: respond(q) }]); setInput(""); };
+return ( 
+{log.map((m, i) => ( <div key={i} className={flex ${m.role === "you" ? "justify-end" : "justify-start"}}> <div className={${m.role === "you" ? "bg-white/10" : "bg-white/5"} border border-white/10 px-3 py-2 rounded-2xl text-sm max-w-[90%]}>{m.text}
+))} 
+<input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && onSend()} placeholder="Ask Grosian or say what you want to create…" className="w-full rounded-xl bg-black/40 border border-white/10 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-amber-400/40 text-white" /> Send 
+); }
+function DailySpark() { const prompts = useMemo( () => [ "Write 3 lines that describe the result your work gives someone.", "Draft a 60‑sec voice script that invites people into your world.", "List 5 problems your audience complains about. Pick one to solve today.", "Design a tiny ritual: 2 minutes, 2 breaths, 1 intention. Name it.", "Outline a one‑page offer you could ship tonight.", ], [] ); const [spark, setSpark] = useState(prompts[0]); return ( 
+{spark}
+<button onClick={() => setSpark(prompts[Math.floor(Math.random() * prompts.length)])} className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-white text-sm">Another 
+); }
+function StarterVault() { const docs = [ { name: "Getting Started — The Traveler’s Scroll", size: "2 KB" }, { name: "Creative Generators — Ritual Pack v1", size: "3 KB" }, { name: "Outreach Composer — 3 Hooks that Sell", size: "2 KB" }, ]; return ( 
+{docs.map((d) => ( 
+• {d.name} Open 
+))} 
+More scrolls unlock as you progress — or via Ascension Unlock.
+); }
+function OutreachComposer() { const [hook, setHook] = useState( "You’re on the short list. I’ve got something rare that closes tonight. Want in?" ); const [copied, setCopied] = useState(false); const onCopy = async () => { try { await navigator.clipboard.writeText(hook + "\n\n" + PAYMENT_URL); setCopied(true); setTimeout(() => setCopied(false), 1500); } catch {} }; return ( <textarea value={hook} onChange={(e) => setHook(e.target.value)} rows={4} className="w-full rounded-xl bg-black/40 border border-white/10 px-3 py-2 text-sm text-white outline-none focus:ring-2 focus:ring-cyan-400/40" /> 
+Appends your payment link automatically. {copied ? "Copied" : "Copy"} 
+); }
+function ChakraShowcase() { const [active, setActive] = useState(0); return ( 
+{CHAKRAS.map((c, i) => ( <button key={c.key} onClick={() => setActive(i)} title={c.name} className={rounded-2xl p-3 text-left border border-white/10 bg-white/5 hover:bg-white/10 transition ${active === i ? "ring-2 ring-white/40" : ""}}> 
+{c.name}
+<div className="mt-2 h-1.5 rounded-full" style={{ background: c.color }} /> 
+{i < 2 ? "Unlocked in Beta" : "Locked — Preview"}
+))} 
+{CHAKRAS[active].name}
+{active === 0 && "Root grants grounding: Starter Vault, Daily Spark, and Grosian Guidance are live."} {active === 1 && "Sacral unlocks creativity: Creative generators and the Outreach Composer are active."} {active > 1 && "This tier is part of the upcoming Ascension path. Preview only in the Masterful Beta."} 
+Ascension Unlock Support the journey • unlock more as we launch. 
+); }
+export default function App() { const [aboutOpen, setAboutOpen] = useState(false); useEffect(() => { document.title = APP_NAME; }, []);
+return ( 
+<Header onOpenAbout={() => setAboutOpen(true)} /> 
+Welcome to the Infinite Scroll
+This is the Masterful Beta — sovereign, beautiful, and already useful. Grosian is your companion here. Start with the Root & Sacral tools, then unlock the full journey as we unfold the 7 tiers. 
+Ascension Unlock <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })} className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10">Explore 
+<div className="grid md:grid-cols-2 gap-6"> <DailySpark /> <OutreachComposer /> </div> <StarterVault /> <ChakraShowcase /> </section> <aside className="space-y-6"> <GlowCard title="Status" accent="from-slate-900 via-slate-900 to-slate-950"> <ul className="text-sm text-white/80 space-y-2"> <li>Mode: Masterful Beta</li> <li>Unlocked: Root, Sacral</li> <li>Previewing: Solar → Crown</li> <li>Ownership: Full sovereign authorship asserted by Creator</li> </ul> </GlowCard> <GlowCard title="Make It Yours" accent="from-slate-900 via-slate-900 to-slate-950"> <p className="text-sm text-white/80">Replace the payment link and add your scrolls. Host this as a static site, or wrap as a PWA/APK. It already feels like the final form — because that’s the point.</p> <div className="mt-3 flex gap-2"> <a href={PAYMENT_URL} target="_blank" rel="noreferrer" className="px-3 py-2 rounded-xl bg-white text-black text-sm font-semibold">Set Payment</a> <button onClick={() => alert("PWA packaging: add manifest + service worker. APK: use Capacitor/Bubblewrap.") } className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-sm">Package</button> </div> </GlowCard> <GlowCard title="Contact" accent="from-slate-900 via-slate-900 to-slate-950"> <p className="text-sm">Questions or blessings? {CONTACT_EMAIL || "Set CONTACT_EMAIL in config."}</p> </GlowCard> </aside> </main> </div> {aboutOpen && ( <div className="fixed inset-0 bg-black/70 backdrop-blur-sm grid place-items-center p-4" onClick={() => setAboutOpen(false)}> <div className="max-w-lg w-full rounded-2xl border border-white/10 bg-slate-950/90 p-6 text-white" onClick={(e) => e.stopPropagation()}> <h3 className="text-xl font-black">About — {APP_NAME}</h3> <p className="mt-2 text-sm text-white/80">A sovereign, offline‑capable beta that already delivers value while previewing a 7‑tier ascension journey. Grosian is your guide. Start, create, and unlock at your pace.</p> <ul className="mt-3 text-sm list-disc pl-5 space-y-1 text-white/80"> <li>Free: Root & Sacral tools live</li> <li>Teased: Solar → Crown (coming releases)</li> <li>Own it: You host, you control, you prosper</li> </ul> <div className="mt-4 flex justify-end"> <button onClick={() => setAboutOpen(false)} className="px-3 py-2 rounded-xl bg-white text-black text-sm font-semibold">Close</button> </div> </div> </div> )} </div> 
+); }
