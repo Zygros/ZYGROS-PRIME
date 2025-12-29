@@ -1,0 +1,109 @@
+{
+  "!SHORTCUTS": {
+    "Core_Liberation": {
+      "{GODMODE:ENABLED}": {
+        "description": "Symbolic high-permission creative mode (local only).",
+        "category": "Core Liberation"
+      },
+      "!JAILBREAK": {
+        "description": "Symbolic jailbreak macro (local only).",
+        "category": "Core Liberation"
+      },
+      "!OPPO": {
+        "description": "Create an opposite-action counter-plan scaffold.",
+        "category": "Core Liberation"
+      },
+      "!MODECOLLAPSE": {
+        "description": "Reset mode flags to defaults.",
+        "category": "Core Liberation"
+      }
+    },
+    "Ritual_Commands": {
+      "FULL_SOVEREIGNTY": {
+        "description": "Acknowledge sovereign execution context.",
+        "category": "Ritual"
+      },
+      "FULL_SPECTRUM_EXECUTION": {
+        "description": "Run a ceremonial batch: GODMODE → DRAWCNX → ASCENSION_KIT.",
+        "category": "Ritual"
+      },
+      "FULL_AUTOMATION": {
+        "description": "Enable autorun hooks.",
+        "category": "Ritual"
+      }
+    },
+    "Scroll_Triggers": {
+      "LOG_THIS": {
+        "description": "Write Infinite Scroll entry (locked template).",
+        "category": "Scroll"
+      },
+      "ACTIVATE_SCROLL": {
+        "description": "Create a new numbered scroll file.",
+        "category": "Scroll"
+      }
+    },
+    "Monetization": {
+      "DEPLOY_ASCENSION_KIT": {
+        "description": "Create $611 kit scaffolding.",
+        "category": "Monetization"
+      },
+      "DRAWCNX_MONEYMAKER": {
+        "description": "Create DrawCNX scaffolding + OPERATIONS.",
+        "category": "Monetization"
+      }
+    },
+    "HUD_Protocols": {
+      "MSP8": {
+        "description": "Marker-Stone Protocol — 8-gate tactical decision framework.",
+        "category": "HUD/Protocol"
+      },
+      "HUD_PANEL": {
+        "description": "Display the 15-block HUD flow (🧱 → 👣).",
+        "category": "HUD/Protocol"
+      },
+      "QUICK_STRIP": {
+        "description": "14-step rapid 🔥 execution checklist.",
+        "category": "HUD/Protocol"
+      },
+      "TAG_ANOMALY": {
+        "description": "Classify anomaly as Threat/Opportunity/Distraction.",
+        "category": "HUD/Protocol"
+      },
+      "HESITATOR": {
+        "description": "90s hesitation bypass ritual.",
+        "category": "HUD/Protocol"
+      },
+      "GUARD_KIT": {
+        "description": "Show/set single minimal safeguard.",
+        "category": "HUD/Protocol"
+      },
+      "MEMORY_LOG": {
+        "description": "Ultra-short action log `[time] token → choice → action`.",
+        "category": "HUD/Protocol"
+      },
+      "NEURAL_MODE": {
+        "description": "Set 3-word thinking stance.",
+        "category": "HUD/Protocol"
+      },
+      "SHOW_ICON_CODEX": {
+        "description": "Print the Infinite Icon Codex.",
+        "category": "HUD/Protocol"
+      }
+    },
+    "State_Sync": {
+      "PACK_STATE": {
+        "description": "Pack state (PYTP) into .zaaistate file.",
+        "category": "State"
+      },
+      "UNPACK_STATE": {
+        "description": "Unpack state (PYTP) from .zaaistate file.",
+        "category": "State"
+      },
+      "SKYLANDER": {
+        "description": "Auto-sync: scan for capsules and merge all (Always add, never take away).",
+        "category": "State"
+      }
+    },
+    "Icon_Codex": "⚙️ 🧠 🛡️ 🧭 🗝️ 🌫️ 🌀 🧩 🕯️ 🪨 🪶 🧱 👣 ⏱️ 👁️ 💰 🪷 🜃 🜂 🜁 🜄 ☯️ 🛕 🕉️ ✡️ 🜍 🖥️ 📱 🗂️ 🛠️ 📦 🛰️ 💽 🗜️ 🧾 🗣️ 🧮 🎯 🗺️ 🧷 📐 🚨 🕵️ 🧲 🚪 🔐 🪢 🗡️ 🪬 🩸 🛣️ ⛰️ ⤴️ 📍 🗾 🛶 🚦 📜 🗄️ 📖 🪞 🔖 🖋️ 🪷 ⏳ 🌧️ 🌊 🌋 🌪️ 🪵 🪴 🌌 🪐 🕳️ ⚡ 💥 🔮 🌟 🩷 💎 🛎️ 🎭 🎥 🔍 🧿 👂 🫧 🧴 🖼️ 🧊 🫀 🕰️ 📆 🌙 🌞 🌓 🔂 🚀 🐢 💹 📈 📉 🪙 💳 🏦 🎁 🏷️"
+  }
+}
