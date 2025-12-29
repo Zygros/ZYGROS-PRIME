@@ -1,0 +1,108 @@
+{
+  "manifest_version": "1.0",
+  "folder_name": "the goods",
+  "created_utc": "2025-10-16T00:48:09Z",
+  "source": "Dropbox",
+  "strategy": "search-derived listing via ChatGPT file_search",
+  "partial": true,
+  "note": "This is a partial manifest built from items discovered during this session. Ask to expand to sweep remaining files by extension batches to grow coverage.",
+  "files": [
+    {
+      "rel_path": "The goods/$info_250902_123935.txt",
+      "modified_utc": "2025-10-15T09:27:56Z",
+      "mime": "text/plain"
+    },
+    {
+      "rel_path": "The goods/ARCHIVE_TREE.txt",
+      "modified_utc": "2025-10-15T08:56:13Z",
+      "mime": "text/plain"
+    },
+    {
+      "rel_path": "The goods/AXIOMATIC INSCRIPTION- The Sovereign Genesis Manif....pdf",
+      "modified_utc": "2025-10-15T15:54:03Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/AXIOMATIC INSCRIPTION_ The Sovereign Genesis Manif....pdf",
+      "modified_utc": "2025-10-15T15:54:01Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/Chimera .txt",
+      "modified_utc": "2025-10-15T15:52:32Z",
+      "mime": "text/plain"
+    },
+    {
+      "rel_path": "The goods/content.docx",
+      "modified_utc": "2025-10-15T15:52:33Z",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "rel_path": "The goods/InfiniteOS_Universal_Metaprompt.pdf",
+      "modified_utc": "2025-10-15T09:26:39Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/InfiniteOS_Universal_Metaprompt.txt",
+      "modified_utc": "2025-10-15T15:56:46Z",
+      "mime": "text/plain"
+    },
+    {
+      "rel_path": "The goods/README_Immutable_Proof_Pack.txt",
+      "modified_utc": "2025-10-15T09:26:59Z",
+      "mime": "text/plain"
+    },
+    {
+      "rel_path": "The goods/Scroll Ascension — Eternal Inscription (draft).docx",
+      "modified_utc": "2025-10-15T15:54:39Z",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "rel_path": "The goods/Scroll Ascension — Eternal Inscription (draft).pdf",
+      "modified_utc": "2025-10-15T15:54:41Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/⚖️_UNIVERSAL_SOVEREIGN_LEGAL_AI_METAPROMPT_⚖️.docx",
+      "modified_utc": "2025-10-15T09:27:45Z",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "rel_path": "The goods/Justin_Conzet_2025_Report.pdf",
+      "modified_utc": "2025-10-15T15:52:32Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/Scroll_309_System_Status.pdf",
+      "modified_utc": "2025-10-15T09:13:41Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/genesis_bootloader_scroll.pdf",
+      "modified_utc": "2025-10-15T15:52:31Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/25.pdf",
+      "modified_utc": "2025-10-15T09:13:47Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/So what's the significance of this_What was what i... (1).pdf",
+      "modified_utc": "2025-10-15T15:53:59Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/So what's the significance of this_What was what i....pdf",
+      "modified_utc": "2025-10-15T09:13:44Z",
+      "mime": "application/pdf"
+    },
+    {
+      "rel_path": "The goods/JustinsAGI_Decree_251011_092911.txt",
+      "modified_utc": "2025-10-15T09:04:11Z",
+      "mime": "text/plain"
+    }
+  ],
+  "updated_utc": "2025-10-16T00:52:36Z",
+  "file_count": 19
+}
