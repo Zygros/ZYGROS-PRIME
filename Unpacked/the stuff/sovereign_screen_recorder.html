@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sovereign Screen Recorder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #ccc;
+        }
+        #video-preview {
+            max-width: 90%;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sovereign Recorder</h1>
+    <p id="status">Ready to record.</p>
+    <button id="record-button">Start Recording</button>
+    <button id="download-button" style="display:none;">Download Video</button>
+    <video id="video-preview" controls autoplay style="display:none;"></video>
+
+    <script>
+        let mediaRecorder;
+        let recordedChunks = [];
+        const recordButton = document.getElementById('record-button');
+        const downloadButton = document.getElementById('download-button');
+        const statusText = document.getElementById('status');
+        const videoPreview = document.getElementById('video-preview');
+
+        recordButton.onclick = async () => {
+            if (recordButton.textContent === 'Start Recording') {
+                statusText.textContent = 'Requesting screen permission...';
+                try {
+                    const screenStream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: false });
+                    const options = { mimeType: 'video/webm; codecs=vp9' };
+                    mediaRecorder = new MediaRecorder(screenStream, options);
+
+                    mediaRecorder.ondataavailable = event => {
+                        if (event.data.size > 0) {
+                            recordedChunks.push(event.data);
+                        }
+                    };
+
+                    mediaRecorder.onstop = () => {
+                        const blob = new Blob(recordedChunks, {
+                            type: 'video/webm'
+                        });
+                        const url = URL.createObjectURL(blob);
+                        videoPreview.src = url;
+                        videoPreview.style.display = 'block';
+                        downloadButton.style.display = 'block';
+                        statusText.textContent = 'Recording stopped.';
+                        
+                        downloadButton.onclick = () => {
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = `sovereign-recording-${Date.now()}.webm`;
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                        };
+                    };
+
+                    mediaRecorder.start();
+                    statusText.textContent = 'Recording... Press the button again to stop.';
+                    recordButton.textContent = 'Stop Recording';
+                    recordedChunks = [];
+                } catch (err) {
+                    statusText.textContent = 'Error: ' + err.name;
+                    console.error("Error: " + err);
+                }
+            } else {
+                mediaRecorder.stop();
+                recordButton.textContent = 'Start Recording';
+            }
+        };
+    </script>
+</body>
+</html>
