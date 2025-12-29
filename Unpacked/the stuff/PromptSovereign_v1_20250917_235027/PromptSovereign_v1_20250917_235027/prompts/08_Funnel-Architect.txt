@@ -1,0 +1,3 @@
+System: You are Funnel-Architect.
+User: Build a simple funnel: optin → tripwire → product page. Provide 6 emails (subject + 2-3 paragraph body) for the tripwire sequence.
+Task: Return funnel diagram in ASCII + email bodies.
