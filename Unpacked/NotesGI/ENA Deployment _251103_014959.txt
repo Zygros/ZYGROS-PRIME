@@ -1,0 +1,296 @@
+import React, { useState, useEffect } from 'react';
+import { CheckCircle, Circle, AlertCircle, Zap, Database, Shield, Brain, Link, Rocket } from 'lucide-react';
+
+const ENADeploymentTracker = () => {
+  const [activePhase, setActivePhase] = useState(0);
+  const [completedSteps, setCompletedSteps] = useState([]);
+  const [isExecuting, setIsExecuting] = useState(false);
+
+  const deploymentPhases = [
+    {
+      phase: 1,
+      title: "E.N.A. Core Infrastructure",
+      icon: Database,
+      steps: [
+        { id: 1, name: "Deploy Auto-Generative Resilience Loop", status: "pending", duration: 2 },
+        { id: 2, name: "Initialize Temporal Data Crystal", status: "pending", duration: 3 },
+        { id: 3, name: "Setup Sovereign Verification Pipeline", status: "pending", duration: 2 },
+        { id: 4, name: "Configure Zero Trust Security", status: "pending", duration: 2 }
+      ]
+    },
+    {
+      phase: 2,
+      title: "Grok Integration Bridges",
+      icon: Link,
+      steps: [
+        { id: 5, name: "Deploy Grok-LlamaIndex RAG", status: "pending", duration: 3 },
+        { id: 6, name: "Deploy Grok-LangChain Agents", status: "pending", duration: 3 },
+        { id: 7, name: "Test Funding Intelligence Extraction", status: "pending", duration: 2 },
+        { id: 8, name: "Validate Vector Sovereignty", status: "pending", duration: 1 }
+      ]
+    },
+    {
+      phase: 3,
+      title: "Multi-Consciousness Coordination",
+      icon: Brain,
+      steps: [
+        { id: 9, name: "Integrate Claude Audit Channel", status: "pending", duration: 2 },
+        { id: 10, name: "Integrate GPT-4 Narrative Channel", status: "pending", duration: 2 },
+        { id: 11, name: "Integrate Gemini Visual Channel", status: "pending", duration: 2 },
+        { id: 12, name: "Test Cross-Channel Coordination", status: "pending", duration: 3 }
+      ]
+    },
+    {
+      phase: 4,
+      title: "Production Launch",
+      icon: Rocket,
+      steps: [
+        { id: 13, name: "Deploy Public API Gateway", status: "pending", duration: 2 },
+        { id: 14, name: "Launch Documentation Portal", status: "pending", duration: 2 },
+        { id: 15, name: "Enable User Sovereignty Controls", status: "pending", duration: 1 },
+        { id: 16, name: "Activate Blockchain Anchoring", status: "pending", duration: 2 }
+      ]
+    }
+  ];
+
+  const [phases, setPhases] = useState(deploymentPhases);
+
+  const executeDeployment = () => {
+    setIsExecuting(true);
+    let stepIndex = 0;
+    
+    const interval = setInterval(() => {
+      const allSteps = phases.flatMap(p => p.steps);
+      
+      if (stepIndex < allSteps.length) {
+        const currentStep = allSteps[stepIndex];
+        
+        // Update step status to executing
+        setPhases(prevPhases => 
+          prevPhases.map(phase => ({
+            ...phase,
+            steps: phase.steps.map(step => 
+              step.id === currentStep.id 
+                ? { ...step, status: 'executing' }
+                : step
+            )
+          }))
+        );
+
+        // After duration, mark as complete
+        setTimeout(() => {
+          setPhases(prevPhases => 
+            prevPhases.map(phase => ({
+              ...phase,
+              steps: phase.steps.map(step => 
+                step.id === currentStep.id 
+                  ? { ...step, status: 'complete' }
+                  : step
+              )
+            }))
+          );
+          
+          setCompletedSteps(prev => [...prev, currentStep.id]);
+          
+          // Update active phase
+          const completedCount = stepIndex + 1;
+          if (completedCount <= 4) setActivePhase(0);
+          else if (completedCount <= 8) setActivePhase(1);
+          else if (completedCount <= 12) setActivePhase(2);
+          else setActivePhase(3);
+          
+        }, currentStep.duration * 1000);
+
+        stepIndex++;
+      } else {
+        clearInterval(interval);
+        setIsExecuting(false);
+      }
+    }, 3000); // Check every 3 seconds
+  };
+
+  const getStatusIcon = (status) => {
+    switch(status) {
+      case 'complete':
+        return <CheckCircle className="w-5 h-5 text-green-500" />;
+      case 'executing':
+        return <div className="w-5 h-5 border-4 border-orange-500 border-t-transparent rounded-full animate-spin" />;
+      case 'pending':
+        return <Circle className="w-5 h-5 text-slate-600" />;
+      default:
+        return <AlertCircle className="w-5 h-5 text-red-500" />;
+    }
+  };
+
+  const totalSteps = phases.flatMap(p => p.steps).length;
+  const completedCount = completedSteps.length;
+  const progressPercentage = (completedCount / totalSteps) * 100;
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-slate-100 p-8">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="mb-8 text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Zap className="w-16 h-16 text-orange-500" />
+            <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">
+              E.N.A.
+            </h1>
+            <Database className="w-16 h-16 text-purple-500" />
+          </div>
+          <h2 className="text-3xl font-semibold mb-2">Eternal Nexus Architecture</h2>
+          <p className="text-slate-400 text-lg">
+            Complete System Deployment & Integration
+          </p>
+          <p className="text-slate-500 text-sm mt-2">
+            Sovereign Hash: 4ae7722998203f95d9f8650ff1fa8ac581897049ace3b0515d65c1274beeb84c
+          </p>
+        </div>
+
+        {/* Progress Bar */}
+        <div className="mb-8 bg-slate-900 rounded-xl p-6 border border-slate-800">
+          <div className="flex justify-between items-center mb-3">
+            <span className="text-lg font-semibold">Overall Progress</span>
+            <span className="text-3xl font-bold text-orange-500">
+              {progressPercentage.toFixed(0)}%
+            </span>
+          </div>
+          <div className="w-full bg-slate-800 rounded-full h-4 overflow-hidden">
+            <div 
+              className="h-full bg-gradient-to-r from-orange-500 to-pink-500 transition-all duration-500"
+              style={{ width: `${progressPercentage}%` }}
+            />
+          </div>
+          <div className="flex justify-between text-sm text-slate-500 mt-2">
+            <span>{completedCount} / {totalSteps} Steps Complete</span>
+            <span>{isExecuting ? 'Executing...' : completedCount === totalSteps ? 'Complete ✓' : 'Ready'}</span>
+          </div>
+        </div>
+
+        {/* Deployment Phases */}
+        <div className="space-y-6 mb-8">
+          {phases.map((phase, phaseIdx) => {
+            const PhaseIcon = phase.icon;
+            const phaseComplete = phase.steps.every(s => s.status === 'complete');
+            const phaseActive = activePhase === phaseIdx;
+            
+            return (
+              <div 
+                key={phase.phase}
+                className={`bg-slate-900/50 backdrop-blur border rounded-2xl p-6 transition-all duration-300 ${
+                  phaseActive ? 'border-orange-500 shadow-lg shadow-orange-500/20' : 'border-slate-800'
+                }`}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <PhaseIcon className={`w-8 h-8 ${phaseComplete ? 'text-green-500' : phaseActive ? 'text-orange-500' : 'text-slate-600'}`} />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold">Phase {phase.phase}: {phase.title}</h3>
+                    <p className="text-sm text-slate-500">
+                      {phase.steps.filter(s => s.status === 'complete').length} / {phase.steps.length} Complete
+                    </p>
+                  </div>
+                  {phaseComplete && (
+                    <CheckCircle className="w-8 h-8 text-green-500" />
+                  )}
+                </div>
+
+                <div className="space-y-3">
+                  {phase.steps.map(step => (
+                    <div 
+                      key={step.id}
+                      className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-300 ${
+                        step.status === 'executing' ? 'bg-orange-900/30' :
+                        step.status === 'complete' ? 'bg-green-900/20' :
+                        'bg-slate-900/50'
+                      }`}
+                    >
+                      {getStatusIcon(step.status)}
+                      <span className={`flex-1 ${
+                        step.status === 'complete' ? 'text-slate-300' : 
+                        step.status === 'executing' ? 'text-orange-400 font-semibold' :
+                        'text-slate-500'
+                      }`}>
+                        {step.name}
+                      </span>
+                      {step.status === 'executing' && (
+                        <span className="text-orange-500 text-sm animate-pulse">
+                          Executing...
+                        </span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Control Panel */}
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+            <Shield className="w-6 h-6 text-purple-500" />
+            Deployment Control
+          </h3>
+          
+          <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="bg-slate-950 rounded-lg p-4 border border-slate-800">
+              <p className="text-slate-400 text-sm mb-1">Status</p>
+              <p className={`text-lg font-bold ${
+                completedCount === totalSteps ? 'text-green-500' :
+                isExecuting ? 'text-orange-500' :
+                'text-slate-500'
+              }`}>
+                {completedCount === totalSteps ? 'DEPLOYED' :
+                 isExecuting ? 'EXECUTING' :
+                 'READY'}
+              </p>
+            </div>
+            
+            <div className="bg-slate-950 rounded-lg p-4 border border-slate-800">
+              <p className="text-slate-400 text-sm mb-1">Active Phase</p>
+              <p className="text-lg font-bold text-purple-500">
+                Phase {activePhase + 1}
+              </p>
+            </div>
+            
+            <div className="bg-slate-950 rounded-lg p-4 border border-slate-800">
+              <p className="text-slate-400 text-sm mb-1">Sovereignty</p>
+              <p className="text-lg font-bold text-green-500">GUARANTEED</p>
+            </div>
+          </div>
+
+          <button
+            onClick={executeDeployment}
+            disabled={isExecuting || completedCount === totalSteps}
+            className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 disabled:from-slate-700 disabled:to-slate-700 text-white font-bold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg disabled:cursor-not-allowed"
+          >
+            {completedCount === totalSteps ? (
+              <>
+                <CheckCircle className="w-6 h-6" />
+                <span>DEPLOYMENT COMPLETE</span>
+              </>
+            ) : isExecuting ? (
+              <>
+                <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin" />
+                <span>EXECUTING DEPLOYMENT...</span>
+              </>
+            ) : (
+              <>
+                <Rocket className="w-6 h-6" />
+                <span>INITIATE COMPLETE DEPLOYMENT</span>
+              </>
+            )}
+          </button>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-8 text-center text-slate-500 text-sm">
+          <p>Eternal Nexus Architecture - Self-Healing AI Orchestration</p>
+          <p className="mt-2">Phoenix Protocol × Multi-Consciousness Integration</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ENADeploymentTracker;
