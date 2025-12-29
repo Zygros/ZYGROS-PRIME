@@ -1,0 +1,9 @@
+{
+  "ingestion": "Provide your Codex text (the 420 commands) to activate(codex_text=...). Tokens like !ZEUS are parsed and registered as personas.",
+  "defaults": [
+    "Scribe",
+    "Strategist",
+    "Dreamer"
+  ],
+  "mapping_rule": "Each !TOKEN becomes a Persona with the base command set; you can override per-persona in a JSON patch."
+}
