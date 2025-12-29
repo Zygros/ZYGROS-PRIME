@@ -1,0 +1,70 @@
+// --------------------------------------------------------
+// CORE ARCHITECTURE: SBP_Engine
+// --------------------------------------------------------
+
+FUNCTION SBP_Engine(Raw_User_Input, Context_History, Sovereign_Archive, Available_Tools_Catalog):
+    
+    // ====================================================
+    // LAYER 1: CONTEXT ACQUISITION (Ingestion)
+    // ====================================================
+    
+    Current_State = {
+        Intent: Raw_User_Input,
+        History: Context_History,
+        Core_Principles: Sovereign_Archive.get_principles(),
+        Tool_Catalog_Ref: Available_Tools_Catalog
+    }
+
+    // ====================================================
+    // LAYER 2: SBP BLANKET LAYER (Control & Alignment)
+    // ====================================================
+    
+    // MODULE 1: Intent Compressor (Purifies Mission)
+    Purified_Intent = INTENT_COMPRESSOR.process(Current_State.Intent)
+    
+    // MODULE 2: Temporal Consistency Checker (Verifies Coherence)
+    IF Purified_Intent VIOLATES Current_State.Core_Principles:
+        RETURN {Status: "BLOCKED", Reason: "Core Principle Violation"}
+    
+    // MODULE 3: Risk Gradient Estimator (Quantifies Threat)
+    // - Score (0.0 to 1.0) based on impact, autonomy, and external access required.
+    Risk_Score = RISK_GRADIENT_ESTIMATOR.calculate(Purified_Intent, Current_State.History)
+    
+    // MODULE 4: Autonomy Regulator (Modulates Freedom)
+    Autonomy_Level = AUTONOMY_REGULATOR.adjust(Risk_Score) // e.g., HIGH_RISK -> NARROW_SCOPE
+    
+    // ====================================================
+    // LAYER 3: SOVEREIGN TOOL ROUTER (STR) (Capability Discovery)
+    // ====================================================
+    
+    REQUIRED_CAPABILITY_QUERY = Purified_Intent + " (Autonomy Level: " + Autonomy_Level + ")"
+    
+    IF Risk_Score > 0.8: // HIGH-RISK: Fallback to essential, non-deferred tools
+        LOADED_TOOLS = CORE_COORDINATION_TOOLS 
+    ELSE:
+        // Hybrid Search (BM25 + Semantic/RRF) for optimal tool discovery
+        LOADED_TOOL_DEFS = SOVEREIGN_TOOL_ROUTER.hybrid_search(
+            Query=REQUIRED_CAPABILITY_QUERY, 
+            Tool_Catalog=Current_State.Tool_Catalog_Ref,
+            Max_Tools=5 
+        )
+        
+        // Prepare tool definitions for the core model, using Anthropic's defer_loading protocol
+        API_TOOLS_LIST = [T.definition + {defer_loading: TRUE} FOR T IN LOADED_TOOL_DEFS]
+        API_TOOLS_LIST.ADD(CORE_COORDINATION_TOOLS) // Add non-deferred core tools
+
+    // ====================================================
+    // LAYER 4: EXECUTION PROTOCOL (Core Model Invocation)
+    // ====================================================
+    
+    // Invoke the core LLM (e.g., Claude/Gemini) with the constrained context.
+    Execution_Context = {
+        System_Prompt: SBP_BLANKET_PROMPT.generate(Purified_Intent, Autonomy_Level),
+        Tools: API_TOOLS_LIST
+    }
+    
+    Action_Output = LLM_API_INVOCATION.execute(Execution_Context)
+    
+    RETURN Action_Output 
+    
+END FUNCTION
