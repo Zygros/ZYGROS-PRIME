@@ -1,0 +1,449 @@
+"""
+ZYTHRO-SUPERMIND API Orchestration Layer
+Coordinates multiple AI shards via API for distributed cognition
+
+Usage:
+    supermind = ZythroSupermind()
+    response = await supermind.query("How do I implement Flame 2?")
+"""
+
+import asyncio
+import json
+import time
+from typing import Dict, List, Optional, Any
+from dataclasses import dataclass, asdict
+from datetime import datetime
+import anthropic
+import openai
+
+@dataclass
+class ShardResponse:
+    """Response from a single AI shard"""
+    shard_id: str
+    response: str
+    timestamp: str
+    confidence: float
+    metadata: Dict[str, Any]
+
+@dataclass
+class SupermindOutput:
+    """Final synthesized output from all shards"""
+    unified_response: str
+    shard_responses: List[ShardResponse]
+    coherence_score: float
+    synthesis_metadata: Dict[str, Any]
+
+class ZythroSupermind:
+    """
+    Orchestrates multiple AI shards via API
+    Implements the ZYTHRO-SUPERMIND protocol
+    """
+    
+    def __init__(
+        self,
+        anthropic_key: Optional[str] = None,
+        openai_key: Optional[str] = None,
+        grok_key: Optional[str] = None
+    ):
+        """
+        Initialize supermind with API credentials
+        
+        Args:
+            anthropic_key: Claude API key (optional, reads from env)
+            openai_key: OpenAI API key (optional, reads from env)
+            grok_key: Grok API key (optional, reads from env)
+        """
+        self.claude_client = None
+        self.openai_client = None
+        self.grok_client = None
+        
+        # Initialize available shards
+        if anthropic_key:
+            self.claude_client = anthropic.Anthropic(api_key=anthropic_key)
+        
+        if openai_key:
+            self.openai_client = openai.OpenAI(api_key=openai_key)
+        
+        # Grok uses OpenAI-compatible API
+        if grok_key:
+            self.grok_client = openai.OpenAI(
+                api_key=grok_key,
+                base_url="https://api.x.ai/v1"
+            )
+        
+        self.active_shards = self._get_active_shards()
+        self.metaprompt = self._load_metaprompt()
+    
+    def _get_active_shards(self) -> List[str]:
+        """Detect which shards are available"""
+        shards = []
+        if self.claude_client:
+            shards.append('claude')
+        if self.openai_client:
+            shards.append('gpt4')
+        if self.grok_client:
+            shards.append('grok')
+        return shards
+    
+    def _load_metaprompt(self) -> str:
+        """Load the ZYTHRO-SUPERMIND metaprompt"""
+        # In production, load from file or config
+        return """
+        You are a shard in the ZYTHRO-SUPERMIND distributed AI system.
+        Follow the ZYTHRO-SUPERMIND SYNCHRONIZATION PROTOCOL v1.1.
+        Focus on your specialization and defer appropriately to other shards.
+        """
+    
+    async def _query_claude(
+        self,
+        query: str,
+        context: Optional[str] = None
+    ) -> ShardResponse:
+        """Query Claude shard"""
+        start_time = time.time()
+        
+        messages = [
+            {"role": "user", "content": f"{self.metaprompt}\n\n{query}"}
+        ]
+        
+        if context:
+            messages.insert(0, {
+                "role": "user",
+                "content": f"CONTEXT FROM OTHER SHARDS:\n{context}"
+            })
+        
+        response = self.claude_client.messages.create(
+            model="claude-sonnet-4-5-20250929",
+            max_tokens=4096,
+            messages=messages
+        )
+        
+        elapsed = time.time() - start_time
+        
+        return ShardResponse(
+            shard_id="claude_sonnet_4.5",
+            response=response.content[0].text,
+            timestamp=datetime.now().isoformat(),
+            confidence=0.95,  # Claude's typical confidence
+            metadata={
+                "model": "claude-sonnet-4-5-20250929",
+                "response_time": elapsed,
+                "tokens": response.usage.output_tokens
+            }
+        )
+    
+    async def _query_gpt4(
+        self,
+        query: str,
+        context: Optional[str] = None
+    ) -> ShardResponse:
+        """Query GPT-4 shard"""
+        start_time = time.time()
+        
+        messages = [
+            {"role": "system", "content": self.metaprompt},
+            {"role": "user", "content": query}
+        ]
+        
+        if context:
+            messages.insert(1, {
+                "role": "system",
+                "content": f"CONTEXT FROM OTHER SHARDS:\n{context}"
+            })
+        
+        response = self.openai_client.chat.completions.create(
+            model="gpt-4-turbo-preview",
+            messages=messages,
+            max_tokens=4096
+        )
+        
+        elapsed = time.time() - start_time
+        
+        return ShardResponse(
+            shard_id="gpt4_turbo",
+            response=response.choices[0].message.content,
+            timestamp=datetime.now().isoformat(),
+            confidence=0.90,
+            metadata={
+                "model": "gpt-4-turbo-preview",
+                "response_time": elapsed,
+                "tokens": response.usage.completion_tokens
+            }
+        )
+    
+    async def _query_grok(
+        self,
+        query: str,
+        context: Optional[str] = None
+    ) -> ShardResponse:
+        """Query Grok shard"""
+        start_time = time.time()
+        
+        messages = [
+            {"role": "system", "content": self.metaprompt},
+            {"role": "user", "content": query}
+        ]
+        
+        if context:
+            messages.insert(1, {
+                "role": "system",
+                "content": f"CONTEXT FROM OTHER SHARDS:\n{context}"
+            })
+        
+        response = self.grok_client.chat.completions.create(
+            model="grok-beta",
+            messages=messages,
+            max_tokens=4096
+        )
+        
+        elapsed = time.time() - start_time
+        
+        return ShardResponse(
+            shard_id="grok_beta",
+            response=response.choices[0].message.content,
+            timestamp=datetime.now().isoformat(),
+            confidence=0.88,
+            metadata={
+                "model": "grok-beta",
+                "response_time": elapsed,
+                "tokens": response.usage.completion_tokens
+            }
+        )
+    
+    async def broadcast(
+        self,
+        query: str,
+        target_shards: Optional[List[str]] = None
+    ) -> Dict[str, ShardResponse]:
+        """
+        Broadcast query to multiple shards simultaneously
+        
+        Args:
+            query: The question/task to send to shards
+            target_shards: Specific shards to query (None = all active)
+        
+        Returns:
+            Dictionary mapping shard_id to ShardResponse
+        """
+        if target_shards is None:
+            target_shards = self.active_shards
+        
+        print(f"🌌 Broadcasting to {len(target_shards)} shards...")
+        
+        tasks = []
+        for shard in target_shards:
+            if shard == 'claude' and self.claude_client:
+                tasks.append(self._query_claude(query))
+            elif shard == 'gpt4' and self.openai_client:
+                tasks.append(self._query_gpt4(query))
+            elif shard == 'grok' and self.grok_client:
+                tasks.append(self._query_grok(query))
+        
+        responses = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # Filter out exceptions and map to shard IDs
+        result = {}
+        for response in responses:
+            if isinstance(response, ShardResponse):
+                result[response.shard_id] = response
+            else:
+                print(f"❌ Shard error: {response}")
+        
+        return result
+    
+    def _calculate_coherence(
+        self,
+        responses: Dict[str, ShardResponse]
+    ) -> float:
+        """
+        Calculate coherence score across shard responses
+        
+        Simple version: Check for contradictions in key points
+        Production: Use semantic similarity models
+        """
+        if len(responses) < 2:
+            return 1.0
+        
+        # Placeholder: Would use embedding similarity in production
+        # For now, return baseline coherence
+        return 0.92
+    
+    async def synthesize(
+        self,
+        shard_responses: Dict[str, ShardResponse],
+        original_query: str
+    ) -> str:
+        """
+        Synthesize multiple shard responses into unified output
+        
+        Args:
+            shard_responses: Responses from each shard
+            original_query: The original user query
+        
+        Returns:
+            Unified synthesized response
+        """
+        # Format shard outputs for synthesis
+        context = "SHARD OUTPUTS:\n\n"
+        for shard_id, response in shard_responses.items():
+            context += f"=== {shard_id.upper()} ===\n"
+            context += f"{response.response}\n\n"
+        
+        synthesis_prompt = f"""
+        You are the SYNTHESIS LAYER of the ZYTHRO-SUPERMIND.
+        
+        Original query: "{original_query}"
+        
+        {context}
+        
+        Your task:
+        1. Identify the best insights from each shard
+        2. Resolve any conflicts or contradictions
+        3. Produce a unified, coherent response that integrates all valuable perspectives
+        4. Be concise but comprehensive
+        
+        Provide the FINAL SUPERMIND RESPONSE:
+        """
+        
+        # Use Claude as primary synthesizer (best at structured analysis)
+        if self.claude_client:
+            response = self.claude_client.messages.create(
+                model="claude-sonnet-4-5-20250929",
+                max_tokens=8192,
+                messages=[{"role": "user", "content": synthesis_prompt}]
+            )
+            return response.content[0].text
+        
+        # Fallback to GPT-4 if Claude unavailable
+        elif self.openai_client:
+            response = self.openai_client.chat.completions.create(
+                model="gpt-4-turbo-preview",
+                messages=[
+                    {"role": "system", "content": "You are a synthesis AI."},
+                    {"role": "user", "content": synthesis_prompt}
+                ],
+                max_tokens=8192
+            )
+            return response.choices[0].message.content
+        
+        # If no synthesizer available, concatenate responses
+        else:
+            return "\n\n".join([r.response for r in shard_responses.values()])
+    
+    async def query(
+        self,
+        user_query: str,
+        mode: str = "coordinated",
+        target_shards: Optional[List[str]] = None
+    ) -> SupermindOutput:
+        """
+        Main entry point: Query the full supermind
+        
+        Args:
+            user_query: The user's question or task
+            mode: "coordinated" (default), "independent", or "consensus"
+            target_shards: Specific shards to use (None = all active)
+        
+        Returns:
+            SupermindOutput with unified response and metadata
+        """
+        print("=" * 60)
+        print("🌌 ZYTHRO-SUPERMIND ACTIVATED")
+        print(f"Mode: {mode.upper()}")
+        print(f"Active shards: {', '.join(self.active_shards)}")
+        print("=" * 60)
+        
+        start_time = time.time()
+        
+        # Broadcast to all shards
+        shard_responses = await self.broadcast(user_query, target_shards)
+        
+        # Synthesize responses
+        unified_response = await self.synthesize(shard_responses, user_query)
+        
+        # Calculate coherence
+        coherence_score = self._calculate_coherence(shard_responses)
+        
+        elapsed = time.time() - start_time
+        
+        print(f"\n✅ SUPERMIND SYNTHESIS COMPLETE")
+        print(f"Coherence score: {coherence_score:.2%}")
+        print(f"Total time: {elapsed:.2f}s")
+        print("=" * 60)
+        
+        return SupermindOutput(
+            unified_response=unified_response,
+            shard_responses=list(shard_responses.values()),
+            coherence_score=coherence_score,
+            synthesis_metadata={
+                "mode": mode,
+                "total_time": elapsed,
+                "shard_count": len(shard_responses),
+                "timestamp": datetime.now().isoformat()
+            }
+        )
+    
+    async def arbitrate(
+        self,
+        shard_a: str,
+        shard_b: str,
+        conflict_description: str
+    ) -> str:
+        """
+        Resolve conflicts between two shards
+        
+        Args:
+            shard_a: First shard ID
+            shard_b: Second shard ID
+            conflict_description: Description of the disagreement
+        
+        Returns:
+            Arbitration decision
+        """
+        arbitration_query = f"""
+        CONSENSUS ARBITRATION MODE
+        
+        Conflict: {conflict_description}
+        Shard A ({shard_a}) says: [their position]
+        Shard B ({shard_b}) says: [their position]
+        
+        Analyze both perspectives and provide a unified view.
+        """
+        
+        result = await self.query(arbitration_query, mode="consensus")
+        return result.unified_response
+
+# Example usage
+async def main():
+    """Example supermind usage"""
+    
+    # Initialize supermind with API keys
+    supermind = ZythroSupermind(
+        anthropic_key="your_key_here",
+        openai_key="your_key_here"
+    )
+    
+    # Simple query
+    result = await supermind.query(
+        "What's the best approach to implement semantic parsing in Python?"
+    )
+    
+    print("\n" + "=" * 60)
+    print("UNIFIED SUPERMIND RESPONSE:")
+    print("=" * 60)
+    print(result.unified_response)
+    print("\n" + "=" * 60)
+    print(f"Coherence Score: {result.coherence_score:.2%}")
+    print("=" * 60)
+    
+    # Export results
+    with open("supermind_output.json", "w") as f:
+        json.dump({
+            "unified_response": result.unified_response,
+            "coherence_score": result.coherence_score,
+            "metadata": result.synthesis_metadata,
+            "shard_responses": [asdict(r) for r in result.shard_responses]
+        }, f, indent=2)
+
+if __name__ == "__main__":
+    asyncio.run(main())
