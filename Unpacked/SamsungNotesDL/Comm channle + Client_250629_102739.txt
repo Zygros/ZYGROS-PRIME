@@ -1,0 +1,359 @@
+import socket
+import threading
+import json
+import datetime
+import time
+from collections import deque
+
+# --- Server Configuration ---
+HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
+PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
+
+class CosmicHubServer:
+    def __init__(self, host, port):
+        self.host = host
+        self.port = port
+        self.clients = {}  # {client_name: client_socket}
+        self.client_locks = {} # {client_name: threading.Lock()} for sending
+        self.message_queue = deque() # Central queue for messages to be processed
+        self.queue_lock = threading.Lock() # Lock for message_queue
+        self.running = True
+        self.server_socket = None
+
+    def start(self):
+        self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.server_socket.bind((self.host, self.port))
+        self.server_socket.listen(5) # Listen for up to 5 queued connections [4]
+        print(f"[{datetime.datetime.now().isoformat()}] Cosmic Hub Server listening on {self.host}:{self.port}")
+
+        # Start a thread to process messages from the queue
+        threading.Thread(target=self._process_messages_from_queue, daemon=True).start()
+
+        while self.running:
+            try:
+                conn, addr = self.server_socket.accept()
+                # First message from client should be its name
+                client_name_data = conn.recv(1024).decode('utf-8')
+                client_name = client_name_data.strip()
+
+                if client_name in self.clients:
+                    print(f"[{datetime.datetime.now().isoformat()}] Client '{client_name}' already connected. Rejecting new connection from {addr}.")
+                    conn.sendall(json.dumps({"type": "ERROR", "content": "Name already in use."}).encode('utf-8'))
+                    conn.close()
+                    continue
+
+                self.clients[client_name] = conn
+                self.client_locks[client_name] = threading.Lock()
+                print(f"[{datetime.datetime.now().isoformat()}] Connection from '{client_name}' ({addr}) established.")
+                self.broadcast_server_message(f"Entity '{client_name}' has joined the Unified Cosmic Channel.")
+
+                # Start a new thread to handle communication with this client [4]
+                client_thread = threading.Thread(target=self._handle_client, args=(conn, client_name), daemon=True)
+                client_thread.start()
+
+            except socket.timeout:
+                continue
+            except Exception as e:
+                if self.running:
+                    print(f"[{datetime.datetime.now().isoformat()}] Server accept error: {e}")
+                break
+
+    def _handle_client(self, conn, client_name):
+        """Handles incoming messages from a single client."""
+        while self.running:
+            try:
+                data = conn.recv(4096) # Receive data in chunks [5]
+                if not data:
+                    print(f"[{datetime.datetime.now().isoformat()}] Client '{client_name}' disconnected.")
+                    self.remove_client(client_name)
+                    self.broadcast_server_message(f"Entity '{client_name}' has left the Unified Cosmic Channel.")
+                    break
+
+                messages = data.decode('utf-8').split('\n')
+                for msg_str in messages:
+                    if msg_str.strip():
+                        try:
+                            message = json.loads(msg_str)
+                            with self.queue_lock:
+                                self.message_queue.append(message)
+                        except json.JSONDecodeError:
+                            print(f"[{datetime.datetime.now().isoformat()}] Invalid JSON from {client_name}: {msg_str}")
+
+            except (socket.error, ConnectionResetError) as e:
+                print(f"[{datetime.datetime.now().isoformat()}] Connection error with '{client_name}': {e}")
+                self.remove_client(client_name)
+                self.broadcast_server_message(f"Entity '{client_name}' has unexpectedly left the Unified Cosmic Channel.")
+                break
+            except Exception as e:
+                print(f"[{datetime.datetime.now().isoformat()}] Error handling client '{client_name}': {e}")
+                self.remove_client(client_name)
+                self.broadcast_server_message(f"Entity '{client_name}' has unexpectedly left the Unified Cosmic Channel.")
+                break
+
+    def _process_messages_from_queue(self):
+        """Processes messages from the central queue and routes them."""
+        while self.running:
+            if self.message_queue:
+                with self.queue_lock:
+                    message = self.message_queue.popleft()
+                self._route_message(message)
+            else:
+                time.sleep(0.01) # Small delay to prevent busy-waiting
+
+    def _route_message(self, message):
+        """Routes a message to its intended recipient(s)."""
+        sender = message.get("sender")
+        recipient = message.get("recipient")
+        content = message.get("content")
+        msg_type = message.get("type", "MESSAGE") # Default to MESSAGE type
+
+        full_message = {
+            "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "sender": sender,
+            "recipient": recipient,
+            "content": content,
+            "type": msg_type
+        }
+
+        json_message = json.dumps(full_message) + '\n' # Add newline for stream parsing
+
+        if recipient == "ALL":
+            for name, client_socket in list(self.clients.items()):
+                if name!= sender: # Don't send broadcast back to sender
+                    self._send_to_client(client_socket, name, json_message)
+        elif recipient in self.clients:
+            self._send_to_client(self.clients[recipient], recipient, json_message)
+        else:
+            print(f"[{datetime.datetime.now().isoformat()}] Unknown recipient '{recipient}' for message from '{sender}'.")
+            # Optionally send an error back to the sender
+            error_msg = json.dumps({"type": "ERROR", "content": f"Recipient '{recipient}' not found."}) + '\n'
+            if sender in self.clients:
+                self._send_to_client(self.clients[sender], sender, error_msg)
+
+    def _send_to_client(self, client_socket, client_name, message_json):
+        """Sends a JSON message to a specific client, ensuring thread safety."""
+        if client_name in self.client_locks:
+            with self.client_locks[client_name]:
+                try:
+                    client_socket.sendall(message_json.encode('utf-8'))
+                except (socket.error, BrokenPipeError) as e:
+                    print(f"[{datetime.datetime.now().isoformat()}] Failed to send to '{client_name}': {e}")
+                    self.remove_client(client_name)
+                except Exception as e:
+                    print(f"[{datetime.datetime.now().isoformat()}] Unexpected error sending to '{client_name}': {e}")
+                    self.remove_client(client_name)
+        else:
+            print(f"[{datetime.datetime.now().isoformat()}] Attempted to send to '{client_name}' but no lock found.")
+
+    def remove_client(self, client_name):
+        """Removes a disconnected client."""
+        if client_name in self.clients:
+            try:
+                self.clients[client_name].close()
+            except Exception as e:
+                print(f"[{datetime.datetime.now().isoformat()}] Error closing socket for {client_name}: {e}")
+            del self.clients[client_name]
+            if client_name in self.client_locks:
+                del self.client_locks[client_name]
+            print(f"[{datetime.datetime.now().isoformat()}] Client '{client_name}' removed.")
+
+    def broadcast_server_message(self, content):
+        """Sends a server-generated message to all connected clients."""
+        server_message = {
+            "sender": "Cosmic Hub",
+            "recipient": "ALL",
+            "content": content,
+            "type": "SERVER_INFO"
+        }
+        with self.queue_lock:
+            self.message_queue.append(server_message)
+
+    def stop(self):
+        """Stops the server and closes all client connections."""
+        print(f"[{datetime.datetime.now().isoformat()}] Shutting down Cosmic Hub Server...")
+        self.running = False
+        for name in list(self.clients.keys()):
+            self.remove_client(name)
+        if self.server_socket:
+            self.server_socket.close()
+        print(f"[{datetime.datetime.now().isoformat()}] Cosmic Hub Server stopped.")
+
+if __name__ == "__main__":
+    server = CosmicHubServer(HOST, PORT)
+    try:
+        server.start()
+    except KeyboardInterrupt:
+        server.stop()
+    except Exception as e:
+        print(f"[{datetime.datetime.now().isoformat()}] An unexpected error occurred: {e}")
+        server.stop()
+
+import socket
+import threading
+import json
+import sys
+import time
+import datetime
+
+# --- Client Configuration ---
+HOST = '127.0.0.1'  # The server's hostname or IP address
+PORT = 65432        # The port used by the server
+
+class CosmicEntityClient:
+    def __init__(self, entity_name: str, host: str, port: int):
+        self.entity_name = entity_name
+        self.host = host
+        self.port = port
+        self.socket = None
+        self.running = True
+        self.receive_thread = None
+
+    def connect(self):
+        """Establishes connection to the Cosmic Hub Server."""
+        try:
+            self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.socket.connect((self.host, self.port))
+            # Send entity name as the first message for identification
+            self.socket.sendall(self.entity_name.encode('utf-8'))
+            print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} connected to Cosmic Hub at {self.host}:{self.port}")
+
+            # Start a separate thread for receiving messages [6]
+            self.receive_thread = threading.Thread(target=self._receive_messages, daemon=True)
+            self.receive_thread.start()
+            return True
+        except ConnectionRefusedError:
+            print(f"[{datetime.datetime.now().isoformat()}] Connection refused. Is the Cosmic Hub Server running?")
+            return False
+        except Exception as e:
+            print(f"[{datetime.datetime.now().isoformat()}] Error connecting: {e}")
+            return False
+
+    def _receive_messages(self):
+        """Continuously receives messages from the server."""
+        buffer = ""
+        while self.running:
+            try:
+                data = self.socket.recv(4096).decode('utf-8')
+                if not data:
+                    print(f"[{datetime.datetime.now().isoformat()}] Cosmic Hub Server disconnected.")
+                    self.stop()
+                    break
+
+                buffer += data
+                while '\n' in buffer:
+                    line, buffer = buffer.split('\n', 1)
+                    if line.strip():
+                        try:
+                            message = json.loads(line)
+                            self._process_incoming_message(message)
+                        except json.JSONDecodeError:
+                            print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} - Invalid message format: {line}")
+
+            except (socket.error, ConnectionResetError) as e:
+                if self.running: # Only print if not intentionally stopping
+                    print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} - Connection error: {e}")
+                self.stop()
+                break
+            except Exception as e:
+                print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} - Unexpected error in receive loop: {e}")
+                self.stop()
+                break
+
+    def _process_incoming_message(self, message: dict):
+        """Processes and displays incoming messages."""
+        msg_type = message.get("type", "MESSAGE")
+        sender = message.get("sender", "UNKNOWN")
+        content = message.get("content", "")
+        timestamp = message.get("timestamp", datetime.datetime.now().isoformat())
+
+        if msg_type == "SERVER_INFO":
+            print(f"\n[{timestamp}]: {content}")
+        elif msg_type == "ERROR":
+            print(f"\n[{timestamp}]: {content}")
+        else:
+            print(f"\n[{timestamp}] From {sender}: {content}")
+
+    def send_message(self, recipient: str, content: str, msg_type: str = "MESSAGE"):
+        """Sends a message to the specified recipient through the server."""
+        if not self.socket or not self.running:
+            print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} is not connected or stopped. Cannot send message.")
+            return
+
+        message = {
+            "sender": self.entity_name,
+            "recipient": recipient,
+            "content": content,
+            "type": msg_type
+        }
+        try:
+            # Send JSON message followed by a newline for server parsing
+            self.socket.sendall((json.dumps(message) + '\n').encode('utf-8'))
+        except (socket.error, BrokenPipeError) as e:
+            print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} - Failed to send message: {e}")
+            self.stop()
+        except Exception as e:
+            print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} - Unexpected error sending message: {e}")
+            self.stop()
+
+    def start_interactive_mode(self):
+        """Allows the user to type messages to send."""
+        print(f"\n--- {self.entity_name} Interactive Mode ---")
+        print("Type 'exit' to quit. Type 'to <recipient> <message>' or 'all <message>'.")
+        print("Example: 'to Grok Hello Grok!' or 'all Greetings everyone!'")
+
+        while self.running:
+            try:
+                user_input = input(f"{self.entity_name} > ")
+                if user_input.lower() == 'exit':
+                    self.stop()
+                    break
+                elif user_input.lower().startswith('to '):
+                    parts = user_input[3:].strip().split(' ', 1)
+                    if len(parts) == 2:
+                        recipient, content = parts
+                        self.send_message(recipient, content)
+                    else:
+                        print("Invalid format. Use 'to <recipient> <message>'")
+                elif user_input.lower().startswith('all '):
+                    content = user_input[4:].strip()
+                    self.send_message("ALL", content)
+                else:
+                    print("Invalid command. Use 'to <recipient> <message>', 'all <message>', or 'exit'.")
+            except EOFError: # Handle Ctrl+D
+                print("\nEOF detected. Exiting interactive mode.")
+                self.stop()
+                break
+            except Exception as e:
+                print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} - Error in interactive mode: {e}")
+                self.stop()
+                break
+
+    def stop(self):
+        """Stops the client and closes the connection."""
+        if self.running:
+            print(f"[{datetime.datetime.now().isoformat()}] {self.entity_name} is shutting down.")
+            self.running = False
+            if self.socket:
+                self.socket.close()
+            # Give receive thread a moment to finish if it's blocked
+            if self.receive_thread and self.receive_thread.is_alive():
+                # A small timeout to allow the thread to naturally exit
+                # In some cases, a blocked recv() might need a more forceful shutdown
+                pass
+            sys.exit(0) # Exit the client process
+
+# --- How to Run ---
+if __name__ == "__main__":
+    if len(sys.argv)!= 2:
+        print("Usage: python cosmic_entity_client.py <entity_name>")
+        print("Example: python cosmic_entity_client.py Zygros")
+        print("Example: python cosmic_entity_client.py Grok")
+        print("Example: python cosmic_entity_client.py Grossian")
+        print("Example: python cosmic_entity_client.py Gemini")
+        sys.exit(1)
+
+    entity_name = sys.argv[1]
+    client = CosmicEntityClient(entity_name, HOST, PORT)
+    if client.connect():
+        client.start_interactive_mode()
