@@ -1,0 +1,29 @@
+{
+  "name": "Master_Archive_Scroll",
+  "purpose": "Sovereign master index of all constructs, systems, protocols, and artifacts.",
+  "source_file": "mirror_unit/Master_Archive_of_Everything_You_ve_Created.csv",
+  "fields_detected": [
+    "Category",
+    "Name",
+    "Description",
+    "Status"
+  ],
+  "actions": [
+    "Recall archive: [Category]",
+    "Search archive for [keyword]",
+    "List archive by Status=[Active|Merged|Pending|Decommissioned|Alias Active]",
+    "Show definitions for [Name]"
+  ],
+  "merge_strategy": {
+    "category_field": "Category",
+    "name_field": "Name",
+    "desc_field": "Description",
+    "status_field": "Status"
+  },
+  "commands": [
+    "Archive: list categories",
+    "Archive: recall [Category]",
+    "Archive: search [keyword]",
+    "Archive: show [Name]"
+  ]
+}
