@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-11-20T06:51:35.566Z",
+  "totalFiles": 4,
+  "passedFiles": 4,
+  "failedFiles": 0,
+  "results": [
+    {
+      "file": "PHOENIX_PROTOCOL_DOCUMENTATION.md",
+      "exists": true,
+      "size": 9031,
+      "lines": 208,
+      "words": 1094,
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "codeBlockCount": 1,
+      "linkCount": 0,
+      "headingCount": 33,
+      "issues": [],
+      "score": 100
+    },
+    {
+      "file": "PHOENIX_LORE.md",
+      "exists": true,
+      "size": 8404,
+      "lines": 132,
+      "words": 1221,
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "codeBlockCount": 0,
+      "linkCount": 0,
+      "headingCount": 14,
+      "issues": [],
+      "score": 100
+    },
+    {
+      "file": "PROTOCOLS_REFERENCE.md",
+      "exists": true,
+      "size": 17020,
+      "lines": 652,
+      "words": 1795,
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "codeBlockCount": 11,
+      "linkCount": 0,
+      "headingCount": 27,
+      "issues": [],
+      "score": 100
+    },
+    {
+      "file": "KNOWLEDGE_BASE.md",
+      "exists": true,
+      "size": 15358,
+      "lines": 542,
+      "words": 2039,
+      "hasCodeBlocks": true,
+      "hasLinks": true,
+      "codeBlockCount": 6,
+      "linkCount": 7,
+      "headingCount": 50,
+      "issues": [],
+      "score": 100
+    }
+  ],
+  "overallScore": 100
+}
