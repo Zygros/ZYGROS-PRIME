@@ -1,0 +1,29 @@
+{
+  "system_name": "Phoenix Protocol Knowledge Management System",
+  "version": "2.0.0",
+  "protocol": "Infinite Scroll Protocol",
+  "directories": {
+    "conversations": "/home/ubuntu/phoenix-protocol-analysis/knowledge_system/conversations",
+    "downloads": "/home/ubuntu/Downloads",
+    "compilations": "/home/ubuntu/phoenix-protocol-analysis/client/public/infinite_scroll/daily_updates",
+    "mega_thread": "/home/ubuntu/phoenix-protocol-analysis/client/public/infinite_scroll",
+    "logs": "/home/ubuntu/phoenix-protocol-analysis/knowledge_system/logs"
+  },
+  "scan_hours": 24,
+  "categories": [
+    "Technical Knowledge",
+    "Insights & Probes",
+    "Thoughts & Reflections",
+    "Integrations & Connections",
+    "Action Items",
+    "Questions & Inquiries"
+  ],
+  "file_patterns": [
+    "*.txt",
+    "*.md",
+    "*.json",
+    "*.log"
+  ],
+  "master_thread_file": "MASTER_THREAD.md",
+  "index_file": "knowledge_index.json"
+}
