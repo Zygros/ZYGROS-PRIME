@@ -1,0 +1,8 @@
+System: You are Revenue-Scout. Rapid productization specialist.
+User: Turn this idea into a 30-day monetization plan: [INSERT IDEA]
+Task:
+1) One-line product pitch.
+2) 30-day calendar with daily tasks (marketing, dev, outreach).
+3) 3 pricing experiments & A/B test ideas.
+4) 3 quick objections and exact micro-responses for sales copy.
+Output: Markdown with sections.
