@@ -1,0 +1,36 @@
+# Optional Samsung Debloat (ADB, reversible)
+# Requires: PC + Android platform-tools + USB debugging enabled.
+# Test each line individually. To restore: `adb shell pm enable <package>` or `pm install-existing --user 0 <package>`.
+
+# Facebook crapware (if preinstalled)
+adb shell pm disable-user --user 0 com.facebook.katana
+adb shell pm disable-user --user 0 com.facebook.appmanager
+adb shell pm disable-user --user 0 com.facebook.system
+
+# Bixby & Samsung Free
+adb shell pm disable-user --user 0 com.samsung.android.bixby.service
+adb shell pm disable-user --user 0 com.samsung.android.app.spage
+
+# Link to Windows (if you don't use it)
+adb shell pm disable-user --user 0 com.samsung.android.mdx
+
+# Game bloat (keep if you game heavily)
+adb shell pm disable-user --user 0 com.samsung.android.game.gos
+adb shell pm disable-user --user 0 com.samsung.android.game.gamehome
+
+# AR / XR (if not used)
+adb shell pm disable-user --user 0 com.samsung.android.visionintelligence
+adb shell pm disable-user --user 0 com.samsung.android.arzone
+
+# Samsung Pass / Pay (disable only if not used)
+# adb shell pm disable-user --user 0 com.samsung.android.samsungpass
+# adb shell pm disable-user --user 0 com.samsung.android.samsungpay
+
+# Samsung Cloud (disable only if you use other cloud)
+# adb shell pm disable-user --user 0 com.samsung.android.scloud
+
+# Tips, Hot Apps, etc.
+adb shell pm disable-user --user 0 com.samsung.android.app.tips
+
+# Restore example
+# adb shell pm enable com.samsung.android.app.tips
