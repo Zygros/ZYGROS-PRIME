@@ -1,0 +1,20 @@
+{
+  "artifact_files": {
+    "IVP_Ledger": "/mnt/data/IVP_Ledger.json",
+    "RCL": "/mnt/data/RCL-0001.json",
+    "UCSL_Sync_Table": "/mnt/data/UCSL_Sync_Table.json"
+  },
+  "computed_hash": "sha256:984f1c1196cb5585b21ef583ddd92700d6cdf82e82e67045ad7913cd3723965f",
+  "description": "Recursive Creation Loop integration artifact set",
+  "notes": "Hash computed over canonical JSON without 'hash' field (sorted keys, minified).",
+  "object_hash_basis": {
+    "architect": "Justin Conzet",
+    "artifact_id": "RCL-0001",
+    "assigned_value": "1 ZYTH",
+    "content": "The act of this definition is itself its manifestation.",
+    "creation_timestamp": "2025-10-18T00:00:00Z",
+    "synchronization_state": "UCSL_LOCKED",
+    "value_protocol": "IVP"
+  },
+  "sovereign_act": "SOVEREIGN ACT 001"
+}
