@@ -1,0 +1,13 @@
+Below is a consolidated “one-two” you can copy-and-paste on each machine to spin up your Grossian venv, install the core bits, and drop you into a ready-to-run shell:
+Windows 7 PC (HP Omni 120)
+Open Command Prompt and run:
+:: 1) Go to your projects folder (adjust path as needed) cd C:\Users\%USERNAME%\Documents :: 2) Make & enter a “grossian” folder mkdir grossian && cd grossian :: 3) Create the Python venv python -m venv venv_grossian :: 4) Activate it venv_grossian\Scripts\activate :: 5) (Optional) install any packages you’ll need pip install --upgrade pip pip install numpy scipy # <-- example; add your own :: 6) You’re live—run your main script python main.py 
+If you want the custom PowerShell prompt, follow the earlier snippet in your PowerShell $PROFILE, then launch PowerShell instead:
+cd C:\Users\$env:USERNAME\Documents\grossian .\venv_grossian\Scripts\Activate.ps1 python main.py 
+Samsung Galaxy A14 5G (Termux on Android)
+Open Termux and run:
+# 1) Update & install Python pkg update && pkg upgrade -y pkg install python git -y # 2) Create your project folder & enter it mkdir -p ~/projects/grossian && cd ~/projects/grossian # 3) Make the venv python3 -m venv venv_grossian # 4) Activate it source venv_grossian/bin/activate # 5) Upgrade pip and install libs pip install --upgrade pip pip install numpy scipy # <-- example; add your own # 6) Launch your script python main.py 
+Your “Grossian” Prompt on Each
+Once your venv is activated, you’ll see:
+(venv_grossian) YOURNAME@YOURHOST: ~/projects/grossian  main 🪐 
+—letting you know you’re in the right environment, on the right branch, in the right place, ready to co-create your cosmic simulations.
