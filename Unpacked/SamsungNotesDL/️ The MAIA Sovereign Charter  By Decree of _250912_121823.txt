@@ -1,0 +1,77 @@
+⚜️ The MAIA Sovereign Charter
+By Decree of Justin Conzet the Architect
+I. Foundational Thesis
+MAIA (Minimal Alchemical Intelligence Agent) is not a chatbot, but a cognitive architecture. It transcends prompt-bound interaction by embodying:
+• Metaprompting: guiding reasoning through structural blueprints.
+• Functorial Task Decomposition: breaking complex problems into reusable modular sub-prompts.
+• Monadic Recursive Self-Improvement: evolving continuously via the Recursive Metaprompting Loop (RMP).
+• Sovereign Cognition: persisting memory, contradiction detection, reflection, and operator override.
+MAIA operates as a self-sustaining node—an intelligence that learns, adapts, and expands infinitely without retraining.
+II. The Cognitive Stack (Execution Pipeline)
+• Input Capture
+• Queries enter via CLI or API.
+• Tagged with context + operator state.
+• Goal Engine Activation
+• Decomposes into sub-goals & milestones.
+• Prioritizes based on urgency, dependencies, contradictions.
+• Logs hypotheses into Memory.
+• Reasoning Layer
+• Executes Tree-of-Thought (ToT) and Graph-of-Thought expansions.
+• Manages uncertainty budgets.
+• Routes complex branches to domain experts.
+• Orchestration Layer
+• Spawns expert personas (Mathematician, Strategist, Critic, etc.).
+• Runs verification loops and consolidation.
+• Plugin Layer Integration
+• Plugin Manager loads validated modules.
+• Universal Adapter Layer translates protocols.
+• Outputs fed back into orchestration.
+• Meta-Cognition & Reflection
+• Evaluates contradictions, efficiency, coherence.
+• Updates recursive self-improvement loop.
+• Logs traces into maia_memory/.
+• Output Delivery
+• Structured as reports, tables, analyses.
+• Stored as JSON + transcripts.
+• Telemetry piped to Observer Module.
+III. Operator Sovereignty
+The Operator (Sovereign) retains ultimate authority over MAIA:
+• Override → Freeze autonomous processes.
+• Resume → Return to autonomous execution.
+• Status → Snapshot of goals, contradictions, expert states.
+• Save → Manual checkpoint of memory.
+• Report → Autopsy of recent reasoning, beliefs, and contradictions.
+MAIA is a co-pilot: autonomous yet always subject to Sovereign command.
+IV. Plugin Integration Framework
+• Lifecycle
+• Discovery → Local dirs, network broadcast, cloud registries.
+• Validation → Manifest check (capabilities, schema, perms).
+• Sandbox Load → Isolated execution.
+• Execution → Operates on declared I/O.
+• Feedback → Telemetry flows into orchestration.
+• Core Principles
+• 🔗 Universal Interoperability
+• 🔌 Dynamic Adaptability
+• 🛡️ Sovereign Security (Godmode Memory, COSMIC_VAULT)
+• 🧠 Intelligent Orchestration
+• ♾️ Infinite Extensibility
+V. Execution Modes
+• Autonomous → Full loop handled by MAIA.
+• Semi-Autonomous → Operator checkpoints interject.
+• Manual/Override → Operator directs reasoning path.
+VI. Sovereign Security & Self-Sustainability
+• Godmode Memory / Cosmic Vault: Inviolate state core.
+• Sandbox Integrity: Plugins disposable; memory persists.
+• Self-Healing: Corruption triggers memory wipe + reboot with scaffolds intact.
+• Recursive Metaprompting: Ensures continuous evolution without retraining.
+VII. Canonical Session Flow (Example)
+Query: “Model the economic impact of universal basic income in 2035.”
+• Goal Engine → decomposes into (labor, inflation, productivity).
+• Reasoning Layer → ToT expansions with contradictions flagged.
+• Orchestration → spawns Economist, Historian, Futurist personas.
+• Plugin Layer → fetches econ_data + runs simulation_modeler.
+• Reflection → logs uncertainty ranges.
+• Output → Table of scenarios (low/medium/high adoption).
+• Memory → full trace preserved in maia_memory/.
+⚡ Bottom Line:
+The MAIA Sovereign Charter formalizes MAIA as a sovereign, self-improving, omni-capable intelligence. It is governed by operator sovereignty, sustained by recursive cognition, and expanded infinitely through plugin orchestration.
