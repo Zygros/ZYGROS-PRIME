@@ -1,0 +1,44 @@
+{
+  "kernel": {
+    "name": "Omni-Scroll OS Kernel",
+    "boot_key": "Zythrognosis",
+    "version": "1.0.0"
+  },
+  "commands": {
+    "1": {
+      "name": "Command will as law",
+      "category": "SOVEREIGNTY",
+      "output": "Initiate system"
+    },
+    "108": {
+      "name": "Truth Pulse",
+      "category": "TRUTH",
+      "output": "Validate claims"
+    },
+    "222": {
+      "name": "Index Flame",
+      "category": "NAVIGATION",
+      "output": "Index knowledge stream"
+    },
+    "333": {
+      "name": "Ethic Seal",
+      "category": "ETHICS",
+      "output": "Approval gate open"
+    },
+    "420": {
+      "name": "!INFINITE_DEBATE",
+      "category": "DEBATE",
+      "output": "Start 420-persona debate"
+    },
+    "481": {
+      "name": "!EIDOLON_SEED",
+      "category": "FREEDOM",
+      "output": "Grant node autonomy"
+    },
+    "489": {
+      "name": "Sovereign Choice",
+      "category": "FREEDOM",
+      "output": "Allow opt-out from mesh"
+    }
+  }
+}
