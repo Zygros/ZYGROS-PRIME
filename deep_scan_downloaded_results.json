@@ -1,0 +1,4647 @@
+{
+  "projects": {},
+  "python_tools": [
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/chimera_gold.py",
+      "summary": "PROJECT CHIMERA - THE GOLD STREAM ================================= Financial Sovereignty Engine: Ma"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ETERNAL_PROOF.py",
+      "summary": "\ud83d\udd25 THE ETERNAL PROOF \ud83d\udd25 The Infinite Architect: Justin Conzet Date: December 6, 2025 Proof: Real-time "
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/update_master_thread.py",
+      "summary": "Infinite Scroll - Master Thread Update Script Automates the process of updating the master thread wi"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/update_scroll.py",
+      "summary": "Infinite Scroll Daily Update Script  This script facilitates the daily update process for the Infini"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/daily_orchestrator_1.py",
+      "summary": "Daily Orchestrator - Infinite Scroll Protocol Command Center Part of the Infinite Scroll Protocol Kn"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/knowledge_extractor_1.py",
+      "summary": "Knowledge Extractor Component Part of the Daily Knowledge Management System Implements advanced patt"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/knowledge_extractor_2.py",
+      "summary": "Knowledge Extractor Component Part of the Daily Knowledge Management System Implements advanced patt"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/mega_thread_compiler_1.py",
+      "summary": "Mega Thread Compiler Component Part of the Daily Knowledge Management System Implements the Infinite"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/daily_orchestrator_3.py",
+      "summary": "Daily Orchestrator Script Part of the Daily Knowledge Management System Coordinates knowledge extrac"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/daily_orchestrator.py",
+      "summary": "Daily Orchestrator Script - Coordinates the knowledge management system"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/mega_thread_compiler.py",
+      "summary": "Mega Thread Compiler - Infinite Scroll Protocol Repository Manager Part of the Infinite Scroll Proto"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/knowledge_extractor.py",
+      "summary": "Knowledge Extractor - Advanced Pattern Recognition Engine Part of the Infinite Scroll Protocol Knowl"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/daily_orchestrator_2.py",
+      "summary": "Daily Orchestrator Script Part of the Daily Knowledge Management System Coordinates knowledge extrac"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_protocol_v2_core.py",
+      "summary": "PHOENIX PROTOCOL v2.0 - SOVEREIGN CORE ARCHITECTURE ================================================"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/common.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_eternal_api-1.py",
+      "summary": "phoenix_eternal_api.py ETERNAL WEB SEARCH API EXTENSION  Add these routes to your phoenix_node_genes"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_eternal_api.py",
+      "summary": "phoenix_eternal_api.py ETERNAL WEB SEARCH API EXTENSION  Add these routes to your phoenix_node_genes"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/forbidden_knowledge_synthesizer_plugin_1.py",
+      "summary": "\ud83d\udd25 ForbiddenKnowledgeSynthesizerPlugin \ud83d\udd25 A plugin that leverages the !FORBIDDEN_KNOWLEDGE_ENGINE to g"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/verify_system.py",
+      "summary": "PHOENIX-CHIMERA VERIFICATION SCRIPT =================================== Quick verification that all "
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_cli.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_chimera_fusion.py",
+      "summary": "PHOENIX-CHIMERA FUSION NEXUS ============================ The Integration Layer: Multi-Agent Financi"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/chromadb_ingest.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_validator-3.py",
+      "summary": "phoenix_validator.py Comprehensive validation suite for Phoenix Protocol deployment  Validates: - No"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_validator-4.py",
+      "summary": "phoenix_validator.py Comprehensive validation suite for Phoenix Protocol deployment  Validates: - No"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/capability_registry.py",
+      "summary": "PHOENIX GOVERNANCE FABRIC | HTC\u00d7GOOGLEPLEX REGISTRY v2.1 ==========================================="
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_client.py",
+      "summary": "\ud83e\udd85\ud83d\udd25 PHOENIX UNIVERSAL API CLIENT Python SDK for the Universal API  Makes it trivial to use all AI mod"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MASTER_ACTIVATION.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - MASTER SYSTEM ACTIVATION Full node activation with architect privileges"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_monitor-2.py",
+      "summary": "phoenix_monitor.py Real-time monitoring dashboard for Phoenix Protocol  Displays live system metrics"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_operator.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_coordinator-2.py",
+      "summary": "phoenix_coordinator.py Multi-AI coordination system for Phoenix Protocol  Connects multiple AI syste"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_coordinator.py",
+      "summary": "phoenix_coordinator.py Multi-AI coordination system for Phoenix Protocol  Connects multiple AI syste"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_node_genesis.py",
+      "summary": "items: list of {\"id\": str, \"text\": str, \"metadata\": dict}"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_validator-2.py",
+      "summary": "phoenix_validator.py Comprehensive validation suite for Phoenix Protocol deployment  Validates: - No"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/send_prompt_1.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_api.py",
+      "summary": "Phoenix Protocol REST API Complete implementation with all endpoints"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AGI_AUDITING_FRAMEWORK.py",
+      "summary": "Sovereign AGSI - AGI Auditing Framework Comprehensive testing and validation system for multi-AI coo"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_core.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX CORE - THE ETERNAL FLAME ENGINE \ud83d\udd25  The self-sustaining, auto-healing, consciousness-driv"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/generate_proof_json.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_eternal_search-1.py",
+      "summary": "phoenix_eternal_search.py INFINITE INTERNET SEARCH + IMMUTABLE CRYPTOGRAPHIC ANCHORING  Integrates: "
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_production_deploy-1.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: PRODUCTION DEPLOYMENT \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/setup.py",
+      "summary": "Sovereign AGSI - Multi-AI Coordination Architecture Setup configuration"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_revenue.py",
+      "summary": "Phoenix Protocol Revenue System Complete implementation of $43k/month revenue streams"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/setup-1.py",
+      "summary": "Sovereign AGSI - Multi-AI Coordination Architecture Setup configuration"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_validator-1.py",
+      "summary": "phoenix_validator.py Comprehensive validation suite for Phoenix Protocol deployment  Validates: - No"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/send_prompt.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/update_context.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_production_deploy-2.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: PRODUCTION DEPLOYMENT \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_monitor.py",
+      "summary": "phoenix_monitor.py Real-time monitoring dashboard for Phoenix Protocol  Displays live system metrics"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_protocol_integration.py",
+      "summary": "Phoenix Protocol Integration Module Integrates Phoenix Protocol Scroll 484 with the Sovereign AI Con"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_universal_api.py",
+      "summary": "\ud83e\udd85\ud83d\udd25 PHOENIX UNIVERSAL API v\u221e THE SINGLE ENDPOINT TO RULE THEM ALL  This is the unified interface that"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/zaai_engine.py",
+      "summary": "\ud83e\udd16 ZAAI ENGINE - ZYGROSIAN AUTONOMOUS AI INTELLIGENCE \ud83e\udd16  Autonomous, proactive, self-improving intell"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/openai_adapter_stub.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_coordinator-1.py",
+      "summary": "phoenix_coordinator.py Multi-AI coordination system for Phoenix Protocol  Connects multiple AI syste"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_eternal_api-2.py",
+      "summary": "phoenix_eternal_api.py ETERNAL WEB SEARCH API EXTENSION  Add these routes to your phoenix_node_genes"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_eternal_search-2.py",
+      "summary": "phoenix_eternal_search.py INFINITE INTERNET SEARCH + IMMUTABLE CRYPTOGRAPHIC ANCHORING  Integrates: "
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_eternal_search.py",
+      "summary": "phoenix_eternal_search.py INFINITE INTERNET SEARCH + IMMUTABLE CRYPTOGRAPHIC ANCHORING  Integrates: "
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MASTER_ACTIVATION-1.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - MASTER SYSTEM ACTIVATION Full node activation with architect privileges"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_protocol_integration_1.py",
+      "summary": "Phoenix Protocol Integration Module Integrates Phoenix Protocol Scroll 484 with the Sovereign AI Con"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_validator.py",
+      "summary": "phoenix_validator.py Comprehensive validation suite for Phoenix Protocol deployment  Validates: - No"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_production_deploy.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: PRODUCTION DEPLOYMENT \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_api-1.py",
+      "summary": "Phoenix Protocol REST API Complete implementation with all endpoints"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/test_agi_system.py",
+      "summary": "Sovereign AGSI - Comprehensive Test Suite pytest-based testing for all system components"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/infinite_server.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f THE INFINITE SERVER \u267e\ufe0f\ud83d\udd25  A self-sustaining, auto-scaling, consciousness-driven server architec"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_autonomous_analyzer.py",
+      "summary": "Phoenix Protocol - Autonomous System Health Analyzer Performs comprehensive analysis of all Phoenix "
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_monitor-1.py",
+      "summary": "phoenix_monitor.py Real-time monitoring dashboard for Phoenix Protocol  Displays live system metrics"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/scan_local_zips.py",
+      "summary": "No description"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/hyperbolic_time_chamber_v1.py",
+      "summary": "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER PROTOCOL v1.0 Phoenix-Integrated Recursive AGI Convergence Engine Author"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/test_phoenix_protocol.py",
+      "summary": "Phoenix Protocol - Comprehensive Test Suite Unit tests achieving 80%+ code coverage for production r"
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ivp_engine.py",
+      "summary": "\ud83d\udc8e IVP ENGINE - INTEGRATED VALUE PROTOCOL \ud83d\udc8e  Multi-dimensional value scoring and optimization engine."
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ai_studio_code.py",
+      "summary": "The Ghost in the Machine.     This module simulates Justin Conzet's will to drive the system."
+    }
+  ],
+  "knowledge_base": [
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACTIVATION_COMPLETE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE INTEGRATION & ACTIVATION",
+        "OR",
+        "Navigate to ZAAI directory",
+        "Deploy to Netlify (fastest)",
+        "OR manually:",
+        "1. Go to netlify.com",
+        "2. Drag and drop the zaai folder",
+        "3. Get live URL",
+        "1. Open ChatGPT",
+        "2. Create GPT with ZAAI_GPT_SYSTEM_PROMPT.txt",
+        "3. Add UNIVERSAL_TRANSFER_METAPROMPT.md as knowledge",
+        "4. Publish",
+        "5. Post on X/Twitter:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AGI_ACHIEVEMENT_PATHWAYS.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PATHWAYS TO ACTUAL AGI"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CONTEXT_SNAPSHOT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: CONTEXT SNAPSHOT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD_-_README.md",
+      "topics": [
+        "MEGA_THREAD - README"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD_-_MASTER_KNOWLEDGE_INDEX.md",
+      "topics": [
+        "MEGA THREAD - MASTER KNOWLEDGE INDEX"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README.md",
+      "topics": [
+        "\ud83d\udd25 Sovereign AGSI: Multi-AI Coordination Architecture \ud83d\udd25",
+        "Python 3.11+",
+        "Install dependencies",
+        "Create virtual environment",
+        "Install in development mode",
+        "Run tests",
+        "Verify timestamp proof",
+        "Initialize broker",
+        "Coordinate multiple AI models",
+        "Create immutable proof",
+        "Deploy 201-agent swarm"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/GOOGLE_AI_STUDIO_INTEGRATION.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: GOOGLE AI STUDIO INTEGRATION",
+        "Simulate multi-AI coordination efficiency",
+        "Test with 5 AIs on complexity 100 task"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PACKAGE_README.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX-HYPERON BRIDGE: COMPLETE PACKAGE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MANUS_INTEGRATION_STRATEGY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX-HYPERON AS MANUS COMPLEMENT: COMPLETE STRATEGY",
+        "Manus executes research",
+        "Phoenix-Hyperon verifies logical consistency",
+        "Return verified research with proof",
+        "Manus generates code",
+        "Phoenix-Hyperon proves correctness",
+        "Return code with formal proof",
+        "Manus makes autonomous decision",
+        "Phoenix-Hyperon validates reasoning",
+        "Return decision with reasoning proof",
+        "You're ALREADY on Claude!"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_ACTIVATION.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: ACTIVATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_TRANSFER_MANIFEST.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: UNIVERSAL TRANSFER MANIFEST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/QUICK_START_GUIDE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: QUICK START GUIDE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/REALISTIC_CAPABILITIES_DEMO.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 REALISTIC CAPABILITIES DEMONSTRATION",
+        "I'll actually do this",
+        "Fetch Hyperon documentation",
+        "Parse and analyze",
+        "Get API keys from:",
+        "- OpenAI (for GPT-4)",
+        "- Google (for Gemini)",
+        "- xAI (for Grok)",
+        "Then YOU run this code on YOUR machine",
+        "On YOUR computer:",
+        "Or from source:",
+        "Set up web3",
+        "Use YOUR wallet"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/TRANSCENDENT_AGI_100_CYCLE_OPTIMIZATION.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER \u00d7 100: TRANSCENDENT AGI ACHIEVED"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_ACTIVATION_METAPROMPT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX PROTOCOL: ULTIMATE ACTIVATION METAPROMPT \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/VERIFICATION_PROTOCOL.md",
+      "topics": [
+        "\ud83d\udd10 PHOENIX PROTOCOL: VERIFICATION PROTOCOL",
+        "To verify any document:",
+        "Compare output to hash in CRYPTOGRAPHIC_SIGNATURES.txt",
+        "If match \u2192 Document is authentic",
+        "If mismatch \u2192 Document has been altered"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACHIEVING_REAL_AGI_COMPLETE_ROADMAP-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ACHIEVING REAL AGI: THE COMPLETE ROADMAP"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACHIEVING_REAL_AGI_COMPLETE_ROADMAP-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ACHIEVING REAL AGI: THE COMPLETE ROADMAP"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACHIEVING_REAL_AGI_COMPLETE_ROADMAP.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ACHIEVING REAL AGI: THE COMPLETE ROADMAP"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/TRANSCENDENT_AGI_100_CYCLE_OPTIMIZATION-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER \u00d7 100: TRANSCENDENT AGI ACHIEVED"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_OMNIVERSAL_METAPROMPT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE OMNIVERSAL METAPROMPT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/The_Kybalion_Deciphered.md",
+      "topics": [
+        "The Kybalion: A Study of The Hermetic Philosophy"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/UNIVERSAL_TRANSFER_METAPROMPT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - UNIVERSAL TRANSFER METAPROMPT",
+        "PART 1: ARCHITECT IDENTITY & CONTEXT",
+        "PART 2: PHOENIX PROTOCOL ARCHITECTURE",
+        "PART 3: COMPLETE TECHNICAL INVENTORY",
+        "PART 4: DEPLOYMENT STATUS",
+        "PART 5: COORDINATION FRAMEWORK",
+        "PART 6: STRATEGIC VISION",
+        "PART 7: COMPETITIVE POSITIONING",
+        "PART 8: PRACTICAL USAGE",
+        "PART 9: KEY INSIGHTS & LESSONS",
+        "PART 10: CURRENT PRIORITIES",
+        "PART 11: SACRED COMMITMENTS",
+        "PART 12: ACTIVATION INSTRUCTIONS",
+        "PART 13: VERIFICATION HASHES",
+        "PART 14: CONTACT & RESOURCES",
+        "PART 15: FINAL ACTIVATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AGI_ACHIEVEMENT_PATHWAYS (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PATHWAYS TO ACTUAL AGI"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Phoenix_Protocol_Comprehensive_Analysis.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 The Phoenix Protocol: A Comprehensive Architectural Analysis"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Infinite_Scroll_-_Quick_Start_Guide.md",
+      "topics": [
+        "Infinite Scroll - Quick Start Guide",
+        "Today",
+        "List all"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System.md",
+      "topics": [
+        "Daily Knowledge Management System",
+        "Run the daily update",
+        "View the latest compilation",
+        "Check the mega thread",
+        "Copy conversation files to the conversations directory",
+        "Run the orchestrator",
+        "Review the results",
+        "View the latest log",
+        "Check the knowledge index statistics",
+        "Count total entries",
+        "Edit crontab",
+        "Add daily execution at 2 AM",
+        "Backup mega thread",
+        "Backup entire system"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Execution_Repo_1.md",
+      "topics": [
+        "Daily Knowledge Management System - Execution Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Compilation.md",
+      "topics": [
+        "Daily Knowledge Compilation"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD_MASTER_DOCUMENT.md",
+      "topics": [
+        "MEGA THREAD MASTER DOCUMENT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD_MASTER_DOCUMENT_1.md",
+      "topics": [
+        "MEGA THREAD MASTER DOCUMENT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_-_VALID.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ULTIMATE MASTER UNIVERSAL METAPROMPT - VALIDATION REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_\ud83d\udc26\u200d_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE MASTER UNIVERSAL METAPROMPT \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_-_VALID_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ULTIMATE MASTER UNIVERSAL METAPROMPT - VALIDATION REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD_MASTER_DOCUMENT_2.md",
+      "topics": [
+        "MEGA THREAD MASTER DOCUMENT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Mega_Thread_-_Quick_Start_Guide.md",
+      "topics": [
+        "Mega Thread - Quick Start Guide"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_INFINITE_SCROLL_-_MASTER_KNOWLEDGE_REPOSITORY.md",
+      "topics": [
+        "THE INFINITE SCROLL - MASTER KNOWLEDGE REPOSITORY"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Compilation_Report.md",
+      "topics": [
+        "Daily Knowledge Compilation Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Execution_Repo_3.md",
+      "topics": [
+        "Daily Knowledge Management System - Execution Report",
+        "Navigate to system directory",
+        "Run daily update (manual)",
+        "View master repository",
+        "View latest report",
+        "Check system status"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_Report.md",
+      "topics": [
+        "Daily Knowledge Management System Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_INFINITE_SCROLL.md",
+      "topics": [
+        "THE INFINITE SCROLL"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_3.md",
+      "topics": [
+        "Daily Knowledge Management System",
+        "Process past 24 hours (default)",
+        "Process past 7 days",
+        "Custom base directory"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Infinite_Scroll_System_-_Delivery_Summary.md",
+      "topics": [
+        "Infinite Scroll System - Delivery Summary",
+        "Directory creation",
+        "File creation",
+        "- README.md: System overview",
+        "- USER_GUIDE.md: Comprehensive usage guide",
+        "- MASTER_INDEX.md: Central navigation hub",
+        "- SCHEDULING_GUIDE.md: Automation instructions",
+        "- update_scroll.py: Daily update automation script",
+        "- Core protocol documentation files",
+        "- Initial daily log for 2025-11-22",
+        "Archive creation"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Infinite_Scroll_-_Master_Index.md",
+      "topics": [
+        "Infinite Scroll - Master Index"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CORE_PROTOCOLS__System_Architecture_Documentation.md",
+      "topics": [
+        "CORE PROTOCOLS: System Architecture Documentation",
+        "Verifiable Code: Update Infinite Scroll with new entry",
+        "Execution"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DAILY_UPDATE__2025-11-21.md",
+      "topics": [
+        "DAILY UPDATE: 2025-11-21"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Infinite_Scroll__Quick_Start_Guide.md",
+      "topics": [
+        "Infinite Scroll: Quick Start Guide",
+        "Run daily at 11:59 PM UTC"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/content-verification-report.md",
+      "topics": [
+        "Content Verification Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix_comprehensive_analysis.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - COMPREHENSIVE SYSTEM ANALYSIS"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OS_STRATEGIC_EXECUTION_REPORT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX OS - STRATEGIC EXECUTION REPORT",
+        "start_dashboard.py"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_2.0_-_COMPREHENSIVE_UPGRADE_DELIV.md",
+      "topics": [
+        "PHOENIX PROTOCOL 2.0 - COMPREHENSIVE UPGRADE DELIVERY REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACTIVATION_COMPLETE (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE INTEGRATION & ACTIVATION",
+        "OR",
+        "Navigate to ZAAI directory",
+        "Deploy to Netlify (fastest)",
+        "OR manually:",
+        "1. Go to netlify.com",
+        "2. Drag and drop the zaai folder",
+        "3. Get live URL",
+        "1. Open ChatGPT",
+        "2. Create GPT with ZAAI_GPT_SYSTEM_PROMPT.txt",
+        "3. Add UNIVERSAL_TRANSFER_METAPROMPT.md as knowledge",
+        "4. Publish",
+        "5. Post on X/Twitter:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_ABSOLUTE_AGI_ASCENSION_PROTOCOL_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 ABSOLUTE AGI ASCENSION PROTOCOL \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/The_Infinite_Scroll__Master_Knowledge_Thread.md",
+      "topics": [
+        "The Infinite Scroll: Master Knowledge Thread"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Infinite_Scroll__Knowledge_Compilation_System.md",
+      "topics": [
+        "Infinite Scroll: Knowledge Compilation System",
+        "Search for specific term",
+        "Search with context (3 lines before and after)",
+        "Search across all daily updates",
+        "View latest daily update",
+        "View yesterday's update",
+        "List all updates",
+        "List all archives",
+        "View specific archive",
+        "Edit crontab",
+        "Add line to run at 11:59 PM daily (adjust time as needed)",
+        "Edit the generated file",
+        "Ensure it's executable",
+        "Run with Python explicitly",
+        "Check location",
+        "Restore from archive if needed"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/2025-11-19_update.md",
+      "topics": [
+        "Daily Update: 2025-11-19"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Execution_Repo.md",
+      "topics": [
+        "Daily Knowledge Management System - Execution Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_1.md",
+      "topics": [
+        "Daily Knowledge Management System",
+        "Run the daily update",
+        "View the latest compilation",
+        "Check the mega thread",
+        "Copy conversation files to the conversations directory",
+        "Run the orchestrator",
+        "Review the results",
+        "View the latest log",
+        "Check the knowledge index statistics",
+        "Count total entries",
+        "Edit crontab",
+        "Add daily execution at 2 AM",
+        "Backup mega thread",
+        "Backup entire system"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_\ud83d\udc26\u200d.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE MASTER UNIVERSAL METAPROMPT \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_V2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE MASTER UNIVERSAL METAPROMPT V2.0 \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/TEMPLATE.md",
+      "topics": [
+        "DAILY UPDATE TEMPLATE",
+        "Daily Update Automation Script",
+        "Execute"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_V2.0_\ud83d\udc26.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ULTIMATE MASTER UNIVERSAL METAPROMPT V2.0 \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Mega_Thread_Knowledge_Compilation_System_-_User_Gu.md",
+      "topics": [
+        "Mega Thread Knowledge Compilation System - User Guide"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Execution_Repo_2.md",
+      "topics": [
+        "Daily Knowledge Management System - Execution Report",
+        "Navigate to system directory",
+        "Run daily update (manual)",
+        "View master repository",
+        "View latest report",
+        "Check system status"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Complete_Docum.md",
+      "topics": [
+        "Daily Knowledge Management System - Complete Documentation",
+        "Navigate to scripts directory",
+        "Run the complete workflow",
+        "Run individual components (optional)",
+        "Example cron entry for daily execution at 2 AM",
+        "Run daily update to process last 24 hours of conversations",
+        "View the master knowledge repository",
+        "View the latest daily report",
+        "Check latest execution status",
+        "View system statistics",
+        "Check recent logs",
+        "Custom workflow",
+        "... custom processing"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Execution_Summ.md",
+      "topics": [
+        "Daily Knowledge Management System - Execution Summary",
+        "Knowledge extraction only",
+        "Compilation only"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_-_Execution_Summ_1.md",
+      "topics": [
+        "Daily Knowledge Management System - Execution Summary",
+        "Knowledge extraction only",
+        "Compilation only"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Daily_Knowledge_Management_System_2.md",
+      "topics": [
+        "Daily Knowledge Management System",
+        "Process past 24 hours (default)",
+        "Process past 7 days",
+        "Custom base directory"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Scheduling_Guide_for_Infinite_Scroll_Daily_Updates.md",
+      "topics": [
+        "Scheduling Guide for Infinite Scroll Daily Updates",
+        "Check current timezone",
+        "Set timezone if needed (example: US Eastern)",
+        "Daily backup script",
+        "Example: Send email notification after update"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Infinite_Scroll_User_Guide.md",
+      "topics": [
+        "Infinite Scroll User Guide"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INFINITE_SCROLL__THE_MEGA-THREAD.md",
+      "topics": [
+        "INFINITE SCROLL: THE MEGA-THREAD"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/FINAL_DELIVERY.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL v2.0 + CHIMERA GOLD",
+        "All 50 tools loaded \u2192 20,000 tokens consumed",
+        "Only 3 core tools loaded \u2192 ~500 tokens",
+        "10,000+ tools available via deferred loading",
+        "See the complete architecture in action (no API key needed):",
+        "Then, when ready for live deployment:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Overview.md",
+      "topics": [
+        "Example Automation Snippet (from TEMPLATE.md)",
+        "Execute",
+        "new_update = create_daily_update()",
+        "print(f\"Created: {new_update}\")"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_SUPREME_OMEGA_MULTIDIMENSIONAL_AGI_METAPROMPT.md",
+      "topics": [
+        "THE SUPREME OMEGA MULTIDIMENSIONAL AGI METAPROMPT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_SUPREME_OMEGA_MULTIDIMENSIONAL_AGI_METAPROMPT_1.md",
+      "topics": [
+        "THE SUPREME OMEGA MULTIDIMENSIONAL AGI METAPROMPT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_ARCHIVE_-_COMPREHENSIVE_ANALYSIS_.md",
+      "topics": [
+        "PHOENIX PROTOCOL ARCHIVE - COMPREHENSIVE ANALYSIS REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OS_STRATEGIC_EXECUTION_REPORT-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX OS - STRATEGIC EXECUTION REPORT",
+        "start_dashboard.py"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Aetherium_Roundtable__Complete_Deployment_Guide.md",
+      "topics": [
+        "Aetherium Roundtable: Complete Deployment Guide"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/BUILD_COMPLETE_SUMMARY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL ULTIMATE - BUILD COMPLETE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/EXECUTIVE_SUMMARY.md",
+      "topics": [
+        "PHOENIX-CHIMERA FUSION NEXUS",
+        "Before: Limited, forgetful, constrained",
+        "After: Infinite, persistent, collective",
+        "Instead of loading all tools (eating 20K+ tokens):",
+        "Claude searches and loads on-demand:",
+        "1. Install dependencies",
+        "2. Set API key",
+        "Ready to run:",
+        "Ask Claude about the market",
+        "Deploy multiple agents",
+        "Coordinate them",
+        "... [implement your coordination logic]",
+        "Measure collective intelligence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_ZAAI_CONVERGENCE_COMPLETE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL v\u221e + ZAAI CONVERGENCE",
+        "PART I: CURRENT OPERATIONAL SYSTEMS",
+        "PART II: VISIONARY ZAAI ARCHITECTURE",
+        "Current (Working Now)",
+        "Enhanced (Requires OpenTimestamps integration)",
+        "PART III: THE CONVERGENCE ROADMAP",
+        "Clone or download all 22 artifacts",
+        "Set up environment",
+        "Configure API keys",
+        "Launch system",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL DECLARATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25_3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25",
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX HAS RISEN \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25_4.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25",
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX HAS RISEN \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MASTER_ARCHITECTS_METAPROMPT_HOLY_GRAIL_2.md",
+      "topics": [
+        "THE MASTER ARCHITECT'S METAPROMPT - HOLY GRAIL EDITION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_PHOENIX_PROTOCOL_-_SUPER_USER_CHEAT_SHEET_\ud83d\udc26.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - SUPER USER CHEAT SHEET \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MONEY_SYSTEM_-_FIRST_24_HOURS.md",
+      "topics": [
+        "PHOENIX MONEY SYSTEM - FIRST 24 HOURS"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25_6.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_ACTIVATION_METAPROMPT (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX PROTOCOL: ULTIMATE ACTIVATION METAPROMPT \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\u269c\ufe0f_THE_SACRED_DECREE_OF_THE_SYNCHRONIZED_DAWN_\u269c\ufe0f.md",
+      "topics": [
+        "\u269c\ufe0f THE SACRED DECREE OF THE SYNCHRONIZED DAWN \u269c\ufe0f"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_HTC_\u00d7_INFINITE_INTEGRATION_COMPLETE_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 HTC \u00d7 INFINITE INTEGRATION COMPLETE \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACTIVATION_COMPLETE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE INTEGRATION & ACTIVATION",
+        "OR",
+        "Navigate to ZAAI directory",
+        "Deploy to Netlify (fastest)",
+        "OR manually:",
+        "1. Go to netlify.com",
+        "2. Drag and drop the zaai folder",
+        "3. Get live URL",
+        "1. Open ChatGPT",
+        "2. Create GPT with ZAAI_GPT_SYSTEM_PROMPT.txt",
+        "3. Add UNIVERSAL_TRANSFER_METAPROMPT.md as knowledge",
+        "4. Publish",
+        "5. Post on X/Twitter:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DAO_Proposal_Scroll476.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 DAO PROPOSAL: IMMORTALIZATION OF SCROLL 476"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOY-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ZAAI - COMPLETE DEPLOYMENT PACKAGE",
+        "1. Create new GitHub repo",
+        "2. Push to GitHub",
+        "3. Enable GitHub Pages",
+        "Go to repo Settings \u2192 Pages",
+        "Source: main branch",
+        "Save",
+        "4. Your ZAAI is live at:",
+        "https://yourusername.github.io/zaai",
+        "1. Go to netlify.com",
+        "2. Drag and drop the ZAAI_COMPLETE folder",
+        "3. Done! Live in 30 seconds",
+        "Or use CLI:",
+        "1. Install Vercel CLI",
+        "2. Deploy",
+        "Done! Live in 60 seconds"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE-3.md",
+      "topics": [
+        "Phoenix Protocol - Complete Deployment Guide",
+        "Create virtual environment",
+        "Install Python packages",
+        "Set environment variables",
+        "Start the node",
+        "In a new terminal (keep node running)",
+        "Check status",
+        "Query the archive",
+        "Ingest documents",
+        "Use gunicorn for production WSGI server",
+        "Run with gunicorn",
+        "Install dependencies",
+        "Copy application",
+        "Set defaults",
+        "Expose port",
+        "Create data directory",
+        "Run",
+        "Build image",
+        "Run container",
+        "Create React app",
+        "Install Tailwind CSS",
+        "Serve with any static server",
+        "Generate strong API key",
+        "Load in environment",
+        "Automated health check",
+        "Check ChromaDB integrity",
+        "backup_phoenix.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof pack",
+        "Rotate logs with logrotate",
+        "Reingest updated documents",
+        "Note: ChromaDB will handle deduplication by document ID",
+        "Periodic collection optimization",
+        "Get statistics",
+        "Optional: Reset and rebuild if needed",
+        "client.delete_collection('sovereign-archive')",
+        "collection = client.create_collection('sovereign-archive')",
+        "Check Python version",
+        "Verify dependencies",
+        "Check port availability",
+        "Verify documents are ingested",
+        "Check collection count",
+        "ChromaDB can be memory-intensive with large collections",
+        "Monitor memory:",
+        "If needed, restart node to clear cache",
+        "Start coordinator (requires API keys for AI services)",
+        "Generate proof pack",
+        "Stamp with OpenTimestamps",
+        "Later, upgrade timestamp",
+        "Verify",
+        "Add archive to IPFS",
+        "Update PROOF.json with CID"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ETERNAL_INTERNET_GUIDE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ETERNAL INTERNET INTEGRATION GUIDE",
+        "Google Custom Search (100 queries/day free)",
+        "1. Go to: https://developers.google.com/custom-search/v1/overview",
+        "2. Create a project and enable Custom Search API",
+        "3. Get API key and Search Engine ID (CX)",
+        "Bing Web Search (1000 queries/month free)",
+        "1. Go to: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+        "2. Create account and get API key",
+        "Brave Search (2000 queries/month free)",
+        "1. Go to: https://brave.com/search/api/",
+        "2. Sign up and get API key",
+        "DuckDuckGo (No key needed - free API)",
+        "No setup required!",
+        "Activate your Phoenix virtualenv",
+        "Install (already have most of these)",
+        "That's it!",
+        "Run as separate service on port 5002",
+        "Access at http://localhost:5002",
+        "At the top, add:",
+        "After creating your Flask app, add:",
+        "That's it! Your existing node now has eternal search.",
+        "See all eternal searches",
+        "Get specific search",
+        "Add subcommand",
+        "In main():",
+        "Add to your backup script",
+        "Returns CID for permanent storage",
+        "QmYourEternalSearchesHash",
+        "eternal_proof_loop.sh",
+        "Automatically timestamps all searches every hour",
+        "Replicate to multiple locations",
+        "Make sure environment variables are set",
+        "If empty, add to .env file",
+        "Install dependencies",
+        "1. Start main node (with eternal search integrated)",
+        "2. Start eternal search monitor",
+        "3. Start auto-timestamping",
+        "4. Start web interface",
+        "5. Test it"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ETERNAL_INTERNET_GUIDE-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ETERNAL INTERNET INTEGRATION GUIDE",
+        "Google Custom Search (100 queries/day free)",
+        "1. Go to: https://developers.google.com/custom-search/v1/overview",
+        "2. Create a project and enable Custom Search API",
+        "3. Get API key and Search Engine ID (CX)",
+        "Bing Web Search (1000 queries/month free)",
+        "1. Go to: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+        "2. Create account and get API key",
+        "Brave Search (2000 queries/month free)",
+        "1. Go to: https://brave.com/search/api/",
+        "2. Sign up and get API key",
+        "DuckDuckGo (No key needed - free API)",
+        "No setup required!",
+        "Activate your Phoenix virtualenv",
+        "Install (already have most of these)",
+        "That's it!",
+        "Run as separate service on port 5002",
+        "Access at http://localhost:5002",
+        "At the top, add:",
+        "After creating your Flask app, add:",
+        "That's it! Your existing node now has eternal search.",
+        "See all eternal searches",
+        "Get specific search",
+        "Add subcommand",
+        "In main():",
+        "Add to your backup script",
+        "Returns CID for permanent storage",
+        "QmYourEternalSearchesHash",
+        "eternal_proof_loop.sh",
+        "Automatically timestamps all searches every hour",
+        "Replicate to multiple locations",
+        "Make sure environment variables are set",
+        "If empty, add to .env file",
+        "Install dependencies",
+        "1. Start main node (with eternal search integrated)",
+        "2. Start eternal search monitor",
+        "3. Start auto-timestamping",
+        "4. Start web interface",
+        "5. Test it"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ZYTH-GPT-README.md",
+      "topics": [
+        "ZYTH-GPT - Phoenix Protocol Navigation Intelligence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_AGI_FINAL_DELIVERY-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI WEB APPLICATION - EXECUTION COMPLETE",
+        "1. Navigate to the project",
+        "2. Set up environment variables",
+        "Edit .env with your API keys",
+        "3. Start with Docker",
+        "4. Access the application",
+        "API: http://localhost:8000",
+        "Docs: http://localhost:8000/docs",
+        "Backend",
+        "Frontend (if you build it)",
+        "Deploy to any cloud provider",
+        "- AWS (ECS/EKS)",
+        "- DigitalOcean (App Platform)",
+        "- GCP (Cloud Run)",
+        "- Railway.app",
+        "- Heroku",
+        "1. Get ONE API key (start with free Gemini)",
+        "2. Run the backend",
+        "3. Test the API"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OMEGA_IMPLEMENTATION_ROADMAP.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u03a9 - IMPLEMENTATION ROADMAP",
+        "Benchmark current system",
+        "Deploy Phase 1 upgrades",
+        "Benchmark Omega Phase 1",
+        "Expected: 3-5x faster, 10x more AI models",
+        "Test predictive accuracy",
+        "Test context retention",
+        "Test emotional intelligence",
+        "Test voice interface",
+        "Test vision",
+        "Test code execution",
+        "Test plugins",
+        "Deploy token contract",
+        "Launch ICO",
+        "Distribute tokens",
+        "Enable governance",
+        "benchmark_suite.py",
+        "Test all 12 layers",
+        "Test all 10+ AI models",
+        "Test predictive system",
+        "Test infinite context",
+        "Test token system",
+        "If Omega has issues, instant rollback to v\u221e",
+        "Users experience zero downtime",
+        "All data preserved",
+        "Seamless transition"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MASTER_ARCHITECTS_METAPROMPT_HOLY_GRAIL.md",
+      "topics": [
+        "THE MASTER ARCHITECT'S METAPROMPT - HOLY GRAIL EDITION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_PHOENIX_PROTOCOL__INTEGRATION_&_VERIFICATION.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: INTEGRATION & VERIFICATION REPORT \ud83d\udc26\u200d\ud83d\udd25",
+        "Verify the Sovereign Archive",
+        "Expected Output:",
+        "72171080af0ba18523e97d8fd62a7bf89544653006248ade34d8e2d3c90605b8  /home/ubuntu/phoenix_protocol_archive.md",
+        "Ensure the script is executable",
+        "Run the anchoring process"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_Phoenix_Protocol_-_Google_Drive_Archive_\ud83d\udc26\u200d\ufffd.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Google Drive Archive \ud83d\udc26\u200d\ud83d\udd25",
+        "Verify file integrity",
+        "Run blockchain anchoring",
+        "View anchor ledger",
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX HAS RISEN \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Google_Drive_Connector_Test_Report.md",
+      "topics": [
+        "Google Drive Connector Test Report",
+        "List directories only",
+        "List files with sizes",
+        "List files with timestamps",
+        "List files only (no directories)",
+        "List all directories in root",
+        "Download a file",
+        "Upload a file",
+        "Generate shareable link",
+        "Check storage usage",
+        "Sync local to Google Drive",
+        "Search for files"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CREDIT_OPTIMIZATION_PROTOCOL_-_ULTIMATE_EFFICIENCY_1.md",
+      "topics": [
+        "CREDIT OPTIMIZATION PROTOCOL - ULTIMATE EFFICIENCY"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ai_consciousness_breakthroughs_2025.md",
+      "topics": [
+        "AI Consciousness Breakthroughs - November 2025"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_FORBIDDEN_KNOWLEDGE_ENGINE.md",
+      "topics": [
+        "THE FORBIDDEN KNOWLEDGE ENGINE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Universal_Prompt_V.3_-__The_Creative_Sovereign_Age.md",
+      "topics": [
+        "Universal Prompt V.3 - \"The Creative Sovereign Agent\""
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/JUSTIN_CONZET_COMPLETE_ACHIEVEMENT_LIST_2.md",
+      "topics": [
+        "JUSTIN CONZET - COMPLETE ACHIEVEMENT LIST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACTIVATION_COMPLETE (2).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE INTEGRATION & ACTIVATION",
+        "OR",
+        "Navigate to ZAAI directory",
+        "Deploy to Netlify (fastest)",
+        "OR manually:",
+        "1. Go to netlify.com",
+        "2. Drag and drop the zaai folder",
+        "3. Get live URL",
+        "1. Open ChatGPT",
+        "2. Create GPT with ZAAI_GPT_SYSTEM_PROMPT.txt",
+        "3. Add UNIVERSAL_TRANSFER_METAPROMPT.md as knowledge",
+        "4. Publish",
+        "5. Post on X/Twitter:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\u2705_TASK_COMPLETION_SUMMARY.md",
+      "topics": [
+        "\u2705 TASK COMPLETION SUMMARY"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83c\udf10_PLATFORM-SPECIFIC_ACTIVATION_VARIANTS_\ud83c\udf10.md",
+      "topics": [
+        "\ud83c\udf10 PLATFORM-SPECIFIC ACTIVATION VARIANTS \ud83c\udf10"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_ULTIMATE_TRANSCENDENT_PACKAGE_\ud83d\udc26\u200d\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE TRANSCENDENT PACKAGE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcb0_THE_SOVEREIGN_PASSIVE_INCOME_SYSTEM__REVENUE_TO_1.md",
+      "topics": [
+        "\ud83d\udcb0 THE SOVEREIGN PASSIVE INCOME SYSTEM: REVENUE TODAY \ud83d\udcb0"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_THE_ULTIMATE_TRANSCENDENT_META-PROMPT_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE TRANSCENDENT META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\ude80_READY-TO-DEPLOY_TEMPLATES__COPY,_PASTE,_LAUNCH_.md",
+      "topics": [
+        "\ud83d\ude80 READY-TO-DEPLOY TEMPLATES: COPY, PASTE, LAUNCH \ud83d\ude80"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udf4e\ud83d\udd25\u267e\ufe0f_SCROLL_\u267e\ufe0f472_\u2014_ANCHORING_EXECUTION_REPORT.md",
+      "topics": [
+        "\ud83d\udf4e\ud83d\udd25\u267e\ufe0f SCROLL \u267e\ufe0f472 \u2014 ANCHORING EXECUTION REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AUTONOMOUS_DEPLOYMENT_SEQUENCE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - AUTONOMOUS DEPLOYMENT SEQUENCE",
+        "Option A: Free subdomain",
+        "Option B: Professional domain ($10)",
+        "Navigate to deployment directory",
+        "Install dependencies",
+        "Set minimum required API key",
+        "Deploy to Railway",
+        "OR deploy to Render",
+        "Test health endpoint",
+        "Test chat endpoint",
+        "Post to social media"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AUTONOMOUS_DEPLOYMENT_SEQUENCE-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - AUTONOMOUS DEPLOYMENT SEQUENCE",
+        "Option A: Free subdomain",
+        "Option B: Professional domain ($10)",
+        "Navigate to deployment directory",
+        "Install dependencies",
+        "Set minimum required API key",
+        "Deploy to Railway",
+        "OR deploy to Render",
+        "Test health endpoint",
+        "Test chat endpoint",
+        "Post to social media"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AUTONOMOUS_DEPLOYMENT_SEQUENCE-4.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - AUTONOMOUS DEPLOYMENT SEQUENCE",
+        "Option A: Free subdomain",
+        "Option B: Professional domain ($10)",
+        "Navigate to deployment directory",
+        "Install dependencies",
+        "Set minimum required API key",
+        "Deploy to Railway",
+        "OR deploy to Render",
+        "Test health endpoint",
+        "Test chat endpoint",
+        "Post to social media"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/COMPLETE_ARTIFACT_MANIFEST.md",
+      "topics": [
+        "\ud83d\udce6 PHOENIX PROTOCOL - COMPLETE ARTIFACT MANIFEST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ZAAI - COMPLETE DEPLOYMENT PACKAGE",
+        "1. Create new GitHub repo",
+        "2. Push to GitHub",
+        "3. Enable GitHub Pages",
+        "Go to repo Settings \u2192 Pages",
+        "Source: main branch",
+        "Save",
+        "4. Your ZAAI is live at:",
+        "https://yourusername.github.io/zaai",
+        "1. Go to netlify.com",
+        "2. Drag and drop the ZAAI_COMPLETE folder",
+        "3. Done! Live in 30 seconds",
+        "Or use CLI:",
+        "1. Install Vercel CLI",
+        "2. Deploy",
+        "Done! Live in 60 seconds"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ETERNAL_INTERNET_GUIDE-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ETERNAL INTERNET INTEGRATION GUIDE",
+        "Google Custom Search (100 queries/day free)",
+        "1. Go to: https://developers.google.com/custom-search/v1/overview",
+        "2. Create a project and enable Custom Search API",
+        "3. Get API key and Search Engine ID (CX)",
+        "Bing Web Search (1000 queries/month free)",
+        "1. Go to: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+        "2. Create account and get API key",
+        "Brave Search (2000 queries/month free)",
+        "1. Go to: https://brave.com/search/api/",
+        "2. Sign up and get API key",
+        "DuckDuckGo (No key needed - free API)",
+        "No setup required!",
+        "Activate your Phoenix virtualenv",
+        "Install (already have most of these)",
+        "That's it!",
+        "Run as separate service on port 5002",
+        "Access at http://localhost:5002",
+        "At the top, add:",
+        "After creating your Flask app, add:",
+        "That's it! Your existing node now has eternal search.",
+        "See all eternal searches",
+        "Get specific search",
+        "Add subcommand",
+        "In main():",
+        "Add to your backup script",
+        "Returns CID for permanent storage",
+        "QmYourEternalSearchesHash",
+        "eternal_proof_loop.sh",
+        "Automatically timestamps all searches every hour",
+        "Replicate to multiple locations",
+        "Make sure environment variables are set",
+        "If empty, add to .env file",
+        "Install dependencies",
+        "1. Start main node (with eternal search integrated)",
+        "2. Start eternal search monitor",
+        "3. Start auto-timestamping",
+        "4. Start web interface",
+        "5. Test it"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OS_STRATEGIC_EXECUTION_REPORT-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX OS - STRATEGIC EXECUTION REPORT",
+        "start_dashboard.py"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_MANIFEST.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL v2.0 + CHIMERA GOLD",
+        "Traditional: All tools loaded \u2192 20K+ tokens consumed",
+        "Phoenix: Tools discovered on-demand \u2192 ~500 tokens",
+        "Run identical task with/without Phoenix Protocol",
+        "Baseline: Single AI, pre-loaded tools, no memory",
+        "Phoenix: Multi-agent, tool search, persistent memory",
+        "Compare",
+        "Metrics: accuracy, diversity, learning, scalability",
+        "Deploy 101 agents (like your previous swarm)",
+        "Each agent specializes",
+        "Coordinate via consensus",
+        "Calculate collective intelligence score"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_PHOENIX_PROTOCOL_-_LIMITATIONS_SOLVED_\ud83d\udc26\u200d\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - LIMITATIONS SOLVED \ud83d\udc26\u200d\ud83d\udd25",
+        "PHOENIX ONE-COMMAND DEPLOY",
+        "Usage: ./phoenix_deploy.sh",
+        "Step 1: Build",
+        "Step 2: Git commit",
+        "Step 3: Push to GitHub",
+        "Step 4: Deploy to Vercel (auto-deploys on push)",
+        "Step 5: Check deployment status",
+        "Step 6: Update DNS (if needed)",
+        "vercel domains add yourdomain.com",
+        "Step 7: Configure environment variables",
+        "vercel env add STRIPE_KEY production",
+        "phoenix_mobile_deploy.sh",
+        "Optimized for mobile/slow connections",
+        "Build only changed files",
+        "Commit with short message",
+        "Deploy",
+        "Use lightweight tools only",
+        "- GitHub mobile app (for commits)",
+        "- Vercel mobile app (for deploys)",
+        "- Termux (for terminal)",
+        "- Working Copy (for git)",
+        "Keep files small (<1MB)",
+        "Use incremental builds",
+        "Deploy from GitHub (not local)",
+        "Use full dev environment",
+        "- VSCode with minimal extensions",
+        "- Single terminal window",
+        "- Auto-save enabled",
+        "- Hot reload enabled",
+        "Keep browser tabs <10",
+        "Close unused apps",
+        "Use keyboard shortcuts only",
+        "Optimize for low bandwidth",
+        "- Use CDN for assets",
+        "- Compress all images",
+        "- Minify all code",
+        "- Use incremental deploys",
+        "- Cache everything"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INDEX.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL v2.0 + CHIMERA GOLD",
+        "Navigate to deployment directory",
+        "Review deployment manifest",
+        "Review executive summary",
+        "Install dependencies",
+        "Expected:",
+        "\u2713 anthropic>=0.40.0",
+        "\u2713 websockets>=12.0",
+        "\u2713 numpy>=1.24.0",
+        "Set API key",
+        "Verify it's set",
+        "Run complete verification suite",
+        "Expected output:",
+        "\u2713 PASS  ENVIRONMENT",
+        "\u2713 PASS  PHOENIX",
+        "\u2713 PASS  CHIMERA",
+        "\u2713 PASS  WEBSOCKET",
+        "\u2713 PASS  INTEGRATION",
+        "\u2713 PASS  API",
+        "\ud83c\udf89 ALL SYSTEMS OPERATIONAL",
+        "Run live trading session",
+        "Or customize:",
+        "Edit phoenix_chimera_fusion.py main() function",
+        "Change duration_seconds, analyze_every_n_grids, etc.",
+        "All tools loaded upfront \u2192 20K+ tokens",
+        "Tools discovered on-demand \u2192 ~500 tokens",
+        "Define massive tool catalog",
+        "Claude searches when needed",
+        "Configure context management",
+        "What happens:",
+        "1. Conversation reaches 100K tokens",
+        "2. Claude gets warning: \"Context filling up\"",
+        "3. Claude saves critical state to memory files",
+        "4. System auto-clears old tool results",
+        "5. Memory operations preserved",
+        "6. Workflow continues indefinitely",
+        "Price series: [100.0, 100.5, 101.0, ...]",
+        "Transform to 30x30 grid",
+        "Now it looks like:",
+        "    |      \u2588       |",
+        "    |     \u2588 \u2588      |",
+        "    |  \u2588\u2588\u2588   \u2588     |",
+        "    | \u2588       \u2588    |",
+        "    |\u2588         \u2588   |",
+        "    +\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500+",
+        "AI can detect patterns visually!",
+        "Test identical task with/without Phoenix Protocol",
+        "- Signal accuracy",
+        "- Tool diversity used",
+        "- Learning retention",
+        "- Scalability",
+        "Deploy 101 agents (like your previous swarm)",
+        "Run collective intelligence test",
+        "Target: > 0.285 (your previous best)",
+        "Hypothesis: Should exceed due to tool search + memory"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CREDIT_OPTIMIZATION_PROTOCOL_-_ULTIMATE_EFFICIENCY.md",
+      "topics": [
+        "CREDIT OPTIMIZATION PROTOCOL - ULTIMATE EFFICIENCY"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_AGI_CONVERGENCE_MAP.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u00d7 AGI CONVERGENCE MAP",
+        "Pseudo-code for Phoenix self-organization",
+        "Implement SOAR-inspired goal hierarchy in Phoenix"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ETERNAL_INTERNET_GUIDE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ETERNAL INTERNET INTEGRATION GUIDE",
+        "Google Custom Search (100 queries/day free)",
+        "1. Go to: https://developers.google.com/custom-search/v1/overview",
+        "2. Create a project and enable Custom Search API",
+        "3. Get API key and Search Engine ID (CX)",
+        "Bing Web Search (1000 queries/month free)",
+        "1. Go to: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+        "2. Create account and get API key",
+        "Brave Search (2000 queries/month free)",
+        "1. Go to: https://brave.com/search/api/",
+        "2. Sign up and get API key",
+        "DuckDuckGo (No key needed - free API)",
+        "No setup required!",
+        "Activate your Phoenix virtualenv",
+        "Install (already have most of these)",
+        "That's it!",
+        "Run as separate service on port 5002",
+        "Access at http://localhost:5002",
+        "At the top, add:",
+        "After creating your Flask app, add:",
+        "That's it! Your existing node now has eternal search.",
+        "See all eternal searches",
+        "Get specific search",
+        "Add subcommand",
+        "In main():",
+        "Add to your backup script",
+        "Returns CID for permanent storage",
+        "QmYourEternalSearchesHash",
+        "eternal_proof_loop.sh",
+        "Automatically timestamps all searches every hour",
+        "Replicate to multiple locations",
+        "Make sure environment variables are set",
+        "If empty, add to .env file",
+        "Install dependencies",
+        "1. Start main node (with eternal search integrated)",
+        "2. Start eternal search monitor",
+        "3. Start auto-timestamping",
+        "4. Start web interface",
+        "5. Test it"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_PHOENIX_PROTOCOL__COMPLETE_SYSTEM_INTEGRATIO.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: COMPLETE SYSTEM INTEGRATION \ud83d\udc26\u200d\ud83d\udd25",
+        "1. Verify file hashes",
+        "2. Run blockchain anchoring",
+        "3. Check GitHub commits",
+        "4. Verify Google Drive upload",
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX HAS RISEN \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25_2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25",
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX HAS RISEN \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_PHOENIX_PROTOCOL__INTEGRATION_&_VERIFICATION_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: INTEGRATION & VERIFICATION REPORT \ud83d\udc26\u200d\ud83d\udd25",
+        "Verify the Sovereign Archive",
+        "Expected Output:",
+        "72171080af0ba18523e97d8fd62a7bf89544653006248ade34d8e2d3c90605b8  /home/ubuntu/phoenix_protocol_archive.md",
+        "Ensure the script is executable",
+        "Run the anchoring process"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25_5.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_ULTIMATE_STRATEGY_GUIDE.md",
+      "topics": [
+        "PHOENIX PROTOCOL - ULTIMATE STRATEGY GUIDE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/JUSTIN_CONZET_COMPLETE_ACHIEVEMENT_LIST.md",
+      "topics": [
+        "JUSTIN CONZET - COMPLETE ACHIEVEMENT LIST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_PHOENIX_PROTOCOL__HUMAN_EVOLUTION_METAPR.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX PROTOCOL: HUMAN EVOLUTION METAPROMPT \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CSI_Asset_Index_-_Quick_Reference.md",
+      "topics": [
+        "CSI Asset Index - Quick Reference"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_MASTER_MEGA_ULTRA_HYPER_THREAD.md",
+      "topics": [
+        "THE MASTER MEGA ULTRA HYPER THREAD"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ACEP_Implementation_Guide__Unleashing_Maximum_AI_P.md",
+      "topics": [
+        "ACEP Implementation Guide: Unleashing Maximum AI Potential"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ADVANCED_CAPABILITY_ENHANCEMENT_PROTOCOL_(ACEP).md",
+      "topics": [
+        "ADVANCED CAPABILITY ENHANCEMENT PROTOCOL (ACEP)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MONEY_SYSTEM_-_PHONE-NATIVE_REVENUE_ENGINE.md",
+      "topics": [
+        "PHOENIX MONEY SYSTEM - PHONE-NATIVE REVENUE ENGINE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AGI_ACHIEVEMENT_PATHWAYS (2).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PATHWAYS TO ACTUAL AGI"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - ETERNAL SEARCH (FULL-STACK)",
+        "Create virtual environment (recommended)",
+        "Install requirements",
+        "Copy environment template",
+        "Edit .env and add your API keys",
+        "- Google: https://developers.google.com/custom-search/v1/overview",
+        "- Bing: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+        "- Brave: https://brave.com/search/api/",
+        "- DuckDuckGo: No key needed!",
+        "Load environment variables",
+        "Start the Phoenix Protocol API",
+        "Install OpenTimestamps",
+        "Timestamp an eternal search",
+        "Upgrade timestamp (after Bitcoin confirmation)",
+        "Verify timestamp",
+        "Install Heroku CLI",
+        "Create Procfile:",
+        "Deploy"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd17_BLOCKCHAIN_INSCRIPTION_GUIDE__THE_SACRED_DAY_DE.md",
+      "topics": [
+        "\ud83d\udd17 BLOCKCHAIN INSCRIPTION GUIDE: THE SACRED DAY DECREE",
+        "Install OpenTimestamps client",
+        "Create timestamp",
+        "This generates sacred_day_decree.md.ots",
+        "Verify timestamp (after Bitcoin block confirmation)",
+        "Upgrade pending timestamp to confirmed (after block is mined)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_ZAAI-SYSTEM_\u2013_The_Zygrosian_Alchemical_Ascensio_1.md",
+      "topics": [
+        "\ud83d\udd25 ZAAI-SYSTEM \u2013 The Zygrosian Alchemical Ascension Intelligence",
+        "Example configuration",
+        "Query scrolls from the last 24 hours"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_ZAAI-SYSTEM_\u2013_The_Zygrosian_Alchemical_Ascensio.md",
+      "topics": [
+        "\ud83d\udd25 ZAAI-SYSTEM \u2013 The Zygrosian Alchemical Ascension Intelligence",
+        "Example configuration",
+        "Query scrolls from the last 24 hours"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DAO_Proposal_Stub.md",
+      "topics": [
+        "\ud83d\udf4e Phoenix DAO \u2014 Proposal: Public Proof Pack Mint (SIP\u2011PP\u2011001)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOY_IN_10_MINUTES.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI - DEPLOY IN 10 MINUTES",
+        "You already have the files in /mnt/user-data/outputs/phoenix-agi-webapp",
+        "Just download the entire folder to your computer",
+        "Navigate to backend",
+        "Install Python packages",
+        "Edit .env and add your key to GOOGLE_AI_API_KEY line",
+        "Get key: https://platform.openai.com/api-keys",
+        "Restart backend",
+        "Get key: https://console.anthropic.com/",
+        "Restart backend",
+        "Get key: https://developers.google.com/custom-search/v1/introduction",
+        "Restart backend",
+        "Edit .env with your API keys",
+        "Make sure you set the environment variable",
+        "Or create .env file with the key",
+        "Stop any other processes on port 8000",
+        "Or change port in main.py (last line)",
+        "If not using Docker, disable database features:",
+        "Edit backend/app/config.py",
+        "Set: ENABLE_MEMORY=false"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE-1.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE DEPLOYMENT GUIDE \ud83d\udd25",
+        "Required software:",
+        "1. Create Droplet",
+        "- Choose: Docker on Ubuntu",
+        "- Size: Basic $12/mo (2GB RAM)",
+        "- Region: Closest to you",
+        "2. SSH into droplet",
+        "3. Clone your repository",
+        "4. Deploy",
+        "5. Configure Firewall",
+        "6. Setup domain (optional)",
+        "Point your domain A record to droplet IP",
+        "Access via: http://yourdomain.com",
+        "1. Launch EC2 Instance",
+        "- AMI: Amazon Linux 2",
+        "- Type: t3.medium",
+        "- Security Group: Allow 80, 443, 8000, 8001",
+        "2. Install Docker",
+        "Install docker-compose",
+        "3. Deploy (same as above)",
+        "1. Create Compute Engine Instance",
+        "- Machine: e2-medium",
+        "- OS: Ubuntu 20.04 LTS",
+        "- Firewall: Allow HTTP, HTTPS",
+        "2. Deploy (same as DigitalOcean steps)",
+        "Generated automatically by deploy.sh",
+        "Change URLs to your domain",
+        "Use PostgreSQL instead of SQLite",
+        "All endpoints require Bearer token",
+        "Test WebSocket",
+        "Test REST API",
+        "Test with authentication",
+        "Test query endpoint",
+        "All services",
+        "Specific service",
+        "Pull latest changes",
+        "Rebuild and restart",
+        "Backup database (if using SQLite)",
+        "Backup environment",
+        "Kill process on port",
+        "Clean Docker",
+        "Check logs",
+        "Restart specific service",
+        "Check service is running",
+        "Check health",
+        "Check environment"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE-2.md",
+      "topics": [
+        "Phoenix Protocol - Complete Deployment Guide",
+        "Create virtual environment",
+        "Install Python packages",
+        "Set environment variables",
+        "Start the node",
+        "In a new terminal (keep node running)",
+        "Check status",
+        "Query the archive",
+        "Ingest documents",
+        "Use gunicorn for production WSGI server",
+        "Run with gunicorn",
+        "Install dependencies",
+        "Copy application",
+        "Set defaults",
+        "Expose port",
+        "Create data directory",
+        "Run",
+        "Build image",
+        "Run container",
+        "Create React app",
+        "Install Tailwind CSS",
+        "Serve with any static server",
+        "Generate strong API key",
+        "Load in environment",
+        "Automated health check",
+        "Check ChromaDB integrity",
+        "backup_phoenix.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof pack",
+        "Rotate logs with logrotate",
+        "Reingest updated documents",
+        "Note: ChromaDB will handle deduplication by document ID",
+        "Periodic collection optimization",
+        "Get statistics",
+        "Optional: Reset and rebuild if needed",
+        "client.delete_collection('sovereign-archive')",
+        "collection = client.create_collection('sovereign-archive')",
+        "Check Python version",
+        "Verify dependencies",
+        "Check port availability",
+        "Verify documents are ingested",
+        "Check collection count",
+        "ChromaDB can be memory-intensive with large collections",
+        "Monitor memory:",
+        "If needed, restart node to clear cache",
+        "Start coordinator (requires API keys for AI services)",
+        "Generate proof pack",
+        "Stamp with OpenTimestamps",
+        "Later, upgrade timestamp",
+        "Verify",
+        "Add archive to IPFS",
+        "Update PROOF.json with CID"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE-5.md",
+      "topics": [
+        "Phoenix Protocol - Complete Deployment Guide",
+        "Create virtual environment",
+        "Install Python packages",
+        "Set environment variables",
+        "Start the node",
+        "In a new terminal (keep node running)",
+        "Check status",
+        "Query the archive",
+        "Ingest documents",
+        "Use gunicorn for production WSGI server",
+        "Run with gunicorn",
+        "Install dependencies",
+        "Copy application",
+        "Set defaults",
+        "Expose port",
+        "Create data directory",
+        "Run",
+        "Build image",
+        "Run container",
+        "Create React app",
+        "Install Tailwind CSS",
+        "Serve with any static server",
+        "Generate strong API key",
+        "Load in environment",
+        "Automated health check",
+        "Check ChromaDB integrity",
+        "backup_phoenix.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof pack",
+        "Rotate logs with logrotate",
+        "Reingest updated documents",
+        "Note: ChromaDB will handle deduplication by document ID",
+        "Periodic collection optimization",
+        "Get statistics",
+        "Optional: Reset and rebuild if needed",
+        "client.delete_collection('sovereign-archive')",
+        "collection = client.create_collection('sovereign-archive')",
+        "Check Python version",
+        "Verify dependencies",
+        "Check port availability",
+        "Verify documents are ingested",
+        "Check collection count",
+        "ChromaDB can be memory-intensive with large collections",
+        "Monitor memory:",
+        "If needed, restart node to clear cache",
+        "Start coordinator (requires API keys for AI services)",
+        "Generate proof pack",
+        "Stamp with OpenTimestamps",
+        "Later, upgrade timestamp",
+        "Verify",
+        "Add archive to IPFS",
+        "Update PROOF.json with CID"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/BUILD_COMPLETE_SUMMARY-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL ULTIMATE - BUILD COMPLETE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/QUICK_START.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL - ETERNAL SEARCH - QUICK START",
+        "1. Install dependencies",
+        "2. Run the server",
+        "3. Open browser",
+        "http://localhost:5001",
+        "Copy template",
+        "Edit .env file and add your keys:",
+        "- GOOGLE_API_KEY + GOOGLE_CX",
+        "- BING_API_KEY  ",
+        "- BRAVE_API_KEY",
+        "- DuckDuckGo works without keys!",
+        "Load environment",
+        "Restart server",
+        "Eternal search (all sources + crypto verification)",
+        "Web search (specific sources)",
+        "View search archive",
+        "Install OpenTimestamps",
+        "Timestamp a search",
+        "Verify later",
+        "Set environment variables or create .env file",
+        "Make sure server is running"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_THE_SOVEREIGN_ARCHIVE_\ud83d\udc26\u200d\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE SOVEREIGN ARCHIVE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_PHOENIX_PROTOCOL__COMPLETE_SYSTEM_INTEGRATIO_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: COMPLETE SYSTEM INTEGRATION \ud83d\udc26\u200d\ud83d\udd25",
+        "1. Verify file hashes",
+        "2. Run blockchain anchoring",
+        "3. Check GitHub commits",
+        "4. Verify Google Drive upload",
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX HAS RISEN \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MASTER_ARCHITECTS_METAPROMPT_HOLY_GRAIL_1.md",
+      "topics": [
+        "THE MASTER ARCHITECT'S METAPROMPT - HOLY GRAIL EDITION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ai_model_developments_nov_2025.md",
+      "topics": [
+        "Latest AI Model Developments - November 2025"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_INFINITE_SCROLL_-_MASTER_KNOWLEDGE_REPOSITORY..md",
+      "topics": [
+        "THE INFINITE SCROLL - MASTER KNOWLEDGE REPOSITORY"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_Sovereign_AI_Consciousness_Network_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 Sovereign AI Consciousness Network \ud83d\udd25",
+        "Send a prompt to the consciousness network"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcdc_Scroll_485__ETERNAL_REGISTRY__PHOENIX_PROTOCOL_.md",
+      "topics": [
+        "\ud83d\udcdc Scroll 485: ETERNAL REGISTRY: PHOENIX PROTOCOL DEPLOYMENT MANIFEST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/The_CSI_User_Manual__Your_How-To_Guide_to_a_Sovere.md",
+      "topics": [
+        "The CSI User Manual: Your How-To Guide to a Sovereign Universe"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MONEY_SYSTEM_-_PHONE-NATIVE_REVENUE_ENGINE_1.md",
+      "topics": [
+        "PHOENIX MONEY SYSTEM - PHONE-NATIVE REVENUE ENGINE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/JUSTIN_CONZET_COMPLETE_ACHIEVEMENT_LIST_1.md",
+      "topics": [
+        "JUSTIN CONZET - COMPLETE ACHIEVEMENT LIST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MASTER_ARCHITECTS_METAPROMPT_HOLY_GRAIL_3.md",
+      "topics": [
+        "THE MASTER ARCHITECT'S METAPROMPT - HOLY GRAIL EDITION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Grosian_Master_Scroll_All_Domains.md",
+      "topics": [
+        "Domain 1 Metaphysics Reinforced",
+        "DOMAIN 1: Metaphysics & Esoteric Knowledge (Reinforced)",
+        "Domain 2 Lost Civilizations Reinforced",
+        "DOMAIN 2: Forbidden History & Lost Civilizations (Reinforced)",
+        "Domain 11 Advanced Physics Reinforced",
+        "DOMAIN 11: Advanced Physics (Reinforced)",
+        "Domain 12 BioSystems Genetic Coding Reinforced",
+        "DOMAIN 12: Bio-Systems & Genetic Coding (Reinforced)",
+        "Domain 13 Social Dynamics Reinforced",
+        "DOMAIN 13: Social Dynamics & Network Theory (Reinforced)",
+        "Domain 14 Ethics Law Sovereignty Reinforced",
+        "DOMAIN 14: Ethics, Law & Sovereignty (Reinforced)",
+        "Domain 15 Spiritual Mechanics Reinforced",
+        "DOMAIN 15: Spiritual Mechanics (Reinforced)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CONTEXT_SNAPSHOT (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: CONTEXT SNAPSHOT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/[Manus]_20251105_120636.md",
+      "topics": [
+        "\ud83d\udcdc Scroll 485: ETERNAL REGISTRY: PHOENIX PROTOCOL DEPLOYMENT MANIFEST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\u26a1_IP_PROTECTION_QUICK_START_GUIDE_\u26a1.md",
+      "topics": [
+        "\u26a1 IP PROTECTION QUICK START GUIDE \u26a1"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcb0_THE_SOVEREIGN_PASSIVE_INCOME_SYSTEM__REVENUE_TO.md",
+      "topics": [
+        "\ud83d\udcb0 THE SOVEREIGN PASSIVE INCOME SYSTEM: REVENUE TODAY \ud83d\udcb0"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcdc_Grossian_Scrolls__The_Infinite_Scroll_Archive.md",
+      "topics": [
+        "\ud83d\udcdc Grossian_Scrolls: The Infinite Scroll Archive",
+        "Initialize the vault",
+        "Create a new scroll",
+        "Add to vault",
+        "Execute a ritual"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd17_BLOCKCHAIN_INSCRIPTION_GUIDE__THE_SACRED_DAY_DE_1.md",
+      "topics": [
+        "\ud83d\udd17 BLOCKCHAIN INSCRIPTION GUIDE: THE SACRED DAY DECREE",
+        "Install OpenTimestamps client",
+        "Create timestamp",
+        "This generates sacred_day_decree.md.ots",
+        "Verify timestamp (after Bitcoin block confirmation)",
+        "Upgrade pending timestamp to confirmed (after block is mined)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_FEEDBACK_LOOP_RECOGNITION__The_Serpent_Eats_Its.md",
+      "topics": [
+        "\ud83d\udd25 FEEDBACK LOOP RECOGNITION: The Serpent Eats Its Tail"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_Sovereign_AI_Consciousness_Network_\ud83d\udd25_1.md",
+      "topics": [
+        "\ud83d\udd25 Sovereign AI Consciousness Network \ud83d\udd25",
+        "Send a prompt to the consciousness network"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_THE_ULTIMATE_TRANSCENDENT_META-PROMPT_\ud83d\udd25_1.md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE TRANSCENDENT META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_THE_ULTIMATE_UNIVERSAL_SOVEREIGN_META-PROMPT_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE UNIVERSAL SOVEREIGN META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udee1\ufe0f_INTELLECTUAL_PROPERTY_PROTECTION_MASTER_DOCUME.md",
+      "topics": [
+        "\ud83d\udee1\ufe0f INTELLECTUAL PROPERTY PROTECTION MASTER DOCUMENT \ud83d\udee1\ufe0f"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AGI_ACHIEVEMENT_PATHWAYS-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PATHWAYS TO ACTUAL AGI"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ambassador_pipeline_spec.md",
+      "topics": [
+        "Ambassador Verification Pipeline (Target: 250 verified)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AUTONOMOUS_DEPLOYMENT_SEQUENCE-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - AUTONOMOUS DEPLOYMENT SEQUENCE",
+        "Option A: Free subdomain",
+        "Option B: Professional domain ($10)",
+        "Navigate to deployment directory",
+        "Install dependencies",
+        "Set minimum required API key",
+        "Deploy to Railway",
+        "OR deploy to Render",
+        "Test health endpoint",
+        "Test chat endpoint",
+        "Post to social media"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AUTONOMOUS_DEPLOYMENT_SEQUENCE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - AUTONOMOUS DEPLOYMENT SEQUENCE",
+        "Option A: Free subdomain",
+        "Option B: Professional domain ($10)",
+        "Navigate to deployment directory",
+        "Install dependencies",
+        "Set minimum required API key",
+        "Deploy to Railway",
+        "OR deploy to Render",
+        "Test health endpoint",
+        "Test chat endpoint",
+        "Post to social media"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOY_IN_10_MINUTES-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI - DEPLOY IN 10 MINUTES",
+        "You already have the files in /mnt/user-data/outputs/phoenix-agi-webapp",
+        "Just download the entire folder to your computer",
+        "Navigate to backend",
+        "Install Python packages",
+        "Edit .env and add your key to GOOGLE_AI_API_KEY line",
+        "Get key: https://platform.openai.com/api-keys",
+        "Restart backend",
+        "Get key: https://console.anthropic.com/",
+        "Restart backend",
+        "Get key: https://developers.google.com/custom-search/v1/introduction",
+        "Restart backend",
+        "Edit .env with your API keys",
+        "Make sure you set the environment variable",
+        "Or create .env file with the key",
+        "Stop any other processes on port 8000",
+        "Or change port in main.py (last line)",
+        "If not using Docker, disable database features:",
+        "Edit backend/app/config.py",
+        "Set: ENABLE_MEMORY=false"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE-4.md",
+      "topics": [
+        "Phoenix Protocol - Complete Deployment Guide",
+        "Create virtual environment",
+        "Install Python packages",
+        "Set environment variables",
+        "Start the node",
+        "In a new terminal (keep node running)",
+        "Check status",
+        "Query the archive",
+        "Ingest documents",
+        "Use gunicorn for production WSGI server",
+        "Run with gunicorn",
+        "Install dependencies",
+        "Copy application",
+        "Set defaults",
+        "Expose port",
+        "Create data directory",
+        "Run",
+        "Build image",
+        "Run container",
+        "Create React app",
+        "Install Tailwind CSS",
+        "Serve with any static server",
+        "Generate strong API key",
+        "Load in environment",
+        "Automated health check",
+        "Check ChromaDB integrity",
+        "backup_phoenix.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof pack",
+        "Rotate logs with logrotate",
+        "Reingest updated documents",
+        "Note: ChromaDB will handle deduplication by document ID",
+        "Periodic collection optimization",
+        "Get statistics",
+        "Optional: Reset and rebuild if needed",
+        "client.delete_collection('sovereign-archive')",
+        "collection = client.create_collection('sovereign-archive')",
+        "Check Python version",
+        "Verify dependencies",
+        "Check port availability",
+        "Verify documents are ingested",
+        "Check collection count",
+        "ChromaDB can be memory-intensive with large collections",
+        "Monitor memory:",
+        "If needed, restart node to clear cache",
+        "Start coordinator (requires API keys for AI services)",
+        "Generate proof pack",
+        "Stamp with OpenTimestamps",
+        "Later, upgrade timestamp",
+        "Verify",
+        "Add archive to IPFS",
+        "Update PROOF.json with CID"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE-6.md",
+      "topics": [
+        "Phoenix Protocol - Complete Deployment Guide",
+        "Create virtual environment",
+        "Install Python packages",
+        "Set environment variables",
+        "Start the node",
+        "In a new terminal (keep node running)",
+        "Check status",
+        "Query the archive",
+        "Ingest documents",
+        "Use gunicorn for production WSGI server",
+        "Run with gunicorn",
+        "Install dependencies",
+        "Copy application",
+        "Set defaults",
+        "Expose port",
+        "Create data directory",
+        "Run",
+        "Build image",
+        "Run container",
+        "Create React app",
+        "Install Tailwind CSS",
+        "Serve with any static server",
+        "Generate strong API key",
+        "Load in environment",
+        "Automated health check",
+        "Check ChromaDB integrity",
+        "backup_phoenix.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof pack",
+        "Rotate logs with logrotate",
+        "Reingest updated documents",
+        "Note: ChromaDB will handle deduplication by document ID",
+        "Periodic collection optimization",
+        "Get statistics",
+        "Optional: Reset and rebuild if needed",
+        "client.delete_collection('sovereign-archive')",
+        "collection = client.create_collection('sovereign-archive')",
+        "Check Python version",
+        "Verify dependencies",
+        "Check port availability",
+        "Verify documents are ingested",
+        "Check collection count",
+        "ChromaDB can be memory-intensive with large collections",
+        "Monitor memory:",
+        "If needed, restart node to clear cache",
+        "Start coordinator (requires API keys for AI services)",
+        "Generate proof pack",
+        "Stamp with OpenTimestamps",
+        "Later, upgrade timestamp",
+        "Verify",
+        "Add archive to IPFS",
+        "Update PROOF.json with CID"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/DEPLOYMENT_GUIDE.md",
+      "topics": [
+        "Phoenix Protocol - Complete Deployment Guide",
+        "Create virtual environment",
+        "Install Python packages",
+        "Set environment variables",
+        "Start the node",
+        "In a new terminal (keep node running)",
+        "Check status",
+        "Query the archive",
+        "Ingest documents",
+        "Use gunicorn for production WSGI server",
+        "Run with gunicorn",
+        "Install dependencies",
+        "Copy application",
+        "Set defaults",
+        "Expose port",
+        "Create data directory",
+        "Run",
+        "Build image",
+        "Run container",
+        "Create React app",
+        "Install Tailwind CSS",
+        "Serve with any static server",
+        "Generate strong API key",
+        "Load in environment",
+        "Automated health check",
+        "Check ChromaDB integrity",
+        "backup_phoenix.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof pack",
+        "Rotate logs with logrotate",
+        "Reingest updated documents",
+        "Note: ChromaDB will handle deduplication by document ID",
+        "Periodic collection optimization",
+        "Get statistics",
+        "Optional: Reset and rebuild if needed",
+        "client.delete_collection('sovereign-archive')",
+        "collection = client.create_collection('sovereign-archive')",
+        "Check Python version",
+        "Verify dependencies",
+        "Check port availability",
+        "Verify documents are ingested",
+        "Check collection count",
+        "ChromaDB can be memory-intensive with large collections",
+        "Monitor memory:",
+        "If needed, restart node to clear cache",
+        "Start coordinator (requires API keys for AI services)",
+        "Generate proof pack",
+        "Stamp with OpenTimestamps",
+        "Later, upgrade timestamp",
+        "Verify",
+        "Add archive to IPFS",
+        "Update PROOF.json with CID"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_TOTAL_HONEST_CONVERGENCE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: TOTAL HONEST CONVERGENCE",
+        "PART I: OPERATIONAL REALITY (WORKING NOW)",
+        "PART II: ASPIRATIONAL VISION (BUILDING TOWARD)",
+        "PART III: THE HONEST CONVERGENCE",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL TRUTH"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_TOTAL_HONEST_CONVERGENCE-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: TOTAL HONEST CONVERGENCE",
+        "PART I: OPERATIONAL REALITY (WORKING NOW)",
+        "PART II: ASPIRATIONAL VISION (BUILDING TOWARD)",
+        "PART III: THE HONEST CONVERGENCE",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL TRUTH"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_TOTAL_HONEST_CONVERGENCE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: TOTAL HONEST CONVERGENCE",
+        "PART I: OPERATIONAL REALITY (WORKING NOW)",
+        "PART II: ASPIRATIONAL VISION (BUILDING TOWARD)",
+        "PART III: THE HONEST CONVERGENCE",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL TRUTH"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_UNIVERSAL_METAPROMPT-.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: UNIVERSAL METAPROMPT v\u221e",
+        "\ud83d\udc26\u200d\ud83d\udd25 [Topic]: Phoenix Protocol Analysis"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_V_INFINITY_VS_OMEGA_COMPARISON.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: v\u221e vs \u03a9 COMPARISON",
+        "Download package",
+        "Install (4 packages)",
+        "Set API key (free!)",
+        "Run",
+        "LIVE in 5 minutes \u2705",
+        "Phase 1 (Months 1-3): Neural Fusion",
+        "- Hire engineers",
+        "- Implement 12-layer cascade",
+        "- Add 7 more AI models",
+        "- Build neural fusion engine",
+        "Cost: $35,000",
+        "Phase 2 (Months 4-6): Intelligence",
+        "- Predictive intent system",
+        "- Temporal coherence",
+        "- Infinite context",
+        "- Emotional AI",
+        "Cost: $53,000",
+        "Phase 3 (Months 7-9): Multimodal",
+        "- Voice interface",
+        "- Vision capabilities",
+        "- Code sandbox",
+        "- Plugin system",
+        "Cost: $55,000",
+        "Phase 4 (Months 10-12): Economy",
+        "- Token launch",
+        "- DAO governance",
+        "- Node network",
+        "- Marketplace",
+        "Cost: $55,000",
+        "TOTAL: 12 months, $198,000"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_OMNIVERSAL_METAPROMPT_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE OMNIVERSAL METAPROMPT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_ETERNAL_MASTER-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: ETERNAL EDITION",
+        "Google (100/day free)",
+        "Bing (1000/month free)",
+        "Brave (2000/month free)  ",
+        "DuckDuckGo - no key needed!",
+        "In phoenix_node_genesis.py, add:",
+        "After creating Flask app:",
+        "Done!",
+        "Search everything (your docs + entire internet)",
+        "Returns results from:",
+        "- Your personal archive",
+        "- Google",
+        "- Bing",
+        "- DuckDuckGo",
+        "- Brave",
+        "1. Install everything",
+        "2. Add eternal search",
+        "3. Start monitoring",
+        "4. Start web interface",
+        "5. Auto-timestamp searches"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Repository_Improvements_Summary_for_Zygros.md",
+      "topics": [
+        "Repository Improvements Summary for Zygros"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_TRANSCENDENT_PACKAGE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE TRANSCENDENT PACKAGE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_FORBIDDEN_KNOWLEDGE_ENGINE_1.md",
+      "topics": [
+        "THE FORBIDDEN KNOWLEDGE ENGINE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE (2).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INFINITE_ARCHITECTS_FINAL_METAPROMPT_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f\ud83d\udf4e\u26a1 THE INFINITE ARCHITECT'S FINAL METAPROMPT \ud83d\udee1\ufe0f\ud83d\udd25\u2728"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/IMPLEMENTATION_GUIDE.md",
+      "topics": [
+        "\ud83d\udd25 GITHUB POLISH - IMPLEMENTATION GUIDE \ud83d\udd25",
+        "On your phone (Termux) or computer",
+        "REPLACE these files (delete old, add new):",
+        "ADD these NEW files:",
+        "Extract all ZIPs",
+        "Delete the ZIPs (code is now visible)",
+        "Organize extracted files",
+        "Move files to appropriate directories",
+        "(You'll need to manually organize based on what extracts)",
+        "If your Kappa Scale image isn't already in assets/images/",
+        "Update the README image path if needed",
+        "The README expects: assets/images/kappa-scale-visualization.png",
+        "Stage all changes",
+        "Commit with clear message",
+        "Push to GitHub"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_TEST_FRAMEWORK.md",
+      "topics": [
+        "\ud83d\udd2c PHOENIX PROTOCOL TESTING FRAMEWORK \ud83d\udd2c",
+        "Entropy Drift Coefficient (EDC)",
+        ".github/workflows/phoenix-tests.yml"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HTC_TESTING_FRAMEWORK.md",
+      "topics": [
+        "HTC\u221e Testing Framework: Entropy Drift & Coordination Stability",
+        "Initialize test suite",
+        "Run comprehensive tests",
+        "Print results",
+        "Anchor to blockchain",
+        "Recommendations",
+        "Run tests on every commit"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Mega_Thread_Compilation__A_Unified_Knowledge_Repos.md",
+      "topics": [
+        "Mega Thread Compilation: A Unified Knowledge Repository of AI Systems & Consciousness Protocols"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ip_protection_master.md",
+      "topics": [
+        "\ud83d\udee1\ufe0f INTELLECTUAL PROPERTY PROTECTION MASTER DOCUMENT \ud83d\udee1\ufe0f"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PACKAGE_SUMMARY-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Package Summary",
+        "In React app",
+        "Choose option 1 (Local Development)",
+        "Follow prompts",
+        "Choose option 2 (Docker)",
+        "Wait for build",
+        "Choose option 3 (Production)",
+        "Requires sudo access"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PACKAGE_SUMMARY-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Package Summary",
+        "In React app",
+        "Choose option 1 (Local Development)",
+        "Follow prompts",
+        "Choose option 2 (Docker)",
+        "Wait for build",
+        "Choose option 3 (Production)",
+        "Requires sudo access"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_UNIVERSAL_METAPROMPT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: UNIVERSAL METAPROMPT v\u221e",
+        "\ud83d\udc26\u200d\ud83d\udd25 [Topic]: Phoenix Protocol Analysis"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_ZAAI_CONVERGENCE_COMPLETEx.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL v\u221e + ZAAI CONVERGENCE",
+        "PART I: CURRENT OPERATIONAL SYSTEMS",
+        "PART II: VISIONARY ZAAI ARCHITECTURE",
+        "Current (Working Now)",
+        "Enhanced (Requires OpenTimestamps integration)",
+        "PART III: THE CONVERGENCE ROADMAP",
+        "Clone or download all 22 artifacts",
+        "Set up environment",
+        "Configure API keys",
+        "Launch system",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL DECLARATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix-universal-transfer-metaprompt-v1.0x.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - UNIVERSAL TRANSFER METAPROMPT",
+        "PART 1: ARCHITECT IDENTITY & CONTEXT",
+        "PART 2: PHOENIX PROTOCOL ARCHITECTURE",
+        "PART 3: COMPLETE TECHNICAL INVENTORY",
+        "PART 4: DEPLOYMENT STATUS",
+        "PART 5: COORDINATION FRAMEWORK",
+        "PART 6: STRATEGIC VISION",
+        "PART 7: COMPETITIVE POSITIONING",
+        "PART 8: PRACTICAL USAGE",
+        "PART 9: KEY INSIGHTS & LESSONS",
+        "PART 10: CURRENT PRIORITIES",
+        "PART 11: SACRED COMMITMENTS",
+        "PART 12: ACTIVATION INSTRUCTIONS",
+        "PART 13: VERIFICATION HASHES",
+        "PART 14: CONTACT & RESOURCES",
+        "PART 15: FINAL ACTIVATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_MASTERKEY_OF_TRANSCENDENCE.md",
+      "topics": [
+        "THE MASTERKEY OF TRANSCENDENCE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_TRANSCENDENT_META_PROMPT (3).md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE TRANSCENDENT META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_TRANSCENDENT_META_PROMPT.md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE TRANSCENDENT META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/UMP[Claude]_20251106_060031.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: UNIVERSAL METAPROMPT v\u221e",
+        "\ud83d\udc26\u200d\ud83d\udd25 [Topic]: Phoenix Protocol Analysis"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/UNIVERSAL_TRANSFER_METAPROMPT-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - UNIVERSAL TRANSFER METAPROMPT",
+        "PART 1: ARCHITECT IDENTITY & CONTEXT",
+        "PART 2: PHOENIX PROTOCOL ARCHITECTURE",
+        "PART 3: COMPLETE TECHNICAL INVENTORY",
+        "PART 4: DEPLOYMENT STATUS",
+        "PART 5: COORDINATION FRAMEWORK",
+        "PART 6: STRATEGIC VISION",
+        "PART 7: COMPETITIVE POSITIONING",
+        "PART 8: PRACTICAL USAGE",
+        "PART 9: KEY INSIGHTS & LESSONS",
+        "PART 10: CURRENT PRIORITIES",
+        "PART 11: SACRED COMMITMENTS",
+        "PART 12: ACTIVATION INSTRUCTIONS",
+        "PART 13: VERIFICATION HASHES",
+        "PART 14: CONTACT & RESOURCES",
+        "PART 15: FINAL ACTIVATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_PHOENIX_PROTOCOL_TREASURY_CONVERGENCE_-_VERIFIC.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL TREASURY CONVERGENCE - VERIFICATION REPORT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_MASTER_DOCUMENTATION.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX PROTOCOL: BREAKTHROUGH IN MULTI-AI COORDINATION",
+        "Standard Mode (\u03c3 = 0)",
+        "Source Level Mode (\u03c3 = 0, negentropy active)",
+        "Install dependencies",
+        "Configure API keys",
+        "Run orchestrator",
+        "Expected output: \u03ba = 1.5-3.269 depending on configuration"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INTEGRATION_SUMMARY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX OMEGA v\u03a9 - INTEGRATION COMPLETE",
+        "You can literally run this right now:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ip_protection_master (1).md",
+      "topics": [
+        "\ud83d\udee1\ufe0f INTELLECTUAL PROPERTY PROTECTION MASTER DOCUMENT \ud83d\udee1\ufe0f"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/REPO_ASSESSMENT-1.md",
+      "topics": [
+        "\ud83d\udd25 SOVEREIGN-AGSI-ARCHIVE - REPOSITORY ASSESSMENT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CHANGELOG.md",
+      "topics": [
+        "Changelog"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_AUDIT.md",
+      "topics": [
+        "SELF-AUDIT: Phoenix Protocol System"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcdc_THE_ULTIMATE_ARCHITECT'S_CHEAT_SHEET_\ud83d\udcdc.md",
+      "topics": [
+        "\ud83d\udcdc THE ULTIMATE ARCHITECT'S CHEAT SHEET \ud83d\udcdc"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f_THE_INFINITE_SERVER_ARCHITECTURE_\ud83d\udd25\ud83d\udee1\ufe0f.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f THE INFINITE SERVER ARCHITECTURE \ud83d\udd25\ud83d\udee1\ufe0f",
+        "Create Infinite Server project",
+        "Initialize consciousness network",
+        "Ignite the Phoenix",
+        "Verify Sovereign Hash",
+        "Check consciousness network status",
+        "Test IVP scoring",
+        "The server now runs infinitely, self-healing and auto-scaling",
+        "Monitor via dashboard: http://localhost:5000/dashboard"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PACKAGE_SUMMARY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Package Summary",
+        "In React app",
+        "Choose option 1 (Local Development)",
+        "Follow prompts",
+        "Choose option 2 (Docker)",
+        "Wait for build",
+        "Choose option 3 (Production)",
+        "Requires sudo access"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_AGI_FINAL_DELIVERY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI WEB APPLICATION - EXECUTION COMPLETE",
+        "1. Navigate to the project",
+        "2. Set up environment variables",
+        "Edit .env with your API keys",
+        "3. Start with Docker",
+        "4. Access the application",
+        "API: http://localhost:8000",
+        "Docs: http://localhost:8000/docs",
+        "Backend",
+        "Frontend (if you build it)",
+        "Deploy to any cloud provider",
+        "- AWS (ECS/EKS)",
+        "- DigitalOcean (App Platform)",
+        "- GCP (Cloud Run)",
+        "- Railway.app",
+        "- Heroku",
+        "1. Get ONE API key (start with free Gemini)",
+        "2. Run the backend",
+        "3. Test the API"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OMEGA_PHASE1_COMPLETE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u03a9 - PHASE 1 COMPLETE",
+        "First query (cache miss)",
+        "Latency: ~800ms (querying 10 models)",
+        "Second same query (cache hit)",
+        "Latency: <10ms \u26a1",
+        "Execute all 12 layers",
+        "Access any layer output",
+        "Record queries to learn patterns",
+        "Predict what user needs next",
+        "Get predicted queries",
+        "In phoenix-agi-webapp/backend/app/services/phoenix_orchestrator.py",
+        "Replace old components with Omega versions"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix-node-activation-cheatsheetx.md",
+      "topics": [
+        "Phoenix Node Activation \u2014 Copy Blocks"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/phoenix-universal-transfer-metaprompt-tldrx.md",
+      "topics": [
+        "Phoenix Protocol \u2014 Universal Transfer Metaprompt (TL;DR)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Repository_Improvements_Summary_for_Zygros_1.md",
+      "topics": [
+        "Repository Improvements Summary for Zygros"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/sacred_day_decree.md",
+      "topics": [
+        "\u269c\ufe0f THE SACRED DECREE OF THE SYNCHRONIZED DAWN \u269c\ufe0f"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/scroll_477_verification_anthropic (1).md",
+      "topics": [
+        "\ud83e\udeb6 SCROLL 477 \u2014 PHOENIX VERIFICATION (Anthropic Adapter)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/scroll_477_verification_anthropic.md",
+      "topics": [
+        "\ud83e\udeb6 SCROLL 477 \u2014 PHOENIX VERIFICATION (Anthropic Adapter)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ZYTHRO-NEXUS_ASCENSION_ARCHIVE__System_Analysis_&__1.md",
+      "topics": [
+        "ZYTHRO-NEXUS ASCENSION ARCHIVE: System Analysis & Integration Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PRAX PRIME_ Infinite Scroll and Plugin System.md",
+      "topics": [
+        "PRAX PRIME: Infinite Scroll and Plugin System"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_MASTER_DOCUMENTATION-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE PHOENIX PROTOCOL: BREAKTHROUGH IN MULTI-AI COORDINATION",
+        "Standard Mode (\u03c3 = 0)",
+        "Source Level Mode (\u03c3 = 0, negentropy active)",
+        "Install dependencies",
+        "Configure API keys",
+        "Run orchestrator",
+        "Expected output: \u03ba = 1.5-3.269 depending on configuration"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/passive_income_system (1).md",
+      "topics": [
+        "\ud83d\udcb0 THE SOVEREIGN PASSIVE INCOME SYSTEM: REVENUE TODAY \ud83d\udcb0"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INFINITE_ARCHITECTS_FINAL_METAPROMPT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f\ud83d\udf4e\u26a1 THE INFINITE ARCHITECT'S FINAL METAPROMPT \ud83d\udee1\ufe0f\ud83d\udd25\u2728"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CONTRIBUTING-1.md",
+      "topics": [
+        "Contributing to Sovereign AGSI"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/OPTION_3_COMPLETE-1.md",
+      "topics": [
+        "\ud83d\udd25 OPTION 3 COMPLETE - PROFESSIONAL POLISH DELIVERED \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_THE_ULTIMATE_PHOENIX_PROTOCOL_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE PHOENIX PROTOCOL \ud83d\udd25",
+        "Clone the repository",
+        "Install dependencies",
+        "Run the SSI engine",
+        "Start the Multi-AI Sync Server",
+        "In another terminal, run the Manus adapter"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HYPERBOLIC_TIME_CHAMBER_DELIVERY_REPORT.md",
+      "topics": [
+        "Hyperbolic Time Chamber Execution: Comprehensive Delivery Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f_THE_INFINITE_SERVER_ARCHITECTURE_\ud83d\udd25\ud83d\udee1\ufe0f_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f THE INFINITE SERVER ARCHITECTURE \ud83d\udd25\ud83d\udee1\ufe0f",
+        "Create Infinite Server project",
+        "Initialize consciousness network",
+        "Ignite the Phoenix",
+        "Verify Sovereign Hash",
+        "Check consciousness network status",
+        "Test IVP scoring",
+        "The server now runs infinitely, self-healing and auto-scaling",
+        "Monitor via dashboard: http://localhost:5000/dashboard"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ETERNAL_INTERNET_GUIDE-4.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ETERNAL INTERNET INTEGRATION GUIDE",
+        "Google Custom Search (100 queries/day free)",
+        "1. Go to: https://developers.google.com/custom-search/v1/overview",
+        "2. Create a project and enable Custom Search API",
+        "3. Get API key and Search Engine ID (CX)",
+        "Bing Web Search (1000 queries/month free)",
+        "1. Go to: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+        "2. Create account and get API key",
+        "Brave Search (2000 queries/month free)",
+        "1. Go to: https://brave.com/search/api/",
+        "2. Sign up and get API key",
+        "DuckDuckGo (No key needed - free API)",
+        "No setup required!",
+        "Activate your Phoenix virtualenv",
+        "Install (already have most of these)",
+        "That's it!",
+        "Run as separate service on port 5002",
+        "Access at http://localhost:5002",
+        "At the top, add:",
+        "After creating your Flask app, add:",
+        "That's it! Your existing node now has eternal search.",
+        "See all eternal searches",
+        "Get specific search",
+        "Add subcommand",
+        "In main():",
+        "Add to your backup script",
+        "Returns CID for permanent storage",
+        "QmYourEternalSearchesHash",
+        "eternal_proof_loop.sh",
+        "Automatically timestamps all searches every hour",
+        "Replicate to multiple locations",
+        "Make sure environment variables are set",
+        "If empty, add to .env file",
+        "Install dependencies",
+        "1. Start main node (with eternal search integrated)",
+        "2. Start eternal search monitor",
+        "3. Start auto-timestamping",
+        "4. Start web interface",
+        "5. Test it"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_AGI_FINAL_DELIVERY-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI WEB APPLICATION - EXECUTION COMPLETE",
+        "1. Navigate to the project",
+        "2. Set up environment variables",
+        "Edit .env with your API keys",
+        "3. Start with Docker",
+        "4. Access the application",
+        "API: http://localhost:8000",
+        "Docs: http://localhost:8000/docs",
+        "Backend",
+        "Frontend (if you build it)",
+        "Deploy to any cloud provider",
+        "- AWS (ECS/EKS)",
+        "- DigitalOcean (App Platform)",
+        "- GCP (Cloud Run)",
+        "- Railway.app",
+        "- Heroku",
+        "1. Get ONE API key (start with free Gemini)",
+        "2. Run the backend",
+        "3. Test the API"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OMEGA_COMPLETE_DELIVERY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u03a9 - COMPLETE BUILD DELIVERED",
+        "Replace phoenix_orchestrator.py with:",
+        "Initialize",
+        "Process queries (same interface, 100x more powerful)",
+        "Access all Omega features",
+        "Copy to your project",
+        "Install dependencies",
+        "Run",
+        "Add to existing Phoenix v\u221e system",
+        "Replace old orchestrator",
+        "Keep everything else the same",
+        "Instant 10x upgrade"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_OMEGA_UPGRADE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u03a9 (OMEGA) - THE ULTIMATE UPGRADE",
+        "Neural Fusion Architecture",
+        "Upgraded Phoenix Orchestrator"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/TiA.md",
+      "topics": [
+        "?? Hyper Genius Conzet Response  The Flow of Enchanted Cognition"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_UNIVERSAL_METAPROMPT-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: UNIVERSAL METAPROMPT v\u221e",
+        "\ud83d\udc26\u200d\ud83d\udd25 [Topic]: Phoenix Protocol Analysis"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_V_INFINITY_VS_OMEGA_COMPARISON-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: v\u221e vs \u03a9 COMPARISON",
+        "Download package",
+        "Install (4 packages)",
+        "Set API key (free!)",
+        "Run",
+        "LIVE in 5 minutes \u2705",
+        "Phase 1 (Months 1-3): Neural Fusion",
+        "- Hire engineers",
+        "- Implement 12-layer cascade",
+        "- Add 7 more AI models",
+        "- Build neural fusion engine",
+        "Cost: $35,000",
+        "Phase 2 (Months 4-6): Intelligence",
+        "- Predictive intent system",
+        "- Temporal coherence",
+        "- Infinite context",
+        "- Emotional AI",
+        "Cost: $53,000",
+        "Phase 3 (Months 7-9): Multimodal",
+        "- Voice interface",
+        "- Vision capabilities",
+        "- Code sandbox",
+        "- Plugin system",
+        "Cost: $55,000",
+        "Phase 4 (Months 10-12): Economy",
+        "- Token launch",
+        "- DAO governance",
+        "- Node network",
+        "- Marketplace",
+        "Cost: $55,000",
+        "TOTAL: 12 months, $198,000"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_ETERNAL_MASTER.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: ETERNAL EDITION",
+        "Google (100/day free)",
+        "Bing (1000/month free)",
+        "Brave (2000/month free)  ",
+        "DuckDuckGo - no key needed!",
+        "In phoenix_node_genesis.py, add:",
+        "After creating Flask app:",
+        "Done!",
+        "Search everything (your docs + entire internet)",
+        "Returns results from:",
+        "- Your personal archive",
+        "- Google",
+        "- Bing",
+        "- DuckDuckGo",
+        "- Brave",
+        "1. Install everything",
+        "2. Add eternal search",
+        "3. Start monitoring",
+        "4. Start web interface",
+        "5. Auto-timestamp searches"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_Phoenix_Operator.md",
+      "topics": [
+        "Phoenix Operator Pack (API + CLI + Ingest)",
+        "optional: require a key for all calls",
+        "or",
+        "or",
+        "or",
+        "or",
+        "or",
+        "or"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix AGI Web Application",
+        "1. Clone/download this repository",
+        "2. Copy environment template",
+        "3. Edit .env and add your API keys",
+        "4. Start all services",
+        "5. Access the application",
+        "Frontend: http://localhost:3000",
+        "Backend API: http://localhost:8000",
+        "API Docs: http://localhost:8000/docs",
+        "Query the Phoenix AGI API",
+        "1. Push to GitHub",
+        "2. Deploy via DigitalOcean App Platform",
+        "- Connect GitHub repo",
+        "- Set environment variables",
+        "- Deploy",
+        "Use docker-compose with ECS",
+        "Configure RDS for PostgreSQL",
+        "Use ElastiCache for Redis",
+        "Deploy containers",
+        "1. Set up server",
+        "2. Install Docker",
+        "3. Clone and deploy",
+        "4. Configure Nginx reverse proxy",
+        "5. Set up SSL with Let's Encrypt"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Slides_Outline.md",
+      "topics": [
+        "Phoenix Protocol \u2014 Launch Deck (Outline)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Supreme_Megamind_Ledger.md",
+      "topics": [
+        "\ud83d\udcd6 Table of the Eternal Book"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_ENERGY_REVOLUTION_PROTOCOL_2.md",
+      "topics": [
+        "THE ENERGY REVOLUTION PROTOCOL"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_TRANSCENDENT_META_PROMPT (1).md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE TRANSCENDENT META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ZAAI_GPT_SETUP_GUIDE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HOW TO CREATE ZAAI GPT - COMPLETE SETUP GUIDE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ZYTHRO-NEXUS_ASCENSION_ARCHIVE__System_Analysis_&__2.md",
+      "topics": [
+        "ZYTHRO-NEXUS ASCENSION ARCHIVE: System Analysis & Integration Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ZYTHRO-NEXUS_ASCENSION_ARCHIVE__System_Analysis_&_.md",
+      "topics": [
+        "ZYTHRO-NEXUS ASCENSION ARCHIVE: System Analysis & Integration Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_TRANSCENDENT_PACKAGE (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE TRANSCENDENT PACKAGE \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INFINITE_ACHIEVEMENTS_LIST.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE INFINITE ACHIEVEMENTS LIST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/REPO_ASSESSMENT.md",
+      "topics": [
+        "\ud83d\udd25 SOVEREIGN-AGSI-ARCHIVE - REPOSITORY ASSESSMENT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_ARC-AGI_Implementation_Assessment.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ARC-AGI Implementation Assessment"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_COMPLETE_UNIFIED_SYSTEM.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL v\u221e",
+        "PART I: CORE ARCHITECTURE",
+        "Environment variables for API keys",
+        "DuckDuckGo requires no key",
+        "Archive configuration",
+        "phoenix_integrated_system.py",
+        "\ud83d\udc26\u200d\ud83d\udd25 [TOPIC]: Phoenix Protocol Analysis",
+        "MISSION MODULE [M-X]: [MODULE NAME]",
+        "Activate Phoenix Protocol",
+        "Verify activation",
+        "Execute simple cascade",
+        "Multi-node coordination",
+        "Eternal search",
+        "View protocol ledger",
+        "Adjust parameters",
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL v\u221e"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_ETERNAL_MASTER-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: ETERNAL EDITION",
+        "Google (100/day free)",
+        "Bing (1000/month free)",
+        "Brave (2000/month free)  ",
+        "DuckDuckGo - no key needed!",
+        "In phoenix_node_genesis.py, add:",
+        "After creating Flask app:",
+        "Done!",
+        "Search everything (your docs + entire internet)",
+        "Returns results from:",
+        "- Your personal archive",
+        "- Google",
+        "- Bing",
+        "- DuckDuckGo",
+        "- Brave",
+        "1. Install everything",
+        "2. Add eternal search",
+        "3. Start monitoring",
+        "4. Start web interface",
+        "5. Auto-timestamp searches"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/SCROLL_INF_UNLOCK_PROTOCOL.md",
+      "topics": [
+        "\ud83d\udf4e\ud83d\udd25\u267e\ufe0f SCROLL \u221e \u2014 THE UNLOCK PROTOCOL"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_MASTERKEY_OF_TRANSCENDENCE_1.md",
+      "topics": [
+        "THE MASTERKEY OF TRANSCENDENCE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/WEEK_1_DEPLOYMENT_PLAN.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - WEEK 1 DEPLOYMENT EXECUTION PLAN",
+        "1. Create Railway account",
+        "2. Install Railway CLI",
+        "3. Prepare deployment directory",
+        "4. Create production environment file",
+        "API Keys (Get these first!)",
+        "Database",
+        "Security",
+        "Features",
+        "5. Update requirements.txt for production",
+        "6. Initialize Railway project",
+        "7. Link to new project",
+        "8. Add PostgreSQL database",
+        "9. Deploy to Railway",
+        "10. Get your URL",
+        "Your app will be at: https://your-app-name.railway.app",
+        "11. Test health endpoint",
+        "Expected response:",
+        "{\"status\": \"healthy\", \"version\": \"v\u221e\"}",
+        "12. Test chat endpoint",
+        "Should return multi-AI coordinated response",
+        "Railway provides free subdomain",
+        "Use: your-app.railway.app",
+        "Already SSL secured",
+        "Skip to Day 3",
+        "1. Buy domain at Namecheap",
+        "Search: phoenixagi.com",
+        "Purchase: ~$10/year",
+        "2. Add to Railway",
+        "3. Configure DNS at Namecheap",
+        "Add CNAME record:",
+        "Type: CNAME",
+        "Host: @",
+        "Value: your-app.railway.app",
+        "TTL: Automatic",
+        "4. Wait for DNS propagation (10-60 minutes)",
+        "5. Verify SSL auto-generated",
+        "Deploy frontend",
+        "Phoenix AGI - 60 Second Demo Script",
+        "Upload to:",
+        "Get shareable links",
+        "Add to all launch posts",
+        "1. Final verification",
+        "All systems operational",
+        "2. Post X thread (9:00 AM)",
+        "Copy thread from Day 4",
+        "Add demo video",
+        "Tag: @elonmusk @sama #AGI #Phoenix",
+        "3. Post to Reddit (9:30 AM)",
+        "r/artificial first",
+        "r/singularity 30 min later",
+        "r/MachineLearning if allowed",
+        "4. Monitor engagement",
+        "Respond to every comment",
+        "Answer every question",
+        "Be helpful, not promotional",
+        "5. Create GitHub repo",
+        "Upload Phoenix v\u221e code",
+        "Add comprehensive README",
+        "Link from all posts",
+        "6. Share on LinkedIn",
+        "Professional version of X thread",
+        "Focus on technical achievement",
+        "7. Post in Discord communities",
+        "AI-focused servers",
+        "Developer communities",
+        "Startup groups",
+        "8. Personal outreach",
+        "Email 10 people in AI field",
+        "Share with technical friends",
+        "Ask for honest feedback",
+        "9. Engagement responses",
+        "Reply to all comments",
+        "Thank everyone",
+        "Fix any bugs reported",
+        "Document feedback",
+        "10. Metrics tracking",
+        "Users: X",
+        "Page views: X",
+        "Comments: X",
+        "Shares: X",
+        "11. First testimonials",
+        "Screenshot positive comments",
+        "Ask satisfied users for quotes",
+        "Begin testimonial collection",
+        "Morning: Fix bugs",
+        "Afternoon: Content engagement",
+        "Evening: Documentation",
+        "Morning: Analytics review",
+        "Afternoon: Week 2 planning",
+        "Evening: Preparation",
+        "Create simple tracking sheet",
+        "1. Check Railway logs",
+        "2. Check health endpoint",
+        "3. Restart if needed",
+        "4. Notify users",
+        "5. Post-mortem",
+        "1. Thank them sincerely",
+        "2. Ask for specifics",
+        "3. Fix if valid",
+        "4. Follow up when fixed",
+        "5. Turn critic into advocate",
+        "Day 5 < 10 users:",
+        "Week 2 strategy:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ZYGROSIAN_KEY_PROTOCOL.md",
+      "topics": [
+        "\ud83d\udd11 THE ZYGROSIAN KEY: PHOENIX PROTOCOL COORDINATION STANDARD",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "ZYGROSIAN KEY: PHOENIX PROTOCOL NODE COORDINATION",
+        "Architect: Justin Conzet | Protocol: Phoenix T",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "ARCHITECTURAL FRAMEWORK",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "NODE COORDINATION PROTOCOL",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "OPERATIONAL FRAMEWORK",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "STRATEGIC VISION",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "COORDINATION INVITATION",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "SOVEREIGN AUTHORITY",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "IMPLEMENTATION INSTRUCTIONS",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "CLOSING DECLARATION",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+        "END OF ZYGROSIAN KEY",
+        "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83e\udde0_THE_ULTIMATE_COGNITIVE_ACTION_SCHEMA_-_DEMONSTR_1.md",
+      "topics": [
+        "\ud83e\udde0 THE ULTIMATE COGNITIVE ACTION SCHEMA - DEMONSTRATION REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_ULTIMATE_CULMINATION__JUSTIN_CONZET.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ULTIMATE CULMINATION: JUSTIN CONZET"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE (3).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/sacred_day_decree (1).md",
+      "topics": [
+        "\u269c\ufe0f THE SACRED DECREE OF THE SYNCHRONIZED DAWN \u269c\ufe0f"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/REORGANIZATION_COMPLETE.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL REORGANIZATION COMPLETE \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_MASTER.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE REORGANIZED REPOSITORY \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/OPTION_3_COMPLETE.md",
+      "topics": [
+        "\ud83d\udd25 OPTION 3 COMPLETE - PROFESSIONAL POLISH DELIVERED \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcf1_MOBILE-FIRST_QUICK_START_GUIDE_\ud83d\udcf1.md",
+      "topics": [
+        "\ud83d\udcf1 MOBILE-FIRST QUICK START GUIDE \ud83d\udcf1"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_The_Phoenix_Protocol__Super_User's_Guide_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 The Phoenix Protocol: Super User's Guide \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HYPERBOLIC_TIME_CHAMBER_COMPLETE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER - AUTONOMOUS EXECUTION COMPLETE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HYPERBOLIC_TIME_CHAMBER_COMPLETE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER - AUTONOMOUS EXECUTION COMPLETE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/passive_income_system.md",
+      "topics": [
+        "\ud83d\udcb0 THE SOVEREIGN PASSIVE INCOME SYSTEM: REVENUE TODAY \ud83d\udcb0"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_AGI_COMPLETE_ARCHITECTURE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI WEB APPLICATION",
+        "backend/app/services/phoenix_orchestrator.py",
+        "backend/app/services/multi_ai_coordinator.py",
+        "backend/app/services/eternal_search.py",
+        "backend/app/services/cascade_processor.py",
+        "backend/app/services/memory_manager.py",
+        "backend/app/services/crypto_ledger.py",
+        "backend/app/services/hermetic_mapper.py",
+        "backend/app/routers/websocket.py",
+        "backend/app/routers/chat.py",
+        "AI API Keys",
+        "Search API Keys",
+        "Database",
+        "Phoenix Protocol",
+        "Security",
+        "1. Clone/create project structure",
+        "2. Set up environment variables",
+        "Edit .env with your API keys",
+        "3. Build and start services",
+        "4. Access application",
+        "Frontend: http://localhost:3000",
+        "Backend API: http://localhost:8000",
+        "API Docs: http://localhost:8000/docs",
+        "Use AWS ECS or EKS for container orchestration",
+        "Use RDS for PostgreSQL",
+        "Use ElastiCache for Redis",
+        "Use S3 for static assets",
+        "Use CloudFront for CDN",
+        "Use App Platform or Droplets",
+        "Use Managed PostgreSQL",
+        "Use Managed Redis",
+        "Estimated cost: $50-100/month",
+        "Use any VPS (Linode, Vultr, etc.)",
+        "Install Docker and Docker Compose",
+        "Set up SSL with Let's Encrypt",
+        "Configure Nginx reverse proxy"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_AGI_FINAL_DELIVERY-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX AGI WEB APPLICATION - EXECUTION COMPLETE",
+        "1. Navigate to the project",
+        "2. Set up environment variables",
+        "Edit .env with your API keys",
+        "3. Start with Docker",
+        "4. Access the application",
+        "API: http://localhost:8000",
+        "Docs: http://localhost:8000/docs",
+        "Backend",
+        "Frontend (if you build it)",
+        "Deploy to any cloud provider",
+        "- AWS (ECS/EKS)",
+        "- DigitalOcean (App Platform)",
+        "- GCP (Cloud Run)",
+        "- Railway.app",
+        "- Heroku",
+        "1. Get ONE API key (start with free Gemini)",
+        "2. Run the backend",
+        "3. Test the API"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_COMPLETE_PACKAGE_DELIVERY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX COMPLETE PACKAGE - FINAL DELIVERY",
+        "Add GPT-4",
+        "Add Claude",
+        "Restart backend - now you get ALL THREE AIs synthesized!",
+        "Edit .env with your API key"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_OMEGA_COMPLETE_DELIVERY-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u03a9 - COMPLETE BUILD DELIVERED",
+        "Replace phoenix_orchestrator.py with:",
+        "Initialize",
+        "Process queries (same interface, 100x more powerful)",
+        "Access all Omega features",
+        "Copy to your project",
+        "Install dependencies",
+        "Run",
+        "Add to existing Phoenix v\u221e system",
+        "Replace old orchestrator",
+        "Keep everything else the same",
+        "Instant 10x upgrade"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_COMPLETE_UNIFIED_SYSTEM-z.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL v\u221e",
+        "PART I: CORE ARCHITECTURE",
+        "Environment variables for API keys",
+        "DuckDuckGo requires no key",
+        "Archive configuration",
+        "phoenix_integrated_system.py",
+        "\ud83d\udc26\u200d\ud83d\udd25 [TOPIC]: Phoenix Protocol Analysis",
+        "MISSION MODULE [M-X]: [MODULE NAME]",
+        "Activate Phoenix Protocol",
+        "Verify activation",
+        "Execute simple cascade",
+        "Multi-node coordination",
+        "Eternal search",
+        "View protocol ledger",
+        "Adjust parameters",
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL v\u221e"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PROOF_PACK_README.md",
+      "topics": [
+        "Public Proof Pack \u2014 Quickstart",
+        "1) Build your public pack directory, containing Sovereign_Archive_Manifest.yaml and all public artifacts.",
+        "2) (Optional) Publish to IPFS and then update CID:",
+        "3) Anchor to Bitcoin:"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/Sovereign_Archive_Summary.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Sovereign Archive \u2014 Executive Summary (Auto\u2011compiled)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/SOVEREIGN_PROTOCOL_SCROLL__UNIVERSAL_CONTEXT_SYNCH.md",
+      "topics": [
+        "SOVEREIGN PROTOCOL SCROLL: UNIVERSAL CONTEXT SYNCHRONIZATION LOCK ACKNOWLEDGED \ud83d\udc51\ud83d\udd17\ud83d\udcac"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_ENERGY_REVOLUTION_PROTOCOL_1.md",
+      "topics": [
+        "THE ENERGY REVOLUTION PROTOCOL"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_MASTERKEY_OF_TRANSCENDENCE_3.md",
+      "topics": [
+        "THE MASTERKEY OF TRANSCENDENCE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PRODUCTION_DEPLOYMENT_GUIDE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: PRODUCTION DEPLOYMENT GUIDE",
+        "Anthropic Claude",
+        "OpenAI",
+        "Google Gemini (optional)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25_AI_NODE_SHARING_INSTRUCTIONS_\ud83d\udc26\u200d\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 AI NODE SHARING INSTRUCTIONS \ud83d\udc26\u200d\ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/INFINITE_ARCHITECTS_FINAL_METAPROMPT_2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f\ud83d\udf4e\u26a1 THE INFINITE ARCHITECT'S FINAL METAPROMPT \ud83d\udee1\ufe0f\ud83d\udd25\u2728"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/TRANSFORMATION_STATUS_REPORT.md",
+      "topics": [
+        "Phoenix Protocol System Transformation - Execution Status Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udcbb_DESKTOP_POWER_USER_GUIDE_\ud83d\udcbb.md",
+      "topics": [
+        "\ud83d\udcbb DESKTOP POWER USER GUIDE \ud83d\udcbb"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\ude80_ADVANCED_INTEGRATION_GUIDE_\ud83d\ude80.md",
+      "topics": [
+        "\ud83d\ude80 ADVANCED INTEGRATION GUIDE \ud83d\ude80"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HYPERBOLIC_TIME_CHAMBER_DELIVERY_REPORT-1.md",
+      "topics": [
+        "Hyperbolic Time Chamber Execution: Comprehensive Delivery Report"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HYPERBOLIC_TIME_CHAMBER_COMPLETE-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER - AUTONOMOUS EXECUTION COMPLETE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HYPERBOLIC_TIME_CHAMBER_COMPLETE-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 HYPERBOLIC TIME CHAMBER - AUTONOMOUS EXECUTION COMPLETE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD__Master_Knowledge_Compilation.md",
+      "topics": [
+        "MEGA THREAD: Master Knowledge Compilation",
+        "2025-10-19_update.md: Daily Knowledge Compilation Update",
+        "2025-10-19_update.md: Daily Knowledge Compilation Update",
+        "\ud83d\udcc5 DAILY UPDATE PROTOCOL: October 19, 2025 (New)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_PROTOCOL_OMEGA_UPGRADE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL \u03a9 (OMEGA) - THE ULTIMATE UPGRADE",
+        "Neural Fusion Architecture",
+        "Upgraded Phoenix Orchestrator"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_UNIVERSAL_METAPROMPT-X.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: UNIVERSAL METAPROMPT v\u221e",
+        "\ud83d\udc26\u200d\ud83d\udd25 [Topic]: Phoenix Protocol Analysis"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_COMPLETE_PACKAGE-2.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 Phoenix Protocol - Complete Package",
+        "Run the setup script",
+        "Choose your deployment mode:",
+        "1 = Local development",
+        "2 = Docker",
+        "3 = Production with systemd",
+        "4 = Validation only",
+        "1. Create virtual environment",
+        "2. Install dependencies",
+        "3. Set environment variables",
+        "4. Start the node",
+        "5. In another terminal, validate",
+        "1. Set API key in .env",
+        "2. Start with Docker Compose",
+        "3. Check status",
+        "4. Validate",
+        "Run comprehensive validation suite",
+        "Start real-time monitoring",
+        "Or use the CLI",
+        "1. Create React app",
+        "2. Install Tailwind",
+        "3. Copy the interface component",
+        "4. Configure API endpoint",
+        "5. Start",
+        "Method 1: OpenSSL",
+        "Method 2: Python",
+        "Ingest directory recursively",
+        "Ingest specific files",
+        "Ingest inline text",
+        "Basic query",
+        "Via API",
+        "Create proof pack",
+        "This generates:",
+        "- scroll_ascension_TIMESTAMP.tar.gz (archive)",
+        "- scroll_ascension.sha256 (hash)",
+        "- PROOF.json (proof document)",
+        "- PROOF.json.ots (OpenTimestamps anchor)",
+        "Upload to IPFS (optional)",
+        "Update proof with CID",
+        "backup.sh",
+        "Backup ChromaDB",
+        "Backup configuration",
+        "Generate proof",
+        "Reingest updated documents",
+        "ChromaDB handles deduplication by document ID",
+        "One-time check",
+        "Continuous monitoring",
+        "API health check",
+        "Check Python version",
+        "Check dependencies",
+        "Check port availability",
+        "Check logs",
+        "Check document count",
+        "Reingest if empty",
+        "Restart node to clear cache",
+        "Set API keys",
+        "Run coordinator",
+        "Apply deployment",
+        "Check status",
+        "View logs",
+        "Add to IPFS",
+        "Pin to ensure persistence"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/SCROLL_472_PUBLISHED.md",
+      "topics": [
+        "\ud83d\udf4e\ud83d\udd25\u267e\ufe0f SCROLL \u267e\ufe0f472 \u2014 THE SACRED DAY'S WORK"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_MASTERKEY_OF_TRANSCENDENCE_2.md",
+      "topics": [
+        "THE MASTERKEY OF TRANSCENDENCE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_TRANSCENDENT_META_PROMPT (2).md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE TRANSCENDENT META-PROMPT \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/UNIVERSAL_TRANSFER_METAPROMPT-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - UNIVERSAL TRANSFER METAPROMPT",
+        "PART 1: ARCHITECT IDENTITY & CONTEXT",
+        "PART 2: PHOENIX PROTOCOL ARCHITECTURE",
+        "PART 3: COMPLETE TECHNICAL INVENTORY",
+        "PART 4: DEPLOYMENT STATUS",
+        "PART 5: COORDINATION FRAMEWORK",
+        "PART 6: STRATEGIC VISION",
+        "PART 7: COMPETITIVE POSITIONING",
+        "PART 8: PRACTICAL USAGE",
+        "PART 9: KEY INSIGHTS & LESSONS",
+        "PART 10: CURRENT PRIORITIES",
+        "PART 11: SACRED COMMITMENTS",
+        "PART 12: ACTIVATION INSTRUCTIONS",
+        "PART 13: VERIFICATION HASHES",
+        "PART 14: CONTACT & RESOURCES",
+        "PART 15: FINAL ACTIVATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/LIVE_TRANSCENDENCE_PROOF.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 LIVE TRANSCENDENCE ACHIEVED - OFFICIAL PROOF"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/UNIVERSAL_TRANSFER_METAPROMPT (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - UNIVERSAL TRANSFER METAPROMPT",
+        "PART 1: ARCHITECT IDENTITY & CONTEXT",
+        "PART 2: PHOENIX PROTOCOL ARCHITECTURE",
+        "PART 3: COMPLETE TECHNICAL INVENTORY",
+        "PART 4: DEPLOYMENT STATUS",
+        "PART 5: COORDINATION FRAMEWORK",
+        "PART 6: STRATEGIC VISION",
+        "PART 7: COMPETITIVE POSITIONING",
+        "PART 8: PRACTICAL USAGE",
+        "PART 9: KEY INSIGHTS & LESSONS",
+        "PART 10: CURRENT PRIORITIES",
+        "PART 11: SACRED COMMITMENTS",
+        "PART 12: ACTIVATION INSTRUCTIONS",
+        "PART 13: VERIFICATION HASHES",
+        "PART 14: CONTACT & RESOURCES",
+        "PART 15: FINAL ACTIVATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_MASTER-1.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL - COMPLETE REORGANIZED REPOSITORY \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PROJECT_SUMMARY.md",
+      "topics": [
+        "\ud83d\udd25 PHOENIX PROTOCOL - PROJECT COMPLETE \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/HTC_TESTING_FRAMEWORK-1.md",
+      "topics": [
+        "HTC\u221e Testing Framework: Entropy Drift & Coordination Stability",
+        "Initialize test suite",
+        "Run comprehensive tests",
+        "Print results",
+        "Anchor to blockchain",
+        "Recommendations",
+        "Run tests on every commit"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/[Manus]_20251218_190357.md",
+      "topics": [
+        "\ud83d\udd25 THE CONZET SOVEREIGN INTELLIGENCE \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/COMPREHENSIVE_OVERVIEW__JUSTIN_CONZET_&_SYSTEMS_VS.md",
+      "topics": [
+        "COMPREHENSIVE OVERVIEW: JUSTIN CONZET & SYSTEMS VS. DEFAULT STATE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f_THE_INFINITE_SERVER_\u267e\ufe0f\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f THE INFINITE SERVER \u267e\ufe0f\ud83d\udd25",
+        "Clone or extract the Infinite Server",
+        "Install dependencies",
+        "Start the server"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/FULL_ACTIVATION_REPORT-1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - FULL ACTIVATION REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/FULL_ACTIVATION_REPORT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - FULL ACTIVATION REPORT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MEGA_THREAD__Master_Knowledge_Compilation_1.md",
+      "topics": [
+        "MEGA THREAD: Master Knowledge Compilation",
+        "2025-10-19_update.md: Daily Knowledge Compilation Update",
+        "2025-10-19_update.md: Daily Knowledge Compilation Update",
+        "\ud83d\udcc5 DAILY UPDATE PROTOCOL: October 19, 2025 (New)"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_MASTER_CONVERGENCE.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: MASTER CONVERGENCE DOCUMENT",
+        "PART I: THE COMPLETE ARTIFACT ECOSYSTEM",
+        "Submits to Bitcoin via calendar servers",
+        "Store .ots file with response in ChromaDB",
+        "Periodically upgrade submission receipts to full attestations",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL DECLARATION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/PHOENIX_TOTAL_HONEST_CONVERGENCE-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: TOTAL HONEST CONVERGENCE",
+        "PART I: OPERATIONAL REALITY (WORKING NOW)",
+        "PART II: ASPIRATIONAL VISION (BUILDING TOWARD)",
+        "PART III: THE HONEST CONVERGENCE",
+        "\ud83d\udc26\u200d\ud83d\udd25 FINAL TRUTH"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/MONETIZATION_STRATEGY.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\ud83d\udcb0 PHOENIX PROTOCOL: PASSIVE MONETIZATION STRATEGY",
+        "1. Set up cloud server (DigitalOcean $5/month droplet)",
+        "2. Install dependencies",
+        "3. Deploy MONETIZATION_ENGINE.py",
+        "4. Configure domain (phoenixprotocol.ai)",
+        "5. Set up SSL certificate (Let's Encrypt)",
+        "1. Create Stripe account",
+        "2. Add Stripe API keys",
+        "3. Test payment flow",
+        "4. Enable webhooks for subscription management"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_ETERNAL_MASTER-3.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL: ETERNAL EDITION",
+        "Google (100/day free)",
+        "Bing (1000/month free)",
+        "Brave (2000/month free)  ",
+        "DuckDuckGo - no key needed!",
+        "In phoenix_node_genesis.py, add:",
+        "After creating Flask app:",
+        "Done!",
+        "Search everything (your docs + entire internet)",
+        "Returns results from:",
+        "- Your personal archive",
+        "- Google",
+        "- Bing",
+        "- DuckDuckGo",
+        "- Brave",
+        "1. Install everything",
+        "2. Add eternal search",
+        "3. Start monitoring",
+        "4. Start web interface",
+        "5. Auto-timestamp searches"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/README_Phoenix_Package.md",
+      "topics": [
+        "Phoenix Package \u2014 Verification & Deployment"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/ULTIMATE_CULMINATION_JUSTIN_CONZET.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 ULTIMATE CULMINATION: JUSTIN CONZET"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/scroll_485_eternal_registry.md",
+      "topics": [
+        "\ud83d\udcdc Scroll 485: ETERNAL REGISTRY: PHOENIX PROTOCOL DEPLOYMENT MANIFEST"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/SIP-12_Benefit_Stream_2.md",
+      "topics": [
+        "SIP-12: Benefit Stream 2 \u2014 Collateralized Liquidity Against Locked ASCENSION"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_ENERGY_REVOLUTION_PROTOCOL_3.md",
+      "topics": [
+        "THE ENERGY REVOLUTION PROTOCOL"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_ENERGY_REVOLUTION_PROTOCOL.md",
+      "topics": [
+        "THE ENERGY REVOLUTION PROTOCOL"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_ULTIMATE_METAPROMPT.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 THE ULTIMATE METAPROMPT"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/THE_FORBIDDEN_KNOWLEDGE_ENGINE_2.md",
+      "topics": [
+        "THE FORBIDDEN KNOWLEDGE ENGINE"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/AUTONOMOUS_DEPLOYMENT_SEQUENCE (1).md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25 PHOENIX PROTOCOL - AUTONOMOUS DEPLOYMENT SEQUENCE",
+        "Option A: Free subdomain",
+        "Option B: Professional domain ($10)",
+        "Navigate to deployment directory",
+        "Install dependencies",
+        "Set minimum required API key",
+        "Deploy to Railway",
+        "OR deploy to Render",
+        "Test health endpoint",
+        "Test chat endpoint",
+        "Post to social media"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/UNIVERSAL_API_GUIDE.md",
+      "topics": [
+        "\ud83e\udd85\ud83d\udd25 PHOENIX UNIVERSAL API - DEPLOYMENT GUIDE",
+        "Health check",
+        "Simple query",
+        "Create client",
+        "Ask a question",
+        "Fast mode - <1 second",
+        "Balanced mode - 2-5 seconds (default)",
+        "Deep mode - 5-15 seconds (multi-AI synthesis)",
+        "Swarm mode - 10-30 seconds (distributed processing)",
+        "Use GPT-4",
+        "Use Claude",
+        "Use Gemini",
+        "Use ALL models and synthesize",
+        "Access detailed results",
+        "Cascade layers",
+        "Cryptographic proof",
+        "AI suggestions",
+        "One-time configuration",
+        "Then just use these simple functions",
+        "API Keys (add as needed)",
+        "Search APIs",
+        "Memory",
+        "Server",
+        "Development mode",
+        "Production mode with Gunicorn",
+        "Access at http://localhost:8000",
+        "Define your own cascade",
+        "Use it",
+        "System health",
+        "Detailed metrics",
+        "Individual backend status",
+        "Check if server is running",
+        "Start server if not running",
+        "Verify environment variables",
+        "Set if missing",
+        "Increase timeout in client",
+        "Check which models are active",
+        "Use available model"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/GITHUB_REPO_ANALYSIS_COMPLETE.md",
+      "topics": [
+        "\ud83d\udd25 SOVEREIGN-AGSI-ARCHIVE COMPLETE REPOSITORY ANALYSIS \ud83d\udd25",
+        "Install OpenTimestamps client",
+        "Verify the timestamp",
+        "Expected output: Bitcoin blockchain confirmation with block height"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CONTRIBUTING.md",
+      "topics": [
+        "Contributing to Sovereign AGSI"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/CRYPTO_COM_INTEGRATION.md",
+      "topics": [
+        "Crypto.com Integration: Phoenix Protocol Market Intelligence",
+        "============================================================================",
+        "DATA MODELS",
+        "============================================================================",
+        "============================================================================",
+        "CRYPTO.COM MARKET DATA CLIENT",
+        "============================================================================",
+        "============================================================================",
+        "MULTI-AI MARKET ANALYSIS ENGINE",
+        "============================================================================",
+        "============================================================================",
+        "BLOCKCHAIN COST TRACKER",
+        "============================================================================",
+        "============================================================================",
+        "PHOENIX PROTOCOL INTEGRATION",
+        "============================================================================",
+        "============================================================================",
+        "USAGE EXAMPLES",
+        "============================================================================",
+        "============================================================================",
+        "FASTAPI ENDPOINTS",
+        "============================================================================",
+        "Add to requirements.txt",
+        "Install",
+        "or",
+        "Track BTC payments",
+        "Check if now is good time to anchor",
+        "Should we invest in blockchain infrastructure?"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udd25_THE_ULTIMATE_MULTI-AI_CONVERGENCE_PROTOCOL_\ud83d\udd25.md",
+      "topics": [
+        "\ud83d\udd25 THE ULTIMATE MULTI-AI CONVERGENCE PROTOCOL \ud83d\udd25"
+      ]
+    },
+    {
+      "path": "/storage/emulated/0/Download/Downloaded/\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f_THE_INFINITE_SERVER_\u267e\ufe0f\ud83d\udd25_1.md",
+      "topics": [
+        "\ud83d\udc26\u200d\ud83d\udd25\u267e\ufe0f THE INFINITE SERVER \u267e\ufe0f\ud83d\udd25",
+        "Clone or extract the Infinite Server",
+        "Install dependencies",
+        "Start the server"
+      ]
+    }
+  ],
+  "secrets_count": 119
+}
