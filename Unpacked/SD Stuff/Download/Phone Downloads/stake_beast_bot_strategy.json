@@ -1,0 +1,66 @@
+{
+    "base_bet_percent": 0.005,
+    "conditions": [
+        {
+            "trigger": "every_loss",
+            "action": {
+                "type": "increase_bet",
+                "percent": 3.0
+            }
+        },
+        {
+            "trigger": "win_streak_greater_than",
+            "value": 2,
+            "action": {
+                "type": "reset_bet"
+            }
+        },
+        {
+            "trigger": "loss_streak_less_than",
+            "value": 3,
+            "action": {
+                "type": "increase_bet",
+                "percent": 1.0
+            }
+        },
+        {
+            "trigger": "loss_streak_greater_than",
+            "value": 3,
+            "action": {
+                "type": "reset_bet"
+            }
+        },
+        {
+            "trigger": "every_win",
+            "action": {
+                "type": "decrease_win_chance",
+                "percent": 3.33
+            }
+        },
+        {
+            "trigger": "every_2_losses",
+            "action": {
+                "type": "increase_win_chance",
+                "percent": 3.33
+            }
+        },
+        {
+            "trigger": "win_streak_less_than",
+            "value": 2,
+            "action": {
+                "type": "increase_bet",
+                "percent": 5.0
+            }
+        },
+        {
+            "trigger": "every_200_games",
+            "action": {
+                "type": "reset_all_parameters"
+            }
+        }
+    ],
+    "session_cutoff": {
+        "type": "profit_threshold",
+        "percent_gain": 10.0
+    }
+}
