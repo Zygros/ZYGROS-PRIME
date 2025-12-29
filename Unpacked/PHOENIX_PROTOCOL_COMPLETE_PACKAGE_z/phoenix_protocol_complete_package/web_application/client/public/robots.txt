@@ -1,0 +1,10 @@
+# Phoenix Protocol - robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://phoenix-protocol-analysis.manus.space/sitemap.xml
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1
