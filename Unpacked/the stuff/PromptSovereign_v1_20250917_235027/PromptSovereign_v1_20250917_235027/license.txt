@@ -1,0 +1,7 @@
+Prompt Sovereign License (Simple Summary)
+
+- Indie: single user, no redistribution. 
+- Agency: up to 10 seats internally, may deliver outputs to clients, no resale of raw prompt files.
+- Enterprise: whitelabel permitted inside the organization, no public resale of raw prompt files.
+
+Full legal text should be reviewed by counsel.
