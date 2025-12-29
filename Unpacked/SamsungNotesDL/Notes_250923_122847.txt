@@ -1,0 +1,50 @@
+{
+  "project_name": "Axiom",
+  "friction_point_addressed": "The primary friction point preventing mass adoption of decentralized social media is the complexity of user onboarding and key management. Users are intimidated by private keys, wallets, and gas fees, creating a significant barrier to entry compared to familiar Web2 platforms.",
+  "whitepaper": {
+    "title": "Axiom: The NEXUS Protocol for Decentralized Social Experience",
+    "abstract": "Axiom is a micro-dApp designed to solve the mass-adoption friction point in decentralized social media by abstracting away key management and blockchain complexity. The NEXUS token ($NEXUS) serves as the governance and utility layer, empowering the community and monetizing content creation without reliance on traditional advertising models. This whitepaper outlines the tokenomics and distribution plan for a truly accessible DeSo platform.",
+    "tokenomics": {
+      "name": "NEXUS",
+      "ticker": "$NEXUS",
+      "supply": "Fixed at 100,000,000 tokens",
+      "utility": "Token holders can use $NEXUS for boosting posts for increased visibility, unlocking premium features, and staking to earn protocol rewards. Its core utility is to align user incentives with the growth and health of the network.",
+      "distribution_plan": [
+        {
+          "phase": "Phase 1: Genesis Airdrop (20%)",
+          "details": "20,000,000 $NEXUS will be airdropped to early adopters and users of the Axiom dApp who sign up within the first month. This incentivizes a strong initial user base and decentralizes token ownership from day one."
+        },
+        {
+          "phase": "Phase 2: Liquidity & Staking Rewards (60%)",
+          "details": "60,000,000 $NEXUS will be allocated for liquidity provisioning and staking rewards. This will be released over a 4-year period to encourage long-term participation and protocol security."
+        },
+        {
+          "phase": "Phase 3: Protocol Treasury (20%)",
+          "details": "20,000,000 $NEXUS will be held in a community-governed treasury to fund future development, grants, and ecosystem partnerships. This ensures the long-term sustainability and evolution of the Axiom platform, governed by the community."
+        }
+      ]
+    }
+  },
+  "source_code": {
+    "backend": {
+      "language": "Python 3.9+",
+      "framework": "FastAPI",
+      "description": "A lightweight, asynchronous backend to handle user authentication (with abstracted key management) and basic post functionality. Stores data in-memory for simplicity.",
+      "files": {
+        "main.py": "from fastapi import FastAPI, HTTPException, Depends\nfrom pydantic import BaseModel\nfrom typing import Dict, List, Optional\n\napp = FastAPI()\n\n# In-memory storage for this demo\nusers: Dict[str, dict] = {}\nposts: List[dict] = []\n\nclass UserRegister(BaseModel):\n    username: str\n    password: str\n\nclass UserLogin(BaseModel):\n    username: str\n    password: str\n\nclass PostCreate(BaseModel):\n    content: str\n    author: str\n\n@app.post('/register')\nasync def register(user: UserRegister):\n    if user.username in users:\n        raise HTTPException(status_code=400, detail='Username already exists')\n    # In a real app, this would generate and manage a keypair\n    users[user.username] = {'password': user.password, 'key_managed': True}\n    return {'message': 'User registered successfully'}\n\n@app.post('/login')\nasync def login(user: UserLogin):\n    if user.username not in users or users[user.username]['password'] != user.password:\n        raise HTTPException(status_code=401, detail='Invalid credentials')\n    return {'message': 'Login successful', 'username': user.username}\n\n@app.post('/post')\nasync def create_post(post: PostCreate):\n    posts.append({'author': post.author, 'content': post.content})\n    return {'message': 'Post created successfully'}\n\n@app.get('/feed')\nasync def get_feed():\n    return {'posts': posts}",
+        "requirements.txt": "fastapi\nuvicorn"
+      }
+    },
+    "frontend": {
+      "language": "JavaScript/HTML/CSS",
+      "framework": "SvelteKit",
+      "description": "A simple single-page application (SPA) to demonstrate the user experience. It allows for user registration, login, and viewing/creating posts.",
+      "files": {
+        "src/routes/+page.svelte": "<script lang=\"ts\">\n\timport { onMount } from 'svelte';\n\timport { PUBLIC_API_URL } from '$env/static/public';\n\n\tlet username = '';\n\tlet password = '';\n\tlet loggedIn = false;\n\tlet currentUsername = '';\n\tlet postContent = '';\n\tlet feed = [];\n\n\tasync function register() {\n\t\tawait fetch(`${PUBLIC_API_URL}/register`, {\n\t\t\tmethod: 'POST',\n\t\t\theaders: { 'Content-Type': 'application/json' },\n\t\t\tbody: JSON.stringify({ username, password })\n\t\t});\n\t\talert('Registered! Please log in.');\n\t}\n\n\tasync function login() {\n\t\tconst res = await fetch(`${PUBLIC_API_URL}/login`, {\n\t\t\tmethod: 'POST',\n\t\t\theaders: { 'Content-Type': 'application/json' },\n\t\t\tbody: JSON.stringify({ username, password })\n\t\t});\n\t\tconst data = await res.json();\n\t\tif (res.ok) {\n\t\t\tloggedIn = true;\n\t\t\tcurrentUsername = data.username;\n\t\t\tfetchFeed();\n\t\t} else {\n\t\t\talert(data.detail);\n\t\t}\n\t}\n\n\tasync function createPost() {\n\t\tawait fetch(`${PUBLIC_API_URL}/post`, {\n\t\t\tmethod: 'POST',\n\t\t\theaders: { 'Content-Type': 'application/json' },\n\t\t\tbody: JSON.stringify({ author: currentUsername, content: postContent })\n\t\t});\n\t\tpostContent = '';\n\t\tfetchFeed();\n\t}\n\n\tasync function fetchFeed() {\n\t\tconst res = await fetch(`${PUBLIC_API_URL}/feed`);\n\t\tconst data = await res.json();\n\t\tfeed = data.posts.reverse();\n\t}\n\n\tonMount(() => {\n\t\tfetchFeed();\n\t});\n</script>\n\n<main>\n\t{#if !loggedIn}\n\t\t<h2>Welcome to Axiom</h2>\n\t\t<form on:submit|preventDefault={register}>\n\t\t\t<input type=\"text\" bind:value={username} placeholder=\"Username\" required />\n\t\t\t<input type=\"password\" bind:value={password} placeholder=\"Password\" required />\n\t\t\t<button type=\"submit\">Register</button>\n\t\t</form>\n\t\t<form on:submit|preventDefault={login}>\n\t\t\t<input type=\"text\" bind:value={username} placeholder=\"Username\" required />\n\t\t\t<input type=\"password\" bind:value={password} placeholder=\"Password\" required />\n\t\t\t<button type=\"submit\">Log In</button>\n\t\t</form>\n\t{:else}\n\t\t<h2>Hello, {currentUsername}!</h2>\n\t\t<form on:submit|preventDefault={createPost}>\n\t\t\t<textarea bind:value={postContent} placeholder=\"What's on your mind?\" required></textarea>\n\t\t\t<button type=\"submit\">Post</button>\n\t\t</form>\n\n\t\t<h3>Recent Posts</h3>\n\t\t{#each feed as post}\n\t\t\t<div>\n\t\t\t\t<strong>{post.author}</strong>\n\t\t\t\t<p>{post.content}</p>\n\t\t\t</div>\n\t\t{/each}\n\t{/if}\n</main>\n\n<style>\n\tmain {\n\t\tmax-width: 600px;\n\t\tmargin: auto;\n\t\tpadding: 2rem;\n\t\tfont-family: sans-serif;\n\t}\n\th2, h3 {\n\t\ttext-align: center;\n\t}\n\tform {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tgap: 10px;\n\t\tmargin-bottom: 20px;\n\t}\n\tinput, textarea, button {\n\t\twidth: 100%;\n\t\tpadding: 10px;\n\t}\n\tdiv {\n\t\tborder: 1px solid #ccc;\n\t\tpadding: 15px;\n\t\tborder-radius: 8px;\n\t\tmargin-bottom: 10px;\n\t}\n\tp {\n\t\tmargin: 0;\n\t}\n</style>",
+        "svelte.config.js": "import adapter from '@sveltejs/adapter-node';\nimport { vitePreprocess } from '@sveltejs/kit/vite';\n\n/** @type {import('@sveltejs/kit').Config} */\nconst config = {\n\tpreprocess: vitePreprocess(),\n\n\tkit: {\n\t\tadapter: adapter(),\n\t\tcsrf: { checkOrigin: false }\n\t}\n};\n\nexport default config;",
+        "src/lib/env.d.ts": "declare module '$env/static/public' {\n\texport const PUBLIC_API_URL: string;\n}"
+      }
+    }
+  },
+  "deployment_guide.md": "## Axiom Deployment Guide\n\n### Step 1: Backend Deployment (FastAPI)\n\n1.  **Prerequisites**: Ensure Python 3.9+ and pip are installed.\n2.  **Navigate**: Open your terminal and go to the `backend/` directory.\n3.  **Install Dependencies**: Run `pip install -r requirements.txt`.\n4.  **Run Server**: Start the server with `uvicorn main:app --host 0.0.0.0 --port 8000`. The backend will now be running on `http://localhost:8000`.\n\n### Step 2: Frontend Deployment (SvelteKit)\n\n1.  **Prerequisites**: Ensure Node.js (v18+) and npm are installed.\n2.  **Navigate**: Open a separate terminal and go to the `frontend/` directory.\n3.  **Create .env File**: Create a file named `.env` in the `frontend/` directory with the following content:\n\n    ```\n    PUBLIC_API_URL=\"http://localhost:8000\"\n    ```\n\n    *Note: Adjust the URL if your backend is running on a different host or port.*\n\n4.  **Install Dependencies**: Run `npm install`.\n5.  **Run Dev Server**: Start the SvelteKit development server with `npm run dev -- --open`. The frontend will be accessible in your browser, and it will automatically connect to your running FastAPI backend."
+}
