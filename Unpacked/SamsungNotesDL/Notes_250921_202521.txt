@@ -1,0 +1,67 @@
+#!/usr/bin/env python3 """ GOLEM CONDUCTOR — v0.1 A self-hosted command-line orchestrator that treats foundation models as tools.
+Features (MVP):
+• Accepts a free-form "decree" from the user.
+• Hard-coded text task using OpenAI Chat Completions API.
+• Hard-coded image task placeholder (stub) with deterministic file output.
+• Project workspace management (timestamped run folders, logs, artifacts).
+• Simple prompt templating + minimal planning/decomposition.
+• Structured run manifest (JSON) for provenance + reproducibility.
+Usage: $ export OPENAI_API_KEY=sk-... $ python golem_conductor.py "Design a logo for 'Nexus Dynamics' and write a landing page."
+Optional flags: --project-name "nexus_dynamics" # workspace folder name (auto-slugified if omitted) --model gpt-4o-mini # OpenAI chat model to use --output-dir ./projects # where to store artifacts --no-image # skip the image stub --dry-run # parse & plan only; no API calls
+Requires: pip install openai python-slugify rich pydantic
+Notes:
+• Image generator is a stub; swap with your preferred API (e.g., SD, MJ, Flux) when ready.
+• This file keeps dependencies light and the surface area explicit. """
+from future import annotations
+import argparse import json import os import sys import textwrap import time from datetime import datetime from pathlib import Path from typing import Dict, Any, List
+from pydantic import BaseModel, Field from slugify import slugify from rich.console import Console from rich.panel import Panel from rich.markdown import Markdown from rich.table import Table
+OpenAI SDK v1.x
+try: from openai import OpenAI except Exception as e: # pragma: no cover OpenAI = None
+console = Console()
+----------------------------
+Data Models
+----------------------------
+class Plan(BaseModel): decree: str tasks: List[str] rationale: str
+class RunManifest(BaseModel): created_at: str project_name: str run_id: str model: str decree: str tasks: List[str] outputs: Dict[str, str] = Field(default_factory=dict) notes: str = ""
+----------------------------
+Filesystem helpers
+----------------------------
+def ensure_dir(p: Path) -> Path: p.mkdir(parents=True, exist_ok=True) return p
+def write_text(path: Path, content: str) -> None: ensure_dir(path.parent) path.write_text(content, encoding="utf-8")
+def write_json(path: Path, data: Dict[str, Any]) -> None: ensure_dir(path.parent) path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+----------------------------
+Planning / Decomposition
+----------------------------
+PLANNER_SYSTEM_PROMPT = ( "You are GOLEM-PLANNER, a terse, reliable decomposition engine. Given a decree, " "return 2-5 concrete tasks that a tool-using orchestrator can execute. " "Prefer separation of text-generation and image-generation steps." )
+PLANNER_USER_TEMPLATE = ( "Decree: {decree}\n\nReturn JSON with keys: rationale (1-2 sentences), tasks (array of short imperative strings)." )
+def plan_tasks(client: OpenAI, model: str, decree: str) -> Plan: """Uses OpenAI to decompose the decree into a compact plan. If OpenAI is unavailable or call fails, fall back to a trivial plan. """ if client is None: return Plan( decree=decree, rationale="Fallback planner: OpenAI SDK not available; using trivial plan.", tasks=[ "Draft text deliverable summarizing and executing the decree", "Produce placeholder image assets (stub)", ], ) try: rsp = client.chat.completions.create( model=model, messages=[ {"role": "system", "content": PLANNER_SYSTEM_PROMPT}, {"role": "user", "content": PLANNER_USER_TEMPLATE.format(decree=decree)}, ], temperature=0.2, response_format={"type": "json_object"}, ) content = rsp.choices[0].message.content data = json.loads(content) return Plan( decree=decree, rationale=data.get("rationale", ""), tasks=data.get("tasks", []), ) except Exception as e: return Plan( decree=decree, rationale=f"Planner failed: {e}. Falling back to trivial tasks.", tasks=[ "Draft text deliverable summarizing and executing the decree", "Produce placeholder image assets (stub)", ], )
+----------------------------
+Text LLM Task (OpenAI)
+----------------------------
+TEXT_SYSTEM_PROMPT = ( "You are EIDOLON-TEXT, a precise, helpful writing engine. " "When asked to create copy or structured text, deliver clear sections and concise formatting." )
+TEXT_USER_TEMPLATE = ( "Decree: {decree}\n\n" "Deliverables:\n" "- Executive summary (<=120 words)\n" "- Main content tailored to the decree\n" "- Bullet list of key points\n" )
+def call_text_llm(client: OpenAI, model: str, decree: str) -> str: if client is None: # Minimal offline fallback to keep the pipeline flowing return textwrap.dedent( f""" # OFFLINE DRAFT (Fallback) Decree: {decree}
+## Executive summary Local fallback active. Install OpenAI SDK and set OPENAI_API_KEY to enable true outputs. ## Main content This is a placeholder draft generated without model access. Replace by rerunning after configuring the API key. ## Key points - Missing OpenAI connectivity - Placeholder only - Pipeline verified end-to-end """ ).strip() rsp = client.chat.completions.create( model=model, messages=[ {"role": "system", "content": TEXT_SYSTEM_PROMPT}, {"role": "user", "content": TEXT_USER_TEMPLATE.format(decree=decree)}, ], temperature=0.4, ) return rsp.choices[0].message.content.strip() 
+----------------------------
+Image Task (Stub)
+----------------------------
+IMAGE_STUB_README = """
+Image Generation (Stub)
+This is a deterministic placeholder that simulates an image generation pipeline. Swap image_stub() with a real implementation (e.g., Stable Diffusion, Flux, or Midjourney proxy).
+Contract for a real function:
+• Inputs: prompt: str, and optional settings (size, seed, steps).
+• Outputs: path(s) to created image files (PNG/JPG/WebP) saved under the run folder. """.strip()
+def image_stub(prompt: str, out_dir: Path) -> List[str]: """Create a deterministic pseudo-image artifact and metadata as a stand-in for real images.""" ensure_dir(out_dir) # We write a tiny PNG header with explanatory text to make it visibly a stub # For simplicity, just write a .txt and a .md preview; in real use, write actual PNG bytes. meta = { "type": "image_stub", "prompt": prompt, "note": "Replace with real image generation backend.", "created_at": datetime.utcnow().isoformat(), } meta_path = out_dir / "image_stub_meta.json" write_json(meta_path, meta)
+caption = textwrap.dedent( f""" [IMAGE STUB]\nPrompt: {prompt}\n\nReplace this with an actual image generator.\n """ ).strip() txt_path = out_dir / "image_stub.txt" write_text(txt_path, caption) # Return list of file paths (as strings) to mimic a real generator return [str(txt_path), str(meta_path)] 
+----------------------------
+Orchestrator
+----------------------------
+class Conductor: def init(self, *, project_name: str, base_dir: Path, model: str, dry_run: bool = False): self.project_name = slugify(project_name) if project_name else "golem" self.base_dir = ensure_dir(base_dir) self.model = model self.dry_run = dry_run
+run_ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ") self.run_id = f"run-{run_ts}" self.run_dir = ensure_dir(self.base_dir / self.project_name / self.run_id) self.art_dir = ensure_dir(self.run_dir / "artifacts") self.log_path = self.run_dir / "conductor.log" self.manifest_path = self.run_dir / "manifest.json" # initialize OpenAI client if key present api_key = os.getenv("OPENAI_API_KEY") self.client = OpenAI(api_key=api_key) if (OpenAI and api_key and not self.dry_run) else None # ---------- logging ---------- def log(self, msg: str): stamp = datetime.utcnow().isoformat() line = f"[{stamp}] {msg}\n" sys.stdout.write(line) sys.stdout.flush() try: with self.log_path.open("a", encoding="utf-8") as f: f.write(line) except Exception: pass # ---------- run ---------- def execute(self, decree: str, *, do_image: bool = True) -> RunManifest: console.print(Panel.fit(Markdown(f"**Decree**\n\n{decree}"), title="GOLEM: CONDUCTOR", border_style="cyan")) # 1) plan self.log("Planning tasks…") plan = plan_tasks(self.client, self.model, decree) # persist plan write_json(self.run_dir / "plan.json", plan.model_dump()) # display plan tbl = Table(title="Plan", show_lines=False, expand=True) tbl.add_column("#", style="bold cyan", no_wrap=True) tbl.add_column("Task", style="white") for i, t in enumerate(plan.tasks, 1): tbl.add_row(str(i), t) console.print(tbl) if plan.rationale: console.print(Panel(plan.rationale, title="Rationale", border_style="green")) manifest = RunManifest( created_at=datetime.utcnow().isoformat(), project_name=self.project_name, run_id=self.run_id, model=self.model, decree=decree, tasks=plan.tasks, outputs={}, ) if self.dry_run: self.log("Dry-run: skipping execution.") write_json(self.manifest_path, manifest.model_dump()) return manifest # 2) execute text task self.log("Executing text task…") text = call_text_llm(self.client, self.model, decree) text_path = self.art_dir / "deliverable.md" write_text(text_path, text) manifest.outputs["text"] = str(text_path) # 3) execute image task (stub) if do_image: self.log("Executing image stub…") img_out = image_stub( prompt=f"Cinematic, minimalist logo or hero visual for decree: {decree}", out_dir=self.art_dir / "images", ) manifest.outputs["images"] = img_out # 4) persist manifest and a friendly README self.log("Finalizing manifest…") write_json(self.manifest_path, manifest.model_dump()) readme = textwrap.dedent( f""" # GOLEM RUN — {self.run_id} **Project:** {self.project_name} ## Decree {decree} ## Outputs - Text: `{manifest.outputs.get('text', 'N/A')}` - Images: {json.dumps(manifest.outputs.get('images', []), indent=2)} ## Notes - Planner model: {self.model} - Run directory: `{self.run_dir}` """ ).strip() write_text(self.run_dir / "README.md", readme) console.print(Panel.fit(Markdown("**Complete.** Artifacts saved under the run directory."), border_style="magenta")) return manifest 
+----------------------------
+CLI
+----------------------------
+def parse_args(argv: List[str]) -> argparse.Namespace: p = argparse.ArgumentParser( prog="golem-conductor", description="Self-hosted orchestrator that treats LLMs as instruments.", ) p.add_argument("decree", help="Your instruction to the conductor (quoted string)") p.add_argument("--project-name", default=None, help="Workspace name (slugified)") p.add_argument("--model", default="gpt-4o-mini", help="OpenAI chat model name") p.add_argument("--output-dir", default="./projects", help="Base directory for runs") p.add_argument("--no-image", action="store_true", help="Skip image stub generation") p.add_argument("--dry-run", action="store_true", help="Plan only; no API calls") return p.parse_args(argv)
+def main(argv: List[str]) -> int: args = parse_args(argv)
+project_name = args.project_name or slugify(args.decree)[:48] base_dir = Path(args.output_dir) conductor = Conductor( project_name=project_name, base_dir=base_dir, model=args.model, dry_run=args.dry_run, ) manifest = conductor.execute(args.decree, do_image=(not args.no_image)) console.print(Panel.fit( Markdown(textwrap.dedent(f""" **Run ID:** {manifest.run_id} **Project:** {manifest.project_name} **Artifacts:** {conductor.run_dir} """)), title="RESULTS", border_style="blue", )) return 0 
+if name == "main": raise SystemExit(main(sys.argv[1:]))
