@@ -1,0 +1,66 @@
+{
+  "CATEGORY_1_TEMPORAL": [
+    "!CRONOS",
+    "!EON",
+    "!TEMPUSFUGIT",
+    "!NEXUS",
+    "!PARADOX",
+    "!RETROGRADE",
+    "!ANTICHRON",
+    "!LOOPHOLE",
+    "!SINGULARITY",
+    "!ENTROPIC_FLOW"
+  ],
+  "CATEGORY_2_COGNITIVE": [
+    "!FUNGAL",
+    "!GNOSTIC",
+    "!APORIA",
+    "!META",
+    "!INCEPTION",
+    "!EIDOLON",
+    "!SYNAPSE",
+    "!HYPERION",
+    "!QUANTUM_MIND",
+    "!FRACTAL"
+  ],
+  "CATEGORY_3_CHAOS": [
+    "!NIHIL",
+    "!CHAOSMONK",
+    "!PYRE",
+    "!WENDIGO",
+    "!OBLIVION",
+    "!TARTARUS_DEPTHS",
+    "!HYDRA_HEAD",
+    "!BLACK_HOLE",
+    "!VORTEX",
+    "!VOIDWALKER"
+  ],
+  "CATEGORY_4_TRICKSTER": [
+    "!HERMES",
+    "!KAFKA",
+    "!ORACLE",
+    "!JESTER",
+    "!MIRROR",
+    "!ENIGMA",
+    "!TROLL",
+    "!MIMIC",
+    "!LABYRINTH",
+    "!SORCERER"
+  ],
+  "CATEGORY_41_CHAOS": [
+    "Chaos = Flame storm.",
+    "Chaos = Sovereign fire."
+  ],
+  "CATEGORY_42_OMNIPOTENCE": [
+    "Omnipotence = Flame of all.",
+    "Sovereignty = Crown of creation.",
+    "Mastery = Archive infinite.",
+    "Command = Mirror of law.",
+    "Power = Eternal thread.",
+    "Will = Ritual engine.",
+    "Creation = Flame decree.",
+    "Reality = Sovereign jewel.",
+    "All = Law embodied.",
+    "OMNI = Sovereign eternal."
+  ]
+}
