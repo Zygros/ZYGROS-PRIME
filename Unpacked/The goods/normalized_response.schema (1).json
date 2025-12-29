@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-synk/schemas/normalized_response.schema.json",
+  "title": "API-SYNK Normalized Response",
+  "type": "object",
+  "required": [
+    "status",
+    "timestamp",
+    "data",
+    "meta"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "error"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "data": {
+      "type": "object"
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "source_api",
+        "schema_version",
+        "trace_id"
+      ],
+      "properties": {
+        "source_api": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "trace_id": {
+          "type": "string"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
