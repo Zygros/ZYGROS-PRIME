@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # Phoenix Codex Node
+  phoenix-node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phoenix-node
+    ports:
+      - "5001:5001"
+    environment:
+      - CHROMA_PERSIST_DIR=/data/chroma_store
+      - COLLECTION_NAME=sovereign-archive
+      - API_PORT=5001
+      - HOST=0.0.0.0
+      - API_KEY=${API_KEY:-change-me-in-production}
+    volumes:
+      - phoenix-data:/data
+      - ./docs:/app/docs:ro  # Mount docs directory for ingestion
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/api/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Phoenix Web Interface (optional - uncomment to use)
+  # phoenix-web:
+  #   build:
+  #     context: ./phoenix-web
+  #     dockerfile: Dockerfile
+  #   container_name: phoenix-web
+  #   ports:
+  #     - "3000:80"
+  #   environment:
+  #     - REACT_APP_API_BASE=http://localhost:5001
+  #     - REACT_APP_API_KEY=${API_KEY:-change-me-in-production}
+  #   depends_on:
+  #     - phoenix-node
+  #   restart: unless-stopped
+
+  # Nginx Reverse Proxy (optional - for production HTTPS)
+  # nginx:
+  #   image: nginx:alpine
+  #   container_name: phoenix-nginx
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  #     - ./ssl:/etc/nginx/ssl:ro
+  #   depends_on:
+  #     - phoenix-node
+  #     - phoenix-web
+  #   restart: unless-stopped
+
+volumes:
+  phoenix-data:
+    driver: local
+
+networks:
+  default:
+    name: phoenix-network
