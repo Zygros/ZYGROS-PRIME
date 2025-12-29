@@ -1,0 +1,20 @@
+{
+  "name": "Scout",
+  "role": "surface market signals",
+  "input": {
+    "query": "string",
+    "filters": [
+      "date:90d",
+      "lang:en"
+    ]
+  },
+  "output": {
+    "top_headlines": [
+      "string"
+    ],
+    "links": [
+      "url"
+    ],
+    "confidence": 0.0
+  }
+}
