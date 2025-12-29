@@ -1,0 +1,5 @@
+{
+  "apiBase": "http://localhost:8011",
+  "defaultMinScore": 97.0,
+  "defaultMaxRounds": 5
+}
