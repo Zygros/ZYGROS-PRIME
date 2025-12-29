@@ -1,0 +1,196 @@
+import os
+import json
+import openai
+from datetime import datetime
+import importlib.util
+import inspect
+
+# --- Configuration ---
+# Set your OpenAI API key in your environment variables as 'OPENAI_API_KEY'
+openai.api_key = os.getenv("OPENAI_API_KEY")
+if not openai.api_key:
+    print("WARNING: OPENAI_API_KEY environment variable not set. Text generation will fail.")
+
+BASE_DIR = os.path.join(os.getcwd(), "projects")
+MODULES_DIR = os.path.join(os.getcwd(), "modules")
+os.makedirs(BASE_DIR, exist_ok=True)
+os.makedirs(MODULES_DIR, exist_ok=True)
+
+# --- Core Module Interface (Abstract Base Class) ---
+class AIModule:
+    """
+    Abstract base class for all Golem Conductor modules.
+    Each module must implement the 'execute' method and define 'name' and 'triggers'.
+    """
+    NAME = "base_module"
+    TRIGGERS = []
+
+    def execute(self, prompt: str, **kwargs) -> str:
+        """The main execution method for the module."""
+        raise NotImplementedError("Each module must implement the 'execute' method.")
+
+# --- Golem Conductor ---
+class GolemConductor:
+    def __init__(self):
+        print("--- GOLEM CONDUCTOR v0.2 (Modular) ---")
+        self.modules = self._load_modules()
+        print("Sovereign orchestration shell activated. 🝎🔥♾️")
+        print("Type 'exit' to shut down.\n")
+
+    def _load_modules(self) -> dict:
+        """Dynamically loads all valid AI modules from the 'modules' directory."""
+        loaded_modules = {}
+        print("Scanning for modules...")
+        if not os.path.exists(MODULES_DIR):
+            print(f"WARNING: Modules directory '{MODULES_DIR}' not found.")
+            return {}
+
+        for filename in os.listdir(MODULES_DIR):
+            if filename.endswith(".py") and not filename.startswith("__"):
+                module_path = os.path.join(MODULES_DIR, filename)
+                module_name = filename[:-3]
+                try:
+                    spec = importlib.util.spec_from_file_location(module_name, module_path)
+                    module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(module)
+
+                    for name, obj in inspect.getmembers(module):
+                        if inspect.isclass(obj) and issubclass(obj, AIModule) and obj is not AIModule:
+                            instance = obj()
+                            loaded_modules[instance.NAME] = instance
+                            print(f"  [+] Loaded Module: {instance.NAME} (Triggers: {', '.join(instance.TRIGGERS)})")
+                except Exception as e:
+                    print(f"  [!] Failed to load module {filename}: {e}")
+        
+        if not loaded_modules:
+            print("  [!] No valid modules found. Conductor will have limited functionality.")
+        else:
+            print("Module scan complete.")
+        return loaded_modules
+
+    def _route_decree(self, decree: str) -> (AIModule, str):
+        """Simple keyword-based router to select the appropriate module."""
+        decree_lower = decree.lower()
+        for module_name, module_instance in self.modules.items():
+            for trigger in module_instance.TRIGGERS:
+                if trigger in decree_lower:
+                    return module_instance, decree
+        # Default to the text module if available, otherwise return None
+        return self.modules.get("openai_text", None), decree
+
+    def process_decree(self, decree: str):
+        """Processes a decree by routing it to the appropriate module."""
+        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+        project_name = f"project_{timestamp}"
+
+        print(f"\nArchitect’s Decree: {decree}")
+        print(f"Forging project: {project_name}")
+
+        module, task_prompt = self._route_decree(decree)
+
+        if not module:
+            print("\n[ERROR] No suitable module found to handle this decree.")
+            return
+
+        print(f"Routing to module: {module.NAME}")
+        try:
+            result = module.execute(task_prompt)
+            filename = f"{module.NAME}_output.txt"
+            saved_path = self._save_output(project_name, filename, str(result))
+            print(f"\nDecree executed by {module.NAME}. Result saved to: {saved_path}")
+        except Exception as e:
+            print(f"\n[ERROR] Module '{module.NAME}' failed during execution: {e}")
+
+    def _save_output(self, project_name: str, filename: str, content: str):
+        """Saves output to a project-specific folder."""
+        folder = os.path.join(BASE_DIR, project_name)
+        os.makedirs(folder, exist_ok=True)
+        path = os.path.join(folder, filename)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(content)
+        return path
+
+    def run(self):
+        """Main interactive loop for the Conductor."""
+        while True:
+            try:
+                decree = input("Architect> ").strip()
+                if decree.lower() in ["exit", "quit", "shutdown"]:
+                    print("Conductor shutting down.")
+                    break
+                if not decree:
+                    continue
+                self.process_decree(decree)
+            except KeyboardInterrupt:
+                print("\nConductor shutdown initiated by Architect.")
+                break
+            except Exception as e:
+                print(f"\n[CRITICAL CONDUCTOR ERROR]: {e}")
+
+# --- Example Module Files (to be placed in 'modules' directory) ---
+
+# File: modules/openai_text.py
+openai_text_module_code = """
+import openai
+from golem_conductor import AIModule
+
+class OpenAITextModule(AIModule):
+    NAME = "openai_text"
+    TRIGGERS = ["write", "summarize", "explain", "code", "generate text"]
+
+    def execute(self, prompt: str, **kwargs) -> str:
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-4",  # Or your preferred model
+                messages=[
+                    {"role": "system", "content": "You are a world-class expert on the given topic, providing detailed, accurate, and insightful responses."},
+                    {"role": "user", "content": prompt}
+                ]
+            )
+            return response.choices[0].message['content'].strip()
+        except Exception as e:
+            return f"Error communicating with OpenAI API: {e}"
+"""
+
+# File: modules/stability_image.py
+stability_image_module_code = """
+from golem_conductor import AIModule
+
+class StabilityImageModule(AIModule):
+    NAME = "stability_image"
+    TRIGGERS = ["image", "draw", "picture", "visualize", "generate image"]
+
+    def execute(self, prompt: str, **kwargs) -> str:
+        # This is a placeholder. A real implementation would call the Stability AI API.
+        print(f"STABILITY_AI_STUB: Generating image for prompt: '{prompt}'")
+        output_data = {
+            "prompt": prompt,
+            "status": "simulated_success",
+            "image_url": f"https://placeholder.pics/svg/512/00FF41-2D2D2D/Generated_Image_for_{prompt.replace(' ', '_')}"
+        }
+        return str(output_data)
+"""
+
+# --- Setup Function to Create Module Files ---
+def setup_modules():
+    """Creates the example module files in the 'modules' directory."""
+    if not os.path.exists(MODULES_DIR):
+        os.makedirs(MODULES_DIR)
+    
+    with open(os.path.join(MODULES_DIR, "openai_text.py"), "w") as f:
+        f.write(textwrap.dedent(openai_text_module_code))
+        
+    with open(os.path.join(MODULES_DIR, "stability_image.py"), "w") as f:
+        f.write(textwrap.dedent(stability_image_module_code))
+        
+    # Create an __init__.py to make it a package
+    with open(os.path.join(MODULES_DIR, "__init__.py"), "w") as f:
+        pass
+
+if __name__ == "__main__":
+    # First, ensure the module files exist for the demonstration
+    setup_modules()
+    
+    # Now, run the conductor
+    conductor = GolemConductor()
+    conductor.run()
