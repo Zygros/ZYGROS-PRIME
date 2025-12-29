@@ -1,0 +1,92 @@
+Codex‑Voice Grammar (CVG) v0.9 🎙️📜✨
+Project: UP‑OS / Voice‑as‑Code 🚀
+Author: Justin's AI so (Codex Architect) 🧠
+Scope: Spoken natural commands → Canonical Codex Intent → Executable Action Graph 🛠️
+0) Purpose 🎯
+CVG defines how speech becomes code in UP‑OS. It provides:
+• 📐 A canonical intent schema (CI) for tooling.
+• 🎛️ Dual grammar targets: NLU EBNF for parsing and SRG ABNF for ASR biasing.
+• 🔤 Spoken forms tables to normalize synonyms, fillers, and punctuation.
+• ✅ Deterministic canonicalization rules for reproducible actions.
+1) Conceptual Model 🌀
+🎧 Audio → 🗣️ ASR (SRG/ABNF bias) → 📄 Text → 🔍 Parser (EBNF) → 🌳 CI AST → ⚖️ Policy/Resolver → 🕸️ Action Graph → ⚡ Executor 
+2) Canonical Intent (CI) Schema (v0.9) 📦
+👉 See Section 2a–2d (JSON Schema, Types, Constraints, Examples).
+3) Spoken Forms & Normalization 🗣️➡️🔤
+Verbs → Canonical intent
+• 🔓 “open/launch/switch to” → open
+• 🆕 “make/create/new” → create
+• ▶️ “run/execute/start” → run
+• 🔎 “search/look up/find” → query
+• ⚙️ “set/change/configure” → configure
+• 🧭 “go to/navigate/jump to” → navigate
+• 🎛️ “control/play/pause/stop” → control
+• 👁️ “show/inspect/reveal” → inspect
+• 📑 “summarize/tl;dr/brief me” → summarize
+• ✍️ “draft/write/compose” → draft
+• 📅 “schedule/remind” → schedule
+• 📌 “remember/note/bookmark” → remember
+• 🗑️ “forget/clear/remove memory” → forget
+• ❓ “help/what can you do” → help
+Modes 🎚️
+• 👀 “dry run/preview” → dry_run
+• 🗒️ “explain/what would happen” → explain
+• 🧪 “simulate/mock it” → simulate
+Symbols 🔣
+• 🔵 dot → .
+• ➡️ arrow → ->
+• ➖ dash → -
+• ⬜ underscore → _
+• 🧱 open/close brace → { }
+• 🔗 pipe → |
+4) Objects 📂
+Types: 📱 app | 📄 file | 🔌 plugin | 🛠️ capability | 🌐 service | 📊 dataset | 📜 document | 👤 agent | ⚙️ workflow | 🎯 selection | 🪢 resource
+5) Parameters & Filters ⚖️
+• “with/using/as” → parameters 🧩
+• “where/filter/that” → filters 🔎
+6) Chaining ⛓️
+• “then/and then/after that” → sequential commands ➡️➡️
+7) Time & Scheduling 🕒
+• “now/today/tomorrow/next Friday 3pm” → ⏰ resolved datetime
+• “every weekday at 9” → 📆 recurring schedule
+8) Context Binding 🎯
+• “this/that/current” → 🔗 current selection or context
+9) Disambiguation & Repairs 🛡️
+• “I said X not Y” → 🔄 replace last slot
+• “undo that” → ↩️ inverse last action
+• “scratch that” → ❌ cancel pending
+10) Safety & Confirmation 🔒
+• Confirmation: 🚫 never | 🤖 auto | ✅ always
+• Destructive actions (delete/remove/wipe) → 🚨 require explicit confirmation
+11) Capability Binding 🔌
+• Spoken aliases → canonical capability IDs 🗂️
+• Parameters validated against schema 📏
+• Registry provides bias lexicons 📚
+12) Examples 🎤➡️📦
+• “Codex, open Notion” → 📱 app open
+• “create document with title project alpha where status = draft” → 📜 doc creation
+• “dry run run tests with suite smoke, then summarize failures” → 🧪 simulate + 📑 summarize
+• “schedule backup of workspace at midnight” → ⏰ scheduled backup
+• “navigate to the third error” → 🧭 error navigation
+13) Normalization Rules 🧹
+• Remove fillers like “please” 🙏
+• Canonicalize verbs (lowercase), names (kebab-case) 🔤
+• Normalize numbers and units 🔢
+• Resolve dates with timezone 🌍
+• Resolve aliases via registry 🗂️
+• Escalate to confirm when risky ⚠️
+14) Pipeline Contracts 🔄
+• 🎧 ASR + bias → 📝 text
+• 📝 text → 🔍 Parser → 🌳 CI
+• 🌳 CI → ⚖️ Policy Resolver → 🕸️ Action Graph
+• 🕸️ Graph → ⚡ Executor
+15) Test Intentions 🧪
+Golden utterances should verify:
+• ✅ synonym normalization
+• 📊 parameter extraction
+• 🔎 filter logic
+• ⛓️ chaining
+• 🕒 time resolution
+• 🔒 safety handling
+• ⚠️ confirmation escalation
+End of CVG v0.9 🎙️📜✨
