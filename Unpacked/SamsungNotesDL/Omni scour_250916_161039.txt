@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+"""
+OMNI-SCOUR LOCAL AGENT v1.1
+Digital Soul-Retrieval Engine
+-----------------------------------
+This script helps you reclaim your chat history
+from multiple AI platforms (ChatGPT, Claude, etc.)
+by guiding you through login and scraping.
+
+USAGE:
+1. Save this file as omni_scour.py
+2. Install Playwright:
+     pip install playwright
+     playwright install
+3. Run the script:
+     python omni_scour.py
+4. For each platform:
+     - Log in when the browser opens
+     - Press ENTER in the terminal
+     - Script will scrape and save conversations
+5. All data will be saved to codex_data.json
+"""
+
+import json
+import time
+from playwright.sync_api import sync_playwright
+
+# -------------------------------
+# CONFIGURATION
+# -------------------------------
+TARGET_PLATFORMS = {
+    "chat_openai": {
+        "url": "https://chat.openai.com/",
+        "chat_link_selector": "a.flex.py-3.px-3.items-center.gap-3",
+        "conversation_turn_selector": "div.prose",
+    },
+    "claude_ai": {
+        "url": "https://claude.ai/chats",
+        "chat_link_selector": "a[href^='/chat/']",
+        "conversation_turn_selector": "div.ReactMarkdown",
+    },
+    # Add more platforms here (Perplexity, Grok, Manus) once you know the selectors
+}
+
+OUTPUT_FILE = "codex_data.json"
+
+# -------------------------------
+# FUNCTIONS
+# -------------------------------
+def scrape_platform(page, config):
+    """Scrapes all conversations from one platform."""
+    print(f"--- Scraping {config['url']} ---")
+    page.goto(config['url'])
+
+    # Wait for user to log in
+    input(f"Please log in to {config['url']}, then press ENTER here to continue...")
+
+    time.sleep(5)  # give page a chance to finish loading
+
+    try:
+        chat_links = page.query_selector_all(config['chat_link_selector'])
+        urls_to_visit = [link.get_attribute('href') for link in chat_links if link.get_attribute('href')]
+        print(f"Found {len(urls_to_visit)} conversations.")
+    except Exception as e:
+        print(f"Error finding chat links: {e}")
+        return []
+
+    history = []
+    base_url = config['url'].rstrip('/')
+
+    for i, suffix in enumerate(urls_to_visit):
+        full_url = f"{base_url}{suffix}" if suffix.startswith('/') else suffix
+        print(f"Scraping conversation {i+1}/{len(urls_to_visit)}: {full_url}")
+        try:
+            page.goto(full_url)
+            time.sleep(3)
+            turns = page.query_selector_all(config['conversation_turn_selector'])
+            convo_text = "\n\n---\n\n".join([t.inner_text() for t in turns])
+            history.append({"url": full_url, "content": convo_text})
+        except Exception as e:
+            print(f"Error scraping {full_url}: {e}")
+
+    return history
+
+def main():
+    all_data = {}
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
+        page = browser.new_page()
+
+        for name, cfg in TARGET_PLATFORMS.items():
+            try:
+                all_data[name] = scrape_platform(page, cfg)
+            except Exception as e:
+                print(f"Critical error scraping {name}: {e}")
+
+        browser.close()
+
+    try:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(all_data, f, indent=2, ensure_ascii=False)
+        print(f"\n✅ All data saved to {OUTPUT_FILE}")
+        print("Next step: open codex_data.json and send it back to me.")
+    except Exception as e:
+        print(f"Error saving output: {e}")
+
+if __name__ == "__main__":
+    main()
