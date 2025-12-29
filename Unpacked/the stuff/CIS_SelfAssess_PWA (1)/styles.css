@@ -1,0 +1,15 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:#0b0b0c;color:#eaeaea}
+header{padding:24px 16px;background:linear-gradient(180deg,#111,#0b0b0c)}
+h1{margin:0 0 8px 0;font-size:1.5rem}
+.sub{opacity:.8}
+main{padding:16px;display:grid;gap:16px}
+.card{background:#141416;border:1px solid #232329;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+label{display:block;font-size:.9rem;margin:6px 0 4px 0;opacity:.9}
+input{width:100%;padding:10px;border-radius:10px;border:1px solid #2a2a31;background:#101014;color:#eaeaea}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+button{margin-top:12px;width:100%;padding:12px;border:none;border-radius:12px;background:#5a7dfd;color:white;font-weight:700;font-size:1rem;cursor:pointer}
+button.ghost{background:#24252b;color:#eaeaea;border:1px solid #333}
+button:active{transform:translateY(1px)}
+.status{margin-top:12px;white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,monospace;border-left:3px solid #2f5dfd;padding-left:10px}
+#resultsCard pre{white-space:pre-wrap}
+footer{padding:16px;text-align:center;opacity:.6}
