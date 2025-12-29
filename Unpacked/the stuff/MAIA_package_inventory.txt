@@ -1,0 +1,24 @@
+# MAIA Universal Package — Quick Inventory
+
+- Total files: 12
+- Total uncompressed size: 0.07 MB
+
+## By extension (top 20)
+- .json: 4
+- .md: 2
+- .py: 2
+- .csv: 1
+- .pyc: 1
+- .sh: 1
+- .txt: 1
+
+## Top-level contents
+MAIA_Package/  (12 files)
+  ├─ maia_memory/  (~5 files)
+  ├─ QUICK_START.md/  (~1 files)
+  ├─ README.md/  (~1 files)
+  ├─ __pycache__/  (~1 files)
+  ├─ install.sh/  (~1 files)
+  ├─ maia_core.py/  (~1 files)
+  ├─ metaprompt.txt/  (~1 files)
+  ├─ test_maia.py/  (~1 files)
