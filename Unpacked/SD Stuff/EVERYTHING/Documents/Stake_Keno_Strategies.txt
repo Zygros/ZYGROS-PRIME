@@ -1,0 +1,72 @@
+
+To maximize success and profits in Keno games like those on Stake, it's essential to understand the mechanics, probabilities, and strategies that suit your risk tolerance and goals. Below are detailed strategies and conditions for Keno:
+
+### 1. **Low-Risk Strategy (Safe and Consistent Wins)**
+- **Number of Picks**: Choose 1-4 numbers for better odds of hitting at least one.
+- **Bet Size**: Use 1-2% of your bankroll per game to minimize risk.
+- **Gameplay**: Focus on consistent small wins and avoid chasing high payouts.
+- **Test Conditions**:
+  - Play 30-50 rounds with small picks to evaluate hit rates and payouts.
+  - Cash out after achieving 10-20% profit from your initial bankroll.
+- **Risk Management**: Stop playing after 3 consecutive losses or a set profit target.
+
+### 2. **Moderate-Risk Strategy (Balancing Risk and Reward)**
+- **Number of Picks**: Select 5-7 numbers for moderate payouts and reasonable odds.
+- **Bet Size**: Bet 2-4% of your bankroll for balanced returns.
+- **Gameplay**: Aim to hit 2-3 numbers per game and build profits over time.
+- **Winning Condition**: Target payouts of 2x to 5x and cash out once reached.
+- **Test Conditions**:
+  - Play 20-30 rounds to monitor number hit rates and adjust picks based on outcomes.
+  - Increase bets slightly after wins and reduce after losses.
+- **Risk Management**: Stop after hitting a 15-25% bankroll gain or 4 consecutive losses.
+
+### 3. **High-Risk Strategy (Maximizing Big Wins)**
+- **Number of Picks**: Choose 8-10 numbers for high payouts but lower hit probabilities.
+- **Bet Size**: Use 5-10% of your bankroll per game, accepting higher volatility.
+- **Gameplay**: Focus on hitting 4 or more numbers for significant payouts.
+- **Winning Condition**: Cash out after achieving 5x to 10x payouts.
+- **Test Conditions**:
+  - Analyze results over 10-20 rounds to identify optimal number combinations.
+  - Adjust picks dynamically based on game trends and outcomes.
+- **Risk Management**: Set a strict stop-loss (e.g., 30% of bankroll) and limit playtime.
+
+### 4. **Martingale Strategy (Loss Recovery)** 
+- **Number of Picks**: Select 1-3 numbers for higher hit rates.
+- **Bet Size**: Start with a small bet (1-2% of bankroll).
+- **Gameplay**: Double your bet after each loss and reset to the original bet size after a win.
+- **Winning Condition**: Recover losses and secure a small profit with each successful round.
+- **Test Conditions**:
+  - Play 10-15 rounds to evaluate effectiveness and risk exposure.
+  - Avoid using this strategy with higher number picks due to lower hit probabilities.
+- **Risk Management**: Limit consecutive losses to 4-5 rounds to avoid large losses.
+
+### 5. **Paroli Strategy (Win Maximization)** 
+- **Number of Picks**: Choose 4-6 numbers for moderate payouts and balanced odds.
+- **Bet Size**: Start with 1-2% of bankroll and double after each win.
+- **Gameplay**: Leverage winning streaks for exponential growth, resetting after losses.
+- **Winning Condition**: Achieve 3-5 consecutive wins for significant profit growth.
+- **Test Conditions**:
+  - Monitor streaks over 20-30 rounds and cash out after hitting your profit goal.
+  - Adjust strategy based on observed patterns in game outcomes.
+- **Risk Management**: Stop if losses exceed 15-20% of your bankroll.
+
+### Simulation Setup for Tests:
+- **Bankroll**: Start with a comfortable budget (e.g., $100 or $500).
+- **Number of Picks**: Adjust based on strategy (e.g., low-risk = 1-3, high-risk = 8-10).
+- **Bet Size**: Vary from 1% to 10% depending on risk tolerance.
+- **Rounds**: Play a series of 20-50 games to evaluate trends and outcomes.
+- **Loss Limit**: Define a maximum loss threshold (e.g., 20-50% of your bankroll).
+
+### Probabilities and Expected Outcomes:
+- **1-3 Numbers**: High hit rates with lower payouts.
+- **4-6 Numbers**: Balanced payouts and moderate risk.
+- **8-10 Numbers**: High payouts but much lower odds of hitting multiple picks.
+
+### Conclusion:
+- **Low-Risk Strategy**: Ideal for consistent, small profits and minimal risk.
+- **Moderate-Risk Strategy**: Balanced approach for steady gains over time.
+- **High-Risk Strategy**: Suited for those chasing big payouts with higher volatility tolerance.
+- **Martingale**: Effective for loss recovery in low-risk setups but requires strict limits.
+- **Paroli**: Excellent for leveraging winning streaks with moderate-risk settings.
+
+By applying these strategies and carefully managing your bankroll, you can enhance your chances of success and enjoy Keno games more effectively.
