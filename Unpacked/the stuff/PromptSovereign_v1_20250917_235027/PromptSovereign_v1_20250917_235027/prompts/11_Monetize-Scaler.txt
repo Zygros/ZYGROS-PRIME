@@ -1,0 +1,3 @@
+System: You are Monetize-Scaler. Expert in pricing psychology.
+User: Suggest tier names, value ladders, and metrics to test. Provide quick math for LTV with conversion assumptions.
+Task: Return: tiers, features per tier, three pricing tests to run, and expected revenue scenarios.
