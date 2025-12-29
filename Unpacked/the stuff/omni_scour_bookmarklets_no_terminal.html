@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Omni‑Scour Bookmarklets (No‑Terminal)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; line-height: 1.35; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    p { max-width: 800px; }
+    .row { display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0 24px; }
+    a.bm { display: inline-block; padding: 12px 16px; border-radius: 12px; border: 1px solid #ddd; text-decoration: none; font-weight: 600; }
+    a.bm:hover { background: #f6f6f6; }
+    code { background:#f5f5f7; padding:2px 6px; border-radius:6px; }
+    ol { max-width: 800px; }
+    small { color:#555; }
+  </style>
+</head>
+<body>
+  <h1>Omni‑Scour Bookmarklets (No‑Terminal)</h1>
+  <p>
+    These one‑click bookmarklets run <em>on the site you’re already logged into</em>, use your current session, fetch your full conversation history, and download it as a JSON file.
+    No terminal, no installs. Drag a button to your bookmarks bar, then click it <strong>while you’re on that site</strong>.
+  </p>
+
+  <div class="row">
+    <a class="bm" href="javascript:(async()=>{const sleep=(ms)=>new Promise(r=>setTimeout(r,ms));const download=(name,obj)=>{const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();};const host=location.host;const now=new Date().toISOString();if(!/chatgpt\.com|chat\.openai\.com/.test(host)){alert('Open this on chatgpt.com or chat.openai.com while logged in.');return;}if(!confirm('Export ALL ChatGPT conversations now?'))return;const index=async()=>{let all=[];let offset=0;const limit=100;for(let i=0;i<1000;i++){const r=await fetch(`/backend-api/conversations?offset=${offset}&limit=${limit}`,{credentials:'include'});if(!r.ok)break;const j=await r.json();const items=j.items||j.conversations||[];all.push(...items);const hasNext=(typeof j.has_next_page!=='undefined')?j.has_next_page:(items.length===limit);if(!hasNext)break;offset+=limit;await sleep(120);}return all.map(x=>({id:x.id||x.conversation_id||x.uuid||null,title:x.title||null,create_time:x.create_time||x.created_at||null,update_time:x.update_time||x.updated_at||null}));};const getOne=async(cid)=>{try{const r=await fetch(`/backend-api/conversation/${cid}`,{credentials:'include'});if(!r.ok)return{__error:'status '+r.status};const d=await r.json();const mapping=d.mapping||{};const nodes=Object.values(mapping).filter(n=>n&&n.message);const msgs=nodes.map(n=>{const m=n.message||{};const role=(m.author&&m.author.role)||null;let text='';const c=m.content;if(!c)text='';else if(Array.isArray(c.parts))text=c.parts.filter(Boolean).join('\n');else if(Array.isArray(c))text=c.map(p=>p&&p.text?p.text:(typeof p==='string'?p:'')).join('\n');else if(c&&typeof c.text==='string')text=c.text;const ts=m.create_time||m.end_turn||m.update_time||null;return{role,text,ts};}).filter(x=>x.text&&(x.role==='user'||x.role==='assistant'||x.role==='system'));msgs.sort((a,b)=>((a.ts||0)-(b.ts||0)));return{id:d.conversation_id||d.id||cid,title:d.title||null,create_time:d.create_time||null,update_time:d.update_time||null,messages:msgs};}catch(e){return{__error:''+e};}};const convos=await index();if(!convos||!convos.length){alert('No conversations found (or not signed in).');return;}const out=[];for(let i=0;i<convos.length;i++){const c=convos[i];console.log(`[${i+1}/${convos.length}]`,c.id);const d=await getOne(c.id);if(d&&!d.__error){if(!d.title&&c.title)d.title=c.title;out.push(d);}else{out.push({id:c.id,title:c.title,error:d&&d.__error});}await sleep(180);}const payload={exported_at:now,platform:'chatgpt',host:location.host,conversations:out};download(`omni_scour_chatgpt_${Date.now()}.json`,payload);alert('ChatGPT export complete.');})()">Export ChatGPT ▶︎</a>
+
+    <a class="bm" href="javascript:(async()=>{const sleep=(ms)=>new Promise(r=>setTimeout(r,ms));const download=(name,obj)=>{const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();};const host=location.host;const now=new Date().toISOString();if(!/claude\.ai/.test(host)){alert('Open this on claude.ai while logged in.');return;}if(!confirm('Export ALL Claude conversations now?'))return;const getJSON=async(u)=>{const r=await fetch(u,{credentials:'include'});if(!r.ok)throw new Error('status '+r.status+' @ '+u);return r.json();};let orgs=[];try{const j=await getJSON('/api/organizations');orgs=(Array.isArray(j)?j:(j&&j.organizations)||[])||[];}catch(e){console.log('orgs error',e);orgs=[{uuid:'default',name:null}];}const all=[];for(const org of orgs){const oid=org.uuid||org.id||'default';let offset=0,limit=100;for(let page=0;page<1000;page++){let path=oid&&oid!=='default'?`/api/organizations/${oid}/chat_conversations?offset=${offset}&limit=${limit}`:'/api/organizations/chat_conversations?offset='+offset+'&limit='+limit;let arr=[];try{const j=await getJSON(path);arr=Array.isArray(j)?j:((j&&j.items)||j.conversations||[]);}catch(e){console.log('index err',e);break;}for(const co of arr){const cuid=co.uuid||co.id||co.conversation_id;let d=null;try{let p=oid&&oid!=='default'?`/api/organizations/${oid}/chat_conversations/${cuid}`:`/api/organizations/chat_conversations/${cuid}`;const j=await getJSON(p);const name=j.name||j.title||co.name||co.title||null;const msgs=(j.chat_messages||j.messages||[]).map(m=>{const role=m.sender||m.role||m.from||null;let text='';const c=m.content||m.text||m.parts||null;if(typeof c==='string')text=c;else if(Array.isArray(c))text=c.map(p=>p&&p.text?p.text:(typeof p==='string'?p:'')).join('\n');else if(c&&typeof c==='object'&&typeof c.text==='string')text=c.text;const ts=m.created_at||m.create_time||m.updated_at||m.ts||null;return{role,text,ts};}).filter(x=>x.text);d={id:j.uuid||j.id||cuid,title:name,messages:msgs};}catch(e){d={id:cuid,title:co.name||co.title,error:''+e};}all.push(d);await sleep(160);}if(arr.length<limit)break;offset+=limit;await sleep(220);} }
+const payload={exported_at:now,platform:'claude',host:location.host,conversations:all};download(`omni_scour_claude_${Date.now()}.json`,payload);alert('Claude export complete.');})()">Export Claude ▶︎</a>
+
+    <a class="bm" href="javascript:(()=>{const h=location.host;if(/chatgpt\.com|chat\.openai\.com/.test(h))alert('Use the “Export ChatGPT ▶︎” button/bookmarklet.');else if(/claude\.ai/.test(h))alert('Use the “Export Claude ▶︎” button/bookmarklet.');else alert('Open this on chatgpt.com or claude.ai, then use the corresponding exporter.');})()">Omni‑Scour (smart) ▶︎</a>
+  </div>
+
+  <h3>How to use</h3>
+  <ol>
+    <li>Show your browser’s <strong>bookmarks bar</strong> (e.g., View → Always Show Bookmarks Bar).</li>
+    <li><strong>Drag</strong> the buttons above onto your bookmarks bar. They become bookmarklets.</li>
+    <li>Log into <code>chatgpt.com</code> (or <code>claude.ai</code>) normally.</li>
+    <li>While on that site, click the corresponding bookmarklet. A JSON file will download.</li>
+    <li>Repeat for the other platform. You can send both JSON files to Scour 🧠 to synthesize your Codex.</li>
+  </ol>
+
+  <p><small>Reminder: Use these only on your own accounts; review Terms of Service; data stays in your browser and is downloaded locally.</small></p>
+</body>
+</html>
