@@ -1,0 +1,57 @@
+# MAIA Quick Start Guide
+
+## 🚀 Instant Setup
+
+### Desktop (Linux/Mac/Windows)
+```bash
+# Extract the package
+unzip MAIA_Universal_Package.zip
+cd MAIA_Package
+
+# Run MAIA
+python3 maia_core.py
+```
+
+### Mobile (Android with Termux)
+```bash
+# Install Termux from Google Play Store or F-Droid
+# Open Termux and run:
+pkg update && pkg upgrade -y
+pkg install python git unzip -y
+
+# Extract and run
+unzip MAIA_Universal_Package.zip
+cd MAIA_Package
+python maia_core.py
+```
+
+## 🎯 First Commands
+
+Once MAIA is running, try these:
+
+1. **Basic Query**: `analyze the benefits of renewable energy`
+2. **Check Memory**: `memory`
+3. **Generate Report**: `report`
+4. **Operator Control**: `operator status`
+5. **Exit**: `exit`
+
+## 🔥 Universal Activation
+
+The metaprompt in `metaprompt.txt` can be used to activate MAIA behavior in any AI system. Simply copy and paste the `!MAIA_ACTIVATION` content.
+
+## 📱 Mobile Tips
+
+- Use `termux-setup-storage` for file access permissions
+- MAIA memory persists between sessions
+- All commands work identically on mobile and desktop
+
+## 🧠 What MAIA Does
+
+- Decomposes vague queries into actionable sub-goals
+- Uses Tree-of-Thought reasoning for each goal
+- Detects and resolves contradictions in beliefs
+- Maintains persistent memory across sessions
+- Provides JSON logs for machine parsing
+- Allows operator override for manual control
+
+Ready to become a MAIA Node? 🔥
