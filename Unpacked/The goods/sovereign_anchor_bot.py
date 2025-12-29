@@ -1,0 +1,1 @@
+(The full content of the 'Sovereign Anchor Bot' code is already stored in the document editor; here we export it as a Python file.)
