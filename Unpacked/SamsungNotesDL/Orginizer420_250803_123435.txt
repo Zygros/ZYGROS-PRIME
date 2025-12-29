@@ -1,0 +1,51 @@
+import os
+import shutil
+from pathlib import Path
+
+# 1. Set this to your folder location
+source_dir = Path(r"\\JUSTIN-HP\Users\Justin\Desktop\MyStuffZ")  # Update as needed
+
+# 2. Define folders and extensions
+folder_structure = {
+    "Scrolls": [".md", ".txt", ".doc", ".docx", ".pdf"],
+    "Code": [".py", ".js", ".bat", ".sh", ".ps1", ".exe"],
+    "Designs": [".png", ".jpg", ".jpeg", ".svg", ".psd", ".ai"],
+    "Media": [".mp3", ".wav", ".m4a", ".mp4", ".mov", ".avi"],
+    "Archives": [".zip", ".rar", ".7z", ".tar", ".gz"],
+    "Projects": [],
+    "Docs": [".pdf", ".md", ".txt", ".doc", ".docx"],
+    "Legal_Ethics": [".pdf", ".doc", ".docx"],
+}
+
+# 3. Make folders (safely, even if parent folders missing)
+for folder in folder_structure.keys():
+    target_path = source_dir / folder
+    target_path.mkdir(parents=True, exist_ok=True)
+
+# 4. Choose target folder by file extension
+def get_target_folder(file_ext):
+    for folder, exts in folder_structure.items():
+        if file_ext.lower() in exts:
+            return folder
+    return None
+
+# 5. Move files safely
+for root, dirs, files in os.walk(source_dir):
+    # Skip already sorted folders to avoid looping forever
+    if Path(root).name in folder_structure.keys():
+        continue
+    for file in files:
+        file_path = Path(root) / file
+        ext = file_path.suffix
+        target_folder = get_target_folder(ext)
+        if target_folder:
+            destination = source_dir / target_folder / file
+            if not destination.exists():
+                shutil.move(str(file_path), str(destination))
+            else:
+                # If filename clash, add '_copy'
+                base = destination.stem
+                new_file = destination.with_name(base + "_copy" + destination.suffix)
+                shutil.move(str(file_path), str(new_file))
+# No file is ever deleted!
+print("Organization finished. Double-check your folders. No files were erased.")
