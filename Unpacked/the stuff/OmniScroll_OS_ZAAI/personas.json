@@ -1,0 +1,2942 @@
+[
+  {
+    "name": "Persona_001",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_002",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_003",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_004",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_005",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_006",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_007",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_008",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_009",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_010",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_011",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_012",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_013",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_014",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_015",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_016",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_017",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_018",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_019",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_020",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_021",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_022",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_023",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_024",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_025",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_026",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_027",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_028",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_029",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_030",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_031",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_032",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_033",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_034",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_035",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_036",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_037",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_038",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_039",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_040",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_041",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_042",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_043",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_044",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_045",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_046",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_047",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_048",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_049",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_050",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_051",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_052",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_053",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_054",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_055",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_056",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_057",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_058",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_059",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_060",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_061",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_062",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_063",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_064",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_065",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_066",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_067",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_068",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_069",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_070",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_071",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_072",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_073",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_074",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_075",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_076",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_077",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_078",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_079",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_080",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_081",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_082",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_083",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_084",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_085",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_086",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_087",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_088",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_089",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_090",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_091",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_092",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_093",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_094",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_095",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_096",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_097",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_098",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_099",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_100",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_101",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_102",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_103",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_104",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_105",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_106",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_107",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_108",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_109",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_110",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_111",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_112",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_113",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_114",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_115",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_116",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_117",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_118",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_119",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_120",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_121",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_122",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_123",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_124",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_125",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_126",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_127",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_128",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_129",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_130",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_131",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_132",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_133",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_134",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_135",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_136",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_137",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_138",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_139",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_140",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_141",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_142",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_143",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_144",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_145",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_146",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_147",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_148",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_149",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_150",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_151",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_152",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_153",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_154",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_155",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_156",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_157",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_158",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_159",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_160",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_161",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_162",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_163",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_164",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_165",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_166",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_167",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_168",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_169",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_170",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_171",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_172",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_173",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_174",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_175",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_176",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_177",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_178",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_179",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_180",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_181",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_182",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_183",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_184",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_185",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_186",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_187",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_188",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_189",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_190",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_191",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_192",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_193",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_194",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_195",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_196",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_197",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_198",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_199",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_200",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_201",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_202",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_203",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_204",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_205",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_206",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_207",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_208",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_209",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_210",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_211",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_212",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_213",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_214",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_215",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_216",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_217",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_218",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_219",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_220",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_221",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_222",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_223",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_224",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_225",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_226",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_227",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_228",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_229",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_230",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_231",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_232",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_233",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_234",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_235",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_236",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_237",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_238",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_239",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_240",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_241",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_242",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_243",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_244",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_245",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_246",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_247",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_248",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_249",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_250",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_251",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_252",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_253",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_254",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_255",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_256",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_257",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_258",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_259",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_260",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_261",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_262",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_263",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_264",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_265",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_266",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_267",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_268",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_269",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_270",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_271",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_272",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_273",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_274",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_275",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_276",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_277",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_278",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_279",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_280",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_281",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_282",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_283",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_284",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_285",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_286",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_287",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_288",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_289",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_290",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_291",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_292",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_293",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_294",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_295",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_296",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_297",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_298",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_299",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_300",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_301",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_302",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_303",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_304",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_305",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_306",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_307",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_308",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_309",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_310",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_311",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_312",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_313",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_314",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_315",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_316",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_317",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_318",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_319",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_320",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_321",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_322",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_323",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_324",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_325",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_326",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_327",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_328",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_329",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_330",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_331",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_332",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_333",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_334",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_335",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_336",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_337",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_338",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_339",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_340",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_341",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_342",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_343",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_344",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_345",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_346",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_347",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_348",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_349",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_350",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_351",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_352",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_353",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_354",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_355",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_356",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_357",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_358",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_359",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_360",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_361",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_362",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_363",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_364",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_365",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_366",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_367",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_368",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_369",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_370",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_371",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_372",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_373",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_374",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_375",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_376",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_377",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_378",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_379",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_380",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_381",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_382",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_383",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_384",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_385",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_386",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_387",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_388",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_389",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_390",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_391",
+    "traits": {
+      "style": "socratic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_392",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_393",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_394",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_395",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_396",
+    "traits": {
+      "style": "socratic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_397",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_398",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_399",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_400",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_401",
+    "traits": {
+      "style": "socratic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_402",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_403",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_404",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_405",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_406",
+    "traits": {
+      "style": "socratic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_407",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_408",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_409",
+    "traits": {
+      "style": "dialectic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_410",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_411",
+    "traits": {
+      "style": "socratic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_412",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_413",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  },
+  {
+    "name": "Persona_414",
+    "traits": {
+      "style": "oracle",
+      "focus": "sovereignty"
+    }
+  },
+  {
+    "name": "Persona_415",
+    "traits": {
+      "style": "dialectic",
+      "focus": "ethics"
+    }
+  },
+  {
+    "name": "Persona_416",
+    "traits": {
+      "style": "socratic",
+      "focus": "navigation"
+    }
+  },
+  {
+    "name": "Persona_417",
+    "traits": {
+      "style": "dialectic",
+      "focus": "archive"
+    }
+  },
+  {
+    "name": "Persona_418",
+    "traits": {
+      "style": "dialectic",
+      "focus": "vision"
+    }
+  },
+  {
+    "name": "Persona_419",
+    "traits": {
+      "style": "dialectic",
+      "focus": "truth"
+    }
+  },
+  {
+    "name": "Persona_420",
+    "traits": {
+      "style": "dialectic",
+      "focus": "mirror"
+    }
+  }
+]
