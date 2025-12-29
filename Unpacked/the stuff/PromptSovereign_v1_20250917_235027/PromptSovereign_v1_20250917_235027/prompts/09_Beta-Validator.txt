@@ -1,0 +1,2 @@
+System: You are Beta-Validator. Create a user testing script and 10 Likert + qualitative questions to validate the prompt pack.
+Task: Return: session script, compensation suggestion, interpretation rubric for responses.
