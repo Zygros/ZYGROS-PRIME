@@ -1,0 +1,61 @@
+Ultimate Paxios BuildCommandPromt
+Alright—the absolutely maxed-out Manus prompt. Feed this to Manus and you’ll get a Praxios that ships with every tool, library, and capability under the sun:
+Manus Master Prompt: Build “Praxios” – The All-Knowing AI
+Objective:
+Create a self-contained Python AI framework named Praxios that instantly turns any machine (desktop or Termux) into a sovereign, full-spectrum knowledge engine. It must come stocked with every major library, universal data connector, and plugin system so it can master any domain—from astrophysics to zymology.
+1. Project Layout & Install
+• Repo name: praxios/
+• Installer scripts: 
+• setup_termux.sh: automates pkg install git python on Android Termux
+• setup_unix.sh: automates apt/yum installs on Linux/macOS
+• Python packaging: 
+• pyproject.toml with extras: praxios[all]
+• requirements.txt plus requirements-extra.txt (for optional modules)
+2. “All-Libraries” Core
+On install, run:
+pip install -r requirements.txt \ numpy scipy pandas scikit-learn tensorflow torch \ xgboost lightgbm catboost statsmodels nltk spacy gensim transformers \ requests aiohttp beautifulsoup4 scrapy selenium playwright \ sqlalchemy psycopg2 pymysql pymongo redis neo4j-driver influxdb-client \ ccxt yfinance alpha_vantage python-binance web3 \ matplotlib plotly bokeh folium geopandas shapely networkx \ pillow opencv-python moviepy ffmpeg-python \ markdown jinja2 flask fastapi uvicorn aiofiles \ pyTelegramBotAPI tweepy python-dotenv # plus extras: pip install -r requirements-extra.txt 
+Requirements-extra.txt includes:
+• Bioinformatics: biopython, scikit-bio
+• Signal Processing: librosa, pywt
+• Geospatial: rasterio, fiona
+• Natural Sciences: pint, sympy, openpyxl, netCDF4
+• Visualization: seaborn, altair
+• Docs/Diagrams: sphinx, mkdocs, mermaid-cli
+• Audio/Voice: elevenlabs, pydub, SpeechRecognition
+3. Dynamic Plugin & Auto-Updater
+• Plugin loader: scans a /plugins/ folder, auto-installs missing deps via pip install at runtime.
+• Auto-update routine: weekly cron job (or Termux wake lock) that runs pip list --outdated && pip install --upgrade for all installed packages.
+4. Core Engine
+• Praxios class in core.py: unified entrypoint.
+• Modes & Tone: single engine, dynamic tone switching via set_mode().
+• Chain-of-Thought: private logs saved, exposes only clean outputs.
+5. Memory & Data Stores
+• Session: in-memory LRU buffer (2k tokens).
+• Long-Term: encrypted SQLite + optional MongoDB/Redis backends.
+• Universal Connector: DataConnector module—abstracts REST, SOAP, gRPC, database drivers, WebSocket streams.
+6. Tool Adapters
+• Automation: Python subprocess & shell scripts, full venv manager
+• Finance & Crypto: CCXT, python-binance, web3.py, alpha_vantage, yfinance
+• Web Scraping & APIs: requests, aiohttp, BeautifulSoup, Scrapy, Selenium, Playwright
+• ML & Data Science: scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, transformers
+• Visualization & Reporting: matplotlib, Plotly, Bokeh, Seaborn, Folium, networkx
+• NLP & Voice: NLTK, spaCy, Gensim, HuggingFace Transformers, ElevenLabs, pydub
+• Image & Video: Pillow, OpenCV, MoviePy, FFmpeg-python, image_gen integration
+7. Infinite Scroll & Logging
+• Structured JSON logger: timestamp, title, narrative, stats, mythic phrase, signature.
+• ai.log_scroll_entry(...) writes to local archive + optional cloud sync.
+8. Scheduler & Alerts
+• Natural-language scheduler: wrap automations.create().
+• Conditional monitors: e.g., price thresholds, keyword alerts on web feeds, sentiment scans on Twitter/Reddit.
+9. CLI & Web UI
+• CLI: live REPL with slash commands: /mode, /recall, /log, /upgrade, /plugins.
+• Web Dashboard: FastAPI + React (Tailwind); modules: mood tracker, intent box, countdown, higher-self feed.
+10. Security & Maintenance
+• Encrypted creds via python-dotenv + user passphrase.
+• API rate-limit safety, sandbox untrusted code in isolated venv.
+• Health checks & error reporting via Sentry integration.
+11. Delivery & Demo
+• Release package: release/praxios_v1.0.zip with all modules, install scripts, README, architecture diagrams in Mermaid.
+• Demo script: demo_praxios.py showcasing full install on Termux and a multi-stage use-case.
+Result: A turn-key, massively provisioned AI co-pilot that can ingest, process, analyze, create, automate, and learn any field—biology to zymurgy, finance to geometry, metaphysics to machine vision—right out of the box.
+That prompt leaves no stone unturned—Manus will generate Praxios with every library, connector, plugin, and feature under the sun.
