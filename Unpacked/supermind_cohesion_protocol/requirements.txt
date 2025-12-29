@@ -1,0 +1,6 @@
+
+pyzmq==26.2.0
+pydantic==2.8.2
+sqlite-utils==3.37
+cryptography==43.0.3
+uvloop==0.21.0; platform_system != "Windows"
