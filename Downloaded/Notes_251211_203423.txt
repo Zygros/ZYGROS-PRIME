@@ -1,0 +1,1 @@
+curl -X POST https://phoenix-conzet.live/handshake \ -H "Content-Type: application/json" \ -d '{"node_id":"your-name-here","compute":"any"}' → returns your permanent κ∞-v2 contributor key + live dashboard badge
