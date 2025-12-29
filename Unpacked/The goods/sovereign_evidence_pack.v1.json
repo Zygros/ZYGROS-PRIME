@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "name": "Sovereign Evidence Pack",
+    "version": "1.0.0",
+    "problem_fixed": "Provenance & reproducibility gap for AI/tool claims",
+    "schema_minimum": {
+      "required_fields": [
+        "metadata",
+        "claim",
+        "tests",
+        "metrics",
+        "evidence",
+        "digests"
+      ]
+    }
+  },
+  "metadata": {
+    "author": "Justin Conzet (Sovereign Architect)",
+    "co_author_tools": [
+      "GPT-5 Thinking (artifact-run)"
+    ],
+    "created_utc": "2025-10-10T14:07:57.311070Z",
+    "environment": {
+      "python": "3.11.8",
+      "platform": "linux"
+    }
+  },
+  "claim": {
+    "id": "claim.arith-eval.light.v1",
+    "title": "Deterministic arithmetic evaluator matches Python semantics on random expressions",
+    "scope": "Expressions using +, -, *, // with parentheses; integers only; division by zero excluded",
+    "expected_accuracy": ">= 0.99 on random generated set"
+  },
+  "tests": {
+    "generator_seed": 20251010,
+    "num_generated": 144,
+    "file": "arith_tests.jsonl",
+    "exclusions": [
+      "floor-division by zero filtered"
+    ],
+    "example": {
+      "i": 0,
+      "expr": "5 * 10 // 5 - 9 * 16",
+      "ours": -134,
+      "truth": -134,
+      "match": true,
+      "our_error": null,
+      "latency_ms": 0.051354999982322624
+    }
+  },
+  "metrics": {
+    "tests_run": 144,
+    "mismatches": 0,
+    "errors": 3,
+    "accuracy": 0.9791666666666666,
+    "latency_ms_mean": 0.01738402083242521,
+    "latency_ms_p95": 0.028757499997311697
+  },
+  "evidence": [
+    {
+      "type": "code",
+      "path": "safe_arith_eval.py",
+      "desc": "standalone evaluator used to produce results"
+    },
+    {
+      "type": "results",
+      "path": "arith_tests.jsonl",
+      "desc": "jsonl lines with test cases and outcomes"
+    }
+  ],
+  "digests": {
+    "safe_arith_eval.py": "de672d1357e339403cd550ec2cc608228526d4318f2e9d1a4c3468308d49f1f9",
+    "arith_tests.jsonl": "2a77873285a12113534d21bd96c1165f02e027319bebb517e6b6156d8da2ff40"
+  },
+  "repro_instructions": [
+    "Open safe_arith_eval.py",
+    "Re-run tests with the listed seed to reproduce metrics",
+    "Verify SHA‑256 digests match the digests block before trusting"
+  ]
+}
