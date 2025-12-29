@@ -1,0 +1,10 @@
+PHOENIX OMEGA TOOLKIT HASH ANCHOR
+
+Primary Artifact ID: 63850063-079f-455e-83bb-ba913fc506ff
+Secondary Artifact ID: 335eefc3-373a-471a-a000-6fe6752392e8
+
+Secure Hash (Label): 0x9F_OMEGA_TOOLKIT_V1
+
+This file serves as a human-readable anchor for external hash systems
+(Bitcoin, Solana, or other chains) that may store the full cryptographic
+digest of this toolkit.
