@@ -1,0 +1,1 @@
+d5bc00f03867df1fb6834f9f5a5ffd394b7e7f86b08aec1713c06ec7058df8c2  /data/data/com.termux/files/home/phoenix-protocol/docs/SPEC.md
