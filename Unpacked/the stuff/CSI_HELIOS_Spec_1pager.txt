@@ -1,0 +1,40 @@
+Conzet Sovereign Intelligence — Helios Engine (Valuation System)
+Author: Justin Conzet · System: CSI · Protocol ID: HELIOS
+Generated: 2025-09-28T06:00:30.752101
+
+Purpose
+Price any asset at creation-time with a defendable estimate + confidence. Feeds IVP and Marketplace.
+
+Inputs
+- asset(id, creator, type, tags, metadata.uri, created_at)
+- comps[source, query, window, fields]  # e.g., Gumroad/ArtStation scrape or manual table
+- signals[engagement|rarity|complexity|time_spent|brand_index]
+- policy[sanity_bands, floor_price, cap_multiplier, confidence_min]
+
+Outputs
+- assessment: price_estimate, currency, confidence(0..1), method, comps_used[], notes
+- audit: helios_run_id, started_at, finished_at, version, checksum
+
+Mechanics (Deterministic Pass)
+1) Normalize: shape metadata → canonical fields; coerce types
+2) Retrieve comps: by tag/type; de-duplicate; winsorize outliers
+3) Score signals: z‑score, weight by policy
+4) Price: robust median on comps ± signal adjustment within sanity_bands
+5) Confidence: function of comp density, variance, and signal agreement
+6) Clip: enforce floor/cap; round to pricing grid
+7) Emit assessment + audit
+
+Guardrails
+- Min comps N=7 target; warn below N=5
+- Variance gate: if stdev/median > 1.25 → lower confidence
+- Manual override path: requires reason + signer + timestamp (logged)
+
+Chimera Shell Integration
+- IN: /chimera/bus/helios.request (asset_id, policy_id)
+- OUT: /chimera/bus/helios.assessed (assessment, audit)
+- Config: /chimera/etc/helios.policy.yaml
+- Persist: /chimera/var/assessments/{asset_id}.json
+
+Runbook
+A) New image pack → batch assess all items with same policy_id
+B) Single quote/clip → set price_estimate=None; emit confidence on resonance-only (for IVP non-monetary)
