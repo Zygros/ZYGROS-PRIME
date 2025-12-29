@@ -1,0 +1,43 @@
+═══════════════════════════════════════════════════════════
+TELEGRAM BOT SETUP - STEP BY STEP
+═══════════════════════════════════════════════════════════
+
+1. CREATE FIRST BOT (v24 Control)
+   
+   a) Open Telegram app
+   b) Search for: @BotFather
+   c) Send: /newbot
+   d) Name: Ghost v24 Control
+   e) Username: ghost_v24_control_bot (or similar)
+   f) SAVE THE TOKEN - looks like: 123456789:ABCdefGHIjklMNOpqrsTUVwxyz
+
+2. CREATE SECOND BOT (v25 Experimental)
+   
+   a) Still in @BotFather chat
+   b) Send: /newbot again
+   c) Name: Ghost v25 Experimental  
+   d) Username: ghost_v25_experimental_bot (or similar)
+   e) SAVE THE TOKEN
+
+3. GET YOUR CHAT ID
+   
+   a) Search for: @userinfobot
+   b) Send: /start
+   c) Copy the ID number (looks like: 123456789)
+
+4. SET ENVIRONMENT VARIABLES
+   
+   export TELEGRAM_TOKEN_CONTROL="paste_v24_token_here"
+   export TELEGRAM_TOKEN_EXPERIMENTAL="paste_v25_token_here"
+   export CHAT_ID="paste_your_id_here"
+
+5. TEST BOTS
+   
+   Start a chat with each bot:
+   - Find Ghost v24 Control in Telegram
+   - Send: /start
+   - Do same for Ghost v25 Experimental
+
+═══════════════════════════════════════════════════════════
+You're now ready to deploy!
+═══════════════════════════════════════════════════════════
