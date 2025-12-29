@@ -1,0 +1,17 @@
+{
+  "name": "Launcher",
+  "role": "publish checklist & tracking",
+  "input": {
+    "platforms": [
+      "string"
+    ]
+  },
+  "output": {
+    "checklist": [
+      "string"
+    ],
+    "analytics": [
+      "metric"
+    ]
+  }
+}
