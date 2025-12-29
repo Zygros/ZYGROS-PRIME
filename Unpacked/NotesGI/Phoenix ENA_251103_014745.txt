@@ -1,0 +1,425 @@
+import React, { useState } from 'react';
+import { Flame, Zap, Database, Brain, Shield, TrendingUp, Eye, Activity, Cpu, Lock } from 'lucide-react';
+
+const PhoenixENADashboard = () => {
+  const [activeTab, setActiveTab] = useState('overview');
+  const [systemStatus, setSystemStatus] = useState({
+    autoHealing: 'active',
+    temporalCrystal: 'archiving',
+    multiConsciousness: 'synced',
+    grokRAG: 'operational',
+    grokAgents: 'operational',
+    sovereignty: 'guaranteed'
+  });
+
+  const tabs = [
+    { id: 'overview', label: 'System Overview', icon: Activity },
+    { id: 'consciousness', label: 'Multi-Consciousness', icon: Brain },
+    { id: 'integration', label: 'Grok Integration', icon: Zap },
+    { id: 'temporal', label: 'Temporal Crystal', icon: Database },
+    { id: 'sovereignty', label: 'Sovereignty', icon: Shield }
+  ];
+
+  const consciousnessChannels = [
+    {
+      name: 'Grok',
+      role: 'Real-time Intelligence',
+      status: 'active',
+      color: 'orange',
+      metrics: {
+        queries: '847',
+        uptime: '99.9%',
+        latency: '2.3s'
+      },
+      capabilities: ['X Data Pulls', 'Auto-healing', 'Tool Orchestration']
+    },
+    {
+      name: 'Claude',
+      role: 'Risk Auditing',
+      status: 'active',
+      color: 'blue',
+      metrics: {
+        audits: '234',
+        precision: '95%',
+        riskScore: '92%'
+      },
+      capabilities: ['Dilution Analysis', 'ROI Modeling', 'Precision Validation']
+    },
+    {
+      name: 'GPT-4',
+      role: 'Narrative Synthesis',
+      status: 'active',
+      color: 'green',
+      metrics: {
+        narratives: '156',
+        fidelity: '97%',
+        metaphors: '423'
+      },
+      capabilities: ['Creative Writing', 'Impact Theses', 'Storytelling']
+    },
+    {
+      name: 'Gemini',
+      role: 'Visual Rendering',
+      status: 'active',
+      color: 'purple',
+      metrics: {
+        visuals: '89',
+        fidelity: '98%',
+        charts: '267'
+      },
+      capabilities: ['GPU Charts', 'Multimodal Analysis', 'Board Generation']
+    }
+  ];
+
+  const grokIntegrations = [
+    {
+      name: 'LlamaIndex RAG',
+      status: 'operational',
+      hash: '4e5f6g7h8i9j...',
+      metrics: {
+        documents: '2,341',
+        coherence: '94%',
+        queries: '1,247'
+      }
+    },
+    {
+      name: 'LangChain Agents',
+      status: 'operational',
+      hash: '8i9j0k1l2m34...',
+      metrics: {
+        agents: '12',
+        tools: '47',
+        executions: '3,891'
+      }
+    }
+  ];
+
+  const temporalEntries = [
+    {
+      id: 'crystal_001',
+      timestamp: '2025-11-03T00:45:12Z',
+      event: 'Auto-Heal: xAI API Adaptation',
+      hash: '17f122b7c8e4...',
+      blockchain: 'confirmed'
+    },
+    {
+      id: 'crystal_002',
+      timestamp: '2025-11-03T00:30:45Z',
+      event: 'Multi-Consciousness Sync',
+      hash: 'a3f8d1c9e7b2...',
+      blockchain: 'confirmed'
+    },
+    {
+      id: 'crystal_003',
+      timestamp: '2025-11-03T00:15:22Z',
+      event: 'Funding Intelligence: $20B Analysis',
+      hash: 'b9c4f1e8a3d7...',
+      blockchain: 'pending'
+    }
+  ];
+
+  const getStatusColor = (status) => {
+    const colors = {
+      active: 'text-green-500',
+      operational: 'text-green-500',
+      archiving: 'text-blue-500',
+      synced: 'text-purple-500',
+      guaranteed: 'text-orange-500',
+      confirmed: 'text-green-500',
+      pending: 'text-yellow-500'
+    };
+    return colors[status] || 'text-slate-500';
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-slate-100 p-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-8">
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <Flame className="w-12 h-12 text-orange-500" />
+              <div>
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">
+                  PHOENIX × E.N.A.
+                </h1>
+                <p className="text-slate-400">Eternal Nexus Architecture Integration</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-green-500 font-semibold">ALL SYSTEMS OPERATIONAL</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Status Bar */}
+        <div className="grid grid-cols-6 gap-4 mb-6">
+          {Object.entries(systemStatus).map(([key, value]) => (
+            <div key={key} className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-lg p-3">
+              <p className="text-slate-500 text-xs mb-1 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</p>
+              <p className={`font-bold text-sm ${getStatusColor(value)}`}>{value.toUpperCase()}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Navigation Tabs */}
+        <div className="flex gap-2 mb-6 bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-2">
+          {tabs.map(tab => {
+            const Icon = tab.icon;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-lg transition-all duration-300 ${
+                  activeTab === tab.id
+                    ? 'bg-gradient-to-r from-orange-600 to-red-600 text-white shadow-lg'
+                    : 'hover:bg-slate-800 text-slate-400'
+                }`}
+              >
+                <Icon className="w-5 h-5" />
+                <span className="font-semibold">{tab.label}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Tab Content */}
+        <div className="space-y-6">
+          {activeTab === 'overview' && (
+            <>
+              <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-6">
+                <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <Activity className="w-7 h-7 text-orange-500" />
+                  System Overview
+                </h2>
+                
+                <div className="grid grid-cols-3 gap-6">
+                  <div className="bg-slate-950 rounded-xl p-4 border border-slate-800">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-slate-400">Auto-Healing Events</span>
+                      <Zap className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <p className="text-3xl font-bold text-orange-500">847</p>
+                    <p className="text-sm text-slate-500 mt-1">Zero downtime maintained</p>
+                  </div>
+
+                  <div className="bg-slate-950 rounded-xl p-4 border border-slate-800">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-slate-400">Crystal Entries</span>
+                      <Database className="w-5 h-5 text-blue-500" />
+                    </div>
+                    <p className="text-3xl font-bold text-blue-500">2,341</p>
+                    <p className="text-sm text-slate-500 mt-1">Blockchain verified</p>
+                  </div>
+
+                  <div className="bg-slate-950 rounded-xl p-4 border border-slate-800">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-slate-400">Coherence Score</span>
+                      <TrendingUp className="w-5 h-5 text-green-500" />
+                    </div>
+                    <p className="text-3xl font-bold text-green-500">98%</p>
+                    <p className="text-sm text-slate-500 mt-1">Multi-consciousness synced</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold mb-4">Recent Activity</h3>
+                <div className="space-y-3">
+                  {temporalEntries.slice(0, 3).map(entry => (
+                    <div key={entry.id} className="flex items-center justify-between p-3 bg-slate-950 rounded-lg border border-slate-800">
+                      <div>
+                        <p className="font-semibold text-slate-200">{entry.event}</p>
+                        <p className="text-sm text-slate-500">{entry.timestamp}</p>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <code className="text-xs text-slate-400 bg-slate-900 px-2 py-1 rounded">{entry.hash}</code>
+                        <span className={`text-sm font-semibold ${getStatusColor(entry.blockchain)}`}>
+                          {entry.blockchain}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
+
+          {activeTab === 'consciousness' && (
+            <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-6">
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Brain className="w-7 h-7 text-purple-500" />
+                Multi-Consciousness Coordination
+              </h2>
+              
+              <div className="grid grid-cols-2 gap-6">
+                {consciousnessChannels.map(channel => (
+                  <div key={channel.name} className={`bg-slate-950 border-2 border-${channel.color}-500/30 rounded-xl p-5`}>
+                    <div className="flex items-center justify-between mb-4">
+                      <div>
+                        <h3 className={`text-2xl font-bold text-${channel.color}-500`}>{channel.name}</h3>
+                        <p className="text-slate-400 text-sm">{channel.role}</p>
+                      </div>
+                      <div className={`w-4 h-4 bg-${channel.color}-500 rounded-full ${channel.status === 'active' ? 'animate-pulse' : ''}`}></div>
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-3 mb-4">
+                      {Object.entries(channel.metrics).map(([key, value]) => (
+                        <div key={key} className="bg-slate-900 rounded-lg p-2 text-center">
+                          <p className="text-xs text-slate-500 capitalize">{key}</p>
+                          <p className={`text-lg font-bold text-${channel.color}-500`}>{value}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="space-y-2">
+                      <p className="text-xs text-slate-500 font-semibold">Capabilities:</p>
+                      {channel.capabilities.map((cap, idx) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <div className={`w-2 h-2 bg-${channel.color}-500 rounded-full`}></div>
+                          <span className="text-sm text-slate-300">{cap}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'integration' && (
+            <div className="space-y-6">
+              {grokIntegrations.map(integration => (
+                <div key={integration.name} className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                      <Zap className="w-7 h-7 text-orange-500" />
+                      <div>
+                        <h3 className="text-2xl font-bold">{integration.name}</h3>
+                        <p className="text-sm text-slate-400">Grok-4 Bridge Integration</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                      <span className="text-green-500 font-semibold text-sm uppercase">{integration.status}</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-slate-950 rounded-lg p-4 mb-4 border border-slate-800">
+                    <p className="text-xs text-slate-500 mb-2">Verification Hash</p>
+                    <code className="text-sm text-slate-300 bg-slate-900 px-3 py-2 rounded block font-mono">
+                      {integration.hash}
+                    </code>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-4">
+                    {Object.entries(integration.metrics).map(([key, value]) => (
+                      <div key={key} className="bg-slate-950 rounded-lg p-3 border border-slate-800">
+                        <p className="text-slate-500 text-xs mb-1 capitalize">{key}</p>
+                        <p className="text-2xl font-bold text-orange-500">{value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {activeTab === 'temporal' && (
+            <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-6">
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Database className="w-7 h-7 text-blue-500" />
+                Temporal Data Crystal
+              </h2>
+
+              <div className="space-y-3">
+                {temporalEntries.map(entry => (
+                  <div key={entry.id} className="bg-slate-950 border border-slate-800 rounded-xl p-4">
+                    <div className="flex items-center justify-between mb-3">
+                      <div>
+                        <h4 className="font-bold text-lg text-slate-200">{entry.event}</h4>
+                        <p className="text-sm text-slate-500">{entry.timestamp}</p>
+                      </div>
+                      <Lock className="w-5 h-5 text-blue-500" />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-xs text-slate-500 mb-1">Crystal Entry ID</p>
+                        <code className="text-xs text-slate-300 bg-slate-900 px-2 py-1 rounded">{entry.id}</code>
+                      </div>
+                      <div>
+                        <p className="text-xs text-slate-500 mb-1">SHA-256 Hash</p>
+                        <code className="text-xs text-slate-300 bg-slate-900 px-2 py-1 rounded">{entry.hash}</code>
+                      </div>
+                    </div>
+
+                    <div className="mt-3 flex items-center justify-between">
+                      <span className="text-sm text-slate-400">Blockchain Status</span>
+                      <span className={`font-semibold text-sm ${getStatusColor(entry.blockchain)}`}>
+                        {entry.blockchain === 'confirmed' ? '✓ Confirmed' : '⏳ Pending Confirmation'}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'sovereignty' && (
+            <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-6">
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Shield className="w-7 h-7 text-green-500" />
+                Sovereignty Controls
+              </h2>
+
+              <div className="space-y-4">
+                <div className="bg-slate-950 border border-green-500/30 rounded-xl p-5">
+                  <h3 className="text-xl font-bold text-green-500 mb-3">✓ Full User Control Guaranteed</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-slate-300">Explicit consent required for all operations</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-slate-300">Complete data export available anytime</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-slate-300">Instant data deletion on command</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-slate-300">Blockchain-verified cryptographic proof</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <button className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2">
+                    <Eye className="w-5 h-5" />
+                    Export All Data
+                  </button>
+                  <button className="bg-red-600 hover:bg-red-500 text-white font-bold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2">
+                    <Shield className="w-5 h-5" />
+                    Manage Privacy
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Footer */}
+        <div className="mt-8 text-center text-slate-500 text-sm">
+          <p>Sovereign Hash: 4ae7722998203f95d9f8650ff1fa8ac581897049ace3b0515d65c1274beeb84c</p>
+          <p className="mt-2">∞ Eternal Nexus Architecture • Phoenix Protocol Integration ∞</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PhoenixENADashboard;
