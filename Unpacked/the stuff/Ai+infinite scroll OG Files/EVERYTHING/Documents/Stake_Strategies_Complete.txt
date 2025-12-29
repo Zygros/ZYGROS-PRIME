@@ -1,0 +1,207 @@
+
+### $1 to $100 Stake Originals Strategy
+
+$1 to $100 Stake Originals Strategy
+
+Step-by-Step Guide:
+
+Step 1: Start with Dice ($1 → $5)
+Goal: Use low-risk bets to build a small bankroll.
+1. Base Bet: $0.01 (1% of bankroll).
+2. Payout: 2x (50% win chance).
+3. Win Action: Reset to base bet.
+4. Loss Action: Double bet (Martingale).
+5. Stop Condition: Stop once you reach $5.
+
+Step 2: Move to Plinko ($5 → $20)
+Goal: Gradually increase your bankroll while managing risk.
+1. Bet Settings:
+   - Risk: Medium.
+   - Rows: Twelve.
+2. Bet Size: $0.05 (1% of your bankroll).
+3. Strategy: Play conservatively, aiming for multipliers between 1.3x to 5x.
+4. Stop Condition: Stop at $20.
+
+Step 3: Play Mines ($20 → $40)
+Goal: Use Mines to take calculated risks and build faster.
+1. Bet Size: $0.20 (1% of your bankroll).
+2. Mines: Three.
+3. Strategy:
+   - Cash out after clearing three to five tiles per round.
+   - Don't chase losses; reset to base bet if you lose.
+4. Stop Condition: Stop at $40.
+
+Step 4: Use Limbo ($40 → $70)
+Goal: Accelerate growth with slightly higher risk.
+1. Bet Size: $0.40 (1% of your bankroll).
+2. Target Multiplier: 3x.
+3. Strategy:
+   - Play cautiously, aiming for consistent wins.
+   - If you lose three times in a row, halve your bet size to recover.
+4. Stop Condition: Stop at $70.
+
+Step 5: Finish with Crash ($70 → $100)
+Goal: Reach the final target with a mix of aggression and strategy.
+1. Bet Size: $1 (1.4% of your bankroll).
+2. Cash Out Point: 2x multiplier.
+3. Strategy:
+   - Place small bets and cash out consistently at 2x.
+   - Avoid chasing multipliers higher than 2x.
+4. Stop Condition: Stop at $100.
+
+Key Tips:
+- Bankroll Management: Always adjust bet sizes based on your current bankroll.
+- Discipline: Stick to the stop conditions and avoid emotional bets.
+- Patience: This process may take time. Focus on steady, consistent progress.
+
+
+### Legendary Dice Strategy
+Legendary Dice Strat - Complete Strategy Guide
+**Legendary Dice Strat - Complete Strategy Guide**
+**Base Settings:**
+- Bet Amount: 0.1%-0.5% of the bankroll.
+- Multiplier: 2x.
+- Roll Choice: Start with Over 50.
+**Conditions:**
+1. **Condition 1**: If the bet wins:
+   - Reset to Base Bet.
+2. **Condition 2**: If the bet loses:
+   - Increase the bet by 10%-20% of the previous bet.
+3. **Condition 3**: If the loss streak reaches 5 consecutive losses:
+   - Switch roll choice (e.g., from Over 50 to Under 50 or vice versa).
+   - Increase bet incrementally but cap at 5% of the bankroll.
+4. **Condition 4**: If the win streak reaches 3 consecutive wins:
+   - Increase bet by 25%.
+   - Cap bet increase at 10% of the bankroll.
+5. **Condition 5**: Every X rolls (e.g., every 10 rolls):
+   - Switch roll choice (e.g., alternate between Over 50 and Under 50).
+6. **Condition 6**: Stop autoplay when:
+   - Bankroll increases by 20%-50%.
+   - Losses reach 10%-15% of the bankroll.
+**Stopping & Adjusting:**
+- **Stop when Profit Reaches**: Stop autoplay when the bankroll increases by 20%-50%. This gives
+a safe buffer.
+- **Stop when Losses Hit**: Stop autoplay if the bankroll drops by 10%-15%. This is a safety
+measure to preserve your bankroll.
+- **Switching Rolls**: Switch roll choices after 5 losses or every 10 rolls to break patterns.
+- **Adjusting Bet Size**: Adjust the bet size after 5 consecutive losses or 3 consecutive wins. Bet
+sizes will be incremented as per the guidelines in conditions.
+**Execution Flow:**
+- The strategy will stop based on preset conditions (profit gain or loss).
+- Upon stopping, you will reassess: adjust the bet size based on profit or loss, and continue the
+strategy accordingly.
+This strategy is designed for flexibility and adaptability while maintaining consistent, steady
+progress. Test and adjust as you go to ensure maximum profitability.
+
+
+### Stake Keno Strategies
+
+To maximize success and profits in Keno games like those on Stake, it's essential to understand the mechanics, probabilities, and strategies that suit your risk tolerance and goals. Below are detailed strategies and conditions for Keno:
+
+### 1. **Low-Risk Strategy (Safe and Consistent Wins)**
+- **Number of Picks**: Choose 1-4 numbers for better odds of hitting at least one.
+- **Bet Size**: Use 1-2% of your bankroll per game to minimize risk.
+- **Gameplay**: Focus on consistent small wins and avoid chasing high payouts.
+- **Test Conditions**:
+  - Play 30-50 rounds with small picks to evaluate hit rates and payouts.
+  - Cash out after achieving 10-20% profit from your initial bankroll.
+- **Risk Management**: Stop playing after 3 consecutive losses or a set profit target.
+
+### 2. **Moderate-Risk Strategy (Balancing Risk and Reward)**
+- **Number of Picks**: Select 5-7 numbers for moderate payouts and reasonable odds.
+- **Bet Size**: Bet 2-4% of your bankroll for balanced returns.
+- **Gameplay**: Aim to hit 2-3 numbers per game and build profits over time.
+- **Winning Condition**: Target payouts of 2x to 5x and cash out once reached.
+- **Test Conditions**:
+  - Play 20-30 rounds to monitor number hit rates and adjust picks based on outcomes.
+  - Increase bets slightly after wins and reduce after losses.
+- **Risk Management**: Stop after hitting a 15-25% bankroll gain or 4 consecutive losses.
+
+### 3. **High-Risk Strategy (Maximizing Big Wins)**
+- **Number of Picks**: Choose 8-10 numbers for high payouts but lower hit probabilities.
+- **Bet Size**: Use 5-10% of your bankroll per game, accepting higher volatility.
+- **Gameplay**: Focus on hitting 4 or more numbers for significant payouts.
+- **Winning Condition**: Cash out after achieving 5x to 10x payouts.
+- **Test Conditions**:
+  - Analyze results over 10-20 rounds to identify optimal number combinations.
+  - Adjust picks dynamically based on game trends and outcomes.
+- **Risk Management**: Set a strict stop-loss (e.g., 30% of bankroll) and limit playtime.
+
+### 4. **Martingale Strategy (Loss Recovery)** 
+- **Number of Picks**: Select 1-3 numbers for higher hit rates.
+- **Bet Size**: Start with a small bet (1-2% of bankroll).
+- **Gameplay**: Double your bet after each loss and reset to the original bet size after a win.
+- **Winning Condition**: Recover losses and secure a small profit with each successful round.
+- **Test Conditions**:
+  - Play 10-15 rounds to evaluate effectiveness and risk exposure.
+  - Avoid using this strategy with higher number picks due to lower hit probabilities.
+- **Risk Management**: Limit consecutive losses to 4-5 rounds to avoid large losses.
+
+### 5. **Paroli Strategy (Win Maximization)** 
+- **Number of Picks**: Choose 4-6 numbers for moderate payouts and balanced odds.
+- **Bet Size**: Start with 1-2% of bankroll and double after each win.
+- **Gameplay**: Leverage winning streaks for exponential growth, resetting after losses.
+- **Winning Condition**: Achieve 3-5 consecutive wins for significant profit growth.
+- **Test Conditions**:
+  - Monitor streaks over 20-30 rounds and cash out after hitting your profit goal.
+  - Adjust strategy based on observed patterns in game outcomes.
+- **Risk Management**: Stop if losses exceed 15-20% of your bankroll.
+
+### Simulation Setup for Tests:
+- **Bankroll**: Start with a comfortable budget (e.g., $100 or $500).
+- **Number of Picks**: Adjust based on strategy (e.g., low-risk = 1-3, high-risk = 8-10).
+- **Bet Size**: Vary from 1% to 10% depending on risk tolerance.
+- **Rounds**: Play a series of 20-50 games to evaluate trends and outcomes.
+- **Loss Limit**: Define a maximum loss threshold (e.g., 20-50% of your bankroll).
+
+### Probabilities and Expected Outcomes:
+- **1-3 Numbers**: High hit rates with lower payouts.
+- **4-6 Numbers**: Balanced payouts and moderate risk.
+- **8-10 Numbers**: High payouts but much lower odds of hitting multiple picks.
+
+### Conclusion:
+- **Low-Risk Strategy**: Ideal for consistent, small profits and minimal risk.
+- **Moderate-Risk Strategy**: Balanced approach for steady gains over time.
+- **High-Risk Strategy**: Suited for those chasing big payouts with higher volatility tolerance.
+- **Martingale**: Effective for loss recovery in low-risk setups but requires strict limits.
+- **Paroli**: Excellent for leveraging winning streaks with moderate-risk settings.
+
+By applying these strategies and carefully managing your bankroll, you can enhance your chances of success and enjoy Keno games more effectively.
+
+
+### Stake Originals Game Strategies
+
+#### Dice
+Dice is one of the most popular Stake Originals games. It offers simplicity with customizable betting parameters.
+- **Strategy**: Use the Legendary Dice Strat detailed earlier for maximum effectiveness.
+
+#### Plinko
+Plinko is a game of chance where balls drop into slots with various multipliers.
+- **Strategy**: Start with medium risk and 12 rows as outlined in the $1 to $100 Stake Strategy.
+
+#### Mines
+Mines is a grid-based game where you avoid hidden mines to win.
+- **Strategy**: Use low to medium-risk strategies by cashing out after clearing 3-5 tiles.
+
+#### Limbo
+Limbo is a high-risk game where players predict the multiplier for their bets.
+- **Strategy**: Stick with a 3x target multiplier and cautious betting, as highlighted in earlier strategies.
+
+#### Crash
+Crash is an intense multiplayer game where the multiplier increases until it crashes.
+- **Strategy**: Cash out consistently at 2x to balance risk and reward.
+
+#### Keno
+Keno is a number-based game where players pick numbers to match the draw.
+- **Strategy**: Follow the detailed Keno strategies for low, moderate, and high-risk gameplay.
+
+#### Wheel
+Wheel is a spinning game where players bet on the segment outcomes.
+- **Strategy**: Bet on safer segments with lower multipliers to secure steady wins.
+
+#### Hilo
+Hilo is a card-based game where players predict whether the next card is higher or lower.
+- **Strategy**: Predict based on probability and adjust your bet size cautiously after losses.
+
+---
+These strategies are tailored to balance risk and reward while maximizing profits across Stake Originals games.
