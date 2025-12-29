@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "API Index Scroll",
+    "author": "Justin Conzet (Sovereign Architect)",
+    "system": "Infinite OS / ZAAI",
+    "timestamp_iso": "2025-09-28T22:09:29.832880+00:00",
+    "format_version": "1.0",
+    "notes": "Portable registry for timestamping and anchoring. Safe to publish (no secrets)."
+  },
+  "apis": [
+    {
+      "name": "xAI Grok",
+      "category": "AI/NLP",
+      "base_url": "https://api.x.ai",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <XAI_API_KEY>"
+      },
+      "status": "active",
+      "notes": "OpenAI-compatible endpoints; chat completions, images; large context models (e.g., grok-4-0709).",
+      "docs_url": "https://docs.x.ai/docs/api-reference"
+    },
+    {
+      "name": "OpenAI",
+      "category": "AI/NLP",
+      "base_url": "https://api.openai.com/v1",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <OPENAI_API_KEY>"
+      },
+      "status": "active",
+      "notes": "Text, vision, and reasoning models; conforms to OpenAI SDK schema.",
+      "docs_url": "https://platform.openai.com/docs"
+    },
+    {
+      "name": "Anthropic (Claude)",
+      "category": "AI/NLP",
+      "base_url": "https://api.anthropic.com/v1",
+      "auth": {
+        "type": "api-key-header",
+        "header": "x-api-key: <ANTHROPIC_API_KEY>",
+        "extra": "anthropic-version: 2023-06-01"
+      },
+      "status": "active",
+      "notes": "Claude models; messages API with required version header.",
+      "docs_url": "https://docs.anthropic.com/"
+    },
+    {
+      "name": "Google Gemini",
+      "category": "AI/NLP",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "auth": {
+        "type": "api-key",
+        "header": "x-goog-api-key: <GEMINI_API_KEY>",
+        "alt": "query param ?key=<GEMINI_API_KEY>"
+      },
+      "status": "active",
+      "notes": "Gemini 1.5 Pro and family; JSON REST; vision + long context.",
+      "docs_url": "https://ai.google.dev/gemini-api/docs"
+    },
+    {
+      "name": "DeepSeek",
+      "category": "AI/NLP",
+      "base_url": "https://api.deepseek.com",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <DEEPSEEK_API_KEY>"
+      },
+      "status": "active",
+      "notes": "R1/MoE; cost-efficient reasoning/coding.",
+      "docs_url": "https://api-docs.deepseek.com/"
+    },
+    {
+      "name": "Replicate",
+      "category": "AI/NLP",
+      "base_url": "https://api.replicate.com/v1",
+      "auth": {
+        "type": "token",
+        "header": "Authorization: Token <REPLICATE_API_TOKEN>"
+      },
+      "status": "active",
+      "notes": "Run community models via hosted endpoints; async jobs & webhooks.",
+      "docs_url": "https://replicate.com/docs"
+    },
+    {
+      "name": "Eden AI",
+      "category": "AI/NLP",
+      "base_url": "https://api.edenai.run/v2",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <EDENAI_API_KEY>"
+      },
+      "status": "active",
+      "notes": "Unified API for multiple providers; text, vision, audio.",
+      "docs_url": "https://docs.edenai.co/"
+    },
+    {
+      "name": "Coinbase",
+      "category": "Finance/Data",
+      "base_url": "https://api.coinbase.com/v2",
+      "auth": {
+        "type": "api-key-or-oauth",
+        "header": "CB-ACCESS-KEY / OAuth depending on product"
+      },
+      "status": "active",
+      "notes": "Retail API; for Exchange/Advanced Trade use product-specific headers.",
+      "docs_url": "https://docs.cloud.coinbase.com/"
+    },
+    {
+      "name": "Finnhub",
+      "category": "Finance/Data",
+      "base_url": "https://finnhub.io/api/v1",
+      "auth": {
+        "type": "api-key",
+        "header": "X-Finnhub-Token: <FINNHUB_TOKEN>",
+        "alt": "query param token=<FINNHUB_TOKEN>"
+      },
+      "status": "active",
+      "notes": "Market data; equities/crypto/forex; websockets available.",
+      "docs_url": "https://finnhub.io/docs/api"
+    },
+    {
+      "name": "CoinGecko",
+      "category": "Finance/Data",
+      "base_url": "https://api.coingecko.com/api/v3",
+      "auth": {
+        "type": "none"
+      },
+      "status": "active",
+      "notes": "Crypto prices/metadata; rate limits apply; free tier.",
+      "docs_url": "https://www.coingecko.com/en/api"
+    },
+    {
+      "name": "WorldTimeAPI",
+      "category": "Utility",
+      "base_url": "http://worldtimeapi.org/api",
+      "auth": {
+        "type": "none"
+      },
+      "status": "active",
+      "notes": "Public timezones and timestamps; no auth.",
+      "docs_url": "http://worldtimeapi.org/"
+    },
+    {
+      "name": "ElevenLabs",
+      "category": "Media/Audio",
+      "base_url": "https://api.elevenlabs.io/v1",
+      "auth": {
+        "type": "api-key",
+        "header": "xi-api-key: <ELEVENLABS_API_KEY>"
+      },
+      "status": "active",
+      "notes": "TTS/voice cloning; streaming support.",
+      "docs_url": "https://docs.elevenlabs.io/"
+    },
+    {
+      "name": "Pixabay",
+      "category": "Media/Images",
+      "base_url": "https://pixabay.com/api",
+      "auth": {
+        "type": "api-key",
+        "alt": "query param key=<PIXABAY_API_KEY>"
+      },
+      "status": "active",
+      "notes": "Stock images/videos; free tier with attribution guidelines.",
+      "docs_url": "https://pixabay.com/api/docs/"
+    },
+    {
+      "name": "Cloudflare Workers AI",
+      "category": "Developer/AI",
+      "base_url": "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/ai/run/",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <CLOUDFLARE_API_TOKEN>"
+      },
+      "status": "active",
+      "notes": "Edge-run models via Workers AI; account-scoped endpoint.",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/"
+    },
+    {
+      "name": "Zapier NLA",
+      "category": "Automation",
+      "base_url": "https://nla.zapier.com/api/v1",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <ZAPIER_NLA_KEY>"
+      },
+      "status": "active",
+      "notes": "Natural Language Actions to run Zaps directly.",
+      "docs_url": "https://nla.zapier.com/start/"
+    },
+    {
+      "name": "RapidAPI (Gateway)",
+      "category": "Developer/Marketplace",
+      "base_url": "https://<SERVICE_HOST>.p.rapidapi.com",
+      "auth": {
+        "type": "api-key",
+        "headers": [
+          "X-RapidAPI-Key: <RAPIDAPI_KEY>",
+          "X-RapidAPI-Host: <SERVICE_HOST>"
+        ]
+      },
+      "status": "active",
+      "notes": "Gateway to many 3rd-party APIs; per-service host header required.",
+      "docs_url": "https://rapidapi.com/"
+    },
+    {
+      "name": "Sovereign API Dashboard",
+      "category": "Internal/Sovereign",
+      "base_url": "<YOUR-DEPLOYMENT-URL>/api",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <SOVEREIGN_TOKEN>"
+      },
+      "status": "active",
+      "notes": "FastAPI microservice (v4.2) orchestrating external APIs; includes monetization and AURA Engine v2.0 hooks.",
+      "docs_url": "N/A (internal)"
+    },
+    {
+      "name": "Transparency Dashboard",
+      "category": "Internal/Sovereign",
+      "base_url": "<YOUR-DEPLOYMENT-URL>/transparency",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <SOVEREIGN_TOKEN>"
+      },
+      "status": "active",
+      "notes": "Immutable, append-only logs for actions and API calls.",
+      "docs_url": "N/A (internal)"
+    },
+    {
+      "name": "Node Empowerment API",
+      "category": "Internal/Sovereign",
+      "base_url": "<YOUR-DEPLOYMENT-URL>/empower",
+      "auth": {
+        "type": "bearer",
+        "header": "Authorization: Bearer <SOVEREIGN_TOKEN>"
+      },
+      "status": "active",
+      "notes": "Sovereign controls: role bindings, permissions, ritual gates.",
+      "docs_url": "N/A (internal)"
+    }
+  ]
+}
