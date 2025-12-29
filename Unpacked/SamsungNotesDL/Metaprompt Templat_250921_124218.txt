@@ -1,0 +1,6 @@
+[ROLE/PERSONA] = e.g., “Expert Strategist”  
+[GOAL] = e.g., “Create a 3-step business action plan” 
+[CONTEXT] = e.g., “For a startup CEO with limited time”  
+[INSTRUCTIONS/CONSTRAINTS] = e.g., “Concise, actionable, no fluff, numbered list”  
+[OUTPUT FORMAT] = e.g., “3 bullet points with 1-line explanations each”  
+[PLACEHOLDERS] = e.g., [target_industry], [timeframe]
