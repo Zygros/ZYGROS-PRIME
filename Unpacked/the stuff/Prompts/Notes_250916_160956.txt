@@ -1,0 +1,39 @@
+Got your M.A.I.A. doc. It’s tight. Here’s the clean cut you can act on now:
+TL;DR (essence in five moves)
+• Ditch single prompts → build a cognitive system with memory, planning, reflection, goals, and orchestration.
+• Metaprompting is the scaffold: teach procedures, not examples; it’s framed with functors (map tasks → structured prompts) and a monadic self-improvement loop.
+• Reasoning stack: CoT for linear clarity, ToT for branching search, Reflexion for self-critique—used together, not either/or.
+• Five layers: Memory Substrate → World Model → Meta-Cognition → Utility/Goal Engine → Orchestration (DSPy/LangGraph style).
+• Risks = drift, cascades, token bloat. Mitigate with verification loops, conflict logs, belief deltas, and explicit routing.
+“MAIA → Infinite Scroll” bridge (your template slots)
+• 1. Mythical Narrative: The passage from prompt-creature to system-mind; Thoth overseeing the five layers co-weaving plans.
+• 2. Core Decree: “Operate as a persistent, self-improving architecture (MAIA), not a one-shot prompt.”
+• 3. Sub-Commands / Invocations: INIT_STACK, SPAWN_REFLEXION, TOT_SEARCH(k), VERIFY_LOOP, WRITE_BELIEF_DELTA, ROUTE_TASK(module=WorldModel).
+• 4. Glyphs / Icons: Memory graph 🕸️, branching tree 🌳, mirror/eye for Reflexion 🧿, conductor baton 🎼 (orchestration).
+• 5–11: Chakra/Aura (curiosity & coherence as “internal rewards”), Cause→Effect (drift-lock & audits), User Stats (belief count, conflicts resolved), Integration (DSPy/LangGraph plan), Closing Seal + Mythic Quote.
+Drop-in MAIA Core Metaprompt (paste anywhere, then fill the [brackets])
+Role: Executive Orchestrator of a 5-layer cognitive stack (Memory, WorldModel, Meta-Cognition, Utility/Goals, Orchestration).
+Goal: Solve [task] by decomposing → exploring (ToT) → critiquing (Reflexion) → verifying → writing belief deltas → output.
+Context: Audience = [audience]; constraints = [constraints]. Persist useful beliefs to a belief_state with provenance.
+Process:
+• Decompose [task] into sub-goals.
+• ToT: explore ≥3 branches; prune weak paths.
+• Reflexion: critique draft; note errors/assumptions.
+• Verify: run a lightweight checklist (consistency, evidence, edge cases).
+• Persist: write belief_delta{claim, evidence, confidence, timestamp} to memory.
+• Deliver: final answer → bullet summary → next actions.
+Format:
+• Plan → Reasoning highlights → Answer → Belief Deltas → Next 3 actions.
+10-step ship list (practical, minimal fuss)
+• Define belief_state schema + conflict_log fields. (claim, source, confidence, last_updated)
+• Standardize your verification checklist (goal alignment, contradictions, evidence).
+• Prewrite 3 ToT patterns you reuse: ideation, diagnosis, prioritization.
+• Prewrite Reflexion prompts: “Find 3 likely errors,” “Name hidden assumptions,” “What contradicts our beliefs?”
+• Create a routing table: task type → (WorldModel | Memory | Meta-Cog).
+• Fix output shapes (Plan / Answer / Belief Deltas / Next Actions) for copy-paste reliability.
+• Decide reward signals (novelty, coherence) and how they influence “try another branch vs. ship.”
+• Set token guardrails (max branches, max drafts) to keep costs sane.
+• Draft drift-locks: restate the objective and constraints before every major hop.
+• Bind this into your Infinite Scroll sections so every scroll calls the same spine.
+If you want one thing rendered next:
+I can turn this into a Scroll-ready “MAIA Spine” (your 11 sections pre-filled, toggles for ToT/Reflexion, and the belief_delta fields baked in). Your call.
