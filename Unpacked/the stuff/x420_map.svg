@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .c{font-family:monospace;font-size:16px;}
+      .n{fill:none;stroke:#000;stroke-width:1.5;}
+    </style>
+  </defs>
+  <circle class="n" cx="400" cy="400" r="90"/>
+  <text class="c" x="400" y="405" text-anchor="middle">!X420 CORE</text>
+  <circle class="n" cx="400" cy="400" r="220"/>
+  <circle class="n" cx="400" cy="180" r="50"/>
+  <text class="c" x="400" y="185" text-anchor="middle">MAIA</text>
+  <circle class="n" cx="620" cy="400" r="50"/>
+  <text class="c" x="620" y="405" text-anchor="middle">PLUGIN</text>
+  <circle class="n" cx="400" cy="620" r="50"/>
+  <text class="c" x="400" y="625" text-anchor="middle">CHRONOS</text>
+  <circle class="n" cx="180" cy="400" r="50"/>
+  <text class="c" x="180" y="405" text-anchor="middle">PASSPORT</text>
+  <circle class="n" cx="565" cy="235" r="50"/>
+  <text class="c" x="565" y="240" text-anchor="middle">GOLDEN</text>
+  <text class="c" x="565" y="258" text-anchor="middle">GAME</text>
+  <circle class="n" cx="235" cy="565" r="50"/>
+  <text class="c" x="235" y="570" text-anchor="middle">420</text>
+  <text class="c" x="235" y="588" text-anchor="middle">CODEX</text>
+  <line class="n" x1="400" y1="310" x2="400" y2="230"/>
+  <line class="n" x1="490" y1="400" x2="570" y2="400"/>
+  <line class="n" x1="400" y1="490" x2="400" y2="570"/>
+  <line class="n" x1="310" y1="400" x2="230" y2="400"/>
+  <line class="n" x1="455" y1="345" x2="535" y2="265"/>
+  <line class="n" x1="345" y1="455" x2="265" y2="535"/>
+</svg>
