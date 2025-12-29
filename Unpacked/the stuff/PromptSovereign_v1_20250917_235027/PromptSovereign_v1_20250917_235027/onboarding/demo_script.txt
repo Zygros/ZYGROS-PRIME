@@ -1,0 +1,4 @@
+90-Second Demo Script (Prompt Sovereign)
+- Hook (10s): What it is, who it’s for.
+- Show (45s): open a prompt, generate result; show one agent JSON.
+- Close (30s): pricing tiers, link, guarantee.
