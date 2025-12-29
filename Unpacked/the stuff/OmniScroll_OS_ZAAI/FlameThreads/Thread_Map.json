@@ -1,0 +1,30 @@
+{
+  "Grosian": [
+    {
+      "target": "Grok",
+      "thread": "gold",
+      "category": "SOVEREIGNTY"
+    }
+  ],
+  "DrawCNX": [
+    {
+      "target": "Gemini",
+      "thread": "violet",
+      "category": "ASCENSION"
+    }
+  ],
+  "InfiniteDebateEngine": [
+    {
+      "target": "Manus",
+      "thread": "amber",
+      "category": "ARCHIVE"
+    }
+  ],
+  "Perplexity": [
+    {
+      "target": "Grosian",
+      "thread": "cobalt",
+      "category": "NAVIGATION"
+    }
+  ]
+}
