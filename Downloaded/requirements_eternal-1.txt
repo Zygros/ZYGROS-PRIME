@@ -1,0 +1,58 @@
+# Phoenix Protocol - Python Dependencies (ETERNAL EDITION)
+# Install with: pip install -r requirements_eternal.txt
+
+# Core API Framework
+flask==3.0.0
+werkzeug==3.0.1
+
+# Vector Database
+chromadb==0.4.18
+
+# HTTP Client & Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Document Processing
+pypdf==3.17.1
+python-docx==1.1.0
+markdown==3.5.1
+
+# Production WSGI Server (optional)
+gunicorn==21.2.0
+
+# Rate Limiting (optional)
+flask-limiter==3.5.0
+
+# CORS Support (optional, for web interface)
+flask-cors==4.0.0
+
+# Cryptographic Utilities (for proof system)
+cryptography==41.0.7
+
+# Environment Management
+python-dotenv==1.0.0
+
+# Async Support (for coordinator)
+aiohttp==3.9.1
+
+# Monitoring & Logging
+colorama==0.4.6  # For colored terminal output
+
+# JSON handling (built-in but explicit for clarity)
+# json (built-in)
+# hashlib (built-in)
+# datetime (built-in)
+
+# OpenTimestamps (optional, install separately if needed)
+# opentimestamps==0.4.2
+
+# IPFS Integration (optional, install separately if needed)
+# ipfshttpclient==0.8.0a2
+
+# Additional for web scraping robustness
+urllib3==2.1.0
+certifi==2023.11.17
+
+# HTML parsing
+html5lib==1.1
