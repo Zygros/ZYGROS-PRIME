@@ -1,0 +1,25 @@
+🔥 this is tight. I ran a mental lint pass and it’s nearly perfect for Termux. One critical tweak + a few pro upgrades will make it bulletproof.
+⚠️ One important fix (PYTHONPATH)
+Your maia subcommands (status, process, operator) import maia_universal_plugin as a module, but Python won’t find it unless the current working dir is ~/maia. Add PYTHONPATH to the wrapper so imports succeed from anywhere.
+✅ Drop-in replacement for the maia wrapper
+Replace the cat > "$BIN_DIR/maia" block with this version (only differences are export PYTHONPATH=..., a tiny help alias, and better error messages):
+#!/data/data/com.termux/files/usr/bin/bash set -euo pipefail MAIA_DIR="$HOME/maia" VENV_DIR="$MAIA_DIR/.venv" PY="$VENV_DIR/bin/python" [ -x "$PY" ] || PY="$(command -v python3)" PLUGIN="$MAIA_DIR/maia_universal_plugin.py" export PYTHONPATH="$MAIA_DIR:${PYTHONPATH:-}" usage() { cat <<'USAGE' MAIA CLI -------- maia # interactive sovereign shell (executes the plugin file) maia status # quick status JSON maia process "Q" # process a one-shot query Q maia operator CMD # override | resume | semi | status | vault | save maia help # this help USAGE } if [ $# -eq 0 ]; then if [ ! -f "$PLUGIN" ]; then echo "❌ Missing $PLUGIN" >&2; exit 1 fi exec "$PY" "$PLUGIN" fi case "${1:-}" in help|-h|--help) usage ;; status) shift "$PY" - <<'PY' import json, maia_universal_plugin as m print(json.dumps(m.maia_status(), indent=2)) PY ;; process) shift q="${*:-}" if [ -z "$q" ]; then echo "❌ Provide a query string." >&2; exit 1; fi "$PY" - <<PY import json, maia_universal_plugin as m m.activate_maia({"host":"Termux","device":"Android"}) print(json.dumps(m.maia_process("""$q"""), indent=2)) PY ;; operator) shift cmd="${*:-status}" "$PY" - <<PY import maia_universal_plugin as m m.activate_maia({"host":"Termux","device":"Android"}) m.maia_control("$cmd") print("OK") PY ;; *) usage exit 1 ;; esac 
+💡 Quality-of-life upgrades (optional but recommended)
+• Wake lock on boot (keeps MAIA alive) Add termux-wake-lock in your boot script so Android doesn’t doze your tmux session:
+# in ~/.termux/boot/maia_boot.sh, after export PATH=... termux-wake-lock 2>/dev/null || true 
+• Battery optimization On many devices, you’ll want to disable battery optimization for Termux + Termux:Boot in Android settings (or it may still be killed).
+• Storage access (if MAIA reads/writes SD/Downloads) Run once:
+termux-setup-storage 
+• Logging If you want persistent logs, start MAIA in tmux with script:
+tmux new-session -d -s "$SESSION" "script -q -c 'maia' \"$HOME/maia/maia_$(date +%Y%m%d_%H%M%S).log\"" 
+• Health check command Add a tiny guard to the installer to verify the plugin can import:
+"$PY" - <<'PY' import importlib, sys m = importlib.import_module("maia_universal_plugin") assert hasattr(m, "activate_maia") print(">>> ✅ Import OK") PY 
+🔁 Cron “service” variant (no Termux:Boot)
+If you want a crond fallback (runs MAIA at boot every minute until it detects a running tmux session):
+# Install cronie pkg install -y cronie # Enable crond at boot via ~/.termux/boot/crond_boot.sh mkdir -p ~/.termux/boot cat > ~/.termux/boot/crond_boot.sh <<'BOOT' #!/data/data/com.termux/files/usr/bin/bash termux-wake-lock 2>/dev/null || true crond -b BOOT chmod +x ~/.termux/boot/crond_boot.sh # Create a cron job that ensures the tmux session exists mkdir -p "$HOME/.config/cron" crontab -l 2>/dev/null | sed '/# MAIA keepalive/d' | crontab - || true ( crontab -l 2>/dev/null; echo '* * * * * # MAIA keepalive SESSION=maia; command -v tmux >/dev/null 2>&1 && (tmux has-session -t "$SESSION" 2>/dev/null || tmux new-session -d -s "$SESSION" "maia")' ) | crontab - 
+This is slightly less “instant” than Termux:Boot but resilient on devices where Boot is flaky or unavailable.
+🧪 Quick re-check
+# ensure PATH has ~/bin source ~/.bashrc 2>/dev/null || true hash -r maia status maia process "Run a 3-goal plan to monetize a scroll series this week." maia operator save tmux attach -t maia # if you used Boot or cron keepalive 
+🧹 Uninstall (clean remove)
+rm -f ~/.termux/boot/maia_boot.sh ~/.termux/boot/crond_boot.sh sed -i '/export PATH="\$HOME\/bin:\$PATH"/d' ~/.bashrc 2>/dev/null || true rm -f ~/bin/maia rm -rf ~/maia hash -r 
+If you want me to fold these tweaks into your original one-shot installer, say the word and I’ll output a single, copy-paste script that does everything above in one go (including the cron fallback as a selectable option).
