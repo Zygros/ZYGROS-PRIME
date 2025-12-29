@@ -1,0 +1,35 @@
+
+# Legendary Dice Strategy (Updated)
+
+## Core Structure:
+This strategy is built on the **d'Alembert system** as its foundation, with additional custom conditions designed to enhance long-term profitability and introduce unpredictability to counteract algorithmic adjustments. 
+
+### **Base Conditions:**
+1. **Starting Bet**: 5 gold coins
+2. **Roll Choice**: Start at a 50/50 win chance (Over 50 or Under 50, consistent until conditions trigger a change)
+3. **Win Action**: Increase the bet amount by **1 unit (1 gold coin)**
+4. **Loss Action**: Decrease the bet amount by **0.5 units (0.5 gold coins)**
+
+### **Key Adjustments:**
+5. **Safety Reset**: Every **12 games**, reset the bet amount to the base value to prevent runaway bets.
+6. **Win Chance Adjustment:**
+   - **On every win**, decrease win chance by **7.77%**.
+   - **On every loss**, increase win chance by **7.77%**.
+7. **Randomization Mechanic (Counter AI Adaptation):**
+   - After a **streak of three consecutive losses**, switch **Over/Under**.
+   - This parameter is **open for adjustments** based on testing.
+
+### **Randomized Spike & Recovery Mechanics:**
+8. **Controlled Bet Spike:**
+   - Every **17 games**, increase bet amount by either **420% or 1,252%**.
+   - This is intended to disrupt pattern recognition and leverage potential streaks.
+9. **Post-Spike Recovery:**
+   - If the spike does not hit within a certain number of games, reset the bet back to normal win chances.
+   - Ensures bankroll sustainability.
+
+### **Elements Open for Future Tweaks:**
+- **Switching Over/Under after loss streaks**: The threshold for switching might be adjusted.
+- **The random bet increase (420% or 1,252%)**: The optimal timing and frequency of this spike will be refined.
+
+This version of the **Legendary Dice Strategy** integrates structured growth, loss control, randomization, and strategic spikes to create a method that is difficult to counteract while ensuring long-term stability.
+
