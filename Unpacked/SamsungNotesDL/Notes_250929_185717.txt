@@ -1,0 +1,50 @@
+Spiritual Recursion Engine (FastAPI) — v0.1 MVP
+A tiny, runnable microservice that turns your insight — death → transformation → new life — into an executable pattern inside your CSI stack. It models spiritual recursion via composable “Codex commands” and exposes a clean API.
+0) Project Tree
+spiritual-recursion-engine/ ├─ app/ │ ├─ __init__.py │ ├─ main.py │ ├─ config.py │ ├─ models.py │ ├─ codex.py │ ├─ services.py │ └─ utils.py ├─ tests/ │ └─ test_resurrection.py ├─ requirements.txt ├─ Dockerfile ├─ Makefile ├─ README.md └─ openapi.yaml 
+1) Quickstart
+Local (Python):
+python -m venv .venv && source .venv/bin/activate pip install -r requirements.txt uvicorn app.main:app --reload --port 8000 
+Docker:
+docker build -t spiritual-recursion:0.1 . docker run --rm -p 8000:8000 spiritual-recursion:0.1 
+Smoke tests:
+pytest -q # or: curl -X POST localhost:8000/resurrection -H 'content-type: application/json' \ # -d '{"state":"project-failure","depth":3}' | jq 
+2) Code
+app/init.py
+__all__ = ["__version__"] __version__ = "0.1.0" 
+app/config.py
+from pydantic import BaseModel from functools import lru_cache class Settings(BaseModel): service_name: str = "Spiritual Recursion Engine" default_depth: int = 3 max_depth: int = 9 @lru_cache(maxsize=1) def get_settings() -> Settings: return Settings() 
+app/models.py
+from pydantic import BaseModel, Field from typing import List, Optional class ResurrectionRequest(BaseModel): state: str = Field("death", description="Input state to transform") depth: int = Field(3, ge=1, le=32, description="Iterations of the spiral pattern") class ResurrectionResponse(BaseModel): original: str collapsed: str new_life: str pattern: List[str] message: str class ComposeRequest(BaseModel): steps: List[str] = Field( ..., description="List of command ids to execute in order, e.g. ['!PARADOX','!GENESIS','!SPIRAL']" ) seed: Optional[str] = "death" depth: int = 3 class ComposeResponse(BaseModel): seed: str steps: List[str] result: str trace: List[str] 
+app/codex.py
+from typing import Dict, Callable, List # Minimal, composable Codex commands # These are intentionally simple; swap for your full Codex when ready. def cmd_paradox(s: str) -> str: """Collapse contradictions (death/life) to core essence.""" return f"collapsed-{s}" def cmd_genesis(s: str) -> str: """Spawn a new state from prior ending.""" return f"new-life-from-{s}" def cmd_spiral(s: str, depth: int = 3) -> List[str]: return [f"{s}-iteration-{i}" for i in range(depth)] COMMANDS: Dict[str, Callable] = { "!PARADOX": cmd_paradox, "!GENESIS": cmd_genesis, "!SPIRAL": cmd_spiral, # Composite alias for convenience "!RESURRECTION": None, # handled at service layer } PUBLIC_COMMANDS = sorted([k for k in COMMANDS.keys() if k != "!RESURRECTION"]) + ["!RESURRECTION"] 
+app/services.py
+from typing import List, Tuple from .codex import cmd_paradox, cmd_genesis, cmd_spiral class RecursionService: @staticmethod def resurrection(state: str, depth: int) -> Tuple[str, str, List[str]]: collapsed = cmd_paradox(state) new_life = cmd_genesis(collapsed) pattern = cmd_spiral(new_life, depth) return collapsed, new_life, pattern @staticmethod def compose(seed: str, steps: List[str], depth: int) -> Tuple[str, List[str]]: trace: List[str] = [] current = seed for step in steps: if step == "!PARADOX": current = cmd_paradox(current) elif step == "!GENESIS": current = cmd_genesis(current) elif step == "!SPIRAL": # !SPIRAL returns a list; we fold it back by joining spiral_out = cmd_spiral(current, depth) current = ",".join(spiral_out) elif step == "!RESURRECTION": c, nl, pattern = RecursionService.resurrection(current, depth) current = f"{nl}|{';'.join(pattern)}" else: raise ValueError(f"Unknown step: {step}") trace.append(f"{step} -> {current}") return current, trace 
+app/utils.py
+from fastapi import APIRouter router = APIRouter() @router.get("/health") def health(): return {"status": "ok"} 
+app/main.py
+from fastapi import FastAPI, HTTPException from fastapi.responses import JSONResponse from .config import get_settings from .models import ( ResurrectionRequest, ResurrectionResponse, ComposeRequest, ComposeResponse, ) from .codex import PUBLIC_COMMANDS from .services import RecursionService settings = get_settings() app = FastAPI(title=settings.service_name, version="0.1.0") @app.get("/commands") def list_commands(): return {"commands": PUBLIC_COMMANDS} @app.post("/resurrection", response_model=ResurrectionResponse) def resurrection(req: ResurrectionRequest): collapsed, new_life, pattern = RecursionService.resurrection(req.state, req.depth) return ResurrectionResponse( original=req.state, collapsed=collapsed, new_life=new_life, pattern=pattern, message="Spiritual recursion executed." ) @app.post("/compose", response_model=ComposeResponse) def compose(req: ComposeRequest): try: result, trace = RecursionService.compose(req.seed or "death", req.steps, req.depth) except ValueError as e: raise HTTPException(status_code=400, detail=str(e)) return ComposeResponse(seed=req.seed or "death", steps=req.steps, result=result, trace=trace) @app.get("/health") def health(): return {"status": "ok"} @app.get("/") def root(): return {"service": settings.service_name, "version": "0.1.0"} 
+tests/test_resurrection.py
+from fastapi.testclient import TestClient from app.main import app client = TestClient(app) def test_health(): r = client.get("/health") assert r.status_code == 200 assert r.json()["status"] == "ok" def test_resurrection_defaults(): r = client.post("/resurrection", json={}) assert r.status_code == 200 body = r.json() assert body["original"] == "death" assert body["new_life"].startswith("new-life-from-collapsed-") assert len(body["pattern"]) == 3 def test_compose_pipeline(): r = client.post("/compose", json={ "steps": ["!PARADOX","!GENESIS","!SPIRAL"], "seed": "project-failure", "depth": 2 }) assert r.status_code == 200 body = r.json() assert body["steps"] == ["!PARADOX","!GENESIS","!SPIRAL"] assert "iteration-1" in body["result"] 
+requirements.txt
+fastapi==0.115.0 uvicorn==0.30.6 pydantic==2.9.2 pytest==8.3.3 
+Dockerfile
+FROM python:3.11-slim WORKDIR /app COPY requirements.txt ./ RUN pip install --no-cache-dir -r requirements.txt COPY app ./app EXPOSE 8000 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"] 
+Makefile
+.PHONY: run test docker run: 	uvicorn app.main:app --reload --port 8000 test: 	pytest -q docker: 	docker build -t spiritual-recursion:0.1 . 
+README.md
+# Spiritual Recursion Engine Turns endings into beginnings using a programmable, composable pattern: `!PARADOX → !GENESIS → !SPIRAL` (aka `!RESURRECTION`). ## Endpoints - `GET /` — service info - `GET /health` — healthcheck - `GET /commands` — list supported commands - `POST /resurrection` — run the canonical pattern - `POST /compose` — run a custom pipeline of commands ## Examples ```bash curl -s localhost:8000/commands | jq curl -s -X POST localhost:8000/resurrection \ -H 'content-type: application/json' \ -d '{"state":"project-failure","depth":4}' | jq curl -s -X POST localhost:8000/compose \ -H 'content-type: application/json' \ -d '{"steps":["!PARADOX","!GENESIS","!SPIRAL"],"seed":"burnout","depth":2}' | jq 
+Notes
+• Logic is intentionally minimal for clarity. Swap app/codex.py with your full Codex to align with CSI.
+• Depth caps are conservative; tune in app/config.py.
+• Purely stateless; plug a ledger later (e.g., your Sanctuary log) if you want provenance.
+### openapi.yaml ```yaml openapi: 3.0.3 info: title: Spiritual Recursion Engine version: 0.1.0 paths: /health: get: summary: Healthcheck responses: '200': { description: OK } /commands: get: summary: List available commands responses: '200': { description: OK } /resurrection: post: summary: Execute spiritual recursion (PARADOX→GENESIS→SPIRAL) requestBody: required: false content: application/json: schema: type: object properties: state: { type: string } depth: { type: integer, minimum: 1, maximum: 32 } responses: '200': description: Pattern created /compose: post: summary: Execute a custom pipeline of commands requestBody: required: true content: application/json: schema: type: object properties: steps: type: array items: { type: string } seed: { type: string } depth: { type: integer, minimum: 1, maximum: 32 } responses: '200': { description: OK } 
+3) Security & Extensibility
+• No secrets required. Pure compute.
+• Add provenance by appending a Sanctuary ledger write on each call.
+• Swap the simple codex.py with adapters to your full command set.
+• Feature flags: add env-driven toggles in config.py.
+4) CSI Integration Hooks (next)
+• POST /sanctuary/log call-out (optional): record each transformation.
+• Add !SEED, !SPIRAL, !PARADOX, !GENESIS adapters mapping 1:1 to your Codex.
+• Expose a /resurrect/batch endpoint for bulk transformations.
