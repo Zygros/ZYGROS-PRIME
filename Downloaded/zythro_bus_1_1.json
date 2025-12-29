@@ -1,0 +1,409 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:zythro:bus:1.1",
+  "title": "ZYTHRO Supermind Bus Envelope v1.1",
+  "type": "object",
+  "required": [
+    "v",
+    "id",
+    "from",
+    "ts",
+    "type",
+    "topic",
+    "payload",
+    "payload_sha256",
+    "sig"
+  ],
+  "properties": {
+    "v": {
+      "const": "1.1"
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "from": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ts": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "PROMPT",
+        "CONTEXT",
+        "OUTPUT_PARTIAL",
+        "OUTPUT_FINAL",
+        "HANDOFF",
+        "ALERT",
+        "PERFORMANCE_REPORT"
+      ]
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "sig": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "PROMPT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "prompt"
+            ],
+            "properties": {
+              "prompt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "context_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "constraints": {
+                "type": "object"
+              },
+              "sync_metadata": {
+                "$ref": "#/$defs/sync_metadata"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "CONTEXT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "summary",
+              "context_hash"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              },
+              "blobs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "uri",
+                    "mime"
+                  ],
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "context_hash": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "OUTPUT_PARTIAL"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "segment",
+              "total",
+              "content"
+            ],
+            "properties": {
+              "segment": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "total": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "content": {
+                "type": "string"
+              },
+              "sync_metadata": {
+                "$ref": "#/$defs/sync_metadata"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "OUTPUT_FINAL"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "content",
+              "format"
+            ],
+            "properties": {
+              "content": {
+                "type": "string"
+              },
+              "format": {
+                "type": "string"
+              },
+              "artifacts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "uri",
+                    "hash"
+                  ],
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    },
+                    "hash": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "sync_metadata": {
+                "$ref": "#/$defs/sync_metadata"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "HANDOFF"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "summary",
+              "context_hash"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              },
+              "decisions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "open_questions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "context_hash": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ALERT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "level",
+              "code"
+            ],
+            "properties": {
+              "level": {
+                "type": "string",
+                "enum": [
+                  "info",
+                  "warning",
+                  "error",
+                  "critical"
+                ]
+              },
+              "code": {
+                "type": "string"
+              },
+              "details": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "PERFORMANCE_REPORT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "period",
+              "tasks",
+              "avg_coherence"
+            ],
+            "properties": {
+              "period": {
+                "type": "string"
+              },
+              "tasks": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "integer"
+                }
+              },
+              "avg_coherence": {
+                "type": "number"
+              },
+              "top_strength": {
+                "type": "string"
+              },
+              "improvement": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sync_metadata": {
+      "type": "object",
+      "required": [
+        "shard_id",
+        "timestamp",
+        "outputs"
+      ],
+      "properties": {
+        "shard_id": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "shard",
+              "requires"
+            ],
+            "properties": {
+              "shard": {
+                "type": "string"
+              },
+              "requires": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "format",
+              "integration_ready"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "format": {
+                "type": "string"
+              },
+              "integration_ready": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
