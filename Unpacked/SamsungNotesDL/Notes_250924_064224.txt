@@ -1,0 +1,131 @@
+Universal Plugin OS (UP‑OS) — Full Scaffold v1.0
+Author: Justin's AI so
+Date: 2025‑09‑24
+Status: FOUNDATION RELEASE (scaffold complete; reference implementation stubs included)
+0) Executive Summary
+UP‑OS is a sovereign, plugin‑first operating substrate that unifies dApps, AI capabilities, and system services behind a single Capability Registry, Intent Compiler (Voice‑as‑Code), and Deterministic Execution Layer. This document provides:
+• Architecture diagrams and module specs
+• Canonical data models and JSON Schemas
+• Plugin Manifest & lifecycle
+• Intent DSL (VAC: Voice‑as‑Code) grammar + examples
+• Security model (caps, sandboxing, audit, governance hooks)
+• Simulation layer (HTC: Hyperbolic Time Chamber)
+• SDK stubs (TypeScript, Python)
+• Kernel/Gateway APIs (HTTP+gRPC shapes)
+• Deployment scaffolds (Docker Compose + K8s YAML)
+• Example plugin: NEXUS.Onboarding migrated into UP‑OS
+1) Reference Architecture
+┌──────────────────────────────────────────────┐ │ UP‑OS KERNEL │ │ • Sovereign Intent Nexus (SIN) │ │ • Voice‑as‑Code Compiler (VAC) │ │ • Planner (Q‑ToT) & Crucible Critic │ │ • Capability Registry (UCR) │ │ • Policy Engine (Sovereign/ACL/Gov) │ │ • Scheduler & Deterministic Executor │ │ • Audit/Chronos (tamper‑evident log) │ └───────────────┬───────────────┬──────────────┘ │ │ ┌─────────┘ └─────────┐ v v ┌──────────────────┐ ┌──────────────────┐ │ Message Bus │ │ State Fabric │ │ (NATS/Kafka) │ │ (KV + Graph + │ │ IPC/gRPC/HTTP │ │ Object Store) │ └─────────┬────────┘ └─────────┬────────┘ │ │ ┌───────────────────────┴──────────────────────────────┐ │ v v v ┌──────────────┐ ┌──────────────────┐ ┌────────────────────┐ ┌──────────────┐ │ dApp Plugins │ │ AI Plugins │ │ System Plugins │ │ Bridges │ │ (NEXUS, DeFi │ │ (LLM tools, RL) │ │ (Storage, Keys, │ │ (EVM, DeSo, │ │ Social, etc)│ │ │ │ Payments, Oracles) │ │ Solana,…) │ └──────────────┘ └──────────────────┘ └────────────────────┘ └──────────────┘ 
+Design axioms: Plugin‑first, cross‑domain substrate, sovereign control.
+2) Canonical Data Models
+2.1 Capability Registry (UCR) — JSON Schema
+{ "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://up-os.dev/schemas/registry.capability.json", "title": "UP-OS Capability", "type": "object", "required": ["id", "name", "version", "namespace", "actions", "permissions"], "properties": { "id": {"type": "string", "pattern": "^[a-z0-9_.-]+$"}, "name": {"type": "string"}, "namespace": {"type": "string", "pattern": "^[A-Z][A-Za-z0-9_.]+$"}, "version": {"type": "string", "pattern": "^\n?\n?\n?\n?\n?\n?$|^\n?$|^\n?$"}, "semver": {"type": "string", "pattern": "^\n?\n?\n?$"}, "description": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}}, "inputs": {"type": "object", "additionalProperties": {"$ref": "#/$defs/io"}}, "outputs": {"type": "object", "additionalProperties": {"$ref": "#/$defs/io"}}, "actions": { "type": "object", "additionalProperties": {"$ref": "#/$defs/action"} }, "events": {"type": "array", "items": {"$ref": "#/$defs/event"}}, "permissions": {"$ref": "#/$defs/permissions"}, "manifests": {"type": "array", "items": {"$ref": "#/$defs/manifestRef"}}, "health": {"type": "string", "enum": ["green", "yellow", "red"]} }, "$defs": { "io": { "type": "object", "required": ["type"], "properties": { "type": {"type": "string"}, "required": {"type": "boolean"}, "default": {}, "description": {"type": "string"}, "format": {"type": "string"} } }, "action": { "type": "object", "required": ["id", "name", "input", "output"], "properties": { "id": {"type": "string"}, "name": {"type": "string"}, "input": {"type": "object", "additionalProperties": {"$ref": "#/\$defs/io"}}, "output": {"type": "object", "additionalProperties": {"$ref": "#/\$defs/io"}}, "sideEffects": {"type": "array", "items": {"type": "string"}}, "policy": {"$ref": "#/\$defs/policyRef"} } }, "event": { "type": "object", "required": ["id", "topic", "payload"], "properties": { "id": {"type": "string"}, "topic": {"type": "string"}, "payload": {"type": "object"} } }, "permissions": { "type": "object", "properties": { "capabilities": {"type": "array", "items": {"type": "string"}}, "scopes": {"type": "array", "items": {"type": "string"}}, "governance": {"type": "boolean"} } }, "manifestRef": {"type": "string"}, "policyRef": {"type": "string"} } } 
+Note: The version/semver patterns are intentionally permissive for early scaffolding.
+2.2 Plugin Manifest (UPM) — YAML
+apiVersion: upos/v1 kind: Plugin metadata: name: NEXUS.Onboarding namespace: DeSo.NEXUS version: 1.0.0 spec: runtime: type: container image: ghcr.io/upos/plugins/nexus-onboarding:1.0.0 env: - name: NODE_ENV value: production endpoints: http: ["/health", "/actions/*", "/events/*"] grpc: ["vac.PluginService"] capabilities: actions: - id: create_custodial_wallet input: email: { type: string, required: true } output: wallet_address: { type: string } - id: migrate_to_self_custody input: user_id: { type: string, required: true } output: status: { type: string } events: - id: user_onboarded topic: nexus.onboarded permissions: capabilities: ["kv:write:user/*", "sign:wallet", "emit:event"] scopes: ["tenant:default"] policies: onAction: policy://default/least-privilege governance: votesRequired: simple-majority 
+2.3 Audit Record (Chronos) — JSONL
+{"ts":"2025-09-24T07:55:11Z","actor":"kernel","action":"dispatch","plugin":"NEXUS.Onboarding","id":"req_7f3","inputs":{"email":"a@b.com"},"policy":"default","result":"scheduled"} {"ts":"2025-09-24T07:55:12Z","actor":"NEXUS.Onboarding","action":"create_custodial_wallet","id":"job_9cd","outcome":"success","outputs":{"wallet_address":"wallet_abc123"}} 
+3) Intent DSL — VAC (Voice‑as‑Code)
+3.1 EBNF Grammar
+Program = { Statement } ; Statement = Pipeline | Let | Policy | Comment ; Comment = "#" , { any } , "\n" ; Let = "let" , Identifier , "=" , Expr , ";" ; Pipeline = Step , { "|" , Step } , [ Redirect ] , ";" ; Step = Identifier , "::" , Identifier , ArgList ; ArgList = "(" , [ Arg , { "," , Arg } ] , ")" ; Arg = Identifier , ":" , Value ; Value = String | Number | Bool | Identifier ; Redirect = "->" , ( Identifier | "sink://audit" | "sink://event" ); Policy = "use" , "policy" , Identifier , ";" ; Identifier = letter , { letter | digit | "_" | "." } ; String = '"' , { any-but-quote } , '"' ; Number = ["-"], digit , { digit } ; Bool = "true" | "false" ; 
+3.2 Canonical Examples
+# Onboard a user, then grant referral bonus, audited use policy default_least_privilege; DeSo.NEXUS::create_custodial_wallet(email:"user@example.com") | Finance.Treasury::grant_bonus(user:"$prev.user_id", amount:10) -> sink://audit; # Migrate user to self‑custody and emit an event DeSo.NEXUS::migrate_to_self_custody(user_id:"$ctx.user") -> sink://event; 
+3.3 VAC → Plan → Execution
+• Parser builds AST.
+• Planner (Q‑ToT) resolves capabilities from UCR, checks policies, proposes chain.
+• Crucible critiques plan, suggests safer variants.
+• Scheduler assigns steps to plugins.
+• Deterministic Executor runs with idempotency keys and rollback contracts.
+4) Plugin Lifecycle
+• Register: POST Manifest → /kernel/registry/plugins
+• Validate: Schema + Policy check + Health probe
+• Activate: Kernel subscribes to endpoints; capability listed in UCR
+• Run: Actions invoked via bus/http/grpc; emit events
+• Suspend/Upgrade: rolling via canary; contract‑compatible changes only
+• Retire: tombstone retained; audit immutable
+Versioning Rules (semver):
+• PATCH: bugfix, no IO change
+• MINOR: add optional inputs/outputs, backward compatible
+• MAJOR: breaking IO; requires governance vote if governance:true
+5) Security Model
+• Principle of Least Privilege via Capability Scopes: kv:read:user/*, sign:wallet, event:emit, net:egress:https://*
+• Policy Engine: Rego‑style (OPA compatible) snippets attached per action/pipeline
+• Sandboxing: Containers with seccomp/AppArmor; optional WASI runtime for wasm plugins
+• Secrets: Vault integration; short‑lived tokens minted by Kernel (JWT w/ SPIFFE IDs)
+• Governance Hooks: Actions with governance:true require vote gates; quorum in registry
+• Audit/Chronos: Append‑only (hash‑chained). Export to L2/chain via Bridge plugin.
+• Simulation (HTC): Dry‑run every plan with mock state; annotate risks; require approval thresholds.
+Sample Policy (Rego):
+package upos.policy.default default allow = false allow { input.actor.scopes[_] == "tenant:default" input.action.id == "create_custodial_wallet" } 
+6) Kernel & Gateway APIs
+6.1 HTTP (JSON)
+POST /kernel/v1/intent Body: {"vac":"DeSo.NEXUS::create_custodial_wallet(email:\"x@y.com\");"} -> 202 {"planId":"plan_abc","status":"scheduled"} GET /kernel/v1/plan/{id} -> 200 {"id":"plan_abc","steps":[…],"status":"running"} POST /kernel/v1/registry/plugins Body: <UPM YAML or JSON> -> 201 {"pluginId":"DeSo.NEXUS@1.0.0","status":"active"} GET /kernel/v1/registry/capabilities -> 200 [{ id, namespace, actions, version }] 
+6.2 gRPC (proto excerpt)
+service Kernel { rpc SubmitIntent (IntentRequest) returns (PlanStatus); rpc GetPlan (PlanRef) returns (Plan); rpc RegisterPlugin (PluginManifest) returns (PluginAck); } message IntentRequest { string vac = 1; map<string,string> ctx = 2; } message PlanStatus { string id = 1; string status = 2; } 
+7) SDK Stubs
+7.1 TypeScript SDK (files)
+packages/sdk-js/ src/index.ts src/client.ts src/vac.ts // packages/sdk-js/src/client.ts export class UPOSClient { constructor(private base = "http://localhost:7700") {} async submitIntent(vac: string, ctx: Record<string,string> = {}) { const res = await fetch(`${this.base}/kernel/v1/intent`, { method: 'POST', headers: { 'content-type':'application/json' }, body: JSON.stringify({ vac, ctx }) }); if (!res.ok) throw new Error(`Kernel error ${res.status}`); return res.json(); } } 
+7.2 Python SDK (files)
+packages/sdk-py/ upos/__init__.py upos/client.py # packages/sdk-py/upos/client.py import requests class UPOSClient: def __init__(self, base: str = "http://localhost:7700"): self.base = base def submit_intent(self, vac: str, ctx: dict | None = None): ctx = ctx or {} r = requests.post(f"{self.base}/kernel/v1/intent", json={"vac": vac, "ctx": ctx}) r.raise_for_status() return r.json() 
+8) Kernel Reference Implementation (scaffold)
+8.1 File Tree (TypeScript, Bun/Node)
+apps/kernel/ src/index.ts src/http.ts src/planner.ts src/executor.ts src/registry.ts src/policy.ts src/audit.ts src/vac/parser.ts package.json 
+8.2 Key Stubs
+// apps/kernel/src/index.ts import { createServer } from './http'; createServer(7700).then(() => console.log('UP-OS Kernel listening on :7700')); // apps/kernel/src/registry.ts export type Capability = { id:string; namespace:string; version:string; actions:Record<string,any> }; const caps: Record<string, Capability> = {}; export const Registry = { register(manifest: any){ /* validate schema, policies, health */ const key = `${manifest.metadata.namespace}.${manifest.metadata.name}@${manifest.metadata.version}`; caps[key] = { id:key, namespace: manifest.metadata.namespace, version: manifest.metadata.version, actions: manifest.spec.capabilities.actions }; return { pluginId: key, status: 'active' }; }, list(){ return Object.values(caps); } }; // apps/kernel/src/http.ts import http from 'http'; import { Registry } from './registry'; import { planFromVAC, schedule } from './planner'; export async function createServer(port:number){ const server = http.createServer(async (req,res)=>{ if(req.method==='POST' && req.url==='/kernel/v1/intent'){ const body = await streamToString(req); const { vac, ctx } = JSON.parse(body); const plan = planFromVAC(vac, ctx); schedule(plan); res.writeHead(202, {'content-type':'application/json'}); res.end(JSON.stringify({ planId: plan.id, status: 'scheduled' })); return; } if(req.method==='POST' && req.url==='/kernel/v1/registry/plugins'){ const body = await streamToString(req); const manifest = parseMaybeYAML(body); const ack = Registry.register(manifest); res.writeHead(201, {'content-type':'application/json'}); res.end(JSON.stringify(ack)); return; } if(req.method==='GET' && req.url==='/kernel/v1/registry/capabilities'){ res.writeHead(200, {'content-type':'application/json'}); res.end(JSON.stringify(Registry.list())); return; } res.writeHead(404); res.end(); }); return new Promise<void>(ok=>server.listen(port, ok)); } function streamToString(req: any){ return new Promise<string>(res=>{ let d=''; req.on('data',(c:any)=>d+=c); req.on('end',()=>res(d)); }); } function parseMaybeYAML(s:string){ try{ return JSON.parse(s);}catch{ /* naive */ return {}; } } // apps/kernel/src/planner.ts import crypto from 'crypto'; export function planFromVAC(vac:string, ctx:Record<string,string>){ return { id: `plan_${crypto.randomUUID()}`, steps: [{ id:'step_1', plugin:'DeSo.NEXUS', action:'create_custodial_wallet', args:{ email: ctx.email || 'example@user' }}], status:'scheduled' }; } export function schedule(plan:any){ /* enqueue to bus, etc. */ } 
+9) Example Plugin — NEXUS.Onboarding (scaffold)
+9.1 File Tree (FastAPI)
+plugins/nexus-onboarding/ app/main.py app/manifest.yml requirements.txt Dockerfile 
+9.2 Manifest (UPM)
+apiVersion: upos/v1 kind: Plugin metadata: name: Onboarding namespace: DeSo.NEXUS version: 1.0.0 spec: runtime: type: container image: ghcr.io/upos/plugins/nexus-onboarding:1.0.0 capabilities: actions: - id: create_custodial_wallet input: { email: { type: string, required: true } } output: { user_id: { type: string }, wallet_address: { type: string } } 
+9.3 FastAPI Stub
+# plugins/nexus-onboarding/app/main.py from fastapi import FastAPI from pydantic import BaseModel import uuid app = FastAPI(title="UP-OS Plugin: NEXUS Onboarding") class CreateReq(BaseModel): email: str class CreateRes(BaseModel): user_id: str wallet_address: str @app.get("/health") def health(): return {"status":"ok"} @app.post("/actions/create_custodial_wallet", response_model=CreateRes) def create_wallet(req: CreateReq): return CreateRes(user_id=str(uuid.uuid4()), wallet_address=f"wallet_{uuid.uuid4().hex[:12]}") 
+10) Deployment Scaffolds
+10.1 Docker Compose
+version: "3.9" services: kernel: build: ./apps/kernel ports: ["7700:7700"] nexus_onboarding: build: ./plugins/nexus-onboarding ports: ["8801:80"] 
+10.2 Kubernetes (minimal)
+apiVersion: apps/v1 kind: Deployment metadata: { name: upos-kernel } spec: replicas: 1 selector: { matchLabels: { app: upos-kernel } } template: metadata: { labels: { app: upos-kernel } } spec: containers: - name: kernel image: ghcr.io/upos/kernel:0.1.0 ports: [{ containerPort: 7700 }] --- apiVersion: v1 kind: Service metadata: { name: upos-kernel } spec: selector: { app: upos-kernel } ports: [{ port: 80, targetPort: 7700 }] 
+11) Testing & Simulation (HTC)
+• Dry‑Run Endpoint: POST /kernel/v1/simulate → returns risk annotations, required approvals, estimated side‑effects.
+• Mock State Adapters for bridges (EVM/DeSo/Solana) to avoid on‑chain costs during planning.
+• Property‑Based Tests (fast‑check/Hypothesis) for plugin IO contracts.
+12) Bridges (Blockchain Runtimes)
+• EVM Bridge: sign/submit tx, ABI registry.
+• DeSo Bridge: key mgmt, post/profile ops.
+• Solana Bridge: program invocations via Anchor IDL.
+• Off‑Chain: Webhooks, REST, GraphQL.
+All bridges expose uniform actions: prepare_tx, estimate_cost, submit_tx, confirm_receipt.
+13) Observability
+• Logs: JSON structured; correlation by planId/stepId.
+• Metrics: Prometheus—plan latency, success rate, policy denials.
+• Tracing: OpenTelemetry—VAC → Plan → Steps → Plugin calls.
+14) Governance
+• Registry‑Level Voting for breaking changes, high‑risk actions.
+• Quorum/Thresholds defined per plugin in manifest.
+• Time‑Locks for upgrades; emergency pause via signed command from Architect.
+15) Migration Guide — NEXUS micro‑dApp → UP‑OS Plugin
+• Wrap FastAPI routes under /actions/*
+• Emit UPM manifest
+• Register with Kernel (registerPlugin)
+• Replace direct frontend API calls with VAC intents via Gateway
+• Add policies; enable audit export to chain via Bridge
+Example VAC from Frontend:
+client.submitIntent(`DeSo.NEXUS::create_custodial_wallet(email:"${email}");`) 
+16) Roadmap (Post‑Scaffold)
+• VAC compiler completeness (full grammar + type inference)
+• Rego policy packs (finance, identity)
+• WASI sandbox for lightweight plugins
+• Multi‑tenant isolation & billing
+• UI Console for Registry, Plans, and Audit Explorer
+17) Quickstart Commands (pseudo)
+# 1) launch kernel bun run apps/kernel/src/index.ts # 2) register plugin curl -X POST http://localhost:7700/kernel/v1/registry/plugins \ -H 'content-type: application/x-yaml' \ --data-binary @plugins/nexus-onboarding/app/manifest.yml # 3) submit an intent curl -X POST http://localhost:7700/kernel/v1/intent \ -H 'content-type: application/json' \ -d '{"vac":"DeSo.NEXUS::create_custodial_wallet(email:\"user@example.com\");"}' 
+18) Compliance & Safety Notes
+• No PII stored in Kernel by default; plugins hold domain data behind scoped KV.
+• Cryptographic signatures for audit records; option to anchor hashes to chain.
+• Red‑team policies and simulation must pass before enabling net‑egress scopes in prod.
+This scaffold is ready to instantiate. Add real parsers, policy adapters, and bridge drivers to progress from stub → MVP. The architecture is intentionally modular: replace the Kernel pieces with production equivalents without rewriting the plugin ecosystem.
+UP-OS scaffold is live in the canvas. It includes the kernel architecture, VAC (Voice-as-Code) grammar, registry schemas, security model, SDK stubs (TS + Python), kernel HTTP/gRPC shapes, Docker/K8s deploy, and a NEXUS.Onboarding example plugin.
+Next steps I can generate immediately:
+• Flesh out the VAC compiler with a working parser and type checker.
+• Add a real policy pack (OPA) and a minimal EVM bridge.
+• Produce a CLI (upos) for plugin dev, manifest linting, and local runs.
+Which piece do you want implemented first?
