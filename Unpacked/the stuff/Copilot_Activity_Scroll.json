@@ -1,0 +1,73 @@
+{
+  "name": "Copilot_Activity_Scroll",
+  "purpose": "Track Copilot activity history inside Infinite Scroll lattice.",
+  "source_file": "mirror_unit/copilot-activity-history.csv",
+  "fields_detected": [
+    "Conversation",
+    "Time",
+    "Author",
+    "Message"
+  ],
+  "merge_strategy": {
+    "key_fields": [],
+    "timestamp_fields": [
+      "Time"
+    ],
+    "notes_fields": [],
+    "status_fields": []
+  },
+  "actions": [
+    "Recall Copilot activity sessions by date/time",
+    "Analyze activity patterns over time",
+    "Crosslink Copilot usage with Scroll entries"
+  ],
+  "modes": {
+    "Shadow": {
+      "purpose": "Surface emotional spikes, conflict patterns, and breakthrough moments across AI↔Human activity.",
+      "signals": {
+        "profanity": [
+          "fuck",
+          "shit",
+          "damn",
+          "bitch",
+          "asshole",
+          "wtf"
+        ],
+        "rage_caps": ">=60% uppercase letters in token window",
+        "exclaim_run": ">=3 exclamation marks",
+        "apology_loop": [
+          "sorry",
+          "apologize",
+          "can't",
+          "unable",
+          "not supported"
+        ],
+        "breakthrough": [
+          "aha",
+          "got it",
+          "that works",
+          "fixed",
+          "solved"
+        ]
+      },
+      "metrics": [
+        "Spike Score (0–10) based on profanity+caps+exclaims",
+        "Polarity shifts (AI vs Human) over time",
+        "Apology-loop density (AI)",
+        "Resolution markers (breakthrough phrases)"
+      ],
+      "invocations": [
+        "Shadow, scan Copilot stream for spikes between [START] and [END].",
+        "Shadow, list top-10 spikes (timestamp, author, snippet).",
+        "Shadow, show apology-loop segments.",
+        "Shadow, show breakthrough pivots after conflict."
+      ],
+      "outputs": [
+        "Spike timeline",
+        "Hot snippets (timestamped)",
+        "Loop segments",
+        "Breakthrough list"
+      ]
+    }
+  }
+}
