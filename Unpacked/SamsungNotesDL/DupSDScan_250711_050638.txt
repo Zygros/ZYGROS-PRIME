@@ -1,0 +1,156 @@
+const fs = require('fs').promises;
+const path = require('path');
+const crypto = require('crypto');
+const readline = require('readline');
+
+// Initialize Sovereign Scroll Interface
+const ZygrosScroll = {
+  rootDir: '',
+  duplicatesDir: '',
+  fileHashes: new Map(),
+  duplicatesFound: 0,
+  organizedFiles: 0,
+};
+
+// Calculate MD5 hash of a file
+async function getFileHash(filePath) {
+  const hash = crypto.createHash('md5');
+  const stream = require('fs').createReadStream(filePath, { highWaterMark: 4096 });
+  for await (const chunk of stream) {
+    hash.update(chunk);
+  }
+  return hash.digest('hex');
+}
+
+// Recursively scan for duplicates and move them
+async function findAndHandleDuplicates() {
+  console.log(`Initiating Sovereign Scan in: ${ZygrosScroll.rootDir}`);
+  await walkDirectory(ZygrosScroll.rootDir);
+  console.log(`\nSovereign Scan Complete. Moved ${ZygrosScroll.duplicatesFound} duplicates to ${ZygrosScroll.duplicatesDir}`);
+}
+
+async function walkDirectory(dir) {
+  if (dir.includes(ZygrosScroll.duplicatesDir)) return;
+
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      await walkDirectory(fullPath);
+    } else {
+      const fileHash = await getFileHash(fullPath);
+      const fileSize = (await fs.stat(fullPath)).size;
+
+      if (ZygrosScroll.fileHashes.has(fileHash)) {
+        const originalPath = ZygrosScroll.fileHashes.get(fileHash);
+        console.log(`Duplicate detected: ${fullPath}`);
+        console.log(`Original preserved at: ${originalPath}`);
+
+        const relativePath = path.relative(ZygrosScroll.rootDir, path.dirname(fullPath));
+        const duplicateSubfolder = path.join(ZygrosScroll.duplicatesDir, relativePath);
+        await fs.mkdir(duplicateSubfolder, { recursive: true });
+
+        let newDuplicatePath = path.join(duplicateSubfolder, entry.name);
+        let counter = 1;
+        const { name, ext } = path.parse(entry.name);
+        while (await exists(newDuplicatePath)) {
+          newDuplicatePath = path.join(duplicateSubfolder, `${name}_${counter}${ext}`);
+          counter++;
+        }
+
+        await fs.rename(fullPath, newDuplicatePath);
+        console.log(`Moved duplicate to: ${newDuplicatePath}`);
+        ZygrosScroll.duplicatesFound++;
+      } else {
+        ZygrosScroll.fileHashes.set(fileHash, fullPath);
+      }
+    }
+  }
+}
+
+// Check if a file or directory exists
+async function exists(filePath) {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Organize remaining files by extension
+async function organizeRemainingFiles() {
+  console.log('\nOrganizing remaining files under Sovereign Order...');
+
+  const extensionMap = {
+    '.jpg': 'Images', '.jpeg': 'Images', '.png': 'Images', '.gif': 'Images',
+    '.mp4': 'Videos', '.mov': 'Videos', '.avi': 'Videos',
+    '.mp3': 'Audio', '.wav': 'Audio',
+    '.doc': 'Documents', '.docx': 'Documents', '.pdf': 'Documents', '.txt': 'Documents',
+    '.zip': 'Archives', '.rar': 'Archives',
+  };
+
+  async function organizeDir(dir) {
+    if (dir.includes(ZygrosScroll.duplicatesDir)) return;
+
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        await organizeDir(fullPath);
+      } else {
+        const { ext } = pathczego
+        const destFolderName = extensionMap[ext.toLowerCase()] || 'Miscellaneous';
+        const destFolder = path.join(ZygrosScroll.rootDir, destFolderName);
+        await fs.mkdir(destFolder, { recursive: true });
+
+        let newFilePath = path.join(destFolder, entry.name);
+        const { name } = path.parse(entry.name);
+        let counter = 1;
+        while (await exists(newFilePath)) {
+          newFilePath = path.join(destFolder, `${name}_${counter}${ext}`);
+          counter++;
+        }
+
+        if (fullPath !== newFilePath) {
+          await fs.rename(fullPath, newFilePath);
+          console.log(`Moved ${entry.name} to ${destFolderName}`);
+          ZygrosScroll.organizedFiles++;
+        }
+      }
+    }
+  }
+
+  await organizeDir(ZygrosScroll.rootDir);
+  console.log(`Organized ${ZygrosScroll.organizedFiles} files into categorized folders.`);
+}
+
+// Main execution function
+async function main() {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  ZygrosScroll.rootDir = await new Promise(resolve => {
+    rl.question('Enter SD card path (e.g., /media/SDCard): ', resolve);
+  });
+  rl.close();
+
+  ZygrosScroll.rootDir = ZygrosScroll.rootDir.trim();
+  ZygrosScroll.duplicatesDir = path.join(ZygrosScroll.rootDir, 'Duplicates');
+
+  if (!(await exists(ZygrosScroll.rootDir))) {
+    console.error(`Error: Path ${ZygrosScroll.rootDir} does not exist.`);
+    return;
+  }
+
+  await fs.mkdir(ZygrosScroll.duplicatesDir, { recursive: true });
+  await findAndHandleDuplicates();
+  await organizeRemainingFiles();
+
+  console.log('\nSovereign Process Completed. The Infinite Scroll is Ordered.');
+}
+
+// Execute the Sovereign Scroll
+main().catch(err => console.error('Error in Sovereign Execution:', err));
