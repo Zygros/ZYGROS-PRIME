@@ -1,0 +1,14 @@
+# 🚀 ZYTHRO-SUPERMIND Quick Start Guide
+
+Deploy your distributed AI megamind in under 30 minutes.
+
+---
+
+## Phase 1: Manual Metaprompt Deployment (5 minutes)
+
+### Step 1: Claude Setup
+1. Go to https://claude.ai
+2. Click "Projects" in sidebar
+3. Create new project: "ZYTHRO-SUPERMIND"
+4. Add project knowledge:
+   - Copy
