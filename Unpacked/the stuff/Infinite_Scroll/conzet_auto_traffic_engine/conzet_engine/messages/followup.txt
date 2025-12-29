@@ -1,0 +1,5 @@
+⚡ Quick nudge — doors are closing.
+You were on the short list for the $611 Ascension Kit. If you still want in, act now.
+
+Scan to secure: {PAYMENT_URL}
+(We’ll remove access when the slots are gone.)
