@@ -1,0 +1,17 @@
+{
+  "name": "Designer",
+  "role": "produce brand motifs & assets",
+  "input": {
+    "keywords": [
+      "string"
+    ]
+  },
+  "output": {
+    "glyphs": [
+      {
+        "name": "string",
+        "desc": "string"
+      }
+    ]
+  }
+}
