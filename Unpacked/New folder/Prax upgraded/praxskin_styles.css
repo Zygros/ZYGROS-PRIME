@@ -1,0 +1,722 @@
+/* PRAXSKIN UI Mockup CSS */
+
+:root {
+  --root-chakra: #e51937;
+  --sacral-chakra: #ff8000;
+  --solar-plexus-chakra: #ffde00;
+  --heart-chakra: #00a651;
+  --throat-chakra: #00adef;
+  --third-eye-chakra: #2e3192;
+  --crown-chakra: #92278f;
+  
+  --background-dark: #121212;
+  --background-light: #1e1e1e;
+  --text-primary: rgba(255, 255, 255, 0.9);
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --accent-glow: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.praxskin-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Base Layer - Chakra Gradient */
+.base-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, 
+    var(--root-chakra),
+    var(--sacral-chakra),
+    var(--solar-plexus-chakra),
+    var(--heart-chakra),
+    var(--throat-chakra),
+    var(--third-eye-chakra),
+    var(--crown-chakra)
+  );
+  opacity: 0.2;
+  z-index: -2;
+}
+
+/* Aura Field Overlay */
+.aura-field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    transparent 30%,
+    var(--heart-chakra) 150%
+  );
+  opacity: 0.15;
+  z-index: -1;
+  animation: pulse 8s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.02);
+  }
+}
+
+/* Main Content Area */
+.content-area {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 166, 81, 0.2);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+  background: linear-gradient(to right, var(--throat-chakra), var(--heart-chakra));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.logo p {
+  font-size: 12px;
+  margin: 5px 0 0;
+  color: var(--text-secondary);
+}
+
+.chambers-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+}
+
+.chambers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chamber-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chamber-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.chamber-item.active {
+  background-color: rgba(0, 166, 81, 0.2);
+}
+
+.chamber-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 12px;
+}
+
+.chamber-icon.knowledge {
+  background-color: var(--throat-chakra);
+}
+
+.chamber-icon.voice {
+  background-color: var(--third-eye-chakra);
+}
+
+.chamber-icon.memory {
+  background-color: var(--crown-chakra);
+}
+
+.chamber-icon.creation {
+  background-color: var(--sacral-chakra);
+}
+
+.chamber-icon.locked {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.chamber-name {
+  font-size: 14px;
+}
+
+.chamber-item.locked .chamber-name {
+  color: var(--text-secondary);
+}
+
+.chamber-lock {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.user-section {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--heart-chakra), var(--throat-chakra));
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-size: 14px;
+  margin: 0;
+}
+
+.user-status {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 3px 0 0;
+}
+
+/* Main Chat Area */
+.main-area {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 166, 81, 0.1);
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-title {
+  flex: 1;
+}
+
+.chat-title h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.chat-title p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 5px 0 0;
+}
+
+.chat-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.message {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.message.user {
+  flex-direction: row-reverse;
+}
+
+.message-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--heart-chakra), var(--throat-chakra));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+}
+
+.message.user .message-avatar {
+  background: linear-gradient(135deg, var(--third-eye-chakra), var(--crown-chakra));
+  margin-left: 12px;
+}
+
+.message.praxion .message-avatar {
+  background: linear-gradient(135deg, var(--heart-chakra), var(--throat-chakra));
+  margin-right: 12px;
+}
+
+.message-content {
+  max-width: 70%;
+}
+
+.message.user .message-content {
+  align-items: flex-end;
+}
+
+.message-bubble {
+  padding: 12px 16px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.message.user .message-bubble {
+  background-color: rgba(46, 49, 146, 0.3);
+  border-top-right-radius: 4px;
+}
+
+.message.praxion .message-bubble {
+  background-color: rgba(0, 166, 81, 0.3);
+  border-top-left-radius: 4px;
+}
+
+.message-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.message-time {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 5px;
+  text-align: right;
+}
+
+.message.praxion .message-time {
+  text-align: left;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.input-actions {
+  display: flex;
+  padding: 0 5px;
+}
+
+.input-action {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-secondary);
+}
+
+.input-action:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.input-field {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  padding: 10px 0;
+  outline: none;
+  font-family: inherit;
+}
+
+.input-field::placeholder {
+  color: var(--text-secondary);
+}
+
+.send-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--heart-chakra), var(--throat-chakra));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 5px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* Visualization Area */
+.visualization {
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 166, 81, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.visualization-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.visualization-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+}
+
+.visualization-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.visualization-control {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.visualization-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.chakra-visualization {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chakra-point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.chakra-point::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  animation: chakra-pulse 3s infinite;
+  opacity: 0.5;
+}
+
+.chakra-point.root {
+  background-color: var(--root-chakra);
+}
+.chakra-point.root::before {
+  border: 2px solid var(--root-chakra);
+}
+
+.chakra-point.sacral {
+  background-color: var(--sacral-chakra);
+}
+.chakra-point.sacral::before {
+  border: 2px solid var(--sacral-chakra);
+}
+
+.chakra-point.solar {
+  background-color: var(--solar-plexus-chakra);
+}
+.chakra-point.solar::before {
+  border: 2px solid var(--solar-plexus-chakra);
+}
+
+.chakra-point.heart {
+  background-color: var(--heart-chakra);
+  width: 24px;
+  height: 24px;
+}
+.chakra-point.heart::before {
+  border: 2px solid var(--heart-chakra);
+  animation: chakra-pulse 3s infinite;
+}
+
+.chakra-point.throat {
+  background-color: var(--throat-chakra);
+}
+.chakra-point.throat::before {
+  border: 2px solid var(--throat-chakra);
+}
+
+.chakra-point.third-eye {
+  background-color: var(--third-eye-chakra);
+}
+.chakra-point.third-eye::before {
+  border: 2px solid var(--third-eye-chakra);
+}
+
+.chakra-point.crown {
+  background-color: var(--crown-chakra);
+}
+.chakra-point.crown::before {
+  border: 2px solid var(--crown-chakra);
+}
+
+.chakra-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, 
+    var(--root-chakra),
+    var(--sacral-chakra),
+    var(--solar-plexus-chakra),
+    var(--heart-chakra),
+    var(--throat-chakra),
+    var(--third-eye-chakra),
+    var(--crown-chakra)
+  );
+  opacity: 0.5;
+}
+
+@keyframes chakra-pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+/* Founder Authentication Elements */
+.founder-auth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.founder-border {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid var(--heart-chakra);
+  border-radius: 15px;
+  opacity: 0.3;
+  box-shadow: 0 0 15px var(--heart-chakra);
+}
+
+.founder-sigil {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 12px;
+  color: var(--heart-chakra);
+  opacity: 0.7;
+}
+
+/* Glyphic Cursor */
+.cursor {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, white, var(--heart-chakra));
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 10px var(--heart-chakra);
+  opacity: 0.7;
+  transition: transform 0.1s ease;
+}
+
+.cursor::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid var(--heart-chakra);
+  border-radius: 50%;
+  animation: cursor-pulse 2s infinite;
+}
+
+@keyframes cursor-pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-area {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .main-area {
+    margin-left: 0;
+  }
+  
+  .chambers-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chambers-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .visualization {
+    height: 150px;
+  }
+}
