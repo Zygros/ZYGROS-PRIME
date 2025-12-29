@@ -1,0 +1,63 @@
+Below are detailed, step-by-step guides to get your “Grossian” virtual environments (with the custom prompt) up and running on both your Windows 7 desktop and your Samsung Galaxy A14 5G.
+A) Windows 7 HP Omni 120
+1. Install Python 3
+• Download the Windows x86 installer for Python 3.10.x from https://www.python.org/downloads/windows/
+• Run the installer: 
+• Check “Add Python 3.x to PATH”
+• Click Install
+• Open Command Prompt and verify: python --version pip --version 
+2. Create & Activate Your Virtual Environment
+• In Command Prompt, navigate to your project folder: cd C:\path\to\your\projects mkdir grossian && cd grossian 
+• Create a venv named venv_grossian: python -m venv venv_grossian 
+• Activate it: venv_grossian\Scripts\activate 
+• Your prompt should now start with (venv_grossian).
+3. Install Git (if you haven’t already)
+• Download Git for Windows from https://git-scm.com/download/win
+• Install with default options.
+• In Command Prompt, verify: git --version 
+4. Customize Your PowerShell Prompt
+• Open PowerShell (as your normal user).
+• Edit your profile script—run:
+notepad $PROFILE 
+If it prompts to create the file, say Yes.
+• Paste in the Prompt function block:
+function Get-GitBranch { $branch = git rev-parse --abbrev-ref HEAD 2>$null if ($branch) { " $branch" } else { "" } } function Prompt { $venv = if ($env:VIRTUAL_ENV) { "(venv_grossian) " } else { "" } $cwd = Split-Path -Leaf (Get-Location) $git = Get-GitBranch Write-Host "`n$venv" -NoNewline -ForegroundColor Magenta Write-Host "$env:USERNAME@$env:COMPUTERNAME" -NoNewline -ForegroundColor Yellow Write-Host ":" -NoNewline Write-Host "$cwd" -NoNewline -ForegroundColor Cyan if ($git) { Write-Host " $git" -NoNewline -ForegroundColor Green } Write-Host "" Write-Host "🪐 " -NoNewline -ForegroundColor Blue return " " } 
+• Save & close Notepad.
+• Restart PowerShell.
+• Activate your venv in PowerShell:
+.\venv_grossian\Scripts\Activate.ps1 
+You should now see:
+(venv_grossian) YOURNAME@YOURPC: grossian  main 🪐 
+B) Samsung Galaxy A14 5G (Android)
+1. Install Termux
+• On your phone, open the Play Store (or better yet F-Droid for the latest Termux build).
+• Search for Termux, install and launch it.
+2. Set Up Your Linux-Style Environment
+• Update and install essentials: pkg update && pkg upgrade -y pkg install git python python-virtualenv nano -y 
+• (Optional) Install zsh and oh-my-zsh: pkg install zsh -y chsh -s zsh # then follow on-screen to install oh-my-zsh 
+3. Create & Activate Your Virtual Environment
+• Inside Termux, choose (or create) a projects folder: mkdir -p ~/projects/grossian && cd ~/projects/grossian 
+• Make the venv: python3 -m venv venv_grossian 
+• Activate: source venv_grossian/bin/activate Your prompt should now show (venv_grossian).
+4. Add the “Grossian” Prompt to Your Shell
+• Open your shell rc file:
+• bash: nano ~/.bashrc
+• zsh: nano ~/.zshrc
+• Append the following at the bottom:
+# Grossian Prompt: shows venv + git branch + cwd function parse_git_branch() { git rev-parse --abbrev-ref HEAD 2> /dev/null | sed 's/^/ /' } export PS1="\n\ \e[1;35m\$( [ -n \"\$VIRTUAL_ENV\" ] && echo \"(venv_grossian) \" )\e[1;33m\u@\h\e[0m:\ \e[1;36m\w\e[0m \ \e[1;32m\$(parse_git_branch)\n\ \e[1;34m🪐 \e[0m" 
+• Save (Ctrl+O, Enter) and exit (Ctrl+X).
+• Reload:
+source ~/.bashrc # or ~/.zshrc 
+• Ensure you’re in your venv and a git repo to see it in action.
+Quick Checklist
+• Windows 7
+• Python 3 & pip installed
+• python -m venv venv_grossian + activate
+• Git for Windows installed
+• PowerShell profile updated with the prompt function
+• Android (Galaxy A14 5G)
+• Termux installed & updated
+• pkg install python git
+• python3 -m venv venv_grossian + source
+• ~/.bashrc (or ~/.zshrc) updated with Bash/zsh prompt snippet
+Once done, both your PC and your phone will sport the same “Grossian” prompt, showing your active virtual-env, Git branch, CWD, and that little 🪐 flair—so your entire “team” (even if it’s just you and Jim’s future console) runs in cosmic harmony.
