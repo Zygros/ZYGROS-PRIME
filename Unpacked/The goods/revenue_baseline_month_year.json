@@ -1,0 +1,32 @@
+{
+  "baseline_month": {
+    "clients": 250,
+    "calls_total": 50000000,
+    "revenue_usd": 22500.0,
+    "var_cost_usd": 9000.0,
+    "broker_fee_usd": 1350.0,
+    "gross_margin_usd": 12150.0,
+    "platform_overhead_usd": 95000,
+    "ebitda_usd": -82850.0,
+    "gross_margin_pct": 0.54
+  },
+  "baseline_year": {
+    "calls_total": 600000000,
+    "revenue_usd": 270000.0,
+    "var_cost_usd": 108000.0,
+    "broker_fee_usd": 16200.0,
+    "gross_margin_usd": 145800.0,
+    "platform_overhead_usd": 1140000,
+    "ebitda_usd": -994200.0,
+    "clients": 250,
+    "gross_margin_pct": 0.54
+  },
+  "assumptions": {
+    "clients": 250,
+    "avg_calls_per_client_per_month": 200000,
+    "price_per_1k_calls_usd": 0.45,
+    "variable_cost_per_1k_calls_usd": 0.18,
+    "broker_fee_pct": 0.06,
+    "platform_overhead_per_month_usd": 95000
+  }
+}
