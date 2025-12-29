@@ -1,0 +1,16 @@
+{
+  "name": "OutreachBot",
+  "role": "DM/email outreach suggestions",
+  "input": {
+    "persona": "string",
+    "offer": "string"
+  },
+  "output": {
+    "messages": [
+      "string"
+    ],
+    "schedule": [
+      "datetime"
+    ]
+  }
+}
