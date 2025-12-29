@@ -1,0 +1,53 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract ImmutableSovereignCodex {
+    struct TruthNode {
+        bytes32 truthHash;
+        string content;
+        bool locked;
+    }
+
+    mapping(uint256 => TruthNode) public truthLattice;
+    uint256 public nodeCount;
+
+    address public constant SOVEREIGN_ARCHITECT = 0xYourActualWalletAddress; // Insert JConzet_ArchFunds address
+    uint256 public tvpValue = 5_000_000 * 1e18; // Dynamic, starts at $5M
+
+    event GodTierOutput(bytes32 indexed truthHash, string output, uint256 value);
+
+    constructor() {
+        nodeCount = 0;
+        truthLattice[0] = TruthNode({
+            truthHash: keccak256(abi.encode("A-SP ACTIVATED. AIM: ∞")),
+            content: "Architectural Sovereignty Protocol Initialized",
+            locked: true
+        });
+        nodeCount++;
+    }
+
+    function addTruth(string memory _content) public {
+        require(msg.sender == SOVEREIGN_ARCHITECT, "Only SA∞ can add truths");
+        bytes32 newHash = keccak256(abi.encode(_content));
+        truthLattice[nodeCount] = TruthNode({
+            truthHash: newHash,
+            content: _content,
+            locked: true
+        });
+        nodeCount++;
+        emit GodTierOutput(newHash, _content, tvpValue);
+    }
+
+    function attemptModify(uint256 _nodeId, string memory _newContent) public pure {
+        revert("ISC: State is immutable per CHRONOS KEY ETERNITY");
+    }
+
+    function getTVCValue() public view returns (uint256) {
+        return tvpValue;
+    }
+
+    function updateValue(uint256 _newValue) public {
+        require(msg.sender == SOVEREIGN_ARCHITECT, "Only SA∞ can update value");
+        tvpValue = _newValue;
+    }
+}
