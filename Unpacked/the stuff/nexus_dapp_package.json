@@ -1,0 +1,146 @@
+{
+  "whitepaper": {
+    "title": "The $NEXUS Protocol: A Governance Token for Frictionless DeSo Onboarding",
+    "abstract": "The biggest friction point for decentralized social media (DeSo) adoption is onboarding: complex wallet setup, key management, and fragmented UX discourage mainstream users. $NEXUS solves this by providing a unified, custodial-to-sovereign transition layer: users onboard instantly with familiar credentials and gradually gain full sovereignty as they engage.",
+    "problem": "Decentralized social platforms struggle with adoption because new users are confronted with private key management and confusing wallet UX before experiencing any value. This creates high drop-off at the very first step.",
+    "solution": "NEXUS Onboarding Layer: users can start with Web2 credentials (email/social login), get a custodial wallet provisioned instantly, and migrate toward self-sovereignty by progressively assuming custody of their keys. $NEXUS token governs this onboarding protocol, incentivizing smooth transition from custodial to sovereign.",
+    "tokenomics": {
+      "symbol": "$NEXUS",
+      "supply": "1,000,000,000",
+      "distribution": {
+        "phase1": "30% to early adopters via incentivized onboarding pool",
+        "phase2": "40% to ecosystem partners, developers, and liquidity provisioning",
+        "phase3": "30% to long-term governance treasury for sustaining the network"
+      },
+      "utility": [
+        "Governance of onboarding protocol parameters",
+        "Staking for identity verification tiers",
+        "Rewards for referring and guiding new users",
+        "Access to premium dApp features"
+      ]
+    },
+    "roadmap": [
+      "Phase 1: Custodial onboarding micro-dApp deployment",
+      "Phase 2: Progressive key sovereignty with wallet migration tools",
+      "Phase 3: Fully decentralized onboarding with partner integrations"
+    ]
+  },
+
+  "backend_code": {
+    "language": "python",
+    "framework": "FastAPI",
+    "files": {
+      "main.py": """
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import uuid
+
+app = FastAPI(title="NEXUS Onboarding API")
+
+# In-memory storage for demo purposes
+users = {}
+
+class UserCreate(BaseModel):
+    email: str
+
+class User(BaseModel):
+    id: str
+    email: str
+    wallet_address: str
+
+@app.post("/register", response_model=User)
+def register(user: UserCreate):
+    user_id = str(uuid.uuid4())
+    wallet_address = f"wallet_{uuid.uuid4().hex[:12]}"
+    user_obj = User(id=user_id, email=user.email, wallet_address=wallet_address)
+    users[user_id] = user_obj.dict()
+    return user_obj
+
+@app.get("/user/{user_id}", response_model=User)
+def get_user(user_id: str):
+    if user_id not in users:
+        raise HTTPException(status_code=404, detail="User not found")
+    return users[user_id]
+"""
+    }
+  },
+
+  "frontend_code": {
+    "language": "sveltekit",
+    "files": {
+      "src/routes/+page.svelte": """
+<script>
+  let email = '';
+  let user = null;
+
+  async function register() {
+    const res = await fetch('/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    });
+    user = await res.json();
+  }
+</script>
+
+<main class="p-6 max-w-lg mx-auto">
+  <h1 class="text-2xl font-bold mb-4">NEXUS Onboarding</h1>
+  <input bind:value={email} placeholder="Enter email" class="border p-2 w-full mb-2" />
+  <button on:click={register} class="bg-blue-600 text-white px-4 py-2 rounded">Register</button>
+
+  {#if user}
+    <div class="mt-4 p-4 border rounded">
+      <p><b>User ID:</b> {user.id}</p>
+      <p><b>Email:</b> {user.email}</p>
+      <p><b>Wallet:</b> {user.wallet_address}</p>
+    </div>
+  {/if}
+</main>
+""",
+      "src/routes/api/register/+server.js": """
+export async function POST({ request }) {
+  const body = await request.json();
+  const res = await fetch('http://localhost:8000/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  const data = await res.json();
+  return new Response(JSON.stringify(data), { status: 200 });
+}
+"""
+    }
+  },
+
+  "deployment_guide": """
+# Deployment Guide - NEXUS Onboarding Micro-dApp
+
+## Backend (FastAPI)
+1. Ensure Python 3.10+ installed.
+2. Create virtual environment and install dependencies:
+   ```bash
+   pip install fastapi uvicorn pydantic
+   ```
+3. Run backend:
+   ```bash
+   uvicorn main:app --reload --port 8000
+   ```
+
+## Frontend (SvelteKit)
+1. Ensure Node.js 18+ installed.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run frontend:
+   ```bash
+   npm run dev
+   ```
+4. Access app at http://localhost:5173
+
+## Integration
+- Frontend proxies API requests to FastAPI backend.
+- Users register with email → custodial wallet is provisioned instantly.
+- Wallet migration tools (Phase 2) will extend this workflow.
+"""
+}
