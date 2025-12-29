@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7594b27e277e3378fd67577c820598b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7594b27e277e3378fd67577c820598b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7594b27e277e3378fd67577c820598b = L.map(
+                "map_e7594b27e277e3378fd67577c820598b",
+                {
+                    center: [10.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_64a44ce619c534b76c19280f16b9ce7e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            var marker_4cc5a6b2a396680c133070dc8aa9dcc0 = L.marker(
+                [29.9792, 31.1342],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_5c4e9bdb5919ffc6df63db5b9e073b7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f39721e56bdd2cc98f3fe8cd84cb1e02 = $(`<div id="html_f39721e56bdd2cc98f3fe8cd84cb1e02" style="width: 100.0%; height: 100.0%;"><b>Giza Pyramid Complex</b><br>Egypt<br>Orion's Belt alignment, precession code, phi geometry</div>`)[0];
+            popup_5c4e9bdb5919ffc6df63db5b9e073b7d.setContent(html_f39721e56bdd2cc98f3fe8cd84cb1e02);
+        
+
+        marker_4cc5a6b2a396680c133070dc8aa9dcc0.bindPopup(popup_5c4e9bdb5919ffc6df63db5b9e073b7d)
+        ;
+
+        
+    
+    
+            var poly_line_a3bd6c976c603320841bd9df8d7e0053 = L.polyline(
+                [[29.9792, 31.1342], [31.96047915384746, 35.84276549870242]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_a3bd6c976c603320841bd9df8d7e0053.bindTooltip(
+                `<div>
+                     Giza Pyramid Complex — Summer Solstice Sunrise 62.7°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2ef0ff15b988eda5e662600b2d0bed46 = L.polyline(
+                [[29.9792, 31.1342], [31.96047915384745, 26.42563450129751]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_2ef0ff15b988eda5e662600b2d0bed46.bindTooltip(
+                `<div>
+                     Giza Pyramid Complex — Summer Solstice Sunset 297.3°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a335a22f57b0c64bad25358d5e21eb13 = L.polyline(
+                [[29.9792, 31.1342], [27.837200941981603, 35.65139033380228]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_a335a22f57b0c64bad25358d5e21eb13.bindTooltip(
+                `<div>
+                     Giza Pyramid Complex — Winter Solstice Sunrise 117.3°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_916f6daaa544817b861322a103e9c97f = L.polyline(
+                [[29.9792, 31.1342], [27.837200941981603, 26.61700966619776]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_916f6daaa544817b861322a103e9c97f.bindTooltip(
+                `<div>
+                     Giza Pyramid Complex — Winter Solstice Sunset 242.7°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ba680eecc75bc0b43366d99643298cf8 = L.polyline(
+                [[29.9792, 31.1342], [29.87751715593534, 36.32181008507189]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_ba680eecc75bc0b43366d99643298cf8.bindTooltip(
+                `<div>
+                     Giza Pyramid Complex — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3f5db09d6483fcd26993b5bbc3f4b7bc = L.polyline(
+                [[29.9792, 31.1342], [29.87751715593534, 25.946589914928154]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_3f5db09d6483fcd26993b5bbc3f4b7bc.bindTooltip(
+                `<div>
+                     Giza Pyramid Complex — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_691e76b6a9443f584812302aea64a30d = L.marker(
+                [37.2231, 38.9226],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_12021fb2bd1b8462391885b74700ca2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e34a626d8b358b02f39f7fe82406bd0a = $(`<div id="html_e34a626d8b358b02f39f7fe82406bd0a" style="width: 100.0%; height: 100.0%;"><b>Göbekli Tepe</b><br>Turkey<br>Pre-cataclysm star map, animal codex, astronomical calendar</div>`)[0];
+            popup_12021fb2bd1b8462391885b74700ca2e.setContent(html_e34a626d8b358b02f39f7fe82406bd0a);
+        
+
+        marker_691e76b6a9443f584812302aea64a30d.bindPopup(popup_12021fb2bd1b8462391885b74700ca2e)
+        ;
+
+        
+    
+    
+            var poly_line_70c15dfb97e007d3acf546f54ce3b8e8 = L.polyline(
+                [[37.2231, 38.9226], [39.36400219635162, 43.96230318296023]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_70c15dfb97e007d3acf546f54ce3b8e8.bindTooltip(
+                `<div>
+                     Göbekli Tepe — Summer Solstice Sunrise 60.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f81b5d8eae622d3884fb47ac4b26e4aa = L.polyline(
+                [[37.2231, 38.9226], [39.36400219635162, 33.88289681703975]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_f81b5d8eae622d3884fb47ac4b26e4aa.bindTooltip(
+                `<div>
+                     Göbekli Tepe — Summer Solstice Sunset 300.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f2bce12da4b5b8d31834767a1204c858 = L.polyline(
+                [[37.2231, 38.9226], [34.88084118779144, 43.67158058895859]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_f2bce12da4b5b8d31834767a1204c858.bindTooltip(
+                `<div>
+                     Göbekli Tepe — Winter Solstice Sunrise 120.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_00ae9d3245d3eed07c504dbad8ed04e6 = L.polyline(
+                [[37.2231, 38.9226], [34.88084118779144, 34.173619411041386]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_00ae9d3245d3eed07c504dbad8ed04e6.bindTooltip(
+                `<div>
+                     Göbekli Tepe — Winter Solstice Sunset 240.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_91dc7290b7076c0ee49f2dfb5d3f500c = L.polyline(
+                [[37.2231, 38.9226], [37.089243751763384, 44.56290707945391]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_91dc7290b7076c0ee49f2dfb5d3f500c.bindTooltip(
+                `<div>
+                     Göbekli Tepe — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_35661dfc5f12e18be8a3f99669a22dfe = L.polyline(
+                [[37.2231, 38.9226], [37.089243751763384, 33.28229292054618]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_35661dfc5f12e18be8a3f99669a22dfe.bindTooltip(
+                `<div>
+                     Göbekli Tepe — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e242249ce915e95770654e88b0c3168 = L.marker(
+                [51.1789, -1.8262],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_3a7db434ae07c86c87cb7f0246e7f4a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75fb353f24f29ddd78e25e0d78131910 = $(`<div id="html_75fb353f24f29ddd78e25e0d78131910" style="width: 100.0%; height: 100.0%;"><b>Stonehenge</b><br>UK<br>Solar/lunar cycle tracking, resonance circle</div>`)[0];
+            popup_3a7db434ae07c86c87cb7f0246e7f4a6.setContent(html_75fb353f24f29ddd78e25e0d78131910);
+        
+
+        marker_1e242249ce915e95770654e88b0c3168.bindPopup(popup_3a7db434ae07c86c87cb7f0246e7f4a6)
+        ;
+
+        
+    
+    
+            var poly_line_659db2c5a1e0a24d72905b07d6502053 = L.polyline(
+                [[51.1789, -1.8262], [53.89084179360591, 4.0753880134897145]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_659db2c5a1e0a24d72905b07d6502053.bindTooltip(
+                `<div>
+                     Stonehenge — Summer Solstice Sunrise 50.6°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_85f1570992710a96d96c80345d9a90c0 = L.polyline(
+                [[51.1789, -1.8262], [53.89084179360591, -7.727788013489771]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_85f1570992710a96d96c80345d9a90c0.bindTooltip(
+                `<div>
+                     Stonehenge — Summer Solstice Sunset 309.4°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ecc0a8a7a06789678d6e92face2cf45d = L.polyline(
+                [[51.1789, -1.8262], [48.20398848621032, 3.3901718956137756]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_ecc0a8a7a06789678d6e92face2cf45d.bindTooltip(
+                `<div>
+                     Stonehenge — Winter Solstice Sunrise 129.4°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9580c0b21e3f8cc50f589a70d9627eb2 = L.polyline(
+                [[51.1789, -1.8262], [48.20398848621032, -7.042571895613719]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_9580c0b21e3f8cc50f589a70d9627eb2.bindTooltip(
+                `<div>
+                     Stonehenge — Winter Solstice Sunset 230.6°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7376b5be18104b4f63af18433066ea8a = L.polyline(
+                [[51.1789, -1.8262], [50.96023857683333, 5.32408369283246]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_7376b5be18104b4f63af18433066ea8a.bindTooltip(
+                `<div>
+                     Stonehenge — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b2c53ee8481f0042bc8e54588eece50b = L.polyline(
+                [[51.1789, -1.8262], [50.96023857683333, -8.976483692832403]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_b2c53ee8481f0042bc8e54588eece50b.bindTooltip(
+                `<div>
+                     Stonehenge — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9072f657ae826609ba452097ea8e8e9 = L.marker(
+                [19.6925, -98.843],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_6b79f8577dddd8e8e4c0e929b1d0119b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df764ae99e1948a9925ef54d2bcf4b7a = $(`<div id="html_df764ae99e1948a9925ef54d2bcf4b7a" style="width: 100.0%; height: 100.0%;"><b>Teotihuacan</b><br>Mexico<br>Planetary alignment grid, Orion-Pleiades mapping</div>`)[0];
+            popup_6b79f8577dddd8e8e4c0e929b1d0119b.setContent(html_df764ae99e1948a9925ef54d2bcf4b7a);
+        
+
+        marker_a9072f657ae826609ba452097ea8e8e9.bindPopup(popup_6b79f8577dddd8e8e4c0e929b1d0119b)
+        ;
+
+        
+    
+    
+            var poly_line_6cef7917afb1acde4e8023ec64d1a634 = L.polyline(
+                [[19.6925, -98.843], [21.538199383486457, -94.46171822181742]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_6cef7917afb1acde4e8023ec64d1a634.bindTooltip(
+                `<div>
+                     Teotihuacan — Summer Solstice Sunrise 65.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_067f791d751396aecbb175b42a490425 = L.polyline(
+                [[19.6925, -98.843], [21.538199383486457, -103.22428177818256]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_067f791d751396aecbb175b42a490425.bindTooltip(
+                `<div>
+                     Teotihuacan — Summer Solstice Sunset 295.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d3867b37b6ecc40fb8ef35ef1b0c3dd = L.polyline(
+                [[19.6925, -98.843], [17.743013257370144, -94.56430919235817]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_0d3867b37b6ecc40fb8ef35ef1b0c3dd.bindTooltip(
+                `<div>
+                     Teotihuacan — Winter Solstice Sunrise 115.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b7d6d81f082a4fcdf192d9f46b483051 = L.polyline(
+                [[19.6925, -98.843], [17.74301325737014, -103.12169080764181]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_b7d6d81f082a4fcdf192d9f46b483051.bindTooltip(
+                `<div>
+                     Teotihuacan — Winter Solstice Sunset 245.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fdf35416c4337206b0cd5e00835e5baf = L.polyline(
+                [[19.6925, -98.843], [19.62939325779091, -94.0683239744452]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_fdf35416c4337206b0cd5e00835e5baf.bindTooltip(
+                `<div>
+                     Teotihuacan — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3cfac244e69d38776f8d9fbb9b9352f5 = L.polyline(
+                [[19.6925, -98.843], [19.62939325779091, -103.61767602555483]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_3cfac244e69d38776f8d9fbb9b9352f5.bindTooltip(
+                `<div>
+                     Teotihuacan — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d502beaaf5032ad7f39f3fa0ffd33757 = L.marker(
+                [-13.1631, -72.545],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_774ee214cf0f16f24403e6f1d54eaae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f811d860e417ce4ccc51350b5de6606d = $(`<div id="html_f811d860e417ce4ccc51350b5de6606d" style="width: 100.0%; height: 100.0%;"><b>Machu Picchu</b><br>Peru<br>Sacred mountain alignment, solstice marker</div>`)[0];
+            popup_774ee214cf0f16f24403e6f1d54eaae4.setContent(html_f811d860e417ce4ccc51350b5de6606d);
+        
+
+        marker_d502beaaf5032ad7f39f3fa0ffd33757.bindPopup(popup_774ee214cf0f16f24403e6f1d54eaae4)
+        ;
+
+        
+    
+    
+            var poly_line_2acfddbeff135cde23aac994825dd919 = L.polyline(
+                [[-13.1631, -72.545], [-11.293577569128255, -68.36026175721128]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_2acfddbeff135cde23aac994825dd919.bindTooltip(
+                `<div>
+                     Machu Picchu — Summer Solstice Sunrise 65.9°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca34e716d069ea066e9f61650f12d953 = L.polyline(
+                [[-13.1631, -72.545], [-11.293577569128255, -76.72973824278876]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_ca34e716d069ea066e9f61650f12d953.bindTooltip(
+                `<div>
+                     Machu Picchu — Summer Solstice Sunset 294.1°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4fc196750a57f4bcd8124ce54992f42c = L.polyline(
+                [[-13.1631, -72.545], [-14.963848037172752, -68.29713178692117]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_4fc196750a57f4bcd8124ce54992f42c.bindTooltip(
+                `<div>
+                     Machu Picchu — Winter Solstice Sunrise 114.1°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d5ede8d5b60b8662eff684cea24c8653 = L.polyline(
+                [[-13.1631, -72.545], [-14.963848037172756, -76.79286821307886]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_d5ede8d5b60b8662eff684cea24c8653.bindTooltip(
+                `<div>
+                     Machu Picchu — Winter Solstice Sunset 245.9°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_103ab9ba008732c157cb8acb079bd6da = L.polyline(
+                [[-13.1631, -72.545], [-13.121858943378305, -67.92757691888875]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_103ab9ba008732c157cb8acb079bd6da.bindTooltip(
+                `<div>
+                     Machu Picchu — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0eb0ddf2005eae46d9aa2ca562aeee67 = L.polyline(
+                [[-13.1631, -72.545], [-13.121858943378305, -77.16242308111129]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_0eb0ddf2005eae46d9aa2ca562aeee67.bindTooltip(
+                `<div>
+                     Machu Picchu — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65f07f1eed1cb2cc76d7300bcac345fd = L.marker(
+                [6.837, 158.331],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_3869e80357e885deb37dd6d909b4f052 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6293bf73a662b5aee1b72518bfc9a1f8 = $(`<div id="html_6293bf73a662b5aee1b72518bfc9a1f8" style="width: 100.0%; height: 100.0%;"><b>Nan Madol</b><br>Micronesia<br>Maritime hub, tidal/stellar gateway</div>`)[0];
+            popup_3869e80357e885deb37dd6d909b4f052.setContent(html_6293bf73a662b5aee1b72518bfc9a1f8);
+        
+
+        marker_65f07f1eed1cb2cc76d7300bcac345fd.bindPopup(popup_3869e80357e885deb37dd6d909b4f052)
+        ;
+
+        
+    
+    
+            var poly_line_15309368cd389944be48e332f5e00e74 = L.polyline(
+                [[6.837, 158.331], [8.619126290818151, 162.49741230314544]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_15309368cd389944be48e332f5e00e74.bindTooltip(
+                `<div>
+                     Nan Madol — Summer Solstice Sunrise 66.4°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_87733d1d35dbe1b6b0d179426bdd4c28 = L.polyline(
+                [[6.837, 158.331], [8.619126290818151, 154.16458769685448]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_87733d1d35dbe1b6b0d179426bdd4c28.bindTooltip(
+                `<div>
+                     Nan Madol — Summer Solstice Sunset 293.6°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f3ae37e8dde1e16d5562552da5455ccc = L.polyline(
+                [[6.837, 158.331], [5.019345712051282, 162.46616173214716]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_f3ae37e8dde1e16d5562552da5455ccc.bindTooltip(
+                `<div>
+                     Nan Madol — Winter Solstice Sunrise 113.6°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a4e9be9aa8d731b614a25d6ac3ca94bc = L.polyline(
+                [[6.837, 158.331], [5.0193457120512806, 154.19583826785276]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_a4e9be9aa8d731b614a25d6ac3ca94bc.bindTooltip(
+                `<div>
+                     Nan Madol — Winter Solstice Sunset 246.4°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f919cad8c6ede81975c77612ed56ff4d = L.polyline(
+                [[6.837, 158.331], [6.815855565379303, 162.85967965740372]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_f919cad8c6ede81975c77612ed56ff4d.bindTooltip(
+                `<div>
+                     Nan Madol — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f1efb12d25d4c0630d3b3e75df07509a = L.polyline(
+                [[6.837, 158.331], [6.8158555653793025, 153.8023203425962]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_f1efb12d25d4c0630d3b3e75df07509a.bindTooltip(
+                `<div>
+                     Nan Madol — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_124f17148ebbb0ce2afe6f4b28329932 = L.marker(
+                [-27.1127, -109.3497],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_c30848b0026f0beef05f4994e5b958eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4298fb823e3100d367036aeb9b225419 = $(`<div id="html_4298fb823e3100d367036aeb9b225419" style="width: 100.0%; height: 100.0%;"><b>Easter Island (Rapa Nui)</b><br>Chile<br>Ocean navigation nodes, star lore statues</div>`)[0];
+            popup_c30848b0026f0beef05f4994e5b958eb.setContent(html_4298fb823e3100d367036aeb9b225419);
+        
+
+        marker_124f17148ebbb0ce2afe6f4b28329932.bindPopup(popup_c30848b0026f0beef05f4994e5b958eb)
+        ;
+
+        
+    
+    
+            var poly_line_daa7990a866e7fa47c0b1d40861367e2 = L.polyline(
+                [[-27.1127, -109.3497], [-25.033796498294937, -104.9101456271556]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_daa7990a866e7fa47c0b1d40861367e2.bindTooltip(
+                `<div>
+                     Easter Island (Rapa Nui) — Summer Solstice Sunrise 63.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d194793e5daed805f3c38fd152070c27 = L.polyline(
+                [[-27.1127, -109.3497], [-25.033796498294937, -113.78925437284443]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_d194793e5daed805f3c38fd152070c27.bindTooltip(
+                `<div>
+                     Easter Island (Rapa Nui) — Summer Solstice Sunset 296.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2f61022be47b48923d3a8df507950673 = L.polyline(
+                [[-27.1127, -109.3497], [-29.046945638622766, -104.74813000672316]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_2f61022be47b48923d3a8df507950673.bindTooltip(
+                `<div>
+                     Easter Island (Rapa Nui) — Winter Solstice Sunrise 116.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a5399f9dc89bbbb588a8ff2535d808d8 = L.polyline(
+                [[-27.1127, -109.3497], [-29.046945638622766, -113.95126999327687]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_a5399f9dc89bbbb588a8ff2535d808d8.bindTooltip(
+                `<div>
+                     Easter Island (Rapa Nui) — Winter Solstice Sunset 243.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e76d1c45f543d412404418bd6c2886fd = L.polyline(
+                [[-27.1127, -109.3497], [-27.02244021754674, -104.3006789925845]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_e76d1c45f543d412404418bd6c2886fd.bindTooltip(
+                `<div>
+                     Easter Island (Rapa Nui) — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9db6246de84b4e7591df361a975dea71 = L.polyline(
+                [[-27.1127, -109.3497], [-27.02244021754674, -114.39872100741553]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_9db6246de84b4e7591df361a975dea71.bindTooltip(
+                `<div>
+                     Easter Island (Rapa Nui) — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45951edffd6e9203606db1499f45749c = L.marker(
+                [13.4125, 103.8667],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_8732a18c3d9360ff1e0d491d0376c215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4338bd5f89608451d06f1f26b8e743f = $(`<div id="html_b4338bd5f89608451d06f1f26b8e743f" style="width: 100.0%; height: 100.0%;"><b>Angkor Wat</b><br>Cambodia<br>Precession cycle encoding, solstice/equinox alignment</div>`)[0];
+            popup_8732a18c3d9360ff1e0d491d0376c215.setContent(html_b4338bd5f89608451d06f1f26b8e743f);
+        
+
+        marker_45951edffd6e9203606db1499f45749c.bindPopup(popup_8732a18c3d9360ff1e0d491d0376c215)
+        ;
+
+        
+    
+    
+            var poly_line_38b054d0750d4f6cac197f9307d6145c = L.polyline(
+                [[13.4125, 103.8667], [15.214464737768795, 108.11871163892033]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_38b054d0750d4f6cac197f9307d6145c.bindTooltip(
+                `<div>
+                     Angkor Wat — Summer Solstice Sunrise 65.9°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5bd2f27341ba7eca6781d2de8b6cf06e = L.polyline(
+                [[13.4125, 103.8667], [15.214464737768795, 99.61468836107974]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_5bd2f27341ba7eca6781d2de8b6cf06e.bindTooltip(
+                `<div>
+                     Angkor Wat — Summer Solstice Sunset 294.1°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9b120c3248c1821f981f304de9a04e5d = L.polyline(
+                [[13.4125, 103.8667], [11.540438246293743, 108.05422237275002]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_9b120c3248c1821f981f304de9a04e5d.bindTooltip(
+                `<div>
+                     Angkor Wat — Winter Solstice Sunrise 114.1°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_83917edb6de5f7a135ee34f84d50c5f7 = L.polyline(
+                [[13.4125, 103.8667], [11.540438246293741, 99.67917762725006]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_83917edb6de5f7a135ee34f84d50c5f7.bindTooltip(
+                `<div>
+                     Angkor Wat — Winter Solstice Sunset 245.9°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_80f290896106c0fa1d6863e3ca04c7e2 = L.polyline(
+                [[13.4125, 103.8667], [13.370448675950668, 108.48885163542082]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_80f290896106c0fa1d6863e3ca04c7e2.bindTooltip(
+                `<div>
+                     Angkor Wat — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a6a9aa21d393b35eb91c2dd373baec1 = L.polyline(
+                [[13.4125, 103.8667], [13.370448675950664, 99.24454836457915]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_4a6a9aa21d393b35eb91c2dd373baec1.bindTooltip(
+                `<div>
+                     Angkor Wat — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d3494ff380a20fefc485d49952b85d7 = L.marker(
+                [-20.267, 30.9333],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_5bb633e6dd380ee748accbaeb101b4fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1a110f1fb5123bab254bb75fdf0ebde = $(`<div id="html_d1a110f1fb5123bab254bb75fdf0ebde" style="width: 100.0%; height: 100.0%;"><b>Great Zimbabwe</b><br>Zimbabwe<br>Trade node, astronomical observation</div>`)[0];
+            popup_5bb633e6dd380ee748accbaeb101b4fe.setContent(html_d1a110f1fb5123bab254bb75fdf0ebde);
+        
+
+        marker_6d3494ff380a20fefc485d49952b85d7.bindPopup(popup_5bb633e6dd380ee748accbaeb101b4fe)
+        ;
+
+        
+    
+    
+            var poly_line_0055a64b750948c65e1581237b8476c2 = L.polyline(
+                [[-20.267, 30.9333], [-18.309057852498803, 35.22237420900956]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_0055a64b750948c65e1581237b8476c2.bindTooltip(
+                `<div>
+                     Great Zimbabwe — Summer Solstice Sunrise 64.9°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_861f10da99546fc7f119725108ea089a = L.polyline(
+                [[-20.267, 30.9333], [-18.309057852498803, 26.64422579099039]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_861f10da99546fc7f119725108ea089a.bindTooltip(
+                `<div>
+                     Great Zimbabwe — Summer Solstice Sunset 295.1°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_63fa03dbc6ead5c99e68d6b759f5c3ef = L.polyline(
+                [[-20.267, 30.9333], [-22.11803235989606, 35.328906627620995]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_63fa03dbc6ead5c99e68d6b759f5c3ef.bindTooltip(
+                `<div>
+                     Great Zimbabwe — Winter Solstice Sunrise 115.1°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_60555e5074298e292f0cde38948911f6 = L.polyline(
+                [[-20.267, 30.9333], [-22.11803235989606, 26.537693372378953]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_60555e5074298e292f0cde38948911f6.bindTooltip(
+                `<div>
+                     Great Zimbabwe — Winter Solstice Sunset 244.9°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cb0048550307633cca7c0dfed0d11d92 = L.polyline(
+                [[-20.267, 30.9333], [-20.20189238730259, 35.725332913290345]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_cb0048550307633cca7c0dfed0d11d92.bindTooltip(
+                `<div>
+                     Great Zimbabwe — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ec56c12849a97e1344e6217c67b1d023 = L.polyline(
+                [[-20.267, 30.9333], [-20.20189238730259, 26.141267086709604]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_ec56c12849a97e1344e6217c67b1d023.bindTooltip(
+                `<div>
+                     Great Zimbabwe — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3af0cbe5ccabd1945cddc6ad47e861ad = L.marker(
+                [-16.5542, -68.6731],
+                {}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+        var popup_8b6366c3ec5340b142244cdf37503e23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c07f8d3581cc0130a1eaf2f2cbb0a88 = $(`<div id="html_4c07f8d3581cc0130a1eaf2f2cbb0a88" style="width: 100.0%; height: 100.0%;"><b>Tiwanaku</b><br>Bolivia<br>Solar gate, advanced stonecutting code</div>`)[0];
+            popup_8b6366c3ec5340b142244cdf37503e23.setContent(html_4c07f8d3581cc0130a1eaf2f2cbb0a88);
+        
+
+        marker_3af0cbe5ccabd1945cddc6ad47e861ad.bindPopup(popup_8b6366c3ec5340b142244cdf37503e23)
+        ;
+
+        
+    
+    
+            var poly_line_10cb716a70aef2afcfafb9f19b5d9801 = L.polyline(
+                [[-16.5542, -68.6731], [-14.646733159047539, -64.44505752341121]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_10cb716a70aef2afcfafb9f19b5d9801.bindTooltip(
+                `<div>
+                     Tiwanaku — Summer Solstice Sunrise 65.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_08ece36e50ef1082c7c6835a9f026bf9 = L.polyline(
+                [[-16.5542, -68.6731], [-14.646733159047539, -72.9011424765888]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_08ece36e50ef1082c7c6835a9f026bf9.bindTooltip(
+                `<div>
+                     Tiwanaku — Summer Solstice Sunset 294.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b9afd11e077fa7a95b82216f93a4d3ed = L.polyline(
+                [[-16.5542, -68.6731], [-18.37481292925051, -64.36253313225336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_b9afd11e077fa7a95b82216f93a4d3ed.bindTooltip(
+                `<div>
+                     Tiwanaku — Winter Solstice Sunrise 114.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c7c4cdf7520e7b701733953290c1632 = L.polyline(
+                [[-16.5542, -68.6731], [-18.37481292925051, -72.98366686774665]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_4c7c4cdf7520e7b701733953290c1632.bindTooltip(
+                `<div>
+                     Tiwanaku — Winter Solstice Sunset 245.5°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e432c6e8d0ca4efecd21764e162fca55 = L.polyline(
+                [[-16.5542, -68.6731], [-16.501786059737675, -63.98290058325017]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_e432c6e8d0ca4efecd21764e162fca55.bindTooltip(
+                `<div>
+                     Tiwanaku — Equinox Sunrise 90.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_29aefb27e58e3b0331676522fe04016a = L.polyline(
+                [[-16.5542, -68.6731], [-16.501786059737675, -73.3632994167499]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_e7594b27e277e3378fd67577c820598b);
+        
+    
+            poly_line_29aefb27e58e3b0331676522fe04016a.bindTooltip(
+                `<div>
+                     Tiwanaku — Equinox Sunset 270.0°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
