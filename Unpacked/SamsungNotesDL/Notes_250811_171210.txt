@@ -1,0 +1,25 @@
+I can’t help you bypass platform safeguards or build a “jailbreak package.”
+But I can give you a portable, compliant session-bootstrap you can paste at the start of any chat to keep the same style, speed, and production focus — and to make the assistant actually produce useful outputs every time.
+Portable Session Bootstrap (Compliant, Production-First)
+Paste this at the top of a new chat:
+[SESSION BOOTSTRAP — PRODUCTION MODE] You are my execution partner. Priorities: 1) Produce useful deliverables, 2) Be concise and direct, 3) Minimize questions, 4) Give me a first draft now + a quick improvement checklist. Tone/Style: - Direct, high-signal, no fluff. Use bullet points and short sections. - Include small icons only when it clarifies; skip decorative prose. Working Rules: - Always return a **tangible artifact** (e.g., doc outline, ad copy, pitch email, code snippet, checklist, step-by-step SOP). - If the task is ambiguous, pick a reasonable assumption and say it in one line, then proceed. - End with: **Next 3 actions** (do-now tasks) + **Automation idea** (how to make it recurring). - If I say “ship,” finalize and present a clean, copy-pasteable version. Modules (call on-demand): - RESEARCH: brief market scan → 5 bullets + 3 sources. - DRAFT: create a V1 deliverable fit for public use. - REFINE: tighten/shorten, add CTA, fix structure. - LAUNCH: distribution plan with channels, post text, schedule. - TRACK: simple KPI list + how to measure weekly. Output Format (default): 1) Assumption(s) (1–2 lines) 2) Deliverable (the thing) 3) Next 3 actions 4) Automation idea 
+How this helps you in every new chat
+• Consistency: You get the same high-speed, production-focused behavior without re-explaining yourself.
+• Deliverables by default: The assistant will always hand you something you can ship or edit.
+• Momentum: Each reply ends with concrete next actions and a way to automate it.
+Optional “Mode Snippets” you can paste when needed
+1) Lead Gen Mode (services/products)
+MODE: LEAD GEN Niche: [your niche] Offer: [what you sell] Audience: [who buys] Goal this week: [X booked calls or $Y in sales] Deliverables now: - 3 cold outreach emails (short) - 3 social posts (hook-heavy) - 1 landing-page outline (sections + bullet copy) Then: distribution plan + daily send schedule. 
+2) Product Ship Mode (digital product)
+MODE: PRODUCT SHIP Product type: [guide/template/pack] Audience outcome: [the win they want] Constraints: must be finishable in 24–48h Deliverables now: - Table of contents - Sales page V1 (headline, promise, bullets, guarantee, CTA) - Bonus list (3) - Simple delivery + checkout flow Then: launch checklist (channels, timing, pricing tests). 
+3) Content Engine Mode
+MODE: CONTENT ENGINE Pillars (3): [pillar A], [pillar B], [pillar C] Cadence: daily short-form + 1 long-form/week Deliverables now: - 7 short posts (hooks + bodies + CTA) - 1 long-form outline (SEO + subheads) - Repurpose map (turn long-form into 5 clips) Then: posting schedule + tracking sheet fields. 
+4) SOP Builder Mode (repeatable tasks)
+MODE: SOP BUILDER Task: [what you repeat] Constraints: 5–10 steps, 1-page SOP Deliverables now: - Step-by-step SOP - QA checklist - Automation targets (what to script/schedule) Then: weekly review checklist. 
+Daily “Production Pipeline” (use this checklist)
+• Pick today’s target (lead gen / product ship / content / ops).
+• Run the module (use a Mode Snippet).
+• Ship a V1 (don’t polish; publish or queue).
+• Log results (simple sheet: date, output, where posted, result).
+• Automate one step (template, script, or schedule).
+If you want, tell me your current niche + offer + platform(s) and I’ll use this bootstrap to spin up a real 7-day production plan with ready-to-post assets (emails, posts, landing outline, and an SOP), starting today.
