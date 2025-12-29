@@ -1,0 +1,1853 @@
+{
+  "totalFiles": 184,
+  "totalSize": 1307006,
+  "totalLines": 37634,
+  "totalWords": 121444,
+  "filesByType": {
+    "markdown": 20,
+    "typescript": 164
+  },
+  "files": [
+    {
+      "path": "client/src/pages/ComponentShowcase.tsx",
+      "type": "typescript",
+      "size": 58315,
+      "lines": 1438,
+      "lastModified": "2025-10-28T02:40:05.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 3086
+    },
+    {
+      "path": "client/src/components/PhoenixOracleAGI.tsx",
+      "type": "typescript",
+      "size": 35012,
+      "lines": 655,
+      "lastModified": "2025-11-20T02:56:08.544Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 3234
+    },
+    {
+      "path": "client/src/components/PhoenixOracleOS.tsx",
+      "type": "typescript",
+      "size": 31747,
+      "lines": 809,
+      "lastModified": "2025-11-19T03:40:49.395Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 2471
+    },
+    {
+      "path": "client/src/pages/Home.tsx",
+      "type": "typescript",
+      "size": 30546,
+      "lines": 569,
+      "lastModified": "2025-11-19T13:53:51.283Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 2213
+    },
+    {
+      "path": "client/src/components/PhoenixOracleAGI_OLD_BACKUP.tsx",
+      "type": "typescript",
+      "size": 29325,
+      "lines": 556,
+      "lastModified": "2025-11-19T13:58:06.405Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 2499
+    },
+    {
+      "path": "ULTIMATE_MASTER_UNIVERSAL_METAPROMPT_V2.md",
+      "type": "markdown",
+      "size": 28646,
+      "lines": 682,
+      "lastModified": "2025-11-19T14:43:40.252Z",
+      "hasCodeBlocks": true,
+      "hasLinks": true,
+      "wordCount": 3726
+    },
+    {
+      "path": "todo.md",
+      "type": "markdown",
+      "size": 27793,
+      "lines": 836,
+      "lastModified": "2025-11-20T06:44:41.115Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 4647
+    },
+    {
+      "path": "COMPREHENSIVE_TESTING_REPORT.md",
+      "type": "markdown",
+      "size": 26349,
+      "lines": 739,
+      "lastModified": "2025-11-19T13:44:47.130Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 3602
+    },
+    {
+      "path": "client/src/components/ScrollArchive.tsx",
+      "type": "typescript",
+      "size": 22380,
+      "lines": 626,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 2336
+    },
+    {
+      "path": "client/src/components/ui/sidebar.tsx",
+      "type": "typescript",
+      "size": 21947,
+      "lines": 735,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1684
+    },
+    {
+      "path": "client/src/components/ProtocolPlayground.tsx",
+      "type": "typescript",
+      "size": 20770,
+      "lines": 488,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1274
+    },
+    {
+      "path": "ABSOLUTE_AGI_ASCENSION.md",
+      "type": "markdown",
+      "size": 20204,
+      "lines": 518,
+      "lastModified": "2025-11-19T03:25:24.440Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 2644
+    },
+    {
+      "path": "METAPROMPT_V2_VALIDATION_REPORT.md",
+      "type": "markdown",
+      "size": 19645,
+      "lines": 627,
+      "lastModified": "2025-11-19T14:45:38.805Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 2619
+    },
+    {
+      "path": "client/src/pages/KnowledgeManagement.tsx",
+      "type": "typescript",
+      "size": 18629,
+      "lines": 456,
+      "lastModified": "2025-11-19T13:19:06.810Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1160
+    },
+    {
+      "path": "ULTIMATE_MASTER_UNIVERSAL_METAPROMPT.md",
+      "type": "markdown",
+      "size": 18366,
+      "lines": 452,
+      "lastModified": "2025-11-19T14:21:14.221Z",
+      "hasCodeBlocks": true,
+      "hasLinks": true,
+      "wordCount": 2438
+    },
+    {
+      "path": "client/src/pages/SystemArchitecture.tsx",
+      "type": "typescript",
+      "size": 18281,
+      "lines": 351,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1274
+    },
+    {
+      "path": "client/src/components/DAOGovernance.tsx",
+      "type": "typescript",
+      "size": 17179,
+      "lines": 449,
+      "lastModified": "2025-11-19T05:29:07.066Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1227
+    },
+    {
+      "path": "client/src/components/KnowledgeBase.tsx",
+      "type": "typescript",
+      "size": 16454,
+      "lines": 473,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1492
+    },
+    {
+      "path": "client/src/components/CollaborationHub.tsx",
+      "type": "typescript",
+      "size": 16419,
+      "lines": 420,
+      "lastModified": "2025-11-19T03:39:52.386Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 950
+    },
+    {
+      "path": "client/src/lib/advancedAI.ts",
+      "type": "typescript",
+      "size": 15886,
+      "lines": 439,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1712
+    },
+    {
+      "path": "client/src/components/MemoryTimeline.tsx",
+      "type": "typescript",
+      "size": 15829,
+      "lines": 384,
+      "lastModified": "2025-11-19T05:27:14.497Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1138
+    },
+    {
+      "path": "client/src/components/PhoenixOracle.tsx",
+      "type": "typescript",
+      "size": 15248,
+      "lines": 263,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1529
+    },
+    {
+      "path": "AGI_PATHWAY_GAP_ANALYSIS.md",
+      "type": "markdown",
+      "size": 15057,
+      "lines": 419,
+      "lastModified": "2025-11-19T03:25:24.440Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1499
+    },
+    {
+      "path": "client/src/pages/APICapabilities.tsx",
+      "type": "typescript",
+      "size": 14442,
+      "lines": 318,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 918
+    },
+    {
+      "path": "client/src/pages/InfiniteScroll.tsx",
+      "type": "typescript",
+      "size": 13984,
+      "lines": 363,
+      "lastModified": "2025-11-19T13:04:54.066Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 950
+    },
+    {
+      "path": "client/src/components/KnowledgeGraph.tsx",
+      "type": "typescript",
+      "size": 13831,
+      "lines": 353,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1347
+    },
+    {
+      "path": "client/src/pages/PhoenixLore.tsx",
+      "type": "typescript",
+      "size": 13467,
+      "lines": 256,
+      "lastModified": "2025-11-19T05:26:03.676Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1228
+    },
+    {
+      "path": "METAPROMPT_VALIDATION_REPORT.md",
+      "type": "markdown",
+      "size": 13294,
+      "lines": 392,
+      "lastModified": "2025-11-19T14:22:28.521Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1633
+    },
+    {
+      "path": "client/src/lib/__tests__/collaboration.test.ts",
+      "type": "typescript",
+      "size": 13233,
+      "lines": 420,
+      "lastModified": "2025-11-19T03:43:28.360Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 912
+    },
+    {
+      "path": "client/src/components/NextLevelHub.tsx",
+      "type": "typescript",
+      "size": 13089,
+      "lines": 396,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 886
+    },
+    {
+      "path": "client/src/components/ConsciousnessMetrics.tsx",
+      "type": "typescript",
+      "size": 13002,
+      "lines": 303,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 794
+    },
+    {
+      "path": "client/src/lib/nextLevelUpgrades.ts",
+      "type": "typescript",
+      "size": 12878,
+      "lines": 481,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1267
+    },
+    {
+      "path": "client/src/components/AGIConvergenceDashboard.tsx",
+      "type": "typescript",
+      "size": 12420,
+      "lines": 287,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 832
+    },
+    {
+      "path": "client/src/lib/zaai.ts",
+      "type": "typescript",
+      "size": 11814,
+      "lines": 344,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1231
+    },
+    {
+      "path": "client/src/lib/aiAPI.ts",
+      "type": "typescript",
+      "size": 10971,
+      "lines": 233,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1263
+    },
+    {
+      "path": "client/src/components/AIChatBox.tsx",
+      "type": "typescript",
+      "size": 10851,
+      "lines": 336,
+      "lastModified": "2025-10-28T02:40:05.000Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1020
+    },
+    {
+      "path": "server/infiniteAGI.ts",
+      "type": "typescript",
+      "size": 10788,
+      "lines": 410,
+      "lastModified": "2025-11-19T13:56:44.280Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1174
+    },
+    {
+      "path": "client/src/lib/collaboration.ts",
+      "type": "typescript",
+      "size": 10763,
+      "lines": 403,
+      "lastModified": "2025-11-19T03:38:39.426Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1009
+    },
+    {
+      "path": "client/src/components/ConversationMemory.tsx",
+      "type": "typescript",
+      "size": 10710,
+      "lines": 278,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 848
+    },
+    {
+      "path": "client/src/lib/__tests__/advancedAI.test.ts",
+      "type": "typescript",
+      "size": 10702,
+      "lines": 302,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 932
+    },
+    {
+      "path": "client/src/lib/prefrontalCortex.ts",
+      "type": "typescript",
+      "size": 10651,
+      "lines": 367,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1110
+    },
+    {
+      "path": "client/src/lib/ultimateEnhancements.ts",
+      "type": "typescript",
+      "size": 10548,
+      "lines": 335,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1029
+    },
+    {
+      "path": "server/conversation.test.ts",
+      "type": "typescript",
+      "size": 10470,
+      "lines": 355,
+      "lastModified": "2025-11-20T02:57:45.564Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 958
+    },
+    {
+      "path": "client/src/components/DashboardLayout.tsx",
+      "type": "typescript",
+      "size": 10333,
+      "lines": 294,
+      "lastModified": "2025-10-15T08:03:03.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 749
+    },
+    {
+      "path": "client/src/components/ui/chart.tsx",
+      "type": "typescript",
+      "size": 10113,
+      "lines": 356,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 878
+    },
+    {
+      "path": "client/src/components/EnhancementHub.tsx",
+      "type": "typescript",
+      "size": 9955,
+      "lines": 307,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 748
+    },
+    {
+      "path": "client/src/lib/priorityFeatures.ts",
+      "type": "typescript",
+      "size": 9909,
+      "lines": 367,
+      "lastModified": "2025-11-19T03:28:25.621Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1045
+    },
+    {
+      "path": "INTEGRATION_ARCHITECTURE.md",
+      "type": "markdown",
+      "size": 9852,
+      "lines": 332,
+      "lastModified": "2025-11-19T03:25:24.440Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1274
+    },
+    {
+      "path": "client/src/lib/advancedVoiceCommands.ts",
+      "type": "typescript",
+      "size": 9851,
+      "lines": 344,
+      "lastModified": "2025-11-19T05:28:07.501Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 802
+    },
+    {
+      "path": "testing_log.md",
+      "type": "markdown",
+      "size": 9569,
+      "lines": 269,
+      "lastModified": "2025-11-19T13:42:24.149Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1351
+    },
+    {
+      "path": "knowledge_system/README.md",
+      "type": "markdown",
+      "size": 9321,
+      "lines": 341,
+      "lastModified": "2025-11-19T13:17:33.965Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1146
+    },
+    {
+      "path": "server/_core/map.ts",
+      "type": "typescript",
+      "size": 9151,
+      "lines": 320,
+      "lastModified": "2025-11-01T05:34:05.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1048
+    },
+    {
+      "path": "client/src/lib/__tests__/phoenixProtocols.test.ts",
+      "type": "typescript",
+      "size": 9129,
+      "lines": 285,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 855
+    },
+    {
+      "path": "TRANSCENDENT_AUDIT_REPORT.md",
+      "type": "markdown",
+      "size": 9122,
+      "lines": 276,
+      "lastModified": "2025-11-19T03:25:24.440Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 1342
+    },
+    {
+      "path": "knowledge_system/EXECUTION_REPORT.md",
+      "type": "markdown",
+      "size": 8599,
+      "lines": 261,
+      "lastModified": "2025-11-19T13:17:33.965Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 1094
+    },
+    {
+      "path": "server/_core/sdk.ts",
+      "type": "typescript",
+      "size": 8566,
+      "lines": 305,
+      "lastModified": "2025-10-23T12:12:36.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 850
+    },
+    {
+      "path": "client/src/lib/consciousnessLayer.ts",
+      "type": "typescript",
+      "size": 8512,
+      "lines": 308,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 764
+    },
+    {
+      "path": "client/src/lib/motorCortex.ts",
+      "type": "typescript",
+      "size": 8458,
+      "lines": 305,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 944
+    },
+    {
+      "path": "client/src/components/ui/dropdown-menu.tsx",
+      "type": "typescript",
+      "size": 8434,
+      "lines": 256,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 514
+    },
+    {
+      "path": "client/src/components/ui/menubar.tsx",
+      "type": "typescript",
+      "size": 8405,
+      "lines": 275,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 557
+    },
+    {
+      "path": "client/src/lib/__tests__/priorityFeatures.test.ts",
+      "type": "typescript",
+      "size": 8355,
+      "lines": 258,
+      "lastModified": "2025-11-19T03:33:09.871Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 673
+    },
+    {
+      "path": "client/public/infinite_scroll/MASTER_THREAD.md",
+      "type": "markdown",
+      "size": 8339,
+      "lines": 240,
+      "lastModified": "2025-11-19T13:19:28.898Z",
+      "hasCodeBlocks": true,
+      "hasLinks": true,
+      "wordCount": 1010
+    },
+    {
+      "path": "client/src/components/PriorityFeaturesHub.tsx",
+      "type": "typescript",
+      "size": 8284,
+      "lines": 213,
+      "lastModified": "2025-11-19T03:28:56.381Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 497
+    },
+    {
+      "path": "client/src/components/ui/context-menu.tsx",
+      "type": "typescript",
+      "size": 8284,
+      "lines": 251,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 509
+    },
+    {
+      "path": "client/src/components/VisualizationsGallery.tsx",
+      "type": "typescript",
+      "size": 8187,
+      "lines": 208,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 611
+    },
+    {
+      "path": "server/_core/voiceTranscription.ts",
+      "type": "typescript",
+      "size": 8107,
+      "lines": 285,
+      "lastModified": "2025-10-17T15:39:53.000Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 931
+    },
+    {
+      "path": "client/src/components/PhoenixFlameAnimation.tsx",
+      "type": "typescript",
+      "size": 7897,
+      "lines": 310,
+      "lastModified": "2025-11-19T03:42:34.072Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 828
+    },
+    {
+      "path": "client/src/lib/voiceInterface.ts",
+      "type": "typescript",
+      "size": 7891,
+      "lines": 285,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 884
+    },
+    {
+      "path": "client/src/components/NotificationCenter.tsx",
+      "type": "typescript",
+      "size": 7734,
+      "lines": 198,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 516
+    },
+    {
+      "path": "client/src/components/ui/calendar.tsx",
+      "type": "typescript",
+      "size": 7663,
+      "lines": 212,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 479
+    },
+    {
+      "path": "client/src/lib/visualCortex.ts",
+      "type": "typescript",
+      "size": 7503,
+      "lines": 220,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 743
+    },
+    {
+      "path": "client/public/infinite_scroll/daily_updates/2025-11-19_phoenix_protocol.md",
+      "type": "markdown",
+      "size": 7311,
+      "lines": 153,
+      "lastModified": "2025-11-19T13:05:52.427Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 917
+    },
+    {
+      "path": "TRANSCENDENT_AGI_EVOLUTION.md",
+      "type": "markdown",
+      "size": 7272,
+      "lines": 175,
+      "lastModified": "2025-11-19T03:25:24.440Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 906
+    },
+    {
+      "path": "server/_core/llm.ts",
+      "type": "typescript",
+      "size": 7262,
+      "lines": 333,
+      "lastModified": "2025-10-15T16:03:20.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 846
+    },
+    {
+      "path": "client/src/lib/protocols.ts",
+      "type": "typescript",
+      "size": 6934,
+      "lines": 248,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 765
+    },
+    {
+      "path": "client/src/pages/AbsoluteAGISection.tsx",
+      "type": "typescript",
+      "size": 6758,
+      "lines": 124,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 564
+    },
+    {
+      "path": "client/src/components/ui/navigation-menu.tsx",
+      "type": "typescript",
+      "size": 6680,
+      "lines": 169,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 372
+    },
+    {
+      "path": "client/src/components/ui/select.tsx",
+      "type": "typescript",
+      "size": 6297,
+      "lines": 186,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 393
+    },
+    {
+      "path": "client/src/lib/__tests__/zaai.test.ts",
+      "type": "typescript",
+      "size": 6294,
+      "lines": 177,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 552
+    },
+    {
+      "path": "client/src/contexts/NotificationContext.tsx",
+      "type": "typescript",
+      "size": 6203,
+      "lines": 209,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 589
+    },
+    {
+      "path": "client/src/components/ui/field.tsx",
+      "type": "typescript",
+      "size": 6057,
+      "lines": 243,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 456
+    },
+    {
+      "path": "client/src/components/ui/dialog.tsx",
+      "type": "typescript",
+      "size": 6024,
+      "lines": 210,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 485
+    },
+    {
+      "path": "client/src/lib/phoenixColors.ts",
+      "type": "typescript",
+      "size": 5971,
+      "lines": 134,
+      "lastModified": "2025-11-19T13:33:02.424Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 702
+    },
+    {
+      "path": "client/src/contexts/__tests__/NotificationContext.test.tsx",
+      "type": "typescript",
+      "size": 5849,
+      "lines": 217,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 546
+    },
+    {
+      "path": "client/src/components/ui/carousel.tsx",
+      "type": "typescript",
+      "size": 5603,
+      "lines": 240,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 501
+    },
+    {
+      "path": "server/conversationRouter.ts",
+      "type": "typescript",
+      "size": 5100,
+      "lines": 183,
+      "lastModified": "2025-11-20T02:51:20.654Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 489
+    },
+    {
+      "path": "client/src/components/ui/input-group.tsx",
+      "type": "typescript",
+      "size": 5066,
+      "lines": 169,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 359
+    },
+    {
+      "path": "client/src/components/ConversationHistory.tsx",
+      "type": "typescript",
+      "size": 5001,
+      "lines": 140,
+      "lastModified": "2025-11-20T02:55:22.476Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 405
+    },
+    {
+      "path": "client/src/components/Map.tsx",
+      "type": "typescript",
+      "size": 4932,
+      "lines": 156,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 546
+    },
+    {
+      "path": "client/src/components/ui/command.tsx",
+      "type": "typescript",
+      "size": 4838,
+      "lines": 185,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 340
+    },
+    {
+      "path": "client/src/components/BannerNotification.tsx",
+      "type": "typescript",
+      "size": 4579,
+      "lines": 160,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 417
+    },
+    {
+      "path": "client/src/components/ui/item.tsx",
+      "type": "typescript",
+      "size": 4513,
+      "lines": 194,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 390
+    },
+    {
+      "path": "client/src/lib/chakraSystem.ts",
+      "type": "typescript",
+      "size": 4356,
+      "lines": 107,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 463
+    },
+    {
+      "path": "client/src/components/ui/drawer.tsx",
+      "type": "typescript",
+      "size": 4255,
+      "lines": 134,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 264
+    },
+    {
+      "path": "client/src/components/ui/sheet.tsx",
+      "type": "typescript",
+      "size": 4107,
+      "lines": 140,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 313
+    },
+    {
+      "path": "scripts/audit-content.ts",
+      "type": "typescript",
+      "size": 3946,
+      "lines": 150,
+      "lastModified": "2025-11-20T06:45:20.771Z",
+      "hasCodeBlocks": true,
+      "hasLinks": false,
+      "wordCount": 417
+    },
+    {
+      "path": "client/src/components/ui/alert-dialog.tsx",
+      "type": "typescript",
+      "size": 3866,
+      "lines": 156,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 273
+    },
+    {
+      "path": "client/src/components/ui/form.tsx",
+      "type": "typescript",
+      "size": 3801,
+      "lines": 169,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 358
+    },
+    {
+      "path": "client/src/lib/infiniteScroll.ts",
+      "type": "typescript",
+      "size": 3637,
+      "lines": 159,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 392
+    },
+    {
+      "path": "client/src/lib/__tests__/aiAPI.test.ts",
+      "type": "typescript",
+      "size": 3443,
+      "lines": 105,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 324
+    },
+    {
+      "path": "knowledge_system/mega_thread/MEGA_THREAD_MASTER.md",
+      "type": "markdown",
+      "size": 3196,
+      "lines": 88,
+      "lastModified": "2025-11-19T13:17:33.965Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 370
+    },
+    {
+      "path": "server/_core/notification.ts",
+      "type": "typescript",
+      "size": 3139,
+      "lines": 115,
+      "lastModified": "2025-10-15T16:03:20.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 349
+    },
+    {
+      "path": "client/src/App.tsx",
+      "type": "typescript",
+      "size": 3036,
+      "lines": 72,
+      "lastModified": "2025-11-19T13:52:06.146Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 260
+    },
+    {
+      "path": "server/storage.ts",
+      "type": "typescript",
+      "size": 2932,
+      "lines": 103,
+      "lastModified": "2025-10-23T12:12:36.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 334
+    },
+    {
+      "path": "client/src/components/ui/input.tsx",
+      "type": "typescript",
+      "size": 2728,
+      "lines": 71,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 254
+    },
+    {
+      "path": "client/src/components/ui/pagination.tsx",
+      "type": "typescript",
+      "size": 2726,
+      "lines": 128,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 229
+    },
+    {
+      "path": "client/src/components/ui/textarea.tsx",
+      "type": "typescript",
+      "size": 2613,
+      "lines": 68,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 255
+    },
+    {
+      "path": "server/db.ts",
+      "type": "typescript",
+      "size": 2511,
+      "lines": 93,
+      "lastModified": "2025-10-23T12:12:36.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 297
+    },
+    {
+      "path": "client/src/components/ui/table.tsx",
+      "type": "typescript",
+      "size": 2445,
+      "lines": 115,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 196
+    },
+    {
+      "path": "drizzle/schema.ts",
+      "type": "typescript",
+      "size": 2409,
+      "lines": 57,
+      "lastModified": "2025-11-20T02:47:02.889Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 238
+    },
+    {
+      "path": "client/src/components/ui/empty.tsx",
+      "type": "typescript",
+      "size": 2406,
+      "lines": 105,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 210
+    },
+    {
+      "path": "client/src/components/ui/breadcrumb.tsx",
+      "type": "typescript",
+      "size": 2371,
+      "lines": 110,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 199
+    },
+    {
+      "path": "client/src/components/ManusDialog.tsx",
+      "type": "typescript",
+      "size": 2341,
+      "lines": 83,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 212
+    },
+    {
+      "path": "client/src/components/MobileNav.tsx",
+      "type": "typescript",
+      "size": 2333,
+      "lines": 74,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 221
+    },
+    {
+      "path": "client/src/hooks/useComposition.ts",
+      "type": "typescript",
+      "size": 2333,
+      "lines": 82,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 212
+    },
+    {
+      "path": "server/_core/imageGeneration.ts",
+      "type": "typescript",
+      "size": 2271,
+      "lines": 93,
+      "lastModified": "2025-10-16T14:35:05.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 261
+    },
+    {
+      "path": "client/src/components/ui/input-otp.tsx",
+      "type": "typescript",
+      "size": 2253,
+      "lines": 76,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 183
+    },
+    {
+      "path": "client/src/components/ui/button-group.tsx",
+      "type": "typescript",
+      "size": 2220,
+      "lines": 84,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 167
+    },
+    {
+      "path": "client/src/_core/hooks/useAuth.ts",
+      "type": "typescript",
+      "size": 2124,
+      "lines": 85,
+      "lastModified": "2025-10-15T08:03:03.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 204
+    },
+    {
+      "path": "client/src/components/ui/button.tsx",
+      "type": "typescript",
+      "size": 2097,
+      "lines": 61,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 169
+    },
+    {
+      "path": "client/src/components/ui/accordion.tsx",
+      "type": "typescript",
+      "size": 2048,
+      "lines": 65,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 142
+    },
+    {
+      "path": "client/src/components/ui/resizable.tsx",
+      "type": "typescript",
+      "size": 2023,
+      "lines": 55,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 133
+    },
+    {
+      "path": "client/src/components/ui/card.tsx",
+      "type": "typescript",
+      "size": 1997,
+      "lines": 93,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 172
+    },
+    {
+      "path": "client/src/components/ui/slider.tsx",
+      "type": "typescript",
+      "size": 1988,
+      "lines": 62,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 138
+    },
+    {
+      "path": "client/src/components/ui/tabs.tsx",
+      "type": "typescript",
+      "size": 1963,
+      "lines": 65,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 143
+    },
+    {
+      "path": "server/_core/index.ts",
+      "type": "typescript",
+      "size": 1952,
+      "lines": 66,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 222
+    },
+    {
+      "path": "client/src/components/ui/toggle-group.tsx",
+      "type": "typescript",
+      "size": 1936,
+      "lines": 74,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 149
+    },
+    {
+      "path": "server/_core/vite.ts",
+      "type": "typescript",
+      "size": 1901,
+      "lines": 68,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 203
+    },
+    {
+      "path": "server/_core/dataApi.ts",
+      "type": "typescript",
+      "size": 1899,
+      "lines": 65,
+      "lastModified": "2025-10-15T16:03:20.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 209
+    },
+    {
+      "path": "client/src/components/ui/tooltip.tsx",
+      "type": "typescript",
+      "size": 1886,
+      "lines": 60,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 131
+    },
+    {
+      "path": "client/src/pages/NotFound.tsx",
+      "type": "typescript",
+      "size": 1819,
+      "lines": 53,
+      "lastModified": "2025-11-19T13:52:06.218Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 160
+    },
+    {
+      "path": "client/src/main.tsx",
+      "type": "typescript",
+      "size": 1768,
+      "lines": 62,
+      "lastModified": "2025-11-19T13:52:06.214Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 168
+    },
+    {
+      "path": "server/_core/oauth.ts",
+      "type": "typescript",
+      "size": 1756,
+      "lines": 54,
+      "lastModified": "2025-10-22T06:51:45.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 186
+    },
+    {
+      "path": "client/src/components/ErrorBoundary.tsx",
+      "type": "typescript",
+      "size": 1688,
+      "lines": 63,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 148
+    },
+    {
+      "path": "client/src/components/ui/badge.tsx",
+      "type": "typescript",
+      "size": 1639,
+      "lines": 47,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 133
+    },
+    {
+      "path": "client/src/components/ui/scroll-area.tsx",
+      "type": "typescript",
+      "size": 1637,
+      "lines": 57,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 111
+    },
+    {
+      "path": "shared/schema_conversations.ts",
+      "type": "typescript",
+      "size": 1633,
+      "lines": 39,
+      "lastModified": "2025-11-20T02:46:36.057Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 140
+    },
+    {
+      "path": "client/src/components/ui/popover.tsx",
+      "type": "typescript",
+      "size": 1629,
+      "lines": 47,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 113
+    },
+    {
+      "path": "client/src/components/DashboardLayoutSkeleton.tsx",
+      "type": "typescript",
+      "size": 1628,
+      "lines": 47,
+      "lastModified": "2025-10-15T08:03:03.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 150
+    },
+    {
+      "path": "server/auth.logout.test.ts",
+      "type": "typescript",
+      "size": 1625,
+      "lines": 63,
+      "lastModified": "2025-11-18T05:32:37.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 174
+    },
+    {
+      "path": "client/src/components/ui/alert.tsx",
+      "type": "typescript",
+      "size": 1622,
+      "lines": 67,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 140
+    },
+    {
+      "path": "client/public/infinite_scroll/daily_updates/2025-11-19_update.md",
+      "type": "markdown",
+      "size": 1611,
+      "lines": 52,
+      "lastModified": "2025-11-19T13:04:05.082Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 219
+    },
+    {
+      "path": "client/public/infinite_scroll/daily_updates/daily_compilation_2025-11-19.md",
+      "type": "markdown",
+      "size": 1607,
+      "lines": 56,
+      "lastModified": "2025-11-19T13:19:28.898Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 240
+    },
+    {
+      "path": "knowledge_system/compilations/daily_compilation_2025-11-19.md",
+      "type": "markdown",
+      "size": 1607,
+      "lines": 56,
+      "lastModified": "2025-11-19T13:17:33.965Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 240
+    },
+    {
+      "path": "client/src/components/ui/toggle.tsx",
+      "type": "typescript",
+      "size": 1563,
+      "lines": 46,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 126
+    },
+    {
+      "path": "client/src/components/ui/hover-card.tsx",
+      "type": "typescript",
+      "size": 1525,
+      "lines": 43,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 102
+    },
+    {
+      "path": "client/src/contexts/ThemeContext.tsx",
+      "type": "typescript",
+      "size": 1467,
+      "lines": 65,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 163
+    },
+    {
+      "path": "client/src/components/ui/radio-group.tsx",
+      "type": "typescript",
+      "size": 1459,
+      "lines": 44,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 104
+    },
+    {
+      "path": "server/_core/types/manusTypes.ts",
+      "type": "typescript",
+      "size": 1327,
+      "lines": 70,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 148
+    },
+    {
+      "path": "server/_core/cookies.ts",
+      "type": "typescript",
+      "size": 1299,
+      "lines": 49,
+      "lastModified": "2025-10-15T08:03:03.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 143
+    },
+    {
+      "path": "client/src/components/BackToTop.tsx",
+      "type": "typescript",
+      "size": 1243,
+      "lines": 47,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 127
+    },
+    {
+      "path": "vite.config.ts",
+      "type": "typescript",
+      "size": 1235,
+      "lines": 45,
+      "lastModified": "2025-11-19T13:57:01.517Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 101
+    },
+    {
+      "path": "server/routers.ts",
+      "type": "typescript",
+      "size": 1223,
+      "lines": 37,
+      "lastModified": "2025-11-20T02:47:54.185Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 141
+    },
+    {
+      "path": "client/src/components/ui/checkbox.tsx",
+      "type": "typescript",
+      "size": 1218,
+      "lines": 31,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 82
+    },
+    {
+      "path": "client/src/components/ui/switch.tsx",
+      "type": "typescript",
+      "size": 1168,
+      "lines": 30,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 78
+    },
+    {
+      "path": "client/src/components/ui/avatar.tsx",
+      "type": "typescript",
+      "size": 1090,
+      "lines": 52,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 93
+    },
+    {
+      "path": "server/_core/trpc.ts",
+      "type": "typescript",
+      "size": 1033,
+      "lines": 46,
+      "lastModified": "2025-10-15T08:03:03.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 126
+    },
+    {
+      "path": "client/src/components/ResponsiveTable.tsx",
+      "type": "typescript",
+      "size": 929,
+      "lines": 31,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 92
+    },
+    {
+      "path": "server/index.ts",
+      "type": "typescript",
+      "size": 919,
+      "lines": 34,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 98
+    },
+    {
+      "path": "client/src/components/ui/kbd.tsx",
+      "type": "typescript",
+      "size": 866,
+      "lines": 29,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 68
+    },
+    {
+      "path": "client/src/components/ui/collapsible.tsx",
+      "type": "typescript",
+      "size": 791,
+      "lines": 32,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 55
+    },
+    {
+      "path": "client/src/const.ts",
+      "type": "typescript",
+      "size": 790,
+      "lines": 22,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": true,
+      "wordCount": 71
+    },
+    {
+      "path": "client/src/components/ui/progress.tsx",
+      "type": "typescript",
+      "size": 731,
+      "lines": 30,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 65
+    },
+    {
+      "path": "server/_core/systemRouter.ts",
+      "type": "typescript",
+      "size": 709,
+      "lines": 30,
+      "lastModified": "2025-10-15T16:03:20.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 79
+    },
+    {
+      "path": "client/src/components/ui/separator.tsx",
+      "type": "typescript",
+      "size": 690,
+      "lines": 27,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 55
+    },
+    {
+      "path": "server/_core/context.ts",
+      "type": "typescript",
+      "size": 658,
+      "lines": 29,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 80
+    },
+    {
+      "path": "client/src/components/ui/label.tsx",
+      "type": "typescript",
+      "size": 602,
+      "lines": 23,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 52
+    },
+    {
+      "path": "shared/_core/errors.ts",
+      "type": "typescript",
+      "size": 601,
+      "lines": 20,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 84
+    },
+    {
+      "path": "client/src/hooks/useMobile.tsx",
+      "type": "typescript",
+      "size": 584,
+      "lines": 22,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 58
+    },
+    {
+      "path": "client/src/components/ui/sonner.tsx",
+      "type": "typescript",
+      "size": 561,
+      "lines": 24,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 61
+    },
+    {
+      "path": "vitest.config.ts",
+      "type": "typescript",
+      "size": 499,
+      "lines": 20,
+      "lastModified": "2025-11-18T05:32:37.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 44
+    },
+    {
+      "path": "client/src/hooks/usePersistFn.ts",
+      "type": "typescript",
+      "size": 471,
+      "lines": 21,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 62
+    },
+    {
+      "path": "server/_core/env.ts",
+      "type": "typescript",
+      "size": 428,
+      "lines": 11,
+      "lastModified": "2025-10-23T12:12:36.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 38
+    },
+    {
+      "path": "client/src/components/SkipToContent.tsx",
+      "type": "typescript",
+      "size": 404,
+      "lines": 11,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 33
+    },
+    {
+      "path": "drizzle.config.ts",
+      "type": "typescript",
+      "size": 353,
+      "lines": 16,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 38
+    },
+    {
+      "path": "client/src/components/ui/spinner.tsx",
+      "type": "typescript",
+      "size": 335,
+      "lines": 17,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 35
+    },
+    {
+      "path": "client/src/components/ui/skeleton.tsx",
+      "type": "typescript",
+      "size": 279,
+      "lines": 14,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 29
+    },
+    {
+      "path": "shared/const.ts",
+      "type": "typescript",
+      "size": 275,
+      "lines": 6,
+      "lastModified": "2025-11-19T13:52:06.246Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 41
+    },
+    {
+      "path": "client/src/components/ui/aspect-ratio.tsx",
+      "type": "typescript",
+      "size": 269,
+      "lines": 10,
+      "lastModified": "2025-11-19T03:25:24.484Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 23
+    },
+    {
+      "path": "client/src/lib/utils.ts",
+      "type": "typescript",
+      "size": 169,
+      "lines": 7,
+      "lastModified": "2025-11-19T03:25:24.488Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 22
+    },
+    {
+      "path": "client/src/lib/trpc.ts",
+      "type": "typescript",
+      "size": 162,
+      "lines": 5,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 18
+    },
+    {
+      "path": "shared/types.ts",
+      "type": "typescript",
+      "size": 158,
+      "lines": 8,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 24
+    },
+    {
+      "path": "server/_core/types/cookie.d.ts",
+      "type": "typescript",
+      "size": 137,
+      "lines": 7,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 16
+    },
+    {
+      "path": "drizzle/relations.ts",
+      "type": "typescript",
+      "size": 27,
+      "lines": 2,
+      "lastModified": "2025-10-10T15:01:47.000Z",
+      "hasCodeBlocks": false,
+      "hasLinks": false,
+      "wordCount": 4
+    }
+  ],
+  "timestamp": "2025-11-20T06:45:33.041Z"
+}
