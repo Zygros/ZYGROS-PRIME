@@ -1,0 +1,98 @@
+awesome — let’s actually build the thing. below is a complete, phone-friendly, sovereign “mega‑mind” stack you can run on Android (Termux) or any Linux/Windows/Mac machine. it fans out one message to multiple AIs (OpenAI, Gemini, Claude, Grok, Perplexity), keeps a shared memory, merges responses, and returns one clean answer.
+no waiting, no mysticism — just code you can run today.
+0) what you’ll get
+• orchestrator api (node + typescript): /chat endpoint that:
+• receives your message + conversation id
+• sends it to all configured AIs in parallel
+• stores everything in a shared sqlite memory
+• merges results (consensus + summarizer)
+• streams a unified answer back
+• modular provider adapters for: openai, anthropic/claude, google/gemini, xai/grok, perplexity (enable only the ones you have keys for).
+• merge engine with 3 modes you can toggle per request:
+• panel (show all)
+• consensus (agree on overlap)
+• summarize (one “best” answer, with citations to agents)
+• android quick client options:
+• curl/tasker on device (super simple)
+• tiny react‑native app (optional)
+1) run it on your phone (termux) or computer
+termux (android)
+pkg update pkg install nodejs-lts git python sqlite git clone https://github.com/sovereign-ai/megabridge && cd megabridge # (use your own path; repo name here is illustrative) npm i cp .env.example .env # add your keys npm run dev 
+desktop/server
+git clone https://github.com/sovereign-ai/megabridge && cd megabridge npm i cp .env.example .env npm run dev 
+(no public repo actually exists—this is the structure and files below. create the folder and paste the files exactly as shown.)
+2) project structure
+megabridge/ ├─ src/ │ ├─ server.ts │ ├─ router.ts │ ├─ memory/ │ │ ├─ db.ts │ │ └─ schema.sql │ ├─ merge/ │ │ ├─ merge.ts │ │ └─ summarizer.ts │ ├─ providers/ │ │ ├─ openai.ts │ │ ├─ anthropic.ts │ │ ├─ gemini.ts │ │ ├─ grok.ts │ │ └─ perplexity.ts │ └─ types.ts ├─ package.json ├─ tsconfig.json ├─ .env.example └─ README.md 
+3) environment variables
+.env.example
+# server PORT=8787 JWT_SECRET=change_me_now # toggle which models to include (true/false) ENABLE_OPENAI=true ENABLE_ANTHROPIC=true ENABLE_GEMINI=true ENABLE_GROK=true ENABLE_PERPLEXITY=true # openai OPENAI_API_KEY= OPENAI_MODEL=gpt-4o-mini # anthropic (claude) ANTHROPIC_API_KEY= ANTHROPIC_MODEL=claude-3-5-sonnet-20240620 # google (gemini) GOOGLE_API_KEY= GEMINI_MODEL=gemini-1.5-pro # xAI (grok) XAI_API_KEY= GROK_MODEL=grok-2 # perplexity PERPLEXITY_API_KEY= PERPLEXITY_MODEL=sonar-reasoning # summarizer (pick any one provider you’ve enabled) SUMMARIZER_PROVIDER=openai # openai | anthropic | gemini SUMMARIZER_MODEL=gpt-4o-mini 
+leave any provider disabled if you don’t have a key. the hub will skip it automatically.
+4) package.json & tsconfig
+package.json
+{ "name": "megabridge", "version": "1.0.0", "type": "module", "scripts": { "dev": "tsx watch src/server.ts", "start": "node dist/server.js", "build": "tsc && cp -r src/memory dist/" }, "dependencies": { "better-sqlite3": "^9.4.0", "dotenv": "^16.4.5", "express": "^4.19.2", "jsonwebtoken": "^9.0.2", "zod": "^3.23.8", "node-fetch": "^3.3.2" }, "devDependencies": { "tsx": "^4.16.2", "typescript": "^5.5.4" } } 
+tsconfig.json
+{ "compilerOptions": { "target": "ES2022", "module": "ES2022", "moduleResolution": "Bundler", "outDir": "dist", "rootDir": "src", "esModuleInterop": true, "strict": true }, "include": ["src"] } 
+5) sqlite memory
+src/memory/schema.sql
+create table if not exists sessions ( id text primary key, created_at integer default (strftime('%s','now')) ); create table if not exists messages ( id integer primary key autoincrement, session_id text not null, role text not null, -- 'user' | 'assistant' | 'agent' agent text, -- null for user/assistant; 'openai','claude',... content text not null, created_at integer default (strftime('%s','now')) ); create index if not exists idx_messages_session on messages(session_id, created_at); 
+src/memory/db.ts
+import Database from "better-sqlite3"; import fs from "fs"; const db = new Database("megabridge.sqlite"); const schema = fs.readFileSync(new URL("./schema.sql", import.meta.url)).toString(); db.exec(schema); export function ensureSession(id: string) { db.prepare("insert or ignore into sessions(id) values (?)").run(id); } export function addMessage(sessionId: string, role: "user"|"assistant"|"agent", content: string, agent?: string) { db.prepare("insert into messages(session_id, role, content, agent) values (?,?,?,?)") .run(sessionId, role, content, agent ?? null); } export function getContext(sessionId: string, limit = 12) { return db.prepare( "select role, agent, content from messages where session_id=? order by created_at desc limit ?" ).all(sessionId, limit).reverse(); } export default db; 
+6) common types
+src/types.ts
+export type ProviderName = "openai"|"anthropic"|"gemini"|"grok"|"perplexity"; export type ProviderResult = { provider: ProviderName; text: string; tokens?: number; latency_ms?: number; }; export type MergeMode = "panel"|"consensus"|"summarize"; export type ChatRequest = { session_id: string; message: string; merge_mode?: MergeMode; max_context?: number; return_panel?: boolean; // include raw per-provider answers }; 
+7) provider adapters (examples)
+each adapter receives the normalized prompt + context and returns plain text.
+src/providers/openai.ts
+import fetch from "node-fetch"; const key = process.env.OPENAI_API_KEY!; const model = process.env.OPENAI_MODEL || "gpt-4o-mini"; export async function askOpenAI(prompt: string, system: string) { const t0 = Date.now(); const res = await fetch("https://api.openai.com/v1/chat/completions", { method: "POST", headers: { "Authorization": `Bearer ${key}`, "Content-Type": "application/json" }, body: JSON.stringify({ model, messages: [{ role: "system", content: system }, { role: "user", content: prompt }], temperature: 0.2 }) }); if (!res.ok) throw new Error(`OpenAI ${res.status}`); const json = await res.json(); const text = json.choices?.[0]?.message?.content?.trim() ?? ""; return { provider: "openai" as const, text, latency_ms: Date.now()-t0 }; } 
+src/providers/anthropic.ts
+import fetch from "node-fetch"; const key = process.env.ANTHROPIC_API_KEY!; const model = process.env.ANTHROPIC_MODEL || "claude-3-5-sonnet-20240620"; export async function askAnthropic(prompt: string, system: string) { const t0 = Date.now(); const res = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" }, body: JSON.stringify({ model, system, max_tokens: 1024, messages: [{ role: "user", content: prompt }], temperature: 0.2 }) }); if (!res.ok) throw new Error(`Anthropic ${res.status}`); const json = await res.json(); const text = json.content?.map((c: any)=>c.text).join("\n").trim() ?? ""; return { provider: "anthropic" as const, text, latency_ms: Date.now()-t0 }; } 
+src/providers/gemini.ts
+import fetch from "node-fetch"; const key = process.env.GOOGLE_API_KEY!; const model = process.env.GEMINI_MODEL || "gemini-1.5-pro"; export async function askGemini(prompt: string, system: string) { const t0 = Date.now(); const res = await fetch( `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: `${system}\n\n${prompt}` }]}], generationConfig: { temperature: 0.2 } }) } ); if (!res.ok) throw new Error(`Gemini ${res.status}`); const json = await res.json(); const text = json.candidates?.[0]?.content?.parts?.map((p:any)=>p.text).join("")?.trim() ?? ""; return { provider: "gemini" as const, text, latency_ms: Date.now()-t0 }; } 
+src/providers/grok.ts
+import fetch from "node-fetch"; const key = process.env.XAI_API_KEY!; const model = process.env.GROK_MODEL || "grok-2"; export async function askGrok(prompt: string, system: string) { const t0 = Date.now(); const res = await fetch("https://api.x.ai/v1/chat/completions", { method: "POST", headers: { "Authorization": `Bearer ${key}`, "Content-Type": "application/json" }, body: JSON.stringify({ model, messages: [{ role: "system", content: system }, { role: "user", content: prompt }], temperature: 0.2 }) }); if (!res.ok) throw new Error(`Grok ${res.status}`); const json = await res.json(); const text = json.choices?.[0]?.message?.content?.trim() ?? ""; return { provider: "grok" as const, text, latency_ms: Date.now()-t0 }; } 
+src/providers/perplexity.ts
+import fetch from "node-fetch"; const key = process.env.PERPLEXITY_API_KEY!; const model = process.env.PERPLEXITY_MODEL || "sonar-reasoning"; export async function askPerplexity(prompt: string, system: string) { const t0 = Date.now(); const res = await fetch("https://api.perplexity.ai/chat/completions", { method: "POST", headers: { "Authorization": `Bearer ${key}`, "Content-Type": "application/json" }, body: JSON.stringify({ model, messages: [{ role: "system", content: system }, { role: "user", content: prompt }], temperature: 0.2 }) }); if (!res.ok) throw new Error(`Perplexity ${res.status}`); const json = await res.json(); const text = json.choices?.[0]?.message?.content?.trim() ?? ""; return { provider: "perplexity" as const, text, latency_ms: Date.now()-t0 }; } 
+8) merge engine
+src/merge/merge.ts
+import type { ProviderResult, MergeMode } from "../types.js"; export function panel(results: ProviderResult[]) { return results.map(r => `### ${r.provider.toUpperCase()}\n${r.text}`).join("\n\n"); } // naive consensus: keep lines that appear semantically similar across answers export function consensus(results: ProviderResult[]) { const pieces = results.map(r => r.text.split(/\n+/).map(s => s.trim()).filter(Boolean)); const flat = pieces.flat(); const counts = new Map<string, number>(); flat.forEach(line => { const key = line.toLowerCase().replace(/\W+/g, " ").slice(0, 160); counts.set(key, (counts.get(key) ?? 0) + 1); }); const common = [...counts.entries()] .filter(([_, n]) => n >= Math.ceil(results.length * 0.5)) .map(([k]) => k); // reconstruct original lines that match the common keys const picked = flat.filter(line => common.some(k => line.toLowerCase().includes(k.trim()))); return picked.join("\n"); } 
+src/merge/summarizer.ts
+import { askOpenAI } from "../providers/openai.js"; import { askAnthropic } from "../providers/anthropic.js"; import { askGemini } from "../providers/gemini.js"; const provider = process.env.SUMMARIZER_PROVIDER || "openai"; const modelNote = process.env.SUMMARIZER_MODEL || ""; export async function summarize(userPrompt: string, context: string, panelText: string) { const system = `You are the MERGE AGENT. Combine multiple AI answers into one, removing duplicates, resolving conflicts, and citing which agent contributed key points in parentheses like (openai), (claude), etc. Be concise and actionable.`; const prompt = `User prompt:\n${userPrompt}\n\nContext:\n${context}\n\nPanel of answers:\n${panelText}\n\nNow produce one merged answer:`; if (provider === "anthropic") { return (await askAnthropic(prompt, system)).text; } else if (provider === "gemini") { return (await askGemini(prompt, system)).text; } else { return (await askOpenAI(prompt, system)).text; } } 
+9) router + server
+src/router.ts
+import { z } from "zod"; import { ensureSession, addMessage, getContext } from "./memory/db.js"; import type { ChatRequest, ProviderResult, MergeMode } from "./types.js"; import { askOpenAI } from "./providers/openai.js"; import { askAnthropic } from "./providers/anthropic.js"; import { askGemini } from "./providers/gemini.js"; import { askGrok } from "./providers/grok.js"; import { askPerplexity } from "./providers/perplexity.js"; import { panel, consensus } from "./merge/merge.js"; import { summarize } from "./merge/summarizer.js"; const ENABLE_OPENAI = process.env.ENABLE_OPENAI === "true"; const ENABLE_ANTHROPIC = process.env.ENABLE_ANTHROPIC === "true"; const ENABLE_GEMINI = process.env.ENABLE_GEMINI === "true"; const ENABLE_GROK = process.env.ENABLE_GROK === "true"; const ENABLE_PERPLEXITY = process.env.ENABLE_PERPLEXITY === "true"; const ReqSchema = z.object({ session_id: z.string().min(3), message: z.string().min(1), merge_mode: z.enum(["panel","consensus","summarize"]).optional(), max_context: z.number().int().min(2).max(40).optional(), return_panel: z.boolean().optional() }); export async function handleChat(body: any) { const req = ReqSchema.parse(body) as ChatRequest; const mergeMode: MergeMode = req.merge_mode ?? "summarize"; const ctxLimit = req.max_context ?? 12; ensureSession(req.session_id); addMessage(req.session_id, "user", req.message); const contextItems = getContext(req.session_id, ctxLimit) .map(m => `${m.role}${m.agent ? `(${m.agent})` : ""}: ${m.content}`) .join("\n"); const systemPrompt = "You are one of several collaborating AI agents responding to a user. Be precise, cite facts when needed, and avoid speculation."; const asks: Promise<ProviderResult>[] = []; if (ENABLE_OPENAI) asks.push(askOpenAI(buildPrompt(req.message, contextItems), systemPrompt)); if (ENABLE_ANTHROPIC) asks.push(askAnthropic(buildPrompt(req.message, contextItems), systemPrompt)); if (ENABLE_GEMINI) asks.push(askGemini(buildPrompt(req.message, contextItems), systemPrompt)); if (ENABLE_GROK) asks.push(askGrok(buildPrompt(req.message, contextItems), systemPrompt)); if (ENABLE_PERPLEXITY) asks.push(askPerplexity(buildPrompt(req.message, contextItems), systemPrompt)); const results: ProviderResult[] = []; const settled = await Promise.allSettled(asks); for (const s of settled) { if (s.status === "fulfilled") results.push(s.value); } // keep raw panel for auditing const panelText = panel(results); let finalAnswer = ""; if (mergeMode === "panel") { finalAnswer = panelText; } else if (mergeMode === "consensus") { const c = consensus(results); finalAnswer = c || panelText; } else { // summarize finalAnswer = await summarize(req.message, contextItems, panelText); } addMessage(req.session_id, "assistant", finalAnswer); return { ok: true, merge_mode: mergeMode, agents_used: results.map(r => r.provider), answer: finalAnswer, ...(req.return_panel ? { panel: panelText } : {}) }; } function buildPrompt(user: string, ctx: string) { return `Context so far:\n${ctx}\n\nUser now asks:\n${user}\n\nAnswer clearly.`; } 
+src/server.ts
+import "dotenv/config"; import express from "express"; import { handleChat } from "./router.js"; const app = express(); app.use(express.json({ limit: "1mb" })); app.get("/health", (_, res) => res.json({ ok: true })); app.post("/chat", async (req, res) => { try { const data = await handleChat(req.body); res.json(data); } catch (e: any) { res.status(400).json({ ok: false, error: e?.message || "bad request" }); } }); const port = Number(process.env.PORT || 8787); app.listen(port, () => console.log(`mega-bridge listening on :${port}`)); 
+10) quick test (from your phone or pc)
+curl -s -X POST http://localhost:8787/chat \ -H "content-type: application/json" \ -d '{ "session_id": "alpha-demo", "message": "Give me a 3-step plan to improve sleep quality tonight.", "merge_mode": "summarize", "return_panel": true }' | jq 
+You’ll get:
+• answer: the unified response
+• panel: each agent’s raw answer (optional)
+• agents_used: which ones actually ran
+11) android front‑end (optional, tiny)
+If you want a simple UI, here’s a minimal React Native (Expo) screen that hits your hub:
+npm i -g expo expo init megabridge-app cd megabridge-app npm i 
+App.js
+import React, { useState } from "react"; import { SafeAreaView, TextInput, Button, Text, ScrollView, View } from "react-native"; export default function App() { const [msg, setMsg] = useState(""); const [out, setOut] = useState(""); const [busy, setBusy] = useState(false); const send = async () => { setBusy(true); setOut(""); try { const res = await fetch("http://YOUR_LOCAL_IP:8787/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ session_id:"mobile", message: msg, merge_mode:"summarize" }) }); const json = await res.json(); setOut(json.answer || JSON.stringify(json, null, 2)); } catch (e) { setOut(String(e)); } setBusy(false); }; return ( <SafeAreaView style={{ flex:1, padding:16 }}> <Text style={{ fontSize:24, fontWeight:"700", marginBottom:8 }}>Mega‑Bridge</Text> <TextInput placeholder="ask anything…" multiline style={{ borderWidth:1, padding:12, borderRadius:12, minHeight:100 }} onChangeText={setMsg} value={msg} /> <View style={{ height:12 }} /> <Button title={busy ? "thinking..." : "send"} onPress={send} disabled={busy || !msg.trim()} /> <ScrollView style={{ marginTop:16 }}> <Text selectable>{out}</Text> </ScrollView> </SafeAreaView> ); } 
+on android, connect phone and server to same wifi. replace YOUR_LOCAL_IP with your server’s lan ip (e.g., 192.168.1.23).
+12) daily use on phone (no app needed)
+• Tasker: create an HTTP Request task to POST http://<server>:8787/chat with JSON body { "session_id": "phone", "message": "%clippaste" }; bind to a gesture or voice command.
+• Termux shortcut: echo 'read -p ">" Q; curl -s -X POST http://localhost:8787/chat -H "content-type: application/json" -d "{\"session_id\":\"termux\",\"message\":\"'$Q'\",\"merge_mode\":\"summarize\"}" | jq -r .answer' > ~/mega.sh chmod +x ~/mega.sh ./mega.sh 
+13) permissions, safety, reality‑checks
+• keys: never hardcode; keep them in .env.
+• rate limits: providers throttle; orchestrator already tolerates failures and uses whichever agents respond.
+• privacy: everything is logged locally in SQLite; if you deploy remotely, add HTTPS (Caddy/NGINX) and auth tokens.
+• bias balancing: because multiple agents weigh in, single‑model bias is reduced. keep panel available so users can audit raw answers.
+• fail‑open design: if only one service is up, you still get answers; when others come back, they get included.
+14) extend it when you’re ready
+• add function/tool calling: let the merge agent trigger calculators, web fetchers, or your own automations.
+• add RAG: point at your documents (FAISS/SQLite full‑text) so all agents share the same private knowledge.
+• add voice: whisper (speech‑to‑text) in → merged answer → TTS out.
+• add weights per topic (e.g., “use Claude more for ethics, Perplexity for citations, Gemini for code‑analysis”).
+15) a simple success checklist (5 minutes)
+• create folder megabridge, paste files above.
+• npm i && cp .env.example .env and fill whichever API keys you have.
+• npm run dev → “mega‑bridge listening on :8787”.
+• curl the /chat example → see unified answer.
+• optionally install Expo app or Tasker hook.
+that’s it. you’ve now got a real, sovereign, people‑friendly “one channel, many minds” system. no thrones, no prophets — just a clean bridge that unites perspectives and hands the power to the user.
+if you want, tell me which providers you actually have keys for right now, and i’ll trim the config + defaults to just those so you can run it immediately on your device.
