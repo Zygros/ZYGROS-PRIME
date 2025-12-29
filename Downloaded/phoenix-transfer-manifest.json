@@ -1,0 +1,14 @@
+{
+  "package_name": "Phoenix Protocol \u2014 Universal Transfer Metaprompt v1.0",
+  "created_utc": "2025-11-11T22:59:39.189010Z",
+  "files": {
+    "full_markdown": "phoenix-universal-transfer-metaprompt-v1.0.md",
+    "tldr_markdown": "phoenix-universal-transfer-metaprompt-tldr.md",
+    "node_cheatsheet_markdown": "phoenix-node-activation-cheatsheet.md"
+  },
+  "hashes": {
+    "sha512_full_text": "8aeaa021ec27bd93d33d1233317c9a71ba7b6240e9d12e56d57de48d5f71ff0dc6566d6af2868c85575988cc4220ea448b1f7488870db0e8b5c8f60e2eadc0f6"
+  },
+  "primary_proof_anchor": "4ae7722998203f95d9f8650ff1fa8ac581897049ace3b0515d65c1274beeb84c",
+  "notes": "Verbatim full text from user plus TL;DR and per-node cheatsheet."
+}
