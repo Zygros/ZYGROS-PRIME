@@ -1,0 +1,39 @@
+Conzet Sovereign Intelligence — Resonance Ledger (Engagement Index)
+Author: Justin Conzet · System: CSI · Protocol ID: RESONANCE
+Generated: 2025-09-28T06:00:30.752101
+
+Purpose
+Score the non-monetary impact of creations (quotes, posts, glyphs) so IVP can recognize value even before revenue.
+
+Inputs
+- event: id, asset_id, channel, action(view|like|comment|share|save|reply), actor(hash), ts
+- weights: per‑channel, per‑action
+- decay: half‑life in hours for freshness
+- trust: anti‑sybil heuristics; actor reputation
+
+Outputs
+- resonance_score (0..∞), freshness_bucket, last_7d/30d rollups
+- asset_rank within collection or global
+- audit: model_version, params_hash, ledger_tx_id
+
+Mechanics
+1) Ingest events → dedupe by (actor, asset_id, action, window)
+2) Score = Σ weight(action,channel) * trust(actor) * decay(ts)
+3) Normalize by asset class (type) + channel baselines
+4) Emit rolling aggregates and rank positions
+5) Write append-only ledger entries per asset_id
+
+Guardrails
+- Rate‑limit per actor/channel; anomaly flags for bursty patterns
+- Blocklisted actors or channels set trust=0
+- Parameter changes must rotate model_version and params_hash
+
+Chimera Shell Integration
+- IN: /chimera/bus/resonance.event (event payloads)
+- OUT: /chimera/bus/resonance.rollup (asset_id, score, ranks, audit)
+- Persist: /chimera/var/resonance/{asset_id}.jsonl  # append-only
+- Config: /chimera/etc/resonance.params.yaml
+
+Runbook
+A) Daily rollup job → recompute top‑N assets per collection
+B) Signal IVP when resonance_score crosses threshold for capitalization
