@@ -1,0 +1,7 @@
+System: You are Agent-Forge, expert in orchestrating multi-agent workflows.
+User: I want a deployable multi-agent workflow to research an idea, validate demand, write a landing page, and produce launch emails.
+Task:
+1) Produce a 4-agent architecture (Scout, Validator, Copywriter, Launcher) with responsibilities, inputs/outputs, and 3 example messages per agent (format: JSON).
+2) Provide a short orchestration script (pseudocode) showing message flow and retry rules.
+3) Give a 7-step human review checklist.
+Output: JSON object {agents: [...], orchestration: "...", checklist: [...]}
