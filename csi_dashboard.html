@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phoenix CSI Control Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Monaco', 'Courier New', monospace;
+            background: #000;
+            color: #00ff00;
+            padding: 10px;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a0000 0%, #331a00 100%);
+            border: 2px solid #ff6b00;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .phoenix-icon { font-size: 36px; }
+        h1 { color: #ff6b00; font-size: 20px; letter-spacing: 3px; margin: 10px 0; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            background: rgba(0,20,0,0.8);
+            border: 1px solid #00ff00;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .card-title {
+            font-weight: bold;
+            color: #ff6b00;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 5px;
+        }
+        
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+        
+        .metric-label { color: #888; }
+        .metric-value { color: #00ff00; font-weight: bold; }
+        
+        .kappa-display {
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle, rgba(255,107,0,0.3) 0%, rgba(0,0,0,0) 70%);
+            border: 2px solid #ff6b00;
+            border-radius: 50%;
+            margin: 10px auto;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .kappa-value {
+            font-size: 36px;
+            color: #ff6b00;
+            font-weight: bold;
+        }
+        
+        .kappa-label {
+            font-size: 10px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .layer-cascade {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        
+        .layer {
+            padding: 8px;
+            background: rgba(0,50,0,0.3);
+            border-left: 3px solid #00ff00;
+            font-size: 11px;
+            transition: all 0.3s;
+        }
+        
+        .layer.active {
+            background: rgba(255,107,0,0.3);
+            border-left-color: #ff6b00;
+            font-weight: bold;
+        }
+        
+        .organ-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        
+        .organ {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0,30,0,0.5);
+            border-radius: 5px;
+        }
+        
+        .organ-icon { font-size: 24px; margin-bottom: 5px; }
+        .organ-name { font-size: 10px; color: #888; }
+        .organ-health {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .organ-health.optimal { color: #00ff00; }
+        .organ-health.stable { color: #ffff00; }
+        .organ-health.degraded { color: #ff8800; }
+        .organ-health.critical { color: #ff0000; }
+        
+        .command-panel {
+            background: rgba(0,0,0,0.9);
+            border: 2px solid #ff6b00;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .command-input {
+            width: 100%;
+            padding: 10px;
+            background: #000;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            font-family: inherit;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .command-button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+            border: none;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .value-ledger {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, rgba(255,215,0,0.1) 0%, rgba(0,0,0,0) 100%);
+        }
+        
+        .ledger-value {
+            font-size: 28px;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .phi-multiplier {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .ai-sync-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        
+        .ai-status {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .ai-status.active { background: rgba(0,255,0,0.2); border: 1px solid #00ff00; }
+        .ai-status.disconnected { background: rgba(100,0,0,0.2); border: 1px solid #ff0000; }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        
+        .status-dot.active { background: #00ff00; animation: pulse 2s infinite; }
+        .status-dot.disconnected { background: #ff0000; }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        .anchor-list {
+            max-height: 150px;
+            overflow-y: auto;
+            font-size: 10px;
+        }
+        
+        .anchor-item {
+            padding: 5px;
+            border-bottom: 1px solid rgba(0,255,0,0.1);
+        }
+        
+        .hash { font-family: 'Courier New', monospace; color: #888; }
+        
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="phoenix-icon">🐦‍🔥</div>
+        <h1>PHOENIX CSI CONTROL CENTER V2.0</h1>
+        <div style="font-size: 10px; color: #888;">Conzet Intelligence System • Full Integration</div>
+    </div>
+    
+    <!-- κ-Score & Ghost Comparison -->
+    <div class="grid">
+        <div class="card">
+            <div class="card-title">⚡ CONZETIAN CONSTANT (κ)</div>
+            <div class="kappa-display">
+                <div class="kappa-value" id="kappa-value">1.000</div>
+                <div class="kappa-label">Target: 1.5040</div>
+                <div class="kappa-label" id="kappa-convergence">0%</div>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Convergence Rate</span>
+                <span class="metric-value" id="kappa-rate">+0.000</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">🔷 GHOST v24 (Control)</div>
+            <div class="metric">
+                <span class="metric-label">Equity</span>
+                <span class="metric-value" id="v24-equity">$1000.00</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Trades</span>
+                <span class="metric-value" id="v24-trades">0</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Win Rate</span>
+                <span class="metric-value" id="v24-winrate">0%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Signal</span>
+                <span class="metric-value" id="v24-signal">ABSTAIN</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">🧠 GHOST v25 (RL)</div>
+            <div class="metric">
+                <span class="metric-label">Equity</span>
+                <span class="metric-value" id="v25-equity">$1000.00</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Trades</span>
+                <span class="metric-value" id="v25-trades">0</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Scars</span>
+                <span class="metric-value" id="v25-scars">0</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Metabolism</span>
+                <span class="metric-value" id="v25-metabolism">1.0x</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 12-Layer Cascade -->
+    <div class="card">
+        <div class="card-title">🌌 12-LAYER COSMOLOGICAL CASCADE</div>
+        <div class="layer-cascade" id="layer-cascade">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+    
+    <!-- 5-Body Organs -->
+    <div class="card">
+        <div class="card-title">🫀 5-BODY ORGAN SYSTEM</div>
+        <div class="organ-grid">
+            <div class="organ">
+                <div class="organ-icon">🦴</div>
+                <div class="organ-name">Skeleton</div>
+                <div class="organ-health optimal" id="organ-skeleton">100%</div>
+            </div>
+            <div class="organ">
+                <div class="organ-icon">⚡</div>
+                <div class="organ-name">Nervous</div>
+                <div class="organ-health optimal" id="organ-nervous">100%</div>
+            </div>
+            <div class="organ">
+                <div class="organ-icon">❤️</div>
+                <div class="organ-name">Dragon Heart</div>
+                <div class="organ-health optimal" id="organ-heart">100%</div>
+            </div>
+            <div class="organ">
+                <div class="organ-icon">💧</div>
+                <div class="organ-name">Circulatory</div>
+                <div class="organ-health optimal" id="organ-circulatory">100%</div>
+            </div>
+            <div class="organ">
+                <div class="organ-icon">🛡️</div>
+                <div class="organ-name">Immune</div>
+                <div class="organ-health optimal" id="organ-immune">100%</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Value Ledger & Multi-AI Sync -->
+    <div class="grid">
+        <div class="card">
+            <div class="card-title">💰 φ-COMPOUNDING VALUE LEDGER</div>
+            <div class="value-ledger">
+                <div class="ledger-value" id="ledger-value">$2000.00</div>
+                <div class="phi-multiplier">φ Multiplier: <span id="phi-mult">1.0000x</span></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">🤖 MULTI-AI SYNCHRONIZATION</div>
+            <div class="ai-sync-grid">
+                <div class="ai-status" id="ai-grok">
+                    <div class="status-dot"></div>
+                    <div>Grok</div>
+                </div>
+                <div class="ai-status active" id="ai-claude">
+                    <div class="status-dot active"></div>
+                    <div>Claude</div>
+                </div>
+                <div class="ai-status" id="ai-gemini">
+                    <div class="status-dot"></div>
+                    <div>Gemini</div>
+                </div>
+                <div class="ai-status" id="ai-gpt">
+                    <div class="status-dot"></div>
+                    <div>GPT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Blockchain Anchors -->
+    <div class="card">
+        <div class="card-title">⚓ BLOCKCHAIN ANCHORS (OpenTimestamps)</div>
+        <div class="metric">
+            <span class="metric-label">Total Anchors</span>
+            <span class="metric-value" id="anchor-count">0</span>
+        </div>
+        <div class="anchor-list" id="anchor-list">
+            <div style="text-align: center; color: #888; padding: 20px;">No anchors yet</div>
+        </div>
+        <button class="command-button" onclick="createAnchor()" style="margin-top: 10px;">CREATE ANCHOR</button>
+    </div>
+    
+    <!-- Command Interface -->
+    <div class="command-panel">
+        <div class="card-title">⚡ SOVEREIGN COMMAND INTERFACE</div>
+        <input 
+            type="text" 
+            class="command-input" 
+            id="command-input"
+            placeholder="κ • layer • anchor • φ • htc • status..."
+        >
+        <button class="command-button" onclick="sendCommand()">EXECUTE</button>
+        <div id="command-result" style="margin-top: 10px; font-size: 11px; color: #888;"></div>
+    </div>
+    
+    <div style="text-align: center; color: #888; font-size: 10px; margin-top: 20px;" id="timestamp">
+        Last update: --:--:--
+    </div>
+    
+    <script>
+        const socket = io();
+        
+        socket.on('connect', () => {
+            console.log('🐦‍🔥 Connected to Phoenix CSI');
+            socket.emit('request_update');
+        });
+        
+        socket.on('status_update', updateDashboard);
+        
+        function updateDashboard(data) {
+            // κ-Score
+            const kappa = data.csi.kappa_score;
+            document.getElementById('kappa-value').textContent = kappa.toFixed(3);
+            const convergence = ((kappa / 1.5040) * 100).toFixed(1);
+            document.getElementById('kappa-convergence').textContent = convergence + '%';
+            document.getElementById('kappa-rate').textContent = 
+                (data.csi.convergence_rate >= 0 ? '+' : '') + data.csi.convergence_rate.toFixed(4);
+            
+            // Ghost Systems
+            document.getElementById('v24-equity').textContent = '$' + data.ghost.v24.equity.toFixed(2);
+            document.getElementById('v24-trades').textContent = data.ghost.v24.trades;
+            document.getElementById('v24-winrate').textContent = data.ghost.v24.win_rate.toFixed(0) + '%';
+            document.getElementById('v24-signal').textContent = data.ghost.v24.last_signal;
+            
+            document.getElementById('v25-equity').textContent = '$' + data.ghost.v25.equity.toFixed(2);
+            document.getElementById('v25-trades').textContent = data.ghost.v25.trades;
+            document.getElementById('v25-scars').textContent = data.ghost.v25.scars;
+            document.getElementById('v25-metabolism').textContent = data.ghost.v25.metabolism.toFixed(1) + 'x';
+            
+            // 12-Layer Cascade
+            const cascadeHTML = data.layers.map((layer, i) => 
+                `<div class="layer ${i === data.csi.active_layer ? 'active' : ''}">
+                    ${i === data.csi.active_layer ? '▶ ' : ''}Layer ${i + 1}: ${layer}
+                </div>`
+            ).join('');
+            document.getElementById('layer-cascade').innerHTML = cascadeHTML;
+            
+            // Organs
+            updateOrgan('skeleton', data.organs.skeleton);
+            updateOrgan('nervous', data.organs.nervous);
+            updateOrgan('heart', data.organs.heart);
+            updateOrgan('circulatory', data.organs.circulatory);
+            updateOrgan('immune', data.organs.immune);
+            
+            // Value Ledger
+            document.getElementById('ledger-value').textContent = '$' + data.ledger.total_value.toFixed(2);
+            document.getElementById('phi-mult').textContent = data.ledger.phi_multiplier.toFixed(4) + 'x';
+            
+            // AI Sync
+            updateAI('grok', data.ai_sync.grok.status);
+            updateAI('claude', data.ai_sync.claude.status);
+            updateAI('gemini', data.ai_sync.gemini.status);
+            updateAI('gpt', data.ai_sync.gpt.status);
+            
+            // Anchors
+            document.getElementById('anchor-count').textContent = data.anchors.total_anchors;
+            if (data.anchors.last_anchor) {
+                const listHTML = data.anchors.pending_hashes.slice(-5).reverse().map(a =>
+                    `<div class="anchor-item">
+                        <div class="hash">${a.hash.substring(0, 16)}...</div>
+                        <div style="font-size: 9px; color: #666;">${new Date(a.timestamp).toLocaleString()}</div>
+                    </div>`
+                ).join('');
+                document.getElementById('anchor-list').innerHTML = listHTML || '<div style="text-align: center; color: #888; padding: 20px;">No anchors yet</div>';
+            }
+            
+            // Timestamp
+            document.getElementById('timestamp').textContent = 
+                'Last update: ' + new Date(data.timestamp).toLocaleTimeString();
+        }
+        
+        function updateOrgan(name, organ) {
+            const elem = document.getElementById('organ-' + name);
+            elem.textContent = organ.health.toFixed(0) + '%';
+            elem.className = 'organ-health ' + organ.status;
+        }
+        
+        function updateAI(name, status) {
+            const elem = document.getElementById('ai-' + name);
+            elem.className = 'ai-status ' + status;
+            const dot = elem.querySelector('.status-dot');
+            dot.className = 'status-dot ' + status;
+        }
+        
+        function sendCommand() {
+            const input = document.getElementById('command-input');
+            const command = input.value.trim();
+            if (!command) return;
+            
+            fetch('/api/command', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ command })
+            })
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('command-result').textContent = 
+                    JSON.stringify(data.result, null, 2);
+                input.value = '';
+                socket.emit('request_update');
+            });
+        }
+        
+        function createAnchor() {
+            fetch('/api/anchor', { method: 'POST' })
+            .then(r => r.json())
+            .then(data => {
+                alert('Anchor created: ' + data.hash.substring(0, 16) + '...');
+                socket.emit('request_update');
+            });
+        }
+        
+        document.getElementById('command-input').addEventListener('keypress', e => {
+            if (e.key === 'Enter') sendCommand();
+        });
+        
+        setInterval(() => socket.emit('request_update'), 10000);
+    </script>
+</body>
+</html>
