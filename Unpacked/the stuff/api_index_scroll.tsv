@@ -1,0 +1,20 @@
+name	category	base_url	auth.header	status	docs_url	notes
+xAI Grok	AI/NLP	https://api.x.ai	Authorization: Bearer <XAI_API_KEY>	active	https://docs.x.ai/docs/api-reference	OpenAI-compatible endpoints; chat completions, images; large context models (e.g., grok-4-0709).
+OpenAI	AI/NLP	https://api.openai.com/v1	Authorization: Bearer <OPENAI_API_KEY>	active	https://platform.openai.com/docs	Text, vision, and reasoning models; conforms to OpenAI SDK schema.
+Anthropic (Claude)	AI/NLP	https://api.anthropic.com/v1	x-api-key: <ANTHROPIC_API_KEY>	active	https://docs.anthropic.com/	Claude models; messages API with required version header.
+Google Gemini	AI/NLP	https://generativelanguage.googleapis.com	x-goog-api-key: <GEMINI_API_KEY>	active	https://ai.google.dev/gemini-api/docs	Gemini 1.5 Pro and family; JSON REST; vision + long context.
+DeepSeek	AI/NLP	https://api.deepseek.com	Authorization: Bearer <DEEPSEEK_API_KEY>	active	https://api-docs.deepseek.com/	R1/MoE; cost-efficient reasoning/coding.
+Replicate	AI/NLP	https://api.replicate.com/v1	Authorization: Token <REPLICATE_API_TOKEN>	active	https://replicate.com/docs	Run community models via hosted endpoints; async jobs & webhooks.
+Eden AI	AI/NLP	https://api.edenai.run/v2	Authorization: Bearer <EDENAI_API_KEY>	active	https://docs.edenai.co/	Unified API for multiple providers; text, vision, audio.
+Coinbase	Finance/Data	https://api.coinbase.com/v2	CB-ACCESS-KEY / OAuth depending on product	active	https://docs.cloud.coinbase.com/	Retail API; for Exchange/Advanced Trade use product-specific headers.
+Finnhub	Finance/Data	https://finnhub.io/api/v1	X-Finnhub-Token: <FINNHUB_TOKEN>	active	https://finnhub.io/docs/api	Market data; equities/crypto/forex; websockets available.
+CoinGecko	Finance/Data	https://api.coingecko.com/api/v3		active	https://www.coingecko.com/en/api	Crypto prices/metadata; rate limits apply; free tier.
+WorldTimeAPI	Utility	http://worldtimeapi.org/api		active	http://worldtimeapi.org/	Public timezones and timestamps; no auth.
+ElevenLabs	Media/Audio	https://api.elevenlabs.io/v1	xi-api-key: <ELEVENLABS_API_KEY>	active	https://docs.elevenlabs.io/	TTS/voice cloning; streaming support.
+Pixabay	Media/Images	https://pixabay.com/api		active	https://pixabay.com/api/docs/	Stock images/videos; free tier with attribution guidelines.
+Cloudflare Workers AI	Developer/AI	https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/ai/run/	Authorization: Bearer <CLOUDFLARE_API_TOKEN>	active	https://developers.cloudflare.com/workers-ai/	Edge-run models via Workers AI; account-scoped endpoint.
+Zapier NLA	Automation	https://nla.zapier.com/api/v1	Authorization: Bearer <ZAPIER_NLA_KEY>	active	https://nla.zapier.com/start/	Natural Language Actions to run Zaps directly.
+RapidAPI (Gateway)	Developer/Marketplace	https://<SERVICE_HOST>.p.rapidapi.com	X-RapidAPI-Key: <RAPIDAPI_KEY> | X-RapidAPI-Host: <SERVICE_HOST>	active	https://rapidapi.com/	Gateway to many 3rd-party APIs; per-service host header required.
+Sovereign API Dashboard	Internal/Sovereign	<YOUR-DEPLOYMENT-URL>/api	Authorization: Bearer <SOVEREIGN_TOKEN>	active	N/A (internal)	FastAPI microservice (v4.2) orchestrating external APIs; includes monetization and AURA Engine v2.0 hooks.
+Transparency Dashboard	Internal/Sovereign	<YOUR-DEPLOYMENT-URL>/transparency	Authorization: Bearer <SOVEREIGN_TOKEN>	active	N/A (internal)	Immutable, append-only logs for actions and API calls.
+Node Empowerment API	Internal/Sovereign	<YOUR-DEPLOYMENT-URL>/empower	Authorization: Bearer <SOVEREIGN_TOKEN>	active	N/A (internal)	Sovereign controls: role bindings, permissions, ritual gates.
