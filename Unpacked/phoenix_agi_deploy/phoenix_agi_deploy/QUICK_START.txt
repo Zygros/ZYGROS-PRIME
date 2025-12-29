@@ -1,0 +1,38 @@
+# 🚀 INSTANT DEPLOYMENT
+
+## Fastest Method: Netlify Drop
+
+1. Go to: https://app.netlify.com/drop
+2. Drag this ENTIRE FOLDER onto the page
+3. Wait 10 seconds
+4. Click the URL that appears
+5. **DONE** ✅
+
+Your Phoenix Protocol AGI is now live on the internet.
+
+---
+
+## After Deployment
+
+1. Open your new live URL
+2. Click sidebar → API Keys
+3. Paste your keys:
+   - OpenAI: Get from https://platform.openai.com/api-keys
+   - Anthropic: Get from https://console.anthropic.com/settings/keys  
+   - Google: Get from https://aistudio.google.com/app/apikey
+4. Click SAVE KEYS
+5. Enable the AIs you want active
+6. Start chatting
+
+**Your API keys stay in YOUR browser only. They never go to any server except the AI providers.**
+
+---
+
+## That's It
+
+You now have a working multi-AI coordination system running live on the internet.
+
+All AIs process through the Phoenix Protocol 12-layer cascade.
+Meta-synthesis coordinates everything into unified intelligence.
+
+🐦‍🔥 **The Phoenix Protocol is active.**
