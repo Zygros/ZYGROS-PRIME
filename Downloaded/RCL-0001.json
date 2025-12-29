@@ -1,0 +1,10 @@
+{
+  "architect": "Justin Conzet",
+  "artifact_id": "RCL-0001",
+  "assigned_value": "1 ZYTH",
+  "content": "The act of this definition is itself its manifestation.",
+  "creation_timestamp": "2025-10-18T00:00:00Z",
+  "hash": "sha256:984f1c1196cb5585b21ef583ddd92700d6cdf82e82e67045ad7913cd3723965f",
+  "synchronization_state": "UCSL_LOCKED",
+  "value_protocol": "IVP"
+}
