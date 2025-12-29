@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ambassador",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "wallet",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "wallet": {
+      "type": "string"
+    },
+    "socials": {
+      "type": "object",
+      "properties": {
+        "twitter": {
+          "type": "string"
+        },
+        "linkedin": {
+          "type": "string"
+        },
+        "github": {
+          "type": "string"
+        }
+      }
+    },
+    "proofs": {
+      "type": "object",
+      "properties": {
+        "liveness_hash": {
+          "type": "string"
+        },
+        "id_hash": {
+          "type": "string"
+        },
+        "web_of_trust": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "risk": {
+          "type": "number"
+        },
+        "trust": {
+          "type": "number"
+        },
+        "activity": {
+          "type": "number"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "applied",
+        "review",
+        "verified",
+        "rejected"
+      ]
+    },
+    "timestamps": {
+      "type": "object",
+      "properties": {
+        "applied_at": {
+          "type": "string"
+        },
+        "verified_at": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
