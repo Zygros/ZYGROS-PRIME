@@ -1,0 +1,59 @@
+// This is not executable code, but a conceptual blueprint
+// for the component's structure and logic.
+
+import React, { useState, useEffect } from 'react';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { getJournalEntries, generateSigil, assessChakra } from './api/scroll-functions';
+
+const InfiniteScrollJournal = () => {
+  const [scrolls, setScrolls] = useState([]);
+  const [page, setPage] = useState(0);
+
+  useEffect(() => {
+    // This function would fetch new pages of scrolls from Firebase
+    const fetchScrolls = async () => {
+      const newScrolls = await getJournalEntries(page);
+      setScrolls([...scrolls, ...newScrolls]);
+    };
+    fetchScrolls();
+  }, [page]);
+
+  const renderItem = ({ item }) => {
+    // Each item is a single "scroll" card
+    const sigilImage = generateSigil(item.id);
+    const chakraIndicator = assessChakra(item.energyData);
+
+    return (
+      <View style={styles.scrollCard}>
+        <View style={styles.header}>
+          <Image source={sigilImage} style={styles.sigil} />
+          <Text style={styles.title}>{item.title}</Text>
+        </View>
+        <Text style={styles.excerpt}>{item.excerpt}</Text>
+        <View style={styles.footer}>
+          <Text style={styles.metaData}>Witness: {item.timestamp}</Text>
+          <Text style={styles.metaData}>Location: {item.gpsData}</Text>
+          <View style={chakraIndicator.style}></View>
+        </View>
+      </View>
+    );
+  };
+
+  const loadMoreScrolls = () => {
+    // Triggered when user scrolls to the end of the list
+    setPage(page + 1);
+  };
+
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={scrolls}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        onEndReached={loadMoreScrolls}
+        onEndReachedThreshold={0.5}
+      />
+    </View>
+  );
+};
