@@ -1,0 +1,1 @@
+otpauth://totp/Google%3Ajconzet89%40gmail.com?secret=xounkok24hp4zsvykcwvwsoplcnwmkxq&issuer=Google
