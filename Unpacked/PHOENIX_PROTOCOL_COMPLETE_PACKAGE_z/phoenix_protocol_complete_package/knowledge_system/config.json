@@ -1,0 +1,27 @@
+{
+  "system_name": "Daily Knowledge Management System",
+  "version": "1.0.0",
+  "protocol": "Infinite Scroll Protocol",
+  "directories": {
+    "conversations": "/home/ubuntu/knowledge_system/conversations",
+    "downloads": "/home/ubuntu/Downloads",
+    "compilations": "/home/ubuntu/knowledge_system/compilations",
+    "mega_thread": "/home/ubuntu/knowledge_system/mega_thread",
+    "logs": "/home/ubuntu/knowledge_system/logs"
+  },
+  "scan_hours": 24,
+  "categories": [
+    "Technical Knowledge",
+    "Insights & Probes",
+    "Thoughts & Reflections",
+    "Integrations & Connections",
+    "Action Items",
+    "Questions & Inquiries"
+  ],
+  "file_patterns": [
+    "*.txt",
+    "*.md",
+    "*.json",
+    "*.log"
+  ]
+}
