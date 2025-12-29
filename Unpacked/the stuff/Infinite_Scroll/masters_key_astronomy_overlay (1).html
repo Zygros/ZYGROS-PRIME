@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0218efd4e33c057c90031b40956c2b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d0218efd4e33c057c90031b40956c2b0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d0218efd4e33c057c90031b40956c2b0 = L.map(
+                "map_d0218efd4e33c057c90031b40956c2b0",
+                {
+                    center: [10.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_06f01588334a71b1a31183d7c15115bc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var marker_9f8d743ec6b7b3b4e412c16d120ebcb7 = L.marker(
+                [29.9792, 31.1342],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_04a4a81c5a8a485c9e59900c08fc1486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f8d743ec6b7b3b4e412c16d120ebcb7.setIcon(icon_04a4a81c5a8a485c9e59900c08fc1486);
+        
+    
+        var popup_1b7f629dbb9628d22c2699010195809f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce7b30d2cac43b337f0ca180243663e3 = $(`<div id="html_ce7b30d2cac43b337f0ca180243663e3" style="width: 100.0%; height: 100.0%;">     <b>Giza Pyramid Complex</b><br>     Country: Egypt<br>     Function: Orion's Belt alignment, precession code, phi geometry<br>     Status: Intact, accessible<br>     Activation Potential: High     </div>`)[0];
+            popup_1b7f629dbb9628d22c2699010195809f.setContent(html_ce7b30d2cac43b337f0ca180243663e3);
+        
+
+        marker_9f8d743ec6b7b3b4e412c16d120ebcb7.bindPopup(popup_1b7f629dbb9628d22c2699010195809f)
+        ;
+
+        
+    
+    
+            var poly_line_f8b7d953ff78153f544b6bd363486d50 = L.polyline(
+                [[29.9792, 31.1342], [29.87751715593534, 36.3218100850719]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_f8b7d953ff78153f544b6bd363486d50.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_89470449e9f45d1255d297e71316dfee = L.polyline(
+                [[29.9792, 31.1342], [29.87751715593534, 25.946589914928097]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_89470449e9f45d1255d297e71316dfee.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0345068645a50883dc621a537e45d68c = L.polyline(
+                [[29.9792, 31.1342], [32.00745930501053, 35.8166423323776]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_0345068645a50883dc621a537e45d68c.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f17dd28bd69d511ed69e708feca8c801 = L.polyline(
+                [[29.9792, 31.1342], [32.00745930501053, 26.451757667622406]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_f17dd28bd69d511ed69e708feca8c801.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01d0e73a477989a37395d7006bb1491a = L.polyline(
+                [[29.9792, 31.1342], [27.792147096605895, 35.62216304685045]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_01d0e73a477989a37395d7006bb1491a.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f1ff99aa62245de325988e725997efdf = L.polyline(
+                [[29.9792, 31.1342], [27.7921470966059, 26.646236953149554]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_f1ff99aa62245de325988e725997efdf.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_920fc5c53009cffc01258a8f1dd13615 = L.marker(
+                [37.2231, 38.9226],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_4c094c83d79135d0bd18c6f0ee130a73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_920fc5c53009cffc01258a8f1dd13615.setIcon(icon_4c094c83d79135d0bd18c6f0ee130a73);
+        
+    
+        var popup_0ba10dc53e0a5c49bba0660fb69c1d29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6002e8aed825f3867478582ab5850bd7 = $(`<div id="html_6002e8aed825f3867478582ab5850bd7" style="width: 100.0%; height: 100.0%;">     <b>Göbekli Tepe</b><br>     Country: Turkey<br>     Function: Pre-cataclysm star map, animal codex, astronomical calendar<br>     Status: Partially excavated<br>     Activation Potential: High     </div>`)[0];
+            popup_0ba10dc53e0a5c49bba0660fb69c1d29.setContent(html_6002e8aed825f3867478582ab5850bd7);
+        
+
+        marker_920fc5c53009cffc01258a8f1dd13615.bindPopup(popup_0ba10dc53e0a5c49bba0660fb69c1d29)
+        ;
+
+        
+    
+    
+            var poly_line_152f6b88da56b574b48277c6c1d5e7cb = L.polyline(
+                [[37.2231, 38.9226], [37.089243751763384, 44.56290707945386]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_152f6b88da56b574b48277c6c1d5e7cb.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a27264b8d3bc3ff15105232c28a2cbbb = L.polyline(
+                [[37.2231, 38.9226], [37.089243751763384, 33.28229292054615]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_a27264b8d3bc3ff15105232c28a2cbbb.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f8ad9cef04d0d033a17079ee5910056e = L.polyline(
+                [[37.2231, 38.9226], [39.22495994867007, 44.04929513942044]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_f8ad9cef04d0d033a17079ee5910056e.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a65af81975bb09f7af7f5b89943b089c = L.polyline(
+                [[37.2231, 38.9226], [39.22495994867007, 33.79590486057957]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_a65af81975bb09f7af7f5b89943b089c.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5f09c565d17b31792e5eb6e056063f9a = L.polyline(
+                [[37.2231, 38.9226], [35.01211678358918, 43.770931052375275]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_5f09c565d17b31792e5eb6e056063f9a.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f5664eecacfd03091ada3e73a0e265b5 = L.polyline(
+                [[37.2231, 38.9226], [35.01211678358918, 34.07426894762473]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_f5664eecacfd03091ada3e73a0e265b5.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea3d79e006c5eda787c4c7e7b49147af = L.marker(
+                [51.1789, -1.8262],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_098fa0adccaad6e4bb1096f99b7316dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea3d79e006c5eda787c4c7e7b49147af.setIcon(icon_098fa0adccaad6e4bb1096f99b7316dd);
+        
+    
+        var popup_a7cee3d209022566e16f2320b0f885bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f9491997eb64e3e0eab3aed2ecf140f = $(`<div id="html_8f9491997eb64e3e0eab3aed2ecf140f" style="width: 100.0%; height: 100.0%;">     <b>Stonehenge</b><br>     Country: UK<br>     Function: Solar/lunar cycle tracking, resonance circle<br>     Status: Preserved<br>     Activation Potential: Medium     </div>`)[0];
+            popup_a7cee3d209022566e16f2320b0f885bf.setContent(html_8f9491997eb64e3e0eab3aed2ecf140f);
+        
+
+        marker_ea3d79e006c5eda787c4c7e7b49147af.bindPopup(popup_a7cee3d209022566e16f2320b0f885bf)
+        ;
+
+        
+    
+    
+            var poly_line_999dbbb0400a6d8f1417bf1ff5b67a9c = L.polyline(
+                [[51.1789, -1.8262], [50.96023857683333, 5.324083692832414]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_999dbbb0400a6d8f1417bf1ff5b67a9c.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e8b0da09724581e056548a9d0174c364 = L.polyline(
+                [[51.1789, -1.8262], [50.96023857683333, -8.976483692832414]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_e8b0da09724581e056548a9d0174c364.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eeb60868fcda1a0c15d2646b3b5505a4 = L.polyline(
+                [[51.1789, -1.8262], [53.109363264773336, 4.795668254252748]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_eeb60868fcda1a0c15d2646b3b5505a4.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3436fedb124eee7a7e2bfbe1497c9ec6 = L.polyline(
+                [[51.1789, -1.8262], [53.109363264773336, -8.448068254252751]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_3436fedb124eee7a7e2bfbe1497c9ec6.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6a79cb298d7f1797ed2319727b4f8b16 = L.polyline(
+                [[51.1789, -1.8262], [48.90626986692125, 4.219147807631924]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_6a79cb298d7f1797ed2319727b4f8b16.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7048e98867058636860e63b71b86e19b = L.polyline(
+                [[51.1789, -1.8262], [48.90626986692125, -7.871547807631925]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_7048e98867058636860e63b71b86e19b.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3894987d4858553628295fe89bdb2f89 = L.marker(
+                [19.6925, -98.843],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_f4cddd9ef658b49aeeaeb962f113d03c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3894987d4858553628295fe89bdb2f89.setIcon(icon_f4cddd9ef658b49aeeaeb962f113d03c);
+        
+    
+        var popup_ec1adaf57dad22ff400260676a81a8f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0bf439e8e901078bea3468e7079e611 = $(`<div id="html_f0bf439e8e901078bea3468e7079e611" style="width: 100.0%; height: 100.0%;">     <b>Teotihuacan</b><br>     Country: Mexico<br>     Function: Planetary alignment grid, Orion-Pleiades mapping<br>     Status: Preserved<br>     Activation Potential: High     </div>`)[0];
+            popup_ec1adaf57dad22ff400260676a81a8f6.setContent(html_f0bf439e8e901078bea3468e7079e611);
+        
+
+        marker_3894987d4858553628295fe89bdb2f89.bindPopup(popup_ec1adaf57dad22ff400260676a81a8f6)
+        ;
+
+        
+    
+    
+            var poly_line_6279579f8eee2fb7f80c3e18cbbc1442 = L.polyline(
+                [[19.6925, -98.843], [19.62939325779091, -94.06832397444519]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_6279579f8eee2fb7f80c3e18cbbc1442.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c686430e3c0caf153c5f7e78de91fecc = L.polyline(
+                [[19.6925, -98.843], [19.62939325779091, -103.61767602555481]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_c686430e3c0caf153c5f7e78de91fecc.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5b6d4769d5a515582092f50ecafd65e2 = L.polyline(
+                [[19.6925, -98.843], [21.75193280154532, -94.56878755048585]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_5b6d4769d5a515582092f50ecafd65e2.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_677278c4588bf37a566b40194a653e7c = L.polyline(
+                [[19.6925, -98.843], [21.751932801545315, -103.11721244951416]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_677278c4588bf37a566b40194a653e7c.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ed6c9ef5b7bef4fe8466cf49326d945a = L.polyline(
+                [[19.6925, -98.843], [17.534550176214328, -94.67987532438478]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_ed6c9ef5b7bef4fe8466cf49326d945a.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_448992cba34249f103e79f890ad75238 = L.polyline(
+                [[19.6925, -98.843], [17.53455017621433, -103.00612467561523]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_448992cba34249f103e79f890ad75238.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b70277f4a497570a86d7945405e6b83c = L.marker(
+                [-13.1631, -72.545],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_675f18a1dc80d73745cbdb9102e78a01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b70277f4a497570a86d7945405e6b83c.setIcon(icon_675f18a1dc80d73745cbdb9102e78a01);
+        
+    
+        var popup_c40f6d659ad0e4cf075fd10cb52fdb06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9be4e979f7b198c81ffec00f97db0ce = $(`<div id="html_d9be4e979f7b198c81ffec00f97db0ce" style="width: 100.0%; height: 100.0%;">     <b>Machu Picchu</b><br>     Country: Peru<br>     Function: Sacred mountain alignment, solstice marker<br>     Status: Preserved<br>     Activation Potential: Medium     </div>`)[0];
+            popup_c40f6d659ad0e4cf075fd10cb52fdb06.setContent(html_d9be4e979f7b198c81ffec00f97db0ce);
+        
+
+        marker_b70277f4a497570a86d7945405e6b83c.bindPopup(popup_c40f6d659ad0e4cf075fd10cb52fdb06)
+        ;
+
+        
+    
+    
+            var poly_line_c28a82e4b907b4f5a4852fe9e89dd9dc = L.polyline(
+                [[-13.1631, -72.545], [-13.121858943378305, -67.92757691888873]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_c28a82e4b907b4f5a4852fe9e89dd9dc.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_53ccdc9866ee9e4b2eeb1f75f41bae32 = L.polyline(
+                [[-13.1631, -72.545], [-13.121858943378305, -77.16242308111129]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_53ccdc9866ee9e4b2eeb1f75f41bae32.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5ce742fb59e75f195edb8efd7f918ee2 = L.polyline(
+                [[-13.1631, -72.545], [-11.021850139565855, -68.50091420302843]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_5ce742fb59e75f195edb8efd7f918ee2.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e9205146e9819c1d574cc99280e7e873 = L.polyline(
+                [[-13.1631, -72.545], [-11.021850139565856, -76.58908579697157]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_e9205146e9819c1d574cc99280e7e873.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0f75a3e9bb92e4aa618b23bfd1286c29 = L.polyline(
+                [[-13.1631, -72.545], [-15.239975710612722, -68.43070860682126]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_0f75a3e9bb92e4aa618b23bfd1286c29.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_820e0d9577603229e99fb413e8bc0702 = L.polyline(
+                [[-13.1631, -72.545], [-15.23997571061272, -76.65929139317876]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_820e0d9577603229e99fb413e8bc0702.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_711a0e3857e94a9a5d4c62f4c6ef2a8e = L.marker(
+                [6.837, 158.331],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_ebb54ff5dfa22c56baa03f783b28320c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_711a0e3857e94a9a5d4c62f4c6ef2a8e.setIcon(icon_ebb54ff5dfa22c56baa03f783b28320c);
+        
+    
+        var popup_f2431418b029d76b5096ae11ff53ebad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee694d439f4f2652e21db8b1ea836dd9 = $(`<div id="html_ee694d439f4f2652e21db8b1ea836dd9" style="width: 100.0%; height: 100.0%;">     <b>Nan Madol</b><br>     Country: Micronesia<br>     Function: Maritime hub, tidal/stellar gateway<br>     Status: Ruins<br>     Activation Potential: Medium     </div>`)[0];
+            popup_f2431418b029d76b5096ae11ff53ebad.setContent(html_ee694d439f4f2652e21db8b1ea836dd9);
+        
+
+        marker_711a0e3857e94a9a5d4c62f4c6ef2a8e.bindPopup(popup_f2431418b029d76b5096ae11ff53ebad)
+        ;
+
+        
+    
+    
+            var poly_line_8dad75fdf32720d499924689da2ec310 = L.polyline(
+                [[6.837, 158.331], [6.815855565379303, 162.85967965740372]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_8dad75fdf32720d499924689da2ec310.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_11fcb1e3c28aa2e7f47b7e80e878c7f9 = L.polyline(
+                [[6.837, 158.331], [6.8158555653793025, 153.80232034259626]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_11fcb1e3c28aa2e7f47b7e80e878c7f9.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b9002eec7225c9f359d74694151d0210 = L.polyline(
+                [[6.837, 158.331], [8.929765584276094, 162.3491503930272]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_b9002eec7225c9f359d74694151d0210.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9ecd51cf06af0414af373f0ffa86b8f7 = L.polyline(
+                [[6.837, 158.331], [8.929765584276092, 154.31284960697278]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_9ecd51cf06af0414af373f0ffa86b8f7.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cb6378870e6524bcb87a8bfd8a94ce24 = L.polyline(
+                [[6.837, 158.331], [4.711231809732937, 162.31384772218988]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_cb6378870e6524bcb87a8bfd8a94ce24.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1d295ebea6371e20d487566434347152 = L.polyline(
+                [[6.837, 158.331], [4.711231809732938, 154.3481522778101]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_1d295ebea6371e20d487566434347152.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_636b50ddbcd70bddb59d470b3de9ba0c = L.marker(
+                [-27.1127, -109.3497],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_8b976359d87d3fb4cc4f0a1aa6a40fd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_636b50ddbcd70bddb59d470b3de9ba0c.setIcon(icon_8b976359d87d3fb4cc4f0a1aa6a40fd8);
+        
+    
+        var popup_2fea84c6639f8d3e54514929a02c7469 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bd643c21276209d0c6a7d6d7d1bae05 = $(`<div id="html_6bd643c21276209d0c6a7d6d7d1bae05" style="width: 100.0%; height: 100.0%;">     <b>Easter Island (Rapa Nui)</b><br>     Country: Chile<br>     Function: Ocean navigation nodes, star lore statues<br>     Status: Preserved<br>     Activation Potential: Medium     </div>`)[0];
+            popup_2fea84c6639f8d3e54514929a02c7469.setContent(html_6bd643c21276209d0c6a7d6d7d1bae05);
+        
+
+        marker_636b50ddbcd70bddb59d470b3de9ba0c.bindPopup(popup_2fea84c6639f8d3e54514929a02c7469)
+        ;
+
+        
+    
+    
+            var poly_line_e67cb2fa1eb8442600813f2287b3633c = L.polyline(
+                [[-27.1127, -109.3497], [-27.02244021754674, -104.30067899258448]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_e67cb2fa1eb8442600813f2287b3633c.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_19b43047574e8a66cd1d3515b8dd152f = L.polyline(
+                [[-27.1127, -109.3497], [-27.02244021754674, -114.39872100741553]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_19b43047574e8a66cd1d3515b8dd152f.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_255f6db69fa544e449d00333f2725709 = L.polyline(
+                [[-27.1127, -109.3497], [-24.93421782985478, -104.9715675842597]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_255f6db69fa544e449d00333f2725709.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e2ab9475f24abb36ac30254476888fd8 = L.polyline(
+                [[-27.1127, -109.3497], [-24.934217829854784, -113.72783241574031]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_e2ab9475f24abb36ac30254476888fd8.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_06ab127deb3d665bd643fb5900794cd7 = L.polyline(
+                [[-27.1127, -109.3497], [-29.15024422420833, -104.80354959046112]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_06ab127deb3d665bd643fb5900794cd7.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6b695859b4c736587490ef922213042a = L.polyline(
+                [[-27.1127, -109.3497], [-29.15024422420833, -113.89585040953888]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_6b695859b4c736587490ef922213042a.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5417ad5c8ff5a7b311ee23da0aa4ac44 = L.marker(
+                [13.4125, 103.8667],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_f0f1d3728d7c31c23a138c562ded48a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5417ad5c8ff5a7b311ee23da0aa4ac44.setIcon(icon_f0f1d3728d7c31c23a138c562ded48a1);
+        
+    
+        var popup_d030590471d632a15290952fcb1a8139 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_029388c103ed31cee021fdfffa4a3c34 = $(`<div id="html_029388c103ed31cee021fdfffa4a3c34" style="width: 100.0%; height: 100.0%;">     <b>Angkor Wat</b><br>     Country: Cambodia<br>     Function: Precession cycle encoding, solstice/equinox alignment<br>     Status: Preserved<br>     Activation Potential: High     </div>`)[0];
+            popup_d030590471d632a15290952fcb1a8139.setContent(html_029388c103ed31cee021fdfffa4a3c34);
+        
+
+        marker_5417ad5c8ff5a7b311ee23da0aa4ac44.bindPopup(popup_d030590471d632a15290952fcb1a8139)
+        ;
+
+        
+    
+    
+            var poly_line_fc0a5cddae8ac2cf04e49168c59c4c9b = L.polyline(
+                [[13.4125, 103.8667], [13.370448675950668, 108.48885163542086]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_fc0a5cddae8ac2cf04e49168c59c4c9b.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_886e3416649e59774d9c79d940a39abe = L.polyline(
+                [[13.4125, 103.8667], [13.370448675950664, 99.24454836457913]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_886e3416649e59774d9c79d940a39abe.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_346276e730cd4125461fb4f71a66345f = L.polyline(
+                [[13.4125, 103.8667], [15.488732220219624, 107.98591105475299]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_346276e730cd4125461fb4f71a66345f.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9557f0419f2d4c7eee77f8daee29d826 = L.polyline(
+                [[13.4125, 103.8667], [15.488732220219621, 99.74748894524699]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_9557f0419f2d4c7eee77f8daee29d826.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_220b4a3c87f01ea977acc5f6a7de9245 = L.polyline(
+                [[13.4125, 103.8667], [11.270628623668008, 107.91425279271529]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_220b4a3c87f01ea977acc5f6a7de9245.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_06231c52bce3464ca19b35fa763bcdf7 = L.polyline(
+                [[13.4125, 103.8667], [11.270628623668008, 99.8191472072847]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_06231c52bce3464ca19b35fa763bcdf7.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb06ed468bb64731b987ea645011f167 = L.marker(
+                [-20.267, 30.9333],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_1670b4663d7bcfd91af4c60aa4ef096c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb06ed468bb64731b987ea645011f167.setIcon(icon_1670b4663d7bcfd91af4c60aa4ef096c);
+        
+    
+        var popup_781721c1a5c0040b62f39794270fdf2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eaa4f16d92d64172e948a7e8a2524491 = $(`<div id="html_eaa4f16d92d64172e948a7e8a2524491" style="width: 100.0%; height: 100.0%;">     <b>Great Zimbabwe</b><br>     Country: Zimbabwe<br>     Function: Trade node, astronomical observation<br>     Status: Ruins<br>     Activation Potential: Medium     </div>`)[0];
+            popup_781721c1a5c0040b62f39794270fdf2e.setContent(html_eaa4f16d92d64172e948a7e8a2524491);
+        
+
+        marker_cb06ed468bb64731b987ea645011f167.bindPopup(popup_781721c1a5c0040b62f39794270fdf2e)
+        ;
+
+        
+    
+    
+            var poly_line_83bb3df41d667f8f50bec84104399a60 = L.polyline(
+                [[-20.267, 30.9333], [-20.20189238730259, 35.725332913290394]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_83bb3df41d667f8f50bec84104399a60.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ccfd7b08f04558d3b559ec5fae059c84 = L.polyline(
+                [[-20.267, 30.9333], [-20.20189238730259, 26.1412670867096]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_ccfd7b08f04558d3b559ec5fae059c84.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acf9c4450af1bf0e2853d6cf28d22fad = L.polyline(
+                [[-20.267, 30.9333], [-18.10752944196996, 35.10985378910045]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_acf9c4450af1bf0e2853d6cf28d22fad.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_94c4ad38af548d08e246c410b4ec42e0 = L.polyline(
+                [[-20.267, 30.9333], [-18.107529441969962, 26.756746210899546]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_94c4ad38af548d08e246c410b4ec42e0.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_676855f61eafb0be5b6cd319c8402a91 = L.polyline(
+                [[-20.267, 30.9333], [-22.324828527110046, 35.22488048358682]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_676855f61eafb0be5b6cd319c8402a91.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bc5c2787c6023299c19827338af14afe = L.polyline(
+                [[-20.267, 30.9333], [-22.324828527110046, 26.641719516413172]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_bc5c2787c6023299c19827338af14afe.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f540f4d120f987b04368be08371e209 = L.marker(
+                [-16.5542, -68.6731],
+                {}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            var icon_9cf7b1d8d1dfdd82991c6158760fb408 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f540f4d120f987b04368be08371e209.setIcon(icon_9cf7b1d8d1dfdd82991c6158760fb408);
+        
+    
+        var popup_cc5f68796afc12a642c21c4e25616365 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4150e47c311dd9f2f710cf09be5adf70 = $(`<div id="html_4150e47c311dd9f2f710cf09be5adf70" style="width: 100.0%; height: 100.0%;">     <b>Tiwanaku</b><br>     Country: Bolivia<br>     Function: Solar gate, advanced stonecutting code<br>     Status: Ruins<br>     Activation Potential: High     </div>`)[0];
+            popup_cc5f68796afc12a642c21c4e25616365.setContent(html_4150e47c311dd9f2f710cf09be5adf70);
+        
+
+        marker_4f540f4d120f987b04368be08371e209.bindPopup(popup_cc5f68796afc12a642c21c4e25616365)
+        ;
+
+        
+    
+    
+            var poly_line_e65ba2eb8992d0e2fac2305bf36d396b = L.polyline(
+                [[-16.5542, -68.6731], [-16.501786059737675, -63.98290058325015]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_e65ba2eb8992d0e2fac2305bf36d396b.bindTooltip(
+                `<div>
+                     Equinox Sunrise — 90°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5116164a36a547f4c380c9c8915f52fc = L.polyline(
+                [[-16.5542, -68.6731], [-16.501786059737675, -73.36329941674987]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_5116164a36a547f4c380c9c8915f52fc.bindTooltip(
+                `<div>
+                     Equinox Sunset — 270°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1c9f7672a6f5fce5241f16b49cae50d2 = L.polyline(
+                [[-16.5542, -68.6731], [-14.404398163252852, -64.57468327746412]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_1c9f7672a6f5fce5241f16b49cae50d2.bindTooltip(
+                `<div>
+                     Summer Solstice Sunrise — 62°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5ba8035c61e5d0ccde1190757c1bc2eb = L.polyline(
+                [[-16.5542, -68.6731], [-14.404398163252855, -72.77151672253589]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_5ba8035c61e5d0ccde1190757c1bc2eb.bindTooltip(
+                `<div>
+                     Summer Solstice Sunset — 298°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_82ecacf8edae1ac48258e80f5afcf768 = L.polyline(
+                [[-16.5542, -68.6731], [-18.622183018139538, -64.48405110669427]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_82ecacf8edae1ac48258e80f5afcf768.bindTooltip(
+                `<div>
+                     Winter Solstice Sunrise — 118°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2a04b57461a1b6861c087723f0ff06ff = L.polyline(
+                [[-16.5542, -68.6731], [-18.622183018139538, -72.86214889330574]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_d0218efd4e33c057c90031b40956c2b0);
+        
+    
+            poly_line_2a04b57461a1b6861c087723f0ff06ff.bindTooltip(
+                `<div>
+                     Winter Solstice Sunset — 242°
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
