@@ -1,0 +1,11 @@
+id,source,title,section,text,code,command,chakra,tags,timestamp_iso,location,lat,lon
+csvconfig-2,csv_config,Memory Handling,csv-row,"Component: Memory Handling
+Description: Remembers key entries and updates them via user trigger.",,,Third-Eye,MirrorConfigCSV,2025-09-10T10:38:02.970790-07:00,"Clearlake, CA",38.9583,-122.6222
+csvconfig-3,csv_config,Command System,csv-row,"Component: Command System
+Description: Handles 'log this', 'switch to', and 'recall' style commands.",,,Third-Eye,MirrorConfigCSV,2025-09-10T10:38:02.970790-07:00,"Clearlake, CA",38.9583,-122.6222
+csvconfig-4,csv_config,Mode Recognition,csv-row,"Component: Mode Recognition
+Description: Responds to Default, Build, Shadow, and Wizard modes.",,,Third-Eye,MirrorConfigCSV,2025-09-10T10:38:02.970790-07:00,"Clearlake, CA",38.9583,-122.6222
+csvconfig-5,csv_config,Reflection Engine,csv-row,"Component: Reflection Engine
+Description: Reflects emotional tone and patterns through writing logic.",,,Third-Eye,MirrorConfigCSV,2025-09-10T10:38:02.970790-07:00,"Clearlake, CA",38.9583,-122.6222
+csvconfig-6,csv_config,Scroll Logging Logic,csv-row,"Component: Scroll Logging Logic
+Description: Generates meaningful responses that simulate soul journaling.",,,Third-Eye,MirrorConfigCSV,2025-09-10T10:38:02.970790-07:00,"Clearlake, CA",38.9583,-122.6222
