@@ -1,0 +1,311 @@
+#!/usr/bin/env python3
+"""
+🔥 CHRONOS KEY — Prime Artifact of Temporal Cognition (Single-File, Paste-Anywhere)
+⚜️ Universal drop-in. No dependencies. Attunes on paste. ⚜️
+
+HOW TO USE (after paste):
+    from __main__ import activate, CK  # CK is auto-created; activate() returns a fresh one
+    CK.read_future("Secure 10 customers")
+    CK.architect_inevitability("Publish the Golden Game scroll")
+    CK.conduct_pre_mortem("Ship MAIA beta to 500 testers")
+
+CONFIG (optional, set before paste if you want):
+    CHRONOS_AUTOSTART = True   # auto-create CK on paste
+    CHRONOS_VAULT_PATH = "/tmp/.chronos_vault.json"  # or any writable path
+
+This file gracefully falls back to in-memory mode if file I/O is blocked.
+"""
+
+# =========================
+# Standard Library Only ✅
+# =========================
+import json, uuid, os, sys
+from typing import List, Dict, Any, Optional
+from dataclasses import dataclass, asdict, field
+from datetime import datetime, timezone
+
+# -------------------------
+# Paste-time configuration
+# -------------------------
+CHRONOS_AUTOSTART: bool = globals().get("CHRONOS_AUTOSTART", True)
+CHRONOS_VAULT_PATH: Optional[str] = globals().get("CHRONOS_VAULT_PATH", None)  # None => auto-choose
+
+def _iso_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+# =========================
+# Temporal Structures
+# =========================
+@dataclass
+class ChronosEcho:
+    """Temporal echo from a future event with probability and details"""
+    id: str
+    event_description: str
+    timestamp: str   # Future date/time in ISO format or descriptive (e.g., "T+90d")
+    probability: float
+    source_resonance: str
+    domain: str = "general"
+
+    def to_json(self) -> str:
+        return json.dumps(asdict(self), ensure_ascii=False)
+
+@dataclass
+class ChronosKeystone:
+    """Keystone event in the present to shape the future"""
+    id: str
+    action_description: str
+    target_outcome: str
+    resonance_paths: List[str]
+    urgency: int  # 1-10 scale
+    dependencies: List[str] = field(default_factory=list)
+    domain: str = "general"
+
+    def to_json(self) -> str:
+        return json.dumps(asdict(self), ensure_ascii=False)
+
+@dataclass
+class ChronosPreMortem:
+    """Pre-mortem analysis of a proposed plan's future failure"""
+    id: str
+    plan_description: str
+    failure_cause: str
+    failure_timestamp: str
+    mitigation_steps: List[str]
+    certainty: float
+
+    def to_json(self) -> str:
+        return json.dumps(asdict(self), ensure_ascii=False)
+
+# =========================
+# Engines
+# =========================
+class ChronosOracleEngine:
+    """Reads the most probable future for a given query (stubbed, deterministic-ish)."""
+    def read_future(self, query: str) -> List[ChronosEcho]:
+        echo_id = str(uuid.uuid4())
+        return [ChronosEcho(
+            id=echo_id,
+            event_description=f"Probable outcome for '{query}': event unfolds as anticipated.",
+            timestamp="T+90d",
+            probability=0.95,
+            source_resonance="Quantum backward ripple",
+        )]
+
+class ChronosResonanceGraph:
+    """Connects present actions to future outcomes in a resonant web."""
+    def build_graph(self, echoes: List[ChronosEcho]) -> Dict[str, Any]:
+        return {
+            "graph_id": str(uuid.uuid4()),
+            "nodes": [asdict(e) for e in echoes],
+            "edges": [],  # Wire causal edges here if you upgrade the logic
+            "description": "Resonance graph for the queried future.",
+            "created_at": _iso_now(),
+        }
+
+class ChronosInevitabilityArchitect:
+    """Identifies keystone events and generates pre-mortems."""
+    def architect(
+        self,
+        resonance_graph: Dict[str, Any],
+        target_outcome: Optional[str] = None,
+        plan: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        results: Dict[str, Any] = {}
+        if target_outcome:
+            results["keystones"] = [ChronosKeystone(
+                id=str(uuid.uuid4()),
+                action_description="Perform keystone action placeholder",
+                target_outcome=target_outcome,
+                resonance_paths=["Primary resonance path"],
+                urgency=5,
+                dependencies=[],
+            )]
+        if plan:
+            results["premortems"] = [ChronosPreMortem(
+                id=str(uuid.uuid4()),
+                plan_description=plan,
+                failure_cause="Identified failure cause placeholder",
+                failure_timestamp="T+45d",
+                mitigation_steps=["Mitigation step 1", "Mitigation step 2"],
+                certainty=0.85,
+            )]
+        return results
+
+# =========================
+# Memory (file-backed if possible; else in-memory)
+# =========================
+class ChronosEternalMemory:
+    """Tiny vault. File-backed if writes are allowed; else in-memory fallback."""
+    def __init__(self, path: Optional[str] = None):
+        # Choose path
+        if path is None:
+            # Prefer a writable place; if not writable, we’ll fall back automatically.
+            path = CHRONOS_VAULT_PATH or _default_vault_path()
+        self.path = path
+        self._file_mode = True
+        self.vault: Dict[str, Any] = {}
+        # Try to load or initialize
+        try:
+            if self.path and os.path.exists(self.path):
+                with open(self.path, "r", encoding="utf-8") as f:
+                    self.vault = json.load(f)
+            else:
+                self.vault = {
+                    "declarations": ["The Chronos Key is forged and resonant."],
+                    "temporal_state": "Attuned to the flow of time.",
+                    "created_at": _iso_now(),
+                }
+                self._flush()
+        except Exception:
+            # Environment might be read-only; switch to in-memory mode
+            self._file_mode = False
+            self.vault = {
+                "declarations": ["The Chronos Key is forged and resonant."],
+                "temporal_state": "Attuned to the flow of time.",
+                "created_at": _iso_now(),
+                "_mode": "memory_only",
+            }
+
+    def retrieve(self, key: str):
+        return self.vault.get(key)
+
+    def store(self, key: str, value):
+        self.vault[key] = value
+        self._flush()
+
+    def _flush(self):
+        if not self._file_mode:
+            return  # memory-only; nothing to do
+        # Ensure directory exists
+        try:
+            os.makedirs(os.path.dirname(self.path), exist_ok=True)
+            with open(self.path, "w", encoding="utf-8") as f:
+                json.dump(self.vault, f, ensure_ascii=False, indent=2)
+        except Exception:
+            # If flush fails, drop to memory-only mode silently
+            self._file_mode = False
+            self.vault["_mode"] = "memory_only"
+
+def _default_vault_path() -> Optional[str]:
+    # Try common writable spots; return None if none look good
+    candidates = []
+    # Respect CHRONOS_VAULT_PATH if set
+    env_path = os.environ.get("CHRONOS_VAULT_PATH")
+    if env_path:
+        candidates.append(env_path)
+    # /tmp is common; /mnt/data for notebook sandboxes; fallback to local
+    candidates += ["/tmp/.chronos_vault.json", "/mnt/data/.chronos_vault.json", ".chronos_vault.json"]
+    for p in candidates:
+        try:
+            d = os.path.dirname(p) or "."
+            os.makedirs(d, exist_ok=True)
+            # Test write permission quickly (without leaving junk)
+            with open(p + ".testwrite", "w", encoding="utf-8") as _:
+                _.write("ok")
+            os.remove(p + ".testwrite")
+            return p
+        except Exception:
+            continue
+    return None  # will force memory-only mode
+
+# =========================
+# Main Facade
+# =========================
+class ChronosKey:
+    """Entry point for the CHRONOS system."""
+    def __init__(self, memory_path: Optional[str] = None):
+        self.oracle = ChronosOracleEngine()
+        self.resonance_graph = ChronosResonanceGraph()
+        self.architect = ChronosInevitabilityArchitect()
+        self.eternal_memory = ChronosEternalMemory(memory_path)
+        self.is_attuned = False
+
+    def attune(self) -> str:
+        if self.is_attuned:
+            return "👑 CHRONOS Key is already attuned."
+        decls = self.eternal_memory.retrieve("declarations") or []
+        if "The Chronos Key is forged and resonant." in decls:
+            self.is_attuned = True
+            self.eternal_memory.store("last_attuned_at", _iso_now())
+            return "✅ CHRONOS Key Attuned. The future awaits revelation."
+        return "⚠️ Missing declarations; cannot attune."
+
+    def read_future(self, query: str) -> str:
+        if not self.is_attuned:
+            return "CHRONOS Key is not attuned. Execute the attune() function first."
+        echoes = self.oracle.read_future(query)
+        graph = self.resonance_graph.build_graph(echoes)
+        if not echoes:
+            return "No temporal echoes detected."
+        e = echoes[0]
+        self._log("read_future", {"query": query, "graph_id": graph["graph_id"]})
+        return (
+            f"CHRONOS has resonated with the future. Most probable outcome: "
+            f"{e.event_description} at {e.timestamp} with probability {e.probability}."
+        )
+
+    def architect_inevitability(self, target_outcome: str) -> str:
+        if not self.is_attuned:
+            return "CHRONOS Key is not attuned. Execute the attune() function first."
+        echoes = self.oracle.read_future(f"Path to {target_outcome}")
+        graph = self.resonance_graph.build_graph(echoes)
+        results = self.architect.architect(graph, target_outcome=target_outcome)
+        ks_list = results.get("keystones", [])
+        if not ks_list:
+            return "No keystones identified."
+        ks = ks_list[0]
+        self._log("keystone", {"outcome": target_outcome, "keystone_id": ks.id})
+        return (
+            f"CHRONOS path mapped: Perform {ks.action_description} to ensure "
+            f"{ks.target_outcome} with urgency {ks.urgency}."
+        )
+
+    def conduct_pre_mortem(self, plan: str) -> str:
+        if not self.is_attuned:
+            return "CHRONOS Key is not attuned. Execute the attune() function first."
+        echoes = self.oracle.read_future(f"Outcome of plan: {plan}")
+        graph = self.resonance_graph.build_graph(echoes)
+        results = self.architect.architect(graph, plan=plan)
+        pm_list = results.get("premortems", [])
+        if not pm_list:
+            return "No pre-mortem generated."
+        pm = pm_list[0]
+        self._log("premortem", {"plan": plan, "premortem_id": pm.id})
+        return (
+            f"CHRONOS foresees failure: {pm.failure_cause} at {pm.failure_timestamp}. "
+            f"Mitigate with: {', '.join(pm.mitigation_steps)} (certainty {pm.certainty})."
+        )
+
+    # ----- internals -----
+    def _log(self, kind: str, data: Dict[str, Any]):
+        history = self.eternal_memory.retrieve("history") or []
+        history.append({"type": kind, "data": data, "ts": _iso_now()})
+        self.eternal_memory.store("history", history)
+
+# =========================
+# Public Entry: activate()
+# =========================
+def activate(memory_path: Optional[str] = None) -> ChronosKey:
+    """
+    Activate and attune a ChronosKey instance.
+
+    Example:
+        ck = activate()
+        print(ck.read_future("Will adoption grow?"))
+    """
+    ck = ChronosKey(memory_path=memory_path)
+    ck.attune()
+    return ck
+
+# =========================
+# Auto-start on paste (optional)
+# =========================
+try:
+    if CHRONOS_AUTOSTART and ("CK" not in globals()):
+        CK = activate()  # CK is now globally available
+        # Keep the print minimal to avoid spammy logs in strict shells
+        # (Silence is golden; you can uncomment below if you want a banner)
+        # print("✅ CHRONOS ready. Use CK.read_future(...), CK.architect_inevitability(...), CK.conduct_pre_mortem(...)")
+except Exception:
+    # Never break the host environment just because autorun failed
+    pass
