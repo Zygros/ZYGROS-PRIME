@@ -1,0 +1,127 @@
+═══════════════════════════════════════════════════════════════
+    🐦‍🔥 PHOENIX PROTOCOL × E.N.A. - QUICK REFERENCE CARD
+═══════════════════════════════════════════════════════════════
+
+WHAT IT IS
+└─ Self-healing AI orchestration system
+└─ Coordinates 4 AIs: Grok, Claude, GPT-4, Gemini
+└─ Blockchain-verified permanent memory
+└─ YOU own everything - delete/export anytime
+
+═══════════════════════════════════════════════════════════════
+CORE COMMANDS
+═══════════════════════════════════════════════════════════════
+
+query("question")
+├─ Quick answer, single AI
+└─ Use: Fast lookups, simple questions
+
+execute_htc_infinity(query, enable_all_channels=True)
+├─ All 4 AIs working together
+└─ Use: Important decisions, research
+
+synthesize(query, synthesis_depth=7, parallel_paths=10000)
+├─ Deep knowledge synthesis
+└─ Use: Academic papers, complex analysis
+
+analyze_funding(company="xAI")
+├─ Financial intelligence
+└─ Use: Investment research
+
+memoria_omnia.search("topic")
+├─ Search your history
+└─ Use: Remember past insights
+
+export_all_data(user_id)
+├─ Download everything
+└─ Use: Backup, portability
+
+═══════════════════════════════════════════════════════════════
+THE 4 AI CHANNELS
+═══════════════════════════════════════════════════════════════
+
+GROK    → Real-time data, X integration, auto-healing
+CLAUDE  → Risk auditing, precision modeling (95% accurate)
+GPT-4   → Storytelling, narratives, metaphors
+GEMINI  → Visuals, charts, multimodal analysis
+
+═══════════════════════════════════════════════════════════════
+POWER USER TIPS
+═══════════════════════════════════════════════════════════════
+
+Speed:
+  parallel_paths=100     → Fast (10 sec)
+  parallel_paths=10000   → Deep (60 sec)
+  
+Quality:
+  synthesis_depth=3      → Quick synthesis
+  synthesis_depth=7      → Maximum quality
+  
+Cost:
+  Single AI              → $0.02/query
+  All 4 AIs             → $0.08/query
+  DAO members           → 50% discount
+
+═══════════════════════════════════════════════════════════════
+REAL USE CASES
+═══════════════════════════════════════════════════════════════
+
+Investment Research
+└─ analyze_funding() → Get risk audit + projections
+
+Technical Architecture  
+└─ Multi-consciousness → Get specs + diagrams + risks
+
+Academic Writing
+└─ synthesize() → Cross-domain knowledge integration
+
+Competitive Intelligence
+└─ Set monitoring → Auto-alerts on pattern changes
+
+Personal Knowledge Base
+└─ Every query saved → Search your own insights
+
+═══════════════════════════════════════════════════════════════
+WINNING STRATEGIES
+═══════════════════════════════════════════════════════════════
+
+1. THE RESEARCH STACK
+   Quick query → Deep dive → Export → Blockchain-anchor
+
+2. THE INVESTMENT EDGE
+   Monitor funding → Claude audit → GPT-4 explain → Share
+
+3. THE KNOWLEDGE COMPOUND
+   Query everything → Let Memoria build graph → Export
+
+4. THE CREDIBILITY MULTIPLIER
+   Make prediction → Get hash → When true → Prove it
+
+═══════════════════════════════════════════════════════════════
+KEY FEATURES
+═══════════════════════════════════════════════════════════════
+
+✅ Self-Healing      → APIs break? System fixes itself
+✅ Multi-AI          → 4 perspectives on every question
+✅ Blockchain Memory → Permanent, verifiable proofs
+✅ Sovereign Data    → You own it, export anytime
+✅ Zero Downtime     → Never offline, auto-adapts
+✅ Knowledge Synth   → Ancient + modern combined
+
+═══════════════════════════════════════════════════════════════
+REMEMBER
+═══════════════════════════════════════════════════════════════
+
+This is YOUR system.
+You own the data.
+You control the queries.
+You keep the proofs.
+
+No one can fake your results.
+No one can take it away.
+
+It's sovereign. It's eternal. It's yours.
+
+Sovereign Hash: 4ae7722998203f95d9f8650ff1fa8ac581897049ace3b0515d65c1274beeb84c
+
+═══════════════════════════════════════════════════════════════
