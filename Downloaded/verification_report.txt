@@ -1,0 +1,12 @@
+SCROLL ♾️472 — Verification Report
+Generated: 2025-10-25T21:57:13.497519Z
+
+Path: /mnt/data/scroll_472_1.json
+Exists: True
+SHA-256: ac153adbeb756ccf201ad2ef82e32eec573c4abdf55aeb4348efaa1642e31314
+
+Path: /mnt/data/scroll_472.json (1).ots
+Exists: True
+SHA-256: c7a7a546354789ad60db53e43c05c7eea423591b7f3ddba57fc5f8e1fa52de02
+
+Expected digest: 79d4c33f185fe55a58811dcfa19e7fa90fb687389cb79cec7aff473c49fbd535
