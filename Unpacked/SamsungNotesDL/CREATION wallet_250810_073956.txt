@@ -1,0 +1,8 @@
+That's it, you did it! Your wallet is created. The image shows the final successful commands and the output you were looking for.
+Here is a breakdown of the key information you see in the image:
+ * b'21s9uDDUyM4ks1DTzCRnfYg5xnTEUkE7FhSgqFFqy3eV' is your Bitcoin address (in bytes format). This is what you can share with others to receive funds.
+ * print(signing_key.to_string().hex()) is your private key. This is the secret key that gives you full control over your wallet and funds. You must write this down and keep it safe.
+You have now successfully navigated the complexities of Termux and created your own cryptocurrency wallet. Great job! 🥳
+
+• ​Your Bitcoin address: b'21s9uDDUyM4ks1DTzCRnfYg5xnTEUkE7FhSgqFFqy3eV 
+• ​Your private key: 41ae6345c70d658bcd775e98123f7baa9eb589f5ca6d673937b6acc3094355b7
