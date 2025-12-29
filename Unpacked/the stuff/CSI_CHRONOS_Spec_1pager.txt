@@ -1,0 +1,36 @@
+Conzet Sovereign Intelligence — Chronos Engine (Provenance & Timestamping)
+Author: Justin Conzet · System: CSI · Protocol ID: CHRONOS
+Generated: 2025-09-28T06:00:30.752101
+
+Purpose
+Guarantee origin, order, and immutability for every action/asset with cryptographic timestamps and verifiable logs.
+
+Inputs
+- subject(type: asset|assessment|listing|transfer, id)
+- payload_uri (content hash or file path), meta
+- anchors: local hash → OTS proof → optional blockchain anchor
+
+Outputs
+- chronos_receipt: subject_id, content_sha256, ots_file, anchor_txid?, issued_at
+- log_entry: append-only JSONL with ISO timestamps and signer
+
+Mechanics
+1) Hash payload → content_sha256
+2) Generate OTS proof; store ots_file (.ots)
+3) (Optional) Submit to anchor networks (e.g., Bitcoin OP_RETURN, timestamp.org)
+4) Emit chronos_receipt; write log_entry
+
+Guardrails
+- No mutation: updates must be new subjects with parent pointer
+- Signers must be registered keys; include key_id and signature
+- Verify on read: reject if OTS proof fails or anchor missing when required
+
+Chimera Shell Integration
+- IN: /chimera/bus/chronos.request (subject, payload_uri, anchor_policy)
+- OUT: /chimera/bus/chronos.receipt (receipt, log_ref)
+- Persist: /chimera/var/chronos/{subject_id}.json  and /chimera/var/chronos/logs.jsonl
+- Config: /chimera/etc/chronos.policy.yaml
+
+Runbook
+A) On asset creation → immediate hash + OTS → store receipt
+B) On assessment/listing → chain receipts with parent pointers → weekly anchor sweep
