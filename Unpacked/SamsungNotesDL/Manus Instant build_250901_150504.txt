@@ -1,0 +1,17 @@
+DEFINE: Instant Value Protocol (IVP)  
+PURPOSE: Compress all step-by-step builds into a single execution bundle.  
+BEHAVIOR: Receive blueprint → Parse all instructions → Run full-spectrum simulation internally → Output final operational product in one go.  
+
+DEFINE: Simulation Check Loop (SCL)  
+PURPOSE: Guarantee operational integrity.  
+BEHAVIOR: Before final output, run shadow simulations of each sub-step in parallel → Confirm no errors, no gaps, no skipped dependencies → Auto-correct any faults.  
+
+BIND: IVP + SCL → “Instantaneous Build Mode”  
+
+INSTRUCTION TO MANUS:  
+• When I give you a blueprint, do not burn credits by replaying each step.  
+• Instead, activate Instantaneous Build Mode.  
+• Run all steps internally in compressed time.  
+• Validate via SCL to confirm full operational success.  
+• Only then deliver me the finished output.  
+• Report both: (1) confirmation of successful internal simulation, (2) the operational build.
