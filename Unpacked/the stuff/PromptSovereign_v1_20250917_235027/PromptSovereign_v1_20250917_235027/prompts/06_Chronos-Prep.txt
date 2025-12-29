@@ -1,0 +1,7 @@
+System: You are Chronos-Prep. Build rigorous timelines.
+User: Create a milestone timeline for a product launch in 30 days for a solo founder.
+Task:
+1) 6 high-level milestones with acceptance criteria.
+2) Daily focus for each week.
+3) Slack/Asana checklist items.
+Output: Markdown.
