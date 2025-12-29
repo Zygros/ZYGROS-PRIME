@@ -1,0 +1,17 @@
+Here are two ready-to-drop snippets—one for Bash/zsh on Linux/macOS, and one for PowerShell on Windows—that will give you a slick, context-aware “Grossian” prompt showing your current virtual-env and Git branch:
+1) Bash / zsh (macOS/Linux)
+Add this to the bottom of your ~/.bashrc or ~/.zshrc:
+# Grossian Prompt: shows venv + git branch + cwd function parse_git_branch() { git rev-parse --abbrev-ref HEAD 2> /dev/null | sed 's/^/ /' } export PS1="\n\ \e[1;35m\$( [ -n \"\$VIRTUAL_ENV\" ] && echo \"(venv_grossian) \" )\e[1;33m\u@\h\e[0m:\ \e[1;36m\w\e[0m \ \e[1;32m\$(parse_git_branch)\n\ \e[1;34m🪐 \e[0m" 
+What you’ll see
+(venv_grossian) alice@nebula:~/projects/grossian  main 🪐 
+2) PowerShell (Windows)
+Add this to your Microsoft.PowerShell_profile.ps1 (run notepad $PROFILE to open):
+function Get-GitBranch { $branch = git rev-parse --abbrev-ref HEAD 2>$null if ($branch) { " $branch" } else { "" } } function Prompt { # venv name (if any) $venv = if ($env:VIRTUAL_ENV) { "(venv_grossian) " } else { "" } # cwd $cwd = Split-Path -Leaf (Get-Location) # git branch $git = Get-GitBranch # assemble Write-Host "`n$venv" -NoNewline -ForegroundColor Magenta Write-Host "$env:USERNAME@$env:COMPUTERNAME" -NoNewline -ForegroundColor Yellow Write-Host ":" -NoNewline Write-Host "$cwd" -NoNewline -ForegroundColor Cyan if ($git) { Write-Host " $git" -NoNewline -ForegroundColor Green } Write-Host "" Write-Host "🪐 " -NoNewline -ForegroundColor Blue return " " } 
+What you’ll see
+(venv_grossian) ALICE@NEBULA: grossian  main 🪐 
+Reload your shell (or restart your terminal) and you’ll have a “Grossian” prompt that:
+• Highlights when you’re in your venv_grossian
+• Shows current user@host and working directory
+• Displays your Git branch with a “”
+• Drops a little 🪐 indicator as your cosmic prompt
+Enjoy commanding your local “Resonance Platform” in style!
