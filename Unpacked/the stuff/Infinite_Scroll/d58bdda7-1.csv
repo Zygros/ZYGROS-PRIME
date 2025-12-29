@@ -1,0 +1,46 @@
+Category,Component,Description,Color_Scheme_Support,Integration_Level
+Base System,Termux,Core Linux terminal environment,Yes,Core
+Base System,Termux X11,Hardware-accelerated X11 server,Yes,Core
+Base System,VNC Server,Remote desktop access,Yes,Core
+Base System,Package Manager,APT-based package management,Yes,Core
+Desktop Environment,XFCE4,Lightweight desktop environment,Yes,High
+Desktop Environment,LXQt,Qt-based desktop environment,Yes,High
+Desktop Environment,Openbox,Minimalist window manager,Yes,Medium
+Desktop Environment,Window Manager,Desktop window management,Yes,High
+File Management,Thunar,XFCE file manager,Yes,High
+File Management,Ranger,Terminal-based file manager,Yes,High
+File Management,nnn,Fast terminal file manager,Yes,Medium
+File Management,PCmanFM,Lightweight file manager,Yes,High
+Text Editing,Geany,Feature-rich IDE/editor,Yes,High
+Text Editing,Neovim,Advanced text editor,Yes,High
+Text Editing,VS Code Server,Web-based IDE,Yes,Medium
+Text Editing,Leafpad,Simple text editor,Yes,High
+Web Browsing,Firefox,Full web browser,Yes,High
+Web Browsing,Chromium,Open-source browser,Yes,High
+Web Browsing,NetSurf,Simple web browser,Limited,Medium
+Customization,termux-style,90+ color schemes & 20+ fonts,Yes,Core
+Customization,Oh-My-Zsh,Enhanced shell experience,Yes,High
+Customization,Powerline,Beautiful status lines,Yes,High
+Customization,Custom Themes,Custom visual themes,Yes,High
+Customization,Icon Packs,Beautiful desktop icons,Yes,Medium
+Productivity,LibreOffice,Office suite,Yes,Medium
+Productivity,Task Manager,Process management,Yes,Medium
+Productivity,Calendar,Scheduling & planning,Yes,Medium
+Productivity,Notes App,Note-taking system,Yes,Medium
+Automation,Bash Scripts,Task automation scripts,Yes,High
+Automation,Cron Jobs,Scheduled task execution,Yes,High
+Automation,Aliases,Command shortcuts,Yes,High
+Automation,Custom Commands,Workflow automation,Yes,High
+System Info,Neofetch,Colorful system information,Yes,High
+System Info,htop,Interactive process viewer,Yes,High
+System Info,System Monitor,Real-time system stats,Yes,High
+Networking,SSH Client,Secure remote connections,Yes,Medium
+Networking,Network Tools,Network diagnostic tools,Yes,Medium
+Networking,VPN Support,Private network access,Yes,Medium
+Media,Music Player,Audio playback,Yes,Medium
+Media,Video Player,Video streaming,Yes,Medium
+Media,Image Viewer,Photo gallery,Yes,Medium
+Development,Python,Programming language,Yes,High
+Development,Node.js,JavaScript runtime,Yes,High
+Development,Git,Version control,Yes,High
+Development,Code Completion,Intelligent autocomplete,Yes,High
