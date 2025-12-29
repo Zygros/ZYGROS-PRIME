@@ -1,0 +1,587 @@
+# **ASHEN CROWN: PHOENIX PROTOCOL**  
+*Game Design Bible*
+
+---
+
+## 1. **High-Level Overview**
+
+### 1.1 One-Paragraph Pitch
+
+**Ashen Crown: Phoenix Protocol** is a mythic, mature open-world action RPG where you play as the **Sovereign Ember**—a soul reborn across cycles of destruction and rebirth, each time with a fragmented memory of the past. Guided by the enigmatic **Phoenix Engine**, an ancient machine that resets the world, the player must navigate a fractured realm of gods, machines, and mortals to uncover the truth of their existence and whether the cycle must continue. With deep character customization, branching choices, and a world that remembers your past actions, *Ashen Crown* offers a deeply personal journey through fire, ash, and rebirth.
+
+---
+
+### 1.2 Three “Back of the Box” Feature Bullets
+
+- **Cycle-Driven Gameplay**: Every time the world resets, your choices, build, and relationships carry over, shaping the next iteration in a unique way.
+- **Dynamic Flame Paths**: Choose from six unique “Flame” archetypes that evolve with each cycle—blending martial prowess, mysticism, and ancient tech.
+- **Mythic Worldbuilding**: Explore a vast, interconnected world where every ruin, artifact, and NPC holds a secret tied to the Phoenix Engine and the cycles.
+
+---
+
+### 1.3 Target Player Fantasy
+
+The player **feels like a god in training**, a chosen soul caught between divine forces and ancient machines. They are both the protagonist and the architect of their own destiny, with the power to break the cycle or become its next keeper. The fantasy is one of **sovereignty, mystery, and transformation**—a journey where every death is a new beginning, and every choice echoes across time.
+
+---
+
+## 2. **Cosmology & Mythos**
+
+### 2.1 Origin of the World and the Phoenix Engine
+
+The world of **Atheris** was not created by gods or mortals, but by the **Phoenix Engine**, an ancient, self-sustaining machine that was once a tool of cosmic order. It was designed to reset the world when entropy reached a critical point, ensuring balance through destruction and rebirth. The Engine was built by a long-lost civilization known as the **Aeon Architects**, who vanished during the **First Ashfall**, a cataclysmic event that erased all memory of them from the world.
+
+---
+
+### 2.2 The Nature of “Cycles”
+
+Each cycle lasts approximately 300 in-game years and ends when the **Phoenix Engine** activates. During the reset, the world is remade, but **certain elements persist**:
+
+- The **Sovereign Ember** retains partial memories and skills.
+- Some **ancient structures and machines** remain unchanged.
+- **Key NPCs** may remember the player if they were close in previous cycles.
+- **World state** (e.g., faction wars, environmental decay) can be altered by the player’s previous actions.
+
+---
+
+### 2.3 Role of Gods, Spirits, or Higher Intelligences
+
+- **The Phoenix** is not a god, but a **concept**—a force of rebirth that the Phoenix Engine channels.
+- **The Aeon Architects** are revered by some as gods, by others as machines, and by many as myths.
+- **The Ashen Choir** are a group of spirits who believe the Phoenix Engine is a curse and seek to destroy it.
+- **The Iron Ascendants** are a technocratic cult that seeks to control the Engine and manipulate the cycles for their own ends.
+
+---
+
+### 2.4 The Metaphysics of Fire, Ash, Rebirth
+
+Fire is the **language of the Phoenix Engine**. It is both destructive and creative. When a cycle ends, the world is consumed by **White Flame**, reducing all life to **Ash Crystals**, which are then used to rebuild the world. The **Sovereign Ember** is a living repository of these Ash Crystals, allowing them to retain fragments of memory and power across cycles.
+
+---
+
+## 3. **World & Regions**
+
+### 3.1 World Map Overview
+
+The world of Atheris is divided into **three major continents**:
+
+- **The Emberlands** (player's homeland, a mix of forests, ruins, and volcanic regions)
+- **The Ashen Expanse** (a vast desert of ash and ruins, home to the Phoenix Engine)
+- **The Veilspire** (a floating archipelago of islands, home to the gods and spirits)
+
+---
+
+### 3.2 Key Regions
+
+| Region | Biome | Vibe | Main Conflict |
+|--------|-------|------|---------------|
+| Emberfall | Forest | Lush, mystical | Torn between traditionalists and technologists |
+| Ashen Expanse | Desert | Harsh, desolate | Struggle for control of the Phoenix Engine |
+| Skyreach | Mountains | Cold, spiritual | Battle between spirits and machines |
+| Iron Hollow | Industrial | Decaying, polluted | War between the Iron Ascendants and rebels |
+| Veilspire | Floating Islands | Ethereal, surreal | Gods debate the fate of the cycles |
+| The Hollow Grove | Jungle | Overgrown, dangerous | Home to the Ashen Choir and ancient ruins |
+| The Riftspire | Caverns | Deep, mysterious | Contains unstable Phoenix Core fragments |
+
+---
+
+### 3.3 Iconic Cities and Wild Zones
+
+**Cities:**
+- **Emberfall Keep** – Capital of the Emberlands, a mix of traditional and technological architecture.
+- **Ashen Hollow** – A ruined city built around the Phoenix Engine, now a warzone.
+- **Skyreach Monastery** – A sanctuary for those who study the cycles and the Phoenix.
+
+**Wild Zones:**
+- **The Ashen Wastes** – A desert of floating ash and unstable terrain.
+- **The Iron Hollow** – A decaying industrial zone with rogue machines.
+- **The Hollow Grove** – A jungle of living ruins and forgotten temples.
+
+---
+
+### 3.4 Environmental Storytelling Themes
+
+- **Emberfall**: The tension between tradition and progress is reflected in architecture and NPC interactions.
+- **Ashen Expanse**: The desert is littered with remnants of previous cycles—frozen in time.
+- **Skyreach**: The cold, isolated environment reflects the spiritual isolation of those who study the cycles.
+- **Iron Hollow**: Pollution and decay symbolize the consequences of unchecked technological ambition.
+
+---
+
+## 4. **History & Timeline**
+
+### 4.1 Key Eras and Apocalypses
+
+- **First Ashfall** (Cycle 0): The Aeon Architects built the Phoenix Engine. It malfunctioned, destroying the world and erasing all memory of them.
+- **The Second Awakening** (Cycle 1): The world is reborn, and the first civilizations rise.
+- **The Third Flame** (Cycle 3): The Iron Ascendants gain control of the Phoenix Engine, begin manipulating cycles.
+- **The Fourth Cycle** (Current): The world is on the brink of another reset, and the player must decide the fate of the Phoenix.
+
+---
+
+### 4.2 The Most Recent Cycle and How It Shapes the Current World
+
+In the last cycle, the **Iron Ascendants** nearly succeeded in controlling the Phoenix Engine. The world was reset, but the **Ashen Choir** and **Emberborn** factions now know the truth. The player is the **Sovereign Ember**, the only one who remembers the last cycle, and their choices will determine whether the cycle continues or is broken.
+
+---
+
+### 4.3 Legends and Myths Remembered Incorrectly by NPCs
+
+- **The Phoenix is a god** – Actually, it is a machine.
+- **The Ashen Choir are heroes** – In truth, they are destroyers who seek to end all cycles.
+- **The Iron Ascendants are villains** – They are trying to control the cycles, but not necessarily for evil.
+
+---
+
+## 5. **Factions & Powers**
+
+### 5.1 Major Factions
+
+| Faction | Goal | Ideology | Methods |
+|---------|------|----------|---------|
+| **Emberborn** | Preserve balance | Traditionalists who believe in natural cycles | Diplomacy, rituals, and spiritual training |
+| **Iron Ascendants** | Control the Phoenix Engine | Technocrats who seek to manipulate cycles | Infiltration, hacking, and AI manipulation |
+| **Ashen Choir** | Destroy the Phoenix Engine | Spiritualists who see the cycles as a curse | Rituals, sabotage, and sacrifice |
+| **Veilborn** | Understand the cycles | Scholars and mystics who study the Phoenix | Research, prophecy, and hidden knowledge |
+| **The Hollow Grove Cult** | Reclaim the Phoenix | Fanatics who believe the Phoenix is a living god | Rituals, ambushes, and mind control |
+
+---
+
+### 5.2 Faction Interpretations of the Phoenix
+
+- **Emberborn**: The Phoenix is a natural force of rebirth.
+- **Iron Ascendants**: The Phoenix is a machine to be controlled.
+- **Ashen Choir**: The Phoenix is a curse that must be destroyed.
+- **Veilborn**: The Phoenix is a cosmic cycle beyond mortal comprehension.
+- **Hollow Grove Cult**: The Phoenix is a living deity that must be worshipped.
+
+---
+
+### 5.3 Faction Relationships
+
+- **Emberborn vs. Iron Ascendants**: Rivalry over control of the Phoenix Engine.
+- **Ashen Choir vs. All**: They seek to destroy the Phoenix, making them enemies to all other factions.
+- **Veilborn vs. Iron Ascendants**: Tense alliance based on shared knowledge.
+- **Hollow Grove Cult vs. Ashen Choir**: Both seek the Phoenix, but for opposite reasons.
+
+---
+
+### 5.4 Player Gains and Losses
+
+- **Emberborn**: Gain access to **Flame Rituals**, **Ashen Shrines**, and **Emberborn Allies**.
+- **Iron Ascendants**: Gain **Techno-Rituals**, **Machine Allies**, and access to **Phoenix Engine Data**.
+- **Ashen Choir**: Gain **Ashen Powers**, **Sacrificial Abilities**, and access to **Ancient Ashen Sites**.
+- **Veilborn**: Gain **Mystic Knowledge**, **Prophecy Skills**, and access to **Veilborn Archives**.
+- **Hollow Grove Cult**: Gain **Spiritual Powers**, **Summoning Abilities**, and access to **Hollow Grove Temples**.
+
+---
+
+## 6. **Player Archetypes & Progression**
+
+### 6.1 Core Archetype Concept: “Flames”
+
+The **Flames** are the player’s core abilities, representing different aspects of the Phoenix. Each Flame can be **bound** to the player, granting unique abilities and playstyles.
+
+---
+
+### 6.2 Primary Flame Paths
+
+| Flame | Playstyle | Summary |
+|-------|-----------|---------|
+| **Blazing Soul** | Melee | A warrior who wields fire and rebirth in battle |
+| **Ashen Mind** | Magic | A spellcaster who manipulates ash and entropy |
+| **Iron Phoenix** | Tech | A cyber-mystic who merges technology and the Phoenix |
+| **Veilborn** | Stealth | A rogue who walks between cycles and shadows |
+| **Spirit Ember** | Support | A healer and protector who channels the spirits of past cycles |
+| **Phoenix Flame** | Hybrid | A versatile class that can shift between different Flame types |
+
+---
+
+### 6.3 Progression System
+
+- **Leveling**: Gains **Flame Points** and **Ash Crystals**.
+- **Skills**: Learned through use, with **Flame-specific trees**.
+- **Talents**: Unlocked at key milestones, with **cycle-specific bonuses**.
+- **Rebirth Bonuses**: At the end of each cycle, the player can choose **Legacy Perks** based on their Flame and choices.
+
+---
+
+### 6.4 Cycle Resets and Legacy Perks
+
+- **Memory Crystals**: Retain 10% of Flame Points and 20% of Ash Crystals.
+- **Legacy Perks**: Unlock permanent upgrades to Flame abilities and world interactions.
+- **World State**: Faction reputations, key events, and locations can be altered.
+
+---
+
+## 7. **Magic, Abilities, and Systems**
+
+### 7.1 The “Ember” Resource
+
+- **Ember** is the player’s **resource for casting abilities**.
+- It is generated by **killing enemies**, **using Flame abilities**, or **finding Ash Crystals**.
+- Overuse of Ember can cause **Flame Burnout**, temporarily reducing ability power.
+
+---
+
+### 7.2 Ability Categories
+
+| Category | Description |
+|----------|-------------|
+| **Martial** | Physical combat and weapon-based abilities |
+| **Mystic** | Magical abilities tied to the Phoenix and Flame |
+| **Techno-Ritual** | Machine-based abilities that manipulate the Phoenix Engine |
+| **Spiritual** | Abilities that channel the spirits of past cycles |
+| **Stealth** | Abilities for evasion, deception, and assassination |
+
+---
+
+### 7.3 Ultimate “Phoenix Form” Mechanic
+
+- **Phoenix Form** is a **limited-time ultimate ability**.
+- Activates after **50% Ember is spent**.
+- Grants **enhanced stats, fire immunity, and a unique Flame ability**.
+- Lasts 30 seconds or until 50% health is lost.
+
+---
+
+### 7.4 Risk–Reward Mechanics
+
+- **Flame Burnout**: Overusing Phoenix abilities can cause **temporary debuffs**.
+- **Ash Overload**: Collecting too many Ash Crystals can **corrupt** the player’s Flame.
+- **Cycle Fatigue**: Playing too many cycles without a break can **reduce memory retention**.
+
+---
+
+## 8. **Core Gameplay Loop & Mechanics**
+
+### 8.1 Minute-to-Minute Gameplay Loop
+
+1. **Explore** a new region, uncovering secrets and fighting enemies.
+2. **Engage in combat**, using Flame abilities and tactics.
+3. **Interact with NPCs**, making choices that affect the world.
+4. **Craft or upgrade gear** using Ash Crystals and relics.
+5. **Progress the main or side quests**, shaping the world and your Flame.
+
+---
+
+### 8.2 Exploration, Combat, Dialogue, Stealth, Crafting
+
+- **Exploration**: Driven by curiosity, with hidden ruins and cycle-specific secrets.
+- **Combat**: Dynamic and tactical, with Flame abilities and enemy types.
+- **Dialogue**: Branching and impactful, with memory-based consequences.
+- **Stealth**: Used to avoid combat or infiltrate key locations.
+- **Crafting**: Uses Ash Crystals and relics to create Flame-imbued gear.
+
+---
+
+### 8.3 Cycles and Rebirth in Gameplay
+
+- **New Game+**: Each cycle is a new NG+, with world state changes and legacy perks.
+- **World State**: Faction wars, environmental decay, and key events evolve based on player choices.
+- **Cycle-Specific Quests**: Unique missions that only appear in certain cycles.
+
+---
+
+### 8.4 System Hooks for Emergent Gameplay
+
+- **AI Behavior**: Enemies react to the player’s Flame type and past actions.
+- **World Reactions**: NPCs remember or forget the player based on cycle interactions.
+- **Environmental Events**: Ash storms, White Flame surges, and Phoenix Core malfunctions.
+
+---
+
+## 9. **Main Story & Major Questlines**
+
+### 9.1 Main Quest Arc in 3 Acts
+
+**Act 1: The Ashen Awakening**  
+- The player awakens in a new cycle, with fragmented memories.
+- They must find the **Phoenix Engine** and survive the first Ashfall.
+- Key location: Emberfall Keep.
+
+**Act 2: The Cycle’s Architects**  
+- The player learns about the Aeon Architects and the Iron Ascendants.
+- They must choose a Flame and align with a faction.
+- Key location: Ashen Expanse.
+
+**Act 3: The Phoenix Protocol**  
+- The player confronts the Iron Ascendants and decides the fate of the Phoenix Engine.
+- Final choice: Reset the cycle, destroy the Engine, or become the new Phoenix.
+- Key location: Veilspire.
+
+---
+
+### 9.2 Major Faction Questlines
+
+**1. Emberborn: The Last Flame**  
+- Protect the **Emberborn Sanctum** from Iron Ascendant attacks.
+- Key choice: Sacrifice a Flame to save the Sanctum.
+
+**2. Iron Ascendants: The Code of Rebirth**  
+- Hack into the Phoenix Engine and rewrite its protocols.
+- Key choice: Merge with the Engine or destroy it.
+
+**3. Ashen Choir: The End of Ash**  
+- Locate and destroy the **Phoenix Engine** to end all cycles.
+- Key choice: Sacrifice yourself to end the cycle.
+
+**4. Veilborn: The Veil of Time**  
+- Discover the **Veilborn Archives** and learn the truth about the cycles.
+- Key choice: Share the knowledge or keep it hidden.
+
+**5. Hollow Grove Cult: The Phoenix Risen**  
+- Summon the Phoenix and become its vessel.
+- Key choice: Become the new Phoenix or reject the call.
+
+---
+
+### 9.3 Example Side Quests
+
+1. **The Ashen Child** – Help a child who remembers fragments of a previous cycle.
+2. **The Forgotten Flame** – Recover a lost Flame from a ruined Emberborn shrine.
+3. **The Hollow Grove’s Secret** – Infiltrate a Hollow Grove temple and uncover a forbidden ritual.
+4. **The Iron Ascendant’s Ghost** – Hunt down a rogue AI that has gone rogue in the Ashen Expanse.
+5. **The Ashen Choir’s Shadow** – Expose a traitor within the Ashen Choir who is working with the Iron Ascendants.
+
+---
+
+### 9.4 Cycle-Breaking Questlines
+
+1. **The Engine’s Core** – Locate and destroy the **Phoenix Engine’s Core**, risking the end of all cycles.
+2. **The Sovereign’s Choice** – Become the new Phoenix and control the cycles directly.
+3. **The Ashen Paradox** – Create a paradox that forces the Engine to reset the world manually.
+
+---
+
+## 10. **Characters & NPCs**
+
+### 10.1 Sovereign Ember Identity Options
+
+- **Name**: Player-chosen.
+- **Background**: Choose from **Emberborn**, **Iron Ascendant**, **Ashen Choir**, or **Veilborn**.
+- **Voice**: Can be male, female, or non-binary, with tone options.
+
+---
+
+### 10.2 Key NPCs
+
+| Name | Role | Alignment | Key Trait |
+|------|------|-----------|-----------|
+| **Kael Veyra** | Emberborn Leader | Neutral | Wise, but haunted by past cycles |
+| **Lira Synth** | Iron Ascendant Engineer | Chaotic | Brilliant, but morally ambiguous |
+| **Mira Ashen** | Ashen Choir Priestess | Lawful | Fanatic, but deeply spiritual |
+| **Veyl** | Veilborn Scholar | Neutral | Mysterious, always watching |
+| **Zorak** | Hollow Grove Cult Leader | Chaotic | Charismatic, but dangerous |
+
+---
+
+### 10.3 NPC Memory and Cycle Awareness
+
+- Most NPCs **forget** the player between cycles.
+- Some NPCs **remember** if the player was close to them in a previous cycle.
+- A few NPCs **are immune to the reset** and remember everything.
+
+---
+
+### 10.4 Example Dialogue Snippets
+
+- **Kael Veyra**: *“You again… I remember your fire. But will you remember me?”*
+- **Lira Synth**: *“The Phoenix is not a god. It is a machine. And I will control it.”*
+- **Mira Ashen**: *“The cycle must end. Even if it costs us all.”*
+- **Veyl**: *“You are not the first. You will not be the last.”*
+- **Zorak**: *“The Phoenix is not dead. It is waiting. And so am I.”*
+
+---
+
+## 11. **Enemies, Creatures, and Bosses**
+
+### 11.1 Enemy Taxonomy
+
+| Type | Region | Behavior |
+|------|--------|----------|
+| **Ashborn** | Ashen Expanse | Resistant to fire, regenerate from ash |
+| **Iron Warden** | Iron Hollow | Machine enemies with hacking abilities |
+| **Spirit Shade** | Veilspire | Ethereal enemies that can phase through walls |
+| **Phoenix Wraith** | All | Elite enemies that channel the Phoenix’s power |
+| **Hollowborn** | Hollow Grove | Mutated creatures that worship the Phoenix |
+
+---
+
+### 11.2 Signature Enemy Types
+
+1. **Ashen Golem** – A massive construct made of ash and fire.
+2. **Iron Warden Prime** – A high-level AI with a Phoenix Core.
+3. **Spirit Shade Lord** – A powerful spirit that can summon other shades.
+4. **Phoenix Wraith** – A boss that can transform between fire and ash.
+5. **Hollowborn Ascendant** – A cult leader who can summon phoenixes.
+
+---
+
+### 11.3 Major Bosses
+
+1. **The Ashen Warden** – Guardian of the Phoenix Engine, must be defeated to access it.
+2. **The Iron Phoenix** – A corrupted AI that seeks to control the cycles.
+3. **The Phoenix Itself** – The final boss, representing the cycle in its purest form.
+
+---
+
+### 11.4 Enemy Evolution with Cycles
+
+- **Ashborn** gain new abilities based on player choices.
+- **Iron Wardens** adapt to the player’s Flame type.
+- **Spirit Shades** remember the player and change behavior.
+- **Phoenix Wraiths** become stronger with each cycle.
+
+---
+
+## 12. **Items, Artifacts, and Crafting**
+
+### 12.1 Itemization Philosophy
+
+- **Rarity**: Common, Rare, Legendary, Mythic.
+- **Identity**: Items have unique names and backstories.
+- **Power Curve**: Balanced between Flame type and cycle progress.
+
+---
+
+### 12.2 Legendary Phoenix-Related Artifacts
+
+1. **Emberborn’s Heart** – A Flame-imbued sword that can rebirth the wielder.
+2. **Ashen Core** – A Phoenix Core fragment that grants fire immunity.
+3. **Iron Phoenix’s Eye** – A cybernetic eye that can see the cycle’s path.
+4. **Veilborn’s Veil** – A cloak that allows the wearer to walk between cycles.
+5. **Hollowborn’s Ash** – A relic that allows summoning of phoenixes.
+
+---
+
+### 12.3 Crafting System
+
+- **Ash Crystals** are the base resource.
+- **Relics** from past cycles can be used to craft Flame-imbued gear.
+- **Enchanting** uses Ash Crystals and relics to enhance items.
+
+---
+
+### 12.4 Example Item Descriptions
+
+- **Emberborn’s Heart**: *“Forged in the first cycle, this blade is said to hold the heart of the Phoenix itself. Those who wield it are reborn in fire.”*
+- **Ashen Core**: *“A fragment of the Phoenix Engine. It pulses with the rhythm of the cycle. Handle with care, for it is both life and death.”*
+- **Iron Phoenix’s Eye**: *“A cybernetic eye grafted onto the skull of a fallen Iron Ascendant. It sees the path of the cycle and the fate of the world.”*
+
+---
+
+## 13. **Lore Codex & In-World Texts**
+
+### 13.1 Codex Categories
+
+- **History**
+- **Factions**
+- **Myths**
+- **Personal Journals**
+- **Aeon Architect Records**
+
+---
+
+### 13.2 Sample Codex Entries
+
+1. **The First Ashfall** – A record of the Aeon Architects’ fall.
+2. **The Iron Ascendant Manifesto** – A manifesto outlining their goals.
+3. **The Ashen Choir’s Prophecy** – A vision of the cycle’s end.
+4. **The Hollow Grove’s Secret** – A hidden temple discovered in the last cycle.
+5. **The Phoenix Engine’s Core** – A technical blueprint of the Phoenix Engine.
+
+---
+
+### 13.3 Rumors and Urban Legends
+
+1. **The Phoenix is not a machine, but a god who forgot it was alive.**
+2. **The Ashen Choir are not destroyers, but saviors who are trying to free the Phoenix.**
+3. **The Iron Ascendants are not humans, but remnants of the Aeon Architects.**
+
+---
+
+## 14. **Art & Audio Direction**
+
+### 14.1 Visual Pillars
+
+- **Color Palette**: Warm (reds, oranges) and cool (blues, purples) to represent fire and ash.
+- **Shapes**: Angular for machines, organic for spirits.
+- **Silhouettes**: Dramatic and expressive, with a focus on flame and shadow.
+- **UI Aesthetic**: Minimalist, with flame and ash motifs.
+
+---
+
+### 14.2 Iconography
+
+- **Phoenix**: A flaming bird with geometric patterns.
+- **Ash**: A spiral of ash and fire.
+- **Rebirth**: A phoenix rising from a flame.
+- **Sovereignty**: A crown made of flame and ash.
+
+---
+
+### 14.3 Audio Pillars
+
+- **Music Style**: Orchestral with electronic elements, reflecting the mythic and technological themes.
+- **Ambience**: Ash storms, distant flames, and echoes of past cycles.
+- **Sound Identity**: Deep, resonant tones for the Phoenix, sharp for machines, and ethereal for spirits.
+
+---
+
+### 14.4 Mood Board Descriptions
+
+1. **Ashen Expanse** – A vast, desolate desert with floating ash and flickering firelight.
+2. **Skyreach Monastery** – A cold, isolated mountain sanctuary with echoing chants and wind.
+3. **Iron Hollow** – A polluted, decaying industrial zone with clanking machines and corrupted fire.
+
+---
+
+## 15. **Technical / Production Notes (High-Level)**
+
+### 15.1 Recommended Engine and Features
+
+- **Engine**: Unreal Engine 5 (for high visual fidelity and dynamic world systems).
+- **Features**:
+  - Modular world design for cycle resets.
+  - Dynamic weather and ash effects.
+  - AI behavior trees for cycle-aware enemies.
+  - Dialogue system with memory tracking.
+
+---
+
+### 15.2 Modular System Breakdown
+
+- **Cycle System** (handles resets and memory retention)
+- **Flame System** (manages class abilities and progression)
+- **World System** (manages world state and faction interactions)
+- **Combat System** (handles enemy AI and player abilities)
+- **Lore System** (manages codex entries and in-world texts)
+
+---
+
+### 15.3 Suggested Phases for Implementation
+
+1. **Vertical Slice**: Build a single region with full gameplay loop (Emberfall).
+2. **Core Systems**: Implement cycle, flame, and world systems.
+3. **Content Expansion**: Add remaining regions, factions, and story.
+4. **Polish and Optimization**: Refine visuals, audio, and performance.
+
+---
+
+# **APPENDIX: EXPANSION PROMPTS**
+
+1. Generate 10 new side quests for the **Ashen Expanse** region that explore **grief and rebirth**.
+2. Create 5 **Flame Path** subclass trees for the **Blazing Soul** Flame, each with a unique playstyle.
+3. Write 3 **dialogue snippets** between the player and **Kael Veyra** in different cycles, showing how their relationship evolves.
+4. Design 5 **legendary weapons** for the **Iron Phoenix Flame** that reflect the fusion of technology and fire.
+5. Create a **faction war** between the **Emberborn** and **Iron Ascendants** in the **Emberfall** region, with branching outcomes.
+6. Write 5 **codex entries** from the **Aeon Architect Records** that hint at the true purpose of the Phoenix Engine.
+7. Design 3 **boss battles** in the **Hollow Grove**, each with mechanics tied to **phoenix summoning and rebirth**.
+8. Create 3 **rumors** that NPCs in **Skyreach** believe about the **Phoenix Engine**, only one of which is true.
+9. Develop a **stealth mission** in the **Iron Hollow** where the player must infiltrate a **Phoenix Engine facility**.
+10. Write a **side quest** where the player must recover a **lost Flame** from a **ruined Emberborn shrine**, with emotional consequences.
+
+--- 
+
+Let the fire burn, and the cycle begin.
