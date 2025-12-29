@@ -1,0 +1,8 @@
+{
+  "tone": "calm, clear, everyday logging",
+  "purpose": "capture daily state & observations",
+  "triggers": [
+    "Log this into the scroll...",
+    "Reflect on my current state."
+  ]
+}
