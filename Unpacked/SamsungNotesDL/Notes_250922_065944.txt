@@ -1,0 +1,296 @@
+#!/usr/bin/env python3
+# golem_conductor_modular.py
+from __future__ import annotations
+
+import os
+import json
+import textwrap
+import importlib.util
+import inspect
+import re
+from datetime import datetime
+from typing import Optional, Dict, Any
+
+try:
+    import openai
+except Exception:
+    openai = None
+
+# --- Configuration ---
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if openai:
+    openai.api_key = OPENAI_API_KEY
+if not OPENAI_API_KEY:
+    print("WARNING: OPENAI_API_KEY environment variable not set. Text generation will fail (if used).")
+
+BASE_DIR = os.path.join(os.getcwd(), "projects")
+MODULES_DIR = os.path.join(os.getcwd(), "modules")
+os.makedirs(BASE_DIR, exist_ok=True)
+os.makedirs(MODULES_DIR, exist_ok=True)
+
+# -----------------
+# Utilities
+# -----------------
+def slugify(text: str) -> str:
+    text = (text or "").lower()
+    # replace non-alnum with hyphen, collapse multiple hyphens
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    text = re.sub(r"-{2,}", "-", text)
+    return text.strip("-") or "project"
+
+def now_stamp() -> str:
+    return datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+
+def ensure_dir(path: str) -> None:
+    os.makedirs(path, exist_ok=True)
+
+def write_text(path: str, data: str) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(data)
+
+# -----------------
+# Duck-typed Module Interface (no circular import required)
+# -----------------
+# Modules must define at least:
+#   NAME (str), TRIGGERS (list[str]), and execute(prompt: str, **kwargs) -> str
+#
+# This allows authoring modules without importing the conductor.
+
+# -----------------
+# Golem Conductor
+# -----------------
+class GolemConductor:
+    def __init__(self):
+        print("--- GOLEM CONDUCTOR v0.2 (Modular) ---")
+        self.modules = self._load_modules()
+        print("Sovereign orchestration shell activated. 🝎🔥♾️")
+        print("Type 'exit' to shut down.\n")
+
+    def _load_modules(self) -> Dict[str, Any]:
+        loaded_modules: Dict[str, Any] = {}
+        print("Scanning for modules in:", MODULES_DIR)
+        if not os.path.exists(MODULES_DIR):
+            print(f"WARNING: Modules directory '{MODULES_DIR}' not found.")
+            return {}
+
+        for filename in sorted(os.listdir(MODULES_DIR)):
+            if filename.endswith(".py") and not filename.startswith("__"):
+                module_path = os.path.join(MODULES_DIR, filename)
+                module_name = filename[:-3]
+                try:
+                    spec = importlib.util.spec_from_file_location(module_name, module_path)
+                    module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(module)  # type: ignore
+
+                    # Discover candidate exports: classes or objects that match duck-type
+                    found_any = False
+                    for name, obj in inspect.getmembers(module):
+                        # skip private attributes
+                        if name.startswith("_"):
+                            continue
+
+                        # Candidate 1: class with proper attributes
+                        if inspect.isclass(obj):
+                            try:
+                                instance = obj()
+                            except Exception:
+                                # can't instantiate -> skip
+                                continue
+                            if self._is_valid_module_obj(instance):
+                                loaded_modules[instance.NAME] = instance
+                                print(f"  [+] Loaded Module: {instance.NAME} (Triggers: {', '.join(getattr(instance, 'TRIGGERS', []))})")
+                                found_any = True
+
+                        # Candidate 2: module-level object (already instantiated)
+                        elif self._is_valid_module_obj(obj):
+                            loaded_modules[getattr(obj, "NAME")] = obj
+                            print(f"  [+] Loaded Module: {obj.NAME} (Triggers: {', '.join(getattr(obj, 'TRIGGERS', []))})")
+                            found_any = True
+
+                    if not found_any:
+                        # No suitable export found; still fine.
+                        print(f"    [-] No module-class/object found in {filename} (skipped).")
+                except Exception as e:
+                    print(f"  [!] Failed to load module {filename}: {e}")
+
+        if not loaded_modules:
+            print("  [!] No valid modules found. Conductor will have limited functionality.")
+        else:
+            print("Module scan complete.")
+        return loaded_modules
+
+    def _is_valid_module_obj(self, obj: Any) -> bool:
+        # duck-typing: requires NAME (str), TRIGGERS (iterable of str), and callable execute
+        if not hasattr(obj, "NAME") or not isinstance(getattr(obj, "NAME"), str):
+            return False
+        if not hasattr(obj, "TRIGGERS"):
+            return False
+        triggers = getattr(obj, "TRIGGERS")
+        try:
+            iter(triggers)
+        except TypeError:
+            return False
+        if not hasattr(obj, "execute") or not callable(getattr(obj, "execute")):
+            return False
+        return True
+
+    def _route_decree(self, decree: str) -> (Optional[Any], str):
+        """Keyword-based router with word-boundary matching."""
+        decree_lower = decree.lower()
+        # exact trigger matches with word boundaries preferred
+        for module_instance in self.modules.values():
+            for trigger in getattr(module_instance, "TRIGGERS", []):
+                trigger_l = str(trigger).lower().strip()
+                if not trigger_l:
+                    continue
+                # word boundary match
+                pattern = r"\b" + re.escape(trigger_l) + r"\b"
+                if re.search(pattern, decree_lower):
+                    return module_instance, decree
+        # fallback: prefer openai_text or first module
+        if "openai_text" in self.modules:
+            return self.modules["openai_text"], decree
+        # otherwise first loaded module
+        if self.modules:
+            first = next(iter(self.modules.values()))
+            return first, decree
+        return None, decree
+
+    def process_decree(self, decree: str):
+        timestamp = now_stamp()
+        safe_slug = slugify(decree[:60])
+        project_name = f"{safe_slug}_{timestamp}"
+
+        print(f"\nArchitect’s Decree: {decree}")
+        print(f"Forging project: {project_name}")
+
+        module, task_prompt = self._route_decree(decree)
+
+        if not module:
+            print("\n[ERROR] No suitable module found to handle this decree.")
+            return
+
+        print(f"Routing to module: {module.NAME}")
+        try:
+            result = module.execute(task_prompt)
+            if result is None:
+                result = ""
+            filename = f"{module.NAME}_output.txt"
+            saved_path = self._save_output(project_name, filename, str(result))
+            # write a manifest for the project
+            manifest = {
+                "decree": decree,
+                "project": project_name,
+                "module": module.NAME,
+                "timestamp": timestamp,
+                "output_file": filename
+            }
+            write_text(os.path.join(BASE_DIR, project_name, "manifest.json"), json.dumps(manifest, indent=2))
+            print(f"\nDecree executed by {module.NAME}. Result saved to: {saved_path}")
+        except Exception as e:
+            print(f"\n[ERROR] Module '{getattr(module, 'NAME', 'unknown')}' failed during execution: {e}")
+
+    def _save_output(self, project_name: str, filename: str, content: str):
+        folder = os.path.join(BASE_DIR, project_name)
+        ensure_dir(folder)
+        path = os.path.join(folder, filename)
+        write_text(path, content)
+        return path
+
+    def run(self):
+        """Main interactive loop for the Conductor."""
+        while True:
+            try:
+                decree = input("Architect> ").strip()
+                if decree.lower() in ["exit", "quit", "shutdown"]:
+                    print("Conductor shutting down.")
+                    break
+                if not decree:
+                    continue
+                self.process_decree(decree)
+            except KeyboardInterrupt:
+                print("\nConductor shutdown initiated by Architect.")
+                break
+            except Exception as e:
+                print(f"\n[CRITICAL CONDUCTOR ERROR]: {e}")
+
+# --- Example Module Files (written without importing conductor) ---
+example_openai_module = r'''
+# modules/openai_text.py
+# Simple OpenAI text module (duck-typed)
+NAME = "openai_text"
+TRIGGERS = ["write", "summarize", "explain", "code", "generate text", "landing"]
+
+def execute(prompt: str, **kwargs) -> str:
+    """
+    Uses `openai` python library if available and configured.
+    Falls back to an informative string if not available.
+    """
+    try:
+        import openai
+        api_key = openai.api_key if hasattr(openai, "api_key") else None
+        if not api_key:
+            return "OpenAI key not configured in environment. Set OPENAI_API_KEY."
+        # Use ChatCompletion if available
+        # NOTE: adjust model as you prefer (gpt-4, gpt-4o, gpt-4o-mini, etc.)
+        resp = openai.ChatCompletion.create(
+            model="gpt-4", 
+            messages=[
+                {"role": "system", "content": "You are a concise, practical assistant producing high-quality deliverables."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.2,
+            max_tokens=1200
+        )
+        text = resp.choices[0].message.get("content", "")
+        return text.strip()
+    except Exception as e:
+        return f"[openai_text module error] {e}"
+'''
+
+example_stability_module = r'''
+# modules/stability_image.py
+# Image-generation stub module (duck-typed)
+NAME = "stability_image"
+TRIGGERS = ["image", "draw", "picture", "visualize", "generate image", "logo", "sigil"]
+
+def execute(prompt: str, **kwargs) -> str:
+    # Placeholder behavior: write a JSON describing the task and return path info.
+    payload = {
+        "engine": "stability_stub",
+        "prompt": prompt,
+        "params": {
+            "width": 1024,
+            "height": 1024,
+            "steps": 28,
+            "cfg_scale": 7.0
+        }
+    }
+    return json.dumps(payload)
+'''
+
+def setup_example_modules():
+    """Create example module files if they don't already exist."""
+    ensure_dir(MODULES_DIR)
+    openai_path = os.path.join(MODULES_DIR, "openai_text.py")
+    stbl_path = os.path.join(MODULES_DIR, "stability_image.py")
+    init_path = os.path.join(MODULES_DIR, "__init__.py")
+    if not os.path.exists(openai_path):
+        write_text(openai_path, textwrap.dedent(example_openai_module))
+        print("Wrote example module:", openai_path)
+    else:
+        print("Example module already exists:", openai_path)
+    if not os.path.exists(stbl_path):
+        write_text(stbl_path, textwrap.dedent(example_stability_module))
+        print("Wrote example module:", stbl_path)
+    else:
+        print("Example module already exists:", stbl_path)
+    if not os.path.exists(init_path):
+        write_text(init_path, "")  # make package
+        print("Created __init__.py in modules/")
+
+# Entry point
+if __name__ == "__main__":
+    setup_example_modules()
+    conductor = GolemConductor()
+    conductor.run()
