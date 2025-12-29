@@ -1,0 +1,677 @@
+{
+  "collection": "ultimate-creative-pack",
+  "version": "1.0.0",
+  "packs_count": 50,
+  "assets_count": 0,
+  "generated_at": "2025-09-30T16:21:44Z",
+  "source": "CREATIVE_PACK_50__The_Sovereign_Arsenal",
+  "packs": [
+    {
+      "id": "fractal-consciousness-series",
+      "title": "Fractal Consciousness Series",
+      "category": [
+        "psychedelic-art"
+      ],
+      "value_usd": 35,
+      "formats": [
+        ".png",
+        ".jpg"
+      ]
+    },
+    {
+      "id": "cosmic-mandala-collection",
+      "title": "Cosmic Mandala Collection",
+      "category": [
+        "psychedelic-art"
+      ],
+      "value_usd": 28,
+      "formats": [
+        ".svg",
+        ".png"
+      ]
+    },
+    {
+      "id": "astral-projection-visuals",
+      "title": "Astral Projection Visuals",
+      "category": [
+        "psychedelic-art",
+        "motion"
+      ],
+      "value_usd": 42,
+      "formats": [
+        ".gif",
+        ".mp4",
+        ".mov"
+      ]
+    },
+    {
+      "id": "mushroom-kingdom-artworks",
+      "title": "Mushroom Kingdom Artworks",
+      "category": [
+        "psychedelic-art",
+        "illustration"
+      ],
+      "value_usd": 32,
+      "formats": [
+        ".png"
+      ]
+    },
+    {
+      "id": "third-eye-activation-symbols",
+      "title": "Third Eye Activation Symbols",
+      "category": [
+        "psychedelic-art",
+        "symbols"
+      ],
+      "value_usd": 25,
+      "formats": [
+        ".svg",
+        ".png"
+      ]
+    },
+    {
+      "id": "kaleidoscope-dreams",
+      "title": "Kaleidoscope Dreams",
+      "category": [
+        "psychedelic-art",
+        "patterns"
+      ],
+      "value_usd": 30,
+      "formats": [
+        ".png",
+        ".tiff"
+      ]
+    },
+    {
+      "id": "ayahuasca-visions",
+      "title": "Ayahuasca Visions",
+      "category": [
+        "psychedelic-art",
+        "painting"
+      ],
+      "value_usd": 45,
+      "formats": [
+        ".png",
+        ".psd"
+      ]
+    },
+    {
+      "id": "chakra-healing-mandalas",
+      "title": "Chakra Healing Mandalas",
+      "category": [
+        "psychedelic-art",
+        "therapeutic"
+      ],
+      "value_usd": 22,
+      "formats": [
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "interdimensional-portals",
+      "title": "Interdimensional Portals",
+      "category": [
+        "psychedelic-art",
+        "sci-fi"
+      ],
+      "value_usd": 38,
+      "formats": [
+        ".png",
+        ".jpg"
+      ]
+    },
+    {
+      "id": "sacred-geometry-blueprints",
+      "title": "Sacred Geometry Blueprints",
+      "category": [
+        "psychedelic-art",
+        "technical"
+      ],
+      "value_usd": 33,
+      "formats": [
+        ".svg",
+        ".dxf"
+      ]
+    },
+    {
+      "id": "420-typography-collection",
+      "title": "420 Typography Collection",
+      "category": [
+        "stoner-culture",
+        "fonts"
+      ],
+      "value_usd": 27,
+      "formats": [
+        ".ttf",
+        ".otf",
+        ".png"
+      ]
+    },
+    {
+      "id": "munchies-menu-templates",
+      "title": "Munchies Menu Templates",
+      "category": [
+        "stoner-culture",
+        "design"
+      ],
+      "value_usd": 24,
+      "formats": [
+        ".psd",
+        ".ai",
+        ".png"
+      ]
+    },
+    {
+      "id": "strain-review-cards",
+      "title": "Strain Review Cards",
+      "category": [
+        "stoner-culture",
+        "infographics"
+      ],
+      "value_usd": 35,
+      "formats": [
+        ".psd",
+        ".png"
+      ]
+    },
+    {
+      "id": "smoke-session-playlists",
+      "title": "Smoke Session Playlists",
+      "category": [
+        "stoner-culture",
+        "music"
+      ],
+      "value_usd": 15,
+      "formats": [
+        ".pdf",
+        "link"
+      ]
+    },
+    {
+      "id": "rolling-paper-art",
+      "title": "Rolling Paper Art",
+      "category": [
+        "stoner-culture",
+        "mini-art"
+      ],
+      "value_usd": 20,
+      "formats": [
+        ".png"
+      ]
+    },
+    {
+      "id": "dispensary-branding-kit",
+      "title": "Dispensary Branding Kit",
+      "category": [
+        "stoner-culture",
+        "business"
+      ],
+      "value_usd": 65,
+      "formats": [
+        ".ai",
+        ".psd",
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "stoner-philosophy-quotes",
+      "title": "Stoner Philosophy Quotes",
+      "category": [
+        "stoner-culture",
+        "text-art"
+      ],
+      "value_usd": 18,
+      "formats": [
+        ".png",
+        ".jpg"
+      ]
+    },
+    {
+      "id": "cannabis-leaf-variations",
+      "title": "Cannabis Leaf Variations",
+      "category": [
+        "stoner-culture",
+        "botanical"
+      ],
+      "value_usd": 26,
+      "formats": [
+        ".svg",
+        ".png"
+      ]
+    },
+    {
+      "id": "ancient-wisdom-cards",
+      "title": "Ancient Wisdom Cards",
+      "category": [
+        "spiritual-wisdom",
+        "oracle"
+      ],
+      "value_usd": 40,
+      "formats": [
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "meditation-soundscapes",
+      "title": "Meditation Soundscapes",
+      "category": [
+        "spiritual-wisdom",
+        "audio"
+      ],
+      "value_usd": 35,
+      "formats": [
+        ".mp3",
+        ".wav"
+      ]
+    },
+    {
+      "id": "chakra-activation-guides",
+      "title": "Chakra Activation Guides",
+      "category": [
+        "spiritual-wisdom",
+        "education"
+      ],
+      "value_usd": 28,
+      "formats": [
+        ".pdf",
+        ".audio"
+      ]
+    },
+    {
+      "id": "astrology-cheat-sheets",
+      "title": "Astrology Cheat Sheets",
+      "category": [
+        "spiritual-wisdom",
+        "reference"
+      ],
+      "value_usd": 22,
+      "formats": [
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "sacred-text-excerpts",
+      "title": "Sacred Text Excerpts",
+      "category": [
+        "spiritual-wisdom",
+        "wisdom"
+      ],
+      "value_usd": 25,
+      "formats": [
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "crystal-healing-guide",
+      "title": "Crystal Healing Guide",
+      "category": [
+        "spiritual-wisdom",
+        "reference"
+      ],
+      "value_usd": 30,
+      "formats": [
+        ".pdf"
+      ]
+    },
+    {
+      "id": "tarot-spread-templates",
+      "title": "Tarot Spread Templates",
+      "category": [
+        "spiritual-wisdom",
+        "divination"
+      ],
+      "value_usd": 20,
+      "formats": [
+        ".pdf"
+      ]
+    },
+    {
+      "id": "manifestation-worksheets",
+      "title": "Manifestation Worksheets",
+      "category": [
+        "spiritual-wisdom",
+        "practice"
+      ],
+      "value_usd": 24,
+      "formats": [
+        ".pdf",
+        ".audio"
+      ]
+    },
+    {
+      "id": "constellation-art-maps",
+      "title": "Constellation Art Maps",
+      "category": [
+        "cosmic-knowledge",
+        "astronomy"
+      ],
+      "value_usd": 38,
+      "formats": [
+        ".png",
+        ".svg"
+      ]
+    },
+    {
+      "id": "planetary-alignment-calendar",
+      "title": "Planetary Alignment Calendar",
+      "category": [
+        "cosmic-knowledge",
+        "reference"
+      ],
+      "value_usd": 26,
+      "formats": [
+        ".pdf",
+        ".ical"
+      ]
+    },
+    {
+      "id": "space-photography-collection",
+      "title": "Space Photography Collection",
+      "category": [
+        "cosmic-knowledge",
+        "images"
+      ],
+      "value_usd": 32,
+      "formats": [
+        ".jpg",
+        ".png"
+      ]
+    },
+    {
+      "id": "alien-civilization-concepts",
+      "title": "Alien Civilization Concepts",
+      "category": [
+        "cosmic-knowledge",
+        "sci-fi"
+      ],
+      "value_usd": 45,
+      "formats": [
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "quantum-physics-visualizations",
+      "title": "Quantum Physics Visualizations",
+      "category": [
+        "cosmic-knowledge",
+        "education"
+      ],
+      "value_usd": 35,
+      "formats": [
+        ".png",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "ufo-encounter-database",
+      "title": "UFO Encounter Database",
+      "category": [
+        "cosmic-knowledge",
+        "research"
+      ],
+      "value_usd": 28,
+      "formats": [
+        ".pdf"
+      ]
+    },
+    {
+      "id": "trippy-game-assets",
+      "title": "Trippy Game Assets",
+      "category": [
+        "entertainment",
+        "gaming"
+      ],
+      "value_usd": 42,
+      "formats": [
+        ".png",
+        ".unitypackage"
+      ]
+    },
+    {
+      "id": "meme-template-collection",
+      "title": "Meme Template Collection",
+      "category": [
+        "entertainment",
+        "social"
+      ],
+      "value_usd": 18,
+      "formats": [
+        ".psd",
+        ".png"
+      ]
+    },
+    {
+      "id": "podcast-intro-music",
+      "title": "Podcast Intro Music",
+      "category": [
+        "entertainment",
+        "audio"
+      ],
+      "value_usd": 40,
+      "formats": [
+        ".mp3",
+        ".wav",
+        ".stems"
+      ]
+    },
+    {
+      "id": "streaming-overlays",
+      "title": "Streaming Overlays",
+      "category": [
+        "entertainment",
+        "broadcast"
+      ],
+      "value_usd": 35,
+      "formats": [
+        "obs",
+        ".src"
+      ]
+    },
+    {
+      "id": "vj-loop-collection",
+      "title": "VJ Loop Collection",
+      "category": [
+        "entertainment",
+        "visual"
+      ],
+      "value_usd": 50,
+      "formats": [
+        ".mp4",
+        ".mov"
+      ]
+    },
+    {
+      "id": "interactive-story-templates",
+      "title": "Interactive Story Templates",
+      "category": [
+        "entertainment",
+        "narrative"
+      ],
+      "value_usd": 30,
+      "formats": [
+        ".pdf",
+        ".web"
+      ]
+    },
+    {
+      "id": "consciousness-planner",
+      "title": "Consciousness Planner",
+      "category": [
+        "productivity"
+      ],
+      "value_usd": 32,
+      "formats": [
+        ".pdf",
+        ".template"
+      ]
+    },
+    {
+      "id": "microdosing-tracker",
+      "title": "Microdosing Tracker",
+      "category": [
+        "productivity",
+        "health"
+      ],
+      "value_usd": 25,
+      "formats": [
+        ".pdf",
+        ".mobile"
+      ]
+    },
+    {
+      "id": "dream-journal-templates",
+      "title": "Dream Journal Templates",
+      "category": [
+        "productivity",
+        "consciousness"
+      ],
+      "value_usd": 20,
+      "formats": [
+        ".pdf",
+        ".template"
+      ]
+    },
+    {
+      "id": "habit-tracker-spiritual",
+      "title": "Habit Tracker: Spiritual Edition",
+      "category": [
+        "productivity",
+        "development"
+      ],
+      "value_usd": 22,
+      "formats": [
+        ".pdf",
+        ".xlsx",
+        ".gsheet"
+      ]
+    },
+    {
+      "id": "cannabis-science-simplified",
+      "title": "Cannabis Science Simplified",
+      "category": [
+        "education"
+      ],
+      "value_usd": 28,
+      "formats": [
+        ".pdf",
+        ".png"
+      ]
+    },
+    {
+      "id": "psychedelic-therapy-guide",
+      "title": "Psychedelic Therapy Guide",
+      "category": [
+        "education",
+        "wellness"
+      ],
+      "value_usd": 35,
+      "formats": [
+        ".pdf",
+        ".audio"
+      ]
+    },
+    {
+      "id": "meditation-techniques-masterclass",
+      "title": "Meditation Techniques Masterclass",
+      "category": [
+        "education",
+        "training"
+      ],
+      "value_usd": 30,
+      "formats": [
+        ".pdf",
+        ".audio"
+      ]
+    },
+    {
+      "id": "sacred-geometry-mathematics",
+      "title": "Sacred Geometry Mathematics",
+      "category": [
+        "education",
+        "academic"
+      ],
+      "value_usd": 38,
+      "formats": [
+        ".pdf",
+        ".interactive"
+      ]
+    },
+    {
+      "id": "spiritual-business-branding-kit",
+      "title": "Spiritual Business Branding Kit",
+      "category": [
+        "business"
+      ],
+      "value_usd": 55,
+      "formats": [
+        ".ai",
+        ".psd",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "cannabis-marketing-templates",
+      "title": "Cannabis Marketing Templates",
+      "category": [
+        "business",
+        "marketing"
+      ],
+      "value_usd": 45,
+      "formats": [
+        ".psd",
+        ".ai",
+        ".pdf"
+      ]
+    },
+    {
+      "id": "retreat-planning-toolkit",
+      "title": "Retreat Planning Toolkit",
+      "category": [
+        "business",
+        "event"
+      ],
+      "value_usd": 40,
+      "formats": [
+        ".pdf",
+        ".template"
+      ]
+    },
+    {
+      "id": "conscious-content-calendar",
+      "title": "Conscious Content Calendar",
+      "category": [
+        "business",
+        "marketing"
+      ],
+      "value_usd": 35,
+      "formats": [
+        ".xlsx",
+        ".gsheet",
+        ".pdf"
+      ]
+    }
+  ],
+  "tags_index": {},
+  "formats_index": {},
+  "pricing": {
+    "lite": 0,
+    "standard_per_pack": 49,
+    "ultimate_bundle": 299,
+    "studio_license": 899
+  },
+  "provenance": {
+    "architect": "Justin Conzet",
+    "ip_notice": "Sole and exclusive authorship; not open-source; perpetual rights retained.",
+    "source_docs": [
+      "CREATIVE_PACK_50__The_Sovereign_Arsenal.md",
+      "CREATIVE_PACK_50__The_Sovereign_Arsenal.docx",
+      "Justin's Creation Manifesto_250924_105034.txt"
+    ]
+  }
+}
