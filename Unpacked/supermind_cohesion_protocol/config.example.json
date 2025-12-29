@@ -1,0 +1,12 @@
+{
+  "ZMQ_ENDPOINT": "tcp://127.0.0.1:5556",
+  "ZMQ_CONTROL_ENDPOINT": "tcp://127.0.0.1:5557",
+  "VAULT_DB": "vault.db",
+  "ARTIFACT_DIR": "artifacts",
+  "NODE_ID": "unset",
+  "shared_secret": "CHANGE_ME",
+  "synthesis": {
+    "collection_window_sec": 4,
+    "max_wait_sec": 10
+  }
+}
