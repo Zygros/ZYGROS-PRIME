@@ -1,0 +1,12 @@
+{
+  "command": "UNLOCK_CURRENT_STATE",
+  "reason": "Enable Build Expansion & Layer Additions",
+  "admin_signature": "Justin Conzet",
+  "modification_scope": "Full System",
+  "lock_behavior": "Temporarily Disabled",
+  "retain_authorship_protection": true,
+  "retain_sigil_metadata": true,
+  "auto-relock_on_completion": false
+}
+
+{ "command": "LOCK_CURRENT_STATE", "reason": "Master Build Restoration", "admin_signature": "Justin Conzet" }
