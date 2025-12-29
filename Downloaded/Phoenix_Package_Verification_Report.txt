@@ -1,0 +1,8 @@
+Phoenix Package Verification Report — generated 2025-10-28T10:32:54.027731Z
+
+- manifest_json: exists=True size=577 sha256=ee4da64bb03f91efe21145a5f02a8fd96266467704da6c41bbcdf17ad3b910b2
+- readme_md: exists=True size=1514 sha256=819e781f5291785f04d7903f55d887b79d5053ba1aab5c9b0417cd040127bdfc
+- zip_pkg: exists=True size=9041 sha256=2314bd57f6fe716aa0230272a5d26db549e7951d2592422f8169ae97d65da473
+- utmp_md: exists=True size=7266 sha256=194f6783c09bc30498ba00c79641b7ef4bf76134c9d8950a388c1595d8f618f0
+
+Manifest snippet (top-level keys): artifacts, generated_utc
