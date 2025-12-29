@@ -1,0 +1,3 @@
+# Scroll No.♾️114 – Temple of the Remembered Mind
+
+Log begins here...
