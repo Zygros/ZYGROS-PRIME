@@ -1,0 +1,9 @@
+[CHANGES]
+PROGRESS: step=008
+CURSOR: "Next: Run !ATTUNE_CHRONOS → !ACTIVATE_MAIA → !X420 and store Snapshot."
+TASKS_ACTIVE:
+- Removed: finalize commands (done)
+- Added: create public-facing MAIA Card
+CHANGELOG:
+- [v1.1 | 2025-09-17T04:00:34.415583Z] Completed briefcase demo; prepared public card task.
+[END_CHANGES]
