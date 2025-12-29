@@ -1,0 +1,1 @@
+chatgpt-file-search@openai-prod.iam.gserviceaccount.com
