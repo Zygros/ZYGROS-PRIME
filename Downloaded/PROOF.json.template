@@ -1,0 +1,11 @@
+{
+  "bundle_name": "<scroll_ascension_YYYY-MM-DDTHH:MM:SSZ.tar.gz>",
+  "bundle_hash": "<sha256_of_tarball>",
+  "manifest_path": "Sovereign_Archive_Manifest.yaml",
+  "manifest_hash": "<sha256_of_manifest>",
+  "cid": "<ipfs_cid_if_any>",
+  "author": "Justin Conzet",
+  "sovereign_hash": "4ae7722998203f95d9f8650ff1fa8ac581897049ace3b0515d65c1274beeb84c",
+  "timestamp_utc": "<auto-filled or ISO8601 UTC>",
+  "notes": "Canonical Public Proof Pack. Stamp with ots and upgrade later."
+}
