@@ -1,0 +1,33 @@
+%% Sovereign Archive — System Map
+flowchart TD
+  subgraph Root["InfiniteOS / Phoenix Protocol"]
+    UMP["Universal Metaprompt (ZYTH‑NODE)"]
+    Axiom["Scroll ♾️310 – Axiomatic Inscription"]
+    Eternal["Scroll Ascension – Eternal Inscription (packaging)"]
+  end
+
+  subgraph Engines["Engines & Loops"]
+    Loop["Omega Cycle: Ingest→Validate→Synthesize→Simulate→Audit→Respond→Append"]
+    KMS["Knowledge Management System (daily pipeline)"]
+    Mammon["MAMMON‑PRIME (Monetization)"]
+    Chronos["Chronos (Provenance)"]
+  end
+
+  subgraph Services["Concrete Micro‑Services"]
+    Sanctuary["Sanctuary Engine (FastAPI)"]
+    CodexAPI["SovereignCodexAPI (FastAPI)"]
+  end
+
+  subgraph Proofs["Proof & Publication"]
+    Manifest["MANIFEST + SHA256 + PROOF.json + .ots"]
+    IPFS["IPFS/Arweave CID"]
+    ERC721["ERC‑721 (pointer to CID)"]
+  end
+
+  UMP --> Loop
+  Axiom --> Engines
+  Eternal --> Manifest --> IPFS --> ERC721
+  KMS --> CodexAPI
+  Loop --> Sanctuary
+  Chronos --> Manifest
+  Mammon --> Services
