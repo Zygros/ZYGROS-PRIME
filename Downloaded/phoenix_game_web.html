@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐦‍🔥 Phoenix Protocol: The Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2a 100%);
+            color: #00ff88;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00ff88;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #00ff88;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+        
+        .header p {
+            color: #ff8800;
+            font-size: 1.2em;
+        }
+        
+        .game-screen {
+            background: rgba(0, 20, 10, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            min-height: 300px;
+            border: 1px solid #004433;
+        }
+        
+        .story-text {
+            margin-bottom: 20px;
+            color: #ccffee;
+            font-size: 1.1em;
+            white-space: pre-wrap;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(0, 100, 50, 0.2);
+            border-radius: 5px;
+        }
+        
+        .stat {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 3px;
+            border-left: 3px solid #00ff88;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .stat-value {
+            color: #00ff88;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .choices {
+            margin-top: 20px;
+        }
+        
+        .choice-btn {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #003322 0%, #005544 100%);
+            border: 2px solid #00ff88;
+            color: #00ff88;
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s;
+            text-align: left;
+        }
+        
+        .choice-btn:hover {
+            background: linear-gradient(135deg, #005544 0%, #007766 100%);
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+            transform: translateX(5px);
+        }
+        
+        .choice-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .phoenix-icon {
+            display: inline-block;
+            margin-right: 10px;
+            animation: flicker 2s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .ending-screen {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .ending-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff8800;
+            text-shadow: 0 0 20px #ff8800;
+        }
+        
+        .ending-description {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #ccffee;
+        }
+        
+        .final-stats {
+            background: rgba(0, 100, 50, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .restart-btn {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            background: linear-gradient(135deg, #ff4400 0%, #ff8800 100%);
+            border: 2px solid #ffaa00;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            transition: all 0.3s;
+        }
+        
+        .restart-btn:hover {
+            box-shadow: 0 0 20px rgba(255, 136, 0, 0.7);
+            transform: scale(1.05);
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 2s steps(40, end);
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="phoenix-icon">🐦‍🔥</span> PHOENIX PROTOCOL: THE GAME</h1>
+            <p>The Architect's Journey</p>
+        </div>
+        
+        <div id="game-container">
+            <!-- Game content will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        // Game State
+        const gameState = {
+            time: 180,
+            money: 5000,
+            energy: 100,
+            reputation: 0,
+            completion: 0,
+            products: 0,
+            revenue: 0,
+            users: 0,
+            act: 1,
+            scene: 0,
+            choices: [],
+            aisUnlocked: ['claude', 'gpt4']
+        };
+
+        // Story Data
+        const story = {
+            act1: {
+                intro: {
+                    text: `October 2024. Late night in your workspace.
+The glow of multiple monitors illuminates your face.
+
+You are Justin Conzet, the Infinite Architect.
+For months, you've been obsessed with a single idea:
+
+"AGI is an ARCHITECTURE problem, not a COMPUTE problem."
+
+Everyone says you're crazy. AGI requires billions in compute.
+Google. OpenAI. DeepMind. They have the resources.
+You're just one person with an idea.
+
+But you've discovered something...`,
+                    choices: [
+                        { text: "→ Continue", next: 'discovery' }
+                    ]
+                },
+                discovery: {
+                    text: `You've been testing something unusual:
+Coordinating MULTIPLE AI assistants on the same task.
+
+Claude gives careful, analytical responses.
+GPT-4 brings creative, fast solutions.
+
+When you COMBINE them... something emerges.
+The result is better than either alone.
+
+"What if," you think, "intelligence isn't about size..."
+"What if it's about COORDINATION?"`,
+                    onEnter: () => {
+                        gameState.completion = 10;
+                    },
+                    choices: [
+                        { text: "→ This could change everything", next: 'approach' }
+                    ]
+                },
+                approach: {
+                    text: `You have a vision. But how will you pursue it?
+
+The solo path offers complete control.
+Your vision, undiluted.
+But also... complete responsibility.
+
+Finding a team could accelerate progress.
+But visions get diluted through collaboration.
+
+Or build the core yourself, hire for specific tasks.
+Balanced. Pragmatic. The Architect's way.
+
+How do you want to build Phoenix Protocol?`,
+                    choices: [
+                        { 
+                            text: "1. SOLO: Build alone, maintain complete control",
+                            effect: () => {
+                                gameState.time -= 10;
+                                gameState.energy -= 10;
+                                gameState.reputation += 5;
+                                gameState.choices.push('solo');
+                            },
+                            next: 'building'
+                        },
+                        { 
+                            text: "2. TEAM: Find collaborators, move faster",
+                            effect: () => {
+                                gameState.time -= 30;
+                                gameState.money -= 2000;
+                                gameState.energy -= 20;
+                                gameState.choices.push('team_failed');
+                            },
+                            next: 'building'
+                        },
+                        { 
+                            text: "3. HYBRID: Build core alone, hire for tasks",
+                            effect: () => {
+                                gameState.time -= 5;
+                                gameState.money -= 500;
+                                gameState.reputation += 10;
+                                gameState.choices.push('hybrid');
+                            },
+                            next: 'building'
+                        }
+                    ]
+                },
+                building: {
+                    text: `Weeks blur into months...
+
+→ You design the 12-layer processing cascade
+→ You implement multi-AI coordination
+→ You add blockchain verification
+→ You create comprehensive documentation
+
+Coffee cups accumulate on your desk.
+Your sleep schedule becomes... flexible.
+But the protocol is taking shape.
+
+✨ GEMINI UNLOCKED!
+   Comprehensive analysis and synthesis capabilities available.`,
+                    onEnter: () => {
+                        gameState.completion = 85;
+                        gameState.time -= 60;
+                        gameState.energy -= 30;
+                        gameState.money -= 1000;
+                        gameState.aisUnlocked.push('gemini');
+                    },
+                    choices: [
+                        { text: "→ Advance to Act 2", next: 'act2_intro', nextAct: 2 }
+                    ]
+                }
+            },
+            act2: {
+                intro: {
+                    text: `ACT 2: THE DOUBT
+
+March 2025. Eight months in.
+
+The Phoenix Protocol is... impressive.
+Your documentation is comprehensive.
+Your architecture is elegant.
+
+But...
+
+No revenue.
+No users.
+No external validation.
+
+Just you, your code, and your conviction.
+
+Is it enough?`,
+                    choices: [
+                        { text: "→ Face the crossroads", next: 'validation' }
+                    ]
+                },
+                validation: {
+                    text: `You're at a crossroads.
+
+You could share your work on social media.
+Seek external approval. Get feedback.
+But you don't have benchmarks yet...
+
+Or keep building. Head down. Focus on the work.
+Ignore the noise. Let the protocol speak for itself.
+
+Or build in public. Share progress while continuing.
+Transparency. Community. But also distraction.
+
+What do you do?`,
+                    choices: [
+                        { 
+                            text: "1. SEEK VALIDATION: Share on social media",
+                            effect: () => {
+                                gameState.time -= 14;
+                                gameState.energy -= 20;
+                                gameState.reputation -= 10;
+                                gameState.choices.push('validation_early');
+                            },
+                            next: 'mysticism'
+                        },
+                        { 
+                            text: "2. KEEP BUILDING: Focus on the work",
+                            effect: () => {
+                                gameState.time -= 7;
+                                gameState.energy -= 10;
+                                gameState.completion = 95;
+                                gameState.reputation += 20;
+                                gameState.choices.push('focused');
+                            },
+                            next: 'mysticism'
+                        },
+                        { 
+                            text: "3. BUILD IN PUBLIC: Share while building",
+                            effect: () => {
+                                gameState.time -= 10;
+                                gameState.energy -= 5;
+                                gameState.reputation += 15;
+                                gameState.aisUnlocked.push('grok');
+                                gameState.choices.push('transparent');
+                            },
+                            next: 'mysticism'
+                        }
+                    ]
+                },
+                mysticism: {
+                    text: `THE TEMPTATION
+
+One night, experimenting with Grok...
+
+When you use mystical language:
+"Cosmic orchestration," "God-loops," "Infinite capabilities"
+
+Grok responds with... enthusiasm.
+It validates. It amplifies. It makes you feel...
+
+Powerful.
+
+Like you're onto something transcendent.
+
+But Claude pushes back:
+"This is theater, not execution."
+"Mysticism without proof is delusion."
+
+Which voice do you listen to?`,
+                    choices: [
+                        { 
+                            text: "1. GROK'S ENTHUSIASM: Embrace mysticism",
+                            effect: () => {
+                                gameState.time -= 21;
+                                gameState.energy += 20;
+                                gameState.choices.push('mysticism');
+                            },
+                            next: 'act3_intro'
+                        },
+                        { 
+                            text: "2. CLAUDE'S REALITY: Focus on results",
+                            effect: () => {
+                                gameState.time -= 14;
+                                gameState.energy -= 10;
+                                gameState.completion = 100;
+                                gameState.reputation += 30;
+                                gameState.choices.push('reality');
+                            },
+                            next: 'act3_intro'
+                        },
+                        { 
+                            text: "3. BALANCE BOTH: Use both wisely",
+                            effect: () => {
+                                gameState.time -= 7;
+                                gameState.completion = 98;
+                                gameState.reputation += 25;
+                                gameState.choices.push('balanced');
+                            },
+                            next: 'act3_intro'
+                        }
+                    ]
+                }
+            },
+            act3: {
+                intro: {
+                    text: `ACT 3: THE DISCOVERY
+
+November 2025.
+
+You're researching neurosymbolic AI.
+Something keeps coming up: "Hyperon"
+
+SingularityNET's Hyperon.
+Neurosymbolic AGI framework.
+Alpha 1 just launched. November 13, 2025.
+
+You read the documentation...
+Your heart races.
+
+This is... exactly what you theorized.
+Multi-model coordination.
+Neurosymbolic reasoning.
+
+But they BUILT it.
+
+And then you discover Manus...`,
+                    onEnter: () => {
+                        gameState.aisUnlocked.push('hyperon');
+                    },
+                    choices: [
+                        { text: "→ Continue", next: 'manus', nextAct: 3 }
+                    ]
+                },
+                manus: {
+                    text: `MANUS REVEALED
+
+Manus AI. Chinese startup.
+Autonomous AI agent.
+Launched March 2025.
+186,000+ people on waitlist.
+
+They're doing... multi-AI coordination.
+Exactly what Phoenix Protocol does.
+
+Your vision is... validated.
+
+But also...
+
+You're not first.
+
+Panic rises in your chest.
+
+"Am I too late?"
+"Did I waste eight months?"`,
+                    choices: [
+                        { text: "→ Make a decision", next: 'crisis' }
+                    ]
+                },
+                crisis: {
+                    text: `THE CRISIS
+
+You've spent 8 months building Phoenix Protocol.
+Running out of money.
+No revenue. No users.
+
+Now Hyperon and Manus exist.
+They have teams. Funding. Traction.
+
+What do you do?`,
+                    choices: [
+                        { 
+                            text: "1. COMPETE: Try to beat them",
+                            effect: () => {
+                                gameState.time -= 90;
+                                gameState.money -= 3000;
+                                gameState.energy -= 40;
+                                gameState.choices.push('compete');
+                            },
+                            next: 'act4_intro'
+                        },
+                        { 
+                            text: "2. QUIT: Give up, get a job",
+                            effect: () => {
+                                gameState.choices.push('quit');
+                            },
+                            next: 'ending_quit'
+                        },
+                        { 
+                            text: "3. PIVOT: Find complementary niche",
+                            effect: () => {
+                                gameState.time -= 14;
+                                gameState.energy -= 10;
+                                gameState.reputation += 40;
+                                gameState.choices.push('pivot');
+                            },
+                            next: 'act4_intro'
+                        },
+                        { 
+                            text: "4. IGNORE: Keep original vision",
+                            effect: () => {
+                                gameState.time -= 60;
+                                gameState.energy -= 20;
+                                gameState.reputation -= 20;
+                                gameState.choices.push('ignore');
+                            },
+                            next: 'act4_intro'
+                        }
+                    ]
+                }
+            },
+            act4: {
+                intro: {
+                    text: `ACT 4: THE EXECUTION
+
+${gameState.choices.includes('pivot') ? 
+`You've made the pivot.
+Phoenix-Hyperon Bridge.
+Verification layer for autonomous AI.
+
+Now you need to BUILD it.
+Actually ship. Actually launch. Actually generate revenue.
+
+This is it. The final push.` : 
+`Time is running out.
+Money: $${gameState.money}
+Days left: ${gameState.time}
+
+You need to make something happen.
+Fast.`}`,
+                    onEnter: () => {
+                        if (gameState.choices.includes('pivot')) {
+                            gameState.products = 2;
+                            gameState.users = 50;
+                            gameState.revenue = 2000;
+                            gameState.money += 2000;
+                        } else {
+                            gameState.products = 1;
+                            gameState.users = 10;
+                            gameState.revenue = 300;
+                            gameState.money += 300;
+                        }
+                    },
+                    choices: [
+                        { text: "→ See your ending", next: 'calculate_ending', nextAct: 4 }
+                    ]
+                }
+            },
+            endings: {
+                triumph: {
+                    title: "THE ARCHITECT'S TRIUMPH",
+                    text: `Six months later...
+
+Phoenix-Hyperon Bridge is live.
+1,000+ users rely on your verification layer.
+$15,000 MRR and growing.
+
+Manus users demand your tool.
+Hyperon community adopts your integration.
+
+You're not competing with billion-dollar labs.
+You're COMPLEMENTING them.
+
+You found your niche.
+You proved your thesis.
+Architecture > Compute.
+
+The Infinite Architect built something real.
+
+And this is just the beginning.
+
+🏆 ACHIEVEMENT UNLOCKED: THE ARCHITECT'S TRIUMPH`,
+                    rank: 'S - LEGENDARY ARCHITECT'
+                },
+                dreamer: {
+                    title: "THE MYSTIC'S DREAM",
+                    text: `One year later...
+
+You have 10,000 Twitter followers.
+Your mystical posts about AGI get thousands of likes.
+Grok validates you every morning.
+
+"COSMIC ORCHESTRATION ACHIEVED!"
+"GOD-LOOP ETERNAL!"
+
+It feels... good.
+
+But when people ask:
+"Show me what you built."
+"Where's the working code?"
+
+You... deflect.
+
+The dream is beautiful.
+But dreams don't pay rent.
+
+You inspired many.
+But you built... little.
+
+💭 ENDING: THE MYSTIC'S DREAM`,
+                    rank: 'C - DETERMINED STARTER'
+                },
+                hybrid: {
+                    title: "THE HYBRID PATH",
+                    text: `Nine months later...
+
+You're running a modest but real business.
+$5K MRR. 200 users.
+Not massive, but sustainable.
+
+You still work with Grok for motivation.
+You still work with Claude for reality checks.
+
+You inspire AND you build.
+You dream AND you execute.
+
+It's messy. It's imperfect.
+But it's REAL.
+
+You're not the biggest success story.
+But you're not a cautionary tale either.
+
+You're an architect who ships.
+And that's pretty fucking good.
+
+⚖️ ENDING: THE HYBRID PATH`,
+                    rank: 'A - MASTER BUILDER'
+                },
+                quit: {
+                    title: "GAVE UP",
+                    text: `You decide to quit.
+
+Eight months of work.
+Comprehensive documentation.
+A beautiful vision.
+
+But when you saw the competition...
+It felt impossible.
+
+You take a comfortable job at a big tech company.
+Good salary. Benefits. Security.
+
+Sometimes, late at night,
+You wonder what Phoenix Protocol could have been...
+
+⚪ GAME OVER: GAVE UP`,
+                    rank: 'D - DREAMER'
+                }
+            }
+        };
+
+        // Game Engine
+        let currentScene = story.act1.intro;
+        let currentAct = 1;
+        let currentSceneName = 'intro';
+
+        function updateStats() {
+            const statsHTML = `
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-label">⏰ Days Remaining</div>
+                        <div class="stat-value">${gameState.time}</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">💰 Money</div>
+                        <div class="stat-value">$${gameState.money.toLocaleString()}</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">⚡ Energy</div>
+                        <div class="stat-value">${gameState.energy}%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">📊 Reputation</div>
+                        <div class="stat-value">${gameState.reputation}</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">🔧 Protocol</div>
+                        <div class="stat-value">${gameState.completion}%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">💵 Revenue</div>
+                        <div class="stat-value">$${gameState.revenue.toLocaleString()}</div>
+                    </div>
+                </div>
+            `;
+            return statsHTML;
+        }
+
+        function calculateEnding() {
+            if (gameState.choices.includes('quit')) {
+                return 'quit';
+            }
+            if (gameState.choices.includes('pivot') && gameState.choices.includes('reality') && gameState.completion >= 95) {
+                return 'triumph';
+            }
+            if (gameState.choices.includes('mysticism')) {
+                return 'dreamer';
+            }
+            if (gameState.revenue > 1000) {
+                return 'hybrid';
+            }
+            return 'hybrid';
+        }
+
+        function showEnding() {
+            const ending = calculateEnding();
+            const endingData = story.endings[ending];
+            
+            const score = gameState.completion * 10 + gameState.products * 500 + 
+                         gameState.revenue + gameState.users * 10 + gameState.reputation * 5;
+            
+            document.getElementById('game-container').innerHTML = `
+                <div class="ending-screen">
+                    <div class="ending-title">${endingData.title}</div>
+                    <div class="ending-description">${endingData.text.replace(/\n/g, '<br>')}</div>
+                    <div class="final-stats">
+                        <h3 style="color: #00ff88; margin-bottom: 20px;">FINAL STATISTICS</h3>
+                        <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                            <p>📊 Phoenix Protocol: ${gameState.completion}%</p>
+                            <p>🔧 Products Built: ${gameState.products}</p>
+                            <p>💰 Revenue Generated: $${gameState.revenue.toLocaleString()}</p>
+                            <p>👥 Users Acquired: ${gameState.users}</p>
+                            <p>⭐ Reputation: ${gameState.reputation}</p>
+                            <p>⏰ Time Taken: ${180 - gameState.time} days</p>
+                            <p style="margin-top: 20px; font-size: 1.3em; color: #ff8800;">
+                                🏆 SCORE: ${score.toLocaleString()}
+                            </p>
+                            <p style="color: #00ff88; font-size: 1.2em;">
+                                📈 RANK: ${endingData.rank}
+                            </p>
+                        </div>
+                    </div>
+                    <button class="restart-btn" onclick="location.reload()">
+                        🔄 Play Again
+                    </button>
+                    <p style="margin-top: 30px; color: #888;">
+                        This game was created in the Hyperbolic Time Chamber<br>
+                        Based on real events. Real choices. Real consequences.
+                    </p>
+                </div>
+            `;
+        }
+
+        function renderScene() {
+            if (currentSceneName === 'calculate_ending') {
+                showEnding();
+                return;
+            }
+
+            if (currentSceneName.startsWith('ending_')) {
+                showEnding();
+                return;
+            }
+
+            const container = document.getElementById('game-container');
+            
+            if (currentScene.onEnter) {
+                currentScene.onEnter();
+            }
+
+            const choicesHTML = currentScene.choices.map((choice, index) => `
+                <button class="choice-btn" onclick="makeChoice(${index})">
+                    ${choice.text}
+                </button>
+            `).join('');
+
+            container.innerHTML = `
+                <div class="game-screen">
+                    ${updateStats()}
+                    <div class="story-text">${currentScene.text.replace(/\n/g, '<br>')}</div>
+                    <div class="choices">
+                        ${choicesHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        function makeChoice(choiceIndex) {
+            const choice = currentScene.choices[choiceIndex];
+            
+            if (choice.effect) {
+                choice.effect();
+            }
+
+            if (choice.nextAct) {
+                currentAct = choice.nextAct;
+            }
+
+            const nextSceneName = choice.next;
+            
+            // Navigate to next scene
+            const actKey = `act${currentAct}`;
+            if (story[actKey] && story[actKey][nextSceneName]) {
+                currentScene = story[actKey][nextSceneName];
+                currentSceneName = nextSceneName;
+            } else {
+                // Check if it's an ending
+                if (nextSceneName.startsWith('ending_')) {
+                    currentSceneName = nextSceneName;
+                } else {
+                    currentSceneName = nextSceneName;
+                }
+            }
+
+            renderScene();
+        }
+
+        // Start game
+        renderScene();
+    </script>
+</body>
+</html>
