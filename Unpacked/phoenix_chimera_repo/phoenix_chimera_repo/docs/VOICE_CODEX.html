@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Voice Codex — Phoenix Chimera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;margin:2rem;line-height:1.6;color:#111}
+    header{margin-bottom:1.5rem}
+    .pill{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:#111;color:#fff;font-size:.8rem}
+    code,pre{background:#111;color:#fff;padding:.2rem .4rem;border-radius:.3rem}
+    pre{padding:1rem;overflow:auto}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{border:1px solid #eee;border-radius:16px;padding:1rem;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+    h1,h2{letter-spacing:.5px}
+  </style>
+</head>
+<body>
+  <header>
+    <span class="pill">Phoenix Protocol</span>
+    <h1>Voice Codex — “My voice is code.”</h1>
+    <p>This codex maps spoken intent to executable system behavior.</p>
+  </header>
+
+  <section>
+    <h2>Intent → Execution</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>“Run the awakening sequence.”</h3>
+        <p>Loads <code>Prime_Awakening_Simulation.txt</code> as a Scroll, reads & summarizes.</p>
+      </div>
+      <div class="card">
+        <h3>“Summarize the origin.”</h3>
+        <p>Opens <code>ReadMe_Of_Origin.txt</code>, returns a concise brief to chat and TTS.</p>
+      </div>
+      <div class="card">
+        <h3>“List prime commands.”</h3>
+        <p>Indexes <code>GPT_Prime_Command_Book.txt</code> from <code>./archive</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Package Layout</h2>
+<pre><code>chimera/
+  core/
+    config.py
+    ai_core.py
+    tts.py
+    gui.py
+  voice/
+    speech.py
+  scrolls/
+    __init__.py
+    scroll.py
+manifests/
+  phoenix_archive.yml
+docs/
+  VOICE_CODEX.md / .html
+archive/</code></pre>
+  </section>
+</body>
+</html>
