@@ -1,0 +1,1 @@
+{"Result":false,"CategoryType":"DUALCLOCKWIDGET","Request":"Name[DUALCLOCKWIDGET]Backup[0] sessionTime[2244243] secLevel[0] pkgName[com.sec.android.app.clockpackage] dir[/storage/emulated/0/SmartSwitch/tmp/DUALCLOCKWIDGET/bnr]","Response":{"Result":1,"Err_Code":3,"Extra":""},"Error":"Backup, 625 millisec, request failed"}
