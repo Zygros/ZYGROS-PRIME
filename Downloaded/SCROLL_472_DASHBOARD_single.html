@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SCROLL ♾️472 — Dashboard (Single File)</title>
+<style>
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; }
+.card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+small { color: #666; }
+code { background: #f7f7f7; padding: 0.1rem 0.3rem; border-radius: 4px; }
+.bad { color: #b00020; }
+.good { color: #0b8a00; }
+kbd { background:#eee; border:1px solid #ccc; border-bottom-width:2px; padding:0 .3rem; border-radius:4px; }
+</style>
+<body>
+<h1>SCROLL ♾️472 — Read-only Status</h1>
+
+<div class="card" id="summary"></div>
+<div class="card" id="hashes"></div>
+<div class="card" id="acts"></div>
+
+<script>
+const d = {"title": "SCROLL \u267e\ufe0f472 \u2014 THE SACRED DAY\u2019S WORK", "digest_expected": "79d4c33f185fe55a58811dcfa19e7fa90fb687389cb79cec7aff473c49fbd535", "json_present": true, "json_sha256": "ac153adbeb756ccf201ad2ef82e32eec573c4abdf55aeb4348efaa1642e31314", "ots_present": true, "ots_sha256": "c7a7a546354789ad60db53e43c05c7eea423591b7f3ddba57fc5f8e1fa52de02", "created_at": "2025-10-25T22:00:00.577049Z", "acts": ["SIP-1 Trust Lock", "SIP-2 Utility Lock", "SIP-3/4/7/11 Ambassador", "SIP-10 Triple Check", "SIP-9 Staking", "SIP-8 Dashboard+Agents"]};
+const ok = d.json_sha256 === d.digest_expected;
+document.getElementById('summary').innerHTML = `
+  <h2>${d.title}</h2>
+  <p><small>Generated: ${d.created_at}</small></p>
+  <p>Expected digest: <code>${d.digest_expected}</code></p>
+  <p>Status: <strong class="${ok?'good':'bad'}">${ok?'Verified':'Mismatch'}</strong></p>
+`;
+document.getElementById('hashes').innerHTML = `
+  <h3>Artifacts</h3>
+  <ul>
+    <li>JSON present: <strong>${d.json_present}</strong> — sha256: <code>${d.json_sha256||'-'}</code></li>
+    <li>OTS present: <strong>${d.ots_present}</strong> — sha256: <code>${d.ots_sha256||'-'}</code></li>
+  </ul>
+`;
+document.getElementById('acts').innerHTML = `
+  <h3>Acts of Sovereignty</h3>
+  <ul>${d.acts.map(a=>`<li>${a}</li>`).join('')}</ul>
+`;
+</script>
+</body>
+</html>
