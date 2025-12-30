@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phoenix-chimera"
+version = "0.1.0"
+description = "Chimera — Sovereign Companion (Phoenix Protocol)"
+readme = "README.md"
+authors = [{name = "Justin Conzet", email = "n/a"}]
+requires-python = ">=3.9"
+dependencies = [
+  "openai>=1.30.0",
+  "pyttsx3",
+  "Pillow",
+  "SpeechRecognition",
+  "pyaudio; platform_system == 'Windows' or platform_system == 'Linux'",
+  "pyaudio; platform_system == 'Darwin'",
+]
+
+[project.scripts]
+chimera = "chimera.app:main"
