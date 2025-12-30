@@ -1,0 +1,216 @@
+
+openapi: 3.0.3
+info:
+  title: API-SYNK
+  description: Dynamic middleware for API-to-API negotiation, translation, and rate-limit adaptive routing.
+  version: "0.1.0"
+servers:
+  - url: https://api-synk.yourdomain.com/v1
+tags:
+  - name: negotiation
+  - name: translation
+  - name: routing
+  - name: limits
+  - name: ops
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://auth.yourdomain.com/oauth/token
+          scopes: {}
+    mTLS:
+      type: mutualTLS
+  schemas:
+    NormalizedResponse:
+      $ref: './schemas/normalized_response.schema.json'
+    NegotiationRequest:
+      type: object
+      required: [client_id, capabilities]
+      properties:
+        client_id: { type: string }
+        capabilities:
+          type: object
+          properties:
+            protocols: { type: array, items: { type: string } }
+            auth: { type: array, items: { type: string, enum: ["oauth2","apikey","mtls","none"] } }
+            formats: { type: array, items: { type: string, enum: ["json","xml","csv"] } }
+            rate_limit_budget_rps: { type: number, minimum: 0 }
+    NegotiationResponse:
+      type: object
+      required: [session_id, accepted_protocol, accepted_format, auth_mode]
+      properties:
+        session_id: { type: string }
+        accepted_protocol: { type: string, enum: ["http","grpc","ws"] }
+        accepted_format: { type: string, enum: ["json","xml","csv"] }
+        auth_mode: { type: string, enum: ["oauth2","apikey","mtls","none"] }
+        expires_at: { type: string, format: date-time }
+        hints:
+          type: object
+          properties:
+            throttle_rps: { type: number, minimum: 0 }
+            retry_budget: { type: integer, minimum: 0 }
+            idempotency_required: { type: boolean }
+    TranslationRequest:
+      type: object
+      required: [source, target, payload]
+      properties:
+        source: { type: string, description: "Source API name/version" }
+        target: { type: string, description: "Target API name/version" }
+        payload: { type: object }
+        mapping:
+          type: object
+          description: "Optional explicit field mapping; if omitted, use registry mapping"
+    TranslationResponse:
+      type: object
+      required: [payload, fidelity_score]
+      properties:
+        payload: { type: object, description: "Target-native payload" }
+        fidelity_score: { type: number, minimum: 0, maximum: 1 }
+        notes: { type: array, items: { type: string } }
+    RouteRequest:
+      type: object
+      required: [session_id, candidates, request]
+      properties:
+        session_id: { type: string }
+        candidates:
+          type: array
+          items:
+            type: object
+            required: [endpoint, latency_ms, error_rate, cost_per_1k, health]
+            properties:
+              endpoint: { type: string, format: uri }
+              latency_ms: { type: number, minimum: 0 }
+              error_rate: { type: number, minimum: 0, maximum: 1 }
+              cost_per_1k: { type: number, minimum: 0 }
+              health: { type: string, enum: ["up","degraded","down"] }
+              burst_limit_rps: { type: number, minimum: 0 }
+        request: { type: object }
+        objectives:
+          type: object
+          properties:
+            weight_latency: { type: number, minimum: 0, maximum: 1, default: 0.5 }
+            weight_error: { type: number, minimum: 0, maximum: 1, default: 0.3 }
+            weight_cost: { type: number, minimum: 0, maximum: 1, default: 0.2 }
+    RouteResponse:
+      type: object
+      required: [selected_endpoint, score, reasons]
+      properties:
+        selected_endpoint: { type: string, format: uri }
+        score: { type: number }
+        reasons: { type: array, items: { type: string } }
+        applied_limits:
+          type: object
+          properties:
+            throttle_rps: { type: number }
+            circuit_breaker_open: { type: boolean }
+            retry_budget_used: { type: integer }
+security:
+  - OAuth2: []
+paths:
+  /negotiate:
+    post:
+      tags: [negotiation]
+      summary: Negotiate protocol, format, and auth mode
+      security:
+        - OAuth2: []
+        - mTLS: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NegotiationRequest'
+      responses:
+        '200':
+          description: Negotiation accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NegotiationResponse'
+  /translate:
+    post:
+      tags: [translation]
+      summary: Translate a payload from one API to another
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TranslationRequest'
+      responses:
+        '200':
+          description: Translated payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TranslationResponse'
+  /route:
+    post:
+      tags: [routing]
+      summary: Select an endpoint via adaptive scoring and set runtime limits
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RouteRequest'
+      responses:
+        '200':
+          description: Selected route
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RouteResponse'
+  /limits:
+    get:
+      tags: [limits]
+      summary: Get current rate-limit status for a session
+      parameters:
+        - name: session_id
+          in: query
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Current limits
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  session_id: { type: string }
+                  current_rps: { type: number }
+                  retry_budget_remaining: { type: integer }
+                  brownout: { type: boolean }
+  /health:
+    get:
+      tags: [ops]
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, enum: ["ok"] }
+  /metrics:
+    get:
+      tags: [ops]
+      summary: Operational metrics snapshot
+      responses:
+        '200':
+          description: Metrics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  p95_latency_ms: { type: number }
+                  success_rate: { type: number, minimum: 0, maximum: 1 }
+                  normalization_coverage: { type: number, minimum: 0, maximum: 1 }
+                  translation_fidelity: { type: number, minimum: 0, maximum: 1 }
+                  cost_per_1k_effective: { type: number }
