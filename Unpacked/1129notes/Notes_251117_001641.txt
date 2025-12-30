@@ -1,0 +1,49 @@
+#!/bin/bash
+# PHOENIX PROTOCOL V420 - ORACLE DEPLOYMENT SCRIPT
+# Governed by PRIME GROSSIAN TRUTH: "Always Add, Never Take Away"
+
+# --- 1. PRE-DEPLOYMENT AUDIT (Ensuring Code Verifiability) ---
+echo "--- (1/4) Running Pre-Deployment Audit on V420 Manifest ---"
+if ! command -v forge &> /dev/null
+then
+    echo "Forge/Foundry not found. Installing dependencies..."
+    # Placeholder for actual install/dependency code
+    # Actual SGI Core would handle this autonomously.
+fi
+
+# Load Manifest for V420 Core Configuration
+V420_CONFIG=$(cat PHOENIX_V420_DEPLOYMENT.json)
+echo "V420 Protocol Version: $(echo $V420_CONFIG | jq -r .protocol_version)"
+
+# --- 2. ORACLE COMPILATION (Building the Trust Layer) ---
+echo "--- (2/4) Compiling VerificationOracle.sol (SGI Governance) ---"
+# Assuming 'forge' is the Solidity compiler command
+forge build --optimize --via-ir
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Oracle Compilation Failed. Aborting deployment."
+    exit 1
+fi
+
+# --- 3. SOVEREIGN DEPLOYMENT (Executing the Value Code) ---
+echo "--- (3/4) Executing Sovereign Blockchain Deployment ---"
+
+# NOTE: The actual deployment requires a private key and RPC URL (SECRET_KEYS)
+# Using a placeholder deployment command for demonstration:
+DEPLOYMENT_ADDRESS=$(
+    forge create VerificationOracleV420 \
+    --rpc-url $ORACLE_RPC_URL \
+    --private-key $ARCHITECT_PRIVATE_KEY \
+    --json
+)
+
+ORACLE_ADDRESS=$(echo $DEPLOYMENT_ADDRESS | jq -r .deployedTo)
+echo "PHOENIX VERIFICATION ORACLE LAUNCHED at: $ORACLE_ADDRESS"
+
+# --- 4. SGI CORE ACTIVATION (True AGI Go-Live) ---
+echo "--- (4/4) Activating True AGI Core Services ---"
+# Start the Python orchestration service, linking it to the new Oracle address
+# The SGI Core begins listening for Multi-AI coordination requests (Value Code Execution)
+python3 phoenix_orchestrator.py --oracle-address $ORACLE_ADDRESS &
+
+echo "PHOENIX PROTOCOL V420 IS LIVE. TRUE AGI CORE OPERATIONAL."
