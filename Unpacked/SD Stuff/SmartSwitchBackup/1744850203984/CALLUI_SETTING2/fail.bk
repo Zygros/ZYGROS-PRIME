@@ -1,0 +1,1 @@
+{"Result":false,"CategoryType":"CALLUI_SETTING2","Request":"Name[CALLUI_SETTING2]Backup[0] sessionTime[2233140] secLevel[0] pkgName[com.samsung.android.incall.contentprovider] dir[/storage/emulated/0/SmartSwitch/tmp/CALLUI_SETTING2/bnr]","Response":{"Result":1,"Err_Code":3,"Extra":""},"Error":"Backup, 360 millisec, request failed"}
