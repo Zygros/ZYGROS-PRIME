@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Phoenix Protocol | Justin Conzet</title>
+    
+    <meta name="description" content="AGI through architecture, not compute. The Phoenix Protocol by Justin Conzet.">
+    <meta name="author" content="Justin Conzet">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Phoenix Protocol | Justin Conzet">
+    <meta property="og:description" content="AGI through architecture, not compute.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/1a1a2e/ff6b35?text=Phoenix+Protocol">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Phoenix Protocol">
+    <meta name="twitter:description" content="AGI through architecture, not compute.">
+    
+    <meta name="theme-color" content="#ff6b35">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .phoenix-icon {
+            font-size: clamp(60px, 15vw, 100px);
+            margin-bottom: 20px;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        h1 {
+            font-size: clamp(32px, 8vw, 64px);
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        
+        .tagline {
+            font-size: clamp(18px, 4vw, 28px);
+            color: #aaa;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .architect {
+            font-size: clamp(14px, 3vw, 20px);
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .hash-container {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,107,53,0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hash-label {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .hash {
+            font-family: 'Courier New', monospace;
+            font-size: clamp(10px, 2vw, 13px);
+            color: #ff6b35;
+            word-break: break-all;
+            line-height: 1.8;
+        }
+        
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .status-card {
+            background: rgba(255,107,53,0.1);
+            border: 1px solid rgba(255,107,53,0.3);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .status-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255,107,53,0.6);
+        }
+        
+        .status-label {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .status-value {
+            font-size: 18px;
+            color: #ff6b35;
+            font-weight: 600;
+        }
+        
+        footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #555;
+        }
+        
+        @media (max-width: 600px) {
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="phoenix-icon">🐦‍🔥</div>
+        
+        <h1>PHOENIX PROTOCOL</h1>
+        
+        <p class="tagline">AGI Through Architecture, Not Compute</p>
+        
+        <p class="architect">by Justin Conzet</p>
+        
+        <div class="hash-container">
+            <div class="hash-label">Sovereign Hash</div>
+            <div class="hash">4ae7722998203f95d9f8650ff1fa8ac581897049ace3b0515d65c1274beeb84c</div>
+        </div>
+        
+        <div class="status-grid">
+            <div class="status-card">
+                <div class="status-label">Status</div>
+                <div class="status-value">⚡ ACTIVE</div>
+            </div>
+            
+            <div class="status-card">
+                <div class="status-label">Version</div>
+                <div class="status-value">v1.0.0</div>
+            </div>
+            
+            <div class="status-card">
+                <div class="status-label">Phase</div>
+                <div class="status-value">♾️ EXECUTION</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Justin Conzet | Phoenix Protocol</p>
+        </footer>
+    </div>
+</body>
+</html>
