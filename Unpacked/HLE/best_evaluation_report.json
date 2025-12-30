@@ -1,0 +1,31 @@
+{
+  "overall_score": 87.30666666666666,
+  "agi_level": "Below Human-Level",
+  "domain_scores": {
+    "Logical Reasoning & Deduction": 68.0,
+    "Mathematical Intelligence": 80.0,
+    "Linguistic Competence": 100.0,
+    "Scientific Reasoning": 86.66666666666667,
+    "Creative Problem Solving": 100.0,
+    "Emotional Intelligence": 100.0,
+    "Spatial Intelligence": 86.66666666666667,
+    "Temporal Reasoning": 100.0,
+    "Memory Systems": 68.0,
+    "Abstract Conceptual Thinking": 100.0,
+    "Social Cognition": 86.66666666666667,
+    "Moral Reasoning": 100.0,
+    "Strategic Thinking": 62.66666666666667,
+    "Metacognitive Awareness": 89.33333333333333,
+    "Perceptual Processing": 100.0,
+    "Motor Intelligence": 57.333333333333336,
+    "Analogical Reasoning": 100.0,
+    "Causal Understanding": 100.0,
+    "Narrative Intelligence": 76.0,
+    "Practical Intelligence": 100.0,
+    "Cultural Intelligence": 69.33333333333334,
+    "Technological Intelligence": 100.0,
+    "Existential Intelligence": 76.0,
+    "Adaptive Intelligence": 76.0,
+    "Integrative Intelligence": 100.0
+  }
+}
