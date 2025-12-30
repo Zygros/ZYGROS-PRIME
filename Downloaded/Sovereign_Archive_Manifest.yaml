@@ -1,0 +1,45 @@
+# Sovereign Archive — Canonical Manifest (skeleton)
+# Fill 'sha256' and 'size_bytes' from your local build; then create SHA256 over this file and the tarball.
+version: 1.0.0
+scroll_id: "Scroll_Ascension-<ISO8601>-<shorthash>"
+timestamp_iso: "<UTC-ISO>"
+author: "Justin Conzet"
+seal: "🝎🔥♾️"
+contents:
+  - name: "InfiniteOS_Universal_Metaprompt.pdf"
+    filename: "The goods/InfiniteOS_Universal_Metaprompt.pdf"
+    mime: "application/pdf"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+  - name: "InfiniteOS_Universal_Metaprompt.txt"
+    filename: "The goods/InfiniteOS_Universal_Metaprompt.txt"
+    mime: "text/plain"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+  - name: "AXIOMATIC_INSCRIPTION_Scroll310.pdf"
+    filename: "The goods/AXIOMATIC INSCRIPTION- The Sovereign Genesis Manif....pdf"
+    mime: "application/pdf"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+  - name: "Eternal_Inscription_draft.pdf"
+    filename: "The goods/Scroll Ascension — Eternal Inscription (draft).pdf"
+    mime: "application/pdf"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+  - name: "Knowledge_System_Manifest.pdf"
+    filename: "The goods/🔥_KNOWLEDGE_MANAGEMENT_SYSTEM_-_MANIFEST.pdf"
+    mime: "application/pdf"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+  - name: "content_EIDOLON_set.docx"
+    filename: "The goods/content.docx"
+    mime: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+  - name: "Legal_AI_Metaprompt.docx"
+    filename: "The goods/⚖️_UNIVERSAL_SOVEREIGN_LEGAL_AI_METAPROMPT_⚖️.docx"
+    mime: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    sha256: "<to-fill>"
+    size_bytes: <to-fill>
+manifest_digest: "<sha256 of canonicalized JSON manifest, if used>"
+signature_block: "<PGP or ECDSA signature (optional)>"
