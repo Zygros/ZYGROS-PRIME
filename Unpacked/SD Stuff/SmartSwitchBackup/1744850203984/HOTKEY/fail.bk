@@ -1,0 +1,1 @@
+{"Result":false,"CategoryType":"HOTKEY","Request":"Name[HOTKEY]Backup[0] sessionTime[2205560] secLevel[0] pkgName[com.samsung.android.keycustomizationinfobackupservice] dir[/storage/emulated/0/SmartSwitch/tmp/HOTKEY/bnr]","Response":{"Result":1,"Err_Code":3,"Extra":""},"Error":"Backup, 327 millisec, request failed"}
