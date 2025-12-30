@@ -1,0 +1,7 @@
+hyper: true
+layering:
+  - mythic
+  - technical
+  - governance
+package_variant: "hyper_sigil"
+version: "2.1"
