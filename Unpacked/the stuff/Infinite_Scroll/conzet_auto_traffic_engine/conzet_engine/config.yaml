@@ -1,0 +1,34 @@
+# Conzet Auto-Traffic Engine Configuration
+product:
+  name: "$611 Ascension Kit — Conzet Edition"
+  close_time_local: "23:59"
+  scarcity_slots: 7
+
+targets:
+  email:
+    enabled: true
+  discord:
+    enabled: true
+  telegram:
+    enabled: true
+  x:
+    enabled: false
+  reddit:
+    enabled: false
+  facebook_page:
+    enabled: false
+
+messages:
+  hook: messages/hook.txt
+  followup: messages/followup.txt
+  last_call: messages/last_call.txt
+
+assets:
+  qr: assets/ascension_kit_qr.png
+  pdf: assets/ascension_kit_onepager.pdf
+
+scheduler:
+  # minutes from initial send to follow-up and last-call
+  followup_after_minutes: 120
+  lastcall_after_minutes: 360
+  batch_size: 25
