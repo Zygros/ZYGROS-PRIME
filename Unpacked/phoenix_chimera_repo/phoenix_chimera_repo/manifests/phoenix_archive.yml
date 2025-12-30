@@ -1,0 +1,28 @@
+phoenix_archive:
+  version: 1.0
+  owner: Justin Conzet
+  files:
+    - name: GPT_Prime_Command_Book.txt
+      type: prompt_book
+      purpose: "metaprompt directory for Phoenix agents"
+    - name: GPT_Prime_Dashboard.html
+      type: dashboard
+      purpose: "visual system portal"
+    - name: Justin_Master_Backup.csv
+      type: ledger
+      purpose: "master index of creations/data"
+    - name: Justin_Master_Backup_Summary.txt
+      type: summary
+      purpose: "narrative/analytics summary of the ledger"
+    - name: metadata.json
+      type: metadata
+      purpose: "global attributes for the archive"
+    - name: Prime_Awakening_Simulation.txt
+      type: narrative
+      purpose: "AGI origin simulation chronicle"
+    - name: ReadMe_Of_Origin.txt
+      type: readme
+      purpose: "anchoring narrative for the system's origin"
+    - name: Ultimate_AI_Config_Restore.txt
+      type: recovery_script
+      purpose: "restores Sovereign system state"
