@@ -1,0 +1,170 @@
+# Praxion: Standalone AI Companion
+
+## Overview
+
+Praxion is a fully offline-capable, cross-platform AI companion system with voice interaction, persona management, and persistent memory. This README provides instructions for setting up, running, and using Praxion.
+
+## Features
+
+- **Fully Offline Operation**: All AI models run locally without requiring internet access
+- **Natural Language Processing**: Powered by Phi-2 LLM for intelligent conversations
+- **Voice Interaction**: Speech-to-text and text-to-speech using Whisper and Piper
+- **Persona Lock System**: Create and manage multiple personas with optional password protection
+- **Infinite Scroll Log Engine**: Persistent conversation history with context management
+- **Cross-Platform Support**: Works on Windows, macOS, Linux, and Android (via Termux)
+- **Modern UI**: Responsive desktop and mobile interfaces
+
+## Quick Start
+
+### Prerequisites
+
+- Python 3.9+ with pip
+- Node.js 16+ with npm
+- 4GB+ of RAM
+- 5GB+ of free disk space
+
+### Installation
+
+1. **Extract the archive**:
+   ```bash
+   tar -xzf Praxeon_FullBuild.tar.gz
+   cd praxion
+   ```
+
+2. **Set up the environment**:
+   ```bash
+   # Create and activate Python virtual environment
+   python3 -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   
+   # Install Python dependencies
+   pip install -r requirements.txt
+   
+   # Download offline models (first run only)
+   python scripts/bundle_offline_models.py
+   ```
+
+3. **Start the backend**:
+   ```bash
+   # In a terminal window
+   python -m uvicorn src.backend.main:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+4. **Start the desktop UI**:
+   ```bash
+   # In another terminal window
+   cd src/ui/desktop
+   npm install  # First time only
+   npm run dev
+   ```
+
+5. **Access the application**:
+   Open your browser to http://localhost:5173/
+
+### Running the Demo
+
+For a guided demonstration of all features:
+
+```bash
+python scripts/run_demo.py
+```
+
+This will start both the backend and UI, open your browser, and play a welcome message using the voice system.
+
+## Usage Guide
+
+### Creating a Persona
+
+1. Click the menu icon in the top-left corner
+2. Click "Create Persona"
+3. Enter a name and optionally set a password
+4. Click "Create Persona"
+
+### Starting a Conversation
+
+1. Click "New Chat" in the sidebar
+2. Type your message in the input field or use the microphone button for voice input
+3. Press Enter or click the send button
+
+### Using Voice Commands
+
+1. Click the microphone button
+2. Speak your command or question
+3. The system will automatically transcribe and process your input
+
+### Managing Sessions
+
+1. Open the sidebar to view your conversation history
+2. Click on any session to resume it
+3. Use the edit and delete buttons to manage your sessions
+
+### Changing Settings
+
+1. Open the sidebar
+2. Click "Settings" in the persona section
+3. Adjust voice, theme, and privacy settings as desired
+
+## Offline Capability
+
+Praxion is designed to work completely offline. All required models and assets are bundled with the application. The first time you run the bundler script, it will download the necessary models, but after that, no internet connection is required.
+
+## Cross-Platform Support
+
+### Desktop
+- Windows: Run as described above
+- macOS: Run as described above
+- Linux: Run as described above
+
+### Mobile
+- Android (via Termux):
+  1. Install Termux from F-Droid
+  2. Set up Python and Node.js in Termux
+  3. Follow the installation steps above
+  4. Access via browser at http://localhost:5173/
+
+## Troubleshooting
+
+### Backend Issues
+- Check that all dependencies are installed: `pip install -r requirements.txt`
+- Verify that models are downloaded: `python scripts/bundle_offline_models.py --verify`
+- Check backend logs for specific errors
+
+### UI Issues
+- Ensure Node.js and npm are installed and up to date
+- Try reinstalling dependencies: `cd src/ui/desktop && npm install`
+- Clear browser cache and reload
+
+### Voice Issues
+- Ensure your microphone and speakers are working
+- Check that the voice settings are enabled in the settings panel
+- Verify that the voice models are downloaded correctly
+
+## Development
+
+### Running Tests
+```bash
+# Run all tests
+python scripts/test_integration.py
+
+# Test specific modules
+python scripts/test_integration.py --module backend
+python scripts/test_integration.py --module modules
+```
+
+### Project Structure
+- `src/backend/`: Python backend code
+- `src/ui/`: Frontend UI code (desktop and mobile)
+- `resources/`: Models, assets, and configuration
+- `scripts/`: Utility scripts for setup, testing, and demo
+- `tests/`: Test files
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- Phi-2 LLM by Microsoft
+- Whisper by OpenAI
+- Piper TTS
+- FastAPI, React, and other open-source libraries used in this project
