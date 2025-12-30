@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SKCS Build Recipe Schema",
+  "type": "object",
+  "required": [
+    "id",
+    "artifact_type",
+    "inputs",
+    "model_version",
+    "retrieval_sets",
+    "steps",
+    "output_hash"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "artifact_type": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "model_version": {
+      "type": "string"
+    },
+    "retrieval_sets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "output_hash": {
+      "type": "string"
+    }
+  }
+}
