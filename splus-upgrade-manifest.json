@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "profile": "archive-or-hybrid",
+  "upgrade": "additive-splus-baseline",
+  "changed_files": [
+    "ZYGROS-PRIME/LICENSE-STATUS.md",
+    "ZYGROS-PRIME/DEPENDENCY-STATUS.md",
+    "ZYGROS-PRIME/SPLUS.md",
+    "docs/PROVENANCE.md",
+    "scripts/splus_check.py",
+    ".gitignore",
+    "ZYGROS-PRIME/README.md",
+    "workflows/splus-hygiene.yml",
+    "CI-STATUS.md"
+  ],
+  "source_deletion": false,
+  "source_overwrite": false,
+  "ci_status": "existing-ci-preserved",
+  "generated_workflow_removed_before_publish": false
+}
