@@ -1,0 +1,44 @@
+name: Repository Quality Gate
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Reject committed local-history and credential files
+        shell: bash
+        run: |
+          set -euo pipefail
+          forbidden='(^|/)(\.bash_history|\.zsh_history|\.env($|\.)|secrets\.json|credentials\.json)$'
+          if git ls-files | grep -E "$forbidden"; then
+            echo "Forbidden local-history or credential file is tracked."
+            exit 1
+          fi
+
+      - name: Scan tracked text for common credential patterns
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -nI -E 'gh[pousr]_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|Authorization:[[:space:]]*Bearer[[:space:]]+[A-Za-z0-9._-]{20,}' -- . ':!*.md'; then
+            echo "Potential credential material detected in tracked non-document files."
+            exit 1
+          fi
+
+      - name: Compile Python sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m compileall -q .
