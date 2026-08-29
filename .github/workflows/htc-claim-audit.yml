@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: read
+  id-token: write
+  attestations: write
 
 jobs:
   claim-audit:
@@ -22,3 +24,8 @@ jobs:
         with:
           name: htc-claim-audit
           path: verification/latest_claim_audit.json
+
+      - name: Attest evidence bundle provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: verification/latest_claim_audit.json
