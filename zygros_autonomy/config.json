@@ -1,0 +1,26 @@
+{
+  "workspace": ".",
+  "federated_repositories": [
+    "Zygros/Grossian_Scrolls",
+    "Zygros/ZAAI-SYSTEM",
+    "Zygros/Sovereign-Narrative-Intelligence-SNI-",
+    "Zygros/ARC-AGI",
+    "Zygros/zyth-ultimate",
+    "Zygros/Sovereign-AGSI-Archive",
+    "Zygros/conzet-sovereign-intelligence",
+    "Zygros/agents",
+    "Zygros/ultimate-phoenix-protocol",
+    "Zygros/multi-ai-convergence-protocol",
+    "Zygros/ultimate-phoenix-protocol-ssi",
+    "Zygros/ZYGROS-PRIME",
+    "Zygros/PHOENIX-PROTOCOL-ULTIMATE",
+    "Zygros/sovereign-agsi-portal",
+    "Zygros/omninet-v4",
+    "Zygros/CZAOUA-UNITY-SYSTEM"
+  ],
+  "auto_apply": false,
+  "min_score": 0.85,
+  "max_change_lines": 400,
+  "test_commands": ["python -m pytest -q"],
+  "protected_paths": [".git", ".github/workflows", "secrets", ".env"]
+}
