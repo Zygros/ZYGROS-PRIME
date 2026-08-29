@@ -1,0 +1,24 @@
+name: HTC Claim Audit
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  claim-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run deterministic claim audit
+        run: python3 verification/htc_claim_audit.py
+
+      - name: Upload evidence bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: htc-claim-audit
+          path: verification/latest_claim_audit.json
