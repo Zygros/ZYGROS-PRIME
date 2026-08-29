@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "C-001_phi_definition": {
+      "state": "VERIFIED",
+      "value": 1.618033988749895
+    },
+    "C-002_two_pow_26": {
+      "state": "VERIFIED",
+      "value": 67108864
+    },
+    "C-003_registry_present": {
+      "sha256": "9c40ac20c7d1d4fd85291b6b6e456e12f39d4b3fc288aeac8f0dd5085bbe34c2",
+      "state": "VERIFIED"
+    },
+    "C-004_execution_report_present": {
+      "sha256": "ac84394c90b98e799927587b51f84070baf213fa0df5051f4c39e78a2911ca42",
+      "state": "VERIFIED"
+    },
+    "C-006_94_7_percent_AGI_plateau": {
+      "state": "UNVERIFIED"
+    },
+    "C-007_infinite_physical_coherence": {
+      "state": "THEORETICAL"
+    },
+    "C-008_zero_latency": {
+      "state": "UNVERIFIED"
+    },
+    "C-009_10_pow_10_pow_100_iterations": {
+      "state": "UNVERIFIED"
+    },
+    "C-010_1_084e15_nodes": {
+      "state": "UNVERIFIED"
+    },
+    "C-011_unspecified_speedup": {
+      "state": "UNVERIFIED"
+    }
+  },
+  "claim_count": 10,
+  "promotion_rule": "Claim -> Artifact -> Procedure -> Execution -> Measurement -> Reproduction -> Evidence",
+  "protocol": "HTC-CLAIM-AUDIT-v1",
+  "refuted": 0,
+  "unresolved": 6,
+  "verified": 4
+}
