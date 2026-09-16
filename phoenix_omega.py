@@ -1,18 +1,22 @@
 import os, requests, base64
 
-TOKEN = "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"
+TOKEN = os.environ.get("GITHUB_TOKEN")
+if not TOKEN:
+    raise RuntimeError("GITHUB_TOKEN environment variable is required; no credential is stored in source.")
 REPO_NAME = "ZYGROS-PRIME"
-# Automatically get your GitHub username from the token
 user_res = requests.get("https://api.github.com/user", headers={"Authorization": f"token {TOKEN}"})
-USER = user_res.json().get('login')
+user_res.raise_for_status()
+USER = user_res.json().get("login")
+if not USER:
+    raise RuntimeError("GitHub API did not return an authenticated login.")
 REPO_FULL = f"{USER}/{REPO_NAME}"
 BASE_DIR = "/storage/emulated/0/Download"
 
 def ensure_repo():
-    url = f"https://api.github.com/user/repos"
+    url = "https://api.github.com/user/repos"
     headers = {"Authorization": f"token {TOKEN}", "Accept": "application/vnd.github.v3+json"}
-    # Check if repo exists
     check = requests.get(f"https://api.github.com/repos/{REPO_FULL}", headers=headers)
+    check.raise_for_status() if check.status_code not in (200, 404) else None
     if check.status_code == 404:
         print(f"🏗️ CREATING REPOSITORY: {REPO_FULL}...")
         res = requests.post(url, json={"name": REPO_NAME, "private": True}, headers=headers)
