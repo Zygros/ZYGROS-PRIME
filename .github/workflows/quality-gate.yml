@@ -37,8 +37,16 @@ jobs:
             exit 1
           fi
 
-      - name: Compile Python sources
+      - name: Validate deployment shell syntax
         shell: bash
         run: |
           set -euo pipefail
-          python -m compileall -q .
+          bash -n deploy_phoenix.sh deploy_both.sh
+
+      - name: Compile canonical Python sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Downloaded, Unpacked, and source-repositories are historical/vendor archives.
+          # Validate canonical project code without treating imported snapshots as active source.
+          python -m compileall -q . -x '(^|/)(\.git|venv|\.venv|node_modules|Downloaded|Unpacked|source-repositories)/'
