@@ -33,10 +33,11 @@ class OmegaHtcSimulationTests(unittest.TestCase):
             first = run_simulation(cycles=2, max_evaluations=3, seed=11, ledger_path=ledger)
             self.assertEqual(first["ledger_records_after"], 3)
             second = run_simulation(cycles=1, max_evaluations=2, seed=12, ledger_path=ledger)
+            # One cycle has a budget of 2**0 = 1, regardless of the higher ceiling.
             self.assertEqual(second["ledger_records_before"], 3)
-            self.assertEqual(second["ledger_records_after"], 5)
+            self.assertEqual(second["ledger_records_after"], 4)
             count, head = verify_ledger(ledger)
-            self.assertEqual(count, 5)
+            self.assertEqual(count, 4)
             self.assertEqual(head, second["ledger_head_hash"])
 
     def test_ledger_tampering_is_detected(self) -> None:
