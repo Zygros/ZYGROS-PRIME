@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from omega_htc_sim import objective, run_simulation, verify_ledger
+from scripts.omega_htc_sim import objective, run_simulation, verify_ledger
 
 
 class OmegaHtcSimulationTests(unittest.TestCase):
