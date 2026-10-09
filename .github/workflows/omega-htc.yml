@@ -4,7 +4,9 @@ on:
   pull_request:
     paths:
       - "scripts/omega_htc_sim.py"
+      - "scripts/omega_federation_sim.py"
       - "tests/test_omega_htc_sim.py"
+      - "tests/test_omega_federation_sim.py"
       - ".github/workflows/omega-htc.yml"
   push:
     branches:
@@ -29,8 +31,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Compile simulation and tests
-        run: python -m py_compile scripts/omega_htc_sim.py tests/test_omega_htc_sim.py
+        run: python -m py_compile scripts/omega_htc_sim.py scripts/omega_federation_sim.py tests/test_omega_htc_sim.py tests/test_omega_federation_sim.py
       - name: Run bounded simulation tests
-        run: python -m unittest discover -s tests -p "test_omega_htc_sim.py" -v
-      - name: Run reproducible sample simulation
+        run: python -m unittest discover -s tests -p "test_omega_*_sim.py" -v
+      - name: Run reproducible HTC sample simulation
         run: python scripts/omega_htc_sim.py --cycles 6 --max-evaluations 63 --seed 1680
+      - name: Run bounded multi-agent coordination simulation
+        run: python scripts/omega_federation_sim.py --agents 4 --rounds 8 --seed 1680
