@@ -81,6 +81,7 @@ def run_simulation(agents: int = 4, rounds: int = 8, seed: int = 1680,
                     and 0.0 <= score <= 1.0):
                 verified.append({**proposal, "score": score})
 
+        prior_best_score = best["score"]
         if verified:
             winner = max(verified, key=lambda item: (item["score"], item["agent_id"]))
             if winner["score"] >= best["score"]:
@@ -94,7 +95,7 @@ def run_simulation(agents: int = 4, rounds: int = 8, seed: int = 1680,
                         state.last_score = item["score"]
 
         # Adaptive radius: tighten after improvement, widen modestly otherwise.
-        improved = bool(verified and max(p["score"] for p in verified) >= best["score"])
+        improved = bool(verified and best["score"] > prior_best_score)
         radius = max(0.005, min(0.5, radius * (0.88 if improved else 1.08)))
 
         event = {
