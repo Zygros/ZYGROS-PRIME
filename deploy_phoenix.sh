@@ -7,6 +7,13 @@ echo "🐦‍🔥 PHOENIX CONTROL CENTER - ONE-COMMAND DEPLOYMENT"
 echo "============================================================"
 echo ""
 
+# Fail before installing packages or collecting secrets if the runtime is absent.
+if [ ! -f "phoenix_control_center.py" ]; then
+    echo "❌ Required runtime missing: phoenix_control_center.py"
+    echo "Locate or restore the canonical Phoenix Control Center source before deployment."
+    exit 2
+fi
+
 # Check if running in Termux
 if [ ! -d "/data/data/com.termux" ]; then
     echo "⚠️  This script is designed for Termux (Android)"
