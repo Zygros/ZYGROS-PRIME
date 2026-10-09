@@ -40,21 +40,7 @@ read -p "Select option (1-4): " option
 
 # Validate runtime files before attempting local or hosted deployment.
 case "$option" in
-    1|2)
-        if [ ! -f "ghost_v24_control.py" ]; then
-            echo "❌ Required runtime missing: ghost_v24_control.py"
-            echo "Restore the canonical source before deployment."
-            exit 2
-        fi
-        ;;
-    1|3)
-        if [ ! -f "ghost_v25_experimental.py" ]; then
-            echo "❌ Required runtime missing: ghost_v25_experimental.py"
-            echo "Restore the canonical source before deployment."
-            exit 2
-        fi
-        ;;
-    4)
+    1|4)
         for required in ghost_v24_control.py ghost_v25_experimental.py; do
             if [ ! -f "$required" ]; then
                 echo "❌ Required runtime missing: $required"
@@ -63,12 +49,25 @@ case "$option" in
             fi
         done
         ;;
+    2)
+        if [ ! -f "ghost_v24_control.py" ]; then
+            echo "❌ Required runtime missing: ghost_v24_control.py"
+            echo "Restore the canonical source before deployment."
+            exit 2
+        fi
+        ;;
+    3)
+        if [ ! -f "ghost_v25_experimental.py" ]; then
+            echo "❌ Required runtime missing: ghost_v25_experimental.py"
+            echo "Restore the canonical source before deployment."
+            exit 2
+        fi
+        ;;
     *)
         echo "❌ Invalid option. Choose 1, 2, 3, or 4."
         exit 2
         ;;
 esac
-
 case $option in
     1)
         echo ""
